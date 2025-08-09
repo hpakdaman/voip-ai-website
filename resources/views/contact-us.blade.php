@@ -100,19 +100,19 @@
                             @csrf
                             
                             @if (session('success'))
-                                <div class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded mb-4">
+                                <div id="contact-message" class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded mb-4">
                                     {{ session('success') }}
                                 </div>
                             @endif
 
                             @if (session('error'))
-                                <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+                                <div id="contact-message" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
                                     {{ session('error') }}
                                 </div>
                             @endif
 
                             @if ($errors->any())
-                                <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+                                <div id="contact-message" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
                                     <ul class="list-disc list-inside">
                                         @foreach ($errors->all() as $error)
                                             <li>{{ $error }}</li>
@@ -153,5 +153,16 @@
 </section>
 
 @include('includes.footer')
+
+@if (session('success') || session('error') || $errors->any())
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const messageElement = document.getElementById('contact-message');
+    if (messageElement) {
+        messageElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+});
+</script>
+@endif
 
 @endsection
