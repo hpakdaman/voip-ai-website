@@ -6,6 +6,16 @@
 
 @include('includes.navbar')
 
+<style>
+/* Navbar light text for dark hero sections */
+#topnav .navigation-menu > li > a {
+    color: white !important;
+}
+#topnav .navbar-toggle .lines span {
+    background-color: white !important;
+}
+</style>
+
 <!-- Start Hero -->
 <section class="relative table w-full py-36 lg:py-44 bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('assets/images/company/aboutus.jpg') }}');">
     <div class="absolute inset-0 bg-slate-900 opacity-75"></div>
