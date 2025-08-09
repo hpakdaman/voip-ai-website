@@ -1,0 +1,14 @@
+#!/bin/bash 
+# PNPM_PATH=$(which pnpm)
+# cd "$(dirname "$0")"
+# $PNPM_PATH build
+
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# cd "$(dirname "$0")"
+# vite build
+
+export PATH="$PATH:/usr/local/bin:/root/.local/share/pnpm:./node_modules/.bin"
+cd "$(dirname "$0")"
+vite build

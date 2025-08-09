@@ -1,0 +1,13 @@
+#!/bin/bash 
+git stash -u -q
+git reset --hard HEAD
+# git pull --rebase --autostash
+git pull
+composer install --no-interaction --no-scripts 
+php artisan migrate  --force
+php artisan optimize:clear
+pnpm install
+pnpm run build
+php artisan optimize
+# cd ./invoice
+# pnpm install
