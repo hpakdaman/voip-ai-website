@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from ThemeForest (https://themeforest.net/item/techwind-laravel-12-app-saas-software-landing-template/58088942) that is being customized for a VoIP AI business targeting other businesses. The template provides multiple landing pages, components, and layouts specifically designed for SaaS applications, built with Laravel, Blade templating, and Tailwind CSS.
+This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from ThemeForest (https://themeforest.net/item/techwind-laravel-12-app-saas-software-landing-template/58088942) that is being customized for an AI Call Center business targeting other businesses. The template provides multiple landing pages, components, and layouts specifically designed for SaaS applications, built with Laravel, Blade templating, and Tailwind CSS.
 
-**Business Context**: This template is being adapted to showcase and market AI-powered VoIP communication services for business customers. Focus should be on sections relevant to telecommunications, business communications, AI features, and B2B service offerings.
+**Business Context**: This template is being adapted to showcase and market AI-powered call center solutions for business customers. Focus should be on sections relevant to customer service, AI agents, call center operations, automated support, and B2B service offerings.
 
 ## Development Commands
 
@@ -213,15 +213,15 @@ resources/views/ - VoIP views:
 - All 100+ demo views and components
 - Use as source for new VoIP pages
 
-### VoIP-Specific Adaptations
+### AI Call Center Specific Adaptations
 - **Primary Templates**: Focus on SaaS, software, and business templates
 - **Key Sections**: Features, pricing tiers, testimonials, integration demos
-- **Business Focus**: B2B messaging, enterprise features, communication benefits
-- **AI Features**: Highlight automation, analytics, smart routing
+- **Business Focus**: B2B messaging, customer service automation, call center efficiency
+- **AI Features**: Highlight intelligent agents, natural language processing, 24/7 availability, cost reduction
 
 ### Detailed Template Component Inventory
 
-**Available SaaS Components** (most relevant for VoIP, found in `../examples/Landing/resources/views/includes/Landings/`):
+**Available SaaS Components** (most relevant for AI Call Center, found in `../examples/Landing/resources/views/includes/Landings/`):
 - `index-saas/features.blade.php` - Feature showcase with icons
 - `index-saas/rates2.blade.php` - Pricing tables
 - `index-saas/reviews2.blade.php` - Customer testimonials
