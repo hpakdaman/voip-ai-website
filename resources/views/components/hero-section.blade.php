@@ -7,7 +7,7 @@
                 <div class="lg:me-6 lg:text-start text-center">
                     <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-white">
                         Access powerful AI <br>For 
-                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text"   data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
+                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text inline-block min-w-[280px] lg:min-w-[400px]" data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
                             <span class="wrap"></span> 
                         </span>
                     </h1>

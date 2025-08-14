@@ -43,7 +43,7 @@
 
     </head>
     
-    <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900 bg-white">
+    <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900 bg-white overflow-x-hidden">
 
         <!-- Main Content -->
         <div class="content">
