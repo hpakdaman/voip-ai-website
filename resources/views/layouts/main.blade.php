@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light scroll-smooth" dir="ltr">
+<html lang="en" class="dark scroll-smooth" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <title>@yield('title')</title>
@@ -30,6 +30,11 @@
         <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
         <!-- VoIP AI Custom Styles -->
         <link rel="stylesheet" href="{{ asset('assets/css/voip-home.css') }}">
+        
+        @if(is_localhost())
+            <!-- Use local fonts when running on localhost -->
+            <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
+        @endif
 
     </head>
     
@@ -91,43 +96,13 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Theme Controller
-                initThemeController();
+                // Force dark theme permanently
+                const htmlElement = document.documentElement;
+                htmlElement.classList.add('dark');
+                htmlElement.classList.remove('light');
                 
                 // Language Controller
                 initLanguageController();
-                
-                function initThemeController() {
-                    const themeToggle = document.getElementById('themeToggle');
-                    const htmlElement = document.documentElement;
-                    
-                    // Check for saved theme preference or default to 'light'
-                    const savedTheme = localStorage.getItem('theme') || 'light';
-                    
-                    // Apply saved theme
-                    if (savedTheme === 'dark') {
-                        htmlElement.classList.add('dark');
-                        htmlElement.classList.remove('light');
-                        themeToggle.checked = true;
-                    } else {
-                        htmlElement.classList.add('light');
-                        htmlElement.classList.remove('dark');
-                        themeToggle.checked = false;
-                    }
-                    
-                    // Theme toggle functionality
-                    themeToggle.addEventListener('change', function() {
-                        if (this.checked) {
-                            htmlElement.classList.add('dark');
-                            htmlElement.classList.remove('light');
-                            localStorage.setItem('theme', 'dark');
-                        } else {
-                            htmlElement.classList.add('light');
-                            htmlElement.classList.remove('dark');
-                            localStorage.setItem('theme', 'light');
-                        }
-                    });
-                }
                 
                 function initLanguageController() {
                     const currentLangBtn = document.getElementById('currentLang');

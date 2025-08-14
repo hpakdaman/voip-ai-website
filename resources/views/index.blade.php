@@ -6,70 +6,96 @@
 
 @include('includes.navbar')
 
-<!-- 1. Hero Banner: AI-Driven VoIP Revolution (UAE-Optimized) -->
-<section class="relative table w-full py-36 lg:py-44 bg-gradient-to-br from-indigo-600/10 via-blue-50 to-amber-50/30 dark:from-slate-800 dark:via-slate-800 dark:to-slate-800 hero-bg-effect">
-    <div class="absolute inset-0 bg-gradient-to-r from-indigo-600/5 to-blue-600/5"></div>
-    <div class="container relative z-1">
-        <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
-            <div class="md:col-span-7">
-                <div class="me-6">
-                    <h6 class="text-indigo-600 text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">UAE's Leading VoIP AI</h6>
-                    <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-slate-900 dark:text-white wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
-                        Elevate UAE Communications with 
-                        <span class="bg-gradient-to-r from-indigo-600 to-blue-600 text-transparent bg-clip-text">AI-Powered VoIP</span>
-                    </h1>
-                    <h2 class="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 font-medium mb-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
-                        Intelligent, Intuitive, Infinite
-                    </h2>
-                    <p class="text-slate-400 text-lg max-w-2xl mb-6 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
-                        Transform your Dubai business with cutting-edge AI technology that understands Arabic dialects, ensures TRA compliance, and delivers exceptional customer experiences. Our intelligent VoIP platform reduces operational costs by 70% while maintaining enterprise-grade security and 99.9% uptime guarantee. Join over 500 UAE businesses already experiencing the future of intelligent communications.
-                    </p>
-                
-                    <div class="mt-6 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
-                        <a href="#demo" class="py-3 px-6 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2 shadow-lg hover:shadow-xl">
-                            <i class="uil uil-play"></i> Watch Demo
-                        </a>
-                        <a href="#trial" class="py-3 px-6 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2">
-                            <i class="uil uil-rocket"></i> Get Started Free
-                        </a>
-                    </div>
+<!-- Animated Background Blurs -->
+<span class="fixed blur-[200px] lg:size-[600px] size-[400px] rounded-full top-[10%] md:start-[10%] -start-[20%]" style="background-color: var(--voip-primary); opacity: 0.2;"></span>
+<span class="fixed blur-[200px] lg:size-[600px] size-[400px] rounded-full bottom-[10%] md:end-[10%] -end-[20%]" style="background-color: var(--voip-link); opacity: 0.2;"></span>
 
-                    <!-- Trust Indicators -->
-                    <div class="flex items-center mt-8 space-x-4 wow animate__animated animate__fadeInUp" data-wow-delay="1.1s">
-                        <div class="flex items-center">
-                            <i class="uil uil-shield-check text-green-600 text-xl me-2"></i>
-                            <span class="text-sm text-slate-600 dark:text-slate-300">TRA Compliant</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="uil uil-clock text-blue-600 text-xl me-2"></i>
-                            <span class="text-sm text-slate-600 dark:text-slate-300">99.9% Uptime</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="uil uil-map-marker text-amber-600 text-xl me-2"></i>
-                            <span class="text-sm text-slate-600 dark:text-slate-300">UAE Servers</span>
-                        </div>
+<!-- Start Hero -->
+<section class="relative table w-full lg:py-40 md:py-36 pt-36 pb-24 overflow-hidden" style="background-color: var(--voip-dark-bg);">
+    <div class="absolute inset-0 bg-[url('../../assets/images/overlay.png')] bg-repeat opacity-10 dark:opacity-60"></div>
+    <div class="container relative z-1">
+        <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+            <div class="lg:col-span-7">
+                <div class="lg:me-6 lg:text-start text-center">
+                    <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-white">
+                        Access powerful AI <br>For 
+                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text"   data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
+                            <span class="wrap"></span> 
+                        </span>
+                    </h1>
+
+                    <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300">Transform your business communications with AI-powered VoIP solutions designed for the modern enterprise.</p>
+                
+                    <div class="subcribe-form mt-6 mb-3">
+                        <form class="relative max-w-md mx-auto lg:ms-0">
+                            <div class="relative">
+                                <i class="uil uil-envelope text-xl absolute top-3 left-5 text-slate-400"></i>
+                                <input type="email" id="aiemail" name="email" class="py-4 pe-40 ps-12 w-full h-[50px] outline-none text-white rounded-md shadow-sm" style="background-color: rgba(22, 47, 58, 0.6);" placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center absolute top-[2px] end-[3px] h-[46px] text-white rounded-md hover-voip-button" style="background-color: var(--voip-primary);">Get Started</button>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class="md:col-span-5">
-                <div class="relative">
-                    <img src="{{ asset('assets/images/illustrator/Startup_SVG.svg') }}" alt="AI VoIP Solutions UAE" class="mx-auto relative z-2 wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
-                    <!-- Static Background Elements -->
-                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-indigo-400/20 to-blue-400/20 rounded-full blur-3xl opacity-60"></div>
-                    <div class="absolute -bottom-4 -left-4 w-64 h-64 bg-gradient-to-r from-blue-400/20 to-amber-400/20 rounded-full blur-3xl opacity-60"></div>
+            <div class="lg:col-span-5">
+                <div class="relative flex items-center justify-center">
+                    <!-- Spinning circles - behind the image -->
+                    <div class="absolute size-[36rem] border border-dashed rounded-full animate-[spin_120s_linear_infinite] -z-50 spinning-circle" style="border-color: rgba(30, 192, 141, 0.3);"></div>
+                    <div class="absolute size-[48rem] border border-dashed rounded-full animate-[spin_240s_linear_infinite] -z-50 spinning-circle outer" style="border-color: rgba(29, 120, 97, 0.2);"></div>
+                    
+                    <!-- Gradient box background -->
+                    <div class="absolute size-[36rem] blur-[200px] rounded-full dark:after:to-indigo-600/50 -z-50" style="background: linear-gradient(135deg, var(--voip-primary), var(--voip-link)); opacity: 0.3;"></div>
+                    
+                    <!-- Circular container with VoIP color background - perfectly centered -->
+                    <div class="relative w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0" style="background-color: #122a34; aspect-ratio: 1/1;">
+                        <img src="{{ asset('assets/images/personal/a-professional-middle-eastern-woman-without-a-head.png') }}" alt="Professional Customer Service Representative" class="w-[110%] h-[110%] object-cover object-center">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- End Hero -->
+
+<!-- Business Partner -->
+<section class="pt-6">
+    <div class="container relative">
+        <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/amazon.svg') }}" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/google.svg') }}" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/lenovo.svg') }}" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/paypal.svg') }}" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/shopify.svg') }}" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="{{ asset('assets/images/client/spotify.svg') }}" class="h-6" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Business Partner -->
 
 <!-- 2. UAE Advantage Spotlight -->
-<section class="relative md:py-24 py-16 bg-slate-900 dark:bg-slate-900">
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-800"></div>
+<section class="relative md:py-24 py-16" style="background-color: var(--voip-bg);">
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, #162f3a, #0c1b27); opacity: 0.8;"></div>
     <div class="container relative z-1">
         <div class="grid grid-cols-1 pb-8 text-center">
-            <h6 class="text-indigo-400 text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">UAE Market Leader</h6>
+            <h6 class="text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" style="color: var(--voip-link);" data-wow-delay=".1s">UAE Market Leader</h6>
             <h2 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-bold text-white wow animate__animated animate__fadeInUp" data-wow-delay=".3s">Your UAE Advantage</h2>
             <p class="text-slate-300 max-w-xl mx-auto wow animate__animated animate__fadeInUp" data-wow-delay=".5s">Built specifically for UAE businesses with local compliance and cultural understanding</p>
         </div>
@@ -117,7 +143,7 @@
 <section class="relative md:py-24 py-16 bg-white dark:bg-slate-900">
     <div class="container relative">
         <div class="grid grid-cols-1 pb-8 text-center">
-            <h6 class="text-indigo-600 text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Powerful Results</h6>
+            <h6 class="text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" style="color: var(--voip-link);" data-wow-delay=".1s">Powerful Results</h6>
             <h2 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-bold text-slate-900 dark:text-white wow animate__animated animate__fadeInUp" data-wow-delay=".3s">Transform Your Business Communications</h2>
             <p class="text-slate-400 max-w-2xl mx-auto wow animate__animated animate__fadeInUp" data-wow-delay=".5s">Experience measurable improvements that matter to your bottom line. Our AI-powered VoIP solution has helped UAE businesses achieve remarkable results: 50% faster query resolution, 70% reduction in operational costs, unified multi-channel communication, and enterprise-grade security with zero downtime. These aren't just numbers - they represent real transformation for Dubai's most innovative companies.</p>
         </div>
@@ -150,7 +176,7 @@
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px]">
             @foreach ($coreBenefits as $index => $item)
                 <div class="premium-card px-6 py-10 shadow-sm hover:shadow-lg dark:shadow-gray-800 dark:hover:shadow-gray-700 duration-500 rounded-2xl bg-gray-50 dark:bg-slate-800 hover:bg-white dark:hover:bg-slate-900 wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.2 + ($index * 0.2) }}s">
-                    <i data-feather="{{ $item['icon'] }}" class="size-12 stroke-1 text-indigo-600 mb-6"></i>
+                    <i data-feather="{{ $item['icon'] }}" class="size-12 stroke-1 mb-6" style="color: var(--voip-primary);"></i>
                     <div class="content">
                         <h5 class="text-xl font-semibold hover:text-indigo-600 mb-4">{{ $item['title'] }}</h5>
                         <p class="text-slate-400">{{ $item['desc'] }}</p>
