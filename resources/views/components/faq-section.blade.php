@@ -129,12 +129,18 @@ function toggleFaq(headerElement) {
         arrow.style.transform = 'rotate(0deg)';
         card.classList.remove('faq-open');
     } else {
-        // Close all other FAQs first (optional - for single open behavior)
-        // document.querySelectorAll('.accordion-card.faq-open').forEach(openCard => {
-        //     if (openCard !== card) {
-        //         toggleFaq(openCard.querySelector('.faq-header'));
-        //     }
-        // });
+        // Close all other FAQs first (single accordion behavior)
+        document.querySelectorAll('.accordion-card.faq-open').forEach(openCard => {
+            if (openCard !== card) {
+                const openContent = openCard.querySelector('.faq-content');
+                const openArrow = openCard.querySelector('.uil-angle-down');
+                
+                // Close the open FAQ
+                openContent.style.maxHeight = '0';
+                openArrow.style.transform = 'rotate(0deg)';
+                openCard.classList.remove('faq-open');
+            }
+        });
         
         // Open this FAQ
         content.style.maxHeight = content.scrollHeight + 'px';

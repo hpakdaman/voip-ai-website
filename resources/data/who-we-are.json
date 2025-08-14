@@ -1,0 +1,83 @@
+{
+    "section": {
+        "subtitle": "About Our Company",
+        "title": "Who We Are",
+        "description": "We are a UAE-based technology company specializing in AI-powered VoIP solutions designed specifically for Middle Eastern businesses. Our mission is to revolutionize customer communications through intelligent, culturally-aware technology."
+    },
+    "features": [
+        {
+            "id": 1,
+            "icon": "uil uil-rocket",
+            "title": "Innovation Leaders",
+            "description": "Pioneering AI-powered VoIP solutions that transform how businesses communicate in the digital age.",
+            "stat": "500+",
+            "statLabel": "AI Models Deployed",
+            "priority": 1,
+            "delay": "0.4s"
+        },
+        {
+            "id": 2,
+            "icon": "uil uil-users-alt",
+            "title": "Expert Team",
+            "description": "UAE-based specialists with deep expertise in AI, telecommunications, and Middle Eastern business culture.",
+            "stat": "15+",
+            "statLabel": "Years Combined Experience",
+            "priority": 2,
+            "delay": "0.6s"
+        },
+        {
+            "id": 3,
+            "icon": "uil uil-globe",
+            "title": "Regional Focus",
+            "description": "Built specifically for the UAE and MENA region with local compliance, Arabic support, and cultural understanding.",
+            "stat": "50+",
+            "statLabel": "Languages Supported",
+            "priority": 3,
+            "delay": "0.8s"
+        }
+    ],
+    "mission": {
+        "title": "What We Do",
+        "description": "We revolutionize customer service through AI-powered call center technology. Our intelligent systems handle customer inquiries 24/7, understand multiple languages including Arabic, and seamlessly escalate complex issues to human agents when needed. This transforms traditional call centers into efficient, cost-effective communication hubs that enhance customer satisfaction while reducing operational costs by up to 60%.",
+        "company_info": [
+            {
+                "label": "Founded",
+                "value": "2019",
+                "type": "year",
+                "icon": "uil uil-calendar-alt"
+            },
+            {
+                "label": "Headquarters",
+                "value": "Dubai, UAE",
+                "type": "location",
+                "icon": "uil uil-map-marker"
+            }
+        ]
+    },
+    "visual": {
+        "image_path": "assets/images/business/about01.jpg",
+        "alt_text": "Professional business team collaboration"
+    },
+    "cta": {
+        "title": "Ready to Transform Your Communications?",
+        "description": "Join hundreds of UAE businesses already using our AI-powered VoIP solutions",
+        "buttons": [
+            {
+                "text": "Learn More",
+                "url": "/about",
+                "type": "secondary"
+            },
+            {
+                "text": "Get Started",
+                "url": "/contact-us",
+                "type": "primary"
+            }
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-14",
+        "total_features": 3,
+        "section_type": "company_overview"
+    }
+}

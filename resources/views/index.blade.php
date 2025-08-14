@@ -12,6 +12,8 @@
 
 @include('components.business-partners')
 
+@include('components.who-we-are')
+
 @include('components.uae-advantage')
 
 {{-- @include('components.core-benefits')

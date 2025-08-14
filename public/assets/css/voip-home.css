@@ -639,14 +639,14 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     }
 }
 
-/* FAQ Accordion & UAE Card VoIP Theme Hover Effects */
-.faq-card, .uae-card {
+/* FAQ Accordion, UAE Card & Who We Are Card VoIP Theme Hover Effects */
+.faq-card, .uae-card, .who-we-are-card {
     position: relative;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 }
 
-.faq-card::before, .uae-card::before {
+.faq-card::before, .uae-card::before, .who-we-are-card::before {
     content: '';
     position: absolute;
     inset: -2px;
@@ -657,12 +657,12 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     z-index: -1;
 }
 
-.faq-card:hover::before, .uae-card:hover::before,
+.faq-card:hover::before, .uae-card:hover::before, .who-we-are-card:hover::before,
 .faq-card.faq-open::before {
     opacity: 0.2;
 }
 
-.faq-card:hover, .uae-card:hover {
+.faq-card:hover, .uae-card:hover, .who-we-are-card:hover {
     border-color: var(--voip-link);
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(30, 192, 141, 0.15);
@@ -704,7 +704,7 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
 }
 
 /* Override any existing indigo hover effects */
-.faq-card:hover, .uae-card:hover {
+.faq-card:hover, .uae-card:hover, .who-we-are-card:hover {
     border-color: var(--voip-link) !important;
 }
 

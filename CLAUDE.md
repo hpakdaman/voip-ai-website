@@ -213,12 +213,91 @@ Custom helpers are auto-loaded via composer.json:
 1. **Identify similar existing template** from `../examples/Landing/` (e.g., SaaS template for VoIP services)
 2. **Copy structure** from closest matching template in examples
 3. **Reuse components** from `../examples/Landing/resources/views/includes/Landings/` directories
-4. **Create new view** in main project `resources/views/`
-5. **Add route** to clean `routes/web.php`
-6. **Add controller method** to `HomeController.php`
-7. **Customize content** while maintaining Tailwind styling
-8. **Test responsive design** using existing breakpoint patterns
-9. **CRITICAL: Check for errors** - Always verify changes work correctly
+4. **🚨 CRITICAL: Create JSON data file** - ALL new section content MUST be stored in `resources/data/`
+5. **Create new view** in main project `resources/views/`
+6. **Add route** to clean `routes/web.php`
+7. **Add controller method** to `HomeController.php`
+8. **Customize content** while maintaining Tailwind styling
+9. **Test responsive design** using existing breakpoint patterns
+10. **CRITICAL: Check for errors** - Always verify changes work correctly
+
+## 📊 Data Management with JSON Files
+
+### **🚨 MANDATORY REQUIREMENT: JSON Data Storage**
+**ALL new sections, components, and content MUST store data in separate JSON files**
+
+#### **JSON File Structure Requirements**
+```
+resources/data/
+├── faqs.json              # FAQ section data
+├── who-we-are.json        # Company information  
+└── [section-name].json    # Future section data
+```
+
+#### **JSON File Naming Convention**
+- Use **kebab-case** for filenames (e.g., `who-we-are.json`, `pricing-plans.json`)
+- Match the component name: `components/who-we-are.blade.php` → `data/who-we-are.json`
+- Always include `.json` extension
+
+#### **Required JSON Structure**
+```json
+{
+    "section": {
+        "title": "Section Title",
+        "subtitle": "Section Subtitle", 
+        "description": "Section description"
+    },
+    "items": [
+        {
+            "id": 1,
+            "title": "Item Title",
+            "description": "Item description",
+            "priority": 1,
+            "delay": "0.1s"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-14",
+        "total_count": 1,
+        "section_type": "content_type"
+    }
+}
+```
+
+#### **Component Implementation Pattern**
+```php
+@php
+try {
+    $data = json_decode(file_get_contents(resource_path('data/section-name.json')), true);
+    $sectionData = $data['section'] ?? [];
+    $items = $data['items'] ?? [];
+} catch (Exception $e) {
+    // Always include fallback data for error handling
+    $sectionData = ['title' => 'Fallback Title'];
+    $items = [/* fallback array */];
+}
+
+// Sort by priority if available
+usort($items, function($a, $b) {
+    return ($a['priority'] ?? 999) <=> ($b['priority'] ?? 999);
+});
+@endphp
+```
+
+#### **Benefits of JSON Data Architecture**
+✅ **Content Management**: Easy updates without touching code  
+✅ **Version Control**: Track content changes separately from code  
+✅ **Scalability**: Add new sections without code complexity  
+✅ **Multi-language Ready**: Structure supports future translations  
+✅ **CMS Integration**: JSON can be generated from admin panels  
+✅ **Team Collaboration**: Content editors can work independently  
+
+#### **FORBIDDEN Practices**
+❌ **Hard-coded arrays** in component files  
+❌ **Inline content** mixed with HTML structure  
+❌ **Database queries** for static content  
+❌ **Mixed data sources** within single components  
 
 ### Error Checking Protocol
 **MANDATORY AFTER EVERY CHANGE:**
@@ -330,6 +409,50 @@ resources/views/ - VoIP views:
 - **Icons**: Feather icons, Unicons, Material Design icons available
 - **Fonts**: Nunito font family pre-configured
 - **Scripts**: jQuery, Swiper, tiny-slider, Jarallax pre-loaded
+
+### Available Template Icons (Unicons)
+
+#### **Common Business Icons**
+- `uil uil-building` - Buildings/Headquarters
+- `uil uil-calendar-alt` - Dates/Founded
+- `uil uil-map-marker` - Locations/Addresses
+- `uil uil-users-alt` - Teams/People
+- `uil uil-rocket` - Innovation/Launch
+- `uil uil-globe` - Global/International
+- `uil uil-shield-check` - Security/Compliance
+- `uil uil-server-network` - Technology/Infrastructure
+
+#### **Communication & Tech Icons**
+- `uil uil-phone` - Phone/Calls
+- `uil uil-comments-alt` - Chat/Communication
+- `uil uil-headphones-alt` - Support/Customer Service
+- `uil uil-microphone` - Voice/Audio
+- `uil uil-wifi` - Connectivity/Network
+- `uil uil-robot` - AI/Automation
+- `uil uil-brain` - Intelligence/Smart
+- `uil uil-database` - Data/Storage
+
+#### **Business Process Icons**
+- `uil uil-chart-growth` - Growth/Analytics
+- `uil uil-clock-three` - 24/7/Time
+- `uil uil-award` - Achievement/Quality
+- `uil uil-thumbs-up` - Approval/Success
+- `uil uil-star` - Rating/Excellence
+- `uil uil-heart` - Satisfaction/Love
+
+#### **UI/UX Icons**
+- `uil uil-question-circle` - FAQ/Help
+- `uil uil-info-circle` - Information
+- `uil uil-check-circle` - Success/Completed
+- `uil uil-angle-down` - Dropdown/Expand
+- `uil uil-angle-up` - Collapse/Up
+- `uil uil-external-link-alt` - External Links
+
+#### **Icon Usage Guidelines**
+- **Size Classes**: `text-xl`, `text-2xl`, `text-3xl`, `text-4xl`, `text-5xl`, `text-6xl`
+- **VoIP Colors**: Always use `style="color: var(--voip-link);"` for consistency
+- **Spacing**: Add appropriate margin classes (`mb-4`, `me-4`, etc.)
+- **Responsive**: Use responsive sizing (`lg:text-5xl`, `md:text-4xl`)
 
 ## Color Scheme & Styling Configuration
 
