@@ -48,6 +48,10 @@
         <!-- Main Content -->
         <div class="content">
             @yield('content')
+
+            @section('footer')
+                @include('includes.footer')
+            @show
         </div>
 
         <!-- Back to top -->
