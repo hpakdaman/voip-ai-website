@@ -1,0 +1,64 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "How quickly can I get started with your VoIP AI solution?",
+            "answer": "You can get started within 24-48 hours. Our team provides complete setup, integration with your existing systems, and training for your staff to ensure a smooth transition.",
+            "category": "getting_started",
+            "priority": 1,
+            "delay": "0.1s"
+        },
+        {
+            "id": 2,
+            "question": "Is the AI solution compatible with UAE regulations?",
+            "answer": "Yes, our VoIP AI solution is fully compliant with UAE TRA (Telecommunications and Digital Government Regulatory Authority) regulations and meets all local data protection requirements.",
+            "category": "compliance",
+            "priority": 1,
+            "delay": "0.2s"
+        },
+        {
+            "id": 3,
+            "question": "Can the AI handle multiple languages including Arabic?",
+            "answer": "Absolutely! Our AI supports over 50 languages including Arabic, English, and other regional languages. It can seamlessly switch between languages during conversations.",
+            "category": "features",
+            "priority": 1,
+            "delay": "0.3s"
+        },
+        {
+            "id": 4,
+            "question": "What happens if the AI cannot handle a customer query?",
+            "answer": "Our AI is designed with intelligent escalation. When it encounters complex queries beyond its scope, it seamlessly transfers the call to human agents with complete conversation context.",
+            "category": "features",
+            "priority": 1,
+            "delay": "0.4s"
+        },
+        {
+            "id": 5,
+            "question": "Do you offer 24/7 technical support for UAE businesses?",
+            "answer": "Yes, we provide round-the-clock technical support with local UAE support staff who understand regional business needs and can assist in Arabic and English.",
+            "category": "support",
+            "priority": 1,
+            "delay": "0.5s"
+        },
+        {
+            "id": 6,
+            "question": "Can I integrate this with my existing CRM and business tools?",
+            "answer": "Our VoIP AI solution integrates with 200+ popular business tools including Salesforce, HubSpot, Microsoft Teams, WhatsApp Business, and local UAE business platforms.",
+            "category": "integrations",
+            "priority": 1,
+            "delay": "0.6s"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-14",
+        "total_count": 6,
+        "categories": [
+            "getting_started",
+            "compliance",
+            "features",
+            "support",
+            "integrations"
+        ]
+    }
+}

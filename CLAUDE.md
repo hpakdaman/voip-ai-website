@@ -333,12 +333,91 @@ resources/views/ - VoIP views:
 
 ## Color Scheme & Styling Configuration
 
-### Primary Color System
-The template uses **Indigo** as the primary brand color throughout:
+### VoIP AI Brand Theme System
+**🚨 CRITICAL REQUIREMENT: ALL new sections, components, and UI elements MUST use VoIP theme colors**
+
+**⚠️ NEVER use generic Tailwind colors like `bg-slate-50`, `bg-gray-100`, or `bg-white` for sections**
+**✅ ALWAYS use VoIP theme CSS variables for consistent branding**
+
+The VoIP AI website uses a custom color scheme defined in `public/assets/css/voip-home.css`:
+
+#### **VoIP Theme CSS Variables**
+```css
+:root {
+    --voip-bg: #162f3a;           /* Main background color */
+    --voip-dark-bg: #0c1b27;     /* Dark background for hero/navbar */
+    --voip-primary: #1d7861;     /* Primary button color */
+    --voip-dark-font: #085d44;   /* Button hover state */
+    --voip-link: #1ec08d;        /* Link and accent color */
+    --primary-gradient: linear-gradient(135deg, #1d7861 0%, #1ec08d 100%);
+    --voip-gradient: linear-gradient(135deg, #1d7861 0%, #1ec08d 50%, #162f3a 100%);
+    --voip-accent: rgba(29, 120, 97, 0.1);
+    --voip-hover: rgba(30, 192, 141, 0.2);
+}
+```
+
+#### **MANDATORY Usage Guidelines for ALL New Components**
+
+**🎨 Section Background Colors (REQUIRED)**
+```html
+<!-- Main content sections -->
+<section style="background-color: var(--voip-bg);">
+
+<!-- Hero/navbar sections -->  
+<section style="background-color: var(--voip-dark-bg);">
+
+<!-- Add gradient overlay for depth -->
+<div class="absolute inset-0" style="background: linear-gradient(90deg, #162f3a, #0c1b27); opacity: 0.8;"></div>
+```
+
+**🔗 Button & Interactive Elements (REQUIRED)**
+```html
+<!-- Primary buttons -->
+<a style="background-color: var(--voip-primary);" class="hover-voip-button">
+
+<!-- Secondary/outline buttons -->
+<a style="border-color: var(--voip-primary); color: var(--voip-primary);">
+
+<!-- Links and accents -->
+<span style="color: var(--voip-link);">
+```
+
+**📝 Text Color Standards (MANDATORY)**
+- **Section titles**: `text-white` (never use dark colors on VoIP backgrounds)
+- **Descriptions**: `text-slate-300` (light gray for readability)
+- **Subheadings/labels**: `style="color: var(--voip-link);"` (VoIP accent color)
+- **Icons**: `style="color: var(--voip-link);"` for consistency
+
+**🚫 FORBIDDEN Color Combinations**
+- ❌ `bg-slate-50`, `bg-gray-100`, `bg-white` (breaks VoIP branding)
+- ❌ `text-slate-900`, `text-gray-900` (invisible on VoIP dark backgrounds)  
+- ❌ Generic `bg-indigo-600` (use `var(--voip-primary)` instead)
+- ❌ Light backgrounds without VoIP theme integration
+
+**✅ Complete Section Template Example**
+```html
+<section class="relative py-16" style="background-color: var(--voip-bg);">
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, #162f3a, #0c1b27); opacity: 0.8;"></div>
+    <div class="container relative z-1">
+        <h6 class="text-base font-medium uppercase mb-2" style="color: var(--voip-link);">Section Label</h6>
+        <h2 class="text-3xl font-semibold text-white mb-4">Main Heading</h2>
+        <p class="text-slate-300 max-w-xl mx-auto">Description text</p>
+        
+        <a href="#" class="py-3 px-8 text-white rounded-md hover-voip-button" style="background-color: var(--voip-primary);">
+            CTA Button
+        </a>
+    </div>
+</section>
+```
+
+### Legacy Template Color System  
+The original template uses **Indigo** as the primary brand color throughout:
 - **Primary**: `indigo-600` (#4F46E5) - Main brand color for buttons, links, accents
 - **Primary Hover**: `indigo-700` (#4338CA) - Hover states
 - **Primary Light**: `indigo-600/5`, `indigo-600/10` - Background overlays and subtle accents
 - **Border**: `border-indigo-600` - Primary borders and outlines
+
+**Note**: VoIP theme overrides these with CSS variables for consistent branding.
 
 ### Full Color Palette (Tailwind 4.1.6 OKLCH)
 **Complete color system with 50-950 shades for each:**

@@ -33,11 +33,11 @@
         ];
         @endphp
 
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px]">
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px] items-stretch">
             @foreach ($uaeAdvantages as $index => $item)
-                <div class="border border-dashed border-white/30 rounded-xl p-8 text-center hover:border-indigo-400/50 duration-500 wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.2 + ($index * 0.2) }}s">
-                    <i class="{{ $item['icon'] }} text-5xl text-indigo-400 mb-6"></i>
-                    <div class="content">
+                <div class="border border-dashed border-white/30 rounded-xl p-8 text-center duration-500 premium-card uae-card h-full flex flex-col wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.2 + ($index * 0.2) }}s">
+                    <i class="{{ $item['icon'] }} text-5xl mb-6" style="color: var(--voip-link);"></i>
+                    <div class="content flex-1 flex flex-col justify-center">
                         <h5 class="text-xl font-semibold text-white mb-4">{{ $item['title'] }}</h5>
                         <p class="text-slate-300">{{ $item['desc'] }}</p>
                     </div>

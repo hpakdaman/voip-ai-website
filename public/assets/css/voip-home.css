@@ -639,6 +639,75 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     }
 }
 
+/* FAQ Accordion & UAE Card VoIP Theme Hover Effects */
+.faq-card, .uae-card {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.faq-card::before, .uae-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--voip-link), var(--voip-primary));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.faq-card:hover::before, .uae-card:hover::before,
+.faq-card.faq-open::before {
+    opacity: 0.2;
+}
+
+.faq-card:hover, .uae-card:hover {
+    border-color: var(--voip-link);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(30, 192, 141, 0.15);
+}
+
+/* FAQ Accordion Specific Styles */
+.faq-card.accordion-card {
+    transition: all 0.3s ease;
+}
+
+.faq-card.faq-open {
+    border-color: var(--voip-link);
+    box-shadow: 0 5px 15px rgba(30, 192, 141, 0.1);
+}
+
+.faq-card.faq-open:hover {
+    transform: none; /* Disable lift animation when open */
+}
+
+.faq-header {
+    transition: all 0.3s ease;
+}
+
+.faq-header:hover {
+    background: rgba(30, 192, 141, 0.05);
+}
+
+.faq-content {
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Arrow animation */
+.faq-header .uil-angle-down {
+    transition: transform 0.3s ease;
+}
+
+.faq-open .faq-header .uil-angle-down {
+    transform: rotate(180deg);
+}
+
+/* Override any existing indigo hover effects */
+.faq-card:hover, .uae-card:hover {
+    border-color: var(--voip-link) !important;
+}
+
 /* Print Styles */
 @media print {
     .floating-element,

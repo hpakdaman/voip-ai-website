@@ -13,8 +13,8 @@
 @include('components.business-partners')
 
 @include('components.uae-advantage')
-{{-- 
-@include('components.core-benefits')
+
+{{-- @include('components.core-benefits')
 
 @include('components.ai-demo')
 
@@ -30,8 +30,10 @@
 
 @include('components.pricing-preview')
 
-@include('components.trends-section')
+@include('components.trends-section') --}}
 
-@include('components.cta-launchpad') --}}
+@include('components.faq-section')
+
+{{-- @include('components.cta-launchpad') --}}
 
 @endsection
