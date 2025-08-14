@@ -3,8 +3,7 @@
     <div class="container relative">
         <!-- Logo container-->
         <a class="logo" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/logo-dark.png') }}" class="inline-block dark:hidden" alt="">
-            <img src="{{ asset('assets/images/logo-light.png') }}" class="hidden dark:inline-block" alt="">
+            <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="inline-block h-8" alt="Sawtic">
         </a>
 
         <!-- End Logo container-->
@@ -24,17 +23,8 @@
 
         <!--Simple Controls Start-->
         <ul class="buy-button list-none mb-0 flex items-center">
-            <!-- Theme Toggle -->
-            <li class="flex items-center me-2">
-                <input type="checkbox" class="sr-only" id="themeToggle" />
-                <label for="themeToggle" class="size-9 inline-flex items-center justify-center tracking-wide duration-500 text-base text-center rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 cursor-pointer">
-                    <i class="uil uil-sun text-yellow-500 dark:hidden"></i>
-                    <i class="uil uil-moon text-blue-400 hidden dark:block"></i>
-                </label>
-            </li>
-            
             <!-- Language Switcher -->
-            <li class="flex items-center me-2 relative">
+            <li class="flex items-center me-8 relative">
                 <button id="currentLang" class="size-9 inline-flex items-center justify-center tracking-wide duration-500 text-base text-center rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700">
                     <span class="text-sm">🇺🇸</span>
                 </button>
@@ -51,20 +41,37 @@
             </li>
             
             <!-- Get Started Button -->
-            <li class="flex items-center">
-                <a href="{{ url('/contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Get Started</a>
-            </li>
+            {{-- <li class="flex items-center">
+                <a href="{{ url('/contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border duration-500 text-base text-center text-white rounded-md hover-voip-button" style="background-color: var(--voip-primary); border-color: var(--voip-primary);">Get Started</a>
+            </li> --}}
         </ul>
         <!--Simple Controls End-->
 
         <div id="navigation">
             <!-- Navigation Menu-->   
             <ul class="navigation-menu">
-                <li><a href="{{ url('/') }}" class="sub-menu-item">Home</a></li>
-                <li><a href="{{ url('/features') }}" class="sub-menu-item">Features</a></li>
-                <li><a href="{{ url('/pricing') }}" class="sub-menu-item">Pricing</a></li>
-                <li><a href="{{ url('/about') }}" class="sub-menu-item">About</a></li>
-                <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">Contact Us</a></li>
+                <li><a href="{{ url('/') }}" class="sub-menu-item active">HOME</a></li>
+                <li><a href="{{ url('/features') }}" class="sub-menu-item">FEATURES</a></li>
+                <li><a href="{{ url('/pricing') }}" class="sub-menu-item">PAGES</a></li>
+                <li><a href="{{ url('/about') }}" class="sub-menu-item">PORTFOLIO</a></li>
+                <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">COMPONENTS</a></li>
+                
+                <!-- Mobile Language Switcher -->
+                <li class="block md:hidden border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                    <div class="px-4 py-2">
+                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2 block">Language</span>
+                        <div class="flex space-x-2">
+                            <button class="lang-option-mobile flex items-center space-x-2 px-3 py-2 text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg transition-colors duration-200 flex-1 justify-center" data-lang="en">
+                                <span>🇺🇸</span>
+                                <span>EN</span>
+                            </button>
+                            <button class="lang-option-mobile flex items-center space-x-2 px-3 py-2 text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg transition-colors duration-200 flex-1 justify-center" data-lang="ar">
+                                <span>🇦🇪</span>
+                                <span>AR</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->

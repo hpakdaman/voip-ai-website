@@ -108,27 +108,32 @@
                     const currentLangBtn = document.getElementById('currentLang');
                     const langDropdown = document.getElementById('langDropdown');
                     const langOptions = document.querySelectorAll('.lang-option');
+                    const langOptionsMobile = document.querySelectorAll('.lang-option-mobile');
                     
                     // Get saved language or default to 'en'
                     const savedLang = localStorage.getItem('language') || 'en';
                     updateLanguageDisplay(savedLang);
                     
-                    // Toggle dropdown
-                    currentLangBtn.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        langDropdown.classList.toggle('opacity-0');
-                        langDropdown.classList.toggle('invisible');
-                        langDropdown.classList.toggle('translate-y-2');
-                    });
+                    // Toggle dropdown (desktop)
+                    if (currentLangBtn) {
+                        currentLangBtn.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            langDropdown.classList.toggle('opacity-0');
+                            langDropdown.classList.toggle('invisible');
+                            langDropdown.classList.toggle('translate-y-2');
+                        });
+                    }
                     
                     // Close dropdown when clicking outside
                     document.addEventListener('click', function() {
-                        langDropdown.classList.add('opacity-0');
-                        langDropdown.classList.add('invisible');
-                        langDropdown.classList.add('translate-y-2');
+                        if (langDropdown) {
+                            langDropdown.classList.add('opacity-0');
+                            langDropdown.classList.add('invisible');
+                            langDropdown.classList.add('translate-y-2');
+                        }
                     });
                     
-                    // Language selection
+                    // Language selection (desktop)
                     langOptions.forEach(option => {
                         option.addEventListener('click', function(e) {
                             e.stopPropagation();
@@ -137,22 +142,58 @@
                             localStorage.setItem('language', selectedLang);
                             
                             // Close dropdown
-                            langDropdown.classList.add('opacity-0');
-                            langDropdown.classList.add('invisible');
-                            langDropdown.classList.add('translate-y-2');
+                            if (langDropdown) {
+                                langDropdown.classList.add('opacity-0');
+                                langDropdown.classList.add('invisible');
+                                langDropdown.classList.add('translate-y-2');
+                            }
+                            
+                            console.log('Language changed to:', selectedLang);
+                        });
+                    });
+                    
+                    // Language selection (mobile)
+                    langOptionsMobile.forEach(option => {
+                        option.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            const selectedLang = this.getAttribute('data-lang');
+                            updateLanguageDisplay(selectedLang);
+                            localStorage.setItem('language', selectedLang);
+                            
+                            // Update mobile button states
+                            langOptionsMobile.forEach(btn => {
+                                btn.classList.remove('bg-slate-200', 'dark:bg-slate-600');
+                                btn.classList.add('bg-slate-100', 'dark:bg-slate-700');
+                            });
+                            this.classList.remove('bg-slate-100', 'dark:bg-slate-700');
+                            this.classList.add('bg-slate-200', 'dark:bg-slate-600');
                             
                             console.log('Language changed to:', selectedLang);
                         });
                     });
                     
                     function updateLanguageDisplay(lang) {
-                        const flagIcon = currentLangBtn.querySelector('span');
+                        const flagIcon = currentLangBtn?.querySelector('span');
                         
-                        if (lang === 'ar') {
-                            flagIcon.textContent = '🇦🇪';
-                        } else {
-                            flagIcon.textContent = '🇺🇸';
+                        if (flagIcon) {
+                            if (lang === 'ar') {
+                                flagIcon.textContent = '🇦🇪';
+                            } else {
+                                flagIcon.textContent = '🇺🇸';
+                            }
                         }
+                        
+                        // Update mobile button states based on saved language
+                        langOptionsMobile.forEach(btn => {
+                            const btnLang = btn.getAttribute('data-lang');
+                            if (btnLang === lang) {
+                                btn.classList.remove('bg-slate-100', 'dark:bg-slate-700');
+                                btn.classList.add('bg-slate-200', 'dark:bg-slate-600');
+                            } else {
+                                btn.classList.remove('bg-slate-200', 'dark:bg-slate-600');
+                                btn.classList.add('bg-slate-100', 'dark:bg-slate-700');
+                            }
+                        });
                     }
                 }
             });

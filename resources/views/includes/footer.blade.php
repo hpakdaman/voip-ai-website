@@ -7,7 +7,7 @@
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
                             <a href="{{ url('/') }}" class="text-[22px] focus:outline-none">
-                                <img src="{{ asset('assets/images/logo-light.png') }}" alt="AI Call Center">
+                                <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="h-8" alt="Sawtic">
                             </a>
                             <p class="mt-6 text-gray-300">Transforming customer service with intelligent AI call center solutions that work 24/7 for your business.</p>
                             <ul class="list-none mt-6">
