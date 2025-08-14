@@ -24,7 +24,7 @@
         <!--Simple Controls Start-->
         <ul class="buy-button list-none mb-0 flex items-center">
             <!-- Language Switcher -->
-            <li class="flex items-center me-8 relative">
+            <li class="flex items-center relative">
                 <button id="currentLang" class="size-9 inline-flex items-center justify-center tracking-wide duration-500 text-base text-center rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700">
                     <span class="text-sm">🇺🇸</span>
                 </button>
