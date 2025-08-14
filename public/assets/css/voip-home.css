@@ -605,6 +605,24 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* Hide mobile language switcher on desktop - force hide regardless of navigation state */
+@media (min-width: 991px) {
+    .mobile-lang-switcher,
+    #navigation .mobile-lang-switcher,
+    .navigation-menu .mobile-lang-switcher {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/* Show mobile language switcher only on mobile/tablet */
+@media (max-width: 991px) {
+    .mobile-lang-switcher {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+
 /* Ensure proper spacing on mobile */
 @media (max-width: 768px) {
     .buy-button .flex {

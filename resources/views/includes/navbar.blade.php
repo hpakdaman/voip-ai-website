@@ -57,7 +57,7 @@
                 <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">COMPONENTS</a></li>
                 
                 <!-- Mobile Language Switcher -->
-                <li class="block md:hidden border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                <li class="mobile-lang-switcher border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
                     <div class="px-4 py-2">
                         <span class="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2 block">Language</span>
                         <div class="flex space-x-2">
