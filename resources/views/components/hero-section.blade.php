@@ -1,13 +1,13 @@
 <!-- Start Hero -->
-<section class="relative table w-full lg:py-40 md:py-36 pt-36 pb-24 overflow-hidden" style="background-color: var(--voip-dark-bg);">
+<section class="relative table w-full lg:py-40 md:py-36 pt-36 pb-24 overflow-hidden min-h-screen" style="background-color: var(--voip-dark-bg);">
     <div class="absolute inset-0 bg-[url('../../assets/images/overlay.png')] bg-repeat opacity-10 dark:opacity-60"></div>
     <div class="container relative z-1">
         <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
             <div class="lg:col-span-7">
                 <div class="lg:me-6 lg:text-start text-center">
-                    <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-white">
+                    <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-white h-auto">
                         Access powerful AI <br>For 
-                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text inline-block min-w-[280px] lg:min-w-[400px]" data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
+                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
                             <span class="wrap"></span> 
                         </span>
                     </h1>
