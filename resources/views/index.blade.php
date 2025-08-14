@@ -39,13 +39,13 @@
             </div>
 
             <div class="lg:col-span-5">
-                <div class="relative flex items-center justify-center">
+                <div class="relative flex items-center justify-center min-h-[400px] overflow-visible">
                     <!-- Spinning circles - behind the image -->
-                    <div class="absolute size-[36rem] border border-dashed rounded-full animate-[spin_120s_linear_infinite] -z-50 spinning-circle" style="border-color: rgba(30, 192, 141, 0.3);"></div>
-                    <div class="absolute size-[48rem] border border-dashed rounded-full animate-[spin_240s_linear_infinite] -z-50 spinning-circle outer" style="border-color: rgba(29, 120, 97, 0.2);"></div>
+                    <div class="absolute size-[26rem] sm:size-96 md:size-[30rem] lg:size-[32rem] xl:size-[36rem] border border-dashed rounded-full animate-[spin_120s_linear_infinite] -z-10 spinning-circle" style="border-color: rgba(30, 192, 141, 0.3);"></div>
+                    <div class="absolute size-[30rem] sm:size-[30rem] md:size-[36rem] lg:size-[40rem] xl:size-[48rem] border border-dashed rounded-full animate-[spin_240s_linear_infinite] -z-10 spinning-circle outer" style="border-color: rgba(29, 120, 97, 0.2);"></div>
                     
                     <!-- Gradient box background -->
-                    <div class="absolute size-[36rem] blur-[200px] rounded-full dark:after:to-indigo-600/50 -z-50" style="background: linear-gradient(135deg, var(--voip-primary), var(--voip-link)); opacity: 0.3;"></div>
+                    <div class="absolute size-80 sm:size-80 md:size-96 lg:size-[28rem] xl:size-[32rem] blur-[200px] rounded-full dark:after:to-indigo-600/50 -z-20" style="background: linear-gradient(135deg, var(--voip-primary), var(--voip-link)); opacity: 0.3;"></div>
                     
                     <!-- Circular container with VoIP color background - perfectly centered -->
                     <div class="relative w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0" style="background-color: #122a34; aspect-ratio: 1/1;">
