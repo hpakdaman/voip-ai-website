@@ -1,5 +1,5 @@
 /*! tailwindcss v4.0.6 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Fonts are loaded conditionally in main.blade.php */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {

@@ -26,15 +26,20 @@
         <!-- Main Css -->
         <link href="{{ asset('assets/libs/@iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css">
+        @if(!is_localhost())
+            <!-- Load Google Fonts for production -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        @else
+            <!-- Use local fonts for localhost development -->
+            <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
+        @endif
+        
         @vite('resources/css/app.css')
         <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
         <!-- VoIP AI Custom Styles -->
         <link rel="stylesheet" href="{{ asset('assets/css/voip-home.css') }}">
-        
-        @if(is_localhost())
-            <!-- Use local fonts when running on localhost -->
-            <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
-        @endif
 
     </head>
     
