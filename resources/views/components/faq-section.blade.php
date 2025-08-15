@@ -79,7 +79,7 @@ usort($faqs, function($a, $b) {
                     
                     <!-- Answer Content (Collapsible) -->
                     <div class="faq-content overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0;">
-                        <div class="px-8 pb-8">
+                        <div class="px-8 pt-8 pb-8">
                             <div class="flex">
                                 <div class="w-8 me-4 flex-shrink-0"></div> <!-- Spacer to align with icon -->
                                 <p class="text-slate-300">{{ $faq['answer'] }}</p>

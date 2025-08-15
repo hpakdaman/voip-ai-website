@@ -52,9 +52,9 @@
             <ul class="navigation-menu">
                 <li><a href="{{ url('/') }}" class="sub-menu-item active">HOME</a></li>
                 <li><a href="{{ url('/features') }}" class="sub-menu-item">FEATURES</a></li>
-                <li><a href="{{ url('/pricing') }}" class="sub-menu-item">PAGES</a></li>
-                <li><a href="{{ url('/about') }}" class="sub-menu-item">PORTFOLIO</a></li>
-                <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">COMPONENTS</a></li>
+                <li><a href="{{ url('/pricing') }}" class="sub-menu-item">PRICING</a></li>
+                <li><a href="{{ url('/about') }}" class="sub-menu-item">ABOUT</a></li>
+                <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">CONTACT</a></li>
                 
                 <!-- Mobile Language Switcher -->
                 <li class="mobile-lang-switcher border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
