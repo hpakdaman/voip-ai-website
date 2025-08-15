@@ -22,10 +22,27 @@ try {
     <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27 0%, #162f3a 50%, #0c1b27 100%); opacity: 0.95;"></div>
     
     <div class="container relative z-10">
-        <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-12">
+        <!-- Full-Width Header Section -->
+        <div class="text-center mb-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-base font-medium uppercase mb-3" 
+                style="color: var(--voip-link);">
+                {{ $sectionData['subtitle'] ?? 'Experience the Future' }}
+            </h6>
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight" 
+                data-wow-delay="0.2s">
+                {{ $sectionData['title'] ?? 'See Your Business Transform in Real-Time' }}
+            </h2>
+            <p class="text-lg text-slate-300 max-w-4xl mx-auto" 
+               data-wow-delay="0.3s">
+                {{ $sectionData['description'] ?? 'Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.' }}
+            </p>
+        </div>
+
+        <!-- Two-Column Content Below -->
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-start gap-12">
             
             <!-- Left Side - Image -->
-            <div class="lg:order-1 order-2 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+            <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
                 <div class="relative">
                     <!-- Main Image Container -->
                     <div class="relative rounded-2xl overflow-hidden"
@@ -71,36 +88,10 @@ try {
             </div>
             
             <!-- Right Side - Content -->
-            <div class="lg:order-2 order-1">
-                <!-- Section Header -->
-                <div class="mb-8">
-                    <h6 class="text-base font-medium uppercase mb-3 wow animate__animated animate__fadeInUp" 
-                        style="color: var(--voip-link);" data-wow-delay="0.1s">
-                        {{ $sectionData['subtitle'] ?? 'Experience the Future' }}
-                    </h6>
-                    <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight wow animate__animated animate__fadeInUp" 
-                        data-wow-delay="0.2s">
-                        {{ $sectionData['title'] ?? 'See Your Business Transform in Real-Time' }}
-                    </h2>
-                    <p class="text-lg text-slate-300 mb-6 wow animate__animated animate__fadeInUp" 
-                       data-wow-delay="0.3s">
-                        {{ $sectionData['description'] ?? 'Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.' }}
-                    </p>
-                </div>
-                
-                <!-- Key Headlines -->
-                <div class="mb-8 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-                    <h3 class="text-2xl font-semibold text-white mb-3">
-                        {{ $content['headline'] ?? "Don't Just Read About AI Success – Witness It Live" }}
-                    </h3>
-                    <p class="text-base" style="color: var(--voip-link);">
-                        {{ $content['subheading'] ?? 'In 15 minutes, discover how industry leaders are transforming customer experiences' }}
-                    </p>
-                </div>
-                
+            <div class="wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
                 <!-- Key Points -->
                 @if(isset($content['key_points']) && is_array($content['key_points']))
-                <div class="space-y-4 mb-8 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                <div class="space-y-4 mb-8">
                     @foreach($content['key_points'] as $point)
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
@@ -116,7 +107,7 @@ try {
                 @endif
                 
                 <!-- Social Proof & Urgency -->
-                <div class="mb-8 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                <div class="mb-8">
                     <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
                         <p class="text-white font-medium mb-2">
                             🔥 {{ $content['urgency_message'] ?? 'Join 500+ UAE businesses already using AI to dominate their markets' }}
@@ -128,11 +119,11 @@ try {
                 </div>
                 
                 <!-- CTA Section -->
-                <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                <div>
                     <!-- Primary CTA -->
                     <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
                         <a href="{{ $cta['primary_link'] ?? '/request-demo' }}" 
-                           class="inline-flex items-center py-4 px-8 text-white font-semibold text-lg rounded-xl transition-all duration-300 group"
+                           class="w-full sm:w-auto flex items-center justify-center py-4 px-8 text-white font-semibold text-lg rounded-xl transition-all duration-300 group"
                            style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
                            onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 40px rgba(30, 192, 141, 0.4)'"
                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
@@ -148,7 +139,7 @@ try {
                     
                     <!-- Demo Features -->
                     @if(isset($cta['features']) && is_array($cta['features']))
-                    <div class="flex flex-wrap gap-3">
+                    <div class="flex flex-wrap gap-3 mb-4">
                         @foreach($cta['features'] as $feature)
                         <span class="inline-flex items-center px-3 py-1 text-xs font-medium text-white rounded-full border border-white/20"
                               style="background-color: rgba(30, 192, 141, 0.1);">
@@ -160,7 +151,7 @@ try {
                     @endif
                     
                     <!-- Guarantee -->
-                    <p class="text-xs text-slate-400 mt-4 italic">
+                    <p class="text-xs text-slate-400 italic">
                         ✨ {{ $content['guarantee'] ?? 'No commitment required – just pure insights' }}
                     </p>
                 </div>
