@@ -85,7 +85,8 @@ usort($features, function($a, $b) {
 
         <!-- Call to Action -->
         <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
-            <div class="flex flex-col sm:inline-flex sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-3">
+            <!-- Main CTA Button and Description -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6">
                 <a href="{{ $sectionData['cta_link'] ?? '/features' }}" 
                    class="inline-flex items-center py-3 px-8 text-white font-medium rounded-xl transition-all duration-300 group"
                    style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
@@ -95,25 +96,25 @@ usort($features, function($a, $b) {
                     {{ $sectionData['cta_text'] ?? 'Explore All Features' }}
                 </a>
                 
-                <div class="flex items-center space-x-2 text-slate-400">
+                <div class="flex items-center gap-3 text-slate-400">
                     <span class="w-px h-6 hidden sm:block" style="background-color: rgba(255,255,255,0.2);"></span>
-                    <span class="text-sm">Learn about our complete feature set</span>
+                    <span class="text-sm text-center sm:text-left">Learn about our complete feature set</span>
                 </div>
             </div>
             
-            <!-- Additional Info -->
-            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-slate-400">
-                <div class="flex items-center space-x-2">
-                    <i class="uil uil-check-circle text-green-400"></i>
-                    <span>No Setup Fees</span>
+            <!-- Benefits Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto">
+                <div class="flex items-center justify-center md:justify-center gap-2">
+                    <i class="uil uil-check-circle text-green-400 text-lg"></i>
+                    <span class="text-sm text-slate-400">No Setup Fees</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <i class="uil uil-check-circle text-green-400"></i>
-                    <span>30-Day Free Trial</span>
+                <div class="flex items-center justify-center md:justify-center gap-2">
+                    <i class="uil uil-check-circle text-green-400 text-lg"></i>
+                    <span class="text-sm text-slate-400">30-Day Free Trial</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <i class="uil uil-check-circle text-green-400"></i>
-                    <span>24/7 Support</span>
+                <div class="flex items-center justify-center md:justify-center gap-2">
+                    <i class="uil uil-check-circle text-green-400 text-lg"></i>
+                    <span class="text-sm text-slate-400">24/7 Support</span>
                 </div>
             </div>
         </div>
