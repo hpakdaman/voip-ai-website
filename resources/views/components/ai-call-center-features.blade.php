@@ -86,19 +86,38 @@ usort($features, function($a, $b) {
         <!-- Call to Action -->
         <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
             <!-- Main CTA Button and Description -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6">
-                <a href="{{ $sectionData['cta_link'] ?? '/features' }}" 
-                   class="inline-flex items-center py-3 px-8 text-white font-medium rounded-xl transition-all duration-300 group"
-                   style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
-                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(30, 192, 141, 0.3)'"
-                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                    <i class="uil uil-arrow-right text-lg mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
-                    {{ $sectionData['cta_text'] ?? 'Explore All Features' }}
-                </a>
+            <div class="mb-6">
+                <!-- Mobile: Stacked -->
+                <div class="flex flex-col items-center gap-4 sm:hidden">
+                    <a href="{{ $sectionData['cta_link'] ?? '/features' }}" 
+                       class="inline-flex items-center py-3 px-8 text-white font-medium rounded-xl transition-all duration-300 group"
+                       style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(30, 192, 141, 0.3)'"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                        <i class="uil uil-arrow-right text-lg mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                        {{ $sectionData['cta_text'] ?? 'Explore All Features' }}
+                    </a>
+                    
+                    <div class="flex items-center gap-3 text-slate-400">
+                        <span class="text-sm">Learn about our complete feature set</span>
+                    </div>
+                </div>
                 
-                <div class="flex items-center gap-3 text-slate-400">
-                    <span class="w-px h-6 hidden sm:block" style="background-color: rgba(255,255,255,0.2);"></span>
-                    <span class="text-sm text-center sm:text-left">Learn about our complete feature set</span>
+                <!-- Desktop: Side by side -->
+                <div class="hidden sm:flex items-center justify-center gap-6">
+                    <a href="{{ $sectionData['cta_link'] ?? '/features' }}" 
+                       class="inline-flex items-center py-3 px-8 text-white font-medium rounded-xl transition-all duration-300 group"
+                       style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(30, 192, 141, 0.3)'"
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                        <i class="uil uil-arrow-right text-lg mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                        {{ $sectionData['cta_text'] ?? 'Explore All Features' }}
+                    </a>
+                    
+                    <div class="flex items-center gap-3 text-slate-400">
+                        <span class="w-px h-6" style="background-color: rgba(255,255,255,0.2);"></span>
+                        <span class="text-sm">Learn about our complete feature set</span>
+                    </div>
                 </div>
             </div>
             
