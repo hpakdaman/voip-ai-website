@@ -1,48 +1,48 @@
 {
     "section": {
-        "title": "See Your Business Transform in Real-Time",
+        "title": "Transform Your Business in Real-Time",
         "subtitle": "Experience the Future",
-        "description": "Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.",
+        "description": "See 70% cost reduction and soaring satisfaction. Our live demo shows how AI revolutionizes operations.",
         "image": "/assets/images/saas/home.png",
         "image_alt": "AI Call Center Dashboard Demo"
     },
     "content": {
-        "headline": "Don't Just Read About AI Success – Witness It Live",
-        "subheading": "In 15 minutes, discover how industry leaders are transforming customer experiences",
+        "headline": "Witness AI Success Live",
+        "subheading": "Discover how industry leaders transform customer experiences",
         "key_points": [
             {
                 "id": 1,
-                "text": "See live AI handling complex customer scenarios",
+                "text": "Watch AI handle complex scenarios",
                 "icon": "uil uil-play-circle",
                 "emphasis": true
             },
             {
                 "id": 2,
-                "text": "Calculate your exact ROI and cost savings",
+                "text": "Calculate exact ROI and savings",
                 "icon": "uil uil-calculator",
                 "emphasis": true
             },
             {
                 "id": 3,
-                "text": "Customize solutions for your specific industry",
+                "text": "Customize for your industry",
                 "icon": "uil uil-cog",
                 "emphasis": false
             }
         ],
-        "urgency_message": "Join 500+ UAE businesses already using AI to dominate their markets",
-        "social_proof": "Trusted by companies like Emirates NBD, Careem, and Noon",
+        "urgency_message": "Join 500+ UAE businesses dominating with AI",
+        "social_proof": "Trusted by Emirates NBD, Careem, Noon",
         "guarantee": "No commitment required – just pure insights"
     },
     "cta": {
-        "primary_text": "Get Your Free Live Demo",
+        "primary_text": "Get Free Live Demo",
         "primary_link": "/request-demo",
-        "secondary_text": "Book Now - Limited Slots Available",
+        "secondary_text": "Limited Slots Available",
         "urgency_note": "Next available: Today at 3:00 PM GST",
         "features": [
-            "15-minute personalized demo",
-            "Live Q&A with AI experts",
+            "15-min personalized demo",
+            "Live Q&A with experts",
             "Custom ROI calculation",
-            "Industry-specific scenarios"
+            "Industry scenarios"
         ]
     },
     "stats": [
