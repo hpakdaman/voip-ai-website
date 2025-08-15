@@ -1,87 +1,168 @@
 /**
- * Local Fonts CSS - Actual font files for local development
- * Use this file in local development when Google Fonts are not accessible
+ * Local Fonts CSS - Poppins font files for local development
+ * Use this file when Google Fonts are not accessible
  */
 
-/* Nunito Font - Primary font family (Variable Font) */
+/* Poppins Font - Primary font family (Individual Weight Files) */
+/* Thin - 100 */
 @font-face {
-    font-family: 'Nunito';
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 200 1000;
+    font-weight: 100;
     font-display: swap;
-    src: url('../fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-Thin.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Nunito';
+    font-family: 'Poppins';
     font-style: italic;
-    font-weight: 200 1000;
+    font-weight: 100;
     font-display: swap;
-    src: url('../fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-ThinItalic.ttf') format('truetype');
 }
 
-/* EB Garamond - Serif font (Variable Font) */
+/* Extra Light - 200 */
 @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400 800;
+    font-weight: 200;
     font-display: swap;
-    src: url('../fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'Poppins';
     font-style: italic;
-    font-weight: 400 800;
+    font-weight: 200;
     font-display: swap;
-    src: url('../fonts/eb-garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
 }
 
-/* Work Sans - Alternative sans serif (Variable Font) */
+/* Light - 300 */
 @font-face {
-    font-family: 'Work Sans';
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 100 900;
+    font-weight: 300;
     font-display: swap;
-    src: url('../fonts/work-sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Work Sans';
+    font-family: 'Poppins';
     font-style: italic;
-    font-weight: 100 900;
+    font-weight: 300;
     font-display: swap;
-    src: url('../fonts/work-sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-LightItalic.ttf') format('truetype');
 }
 
-/* Alex Brush - Script font */
+/* Regular - 400 */
 @font-face {
-    font-family: 'Alex Brush';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/alex-brush/AlexBrush-Regular.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
 }
 
-/* Kaushan Script - Script font */
 @font-face {
-    font-family: 'Kaushan Script';
-    font-style: normal;
+    font-family: 'Poppins';
+    font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/kaushan-script/KaushanScript-Regular.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-Italic.ttf') format('truetype');
+}
+
+/* Medium - 500 */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-MediumItalic.ttf') format('truetype');
+}
+
+/* Semi Bold - 600 */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+}
+
+/* Bold - 700 */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-BoldItalic.ttf') format('truetype');
+}
+
+/* Extra Bold - 800 */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+/* Black - 900 */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/poppins/Poppins-BlackItalic.ttf') format('truetype');
 }
 
 /* CSS Variables for font families */
 :root {
-    --font-nunito: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --font-alex: 'Alex Brush', 'Brush Script MT', cursive;
-    --font-ebgaramond: 'EB Garamond', 'Times New Roman', Georgia, serif;
-    --font-kaushan: 'Kaushan Script', 'Brush Script MT', cursive;
-    --font-work-sans: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-poppins: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Override body font to ensure local fonts are used */
 body {
-    font-family: var(--font-nunito) !important;
+    font-family: var(--font-poppins) !important;
 }

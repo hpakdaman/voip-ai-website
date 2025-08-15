@@ -794,7 +794,8 @@ The original template uses **Indigo** as the primary brand color throughout:
   - `font-sans` - Poppins (current primary font)
   - `font-serif` - Traditional serif stack  
   - `font-mono` - Monospace stack
-- **Google Fonts Integration**: Poppins, Alex Brush, EB Garamond, Kaushan Script, Work Sans
+- **Optimized Font Loading**: Poppins only (streamlined for performance)
+- **🚨 CRITICAL: NEVER BREAK FONT LOADING LOGIC**: The system uses `is_localhost()` function for smart environment detection - DO NOT modify this logic
 
 #### Previous Font Configuration (Backup for Future Reference)
 **Original Nunito Configuration** (saved 2025-08-15):
@@ -811,12 +812,14 @@ The original template uses **Indigo** as the primary brand color throughout:
 
 **CRITICAL: The website has a complex font loading system with multiple override layers. Follow ALL steps below to ensure fonts apply correctly.**
 
-**Step 1: Update Google Fonts Import**
+**Step 1: Update Font Loading (🚨 RESPECT is_localhost() LOGIC)**
 - **File**: `resources/views/layouts/main.blade.php`
-- **Location**: Lines 29-32 (Google Fonts link)
-- **Action**: Replace the font family in the Google Fonts URL with your desired font
-- **Example**: Change `family=Nunito:ital,wght@0,200..1000` to `family=Poppins:ital,wght@0,100;0,200;...;1,900`
-- **Note**: Include all weight variations (100-900) and italic styles
+- **Location**: Lines 29-37 (Font loading conditional)
+- **🚨 WARNING**: NEVER remove the `@if(is_localhost())` conditional logic
+- **Action**: Update only the font family name within the existing conditional structure
+- **Local Path**: Update `local-fonts.css` for localhost fonts
+- **Production Path**: Update Google Fonts URL for production
+- **CRITICAL**: Maintain the is_localhost() function for environment detection
 
 **Step 2: Update Tailwind Font Configuration**
 - **File**: `resources/css/app.css`
@@ -838,11 +841,11 @@ The original template uses **Indigo** as the primary brand color throughout:
 - **Code**: `--font-sans: 'YourFont', ui-sans-serif, system-ui, sans-serif !important;`
 - **Why**: The main `tailwind.css` file loads after `app.css` and overrides font settings
 
-**Step 5: Handle Localhost Development**
-- **Issue**: Localhost may use local fonts instead of Google Fonts
-- **Solution A**: Force Google Fonts for all environments (current implementation)
-- **Solution B**: Update `public/assets/css/local-fonts.css` if local font files exist
-- **Current**: Google Fonts load on all environments (lines 29-32 in main.blade.php)
+**Step 5: Environment-Specific Font Loading (OPTIMIZED SYSTEM)**
+- **Localhost**: Uses `local-fonts.css` for instant loading during development
+- **Production**: Uses Google Fonts CDN for reliability and performance
+- **Logic**: Controlled by `is_localhost()` helper function in main.blade.php
+- **🚨 NEVER BREAK**: The conditional font loading system is optimized for both environments
 
 **Step 6: Clear Browser Cache**
 - Browser caches can prevent new fonts from loading
