@@ -526,6 +526,29 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
         onmouseout="this.style.backgroundColor='transparent'">
 ```
 
+**🚨 FORBIDDEN AI DESIGN CLICHÉS - NEVER USE**
+- ❌ **Floating dots/bullets** anywhere on backgrounds
+- ❌ **Central hub designs** with connecting lines
+- ❌ **Hexagon layouts** or geometric pattern backgrounds
+- ❌ **Rotating elements** or spinning animations
+- ❌ **Glass-morphism overuse** (backdrop-blur everywhere)
+- ❌ **Flag-themed headers** with colored bars
+- ❌ **Hub-and-spoke layouts** with central focal points
+- ❌ **Connection lines** between elements
+- ❌ **Floating icon badges** positioned above cards
+- ❌ **Map silhouettes** or geographic patterns
+- ❌ **Gradient text effects** on every title
+- ❌ **Generic "Revolutionary" design patterns**
+- ❌ **Pulsing animations** on decorative elements
+
+**✅ UNIQUE DESIGN PRINCIPLES**
+- ✅ **Clean, professional layouts** that serve business purposes
+- ✅ **Purposeful animations** that enhance user experience
+- ✅ **Consistent VoIP branding** without gimmicky effects
+- ✅ **Readable typography** with proper contrast
+- ✅ **Functional hover states** that provide clear feedback
+- ✅ **Business-appropriate styling** for UAE corporate market
+
 **🚨 NEVER USE GENERIC BLUE/INDIGO GLOWS**
 - ❌ `hover:shadow-blue-500/50` (generic blue glow)
 - ❌ `hover:border-blue-400` (generic blue border)
