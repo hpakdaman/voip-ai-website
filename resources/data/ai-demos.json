@@ -1,0 +1,133 @@
+{
+    "section": {
+        "title": "AI Voice Demos",
+        "subtitle": "Experience Real AI Conversations",
+        "description": "Listen to authentic AI-powered customer interactions across different industries"
+    },
+    "demos": [
+        {
+            "id": 1,
+            "title": "Real Estate Inquiry",
+            "business_type": "Real Estate",
+            "description": "AI assistant handling property inquiries and scheduling viewings",
+            "icon": "uil uil-estate",
+            "audio_file": "real-estate-demo.mp3",
+            "duration": "1:45",
+            "scenario": "Customer calling about luxury villa availability in Dubai Marina",
+            "features": ["Property details", "Viewing scheduling", "Price negotiation"],
+            "priority": 1,
+            "delay": "0.1s"
+        },
+        {
+            "id": 2,
+            "title": "Home Repair Service",
+            "business_type": "Home Services",
+            "description": "AI handling emergency repair requests and technician dispatch",
+            "icon": "uil uil-wrench",
+            "audio_file": "repair-service-demo.mp3",
+            "duration": "2:10",
+            "scenario": "Urgent plumbing issue requiring immediate technician dispatch",
+            "features": ["Emergency triage", "Technician scheduling", "Cost estimation"],
+            "priority": 2,
+            "delay": "0.2s"
+        },
+        {
+            "id": 3,
+            "title": "Financial Advisory",
+            "business_type": "Financial Services",
+            "description": "AI providing investment advice and account management",
+            "icon": "uil uil-chart-line",
+            "audio_file": "financial-advisory-demo.mp3",
+            "duration": "2:30",
+            "scenario": "Client seeking investment portfolio recommendations",
+            "features": ["Portfolio analysis", "Risk assessment", "Investment recommendations"],
+            "priority": 3,
+            "delay": "0.3s"
+        },
+        {
+            "id": 4,
+            "title": "Healthcare Appointment",
+            "business_type": "Healthcare",
+            "description": "AI managing medical appointment scheduling and symptoms triage",
+            "icon": "uil uil-medical-drip",
+            "audio_file": "healthcare-demo.mp3",
+            "duration": "1:55",
+            "scenario": "Patient booking specialist consultation for persistent symptoms",
+            "features": ["Symptom assessment", "Doctor scheduling", "Insurance verification"],
+            "priority": 4,
+            "delay": "0.4s"
+        },
+        {
+            "id": 5,
+            "title": "E-commerce Support",
+            "business_type": "E-commerce",
+            "description": "AI handling order inquiries and return processing",
+            "icon": "uil uil-shopping-cart",
+            "audio_file": "ecommerce-demo.mp3",
+            "duration": "1:35",
+            "scenario": "Customer requesting order status and return authorization",
+            "features": ["Order tracking", "Return processing", "Product recommendations"],
+            "priority": 5,
+            "delay": "0.5s"
+        },
+        {
+            "id": 6,
+            "title": "Restaurant Reservations",
+            "business_type": "Hospitality",
+            "description": "AI managing table bookings and special dietary requirements",
+            "icon": "uil uil-restaurant",
+            "audio_file": "restaurant-demo.mp3",
+            "duration": "1:20",
+            "scenario": "Family booking anniversary dinner with dietary restrictions",
+            "features": ["Table availability", "Special requests", "Menu recommendations"],
+            "priority": 6,
+            "delay": "0.6s"
+        },
+        {
+            "id": 7,
+            "title": "Travel Booking",
+            "business_type": "Travel & Tourism",
+            "description": "AI assisting with flight bookings and travel arrangements",
+            "icon": "uil uil-plane-departure",
+            "audio_file": "travel-demo.mp3",
+            "duration": "2:45",
+            "scenario": "Business traveler booking complex multi-city itinerary",
+            "features": ["Flight search", "Hotel booking", "Visa requirements"],
+            "priority": 7,
+            "delay": "0.7s"
+        },
+        {
+            "id": 8,
+            "title": "Insurance Claims",
+            "business_type": "Insurance",
+            "description": "AI processing insurance claims and damage assessments",
+            "icon": "uil uil-shield-check",
+            "audio_file": "insurance-demo.mp3",
+            "duration": "2:15",
+            "scenario": "Policyholder reporting vehicle accident and initiating claim",
+            "features": ["Claim initiation", "Damage assessment", "Adjuster scheduling"],
+            "priority": 8,
+            "delay": "0.8s"
+        },
+        {
+            "id": 9,
+            "title": "Legal Advisory",
+            "business_type": "Legal Services",
+            "description": "AI providing company establishment guidance and business legal advisory",
+            "icon": "uil uil-balance-scale",
+            "audio_file": "legal-services-demo.mp3",
+            "duration": "2:35",
+            "scenario": "Entrepreneur seeking guidance on UAE company formation and legal compliance",
+            "features": ["Company registration", "Legal compliance", "Business advisory"],
+            "priority": 9,
+            "delay": "0.9s"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-15",
+        "total_count": 9,
+        "section_type": "ai_demos",
+        "audio_base_path": "/assets/audio/demos/"
+    }
+}

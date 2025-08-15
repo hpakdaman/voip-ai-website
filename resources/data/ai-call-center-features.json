@@ -1,0 +1,89 @@
+{
+    "section": {
+        "title": "Transform Your Business Communication",
+        "subtitle": "AI Call Center Benefits",
+        "description": "Discover how automated AI call centers revolutionize customer service, reduce costs, and boost efficiency for modern businesses",
+        "cta_text": "Explore All Features",
+        "cta_link": "/features"
+    },
+    "features": [
+        {
+            "id": 1,
+            "title": "24/7 Availability",
+            "description": "Never miss a customer call with round-the-clock AI agents ready to assist",
+            "icon": "uil uil-clock-three",
+            "benefit": "Increased customer satisfaction and global reach",
+            "priority": 1,
+            "delay": "0.1s"
+        },
+        {
+            "id": 2,
+            "title": "Cost Reduction",
+            "description": "Reduce operational costs by up to 70% compared to traditional call centers",
+            "icon": "uil uil-money-withdraw",
+            "benefit": "Significant savings on staffing and infrastructure",
+            "priority": 2,
+            "delay": "0.2s"
+        },
+        {
+            "id": 3,
+            "title": "Instant Response",
+            "description": "Zero wait times with immediate call handling and query resolution",
+            "icon": "uil uil-rocket",
+            "benefit": "Enhanced customer experience and faster service",
+            "priority": 3,
+            "delay": "0.3s"
+        },
+        {
+            "id": 4,
+            "title": "Multilingual Support",
+            "description": "Communicate in 40+ languages including Arabic and English for UAE market",
+            "icon": "uil uil-globe",
+            "benefit": "Expand to global markets with local language support",
+            "priority": 4,
+            "delay": "0.4s"
+        },
+        {
+            "id": 5,
+            "title": "Scalable Operations",
+            "description": "Handle unlimited concurrent calls without hiring additional staff",
+            "icon": "uil uil-chart-growth",
+            "benefit": "Grow your business without operational constraints",
+            "priority": 5,
+            "delay": "0.5s"
+        },
+        {
+            "id": 6,
+            "title": "Data Intelligence",
+            "description": "Gain insights from every interaction with advanced analytics and reporting",
+            "icon": "uil uil-brain",
+            "benefit": "Make data-driven decisions to improve service quality",
+            "priority": 6,
+            "delay": "0.6s"
+        },
+        {
+            "id": 7,
+            "title": "Human-like Conversations",
+            "description": "Natural language processing creates authentic customer interactions",
+            "icon": "uil uil-comments-alt",
+            "benefit": "Customers feel valued with personalized communication",
+            "priority": 7,
+            "delay": "0.7s"
+        },
+        {
+            "id": 8,
+            "title": "Seamless Integration",
+            "description": "Connect with existing CRM, ERP, and business systems effortlessly",
+            "icon": "uil uil-server-network",
+            "benefit": "Maintain workflow continuity with existing tools",
+            "priority": 8,
+            "delay": "0.8s"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-15",
+        "total_count": 8,
+        "section_type": "ai_call_center_features"
+    }
+}

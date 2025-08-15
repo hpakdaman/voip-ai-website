@@ -1,0 +1,76 @@
+{
+    "section": {
+        "title": "See Your Business Transform in Real-Time",
+        "subtitle": "Experience the Future",
+        "description": "Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.",
+        "image": "/assets/images/saas/home.png",
+        "image_alt": "AI Call Center Dashboard Demo"
+    },
+    "content": {
+        "headline": "Don't Just Read About AI Success – Witness It Live",
+        "subheading": "In 15 minutes, discover how industry leaders are transforming customer experiences",
+        "key_points": [
+            {
+                "id": 1,
+                "text": "See live AI handling complex customer scenarios",
+                "icon": "uil uil-play-circle",
+                "emphasis": true
+            },
+            {
+                "id": 2,
+                "text": "Calculate your exact ROI and cost savings",
+                "icon": "uil uil-calculator",
+                "emphasis": true
+            },
+            {
+                "id": 3,
+                "text": "Customize solutions for your specific industry",
+                "icon": "uil uil-cog",
+                "emphasis": false
+            }
+        ],
+        "urgency_message": "Join 500+ UAE businesses already using AI to dominate their markets",
+        "social_proof": "Trusted by companies like Emirates NBD, Careem, and Noon",
+        "guarantee": "No commitment required – just pure insights"
+    },
+    "cta": {
+        "primary_text": "Get Your Free Live Demo",
+        "primary_link": "/request-demo",
+        "secondary_text": "Book Now - Limited Slots Available",
+        "urgency_note": "Next available: Today at 3:00 PM GST",
+        "features": [
+            "15-minute personalized demo",
+            "Live Q&A with AI experts",
+            "Custom ROI calculation",
+            "Industry-specific scenarios"
+        ]
+    },
+    "stats": [
+        {
+            "number": "70%",
+            "label": "Cost Reduction",
+            "icon": "uil uil-money-withdraw"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "icon": "uil uil-clock-three"
+        },
+        {
+            "number": "40+",
+            "label": "Languages",
+            "icon": "uil uil-globe"
+        },
+        {
+            "number": "99.9%",
+            "label": "Uptime",
+            "icon": "uil uil-check-circle"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-15",
+        "section_type": "demo_request",
+        "conversion_focus": "high_urgency"
+    }
+}
