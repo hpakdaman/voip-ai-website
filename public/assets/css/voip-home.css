@@ -260,6 +260,40 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     animation: blink 1s infinite;
 }
 
+/* Hero heading container with responsive max-height to prevent layout shifts */
+.hero-heading-fixed {
+    /* Mobile: text-2xl (24px) needs ~4rem for 2 lines */
+    max-height: 4rem;
+}
+
+/* Small screens: text-3xl (30px) */
+@media (min-width: 640px) {
+    .hero-heading-fixed {
+        max-height: 6.5rem;
+    }
+}
+
+/* Medium screens: text-4xl (36px) */
+@media (min-width: 768px) {
+    .hero-heading-fixed {
+        max-height: 6rem;
+    }
+}
+
+/* Large screens: text-5xl (48px) */
+@media (min-width: 1024px) {
+    .hero-heading-fixed {
+        max-height: 8rem;
+    }
+}
+
+/* Extra large screens: text-6xl (60px) */
+@media (min-width: 1280px) {
+    .hero-heading-fixed {
+        max-height: 10rem;
+    }
+}
+
 @keyframes blink {
     0%, 50% { border-color: var(--voip-link); }
     51%, 100% { border-color: transparent; }

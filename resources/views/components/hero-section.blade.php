@@ -5,7 +5,7 @@
         <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
             <div class="lg:col-span-7">
                 <div class="lg:me-6 lg:text-start text-center">
-                    <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-white h-auto">
+                    <h1 class="font-bold lg:leading-normal leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 text-white overflow-hidden hero-heading-fixed">
                         Access powerful AI <br>For 
                         <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
                             <span class="wrap"></span> 
