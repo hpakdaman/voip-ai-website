@@ -38,7 +38,7 @@ try {
         </div>
 
         <!-- Two Column Layout -->
-        <div class="grid lg:grid-cols-2 grid-cols-1 items-start gap-12">
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-start gap-16">
             
             <!-- Left Side - Image -->
             <div class="lg:order-1 order-2 wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
@@ -84,6 +84,18 @@ try {
                     <div class="absolute -bottom-8 -left-8 w-16 h-16 rounded-full opacity-15"
                          style="background: radial-gradient(circle, var(--voip-primary) 0%, transparent 70%);"></div>
                 </div>
+                
+                <!-- Demo Features Below Image -->
+                @if(isset($cta['features']) && is_array($cta['features']))
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    @foreach($cta['features'] as $feature)
+                    <div class="flex items-center space-x-2">
+                        <i class="uil uil-check-circle text-sm" style="color: var(--voip-link);"></i>
+                        <span class="text-white text-sm">{{ $feature }}</span>
+                    </div>
+                    @endforeach
+                </div>
+                @endif
             </div>
             
             <!-- Right Side - Content -->
@@ -146,18 +158,6 @@ try {
                         </div>
                     </div>
                     
-                    <!-- Demo Features -->
-                    @if(isset($cta['features']) && is_array($cta['features']))
-                    <div class="flex flex-wrap gap-3 mb-4">
-                        @foreach($cta['features'] as $feature)
-                        <span class="inline-flex items-center px-3 py-1 text-xs font-medium text-white rounded-full border border-white/20"
-                              style="background-color: rgba(30, 192, 141, 0.1);">
-                            <i class="uil uil-check-circle text-green-400 text-sm mr-1"></i>
-                            {{ $feature }}
-                        </span>
-                        @endforeach
-                    </div>
-                    @endif
                     
                     <!-- Guarantee -->
                     <p class="text-xs text-slate-400 italic">
