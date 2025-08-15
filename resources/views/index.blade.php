@@ -14,7 +14,7 @@
 
 @include('components.who-we-are')
 
-@include('components.uae-advantage')
+@include('components.ai-call-center-features')
 
 {{-- @include('components.core-benefits')
 
@@ -33,6 +33,10 @@
 @include('components.pricing-preview')
 
 @include('components.trends-section') --}}
+
+@include('components.demo-request')
+
+@include('components.ai-demos-slider')
 
 @include('components.faq-section')
 
