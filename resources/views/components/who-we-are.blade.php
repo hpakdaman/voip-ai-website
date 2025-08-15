@@ -123,11 +123,11 @@ usort($whoWeAreFeatures, function($a, $b) {
                         <div class="grid lg:grid-cols-3 gap-8 items-center">
                             <!-- Left: Main CTA Content -->
                             <div class="lg:col-span-2">
-                                <div class="flex items-start gap-4 mb-6">
-                                    <div class="bg-gradient-to-br from-slate-700 to-slate-800 p-3 rounded-xl">
+                                <div class="flex items-start gap-4 mb-6 max-sm:flex-col">
+                                    <div class="bg-gradient-to-br from-slate-700 to-slate-800 p-3 rounded-xl max-sm:mx-auto">
                                         <i class="uil uil-building text-2xl" style="color: var(--voip-link);"></i>
                                     </div>
-                                    <div>
+                                    <div class="max-sm:text-center">
                                         <h4 class="text-2xl font-bold text-white mb-2">{{ $ctaData['title'] ?? 'Let\'s Build the Future Together' }}</h4>
                                         <p class="text-slate-300 mb-3">{{ $ctaData['description'] ?? 'Partner with Dubai\'s leading VoIP AI specialists' }}</p>
                                         @if(isset($ctaData['highlight']))
