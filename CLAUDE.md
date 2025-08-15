@@ -68,16 +68,18 @@ This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from 
 ### **🚨 CRITICAL: "Merge" Command Protocol**
 When the user says **"merge"**, execute this exact sequence WITHOUT confirmation:
 
-1. **Check current branch**: `git branch --show-current`
+1. **Check current branch**: `git branch --show-current` (store as $ORIGINAL_BRANCH)
 2. **Commit all changes**: `git add . && git commit -m "[descriptive message]"`
-3. **Push current branch**: `git push origin [current-branch]`
+3. **Push current branch**: `git push origin $ORIGINAL_BRANCH`
 4. **Switch to main**: `git checkout main`
 5. **Pull latest main**: `git pull origin main`
-6. **Merge current branch to main**: `git merge [current-branch]`
+6. **Merge current branch to main**: `git merge $ORIGINAL_BRANCH`
 7. **Push to main**: `git push origin main`
-8. **Switch back to original branch**: `git checkout [original-branch]`
+8. **Switch back to original branch**: `git checkout $ORIGINAL_BRANCH`
 9. **Merge main changes back**: `git merge main`
-10. **Push updated branch**: `git push origin [current-branch]`
+10. **Push updated branch**: `git push origin $ORIGINAL_BRANCH`
+
+**IMPORTANT**: Always end on the original branch where the user started, NOT on main!
 
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)

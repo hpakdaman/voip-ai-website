@@ -3,7 +3,7 @@
     <div class="container relative">
         <!-- Logo container-->
         <a class="logo" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="inline-block h-8" alt="Sawtic">
+            <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="inline-block h-10" alt="Sawtic">
         </a>
 
         <!-- End Logo container-->
