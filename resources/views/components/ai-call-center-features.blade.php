@@ -85,7 +85,7 @@ usort($features, function($a, $b) {
 
         <!-- Call to Action -->
         <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
-            <div class="inline-flex items-center justify-center space-x-3">
+            <div class="flex flex-col sm:inline-flex sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-3">
                 <a href="{{ $sectionData['cta_link'] ?? '/features' }}" 
                    class="inline-flex items-center py-3 px-8 text-white font-medium rounded-xl transition-all duration-300 group"
                    style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);"
@@ -96,13 +96,13 @@ usort($features, function($a, $b) {
                 </a>
                 
                 <div class="flex items-center space-x-2 text-slate-400">
-                    <span class="w-px h-6" style="background-color: rgba(255,255,255,0.2);"></span>
+                    <span class="w-px h-6 hidden sm:block" style="background-color: rgba(255,255,255,0.2);"></span>
                     <span class="text-sm">Learn about our complete feature set</span>
                 </div>
             </div>
             
             <!-- Additional Info -->
-            <div class="mt-6 flex items-center justify-center space-x-8 text-sm text-slate-400">
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-slate-400">
                 <div class="flex items-center space-x-2">
                     <i class="uil uil-check-circle text-green-400"></i>
                     <span>No Setup Fees</span>
