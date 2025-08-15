@@ -183,8 +183,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.transform = 'translateY(-8px) scale(1.02)';
                 this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
                 
-                // Glow effect
-                this.style.boxShadow = '0 25px 50px -12px rgba(79, 70, 229, 0.25)';
+                // VoIP Theme Glow effect using CSS variables
+                this.style.setProperty('box-shadow', '0 25px 50px -12px var(--voip-hover)');
             });
             
             card.addEventListener('mouseleave', function() {

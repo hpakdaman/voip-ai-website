@@ -549,6 +549,199 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
 - ✅ **Functional hover states** that provide clear feedback
 - ✅ **Business-appropriate styling** for UAE corporate market
 
+**♿ ACCESSIBILITY REQUIREMENTS (MANDATORY)**
+
+**🔥 CRITICAL: Never Remove Focus Outlines**
+```css
+/* FORBIDDEN - Never do this */
+*:focus { outline: none; }
+button:focus { outline: none; }
+
+/* REQUIRED - Global focus override (implemented in voip-home.css) */
+*:focus,
+*:focus-visible,
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--voip-link) !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 4px rgba(30, 192, 141, 0.15) !important;
+}
+```
+
+**🚨 BLUE GLOW ISSUE RESOLVED GLOBALLY & PERMANENTLY**
+The website now has comprehensive focus outline overrides that:
+- ✅ **Override all browser defaults** (Chrome blue, Firefox orange, Safari blue)
+- ✅ **Override Tailwind focus utilities** (.focus:ring-blue-500, .focus:outline-indigo-500, etc.)
+- ✅ **Use VoIP theme colors consistently** (#1ec08d green instead of blue)
+- ✅ **Maintain accessibility** with proper contrast and visibility
+- ✅ **Apply with !important** to ensure precedence over all other styles
+
+**🎭 ANIMATION CLASSES BLUE GLOW - PERMANENT SOLUTION**
+**CRITICAL**: Animation wrapper classes (`.wow`, `.group`, `.animated`, `.premium-card`) were causing blue focus outlines. This is now permanently resolved with:
+
+```css
+/* Remove focus from animation wrappers */
+.wow:focus,
+.group:focus,
+[class*="animate__"]:focus,
+.premium-card:focus,
+.uae-card:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* VoIP focus ONLY on interactive elements inside */
+.wow a:focus, .group button:focus, etc. {
+    outline: 2px solid var(--voip-link) !important;
+    box-shadow: 0 0 0 4px rgba(30, 192, 141, 0.15) !important;
+}
+```
+
+**⚠️ FUTURE DEVELOPMENT RULE**
+When adding new components with animation classes:
+- ❌ **NEVER** allow focus on wrapper divs with `.wow`, `.group`, `.animated` classes
+- ✅ **ALWAYS** ensure only interactive elements (a, button, input) within can receive focus
+- ✅ **TEST** all new animated components by pressing Tab key to check for blue glows
+
+**🎨 JAVASCRIPT COLOR THEME INTEGRATION**
+**CRITICAL**: When applying colors in JavaScript, ALWAYS use CSS variables to maintain theme consistency:
+
+```javascript
+// CORRECT: Use setProperty() with CSS variables
+this.style.setProperty('box-shadow', '0 25px 50px -12px var(--voip-hover)');
+
+// ALTERNATIVE: Use getComputedStyle() for complex cases
+const voipLinkColor = getComputedStyle(document.documentElement).getPropertyValue('--voip-link').trim();
+this.style.boxShadow = `0 25px 50px -12px ${voipLinkColor}`;
+
+// FORBIDDEN: Hardcoded colors in JavaScript
+this.style.boxShadow = '0 25px 50px -12px rgba(79, 70, 229, 0.25)'; // Blue hardcoded
+
+// NOTE: You CANNOT use var(--voip-link) directly in JavaScript strings
+// this.style.boxShadow = '0 25px 50px -12px var(--voip-link)'; // WON'T WORK
+```
+
+**Available VoIP CSS Variables for JavaScript:**
+- `--voip-bg` - Main background color
+- `--voip-dark-bg` - Dark background color  
+- `--voip-primary` - Primary button color
+- `--voip-link` - Link and accent color (most common for glows)
+- `--primary-gradient` - Full gradient definition
+
+## 📚 Template Styling Pattern Library
+
+### **4-Item Section Layout Patterns (Comprehensive Search Results)**
+
+**Purpose**: Reference library of different styling approaches for displaying 4 feature/advantage items, gathered from template examples.
+
+#### **1. Traditional Grid Cards Pattern**
+**File**: `examples/Landing/resources/views/includes/Landings/index-marketing/solutions.blade.php`
+- **Layout**: 4-column grid with shadow cards
+- **Features**: `rounded-2xl bg-white dark:bg-slate-900` with `hover:shadow-md`
+- **Icons**: Feather icons (codesandbox, send, star, bookmark)
+- **Animation**: `duration-500` smooth transitions
+
+#### **2. Horizontal Icon Cards with Hover Scale**
+**File**: `examples/Landing/resources/views/includes/Landings/index-corporate/key-features1.blade.php`
+- **Layout**: Compact horizontal cards with side-by-side icon and text
+- **Features**: `hover:scale-105` scale animation on hover
+- **Icons**: Rotated feather icons with gradient backgrounds
+- **Styling**: `-rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10`
+
+#### **3. Animated Staggered Cards (VoIP Current Style)**
+**File**: `examples/Landing/resources/views/includes/Landings/index-saas/features.blade.php`
+- **Layout**: Grid with WOW.js animations
+- **Features**: `wow animate__animated animate__fadeInUp` with `data-wow-delay`
+- **Timing**: Progressive delays from 0.1s to 1.7s
+- **Best For**: Current VoIP website approach
+
+#### **4. Split-Screen Layout (6 Items Adaptable to 4)**
+**File**: `examples/Landing/resources/views/includes/Landings/index-apps/key-features.blade.php`
+- **Layout**: 3 items left, image center, 3 items right
+- **Features**: `md:order-2 order-1` responsive reordering
+- **Icons**: Circular backgrounds with hover color transitions
+
+#### **5. Hexagon Icon Cards**
+**File**: `examples/Landing/resources/views/includes/Landings/index-coworking/our-services1.blade.php`
+- **Layout**: Grid with hexagon background shapes
+- **Features**: `fill-indigo-600/5` hexagon backgrounds with absolute positioning
+- **Icons**: Unicons centered within hexagon shapes
+
+#### **6. AI Process Flow Cards**
+**File**: `examples/Landing/resources/views/includes/Landings/index-ai/features3.blade.php`
+- **Layout**: Process step cards with connecting arrows
+- **Features**: Large gradient text icons with watermark backgrounds
+- **Icons**: `bg-gradient-to-tl to-indigo-600 from-red-600` with `opacity-5 text-9xl`
+
+#### **7. Image Overlay Cards with Reveal Effect**
+**File**: `examples/Landing/resources/views/includes/Landings/index-gym/features5.blade.php`
+- **Layout**: Cards with hidden image overlays
+- **Features**: `hidden group-hover:block` hover reveals
+- **Border**: `border-t-8 border-indigo-600/50` top accent borders
+
+### **Reusable Styling Techniques**
+
+#### **Color & Effects Patterns:**
+- **VoIP Theme Integration**: Replace any `indigo-600` with `style="color: var(--voip-link);"`
+- **Gradient Backgrounds**: `bg-gradient-to-r from-transparent to-indigo-600/10`
+- **Hover Glows**: `hover:shadow-md dark:hover:shadow-gray-700`
+- **Scale Animations**: `hover:scale-105 duration-500`
+
+#### **Icon Presentation Styles:**
+- **Circular with Rotation**: `-rotate-45` with `rotate-45` counter-rotation
+- **Hexagon Backgrounds**: Feather hexagon shapes with centered icons
+- **Gradient Text Icons**: Material Design icons with color gradients
+- **Watermark Icons**: Large background icons with low opacity (`opacity-5 text-9xl`)
+
+#### **Border & Accent Techniques:**
+- **Top Borders**: `border-t-8 border-indigo-600/50`
+- **Dashed Borders**: `border border-dashed border-white/30` (current VoIP style)
+- **Left Accent**: `border-left: 4px solid var(--voip-link)`
+- **Gradient Outlines**: Subtle gradient border effects
+
+#### **Grid System Options:**
+- **Equal 4-Column**: `lg:col-span-3 md:col-span-6`
+- **2x2 Grid**: `grid-cols-1 md:grid-cols-2` (current VoIP approach)
+- **4-Column**: `grid-cols-1 md:grid-cols-2 lg:grid-cols-4`
+- **Split Layout**: 3-image-3 arrangement for 6 items
+
+#### **Animation Approaches:**
+- **WOW.js Integration**: `wow animate__animated animate__fadeInUp`
+- **Staggered Delays**: `data-wow-delay="{{ 0.1 + ($index * 0.2) }}s"`
+- **Hover Transforms**: `hover:scale-105 hover:shadow-md`
+- **Progressive Reveals**: Sequential timing delays
+
+### **VoIP-Specific Adaptations:**
+When adapting any template pattern for VoIP website:
+1. **Replace all `indigo-600` with `var(--voip-link)`**
+2. **Use VoIP background**: `style="background-color: var(--voip-dark-bg);"`
+3. **Apply VoIP hover effects**: `onmouseover="this.style.backgroundColor='rgba(30, 192, 141, 0.05)'"`
+4. **Maintain accessibility**: Ensure proper contrast with VoIP dark themes
+5. **Use consistent animations**: Stick with `duration-500` and WOW.js patterns
+
+**Focus Style Implementation:**
+- ✅ **Universal focus styles** applied via `*:focus` selector
+- ✅ **VoIP theme colors** for focus indicators (`var(--voip-link)`)
+- ✅ **Enhanced focus** for interactive elements with box-shadow
+- ✅ **Proper contrast** - VoIP green (#1ec08d) provides excellent visibility
+- ✅ **Consistent offset** (2px) for all focus indicators
+
+**Keyboard Navigation Requirements:**
+- ✅ **All interactive elements** must be keyboard accessible
+- ✅ **Logical tab order** through components
+- ✅ **Clear focus indicators** on all focusable elements
+- ✅ **No focus traps** without proper escape mechanisms
+
+**Testing Checklist:**
+- [ ] Tab through entire page using keyboard only
+- [ ] All buttons, links, and form elements have visible focus
+- [ ] Focus indicators use VoIP theme colors
+- [ ] No elements have `outline: none` without alternative focus styles
+- [ ] Focus indicators have sufficient contrast (WCAG AA: 3:1 minimum)
+
 **🚨 NEVER USE GENERIC BLUE/INDIGO GLOWS**
 - ❌ `hover:shadow-blue-500/50` (generic blue glow)
 - ❌ `hover:border-blue-400` (generic blue border)
