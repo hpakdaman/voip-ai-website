@@ -22,17 +22,17 @@ try {
     <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27 0%, #162f3a 50%, #0c1b27 100%); opacity: 0.95;"></div>
     
     <div class="container relative z-10">
+<<<<<<< HEAD
         <!-- Section Header - Full Width -->
-        <div class="text-center mb-12">
-            <h6 class="text-base font-medium uppercase mb-3 wow animate__animated animate__fadeInUp" 
-                style="color: var(--voip-link);" data-wow-delay="0.1s">
+        <div class="text-center mb-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-base font-medium uppercase mb-3" 
+                style="color: var(--voip-link);">
                 {{ $sectionData['subtitle'] ?? 'Experience the Future' }}
             </h6>
-            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight wow animate__animated animate__fadeInUp" 
-                data-wow-delay="0.2s">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 {{ $sectionData['title'] ?? 'See Your Business Transform in Real-Time' }}
             </h2>
-            <p class="text-lg text-slate-300 mb-6 max-w-4xl mx-auto wow animate__animated animate__fadeInUp" 
+            <p class="text-lg text-slate-300 max-w-4xl mx-auto"
                data-wow-delay="0.3s">
                 {{ $sectionData['description'] ?? 'Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.' }}
             </p>
@@ -99,6 +99,35 @@ try {
                     </p>
                 </div>
                 
+                <!-- Key Points -->
+                @if(isset($content['key_points']) && is_array($content['key_points']))
+                <div class="space-y-4 mb-8">
+                    @foreach($content['key_points'] as $point)
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                             style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <i class="{{ $point['icon'] ?? 'uil uil-check' }} text-white text-sm"></i>
+                        </div>
+                        <p class="text-white {{ ($point['emphasis'] ?? false) ? 'font-semibold' : '' }}">
+                            {{ $point['text'] ?? 'Key benefit point' }}
+                        </p>
+                    </div>
+                    @endforeach
+                </div>
+                @endif
+                
+                <!-- Social Proof & Urgency -->
+                <div class="mb-8">
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                        <p class="text-white font-medium mb-2">
+                            🔥 {{ $content['urgency_message'] ?? 'Join 500+ UAE businesses already using AI to dominate their markets' }}
+                        </p>
+                        <p class="text-sm text-slate-400">
+                            {{ $content['social_proof'] ?? 'Trusted by companies like Emirates NBD, Careem, and Noon' }}
+                        </p>
+                    </div>
+                </div>
+                
                 <!-- CTA Section -->
                 <div>
                     <!-- Primary CTA -->
@@ -120,7 +149,7 @@ try {
                     
                     <!-- Demo Features -->
                     @if(isset($cta['features']) && is_array($cta['features']))
-                    <div class="flex flex-wrap gap-3">
+                    <div class="flex flex-wrap gap-3 mb-4">
                         @foreach($cta['features'] as $feature)
                         <span class="inline-flex items-center px-3 py-1 text-xs font-medium text-white rounded-full border border-white/20"
                               style="background-color: rgba(30, 192, 141, 0.1);">
@@ -132,7 +161,7 @@ try {
                     @endif
                     
                     <!-- Guarantee -->
-                    <p class="text-xs text-slate-400 mt-4 italic">
+                    <p class="text-xs text-slate-400 italic">
                         ✨ {{ $content['guarantee'] ?? 'No commitment required – just pure insights' }}
                     </p>
                 </div>
