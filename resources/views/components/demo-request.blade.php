@@ -22,27 +22,27 @@ try {
     <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27 0%, #162f3a 50%, #0c1b27 100%); opacity: 0.95;"></div>
     
     <div class="container relative z-10">
-        <!-- Full-Width Header Section -->
+<<<<<<< HEAD
+        <!-- Section Header - Full Width -->
         <div class="text-center mb-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
             <h6 class="text-base font-medium uppercase mb-3" 
                 style="color: var(--voip-link);">
                 {{ $sectionData['subtitle'] ?? 'Experience the Future' }}
             </h6>
-            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight" 
-                data-wow-delay="0.2s">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 {{ $sectionData['title'] ?? 'See Your Business Transform in Real-Time' }}
             </h2>
-            <p class="text-lg text-slate-300 max-w-4xl mx-auto" 
+            <p class="text-lg text-slate-300 max-w-4xl mx-auto"
                data-wow-delay="0.3s">
                 {{ $sectionData['description'] ?? 'Watch your customer service costs drop by 70% while satisfaction soars. Our live demo reveals exactly how AI will revolutionize your business operations.' }}
             </p>
         </div>
 
-        <!-- Two-Column Content Below -->
+        <!-- Two Column Layout -->
         <div class="grid lg:grid-cols-2 grid-cols-1 items-start gap-12">
             
             <!-- Left Side - Image -->
-            <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
+            <div class="lg:order-1 order-2 wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
                 <div class="relative">
                     <!-- Main Image Container -->
                     <div class="relative rounded-2xl overflow-hidden"
@@ -88,7 +88,17 @@ try {
             </div>
             
             <!-- Right Side - Content -->
-            <div class="wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
+            <div class="lg:order-2 order-1 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
+                <!-- Key Headlines -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold text-white mb-4">
+                        {{ $content['headline'] ?? "Don't Just Read About AI Success – Witness It Live" }}
+                    </h3>
+                    <p class="text-base text-slate-300">
+                        {{ $content['subheading'] ?? 'In 15 minutes, discover how industry leaders are transforming customer experiences' }}
+                    </p>
+                </div>
+                
                 <!-- Key Points -->
                 @if(isset($content['key_points']) && is_array($content['key_points']))
                 <div class="space-y-4 mb-8">
@@ -131,7 +141,7 @@ try {
                             {{ $cta['primary_text'] ?? 'Get Your Free Live Demo' }}
                         </a>
                         
-                        <div class="text-left">
+                        <div class="text-left sm:text-left text-center w-full sm:w-auto">
                             <p class="text-sm font-medium text-white">{{ $cta['secondary_text'] ?? 'Book Now - Limited Slots Available' }}</p>
                             <p class="text-xs" style="color: var(--voip-link);">{{ $cta['urgency_note'] ?? 'Next available: Today at 3:00 PM GST' }}</p>
                         </div>

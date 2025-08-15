@@ -119,7 +119,8 @@ usort($whoWeAreFeatures, function($a, $b) {
             <div class="wow animate__animated animate__fadeInUp" data-wow-delay="1.4s">
                 @if(isset($ctaData['type']) && $ctaData['type'] === 'business_card')
                     <!-- Business Card Layout -->
-                    <div class="bg-gradient-to-r from-slate-800/60 to-slate-900/60 backdrop-blur-sm rounded-2xl p-8 border border-white/10 shadow-2xl">
+                    <div class="bg-gradient-to-r from-slate-800/60 to-slate-900/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 shadow-2xl">
+                        
                         <div class="grid lg:grid-cols-3 gap-8 items-center">
                             <!-- Left: Main CTA Content -->
                             <div class="lg:col-span-2">
