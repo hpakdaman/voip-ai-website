@@ -67,7 +67,7 @@ try {
                     
                     <!-- Floating Stats -->
                     @if(!empty($stats))
-                    <div class="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                    <div class="absolute -bottom-6 right-0 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
                         <div class="grid grid-cols-2 gap-3 text-center">
                             @foreach(array_slice($stats, 0, 4) as $stat)
                             <div class="text-center">
