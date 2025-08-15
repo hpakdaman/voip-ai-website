@@ -82,7 +82,7 @@ usort($whoWeAreFeatures, function($a, $b) {
                 <p class="text-slate-300 mb-6 leading-relaxed">
                     {{ $missionData['description'] ?? 'To empower UAE and MENA businesses with cutting-edge AI communication technology.' }}
                 </p>
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     @if(isset($missionData['company_info']) && is_array($missionData['company_info']))
                         @foreach($missionData['company_info'] as $info)
                             <div class="text-center p-4 rounded-lg" style="background: rgba(30, 192, 141, 0.1);">
