@@ -22,8 +22,7 @@ try {
     <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27 0%, #162f3a 50%, #0c1b27 100%); opacity: 0.95;"></div>
     
     <div class="container relative z-10">
-<<<<<<< HEAD
-        <!-- Section Header - Full Width -->
+        <!-- Full-Width Header Section -->
         <div class="text-center mb-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
             <h6 class="text-base font-medium uppercase mb-3" 
                 style="color: var(--voip-link);">
