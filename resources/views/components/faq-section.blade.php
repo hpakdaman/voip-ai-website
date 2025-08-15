@@ -101,7 +101,7 @@ usort($faqs, function($a, $b) {
                     <p class="text-slate-300 mb-6">
                         Our UAE-based experts are ready to help you understand how our AI VoIP solution can transform your business
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
+                    <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
                         <a href="{{ url('/contact-us') }}" class="py-3 px-8 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center text-white rounded-md hover:scale-105 transition-all hover-voip-button" style="background-color: var(--voip-primary);">
                             Contact Support
                         </a>
