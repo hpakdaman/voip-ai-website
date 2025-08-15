@@ -70,10 +70,37 @@ usort($whoWeAreFeatures, function($a, $b) {
 });
 @endphp
 
-<!-- Company Info Section Start -->
+<!-- Who We Are Section Start -->
 <section class="relative md:py-24 py-16" style="background-color: var(--voip-dark-bg);">
     <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27, #162f3a); opacity: 0.9;"></div>
     <div class="container relative z-1">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h6 class="text-base font-medium uppercase mb-2 wow animate__animated animate__fadeInUp" style="color: var(--voip-link);" data-wow-delay="0.1s">{{ $sectionData['subtitle'] ?? 'About Our Company' }}</h6>
+            <h2 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-bold text-white wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                {{ $sectionData['title'] ?? 'Who We Are' }}
+            </h2>
+            <p class="text-slate-300 max-w-2xl mx-auto wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                {{ $sectionData['description'] ?? 'We are a UAE-based technology company specializing in AI-powered VoIP solutions.' }}
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 gap-[30px] items-stretch">
+            @foreach ($whoWeAreFeatures as $index => $feature)
+                <div class="border border-dashed border-white/30 rounded-xl p-8 text-center duration-500 premium-card who-we-are-card h-full flex flex-col wow animate__animated animate__fadeInUp" data-wow-delay="{{ $feature['delay'] ?? (0.4 + ($index * 0.2)) }}s">
+                    <div class="mb-6">
+                        <i class="{{ $feature['icon'] }} text-5xl mb-4" style="color: var(--voip-link);"></i>
+                        <div class="stat-container">
+                            <h3 class="text-3xl font-bold text-white mb-1">{{ $feature['stat'] }}</h3>
+                            <p class="text-sm text-slate-400">{{ $feature['statLabel'] }}</p>
+                        </div>
+                    </div>
+                    <div class="content flex-1 flex flex-col justify-center">
+                        <h4 class="text-xl font-semibold text-white mb-4">{{ $feature['title'] }}</h4>
+                        <p class="text-slate-300 leading-relaxed">{{ $feature['description'] }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
 
         <!-- Company Values/Mission Row -->
         <div class="grid lg:grid-cols-2 grid-cols-1 mt-16 gap-[50px] items-center">

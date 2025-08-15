@@ -511,11 +511,33 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
 - **Subheadings/labels**: `style="color: var(--voip-link);"` (VoIP accent color)
 - **Icons**: `style="color: var(--voip-link);"` for consistency
 
+**✨ Hover Effects & Glowing (CRITICAL REQUIREMENT)**
+```html
+<!-- VoIP theme glow effects -->
+<div onmouseover="this.style.boxShadow='0 0 20px rgba(30, 192, 141, 0.3)'" 
+     onmouseout="this.style.boxShadow='none'">
+
+<!-- Border hover with VoIP colors -->
+<a onmouseover="this.style.borderColor='var(--voip-link)'" 
+   onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+
+<!-- Background hover effects -->
+<button onmouseover="this.style.backgroundColor='var(--voip-primary)'" 
+        onmouseout="this.style.backgroundColor='transparent'">
+```
+
+**🚨 NEVER USE GENERIC BLUE/INDIGO GLOWS**
+- ❌ `hover:shadow-blue-500/50` (generic blue glow)
+- ❌ `hover:border-blue-400` (generic blue border)
+- ❌ `shadow-lg shadow-indigo-500/50` (Tailwind default glow)
+- ✅ **ALWAYS use VoIP theme colors**: `rgba(30, 192, 141, 0.3)` for glows
+
 **🚫 FORBIDDEN Color Combinations**
 - ❌ `bg-slate-50`, `bg-gray-100`, `bg-white` (breaks VoIP branding)
 - ❌ `text-slate-900`, `text-gray-900` (invisible on VoIP dark backgrounds)  
 - ❌ Generic `bg-indigo-600` (use `var(--voip-primary)` instead)
 - ❌ Light backgrounds without VoIP theme integration
+- ❌ **Any blue/indigo glow effects** (use VoIP green: #1ec08d)
 
 **✅ Complete Section Template Example**
 ```html
