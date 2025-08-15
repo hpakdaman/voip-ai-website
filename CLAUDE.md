@@ -68,6 +68,8 @@ This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from 
 ### **🚨 CRITICAL: "Merge" Command Protocol**
 When the user says **"merge"**, execute this exact sequence WITHOUT confirmation:
 
+**Pre-check**: First run `git status` to check if there are any changes to commit. If working tree is clean, inform user "No changes to merge" and stop.
+
 1. **Check current branch**: `git branch --show-current` (store as $ORIGINAL_BRANCH)
 2. **Commit all changes**: `git add . && git commit -m "[descriptive message]"`
 3. **Push current branch**: `git push origin $ORIGINAL_BRANCH`
