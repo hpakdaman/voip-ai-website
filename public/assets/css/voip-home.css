@@ -15,6 +15,9 @@
     --voip-accent: rgba(29, 120, 97, 0.1);
     --voip-hover: rgba(30, 192, 141, 0.2);
     
+    /* Override Tailwind font configuration with Poppins */
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+    
     /* Override Tailwind indigo-600 with custom color */
     --color-indigo-600: #1ec08d !important;
     

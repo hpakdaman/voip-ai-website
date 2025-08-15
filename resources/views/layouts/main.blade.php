@@ -26,15 +26,10 @@
         <!-- Main Css -->
         <link href="{{ asset('assets/libs/@iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css">
-        @if(!is_localhost())
-            <!-- Load Google Fonts for production -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        @else
-            <!-- Use local fonts for localhost development -->
-            <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
-        @endif
+        <!-- Load Google Fonts for all environments (including localhost) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
         @vite('resources/css/app.css')
         <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
@@ -43,7 +38,7 @@
 
     </head>
     
-    <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900 bg-white overflow-x-hidden">
+    <body class="font-sans text-base text-slate-900 dark:text-white dark:bg-slate-900 bg-white overflow-x-hidden">
 
         <!-- Main Content -->
         <div class="content">

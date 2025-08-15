@@ -549,14 +549,99 @@ The original template uses **Indigo** as the primary brand color throughout:
 - **Each color has 11 shades**: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950
 
 ### Typography & Fonts
-- **Primary Font**: `font-nunito` (Nunito family) - Applied to `<body>` element
-- **Font Weights**: 200-1000 available (thin to black)
+- **Primary Font**: `font-sans` (Poppins family) - Applied to `<body>` element
+- **Current Font Configuration**: Poppins with all weights (100-900) normal and italic
+- **Font Weights**: 100-900 available (thin to black)
 - **Font Families Available**:
-  - `font-sans` - Default UI sans-serif stack
+  - `font-sans` - Poppins (current primary font)
   - `font-serif` - Traditional serif stack  
   - `font-mono` - Monospace stack
-  - `font-nunito` - Custom Nunito family (primary)
-- **Google Fonts Integration**: Nunito, Alex Brush, EB Garamond, Kaushan Script, Work Sans
+- **Google Fonts Integration**: Poppins, Alex Brush, EB Garamond, Kaushan Script, Work Sans
+
+#### Previous Font Configuration (Backup for Future Reference)
+**Original Nunito Configuration** (saved 2025-08-15):
+- **Google Fonts URL**: `https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap`
+- **Tailwind Theme**: `--font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif`
+- **Body Class**: `font-nunito`
+
+**To Restore Nunito Font:**
+1. Replace Google Fonts URL with Nunito version above
+2. Update `resources/css/app.css` theme to use 'Instrument Sans' 
+3. Change body class from `font-sans` to `font-nunito`
+
+#### Complete Font Change Process (Step-by-Step Guide)
+
+**CRITICAL: The website has a complex font loading system with multiple override layers. Follow ALL steps below to ensure fonts apply correctly.**
+
+**Step 1: Update Google Fonts Import**
+- **File**: `resources/views/layouts/main.blade.php`
+- **Location**: Lines 29-32 (Google Fonts link)
+- **Action**: Replace the font family in the Google Fonts URL with your desired font
+- **Example**: Change `family=Nunito:ital,wght@0,200..1000` to `family=Poppins:ital,wght@0,100;0,200;...;1,900`
+- **Note**: Include all weight variations (100-900) and italic styles
+
+**Step 2: Update Tailwind Font Configuration**
+- **File**: `resources/css/app.css`
+- **Location**: Lines 8-11 (`@theme` section)
+- **Action**: Update `--font-sans` variable to use new font family
+- **Example**: `--font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji'...`
+
+**Step 3: Update Body Font Class**
+- **File**: `resources/views/layouts/main.blade.php`
+- **Location**: Line 46 (body tag)
+- **Action**: Change body class to use appropriate font utility
+- **Standard**: Use `font-sans` for custom fonts defined in Tailwind theme
+- **Legacy**: Use `font-[fontname]` for specific font classes (e.g., `font-nunito`)
+
+**Step 4: Override CSS Conflicts (CRITICAL)**
+- **File**: `public/assets/css/voip-home.css`
+- **Location**: `:root` section (around line 18)
+- **Action**: Add font override with `!important` to ensure precedence
+- **Code**: `--font-sans: 'YourFont', ui-sans-serif, system-ui, sans-serif !important;`
+- **Why**: The main `tailwind.css` file loads after `app.css` and overrides font settings
+
+**Step 5: Handle Localhost Development**
+- **Issue**: Localhost may use local fonts instead of Google Fonts
+- **Solution A**: Force Google Fonts for all environments (current implementation)
+- **Solution B**: Update `public/assets/css/local-fonts.css` if local font files exist
+- **Current**: Google Fonts load on all environments (lines 29-32 in main.blade.php)
+
+**Step 6: Clear Browser Cache**
+- Browser caches can prevent new fonts from loading
+- Hard refresh (Ctrl+F5 / Cmd+Shift+R) or clear browser cache
+- Check Network tab in DevTools to verify font files are loading
+
+**Common Issues & Solutions:**
+
+1. **Font Not Loading**
+   - Check Google Fonts URL is correct and includes all weights
+   - Verify CSS load order: app.css → tailwind.css → voip-home.css
+   - Ensure font override in voip-home.css has `!important`
+
+2. **Localhost vs Production Differences**
+   - Ensure Google Fonts load on both environments
+   - Check `is_localhost()` condition in main.blade.php
+   - Verify local font files exist if using local fallback
+
+3. **CSS Specificity Issues**
+   - VoIP custom CSS must load last to override Tailwind defaults
+   - Use `!important` for font overrides in voip-home.css
+   - Check for conflicting font-family declarations
+
+**Font Loading Order (Critical Understanding):**
+1. Google Fonts load in `<head>`
+2. `app.css` sets initial `--font-sans` variable
+3. `tailwind.css` overwrites with default Tailwind fonts
+4. `voip-home.css` provides final override with `!important`
+5. Body uses `font-sans` class which references final `--font-sans` value
+
+**Testing Checklist:**
+- [ ] Google Fonts URL includes new font family
+- [ ] app.css theme updated with new font
+- [ ] Body class uses correct font utility
+- [ ] voip-home.css contains font override with `!important`
+- [ ] Hard refresh browser to clear cache
+- [ ] Inspect element to verify computed font-family
 
 ### Dark Mode Implementation
 - **Automatic Theme Detection**: Based on page routes (see main.blade.php:111-125)
