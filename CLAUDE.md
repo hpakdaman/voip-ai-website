@@ -78,6 +78,20 @@ When the user says **"merge"**, execute this exact sequence WITHOUT confirmation
 
 **IMPORTANT**: Always end on the original branch where the user started, NOT on main!
 
+### **🔄 CRITICAL: "Pull" Command Protocol**
+When the user says **"pull"**, execute this exact sequence WITHOUT confirmation:
+
+1. **Check current branch**: `git branch --show-current` (store as $CURRENT_BRANCH)
+2. **Stash any uncommitted changes**: `git stash` (if there are uncommitted changes)
+3. **Switch to main**: `git checkout main`
+4. **Pull latest main**: `git pull origin main`
+5. **Switch back to current branch**: `git checkout $CURRENT_BRANCH`
+6. **Merge main changes**: `git merge main`
+7. **Push updated branch**: `git push origin $CURRENT_BRANCH`
+8. **Restore stashed changes**: `git stash pop` (if changes were stashed)
+
+**IMPORTANT**: Always end on the original branch where the user started, with latest main changes merged in!
+
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)
 - **Main branch** is protected and always deployable
