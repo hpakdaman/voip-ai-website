@@ -647,12 +647,12 @@ try {
                 <!-- Integration Points -->
                 @php
                 $integrationPoints = [
-                    ['name' => 'CRM Systems', 'icon' => 'uil uil-database', 'position' => 'top-0 left-1/2 -translate-x-1/2 -translate-y-16'],
-                    ['name' => 'Communication', 'icon' => 'uil uil-comments', 'position' => 'top-1/4 right-0 translate-x-16 -translate-y-8'],
-                    ['name' => 'Business Tools', 'icon' => 'uil uil-briefcase', 'position' => 'bottom-1/4 right-0 translate-x-16 translate-y-8'],
-                    ['name' => 'Analytics', 'icon' => 'uil uil-chart-growth', 'position' => 'bottom-0 left-1/2 -translate-x-1/2 translate-y-16'],
-                    ['name' => 'Security', 'icon' => 'uil uil-shield', 'position' => 'bottom-1/4 left-0 -translate-x-16 translate-y-8'],
-                    ['name' => 'APIs', 'icon' => 'uil uil-code-branch', 'position' => 'top-1/4 left-0 -translate-x-16 -translate-y-8']
+                    ['name' => 'CRM Systems', 'icon' => 'uil uil-database', 'position' => 'top-0 left-1/2 -translate-x-1/2 -translate-y-20'],
+                    ['name' => 'Communication', 'icon' => 'uil uil-comments', 'position' => 'top-1/4 right-0 translate-x-20 -translate-y-8'],
+                    ['name' => 'Business Tools', 'icon' => 'uil uil-briefcase', 'position' => 'bottom-1/4 right-0 translate-x-20 translate-y-8'],
+                    ['name' => 'Analytics', 'icon' => 'uil uil-chart-growth', 'position' => 'bottom-0 left-1/2 -translate-x-1/2 translate-y-20'],
+                    ['name' => 'Security', 'icon' => 'uil uil-shield', 'position' => 'bottom-1/4 left-0 -translate-x-20 translate-y-8'],
+                    ['name' => 'APIs', 'icon' => 'uil uil-code-branch', 'position' => 'top-1/4 left-0 -translate-x-20 -translate-y-8']
                 ];
                 @endphp
                 
@@ -670,7 +670,7 @@ try {
                         </div>
                         
                         <!-- Label -->
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2">
+                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4">
                             <span class="text-white text-sm font-medium whitespace-nowrap">{{ $point['name'] }}</span>
                         </div>
                     </div>
