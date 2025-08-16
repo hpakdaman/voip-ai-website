@@ -61,36 +61,40 @@ This ensures each page section provides a fresh, engaging experience while maint
 ## Git Workflow for Team Development
 
 ### **🚨 CRITICAL: "Merge" Command Protocol**
-When the user says **"merge"**, execute this exact sequence WITHOUT confirmation:
+When the user says **"merge"**, execute this optimized workflow:
 
-**Pre-check**: First run `git status` to check if there are any changes to commit. If working tree is clean, inform user "No changes to merge" and stop.
+1. **Generate descriptive commit message** based on recent changes
+2. **Execute merge script**: `./scripts/git-merge.sh "commit message"`
 
-1. **Check current branch**: `git branch --show-current` (store as $ORIGINAL_BRANCH)
-2. **Commit all changes**: `git add . && git commit -m "[descriptive message]"`
-3. **Push current branch**: `git push origin $ORIGINAL_BRANCH`
-4. **Switch to main**: `git checkout main`
-5. **Pull latest main**: `git pull origin main`
-6. **Merge current branch to main**: `git merge $ORIGINAL_BRANCH`
-7. **Push to main**: `git push origin main`
-8. **Switch back to original branch**: `git checkout $ORIGINAL_BRANCH`
-9. **Merge main changes back**: `git merge main`
-10. **Push updated branch**: `git push origin $ORIGINAL_BRANCH`
+**The script handles all Git operations automatically and safely:**
+- ✅ Commits changes with your generated message
+- ✅ Pushes current branch to origin
+- ✅ Switches to main and pulls latest
+- ✅ Merges current branch to main
+- ✅ Pushes main to origin
+- ✅ Switches back to original branch
+- ✅ Merges main changes back
+- ✅ Pushes updated branch
+- ✅ Returns to original branch
 
-**IMPORTANT**: Always end on the original branch where the user started, NOT on main!
+**IMPORTANT**: You create the commit message, the script handles all Git operations efficiently!
 
 ### **🔄 CRITICAL: "Pull" Command Protocol**
-When the user says **"pull"**, execute this exact sequence WITHOUT confirmation:
+When the user says **"pull"**, execute this optimized workflow:
 
-1. **Check current branch**: `git branch --show-current` (store as $CURRENT_BRANCH)
-2. **Stash any uncommitted changes**: `git stash` (if there are uncommitted changes)
-3. **Switch to main**: `git checkout main`
-4. **Pull latest main**: `git pull origin main`
-5. **Switch back to current branch**: `git checkout $CURRENT_BRANCH`
-6. **Merge main changes**: `git merge main`
-7. **Push updated branch**: `git push origin $CURRENT_BRANCH`
-8. **Restore stashed changes**: `git stash pop` (if changes were stashed)
+**Execute pull script**: `./scripts/git-pull.sh`
 
-**IMPORTANT**: Always end on the original branch where the user started, with latest main changes merged in!
+**The script handles all Git operations automatically and safely:**
+- ✅ Detects and stashes uncommitted changes
+- ✅ Switches to main and pulls latest
+- ✅ Switches back to original branch
+- ✅ Merges main changes safely
+- ✅ Pushes updated branch to origin
+- ✅ Restores stashed changes if any
+- ✅ Handles merge conflicts gracefully
+- ✅ Returns to original branch with updates
+
+**IMPORTANT**: Script ensures you always end on original branch with latest main changes merged in!
 
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)
