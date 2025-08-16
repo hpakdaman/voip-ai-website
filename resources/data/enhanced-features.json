@@ -1,0 +1,27 @@
+{
+    "advanced_ai_features": {
+        "title": "Advanced AI Capabilities",
+        "subtitle": "Next-Generation Intelligence",
+        "description": "Powered by cutting-edge artificial intelligence designed specifically for business communications"
+    },
+    "core_call_center_features": {
+        "title": "Essential Call Center Operations",
+        "subtitle": "Core Functionality",
+        "description": "Everything you need to run a modern, efficient call center operation"
+    },
+    "intelligent_automation": {
+        "title": "Intelligent Process Automation", 
+        "subtitle": "Smart Workflows",
+        "description": "Automate complex processes while maintaining the human touch when needed"
+    },
+    "analytics_insights": {
+        "title": "Advanced Analytics & Insights",
+        "subtitle": "Data-Driven Decisions",
+        "description": "Comprehensive reporting and analytics to optimize your business performance"
+    },
+    "customer_experience": {
+        "title": "Superior Customer Experience",
+        "subtitle": "Delight Every Customer",
+        "description": "Features designed to exceed customer expectations and build lasting relationships"
+    }
+}

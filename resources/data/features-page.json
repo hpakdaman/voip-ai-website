@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "title": "Comprehensive VoIP AI Features",
+        "subtitle": "Complete Feature Overview",
+        "description": "Discover every powerful feature that makes our VoIP AI solution the perfect choice for UAE businesses. From basic call handling to advanced AI capabilities, explore our complete toolkit designed for Dubai's competitive market."
+    },
+    "core_features": {
+        "title": "Core AI Call Center Features",
+        "subtitle": "Foundation Features",
+        "description": "Essential capabilities that power your business communications and drive customer satisfaction"
+    },
+    "advanced_features": {
+        "title": "Advanced AI Capabilities",
+        "subtitle": "Next-Generation Technology",
+        "description": "Cutting-edge AI features that set us apart from traditional VoIP solutions"
+    },
+    "uae_specific": {
+        "title": "UAE Market Optimizations", 
+        "subtitle": "Local Excellence",
+        "description": "Features specifically designed for the UAE market, ensuring compliance and cultural alignment"
+    },
+    "integration_features": {
+        "title": "Integration & Compatibility",
+        "subtitle": "Seamless Connectivity",
+        "description": "Connect with your existing business tools and platforms effortlessly"
+    },
+    "security_features": {
+        "title": "Enterprise Security & Compliance",
+        "subtitle": "Bank-Grade Protection",
+        "description": "Advanced security measures that exceed UAE regulatory requirements"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-16",
+        "page_type": "features_overview"
+    }
+}

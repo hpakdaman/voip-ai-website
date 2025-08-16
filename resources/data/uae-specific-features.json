@@ -1,0 +1,51 @@
+{
+    "section": {
+        "title": "UAE Market Optimizations",
+        "subtitle": "Local Excellence",
+        "description": "Features specifically designed for the UAE market, ensuring TRA compliance and cultural alignment"
+    },
+    "features": [
+        {
+            "id": 1,
+            "title": "TRA Compliance Ready",
+            "description": "Built-in compliance with UAE Telecommunications Regulatory Authority requirements",
+            "icon": "uil uil-shield-check",
+            "benefit": "Avoid regulatory penalties and ensure legal operation",
+            "priority": 1,
+            "delay": "0.1s"
+        },
+        {
+            "id": 2,
+            "title": "Arabic Language AI",
+            "description": "Native Arabic language processing optimized for Gulf dialects and business terminology",
+            "icon": "uil uil-comment-message",
+            "benefit": "Perfect communication with Arabic-speaking customers",
+            "priority": 2,
+            "delay": "0.2s"
+        },
+        {
+            "id": 3,
+            "title": "MENA Infrastructure",
+            "description": "Dedicated servers in UAE and MENA region for optimal performance and data sovereignty",
+            "icon": "uil uil-server-network",
+            "benefit": "Lightning-fast response times and local data security",
+            "priority": 3,
+            "delay": "0.3s"
+        },
+        {
+            "id": 4,
+            "title": "Islamic Calendar Integration",
+            "description": "Automatic scheduling adjustments for Islamic holidays and prayer times",
+            "icon": "uil uil-calendar-alt",
+            "benefit": "Respect cultural practices and improve customer relations",
+            "priority": 4,
+            "delay": "0.4s"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-16",
+        "total_count": 4,
+        "section_type": "uae_specific_features"
+    }
+}

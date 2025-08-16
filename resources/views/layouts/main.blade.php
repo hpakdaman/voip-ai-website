@@ -47,6 +47,11 @@
 
         <!-- Main Content -->
         <div class="content">
+            @section('header')
+                @include('includes.navbar')
+                @include('components.background-blurs')
+            @show
+
             @yield('content')
 
             @section('footer')

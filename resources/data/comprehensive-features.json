@@ -1,0 +1,284 @@
+{
+    "intelligent_automation": {
+        "title": "Intelligent Process Automation",
+        "subtitle": "Smart AI Workflows",
+        "description": "Advanced automation that learns, adapts, and optimizes your business processes",
+        "features": [
+            {
+                "id": 1,
+                "title": "Adaptive Call Routing",
+                "description": "AI analyzes caller intent, history, and context to route calls to the most suitable agent or department within seconds",
+                "icon": "uil uil-navigator",
+                "details": "Our machine learning algorithms continuously improve routing decisions based on successful outcomes, reducing transfer rates by 85% and increasing first-call resolution to 94%",
+                "benefit": "Eliminates customer frustration from being transferred multiple times",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "Predictive Queue Management",
+                "description": "Forecast call volumes and automatically adjust staffing recommendations to maintain optimal service levels",
+                "icon": "uil uil-chart-line",
+                "details": "Using historical data, seasonal patterns, and real-time events, our AI predicts call spikes up to 2 weeks in advance with 96% accuracy, allowing proactive staff scheduling",
+                "benefit": "Maintain consistent service quality during peak periods",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Dynamic Script Generation",
+                "description": "AI creates personalized conversation scripts in real-time based on customer profile and interaction history",
+                "icon": "uil uil-document-layout-right",
+                "details": "Each script is tailored to the individual customer's communication style, previous interactions, and current needs, resulting in 73% higher customer satisfaction scores",
+                "benefit": "Every conversation feels personal and relevant to the customer",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Automated Quality Assurance",
+                "description": "Continuous monitoring and evaluation of all calls using AI-powered quality scoring and feedback systems",
+                "icon": "uil uil-shield-check",
+                "details": "Our AI evaluates 100% of calls against 50+ quality parameters, providing instant feedback to agents and identifying training opportunities in real-time",
+                "benefit": "Consistent service excellence across all customer interactions",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    },
+    "advanced_analytics": {
+        "title": "Advanced Analytics & Business Intelligence", 
+        "subtitle": "Data-Driven Decision Making",
+        "description": "Transform raw conversation data into actionable business insights",
+        "features": [
+            {
+                "id": 1,
+                "title": "Real-Time Performance Dashboards",
+                "description": "Live monitoring of KPIs with customizable alerts and automated reporting for management teams",
+                "icon": "uil uil-monitor",
+                "details": "Track 200+ metrics including call resolution time, customer satisfaction, agent performance, and revenue impact with drill-down capabilities to individual conversation level",
+                "benefit": "Make informed decisions instantly with live business intelligence",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "Sentiment Analysis & Emotion Detection",
+                "description": "AI analyzes customer emotions throughout calls to identify satisfaction levels and potential escalation points",
+                "icon": "uil uil-heart-rate",
+                "details": "Our advanced NLP models detect frustration, satisfaction, confusion, and urgency with 94% accuracy, alerting supervisors to intervene before issues escalate",
+                "benefit": "Prevent customer churn by addressing negative experiences immediately",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Predictive Customer Insights",
+                "description": "Forecast customer behavior, lifetime value, and churn probability using machine learning algorithms",
+                "icon": "uil uil-brain",
+                "details": "Analyze customer interaction patterns to predict future needs, optimal contact timing, and personalized service recommendations with 89% accuracy",
+                "benefit": "Proactively address customer needs before they become problems",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Revenue Attribution Analysis",
+                "description": "Track how customer service interactions directly impact sales, retention, and overall business revenue",
+                "icon": "uil uil-money-bill",
+                "details": "Correlate service quality metrics with business outcomes to demonstrate ROI of customer service investments and identify revenue optimization opportunities",
+                "benefit": "Prove the financial impact of exceptional customer service",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    },
+    "customer_experience": {
+        "title": "Superior Customer Experience Engine",
+        "subtitle": "Delight Every Customer",
+        "description": "Advanced features designed to exceed customer expectations and build lasting relationships",
+        "features": [
+            {
+                "id": 1,
+                "title": "Omnichannel Continuity",
+                "description": "Seamless conversation flow across phone, chat, email, WhatsApp, and social media with complete context preservation",
+                "icon": "uil uil-apps",
+                "details": "Customers can start a conversation on one channel and continue on another without repeating information. All interaction history, preferences, and context are maintained across touchpoints",
+                "benefit": "Eliminate customer frustration from repetitive explanations",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "Proactive Customer Outreach",
+                "description": "AI identifies opportunities for proactive customer contact based on behavior patterns and lifecycle stage",
+                "icon": "uil uil-outgoing-call",
+                "details": "Automatically schedule follow-ups, renewal reminders, and satisfaction checks at optimal times. AI determines the best communication method and timing for each customer",
+                "benefit": "Show customers you care by reaching out before they need to contact you",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Personalized Service Delivery",
+                "description": "Customize every interaction based on customer preferences, history, and communication style",
+                "icon": "uil uil-user-circle",
+                "details": "AI learns each customer's preferred communication style, optimal contact times, and service preferences to deliver tailored experiences that feel individually crafted",
+                "benefit": "Make every customer feel like your most important customer",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Instant Issue Resolution",
+                "description": "AI-powered problem-solving that resolves 89% of customer issues on the first contact without human intervention",
+                "icon": "uil uil-rocket",
+                "details": "Advanced decision trees and knowledge base integration enable immediate resolution of complex issues, with seamless escalation to specialists when needed",
+                "benefit": "Customers get answers immediately, improving satisfaction and loyalty",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    },
+    "enterprise_security": {
+        "title": "Enterprise-Grade Security & Compliance",
+        "subtitle": "Protect Your Business",
+        "description": "Military-grade security features designed for enterprise environments",
+        "features": [
+            {
+                "id": 1,
+                "title": "Zero-Trust Architecture",
+                "description": "Complete security framework that verifies every user, device, and transaction before granting access",
+                "icon": "uil uil-shield-exclamation",
+                "details": "Multi-factor authentication, device fingerprinting, behavioral analysis, and continuous monitoring ensure only authorized access to sensitive customer data",
+                "benefit": "Protect against both external threats and internal data breaches",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "End-to-End Encryption",
+                "description": "AES-256 encryption for all voice calls, data transmissions, and stored information with quantum-resistant protocols",
+                "icon": "uil uil-lock",
+                "details": "All customer conversations and data are encrypted in transit and at rest using the same encryption standards used by banks and government agencies",
+                "benefit": "Ensure customer conversations remain completely private and secure",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Regulatory Compliance Automation",
+                "description": "Automated compliance monitoring for GDPR, PCI DSS, HIPAA, SOX, and UAE Data Protection Law",
+                "icon": "uil uil-file-check-alt",
+                "details": "Real-time compliance scanning, automated reporting, and policy enforcement ensure adherence to all relevant regulations without manual oversight",
+                "benefit": "Avoid costly compliance violations and maintain customer trust",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Advanced Threat Detection",
+                "description": "AI-powered security monitoring that identifies and neutralizes threats before they impact operations",
+                "icon": "uil uil-eye",
+                "details": "Machine learning algorithms analyze patterns to detect fraud attempts, social engineering attacks, and unusual access patterns with 99.7% accuracy",
+                "benefit": "Stay ahead of evolving security threats with proactive protection",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    },
+    "integration_ecosystem": {
+        "title": "Universal Integration Ecosystem",
+        "subtitle": "Connect Everything",
+        "description": "Seamlessly integrate with your entire business technology stack",
+        "features": [
+            {
+                "id": 1,
+                "title": "Native CRM Integration",
+                "description": "Deep integration with Salesforce, HubSpot, Microsoft Dynamics, and 50+ CRM platforms",
+                "icon": "uil uil-database",
+                "details": "Bi-directional data sync ensures customer records are always up-to-date across systems. Trigger workflows, update records, and access customer history directly from call interfaces",
+                "benefit": "Eliminate data silos and maintain a single source of customer truth",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "Business Process Automation",
+                "description": "Connect with ERP, helpdesk, e-commerce, and workflow automation tools for complete business integration",
+                "icon": "uil uil-processor",
+                "details": "Automatically trigger order updates, create support tickets, schedule appointments, and update inventory based on customer interactions across 200+ business applications",
+                "benefit": "Streamline operations and eliminate manual data entry errors",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Communication Platform Unity",
+                "description": "Unify Microsoft Teams, Slack, WhatsApp Business, and all communication channels under one intelligent system",
+                "icon": "uil uil-comments",
+                "details": "Agent collaboration tools, customer communication channels, and internal messaging systems work together seamlessly with shared context and unified workflows",
+                "benefit": "Break down communication barriers and improve team collaboration",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Custom API Framework",
+                "description": "RESTful APIs and webhooks enable custom integrations with proprietary and specialized business systems",
+                "icon": "uil uil-code-branch",
+                "details": "Developer-friendly APIs with comprehensive documentation, SDKs for popular languages, and sandbox environments for safe testing and development",
+                "benefit": "Integrate with any system and customize functionality to your exact needs",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    },
+    "global_readiness": {
+        "title": "Global Business Readiness",
+        "subtitle": "Scale Worldwide",
+        "description": "Enterprise features designed for multinational operations and diverse markets",
+        "features": [
+            {
+                "id": 1,
+                "title": "Multi-Language AI Excellence",
+                "description": "Native fluency in 73 languages including Arabic, English, Hindi, Urdu, and all major business languages",
+                "icon": "uil uil-globe",
+                "details": "AI understands cultural nuances, local expressions, and business customs. Supports right-to-left languages, regional dialects, and context-aware translations",
+                "benefit": "Serve customers in their preferred language with cultural sensitivity",
+                "priority": 1,
+                "delay": "0.1s"
+            },
+            {
+                "id": 2,
+                "title": "Regional Data Sovereignty",
+                "description": "Data residency controls ensure customer data stays within required geographic boundaries",
+                "icon": "uil uil-map-marker",
+                "details": "Choose data storage locations across UAE, EU, US, and Asia-Pacific regions with guaranteed compliance to local data protection laws and sovereignty requirements",
+                "benefit": "Meet regulatory requirements while maintaining optimal performance",
+                "priority": 2,
+                "delay": "0.2s"
+            },
+            {
+                "id": 3,
+                "title": "Time Zone Intelligence",
+                "description": "Automatic scheduling and optimization based on global time zones and local business hours",
+                "icon": "uil uil-clock",
+                "details": "AI automatically adjusts for daylight saving time, holidays, and regional business customs. Optimizes call timing for maximum success rates across different cultures",
+                "benefit": "Never call customers at inappropriate times regardless of location",
+                "priority": 3,
+                "delay": "0.3s"
+            },
+            {
+                "id": 4,
+                "title": "Currency & Payment Localization",
+                "description": "Support for 180+ currencies with real-time exchange rates and local payment methods",
+                "icon": "uil uil-bitcoin-circle",
+                "details": "Automatic currency conversion, tax calculation, and payment processing through local providers. Supports regional payment preferences including digital wallets and local banking systems",
+                "benefit": "Provide familiar payment experiences for customers worldwide",
+                "priority": 4,
+                "delay": "0.4s"
+            }
+        ]
+    }
+}

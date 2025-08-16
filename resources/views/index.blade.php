@@ -4,10 +4,6 @@
 
 @section('content')
 
-@include('includes.navbar')
-
-@include('components.background-blurs')
-
 @include('components.hero-section')
 
 @include('components.business-partners')

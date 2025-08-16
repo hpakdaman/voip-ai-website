@@ -1,0 +1,47 @@
+{
+    "section": {
+        "title": "Integration & Compatibility",
+        "subtitle": "Seamless Connectivity",
+        "description": "Connect with your existing business tools and platforms effortlessly"
+    },
+    "categories": [
+        {
+            "id": 1,
+            "category": "CRM Systems",
+            "description": "Native integrations with leading customer relationship management platforms",
+            "tools": ["Salesforce", "HubSpot", "Zoho CRM", "Microsoft Dynamics", "Pipedrive"],
+            "icon": "uil uil-users-alt",
+            "priority": 1
+        },
+        {
+            "id": 2,
+            "category": "Business Tools",
+            "description": "Seamless workflow integration with essential business applications",
+            "tools": ["Slack", "Microsoft Teams", "Zoom", "Google Workspace", "Office 365"],
+            "icon": "uil uil-apps",
+            "priority": 2
+        },
+        {
+            "id": 3,
+            "category": "E-commerce",
+            "description": "Direct integration with popular e-commerce and retail platforms",
+            "tools": ["Shopify", "WooCommerce", "Magento", "BigCommerce", "Amazon"],
+            "icon": "uil uil-shopping-cart",
+            "priority": 3
+        },
+        {
+            "id": 4,
+            "category": "Support Systems",
+            "description": "Enhanced customer support through helpdesk and ticketing integrations",
+            "tools": ["Zendesk", "Freshdesk", "Intercom", "Help Scout", "ServiceNow"],
+            "icon": "uil uil-headphones-alt",
+            "priority": 4
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-16",
+        "total_count": 4,
+        "section_type": "integration_features"
+    }
+}
