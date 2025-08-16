@@ -622,60 +622,61 @@ try {
             </p>
         </div>
 
-        <!-- Central Integration Hub Visual -->
-        <div class="relative mb-20 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-            <div class="flex items-center justify-center">
-                <!-- Central Hub -->
-                <div class="relative z-10">
-                    <div class="w-48 h-48 rounded-full border-4 border-white/20 flex items-center justify-center" style="background: radial-gradient(circle, var(--voip-link) 0%, var(--voip-primary) 100%); box-shadow: 0 0 100px rgba(30, 192, 141, 0.3);">
-                        <div class="text-center">
-                            <i class="uil uil-server-network text-6xl text-white mb-4"></i>
-                            <h4 class="text-white font-bold text-xl">VoIP AI Platform</h4>
-                            <p class="text-white/80 text-sm">Central Hub</p>
+        <!-- Integration Categories Grid -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mb-20">
+            @php
+            $integrationCategories = [
+                ['name' => 'CRM Systems', 'icon' => 'uil uil-database', 'description' => 'Salesforce, HubSpot, Pipedrive integration'],
+                ['name' => 'Communication Tools', 'icon' => 'uil uil-comments', 'description' => 'Slack, Teams, WhatsApp, Email platforms'],
+                ['name' => 'Business Intelligence', 'icon' => 'uil uil-chart-growth', 'description' => 'Tableau, Power BI, Google Analytics'],
+                ['name' => 'Security Platforms', 'icon' => 'uil uil-shield', 'description' => 'Identity management, compliance tools'],
+                ['name' => 'Business Tools', 'icon' => 'uil uil-briefcase', 'description' => 'ERP, HR systems, project management'],
+                ['name' => 'API Ecosystem', 'icon' => 'uil uil-code-branch', 'description' => 'RESTful APIs, webhooks, custom integrations']
+            ];
+            @endphp
+            
+            @foreach($integrationCategories as $index => $category)
+            <div class="group relative wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.4 + ($index * 0.1) }}s">
+                <div class="relative p-8 rounded-3xl border border-white/10 text-center transition-all duration-500 hover:border-white/30" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(10px);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 25px 50px rgba(30, 192, 141, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    
+                    <!-- Integration Status -->
+                    <div class="absolute top-4 right-4 flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
+                        <span class="text-green-400 text-xs font-semibold uppercase tracking-wide">Active</span>
+                    </div>
+                    
+                    <!-- Category Icon -->
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 rounded-3xl mx-auto flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);">
+                            <i class="{{ $category['icon'] }} text-3xl text-white relative z-10"></i>
+                            <!-- Shine effect -->
+                            <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent transform skew-x-12"></div>
                         </div>
                     </div>
                     
-                    <!-- Orbit Rings -->
-                    <div class="absolute inset-0 animate-spin" style="animation-duration: 30s;">
-                        <div class="w-80 h-80 rounded-full border border-dashed border-white/10 absolute -inset-16"></div>
-                    </div>
-                    <div class="absolute inset-0 animate-spin" style="animation-duration: 45s; animation-direction: reverse;">
-                        <div class="w-96 h-96 rounded-full border border-dashed border-white/5 absolute -inset-24"></div>
-                    </div>
-                </div>
-                
-                <!-- Integration Points -->
-                @php
-                $integrationPoints = [
-                    ['name' => 'CRM Systems', 'icon' => 'uil uil-database', 'position' => 'top-0 left-1/2 -translate-x-1/2 -translate-y-20'],
-                    ['name' => 'Communication', 'icon' => 'uil uil-comments', 'position' => 'top-1/4 right-0 translate-x-20 -translate-y-8'],
-                    ['name' => 'Business Tools', 'icon' => 'uil uil-briefcase', 'position' => 'bottom-1/4 right-0 translate-x-20 translate-y-8'],
-                    ['name' => 'Analytics', 'icon' => 'uil uil-chart-growth', 'position' => 'bottom-0 left-1/2 -translate-x-1/2 translate-y-20'],
-                    ['name' => 'Security', 'icon' => 'uil uil-shield', 'position' => 'bottom-1/4 left-0 -translate-x-20 translate-y-8'],
-                    ['name' => 'APIs', 'icon' => 'uil uil-code-branch', 'position' => 'top-1/4 left-0 -translate-x-20 -translate-y-8']
-                ];
-                @endphp
-                
-                @foreach($integrationPoints as $index => $point)
-                <div class="absolute {{ $point['position'] }} wow animate__animated animate__fadeIn" data-wow-delay="{{ 0.6 + ($index * 0.1) }}s">
-                    <div class="relative">
-                        <!-- Connection Line -->
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-1 h-24 bg-gradient-to-b from-transparent via-white/20 to-transparent transform origin-center {{ str_contains($point['position'], 'top') ? 'rotate-0' : (str_contains($point['position'], 'right') ? 'rotate-45' : (str_contains($point['position'], 'bottom') ? 'rotate-180' : (str_contains($point['position'], 'left') ? '-rotate-45' : 'rotate-0'))) }}"></div>
-                        </div>
-                        
-                        <!-- Integration Node -->
-                        <div class="w-20 h-20 rounded-2xl border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(10px);" onmouseover="this.style.borderColor='var(--voip-link)'; this.style.boxShadow='0 10px 30px rgba(30, 192, 141, 0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.boxShadow='none'">
-                            <i class="{{ $point['icon'] }} text-2xl" style="color: var(--voip-link);"></i>
-                        </div>
-                        
-                        <!-- Label -->
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4">
-                            <span class="text-white text-sm font-medium whitespace-nowrap">{{ $point['name'] }}</span>
-                        </div>
+                    <!-- Category Content -->
+                    <h4 class="text-xl font-bold text-white mb-3">{{ $category['name'] }}</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">{{ $category['description'] }}</p>
+                    
+                    <!-- Connection Indicator -->
+                    <div class="mt-6 flex items-center justify-center space-x-2">
+                        <div class="flex-1 h-0.5 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                        <div class="w-2 h-2 rounded-full" style="background-color: var(--voip-link);"></div>
+                        <div class="flex-1 h-0.5 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                     </div>
                 </div>
-                @endforeach
+            </div>
+            @endforeach
+        </div>
+        
+        <!-- Central Platform Statement -->
+        <div class="text-center mb-16 wow animate__animated animate__fadeInUp" data-wow-delay="1.0s">
+            <div class="relative inline-block">
+                <div class="w-32 h-32 rounded-full mx-auto flex items-center justify-center mb-6" style="background: radial-gradient(circle, var(--voip-link) 0%, var(--voip-primary) 100%); box-shadow: 0 0 60px rgba(30, 192, 141, 0.4);">
+                    <i class="uil uil-server-network text-5xl text-white"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-white mb-4">VoIP AI Platform</h3>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">The central hub that unifies all your business systems into one intelligent communication ecosystem.</p>
             </div>
         </div>
 
