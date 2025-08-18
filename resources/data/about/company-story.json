@@ -1,0 +1,52 @@
+{
+    "section": {
+        "title": "Our Journey to AI Excellence",
+        "subtitle": "Company Story",
+        "description": "From a vision in 2019 to becoming Dubai's leading AI communication platform, discover how we're transforming business communications across the UAE."
+    },
+    "timeline": [
+        {
+            "year": "2019",
+            "title": "Foundation in Dubai",
+            "description": "Established with a mission to revolutionize business communications in the UAE market.",
+            "milestone": "Company Launch"
+        },
+        {
+            "year": "2020",
+            "title": "AI Technology Development",
+            "description": "Developed our first AI-powered call center solution with Arabic language support.",
+            "milestone": "Product Innovation"
+        },
+        {
+            "year": "2021", 
+            "title": "TRA Compliance Achievement",
+            "description": "Achieved full UAE Telecommunications Regulatory Authority compliance and certifications.",
+            "milestone": "Regulatory Milestone"
+        },
+        {
+            "year": "2022",
+            "title": "DIFC Partnership",
+            "description": "Became the preferred AI communication partner for Dubai International Financial Centre businesses.",
+            "milestone": "Strategic Growth"
+        },
+        {
+            "year": "2023",
+            "title": "Regional Expansion",
+            "description": "Expanded services across GCC countries while maintaining Dubai headquarters.",
+            "milestone": "Market Leadership"
+        },
+        {
+            "year": "2024",
+            "title": "AI Innovation Award",
+            "description": "Recognized as 'Best AI Innovation' by Dubai Chamber of Commerce for business excellence.",
+            "milestone": "Industry Recognition"
+        }
+    ],
+    "mission": "To empower every Dubai business with intelligent communication solutions that drive growth, enhance customer satisfaction, and maintain the highest standards of excellence.",
+    "vision": "To be the Middle East's leading AI communication platform, setting the global standard for culturally-aware business intelligence.",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-18",
+        "section_type": "company_timeline"
+    }
+}

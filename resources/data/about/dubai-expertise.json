@@ -1,0 +1,69 @@
+{
+    "section": {
+        "title": "Built for UAE's Business Landscape",
+        "subtitle": "UAE-Focused Expertise",
+        "description": "Our AI call center solutions are specifically engineered for UAE's unique business environment, regulatory requirements, and multicultural customer base. We understand what it takes to succeed in the world's most dynamic business hub.",
+        "key_message": "The only AI solution designed specifically for UAE's business excellence standards"
+    },
+    "dubai_features": [
+        {
+            "id": 1,
+            "title": "TRA Compliance & Regulatory Excellence",
+            "description": "Full compliance with UAE Telecommunications Regulatory Authority requirements, ensuring your business meets all local standards for data protection and communication services.",
+            "icon": "uil uil-shield-check",
+            "priority": 1,
+            "delay": "0.1s"
+        },
+        {
+            "id": 2,
+            "title": "Multilingual AI for UAE Demographics",
+            "description": "Native support for Arabic, English, Hindi, Urdu, and 15+ languages commonly used in UAE's diverse business environment, with cultural context understanding.",
+            "icon": "uil uil-comments",
+            "priority": 2,
+            "delay": "0.2s"
+        },
+        {
+            "id": 3,
+            "title": "DIFC & Free Zone Integration",
+            "description": "Seamless integration with Dubai International Financial Centre systems and UAE free zone requirements, supporting international business operations.",
+            "icon": "uil uil-building",
+            "priority": 3,
+            "delay": "0.3s"
+        },
+        {
+            "id": 4,
+            "title": "Ramadan & Cultural Adaptability", 
+            "description": "AI that understands local customs, holidays, and business practices, automatically adjusting communication styles and schedules for cultural sensitivity.",
+            "icon": "uil uil-calendar-alt",
+            "priority": 4,
+            "delay": "0.4s"
+        },
+        {
+            "id": 5,
+            "title": "Dubai Time Zone Optimization",
+            "description": "Perfect alignment with UAE's GST+4 timezone and regional business hours, optimized for Middle East, Africa, and South Asia connectivity.",
+            "icon": "uil uil-clock",
+            "priority": 5,
+            "delay": "0.5s"
+        },
+        {
+            "id": 6,
+            "title": "Local Data Center Infrastructure",
+            "description": "Hosted in UAE-based data centers ensuring ultra-low latency, data sovereignty compliance, and lightning-fast response times for UAE businesses.",
+            "icon": "uil uil-server",
+            "priority": 6,
+            "delay": "0.6s"
+        }
+    ],
+    "achievements": {
+        "years_in_uae": "5+",
+        "uae_clients": "500+",
+        "languages_supported": "18",
+        "compliance_certifications": "12"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-18",
+        "section_type": "expertise_showcase"
+    }
+}
