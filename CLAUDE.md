@@ -116,6 +116,26 @@ When the user says **"pull"**, execute this optimized workflow:
 
 **IMPORTANT**: Script ensures you always end on original branch with latest main changes merged in!
 
+### **🚀 CRITICAL: "Merge Dev and Deploy" Command Protocol**
+When the user says **"merge dev to main and deploy"** or **"merge dev deploy"**, execute this workflow:
+
+1. **Generate descriptive commit message** based on recent changes
+2. **Execute merge-deploy script**: `./scripts/merge-deploy.sh "commit message"`
+
+**The script handles complete dev → main → production workflow:**
+- ✅ Commits changes on dev branch with your generated message
+- ✅ Pushes dev branch to origin
+- ✅ Switches to main and pulls latest
+- ✅ Merges dev to main with proper merge commit
+- ✅ Pushes main to origin
+- ✅ Builds assets locally for production
+- ✅ Deploys to production server (167.235.254.56)
+- ✅ Optimizes Laravel for production
+- ✅ Switches back to dev and merges main changes
+- ✅ Tests deployment and confirms website is live
+
+**IMPORTANT**: This is the complete workflow from dev → main → production in one command!
+
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)
 - **Main branch** is protected and always deployable
