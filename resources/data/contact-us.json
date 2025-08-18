@@ -1,0 +1,189 @@
+{
+    "hero": {
+        "title": "Contact VoIP AI Experts",
+        "subtitle": "Transform Your Business Communications Today",
+        "description": "Get personalized AI-powered communication solutions designed specifically for UAE enterprises",
+        "background_image": "assets/images/company/aboutus.jpg"
+    },
+    "ai_calling": {
+        "title": "Talk to Our AI Agent",
+        "subtitle": "Experience VoIP AI in Action",
+        "description": "Test our AI communication technology firsthand - speak directly with our intelligent agent to see how we can transform your business conversations.",
+        "phone_number": "+971-4-VOIP-AI",
+        "display_number": "+971 4 864 724",
+        "features": [
+            {
+                "icon": "uil uil-brain",
+                "title": "Natural Language Processing",
+                "description": "Conversations that feel completely natural and human-like"
+            },
+            {
+                "icon": "uil uil-language",
+                "title": "Multilingual Support", 
+                "description": "Communicate in Arabic, English, and 15+ languages"
+            },
+            {
+                "icon": "uil uil-clock-three",
+                "title": "24/7 Availability",
+                "description": "Our AI agent is available around the clock"
+            },
+            {
+                "icon": "uil uil-shield-check",
+                "title": "Enterprise Security",
+                "description": "Bank-grade encryption and UAE compliance"
+            }
+        ],
+        "call_to_action": "Call Now to Experience AI",
+        "demo_available": true
+    },
+    "contact_methods": [
+        {
+            "type": "phone",
+            "icon": "uil uil-phone",
+            "title": "Phone Support",
+            "description": "Speak directly with our VoIP AI specialists for immediate assistance and custom solutions.",
+            "primary": "+971-4-VOIP-AI",
+            "secondary": "+1-800-VOIP-AI",
+            "action_text": "Call Now",
+            "available": "24/7 UAE Time"
+        },
+        {
+            "type": "email",
+            "icon": "uil uil-envelope",
+            "title": "Email Support",
+            "description": "Send detailed requirements and receive comprehensive VoIP AI proposals within 24 hours.",
+            "primary": "sales@voip-ai.ae",
+            "secondary": "support@voip-ai.ae", 
+            "action_text": "Email Us",
+            "available": "< 4 Hour Response"
+        },
+        {
+            "type": "location",
+            "icon": "uil uil-map-marker",
+            "title": "UAE Offices",
+            "description": "Visit our Dubai and Abu Dhabi locations for in-person consultations and live demonstrations.",
+            "primary": "Dubai Internet City",
+            "secondary": "Abu Dhabi Global Market",
+            "action_text": "Schedule Visit",
+            "available": "Sun-Thu 9AM-6PM"
+        },
+        {
+            "type": "chat",
+            "icon": "uil uil-comments",
+            "title": "Live Chat", 
+            "description": "Get instant answers from our AI-powered chat system with human escalation available.",
+            "primary": "Instant Response",
+            "secondary": "AI + Human Support",
+            "action_text": "Start Chat",
+            "available": "Always Online"
+        }
+    ],
+    "office_locations": [
+        {
+            "city": "Dubai",
+            "address": "Dubai Internet City, Building 14, Level 3",
+            "coordinates": "25.0943°N 55.1560°E",
+            "phone": "+971 4 864 724",
+            "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+        },
+        {
+            "city": "Abu Dhabi", 
+            "address": "Abu Dhabi Global Market, Al Maryah Island",
+            "coordinates": "24.5014°N 54.3918°E",
+            "phone": "+971 2 123 456",
+            "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+        }
+    ],
+    "contact_form": {
+        "title": "Get Your Custom VoIP AI Solution",
+        "subtitle": "Tell us about your business needs",
+        "fields": [
+            {
+                "name": "name",
+                "label": "Full Name",
+                "type": "text",
+                "placeholder": "Your full name",
+                "required": true
+            },
+            {
+                "name": "email",
+                "label": "Business Email",
+                "type": "email", 
+                "placeholder": "your.email@company.com",
+                "required": true
+            },
+            {
+                "name": "phone",
+                "label": "Phone Number",
+                "type": "tel",
+                "placeholder": "+971 50 123 4567",
+                "required": true
+            },
+            {
+                "name": "company",
+                "label": "Company Name", 
+                "type": "text",
+                "placeholder": "Your company name",
+                "required": true
+            },
+            {
+                "name": "industry",
+                "label": "Industry",
+                "type": "select",
+                "options": [
+                    "Technology",
+                    "Healthcare", 
+                    "Finance & Banking",
+                    "Real Estate",
+                    "Retail & E-commerce",
+                    "Education",
+                    "Government",
+                    "Other"
+                ],
+                "required": true
+            },
+            {
+                "name": "employees",
+                "label": "Company Size",
+                "type": "select", 
+                "options": [
+                    "1-10 employees",
+                    "11-50 employees",
+                    "51-200 employees", 
+                    "201-1000 employees",
+                    "1000+ employees"
+                ],
+                "required": true
+            },
+            {
+                "name": "subject",
+                "label": "How can we help you?",
+                "type": "select",
+                "options": [
+                    "General Inquiry",
+                    "Request Demo",
+                    "Pricing Information",
+                    "Technical Support",
+                    "Partnership Opportunity",
+                    "Custom Integration"
+                ],
+                "required": true
+            },
+            {
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "Tell us about your VoIP AI requirements...",
+                "required": true
+            }
+        ],
+        "submit_text": "Get My Custom Solution",
+        "privacy_text": "By submitting this form, you agree to our Privacy Policy and Terms of Service."
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-18",
+        "total_sections": 4,
+        "page_type": "contact"
+    }
+}

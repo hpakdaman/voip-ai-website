@@ -240,15 +240,9 @@ resources/data/
 #### **Component Implementation Pattern**
 ```php
 @php
-try {
-    $data = json_decode(file_get_contents(resource_path('data/section-name.json')), true);
-    $sectionData = $data['section'] ?? [];
-    $items = $data['items'] ?? [];
-} catch (Exception $e) {
-    // Always include fallback data for error handling
-    $sectionData = ['title' => 'Fallback Title'];
-    $items = [/* fallback array */];
-}
+$data = json_decode(file_get_contents(resource_path('data/section-name.json')), true);
+$sectionData = $data['section'] ?? [];
+$items = $data['items'] ?? [];
 
 // Sort by priority if available
 usort($items, function($a, $b) {
@@ -256,6 +250,72 @@ usort($items, function($a, $b) {
 });
 @endphp
 ```
+
+#### **🚨 CRITICAL: NO FALLBACK CODE POLICY**
+**NEVER write fallback data or try-catch blocks for JSON data loading unless explicitly requested by user**
+
+**Forbidden:**
+- ❌ `try-catch` blocks around JSON loading
+- ❌ Fallback arrays or default data
+- ❌ Error handling for missing JSON files
+- ❌ Default values like `'Fallback Title'`
+
+**Required:**
+- ✅ Direct JSON loading without error handling
+- ✅ Trust that JSON files exist and are valid
+- ✅ Use null coalescing (`??`) for optional array keys only
+- ✅ Let the application fail if JSON is missing (intended behavior)
+
+#### **Client-Side Loading Error Handling**
+**ONLY when specifically requested by user, add simple HTML error messages for client-side fetch failures:**
+
+```html
+<!-- Only for client-side data fetching -->
+<div id="loading-error" class="hidden p-4 rounded-xl border border-red-200 text-red-800" style="background: rgba(239, 68, 68, 0.1);">
+    <div class="flex items-center">
+        <i class="uil uil-times-circle text-red-600 text-xl mr-3"></i>
+        <span>Failed to load content. Please refresh the page.</span>
+    </div>
+</div>
+```
+
+**Note**: This is ONLY for client-side JavaScript fetch operations, NOT for server-side JSON file loading.
+
+#### **🚨 MANDATORY: Page Navigation Integration**
+**EVERY time you create a new page, you MUST update navigation links across the site:**
+
+**Required Updates:**
+1. **Top Navigation Menu** (`resources/views/includes/navbar.blade.php`)
+   - Add page link to main navigation menu
+   - Ensure proper active state styling
+   - Add mobile menu support if needed
+
+2. **Footer Navigation** (`resources/views/includes/footer.blade.php`) 
+   - Add page link to appropriate footer section
+   - Update sitemap links if present
+
+3. **Related Pages Cross-Links**
+   - Add links from relevant existing pages
+   - Update breadcrumb navigation where applicable
+   - Add call-to-action buttons pointing to new page
+
+4. **Route Definition** (`routes/web.php`)
+   - Ensure proper route is defined and accessible
+   - Test route functionality
+
+**Example Integration:**
+```php
+// In navbar.blade.php navigation menu
+<li><a href="{{ url('/new-page') }}" class="sub-menu-item">New Page</a></li>
+
+// In footer.blade.php
+<li><a href="{{ url('/new-page') }}">New Page</a></li>
+
+// In related pages - add CTA buttons
+<a href="{{ url('/new-page') }}" class="hover-voip-button">Visit New Page</a>
+```
+
+**🚨 CRITICAL**: Never create orphaned pages. Every page must be discoverable through site navigation.
 
 ## VoIP AI Brand Theme System
 
