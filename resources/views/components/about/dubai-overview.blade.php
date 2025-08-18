@@ -32,11 +32,13 @@ try {
             
             <!-- Left Image - Clean PNG with transparent background -->
             <div class="relative wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
-                <!-- Clean PNG Image - No borders, boxes, or backgrounds -->
+                <!-- Circular Masked Image -->
                 <div class="relative">
-                    <img src="{{ asset('assets/images/about/about01.png') }}" 
-                         alt="UAE Business Innovation" 
-                         class="w-full h-auto object-contain">
+                    <div class="w-96 h-96 mx-auto rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(30, 192, 141, 0.3);">
+                        <img src="{{ asset('assets/images/about/about01.png') }}" 
+                             alt="UAE Business Innovation" 
+                             class="w-full h-full object-cover">
+                    </div>
                     
                     <!-- Floating Achievement Stats -->
                     <div class="absolute top-8 right-8 p-4 rounded-2xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(15px);">

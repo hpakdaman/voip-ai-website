@@ -74,8 +74,8 @@ try {
                          alt="VoIP AI Solutions Dubai Professional Team" 
                          class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl">
                     
-                    <!-- Image Overlay with Company Info -->
-                    <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl" style="background: rgba(12, 27, 39, 0.9); backdrop-filter: blur(10px);">
+                    <!-- Image Overlay with Company Info - Covers bottom -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 rounded-b-2xl" style="background: linear-gradient(to top, rgba(12, 27, 39, 0.95) 0%, rgba(12, 27, 39, 0.8) 50%, transparent 100%); backdrop-filter: blur(15px);">
                         <div class="flex items-center justify-between">
                             <div>
                                 <h6 class="text-white font-semibold mb-1">Dubai Headquarters</h6>
