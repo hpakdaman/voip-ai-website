@@ -1,0 +1,40 @@
+{
+    "name": "VoIP AI Laravel Development",
+    "image": "mcr.microsoft.com/devcontainers/php:8.2",
+    
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "18"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "bradlc.vscode-tailwindcss",
+                "ms-vscode.vscode-json"
+            ]
+        }
+    },
+    
+    "forwardPorts": [8000, 3000, 5173],
+    "portsAttributes": {
+        "8000": {
+            "label": "Laravel Server",
+            "visibility": "public"
+        },
+        "3000": {
+            "label": "Node Dev Server", 
+            "visibility": "public"
+        },
+        "5173": {
+            "label": "Vite Dev Server",
+            "visibility": "public"
+        }
+    },
+    
+    "postCreateCommand": "composer install && npm install",
+    "postStartCommand": "php artisan key:generate && php artisan storage:link"
+}
