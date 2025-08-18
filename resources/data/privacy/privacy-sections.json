@@ -9,11 +9,11 @@
             "title": "1. Data Controller Information",
             "icon": "uil-building",
             "content": [
-                "VoIP AI Solutions operates as the Data Controller for all personal information collected through our AI-powered communication platform.",
+                "Sawtic operates as the Data Controller for all personal information collected through our AI call center and business automation platform.",
                 "Our company is incorporated in the United Arab Emirates with our primary office located at Suite 1401, Gate Building, Dubai International Financial Centre (DIFC), Dubai, UAE.",
-                "We maintain a regional office in Sydney, Australia at Level 23, 52 Martin Place, Sydney, NSW 2000, serving our Asia-Pacific clients.",
-                "For all privacy-related inquiries, please contact our Data Protection Officer at privacy@voipai.ae or +971 4 864 7245.",
-                "We are registered with the UAE Telecommunications and Digital Government Regulatory Authority (TDRA) and comply with all local data protection requirements."
+                "We serve businesses across the UAE and internationally with AI-powered solutions, maintaining data centers in key regions for optimal service delivery.",
+                "For all privacy-related inquiries, please contact our Data Protection Officer at privacy@sawtic.com or +971 4 864 7245.",
+                "We are registered with the UAE Telecommunications and Digital Government Regulatory Authority (TDRA) and comply with UAE Data Protection Law, GDPR, and other applicable privacy regulations."
             ],
             "delay": "0.1s"
         },
@@ -120,10 +120,10 @@
             "title": "9. International Data Transfers",
             "icon": "uil-globe",
             "content": [
-                "**Cross-Border Processing:** We may transfer your data between our offices in the UAE, Australia, and trusted service providers in other countries to provide our global VoIP services.",
+                "**Cross-Border Processing:** We may transfer your data between our UAE offices, international partners, and trusted service providers to provide our AI call center services globally.",
                 "**Adequacy Decisions:** We prioritize transfers to countries with adequate data protection levels recognized by UAE authorities and the European Commission.",
                 "**Standard Contractual Clauses:** For transfers to countries without adequacy decisions, we use Standard Contractual Clauses approved by data protection authorities to ensure equivalent protection.",
-                "**Binding Corporate Rules:** Our internal data transfer policies provide consistent privacy protection across all VoIP AI Solutions entities and affiliates worldwide.",
+                "**Binding Corporate Rules:** Our internal data transfer policies provide consistent privacy protection across all Sawtic entities and affiliates worldwide.",
                 "**Local Data Residency:** UAE customer data is primarily processed and stored within UAE borders in compliance with TDRA data localization requirements.",
                 "**Data Subject Rights:** Your privacy rights remain fully enforceable regardless of where your data is processed or stored globally."
             ],
@@ -176,12 +176,12 @@
         "title": "Privacy Questions & Requests",
         "description": "Contact our Data Protection Officer for any privacy-related inquiries or to exercise your rights.",
         "dpo": {
-            "email": "privacy@voipai.ae",
+            "email": "privacy@sawtic.com",
             "phone": "+971 4 864 7245",
-            "address": "Data Protection Officer, Suite 1401, Gate Building, DIFC, Dubai, UAE",
+            "address": "Data Protection Officer, Suite 1401, Gate Building, Dubai International Financial Centre (DIFC), Dubai, UAE",
             "response_time": "We respond to privacy requests within 30 days as required by law."
         },
-        "rights_portal": "Access our Privacy Rights Portal at voipai.ae/privacy-portal to submit requests online.",
+        "rights_portal": "Access our Privacy Rights Portal at sawtic.com/privacy-portal to submit requests online.",
         "complaint_authority": {
             "uae": "UAE Data Protection Office - complaints@tdra.gov.ae",
             "australia": "Office of the Australian Information Commissioner (OAIC) - www.oaic.gov.au"

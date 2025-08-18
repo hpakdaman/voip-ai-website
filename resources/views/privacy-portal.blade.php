@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Privacy Rights Portal - VoIP AI Solutions | Exercise Your Data Rights')
+@section('title', 'Privacy Rights Portal - Sawtic | Exercise Your Data Rights')
 
 @section('content')
 
@@ -40,8 +40,8 @@
                     <i class="uil uil-envelope text-3xl mb-4" style="color: var(--voip-link);"></i>
                     <h3 class="text-xl font-semibold text-white mb-2">Email Request</h3>
                     <p class="text-slate-300 mb-4">Send your privacy request directly to our DPO</p>
-                    <a href="mailto:privacy@voipai.ae" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                        privacy@voipai.ae
+                    <a href="mailto:privacy@sawtic.com" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                        privacy@sawtic.com
                     </a>
                 </div>
                 

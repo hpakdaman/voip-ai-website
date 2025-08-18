@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Terms of Service - VoIP AI Solutions | Legal Agreement UAE')
+@section('title', 'Terms of Service - Sawtic | AI Call Center Legal Agreement')
 
 @section('content')
 

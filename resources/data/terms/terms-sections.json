@@ -9,8 +9,8 @@
             "title": "1. Acceptance of Terms",
             "icon": "uil-check-circle",
             "content": [
-                "By accessing, using, or subscribing to VoIP AI Solutions ('We,' 'Us,' 'Our,' 'Company'), you ('User,' 'Customer,' 'You') agree to be bound by these Terms of Service ('Terms,' 'Agreement').",
-                "These Terms constitute a legally binding agreement between you and VoIP AI Solutions, a company incorporated in the United Arab Emirates with offices in Dubai and Sydney.",
+                "By accessing, using, or subscribing to Sawtic ('We,' 'Us,' 'Our,' 'Company'), you ('User,' 'Customer,' 'You') agree to be bound by these Terms of Service ('Terms,' 'Agreement').",
+                "These Terms constitute a legally binding agreement between you and Sawtic, a company incorporated in the United Arab Emirates with offices in Dubai, providing AI solutions and call center automation services.",
                 "If you do not agree to these Terms, you must not use our Services. By continuing to use our platform, you acknowledge that you have read, understood, and agree to be bound by these Terms.",
                 "We may update these Terms from time to time. Your continued use of our Services after any modifications indicates your acceptance of the updated Terms."
             ],
@@ -22,10 +22,10 @@
             "icon": "uil-book-open",
             "content": [
                 "'AI Voice Agent' means our artificial intelligence-powered voice communication system that can conduct automated conversations with callers.",
-                "'Platform' refers to our web-based interface, APIs, and all related VoIP AI technology services.",
+                "'Platform' refers to our web-based interface, APIs, and all related Sawtic AI technology services.",
                 "'Call Data' includes voice recordings, transcripts, analytics, and metadata generated through use of our Services.",
-                "'UAE Compliance' refers to adherence to Telecommunications and Digital Government Regulatory Authority (TDRA) regulations.",
-                "'Services' encompasses all VoIP AI solutions, including but not limited to voice agents, call routing, analytics, and integration capabilities."
+                "'Regulatory Compliance' refers to adherence to applicable telecommunications and data protection regulations.",
+                "'Services' encompasses all Sawtic AI solutions, including but not limited to AI agents, call center automation, analytics, and business integration capabilities."
             ],
             "delay": "0.2s"
         },
@@ -34,11 +34,11 @@
             "title": "3. Service Description",
             "icon": "uil-phone",
             "content": [
-                "VoIP AI Solutions provides AI-powered voice communication services including intelligent call routing, automated voice agents, real-time transcription, and advanced analytics.",
+                "Sawtic provides AI-powered call center and business automation services including intelligent call routing, automated AI agents, real-time transcription, and advanced analytics.",
                 "Our Services are designed to enhance business communications through artificial intelligence, natural language processing, and machine learning technologies.",
                 "We offer three service tiers: Starter ($299/month), Professional ($699/month), and Enterprise ($1,299/month), each with specific features and usage limits.",
                 "All Services are provided through cloud-based infrastructure with 99.9% uptime guarantee and enterprise-grade security protocols.",
-                "Our AI voice agents support multiple languages including English, Arabic, and Gulf dialects, specifically optimized for UAE market communications."
+                "Our AI agents support multiple languages including Arabic and English, optimized for UAE business communications and regional market needs."
             ],
             "delay": "0.3s"
         },
@@ -51,7 +51,7 @@
                 "You are responsible for maintaining the security and confidentiality of your account credentials and all activities under your account.",
                 "You agree to use our Services only for lawful business purposes and in compliance with all applicable local, national, and international laws.",
                 "You must obtain proper consent from callers before recording conversations and comply with all privacy regulations in your jurisdiction.",
-                "You are prohibited from using our Services for spam calls, telemarketing without consent, illegal activities, or any purpose that violates UAE telecommunications regulations."
+                "You are prohibited from using our Services for spam calls, telemarketing without consent, illegal activities, or any purpose that violates applicable telecommunications regulations."
             ],
             "delay": "0.4s"
         },
@@ -87,8 +87,8 @@
             "title": "7. UAE Telecommunications Compliance",
             "icon": "uil-building",
             "content": [
-                "Our VoIP services are provided in full compliance with UAE Telecommunications and Digital Government Regulatory Authority (TDRA) regulations.",
-                "We maintain proper licensing and regulatory approvals for operating VoIP services within the United Arab Emirates.",
+                "Our AI call center services are provided in full compliance with UAE Telecommunications and Digital Government Regulatory Authority (TDRA) regulations.",
+                "We maintain proper licensing and regulatory approvals for operating AI communication services within the United Arab Emirates.",
                 "All voice communications are routed through TDRA-approved infrastructure and comply with UAE cybersecurity and data localization requirements.",
                 "Emergency calling services (999, 997, 998) are appropriately configured and prioritized according to UAE emergency services protocols.",
                 "We cooperate fully with UAE authorities for lawful interception requests and maintain required call detail records as per TDRA guidelines."
@@ -100,10 +100,10 @@
             "title": "8. Service Level & Availability",
             "icon": "uil-clock",
             "content": [
-                "We guarantee 99.9% uptime for our core VoIP services, measured on a monthly basis with automatic service credits for verified downtime.",
-                "Scheduled maintenance windows are announced at least 48 hours in advance and typically occur during low-traffic periods (02:00-06:00 GST).",
+                "We guarantee 99.9% uptime for our core AI services, measured on a monthly basis with automatic service credits for verified downtime.",
+                "Scheduled maintenance windows are announced at least 48 hours in advance and typically occur during low-traffic periods.",
                 "Voice quality is maintained through adaptive bitrate encoding, jitter buffering, and intelligent call routing across multiple data centers.",
-                "Our support team provides 24/7 assistance for Enterprise customers and business hours support (09:00-18:00 GST) for other tiers.",
+                "Our support team provides 24/7 assistance for Enterprise customers and business hours support for other tiers.",
                 "Service interruptions due to force majeure, internet connectivity issues, or third-party provider outages are excluded from uptime calculations."
             ],
             "delay": "0.8s"
@@ -178,7 +178,7 @@
         "title": "Questions or Concerns?",
         "description": "If you have any questions about these Terms of Service, please contact our legal team.",
         "contact": {
-            "email": "legal@voipai.ae",
+            "email": "legal@sawtic.com",
             "phone": "+971 4 864 7245",
             "address": "Suite 1401, Gate Building, Dubai International Financial Centre (DIFC), Dubai, UAE"
         },

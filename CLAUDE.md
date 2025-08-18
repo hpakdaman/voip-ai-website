@@ -4,39 +4,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from ThemeForest (https://themeforest.net/item/techwind-laravel-12-app-saas-software-landing-template/58088942) that has been fully transformed into a comprehensive **VoIP AI business website** targeting UAE and Middle East enterprises. The original template has been extensively customized with AI-powered communication solutions, Arabic language support, and TRA compliance features.
+This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from ThemeForest that has been fully transformed into **Sawtic** - a comprehensive **AI call center and business solutions website** targeting UAE and Middle East enterprises. The original template has been extensively customized with AI-powered communication solutions, call center automation, and UAE regulatory compliance features.
 
-**Business Context**: This is now a complete VoIP AI business website showcasing intelligent communication solutions designed specifically for the UAE market. The platform includes advanced AI features, bilingual support (English/Arabic), UAE regulatory compliance, and enterprise-grade functionality targeting Dubai and Abu Dhabi businesses.
+**Business Context**: Sawtic (sawtic.com) is a Dubai-based AI solution provider specializing in AI call centers, business automation, and intelligent communication solutions designed specifically for the UAE market. The platform includes advanced AI features, bilingual support (English/Arabic), UAE TDRA compliance, and enterprise-grade functionality.
 
-## Company Office Locations
+## Company Information
 
-**VoIP AI Solutions** operates from two strategic locations to serve clients across the MENA and Asia-Pacific regions:
+**Sawtic** is headquartered in Dubai, UAE, serving clients across the MENA region with cutting-edge AI solutions.
 
 ### **🇦🇪 Dubai Headquarters (UAE)**
 **Address**: Suite 1401, Gate Building, Dubai International Financial Centre (DIFC)  
 **City**: Dubai, United Arab Emirates  
 **Postal Code**: P.O. Box 74777  
 **Phone**: +971 4 864 7245  
-**Email**: dubai@voipai.ae  
+**Email**: dubai@sawtic.com  
+**Website**: https://sawtic.com
 
-### **🇦🇺 Sydney Regional Office (Australia)**
-**Address**: Level 23, 52 Martin Place  
-**City**: Sydney, NSW 2000  
-**Country**: Australia  
-**Phone**: +61 2 8247 3156  
-**Email**: sydney@voipai.com.au  
-
-Both offices provide 24/7 support and are equipped with state-of-the-art VoIP AI technology for live demonstrations and client consultations.
+Our Dubai office provides 24/7 support and is equipped with state-of-the-art AI call center technology for live demonstrations and client consultations.
 
 ## Current Implementation Status
 
-✅ **COMPLETED - Full VoIP AI Website**
+✅ **COMPLETED - Full Sawtic AI Solution Website**
 - **Homepage**: 12-section Grok-inspired layout with interactive demos, currency toggle (USD/AED), and UAE-focused content
 - **Features Page**: Comprehensive AI capabilities showcase with UAE-specific optimizations
 - **Pricing Page**: Three-tier pricing with USD/AED currency toggle and UAE-focused plans
 - **About Page**: Complete company story with UAE journey, team stats, and future vision  
 - **Navigation**: Clean navbar with theme toggle, language switcher (EN/AR), and proper alignment
-- **Styling**: Custom VoIP AI theme with animations, floating elements, and premium card effects
+- **Styling**: Custom Sawtic AI theme with animations, floating elements, and premium card effects
 - **Functionality**: Interactive JavaScript features, responsive design, and WOW.js animations
 - **✨ NEW: Modular Architecture**: Homepage refactored into 14 reusable Blade components for better maintainability
 
@@ -70,91 +64,122 @@ This ensures each page section provides a fresh, engaging experience while maint
 
 ## Current Live Pages
 
-1. **Homepage** (`/`) - Complete 12-section AI VoIP showcase
+1. **Homepage** (`/`) - Complete 12-section AI solution showcase
 2. **Features Page** (`/features`) - Comprehensive AI capabilities  
 3. **Pricing Page** (`/pricing`) - Complete pricing strategy
 4. **About Page** (`/about`) - Full company story
 5. **Contact Page** (`/contact-us`) - Contact form (existing)
-6. **Privacy Policy** (`/privacy`) - UAE compliance-focused policy  
-7. **Terms of Service** (`/terms`) - Legal terms for UAE market
+6. **Privacy Policy** (`/privacy`) - UAE GDPR & TDRA compliance
+7. **Terms of Service** (`/terms`) - AI call center legal framework
 
 ## Git Workflow for Team Development
 
-### **🚨 CRITICAL: "Merge" Command Protocol**
-When the user says **"merge"**, execute this optimized workflow:
+### **🌿 4-Branch Structure Overview**
+```
+📊 Sawtic Git Workflow:
+main     → Production branch (live website)
+dev      → Shared development branch (hamed ↔ ashkan)  
+hamed    → Hamed's personal development branch
+ashkan   → Ashkan's personal development branch
+```
 
-1. **Generate descriptive commit message** based on recent changes
-2. **Execute merge script**: `./scripts/git-merge.sh "commit message"`
+**Flow Direction:** `hamed/ashkan → dev → main → production server`
 
-**The script handles all Git operations automatically and safely:**
-- ✅ Commits changes with your generated message
+### **🚨 CRITICAL: Branch-Specific Commands**
+
+#### **For Hamed & Ashkan (Development Branches)**
+
+**🔄 When user says "sync to dev" or "share work":**
+```bash
+./scripts/sync-to-dev.sh "commit message"
+```
+- ✅ Commits changes on current branch (hamed/ashkan)
 - ✅ Pushes current branch to origin
-- ✅ Switches to main and pulls latest
-- ✅ Merges current branch to main
-- ✅ Pushes main to origin
-- ✅ Switches back to original branch
-- ✅ Merges main changes back
-- ✅ Pushes updated branch
-- ✅ Returns to original branch
+- ✅ Merges current branch to dev (shared development)
+- ✅ Updates current branch with any dev changes
+- ✅ Makes work available to other developer
 
-**IMPORTANT**: You create the commit message, the script handles all Git operations efficiently!
-
-### **🔄 CRITICAL: "Pull" Command Protocol**
-When the user says **"pull"**, execute this optimized workflow:
-
-**Execute pull script**: `./scripts/git-pull.sh`
-
-**The script handles all Git operations automatically and safely:**
-- ✅ Detects and stashes uncommitted changes
-- ✅ Switches to main and pulls latest
-- ✅ Switches back to original branch
-- ✅ Merges main changes safely
-- ✅ Pushes updated branch to origin
+**⬇️ When user says "pull from dev" or "get updates":**
+```bash
+./scripts/pull-from-dev.sh
+```
+- ✅ Stashes uncommitted changes safely
+- ✅ Pulls latest dev changes (other developer's work)
+- ✅ Merges dev to current branch (hamed/ashkan)
 - ✅ Restores stashed changes if any
-- ✅ Handles merge conflicts gracefully
-- ✅ Returns to original branch with updates
 
-**IMPORTANT**: Script ensures you always end on original branch with latest main changes merged in!
+**📥 When user says "pull" (from production):**
+```bash
+./scripts/git-pull.sh
+```
+- ✅ Gets production updates from main branch
+- ✅ Same as existing workflow but for any branch
 
-### **🚀 CRITICAL: "Merge Dev and Deploy" Command Protocol**
-When the user says **"merge dev to main and deploy"** or **"merge dev deploy"**, execute this workflow:
+#### **For Dev Branch (Shared Development)**
 
-1. **Generate descriptive commit message** based on recent changes
-2. **Execute merge-deploy script**: `./scripts/merge-deploy.sh "commit message"`
+**🚀 When user says "deploy to production" or "merge to main":**
+```bash
+./scripts/merge-to-production.sh "production release message"
+```
+- ✅ Merges dev → main (production ready)
+- ✅ Updates all branches with production changes
+- ✅ Prepares for server deployment
 
-**The script handles complete dev → main → production workflow:**
-- ✅ Commits changes on dev branch with your generated message
-- ✅ Pushes dev branch to origin
-- ✅ Switches to main and pulls latest
-- ✅ Merges dev to main with proper merge commit
-- ✅ Pushes main to origin
-- ✅ Builds assets locally for production
-- ✅ Deploys to production server (167.235.254.56)
-- ✅ Optimizes Laravel for production
-- ✅ Switches back to dev and merges main changes
-- ✅ Tests deployment and confirms website is live
+#### **For Production Deployment**
 
-**IMPORTANT**: This is the complete workflow from dev → main → production in one command!
+**📡 When user says "deploy to server" or "go live":**
+```bash
+./scripts/deploy-production.sh
+```
+- ✅ Deploys main branch to production server
+- ✅ Same as existing production deployment
 
-### **⚡ CRITICAL: "Force Deploy" Command Protocol**
-When the user says **"force deploy"**, **"force commit and deploy"**, or **"commit to dev and main by force and update server"**, execute this emergency workflow:
+**🚀 When user says "complete deployment" or "deploy with merge":**
+```bash
+./scripts/deploy-with-merge.sh "deployment message"
+```
+- ✅ Complete pipeline: dev → main → production server
+- ✅ One command for full deployment workflow
 
-1. **Generate descriptive commit message** based on recent changes
-2. **Execute force deploy script**: `./scripts/force-deploy.sh "commit message"`
+#### **Emergency Procedures**
 
-**The script handles emergency deployment workflow:**
-- ✅ Force commits ALL changes (including uncommitted files)
-- ✅ Pushes current branch with force
-- ✅ Force updates dev branch to match current branch
-- ✅ Force updates main branch to match current branch
-- ✅ Pushes both dev and main with force
-- ✅ Builds assets locally for production
-- ✅ Force deploys to production server (167.235.254.56)
-- ✅ Optimizes Laravel for production
-- ✅ Returns to original branch
-- ✅ Tests deployment and confirms website is live
+**🚨 When user says "hotfix" or "emergency fix":**
+```bash
+./scripts/hotfix-to-main.sh "HOTFIX: critical issue description"
+```
+- ⚠️ **BYPASS dev workflow** for critical production fixes
+- ✅ Direct merge to main from any branch
+- ✅ Syncs hotfix back to all branches
+- ✅ Interactive confirmation required
 
-**⚠️ WARNING**: This command uses --force and overwrites git history. Use only when necessary!
+### **📊 Branch Status & Navigation**
+
+**🔍 When user says "status" or "check branches":**
+```bash
+./scripts/branch-status.sh
+```
+- 📈 Shows status of all 4 branches
+- 📍 Current branch and working directory status  
+- 💡 Available actions based on current branch
+- 📋 Commits ahead/behind main for each branch
+
+### **🎯 Workflow Decision Tree**
+
+```
+👤 Current Branch → Recommended Action
+├─ hamed/ashkan   → ./scripts/sync-to-dev.sh (share work)
+│                 → ./scripts/pull-from-dev.sh (get updates)  
+├─ dev            → ./scripts/merge-to-production.sh (deploy)
+├─ main           → ./scripts/deploy-production.sh (server)
+└─ any branch     → ./scripts/hotfix-to-main.sh (emergency)
+```
+
+### **🔒 Safety Features**
+- ✅ **Branch Validation**: Scripts only work on appropriate branches
+- ✅ **Conflict Detection**: Automatic merge conflict handling
+- ✅ **Stash Management**: Auto-stash/restore uncommitted changes
+- ✅ **Interactive Confirmation**: For destructive operations
+- ✅ **Status Reporting**: Clear success/failure feedback
 
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)
@@ -268,7 +293,7 @@ resources/views/
 - **When in doubt**: Start page-specific, move to shared if reused later
 
 ### Homepage Component System
-The VoIP AI homepage has been completely refactored from a monolithic 976-line file into **14 reusable, maintainable Blade components**. This modular architecture follows Laravel best practices and significantly improves code organization.
+The Sawtic homepage has been completely refactored from a monolithic 976-line file into **14 reusable, maintainable Blade components**. This modular architecture follows Laravel best practices and significantly improves code organization.
 
 #### Component Structure Overview
 ```
@@ -410,13 +435,13 @@ usort($items, function($a, $b) {
 
 **🚨 CRITICAL**: Never create orphaned pages. Every page must be discoverable through site navigation.
 
-## VoIP AI Brand Theme System
+## Sawtic AI Brand Theme System
 
-**🚨 CRITICAL REQUIREMENT: ALL new sections, components, and UI elements MUST use VoIP theme colors**
+**🚨 CRITICAL REQUIREMENT: ALL new sections, components, and UI elements MUST use Sawtic theme colors**
 
-The VoIP AI website uses a custom color scheme defined in `public/assets/css/voip-home.css`:
+The Sawtic website uses a custom color scheme defined in `public/assets/css/voip-home.css`:
 
-#### **VoIP Theme CSS Variables**
+#### **Sawtic AI Theme CSS Variables**
 ```css
 :root {
     --voip-bg: #162f3a;           /* Main background color */
@@ -429,6 +454,8 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
     --voip-accent: rgba(29, 120, 97, 0.1);
     --voip-hover: rgba(30, 192, 141, 0.2);
 }
+
+/* Note: CSS variables retain 'voip-' prefix for technical compatibility */
 ```
 
 #### **MANDATORY Usage Guidelines**
@@ -454,7 +481,7 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
 **📝 Text Color Standards (MANDATORY)**
 - **Section titles**: `text-white` (never use dark colors on VoIP backgrounds)
 - **Descriptions**: `text-slate-300` (light gray for readability)
-- **Subheadings/labels**: `style="color: var(--voip-link);"` (VoIP accent color)
+- **Subheadings/labels**: `style="color: var(--voip-link);"` (Sawtic accent color)
 - **Icons**: `style="color: var(--voip-link);"` for consistency
 
 **🚨 FORBIDDEN AI DESIGN CLICHÉS - NEVER USE**
@@ -468,7 +495,7 @@ The VoIP AI website uses a custom color scheme defined in `public/assets/css/voi
 **✅ UNIQUE DESIGN PRINCIPLES**
 - ✅ **Clean, professional layouts** that serve business purposes
 - ✅ **Purposeful animations** that enhance user experience
-- ✅ **Consistent VoIP branding** without gimmicky effects
+- ✅ **Consistent Sawtic branding** without gimmicky effects
 - ✅ **Business-appropriate styling** for UAE corporate market
 
 ## Error Checking Protocol
