@@ -53,6 +53,14 @@ class HomeController extends Controller
         return view('terms');  
     }
 
+    /**
+     * Privacy Rights Portal
+     */
+    public function privacyPortal()
+    {
+        return view('privacy-portal');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

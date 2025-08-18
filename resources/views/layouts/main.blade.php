@@ -109,6 +109,9 @@
         <!-- JAVASCRIPTS -->
 
         <script>
+            // Hide all WOW elements immediately to prevent flash
+            document.documentElement.style.setProperty('--wow-visibility', 'hidden');
+            
             document.addEventListener("DOMContentLoaded", function () {
                 // Force dark theme permanently
                 const htmlElement = document.documentElement;
