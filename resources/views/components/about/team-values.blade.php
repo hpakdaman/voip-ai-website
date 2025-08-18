@@ -93,7 +93,7 @@ try {
                     </p>
                     
                     <!-- Priority Indicator -->
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-slate-300" style="background: rgba(30, 192, 141, 0.2); backdrop-filter: blur(5px);">
                         {{ $value['priority'] ?? '1' }}
                     </div>
                 </div>
