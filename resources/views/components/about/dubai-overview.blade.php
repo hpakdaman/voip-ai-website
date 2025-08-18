@@ -34,8 +34,8 @@ try {
             <div class="relative wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Clean PNG Image - No borders, boxes, or backgrounds -->
                 <div class="relative">
-                    <img src="{{ asset('assets/images/business/uae-business-growth.png') }}" 
-                         alt="UAE Business Growth" 
+                    <img src="{{ asset('assets/images/about/about01.png') }}" 
+                         alt="UAE Business Innovation" 
                          class="w-full h-auto object-contain">
                     
                     <!-- Floating Achievement Stats -->

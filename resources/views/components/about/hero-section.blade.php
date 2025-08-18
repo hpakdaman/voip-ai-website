@@ -69,10 +69,10 @@ try {
             <div class="relative wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                 <!-- Main Image Container -->
                 <div class="relative">
-                    <!-- Professional Team Image -->
-                    <img src="{{ asset('assets/images/business/team-meeting.jpg') }}" 
-                         alt="VoIP AI Solutions Dubai Team" 
-                         class="w-full h-96 lg:h-[500px] object-cover">
+                    <!-- Professional UAE Team Image -->
+                    <img src="{{ asset('assets/images/about/about02.png') }}" 
+                         alt="VoIP AI Solutions Dubai Professional Team" 
+                         class="w-full h-96 lg:h-[500px] object-cover rounded-2xl">
                     
                     <!-- Image Overlay with Company Info -->
                     <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl" style="background: rgba(12, 27, 39, 0.9); backdrop-filter: blur(10px);">
