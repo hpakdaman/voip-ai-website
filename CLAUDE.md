@@ -120,6 +120,60 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## ✨ NEW: Modular Component Architecture
 
+### **🚨 MANDATORY: Page Segmentation Strategy**
+**EVERY new page MUST be divided into logical segments and saved as separate Blade files**
+
+#### **Page Organization Rules**
+1. **Divide each page** into 3-8 logical segments based on content
+2. **Create page-specific folder** in `resources/views/components/[page-name]/`
+3. **Save each segment** as separate Blade file in the page folder
+4. **Shared components** stay in root `resources/views/components/` folder
+5. **All content data** must be stored in `resources/data/` folder
+
+#### **File Structure Pattern**
+```
+resources/views/
+├── [page-name].blade.php           # Main page with @include statements
+├── components/
+│   ├── [page-name]/                # Page-specific segments folder
+│   │   ├── hero-section.blade.php  # Page hero
+│   │   ├── content-section.blade.php # Main content
+│   │   ├── features-grid.blade.php # Features/benefits
+│   │   └── cta-section.blade.php   # Call to action
+│   ├── shared/                     # Shared components (across pages)
+│   │   ├── navbar.blade.php
+│   │   ├── footer.blade.php
+│   │   └── pricing-card.blade.php
+│   └── background-blurs.blade.php  # Homepage components (legacy)
+└── data/
+    ├── [page-name]/                # Page-specific data folder
+    │   ├── hero.json
+    │   ├── features.json
+    │   └── testimonials.json
+    └── shared/                     # Shared data files
+        └── navigation.json
+```
+
+#### **Example: Features Page Structure**
+```
+resources/views/
+├── features.blade.php
+├── components/features/
+│   ├── hero-section.blade.php
+│   ├── ai-capabilities.blade.php
+│   ├── integration-showcase.blade.php
+│   └── feature-comparison.blade.php
+└── data/features/
+    ├── hero.json
+    ├── ai-capabilities.json
+    └── integrations.json
+```
+
+#### **Reusability Guidelines**
+- **Page-specific segments**: Keep in `components/[page-name]/` folder
+- **Cross-page components**: Move to `components/shared/` folder
+- **When in doubt**: Start page-specific, move to shared if reused later
+
 ### Homepage Component System
 The VoIP AI homepage has been completely refactored from a monolithic 976-line file into **14 reusable, maintainable Blade components**. This modular architecture follows Laravel best practices and significantly improves code organization.
 
