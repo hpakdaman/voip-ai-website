@@ -53,7 +53,8 @@
                 <li><a href="{{ url('/') }}" class="sub-menu-item active">HOME</a></li>
                 <li><a href="{{ url('/about') }}" class="sub-menu-item">ABOUT</a></li>
                 <li><a href="{{ url('/features') }}" class="sub-menu-item">FEATURES</a></li>
-                <li class="has-submenu parent-menu-item">
+                {{-- Temporarily disabled SOLUTIONS menu --}}
+                {{-- <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">SOLUTIONS</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li><a href="{{ url('/healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
@@ -63,7 +64,7 @@
                         <li><a href="{{ url('/education') }}" class="sub-menu-item text-base font-medium">Education</a></li>
                         <li><a href="{{ url('/government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
                     </ul>
-                </li>
+                </li> --}}
                 <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">CONTACT</a></li>
                 
                 <!-- Mobile Language Switcher -->
