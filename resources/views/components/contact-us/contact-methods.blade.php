@@ -27,29 +27,31 @@ $officeLocations = $contactData['office_locations'] ?? [];
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mb-16">
             @foreach($contactMethods as $index => $method)
             <div class="group text-center wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.4 + ($index * 0.1) }}s">
-                <div class="relative p-6 rounded-2xl border border-white/10 h-full transition-all duration-300 hover:border-white/30 hover:-translate-y-1" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
+                <div class="relative p-6 rounded-2xl border border-white/10 h-full transition-all duration-300 hover:border-white/30 hover:-translate-y-1 flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
                     
                     <!-- Method Icon -->
                     <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
                         <i class="{{ $method['icon'] ?? 'uil uil-phone' }} text-2xl text-white"></i>
                     </div>
                     
-                    <!-- Method Content -->
-                    <h4 class="text-xl font-bold mb-3 text-white">{{ $method['title'] ?? 'Contact Method' }}</h4>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-4">{{ $method['description'] ?? 'Description here' }}</p>
-                    
-                    <!-- Primary Contact -->
-                    <div class="mb-4">
-                        <h5 class="text-base font-semibold mb-1" style="color: var(--voip-link);">{{ $method['primary'] ?? 'Primary Contact' }}</h5>
-                        @if(isset($method['available']))
-                        <p class="text-slate-400 text-xs">{{ $method['available'] }}</p>
-                        @endif
+                    <!-- Method Content - Flex grow to push button to bottom -->
+                    <div class="flex-grow">
+                        <h4 class="text-xl font-bold mb-3 text-white">{{ $method['title'] ?? 'Contact Method' }}</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">{{ $method['description'] ?? 'Description here' }}</p>
+                        
+                        <!-- Primary Contact -->
+                        <div class="mb-4">
+                            <h5 class="text-base font-semibold mb-1" style="color: var(--voip-link);">{{ $method['primary'] ?? 'Primary Contact' }}</h5>
+                            @if(isset($method['available']))
+                            <p class="text-slate-400 text-xs">{{ $method['available'] }}</p>
+                            @endif
+                        </div>
                     </div>
                     
-                    <!-- Action Button -->
+                    <!-- Action Button - Stays at bottom -->
                     <a href="{{ $method['type'] === 'phone' ? 'tel:' . ($method['primary'] ?? '') : 
                                 ($method['type'] === 'email' ? 'mailto:' . ($method['primary'] ?? '') : '#') }}" 
-                       class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg font-medium text-white transition-all duration-300" 
+                       class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg font-medium text-white transition-all duration-300 mt-auto" 
                        style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 15px rgba(30, 192, 141, 0.2);"
                        onmouseover="this.style.boxShadow='0 6px 20px rgba(30, 192, 141, 0.3)'" 
                        onmouseout="this.style.boxShadow='0 4px 15px rgba(30, 192, 141, 0.2)'">

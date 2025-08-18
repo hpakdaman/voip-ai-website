@@ -132,6 +132,8 @@ footer .hover-voip-button:hover {
 /* Specific styling for footer demo button */
 .footer-demo-button {
     color: #ffffff !important;
+    background: linear-gradient(135deg, #047857 0%, #059669 100%) !important;
+    box-shadow: 0 8px 25px rgba(4, 120, 87, 0.4) !important;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
@@ -140,9 +142,9 @@ footer .hover-voip-button:hover {
 }
 
 .footer-demo-button:hover {
-    background-color: var(--voip-dark-font) !important;
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%) !important;
     color: #ffffff !important;
-    box-shadow: 0 12px 35px rgba(30, 192, 141, 0.4) !important;
+    box-shadow: 0 12px 35px rgba(22, 163, 74, 0.6) !important;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
@@ -152,6 +154,14 @@ footer .hover-voip-button:hover {
 /* Override the general footer a rule with higher specificity */
 footer a.footer-demo-button:hover {
     color: #ffffff !important;
+}
+
+/* Remove default dropdown arrow from select elements */
+select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: none !important;
 }
 
 .hover-voip-link:hover {
