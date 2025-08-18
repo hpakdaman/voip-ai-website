@@ -23,53 +23,39 @@ $officeLocations = $contactData['office_locations'] ?? [];
             </p>
         </div>
 
-        <!-- Contact Methods Grid -->
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-16">
+        <!-- Contact Methods Grid - Simplified -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mb-16">
             @foreach($contactMethods as $index => $method)
-            <div class="group relative text-center wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.4 + ($index * 0.1) }}s">
-                <div class="relative p-8 rounded-3xl border border-white/10 h-full transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-xl" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
+            <div class="group text-center wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.4 + ($index * 0.1) }}s">
+                <div class="relative p-6 rounded-2xl border border-white/10 h-full transition-all duration-300 hover:border-white/30 hover:-translate-y-1" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
                     
                     <!-- Method Icon -->
-                    <div class="relative mb-6">
-                        <div class="w-20 h-20 rounded-3xl mx-auto flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-transform duration-500" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.2);">
-                            <i class="{{ $method['icon'] ?? 'uil uil-phone' }} text-3xl text-white relative z-10"></i>
-                            <!-- Shine Effect -->
-                            <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent transform skew-x-12"></div>
-                        </div>
+                    <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
+                        <i class="{{ $method['icon'] ?? 'uil uil-phone' }} text-2xl text-white"></i>
                     </div>
                     
                     <!-- Method Content -->
-                    <h4 class="text-2xl font-bold mb-4 text-white">{{ $method['title'] ?? 'Contact Method' }}</h4>
-                    <p class="text-slate-300 text-base leading-relaxed mb-6">{{ $method['description'] ?? 'Description here' }}</p>
+                    <h4 class="text-xl font-bold mb-3 text-white">{{ $method['title'] ?? 'Contact Method' }}</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">{{ $method['description'] ?? 'Description here' }}</p>
                     
                     <!-- Primary Contact -->
                     <div class="mb-4">
-                        <h5 class="text-lg font-semibold mb-2" style="color: var(--voip-link);">{{ $method['primary'] ?? 'Primary Contact' }}</h5>
-                        @if(isset($method['secondary']))
-                        <p class="text-slate-400 text-sm">{{ $method['secondary'] }}</p>
+                        <h5 class="text-base font-semibold mb-1" style="color: var(--voip-link);">{{ $method['primary'] ?? 'Primary Contact' }}</h5>
+                        @if(isset($method['available']))
+                        <p class="text-slate-400 text-xs">{{ $method['available'] }}</p>
                         @endif
                     </div>
-                    
-                    <!-- Availability -->
-                    @if(isset($method['available']))
-                    <div class="mb-6 p-3 rounded-xl" style="background: rgba(30, 192, 141, 0.1);">
-                        <p class="text-sm font-semibold" style="color: var(--voip-link);">{{ $method['available'] }}</p>
-                    </div>
-                    @endif
                     
                     <!-- Action Button -->
                     <a href="{{ $method['type'] === 'phone' ? 'tel:' . ($method['primary'] ?? '') : 
                                 ($method['type'] === 'email' ? 'mailto:' . ($method['primary'] ?? '') : '#') }}" 
-                       class="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl font-semibold text-white transition-all duration-500 group-hover:-translate-y-1" 
-                       style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);"
-                       onmouseover="this.style.boxShadow='0 12px 35px rgba(30, 192, 141, 0.4)'" 
-                       onmouseout="this.style.boxShadow='0 8px 25px rgba(30, 192, 141, 0.2)'">
+                       class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg font-medium text-white transition-all duration-300" 
+                       style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 15px rgba(30, 192, 141, 0.2);"
+                       onmouseover="this.style.boxShadow='0 6px 20px rgba(30, 192, 141, 0.3)'" 
+                       onmouseout="this.style.boxShadow='0 4px 15px rgba(30, 192, 141, 0.2)'">
                         <i class="{{ $method['icon'] ?? 'uil uil-phone' }} mr-2"></i>
                         {{ $method['action_text'] ?? 'Contact Us' }}
                     </a>
-                    
-                    <!-- Hover Indicator -->
-                    <div class="absolute top-4 right-4 w-3 h-3 rounded-full bg-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
                 </div>
             </div>
             @endforeach

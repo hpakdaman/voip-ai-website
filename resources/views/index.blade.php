@@ -4,31 +4,31 @@
 
 @section('content')
 
-@include('components.hero-section')
+@include('components.home.hero-section')
 
-@include('components.business-partners')
+@include('components.home.business-partners')
 
 @include('components.who-we-are')
 
 @include('components.ai-call-center-features')
 
-{{-- @include('components.core-benefits')
+{{-- @include('components.home.core-benefits')
 
-@include('components.ai-demo')
+@include('components.home.ai-demo')
 
-@include('components.industry-solutions')
+@include('components.home.industry-solutions')
 
-@include('components.ai-features')
+@include('components.home.ai-features')
 
-@include('components.success-metrics')
+@include('components.home.success-metrics')
 
-@include('components.testimonials')
+@include('components.home.testimonials')
 
-@include('components.integrations-hub')
+@include('components.home.integrations-hub')
 
-@include('components.pricing-preview')
+@include('components.home.pricing-preview')
 
-@include('components.trends-section') --}}
+@include('components.home.trends-section') --}}
 
 @include('components.demo-request')
 
@@ -36,6 +36,6 @@
 
 @include('components.faq-section')
 
-{{-- @include('components.cta-launchpad') --}}
+{{-- @include('components.home.cta-launchpad') --}}
 
 @endsection

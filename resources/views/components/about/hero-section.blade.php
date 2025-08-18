@@ -13,7 +13,7 @@ try {
 @endphp
 
 <!-- Hero Section - Split Layout with Professional Image -->
-<section class="relative min-h-screen flex items-center" style="background-color: var(--voip-dark-bg);">
+<section class="relative min-h-screen flex items-center pt-20" style="background-color: var(--voip-dark-bg);">
     <!-- Sophisticated Background Pattern -->
     <div class="absolute inset-0">
         <div class="absolute inset-0" style="background: linear-gradient(135deg, #0c1b27 0%, #162f3a 50%, #0c1b27 100%); opacity: 0.95;"></div>
@@ -21,7 +21,7 @@ try {
         <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(90deg, rgba(30, 192, 141, 0.1) 1px, transparent 1px), linear-gradient(rgba(30, 192, 141, 0.1) 1px, transparent 1px); background-size: 80px 80px;"></div>
     </div>
     
-    <div class="container relative z-10 py-20">
+    <div class="container relative z-10 py-16">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             
             <!-- Left Content -->
@@ -29,12 +29,12 @@ try {
                 <!-- Company Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
                     <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
-                    <span class="text-white font-medium">{{ $sectionData['subtitle'] ?? 'About VoIP AI Solutions' }}</span>
+                    <span class="text-white font-medium">About VoIP AI</span>
                 </div>
                 
-                <!-- Main Heading -->
-                <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                    {{ $sectionData['title'] ?? 'Leading AI Call Center Innovation in Dubai' }}
+                <!-- Main Heading - Simplified -->
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                    Dubai's AI Communication Experts
                 </h1>
                 
                 <!-- Description -->
@@ -72,7 +72,7 @@ try {
                     <!-- Professional UAE Team Image -->
                     <img src="{{ asset('assets/images/about/about02.png') }}" 
                          alt="VoIP AI Solutions Dubai Professional Team" 
-                         class="w-full h-96 lg:h-[500px] object-cover rounded-2xl">
+                         class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl">
                     
                     <!-- Image Overlay with Company Info -->
                     <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl" style="background: rgba(12, 27, 39, 0.9); backdrop-filter: blur(10px);">

@@ -4,7 +4,7 @@ $heroData = $contactData['hero'] ?? [];
 @endphp
 
 <!-- Hero Section -->
-<section class="relative table w-full py-36 lg:py-44 overflow-hidden" style="background: linear-gradient(135deg, var(--voip-dark-bg) 0%, var(--voip-bg) 100%);">
+<section class="relative min-h-screen flex items-center overflow-hidden" style="background: linear-gradient(135deg, var(--voip-dark-bg) 0%, var(--voip-bg) 100%);">
     <!-- Animated Background Elements -->
     <div class="absolute inset-0 overflow-hidden">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 animate-pulse" style="background: radial-gradient(circle, var(--voip-link) 0%, transparent 70%);"></div>
@@ -21,8 +21,8 @@ $heroData = $contactData['hero'] ?? [];
         </svg>
     </div>
     
-    <div class="container relative z-10">
-        <div class="grid grid-cols-1 pb-8 text-center mt-10">
+    <div class="container relative z-10 py-20">
+        <div class="grid grid-cols-1 text-center">
             <!-- Contact Badge -->
             <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-8 mx-auto wow animate__animated animate__fadeInDown" data-wow-delay="0.1s" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
                 <i class="uil uil-headphone-alt text-lg mr-3" style="color: var(--voip-link);"></i>

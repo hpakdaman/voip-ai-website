@@ -49,7 +49,7 @@
         <div class="content">
             @section('header')
                 @include('includes.navbar')
-                @include('components.background-blurs')
+                @include('components.home.background-blurs')
             @show
 
             @yield('content')

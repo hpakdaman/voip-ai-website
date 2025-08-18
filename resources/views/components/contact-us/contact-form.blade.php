@@ -43,52 +43,27 @@ $formData = $contactData['contact_form'] ?? [];
                     </p>
                 </div>
                 
-                <!-- Form Benefits -->
-                <div class="space-y-6 mb-12">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-clock text-white text-xl"></i>
+                <!-- Key Benefits - Simplified -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <i class="uil uil-clock text-white text-sm"></i>
                         </div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">Quick Response</h4>
-                            <p class="text-slate-300">Get a detailed proposal within 24 hours of submission</p>
-                        </div>
+                        <span class="text-white font-medium">24-hour response guarantee</span>
                     </div>
                     
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-user-check text-white text-xl"></i>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <i class="uil uil-user-check text-white text-sm"></i>
                         </div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">Expert Consultation</h4>
-                            <p class="text-slate-300">Direct access to our VoIP AI specialists and solution architects</p>
-                        </div>
+                        <span class="text-white font-medium">Direct access to VoIP AI specialists</span>
                     </div>
                     
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-shield-check text-white text-xl"></i>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <i class="uil uil-shield-check text-white text-sm"></i>
                         </div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">UAE Compliance</h4>
-                            <p class="text-slate-300">Solutions designed specifically for UAE regulations and market needs</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Trust Indicators -->
-                <div class="grid grid-cols-3 gap-6 p-6 rounded-2xl border border-white/10" style="background: rgba(30, 192, 141, 0.05); backdrop-filter: blur(10px);">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-white">500+</div>
-                        <div class="text-xs text-slate-400">UAE Businesses</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-white">99.9%</div>
-                        <div class="text-xs text-slate-400">Uptime SLA</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-white">24/7</div>
-                        <div class="text-xs text-slate-400">Support</div>
+                        <span class="text-white font-medium">UAE compliant solutions</span>
                     </div>
                 </div>
             </div>
