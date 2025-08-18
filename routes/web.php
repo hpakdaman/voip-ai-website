@@ -27,6 +27,7 @@ if ($maintenanceMode) {
     // Legal pages
     Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
     Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
+    Route::get('/privacy-portal', [HomeController::class, 'privacyPortal'])->name('privacy-portal');
 
     // Additional VoIP-specific routes (add as needed)
 }

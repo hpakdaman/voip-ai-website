@@ -1,0 +1,21 @@
+{
+    "section": {
+        "title": "Privacy Policy",
+        "highlight": "Policy",
+        "subtitle": "Data Protection & Security Compliance",
+        "description": "Your privacy and data security are our top priorities. This comprehensive policy explains how we collect, use, and protect your information in full compliance with UAE Data Protection Law, GDPR, and international privacy standards.",
+        "last_updated": "January 14, 2025",
+        "effective_date": "January 1, 2025",
+        "compliance_badges": [
+            {"name": "GDPR Compliant", "icon": "uil-shield-check"},
+            {"name": "UAE TDRA", "icon": "uil-building"},
+            {"name": "SOC 2 Type II", "icon": "uil-award"},
+            {"name": "ISO 27001", "icon": "uil-certificate"}
+        ]
+    },
+    "metadata": {
+        "version": "3.0",
+        "last_updated": "2025-01-14",
+        "section_type": "hero"
+    }
+}

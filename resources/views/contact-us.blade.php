@@ -4,8 +4,6 @@
 
 @section('content')
 
-@include('includes.navbar')
-
 <style>
 /* Navbar light text for dark hero sections */
 #topnav .navigation-menu > li > a {

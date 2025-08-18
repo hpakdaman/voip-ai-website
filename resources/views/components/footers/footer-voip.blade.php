@@ -1,4 +1,4 @@
-<!-- VoIP AI Footer - Modern Design -->
+<!-- Sawtic AI Footer - Modern Design -->
 <footer class="relative overflow-hidden" style="background: linear-gradient(135deg, var(--voip-dark-bg) 0%, var(--voip-bg) 100%);">
     <!-- Background Elements -->
     <div class="absolute inset-0">
@@ -14,10 +14,10 @@
                 <!-- Company Info -->
                 <div class="lg:col-span-2">
                     <a href="{{ url('/') }}" class="inline-block mb-6">
-                        <img src="{{ asset('assets/images/sawtic-white-logo-gray-min.svg') }}" class="h-10" alt="VoIP AI Solutions">
+                        <img src="{{ asset('assets/images/sawtic-white-logo-gray-min.svg') }}" class="h-10" alt="Sawtic">
                     </a>
                     <p class="text-slate-300 text-lg leading-relaxed mb-8">
-                        Dubai's premier AI-powered communication specialists, transforming customer connections across the UAE with intelligent solutions.
+                        Dubai's premier AI solution provider and call center specialists, transforming business communications across the UAE and globally with intelligent AI automation.
                     </p>
                     
                     <!-- Office Locations -->
@@ -25,22 +25,22 @@
                         <div class="flex items-start space-x-3">
                             <i class="uil uil-map-marker text-lg mt-1" style="color: var(--voip-link);"></i>
                             <div>
-                                <h6 class="text-white font-semibold text-sm">Dubai Office</h6>
+                                <h6 class="text-white font-semibold text-sm">Dubai Headquarters</h6>
                                 <p class="text-slate-300 text-sm">DIFC, Gate Building</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <i class="uil uil-map-marker text-lg mt-1" style="color: var(--voip-link);"></i>
+                            <i class="uil uil-web-grid text-lg mt-1" style="color: var(--voip-link);"></i>
                             <div>
-                                <h6 class="text-white font-semibold text-sm">Sydney Office</h6>
-                                <p class="text-slate-300 text-sm">Martin Place, CBD</p>
+                                <h6 class="text-white font-semibold text-sm">Online Platform</h6>
+                                <p class="text-slate-300 text-sm">sawtic.com</p>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Social Links -->
                     <div class="flex items-center space-x-4">
-                        <a href="mailto:dubai@voipai.ae" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                        <a href="mailto:dubai@sawtic.com" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
                             <i class="uil uil-envelope text-white"></i>
                         </a>
                         <a href="#" class="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
@@ -95,7 +95,7 @@
                                 <i class="uil uil-envelope text-xl" style="color: var(--voip-link);"></i>
                                 <div>
                                     <p class="text-white font-semibold text-sm">Email Us</p>
-                                    <a href="mailto:dubai@voipai.ae" class="text-slate-300 text-xs hover:text-white">dubai@voipai.ae</a>
+                                    <a href="mailto:dubai@sawtic.com" class="text-slate-300 text-xs hover:text-white">dubai@sawtic.com</a>
                                 </div>
                             </div>
                         </div>
@@ -118,11 +118,11 @@
                     <a href="{{ url('/privacy') }}" class="hover:text-white transition-colors">Privacy Policy</a>
                     <span class="flex items-center">
                         <i class="uil uil-shield-check mr-2" style="color: var(--voip-link);"></i>
-                        TRA Compliant
+                        UAE Compliant
                     </span>
                 </div>
                 <div class="text-sm text-slate-300">
-                    <p>&copy; {{ date('Y') }} VoIP AI Solutions. Transforming UAE businesses with intelligent communication.</p>
+                    <p>&copy; {{ date('Y') }} Sawtic. Transforming UAE businesses with intelligent AI solutions.</p>
                 </div>
             </div>
         </div>
