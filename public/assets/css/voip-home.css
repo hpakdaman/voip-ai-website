@@ -105,6 +105,33 @@ select:focus,
     animation: pageReveal 1s ease-out;
 } */
 
+/* WOW.js Animation Flash Prevention */
+.wow {
+    visibility: hidden !important;
+    animation-fill-mode: both !important;
+}
+
+.wow.animated {
+    visibility: visible !important;
+}
+
+/* Additional flash prevention for animate.css classes */
+.animate__fadeInUp,
+.animate__fadeInDown,
+.animate__fadeInLeft,
+.animate__fadeInRight {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wow.animate__fadeInUp.animated,
+.wow.animate__fadeInDown.animated,
+.wow.animate__fadeInLeft.animated,
+.wow.animate__fadeInRight.animated {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* VoIP Custom Button and Link Styles */
 .hover-voip-button {
     text-rendering: optimizeLegibility !important;

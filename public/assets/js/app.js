@@ -185,9 +185,22 @@ try {
 /*********************/
 /*      WoW Js       */
 /*********************/
-try {
-    new WOW().init();
-} catch (error) { }
+// Initialize WOW.js as early as possible on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        // Initialize WOW.js only once and early
+        if (typeof WOW !== 'undefined' && !window.wowInitialized) {
+            new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            }).init();
+            window.wowInitialized = true;
+        }
+    } catch (error) { }
+});
 
 /*************************/
 /*      Contact Js       */
