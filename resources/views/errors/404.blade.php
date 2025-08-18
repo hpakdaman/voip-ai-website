@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', 'Page Not Found - VoIP AI Solutions')
+@section('title', 'Page Not Found - Sawtic')
 
 @section('content')
 <!-- 404 Error Page -->
 <div class="min-h-screen flex items-center justify-center" style="background-color: var(--voip-dark-bg);">
-    <!-- Animated Background Elements -->
+    <!-- Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full opacity-10" 
              style="background: var(--primary-gradient);"></div>
@@ -16,15 +16,11 @@
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <!-- Error Code with Animation -->
+        <!-- Error Code -->
         <div class="mb-8 relative">
-            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-20"
+            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-20 select-none"
                  style="background: var(--primary-gradient);">
                 404
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-current opacity-30 animate-ping slow-ping"
-                     style="color: var(--voip-link);"></div>
             </div>
         </div>
 
@@ -43,8 +39,8 @@
             <!-- Description -->
             <div class="max-w-2xl mx-auto">
                 <p class="text-lg text-slate-400 leading-relaxed mb-8">
-                    Don't worry, even the best AI communication systems occasionally lose a signal. 
-                    Let's get you back on track to discover our intelligent VoIP solutions.
+                    Don't worry, even the most advanced AI call centers occasionally lose a connection. 
+                    Let's get you back on track to discover our intelligent business automation solutions.
                 </p>
             </div>
 
@@ -52,10 +48,10 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <!-- Go Home Button -->
                 <a href="{{ url('/') }}" 
-                   class="group px-8 py-4 rounded-xl text-white font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl"
+                   class="px-8 py-4 rounded-xl text-white font-semibold text-lg"
                    style="background: var(--primary-gradient);">
                     <div class="flex items-center space-x-3">
-                        <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 10l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
                         </svg>
                         <span>Return Home</span>
@@ -64,10 +60,8 @@
 
                 <!-- Contact Support Button -->
                 <a href="{{ url('/contact-us') }}" 
-                   class="group px-8 py-4 rounded-xl border-2 text-white font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:bg-opacity-10"
-                   style="border-color: var(--voip-link); color: var(--voip-link);"
-                   onmouseover="this.style.backgroundColor='rgba(30, 192, 141, 0.1)'"
-                   onmouseout="this.style.backgroundColor='transparent'">
+                   class="px-8 py-4 rounded-xl border-2 text-white font-semibold text-lg"
+                   style="border-color: var(--voip-link); color: var(--voip-link);">
                     <div class="flex items-center space-x-3">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -79,18 +73,39 @@
 
             <!-- Quick Links -->
             <div class="mt-12 pt-8 border-t border-slate-700">
-                <p class="text-slate-400 mb-4">Or explore these popular sections:</p>
-                <div class="flex flex-wrap justify-center gap-4 text-sm">
-                    <a href="{{ url('/features') }}" class="hover:underline" style="color: var(--voip-link);">
-                        AI Features
+                <p class="text-slate-400 mb-6 text-sm uppercase tracking-wider font-medium">Or explore these popular sections:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-md mx-auto">
+                    <a href="{{ url('/features') }}" 
+                       class="p-4 rounded-lg border border-slate-700" 
+                       style="color: var(--voip-link);">
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <span class="text-sm font-medium">AI Features</span>
+                        </div>
                     </a>
-                    <span class="text-slate-600">•</span>
-                    <a href="{{ url('/pricing') }}" class="hover:underline" style="color: var(--voip-link);">
-                        Pricing Plans
+                    
+                    <a href="{{ url('/pricing') }}" 
+                       class="p-4 rounded-lg border border-slate-700" 
+                       style="color: var(--voip-link);">
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                            <span class="text-sm font-medium">Pricing Plans</span>
+                        </div>
                     </a>
-                    <span class="text-slate-600">•</span>
-                    <a href="{{ url('/about') }}" class="hover:underline" style="color: var(--voip-link);">
-                        About Us
+                    
+                    <a href="{{ url('/about') }}" 
+                       class="p-4 rounded-lg border border-slate-700" 
+                       style="color: var(--voip-link);">
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            <span class="text-sm font-medium">About Sawtic</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -99,15 +114,38 @@
 </div>
 
 <style>
-@keyframes slow-ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+/* Add a subtle text shadow for better readability */
+h1, p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.slow-ping {
-  animation: slow-ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 192, 141, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--voip-link);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--voip-primary);
+}
+
+/* Improved responsive design */
+@media (max-width: 640px) {
+  .text-\[12rem\] {
+    font-size: 8rem;
+  }
+  
+  .text-\[16rem\] {
+    font-size: 10rem;
+  }
 }
 </style>
 @endsection
