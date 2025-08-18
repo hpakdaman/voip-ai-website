@@ -138,6 +138,39 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 **Types**: feat, fix, style, refactor, docs, test, chore
 
+### **🚀 CRITICAL: Production Deployment Protocol**
+
+#### **When user says "deploy to production" or "deploy live":**
+Execute this production deployment workflow:
+
+**Execute production deployment**: `./scripts/deploy-production.sh`
+
+**The deployment script handles:**
+- ✅ Builds assets locally (if needed)
+- ✅ Deploys main branch to production server (167.235.254.56)
+- ✅ Installs production dependencies
+- ✅ Optimizes Laravel for production (caches configs, routes, views)
+- ✅ Sets proper file permissions
+- ✅ Copies fresh build assets to server
+- ✅ Tests deployment and confirms website is live
+
+#### **For quick production updates (minor changes):**
+**Execute quick deployment**: `./scripts/quick-deploy.sh`
+
+**The quick script handles:**
+- ✅ Pulls latest changes from main branch
+- ✅ Clears Laravel caches
+- ✅ Sets permissions
+- ✅ Tests deployment
+
+#### **Production Server Details:**
+- **URL**: http://167.235.254.56
+- **Server**: Hetzner CentOS Stream 10
+- **Path**: /home/sawtic
+- **Web Server**: Nginx + PHP 8.3 + Laravel 12
+
+**IMPORTANT**: Only deploy from main branch after proper testing and merging!
+
 ## ✨ NEW: Modular Component Architecture
 
 ### **🚨 MANDATORY: Page Segmentation Strategy**

@@ -10,7 +10,8 @@
       "Bash(mkdir:*)",
       "Bash(./scripts/git-merge.sh:*)",
       "Bash(./scripts/git-pull.sh:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(ssh:*)"
     ],
     "deny": [],
     "ask": []
