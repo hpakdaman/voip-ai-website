@@ -39,33 +39,33 @@ $aiCallingData = $contactData['ai_calling'] ?? [];
         </div>
 
         <!-- Centered AI Phone Interface -->
-        <div class="max-w-2xl mx-auto text-center">
+        <div class="max-w-xl mx-auto text-center">
             <!-- AI Phone Container -->
-            <div class="relative p-12 rounded-3xl border border-white/20 transition-all duration-500 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(20px); box-shadow: 0 30px 60px rgba(30, 192, 141, 0.1);">
+            <div class="relative p-8 rounded-2xl border border-white/20 transition-all duration-500 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(20px); box-shadow: 0 30px 60px rgba(30, 192, 141, 0.1);">
                 
                 <!-- AI Avatar -->
-                <div class="relative mb-10">
-                    <div class="w-32 h-32 rounded-full mx-auto flex items-center justify-center relative overflow-hidden" style="background: radial-gradient(circle, var(--voip-link) 0%, var(--voip-primary) 100%); box-shadow: 0 0 60px rgba(30, 192, 141, 0.4);">
-                        <i class="uil uil-robot text-5xl text-white relative z-10"></i>
+                <div class="relative mb-6">
+                    <div class="w-24 h-24 rounded-full mx-auto flex items-center justify-center relative overflow-hidden" style="background: radial-gradient(circle, var(--voip-link) 0%, var(--voip-primary) 100%); box-shadow: 0 0 40px rgba(30, 192, 141, 0.4);">
+                        <i class="uil uil-robot text-3xl text-white relative z-10"></i>
                         <!-- Pulse Animation -->
                         <div class="absolute inset-0 rounded-full animate-ping" style="background: rgba(30, 192, 141, 0.3);"></div>
                     </div>
                 </div>
                 
                 <!-- AI Info -->
-                <h3 class="text-3xl font-bold text-white mb-4">VoIP AI Assistant</h3>
-                <p class="text-green-400 text-base font-semibold uppercase tracking-wide mb-10">● Available 24/7 in Arabic & English</p>
+                <h3 class="text-2xl font-bold text-white mb-3">VoIP AI Assistant</h3>
+                <p class="text-green-400 text-sm font-semibold uppercase tracking-wide mb-6">● Available 24/7 in Arabic & English</p>
                 
                 <!-- Phone Number Display -->
-                <div class="mb-10 p-8 rounded-2xl border border-white/10" style="background: rgba(30, 192, 141, 0.08);">
-                    <h4 class="text-white text-xl font-semibold mb-4">Experience AI Communication</h4>
-                    <p class="text-4xl font-bold mb-4" style="color: var(--voip-link);">{{ $aiCallingData['display_number'] ?? '+971 4 864 724' }}</p>
-                    <p class="text-slate-300">Test our AI technology with a live demo call</p>
+                <div class="mb-6 p-6 rounded-2xl border border-white/10" style="background: rgba(30, 192, 141, 0.08);">
+                    <h4 class="text-white text-lg font-semibold mb-3">Experience AI Communication</h4>
+                    <p class="text-3xl font-bold mb-3" style="color: var(--voip-link);">{{ $aiCallingData['display_number'] ?? '+971 4 864 724' }}</p>
+                    <p class="text-slate-300 text-sm">Test our AI technology with a live demo call</p>
                 </div>
                 
                 <!-- Call Button -->
-                <a href="tel:{{ $aiCallingData['phone_number'] ?? '+971-4-VOIP-AI' }}" class="group relative inline-flex items-center justify-center px-12 py-6 rounded-2xl font-bold text-white text-xl transition-all duration-500 hover:-translate-y-2 mb-8" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" onmouseover="this.style.boxShadow='0 20px 50px rgba(30, 192, 141, 0.6)'" onmouseout="this.style.boxShadow='0 15px 40px rgba(30, 192, 141, 0.4)'">
-                    <i class="uil uil-phone text-3xl mr-4"></i>
+                <a href="tel:{{ $aiCallingData['phone_number'] ?? '+971-4-VOIP-AI' }}" class="group relative inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-white text-lg transition-all duration-500 hover:-translate-y-2 mb-6" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" onmouseover="this.style.boxShadow='0 20px 50px rgba(30, 192, 141, 0.6)'" onmouseout="this.style.boxShadow='0 15px 40px rgba(30, 192, 141, 0.4)'">
+                    <i class="uil uil-phone text-2xl mr-3"></i>
                     {{ $aiCallingData['call_to_action'] ?? 'Call Now to Experience AI' }}
                 </a>
                 

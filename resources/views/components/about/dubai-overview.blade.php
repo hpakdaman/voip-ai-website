@@ -32,9 +32,9 @@ try {
             
             <!-- Left Image - Clean PNG with transparent background -->
             <div class="relative wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
-                <!-- Circular Masked Image -->
+                <!-- Circular Masked Image - Larger -->
                 <div class="relative">
-                    <div class="w-96 h-96 mx-auto rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(30, 192, 141, 0.3);">
+                    <div class="w-[450px] h-[450px] mx-auto rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(30, 192, 141, 0.3);">
                         <img src="{{ asset('assets/images/about/about01.png') }}" 
                              alt="UAE Business Innovation" 
                              class="w-full h-full object-cover">

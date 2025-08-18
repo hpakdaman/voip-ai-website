@@ -54,14 +54,14 @@
                 <li><a href="{{ url('/about') }}" class="sub-menu-item">ABOUT</a></li>
                 <li><a href="{{ url('/features') }}" class="sub-menu-item">FEATURES</a></li>
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)">LANDING PAGES</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)">SOLUTIONS</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="{{ url('/healthcare') }}" class="sub-menu-item">Healthcare</a></li>
-                        <li><a href="{{ url('/finance') }}" class="sub-menu-item">Finance & Banking</a></li>
-                        <li><a href="{{ url('/real-estate') }}" class="sub-menu-item">Real Estate</a></li>
-                        <li><a href="{{ url('/retail') }}" class="sub-menu-item">Retail & E-commerce</a></li>
-                        <li><a href="{{ url('/education') }}" class="sub-menu-item">Education</a></li>
-                        <li><a href="{{ url('/government') }}" class="sub-menu-item">Government</a></li>
+                        <li><a href="{{ url('/healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
+                        <li><a href="{{ url('/finance') }}" class="sub-menu-item text-base font-medium">Finance & Banking</a></li>
+                        <li><a href="{{ url('/real-estate') }}" class="sub-menu-item text-base font-medium">Real Estate</a></li>
+                        <li><a href="{{ url('/retail') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
+                        <li><a href="{{ url('/education') }}" class="sub-menu-item text-base font-medium">Education</a></li>
+                        <li><a href="{{ url('/government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">CONTACT</a></li>

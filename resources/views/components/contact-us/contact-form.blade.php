@@ -129,6 +129,20 @@ $formData = $contactData['contact_form'] ?? [];
                                     <label for="{{ $field['name'] }}" class="block font-semibold text-white mb-2">{{ $field['label'] }}</label>
                                     <textarea name="{{ $field['name'] }}" id="{{ $field['name'] }}" rows="4" class="w-full py-4 px-4 rounded-xl border border-white/20 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200 transition-all duration-300 resize-none bg-white/10 text-white placeholder-white/70 backdrop-blur-sm" placeholder="{{ $field['placeholder'] }}" {{ $field['required'] ? 'required' : '' }}></textarea>
                                 </div>
+                                @elseif($field['type'] === 'select' && $field['name'] === 'subject')
+                                <!-- Subject Select (Full Width) -->
+                                <div class="lg:col-span-2">
+                                    <label for="{{ $field['name'] }}" class="block font-semibold text-white mb-2">{{ $field['label'] }}</label>
+                                    <div class="relative">
+                                        <select name="{{ $field['name'] }}" id="{{ $field['name'] }}" class="w-full py-4 px-4 rounded-xl border border-white/20 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200 transition-all duration-300 bg-white/10 text-white backdrop-blur-sm" {{ $field['required'] ? 'required' : '' }}>
+                                            <option value="" class="bg-gray-800 text-white">Select {{ $field['label'] }}</option>
+                                            @foreach($field['options'] as $option)
+                                            <option value="{{ $option }}" class="bg-gray-800 text-white">{{ $option }}</option>
+                                            @endforeach
+                                        </select>
+                                        <i class="uil uil-angle-down absolute right-4 top-1/2 transform -translate-y-1/2 text-white/70"></i>
+                                    </div>
+                                </div>
                                 @elseif($field['type'] === 'select')
                                 <!-- Other Select Fields -->
                                 <div>

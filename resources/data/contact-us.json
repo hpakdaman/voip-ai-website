@@ -126,36 +126,7 @@
                 "label": "Company Name", 
                 "type": "text",
                 "placeholder": "Your company name",
-                "required": true
-            },
-            {
-                "name": "industry",
-                "label": "Industry",
-                "type": "select",
-                "options": [
-                    "Technology",
-                    "Healthcare", 
-                    "Finance & Banking",
-                    "Real Estate",
-                    "Retail & E-commerce",
-                    "Education",
-                    "Government",
-                    "Other"
-                ],
-                "required": true
-            },
-            {
-                "name": "employees",
-                "label": "Company Size",
-                "type": "select", 
-                "options": [
-                    "1-10 employees",
-                    "11-50 employees",
-                    "51-200 employees", 
-                    "201-1000 employees",
-                    "1000+ employees"
-                ],
-                "required": true
+                "required": false
             },
             {
                 "name": "subject",
@@ -166,8 +137,7 @@
                     "Request Demo",
                     "Pricing Information",
                     "Technical Support",
-                    "Partnership Opportunity",
-                    "Custom Integration"
+                    "Partnership Opportunity"
                 ],
                 "required": true
             },
