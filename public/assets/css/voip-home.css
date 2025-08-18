@@ -106,8 +106,27 @@ select:focus,
 } */
 
 /* VoIP Custom Button and Link Styles */
+.hover-voip-button {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    backface-visibility: hidden !important;
+    transform: translateZ(0) !important;
+}
+
 .hover-voip-button:hover {
     background-color: var(--voip-dark-font) !important;
+    color: #085d44 !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    backface-visibility: hidden !important;
+    transform: translateZ(0) !important;
+}
+
+/* Override footer link hover for VoIP buttons */
+footer .hover-voip-button:hover {
+    color: #085d44 !important;
 }
 
 .hover-voip-link:hover {
@@ -239,7 +258,15 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     background-color: var(--voip-dark-font) !important;
 }
 
+.hover\:bg-indigo-700:hover {
+    background-color: var(--voip-dark-font) !important;
+}
+
 .hover\:border-indigo-600:hover {
+    border-color: var(--voip-dark-font) !important;
+}
+
+.hover\:border-indigo-700:hover {
     border-color: var(--voip-dark-font) !important;
 }
 
