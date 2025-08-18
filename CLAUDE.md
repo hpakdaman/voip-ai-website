@@ -136,6 +136,26 @@ When the user says **"merge dev to main and deploy"** or **"merge dev deploy"**,
 
 **IMPORTANT**: This is the complete workflow from dev → main → production in one command!
 
+### **⚡ CRITICAL: "Force Deploy" Command Protocol**
+When the user says **"force deploy"**, **"force commit and deploy"**, or **"commit to dev and main by force and update server"**, execute this emergency workflow:
+
+1. **Generate descriptive commit message** based on recent changes
+2. **Execute force deploy script**: `./scripts/force-deploy.sh "commit message"`
+
+**The script handles emergency deployment workflow:**
+- ✅ Force commits ALL changes (including uncommitted files)
+- ✅ Pushes current branch with force
+- ✅ Force updates dev branch to match current branch
+- ✅ Force updates main branch to match current branch
+- ✅ Pushes both dev and main with force
+- ✅ Builds assets locally for production
+- ✅ Force deploys to production server (167.235.254.56)
+- ✅ Optimizes Laravel for production
+- ✅ Returns to original branch
+- ✅ Tests deployment and confirms website is live
+
+**⚠️ WARNING**: This command uses --force and overwrites git history. Use only when necessary!
+
 ### **Branch Management Rules**
 - **Always work on feature branches** (never directly on main)
 - **Main branch** is protected and always deployable
