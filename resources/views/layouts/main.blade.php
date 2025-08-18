@@ -4,17 +4,19 @@
         <meta charset="UTF-8">
         <title>@yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Tailwind CSS Multipurpose Landing & Admin Dashboard Template">
-        <meta name="keywords" content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css">
-        <meta name="author" content="Shreethemes">
-        <meta name="website" content="https://shreethemes.in">
-        <meta name="email" content="support@shreethemes.in">
+        <meta name="description" content="Sawtic - Dubai's premier AI call center and business automation solution provider. Transform your customer service with intelligent AI agents and advanced automation.">
+        <meta name="keywords" content="AI call center, business automation, Dubai AI solutions, intelligent agents, customer service automation, UAE AI technology, call center software, business intelligence">
+        <meta name="author" content="Sawtic">
+        <meta name="website" content="https://sawtic.com">
+        <meta name="email" content="dubai@sawtic.com">
         <meta name="version" content="3.0.0">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!-- favicon -->
-        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+        <link rel="icon" type="image/svg+xml" href="{{ asset('assets/images/favicon.svg') }}">
+        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}">
+        <link rel="apple-touch-icon" href="{{ asset('assets/images/favicon.svg') }}">
 
         <!-- Css -->
         <link href="{{ asset('assets/libs/animate.css/animate.min.css') }}" rel="stylesheet">
