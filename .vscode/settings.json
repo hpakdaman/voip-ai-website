@@ -1,0 +1,38 @@
+{
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "depositable",
+    "hesabfa",
+    "Kucoin",
+    "perfectmoney",
+    "pmwm",
+    "restarter",
+    "Toman",
+    "Webmoney"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/.env": false,
+    "**/vendor": false,
+    "**/*.log": true,
+    "**/_logs": false,
+    "**/.husky": true,
+    "**/.pnpm-store": true,
+    "**/.prettierrc": true,
+    "**/.npmrc": true,
+    "**/.eslintrc.js": true,
+    "**/pnpm-lock.yaml": true,
+    "backend/**/.vscode": true,
+    "**/.lh": true,
+    "**/.idea": true,
+    "**/.history": true,
+    "**/.vscode": false,
+    "**/tmp": true,
+    "**/temp": true,
+    "**/.docker": true
+  }
+}
