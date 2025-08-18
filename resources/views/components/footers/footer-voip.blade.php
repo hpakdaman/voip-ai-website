@@ -102,7 +102,7 @@
                     </div>
                     
                     <!-- CTA Button -->
-                    <a href="{{ url('/contact-us') }}" class="flex items-center justify-center w-full px-4 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover-voip-button" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.3);" onmouseover="this.style.boxShadow='0 12px 35px rgba(30, 192, 141, 0.4)'; this.style.color='#085d44'" onmouseout="this.style.boxShadow='0 8px 25px rgba(30, 192, 141, 0.3)'; this.style.color='white'">
+                    <a href="{{ url('/contact-us') }}" class="flex items-center justify-center w-full px-4 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover-voip-button footer-demo-button" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.3);">
                         <i class="uil uil-rocket text-sm mr-2"></i>
                         Request Demo
                     </a>

@@ -129,6 +129,31 @@ footer .hover-voip-button:hover {
     color: #085d44 !important;
 }
 
+/* Specific styling for footer demo button */
+.footer-demo-button {
+    color: #ffffff !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.025em !important;
+}
+
+.footer-demo-button:hover {
+    background-color: var(--voip-dark-font) !important;
+    color: #ffffff !important;
+    box-shadow: 0 12px 35px rgba(30, 192, 141, 0.4) !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Override the general footer a rule with higher specificity */
+footer a.footer-demo-button:hover {
+    color: #ffffff !important;
+}
+
 .hover-voip-link:hover {
     color: var(--voip-primary) !important;
 }
@@ -217,7 +242,7 @@ footer {
 
 /* Footer Links */
 footer a {
-    color: var(--voip-link) !important;
+    color: var(--voip-link);
 }
 
 footer a:hover {
