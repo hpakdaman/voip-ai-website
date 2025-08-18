@@ -1,0 +1,30 @@
+{
+    "section": {
+        "title": "Leading AI Call Center Innovation in Dubai",
+        "subtitle": "About VoIP AI Solutions",
+        "description": "We are Dubai's premier AI-powered communication specialists, transforming how businesses connect with their customers across the UAE and Middle East. With cutting-edge technology and deep regional expertise, we deliver intelligent solutions that drive growth.",
+        "highlight": "5+ Years of Excellence",
+        "stats": [
+            {
+                "number": "500+",
+                "label": "Dubai Enterprises Served",
+                "icon": "uil uil-building"
+            },
+            {
+                "number": "99.9%",
+                "label": "Uptime Guarantee",
+                "icon": "uil uil-clock"
+            },
+            {
+                "number": "24/7",
+                "label": "Local Support",
+                "icon": "uil uil-headphones-alt"
+            }
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-18",
+        "section_type": "hero_with_image"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "section": {
+        "title": "Our Core Values & Team Excellence",
+        "subtitle": "Team & Values",
+        "description": "Meet the passionate professionals behind Dubai's leading AI communication platform, united by shared values and commitment to excellence."
+    },
+    "values": [
+        {
+            "id": 1,
+            "title": "Innovation First",
+            "description": "Continuously pushing the boundaries of AI technology to deliver cutting-edge solutions for Dubai businesses.",
+            "icon": "uil uil-lightbulb-alt",
+            "priority": 1
+        },
+        {
+            "id": 2,
+            "title": "Cultural Intelligence",
+            "description": "Deep understanding of UAE's multicultural business environment and local market dynamics.",
+            "icon": "uil uil-globe",
+            "priority": 2
+        },
+        {
+            "id": 3,
+            "title": "Excellence Commitment",
+            "description": "Unwavering dedication to delivering the highest quality solutions that exceed Dubai's business standards.",
+            "icon": "uil uil-award",
+            "priority": 3
+        },
+        {
+            "id": 4,
+            "title": "Client Success Focus",
+            "description": "Every decision is made with our clients' success and growth as the primary consideration.",
+            "icon": "uil uil-heart",
+            "priority": 4
+        }
+    ],
+    "team_stats": {
+        "total_members": "25+",
+        "ai_specialists": "12",
+        "dubai_experience": "50+ Years",
+        "certifications": "35+"
+    },
+    "expertise_areas": [
+        "AI & Machine Learning",
+        "UAE Business Compliance", 
+        "Multilingual Communication",
+        "Cloud Infrastructure",
+        "Customer Experience Design",
+        "Data Security & Privacy"
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-18",
+        "section_type": "team_values"
+    }
+}
