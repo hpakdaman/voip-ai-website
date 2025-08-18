@@ -82,9 +82,6 @@ try {
                             <!-- Sliding Shine Effect -->
                             <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent transform skew-x-12"></div>
                         </div>
-                        <!-- Floating Particles -->
-                        <div class="absolute -top-1 -right-1 w-3 h-3 rounded-full animate-bounce" style="background-color: var(--voip-link); animation-delay: 0.5s;"></div>
-                        <div class="absolute -bottom-2 -left-2 w-2 h-2 rounded-full animate-bounce" style="background-color: var(--voip-primary); animation-delay: 1s;"></div>
                     </div>
                     
                     <!-- Value Content -->
