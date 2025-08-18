@@ -9,8 +9,8 @@
         "title": "Talk to Our AI Agent",
         "subtitle": "Experience VoIP AI in Action",
         "description": "Test our AI communication technology firsthand - speak directly with our intelligent agent to see how we can transform your business conversations.",
-        "phone_number": "+971-4-VOIP-AI",
-        "display_number": "+971 4 864 724",
+        "phone_number": "+971-4-864-7245",
+        "display_number": "+971 4 864 7245",
         "features": [
             {
                 "icon": "uil uil-brain",
@@ -42,8 +42,8 @@
             "icon": "uil uil-phone",
             "title": "Phone Support",
             "description": "Speak directly with our VoIP AI specialists for immediate assistance and custom solutions.",
-            "primary": "+971-4-VOIP-AI",
-            "secondary": "+1-800-VOIP-AI",
+            "primary": "+971 4 864 7245",
+            "secondary": "+61 2 8247 3156",
             "action_text": "Call Now",
             "available": "24/7 UAE Time"
         },
@@ -52,8 +52,8 @@
             "icon": "uil uil-envelope",
             "title": "Email Support",
             "description": "Send detailed requirements and receive comprehensive VoIP AI proposals within 24 hours.",
-            "primary": "sales@voip-ai.ae",
-            "secondary": "support@voip-ai.ae", 
+            "primary": "dubai@voipai.ae",
+            "secondary": "sydney@voipai.com.au", 
             "action_text": "Email Us",
             "available": "< 4 Hour Response"
         },
@@ -61,9 +61,9 @@
             "type": "location",
             "icon": "uil uil-map-marker",
             "title": "UAE Offices",
-            "description": "Visit our Dubai and Abu Dhabi locations for in-person consultations and live demonstrations.",
-            "primary": "Dubai Internet City",
-            "secondary": "Abu Dhabi Global Market",
+            "description": "Visit our Dubai and Sydney locations for in-person consultations and live demonstrations.",
+            "primary": "Dubai DIFC",
+            "secondary": "Sydney CBD",
             "action_text": "Schedule Visit",
             "available": "Sun-Thu 9AM-6PM"
         },
@@ -81,17 +81,19 @@
     "office_locations": [
         {
             "city": "Dubai",
-            "address": "Dubai Internet City, Building 14, Level 3",
-            "coordinates": "25.0943°N 55.1560°E",
-            "phone": "+971 4 864 724",
-            "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+            "address": "Suite 1401, Gate Building, Dubai International Financial Centre (DIFC), P.O. Box 74777",
+            "coordinates": "25.2048°N 55.2708°E",
+            "phone": "+971 4 864 7245",
+            "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM",
+            "email": "dubai@voipai.ae"
         },
         {
-            "city": "Abu Dhabi", 
-            "address": "Abu Dhabi Global Market, Al Maryah Island",
-            "coordinates": "24.5014°N 54.3918°E",
-            "phone": "+971 2 123 456",
-            "hours": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+            "city": "Sydney", 
+            "address": "Level 23, 52 Martin Place, Sydney NSW 2000",
+            "coordinates": "33.8688°S 151.2093°E",
+            "phone": "+61 2 8247 3156",
+            "hours": "Monday - Friday: 9:00 AM - 5:00 PM",
+            "email": "sydney@voipai.com.au"
         }
     ],
     "contact_form": {

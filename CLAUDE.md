@@ -8,6 +8,26 @@ This is "Techwind" - a Laravel 12 SaaS/software landing template purchased from 
 
 **Business Context**: This is now a complete VoIP AI business website showcasing intelligent communication solutions designed specifically for the UAE market. The platform includes advanced AI features, bilingual support (English/Arabic), UAE regulatory compliance, and enterprise-grade functionality targeting Dubai and Abu Dhabi businesses.
 
+## Company Office Locations
+
+**VoIP AI Solutions** operates from two strategic locations to serve clients across the MENA and Asia-Pacific regions:
+
+### **🇦🇪 Dubai Headquarters (UAE)**
+**Address**: Suite 1401, Gate Building, Dubai International Financial Centre (DIFC)  
+**City**: Dubai, United Arab Emirates  
+**Postal Code**: P.O. Box 74777  
+**Phone**: +971 4 864 7245  
+**Email**: dubai@voipai.ae  
+
+### **🇦🇺 Sydney Regional Office (Australia)**
+**Address**: Level 23, 52 Martin Place  
+**City**: Sydney, NSW 2000  
+**Country**: Australia  
+**Phone**: +61 2 8247 3156  
+**Email**: sydney@voipai.com.au  
+
+Both offices provide 24/7 support and are equipped with state-of-the-art VoIP AI technology for live demonstrations and client consultations.
+
 ## Current Implementation Status
 
 ✅ **COMPLETED - Full VoIP AI Website**

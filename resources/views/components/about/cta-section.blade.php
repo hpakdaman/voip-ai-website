@@ -24,7 +24,7 @@
                     <i class="uil uil-phone text-lg mr-3"></i>
                     Schedule a Consultation
                 </a>
-                <a href="{{ url('/features') }}" class="px-8 py-4 rounded-xl font-semibold border-2 transition-all duration-300 hover:text-white hover:scale-105" style="border-color: var(--voip-primary); color: var(--voip-primary);" onmouseover="this.style.backgroundColor='var(--voip-primary)'" onmouseout="this.style.backgroundColor='transparent'">
+                <a href="{{ url('/features') }}" class="px-8 py-4 rounded-xl font-semibold border-2 transition-all duration-300 hover:text-white hover:scale-105" style="border-color: var(--voip-primary); color: var(--voip-primary); background-color: transparent;" onmouseover="this.style.backgroundColor='var(--voip-primary)'; this.style.color='white'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--voip-primary)'">
                     <i class="uil uil-rocket text-lg mr-3"></i>
                     Explore Our Solutions
                 </a>
