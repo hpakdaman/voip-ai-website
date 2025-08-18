@@ -8,13 +8,9 @@
       "Bash(git remote set-url:*)",
       "Bash(git add:*)",
       "Bash(mkdir:*)",
-<<<<<<< HEAD
-      "Bash(./scripts/git-merge.sh:*)"
-=======
       "Bash(./scripts/git-merge.sh:*)",
       "Bash(./scripts/git-pull.sh:*)",
       "Bash(git reset:*)"
->>>>>>> feature/restructure-uae-expertise
     ],
     "deny": [],
     "ask": []
