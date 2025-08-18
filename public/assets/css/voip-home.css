@@ -96,14 +96,14 @@ select:focus,
     box-shadow: 0 0 0 4px rgba(30, 192, 141, 0.15) !important;
 }
 
-/* Enhanced Page Loading Animation */
-body:not(.page-loaded) {
+/* Enhanced Page Loading Animation - DISABLED */
+/* body:not(.page-loaded) {
     overflow: hidden;
 }
 
 .page-loaded {
     animation: pageReveal 1s ease-out;
-}
+} */
 
 /* VoIP Custom Button and Link Styles */
 .hover-voip-button:hover {
