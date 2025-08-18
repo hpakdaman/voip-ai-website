@@ -55,7 +55,7 @@
             @yield('content')
 
             @section('footer')
-                @include('includes.footer')
+                @include('components.footers.footer-voip')
             @show
         </div>
 
