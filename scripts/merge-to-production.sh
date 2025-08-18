@@ -22,7 +22,7 @@ echo -e "${YELLOW}📍 Current branch: ${CURRENT_BRANCH}${NC}"
 COMMIT_MESSAGE="$1"
 if [ -z "$COMMIT_MESSAGE" ]; then
     echo -e "${RED}❌ Error: Commit message required for production merge${NC}"
-    echo -e "${YELLOW}💡 Usage: ./scripts/merge-to-production.sh \"Production release message\"${NC}"
+    echo -e "${YELLOW}💡 Usage: ./merge-to-production.sh \"Production release message\"${NC}"
     exit 1
 fi
 
