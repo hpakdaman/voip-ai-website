@@ -56,7 +56,7 @@ try {
             
             @foreach($integrationCategories as $index => $category)
             <div class="group relative wow animate__animated animate__fadeInUp" data-wow-delay="{{ 0.4 + ($index * 0.1) }}s">
-                <div class="relative p-8 rounded-3xl border border-white/10 text-center transition-all duration-500 hover:border-white/30" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(10px);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 25px 50px rgba(30, 192, 141, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div class="relative p-8 rounded-3xl border border-white/10 text-center transition-all duration-500 hover:border-white/30 h-full" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.3) 100%); backdrop-filter: blur(10px);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 25px 50px rgba(30, 192, 141, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
                     
                     <!-- Integration Status -->
                     <div class="absolute top-4 right-4 flex items-center space-x-2">
