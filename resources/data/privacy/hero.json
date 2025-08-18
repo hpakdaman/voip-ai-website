@@ -8,7 +8,7 @@
         "effective_date": "January 1, 2025",
         "compliance_badges": [
             {"name": "GDPR Compliant", "icon": "uil-shield-check"},
-            {"name": "UAE DPA", "icon": "uil-building"},
+            {"name": "UAE TDRA", "icon": "uil-building"},
             {"name": "SOC 2 Type II", "icon": "uil-award"},
             {"name": "ISO 27001", "icon": "uil-certificate"}
         ]

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Privacy Policy - VoIP AI Solutions | UAE Data Protection & Security Compliance')
+@section('title', 'Privacy Policy - Sawtic | AI Call Center Data Protection & Security')
 
 @section('content')
 
