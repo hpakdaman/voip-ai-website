@@ -85,20 +85,20 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                     </div>
                     
                     <!-- Floating Voice Demo Player -->
-                    <div id="voice-demo" class="absolute bottom-8 left-8 right-8 p-6 rounded-2xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(15px);">
+                    <div id="voice-demo" class="absolute bottom-8 left-8 right-8 p-6 rounded-2xl border-2" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); backdrop-filter: blur(15px); box-shadow: 0 12px 30px rgba(30, 192, 141, 0.2);">
                         <div class="flex items-center justify-between mb-4">
                             <div>
                                 <h6 class="text-white font-semibold mb-1">{{ $voiceDemo['title'] ?? 'Live Property Inquiry Demo' }}</h6>
-                                <p class="text-slate-300 text-sm">{{ $voiceDemo['description'] ?? 'Real conversation with AI agent' }}</p>
+                                <p class="text-slate-200 text-sm">{{ $voiceDemo['description'] ?? 'Real conversation with AI agent' }}</p>
                             </div>
-                            <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                                 <i class="uil uil-headphones text-xl text-white"></i>
                             </div>
                         </div>
                         
                         <!-- Audio Player -->
                         <div class="voice-demo-player">
-                            <audio controls class="w-full" data-demo-type="property-inquiry">
+                            <audio controls class="w-full" data-demo-type="property-inquiry" style="accent-color: var(--voip-link);">
                                 <source src="{{ asset('assets/audio/solutions/real-estate/property-inquiry-demo.mp3') }}" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
@@ -143,27 +143,18 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
 </section>
 
 <style>
-/* Custom Audio Player Styling */
+/* Enhanced Audio Player Styling */
 .voice-demo-player audio {
     width: 100%;
-    height: 40px;
-    border-radius: 8px;
+    height: 50px;
+    border-radius: 12px;
     background: rgba(30, 192, 141, 0.1);
+    border: 1px solid rgba(30, 192, 141, 0.2);
     outline: none;
 }
 
-.voice-demo-player audio::-webkit-media-controls-panel {
-    background-color: rgba(30, 192, 141, 0.1);
-}
-
-.voice-demo-player audio::-webkit-media-controls-play-button {
-    background-color: var(--voip-link);
-    border-radius: 50%;
-}
-
-.voice-demo-player audio::-webkit-media-controls-current-time-display,
-.voice-demo-player audio::-webkit-media-controls-time-remaining-display {
-    color: white;
-    text-shadow: none;
+.voice-demo-player audio:focus {
+    border-color: var(--voip-link);
+    box-shadow: 0 0 0 2px rgba(30, 192, 141, 0.2);
 }
 </style>
