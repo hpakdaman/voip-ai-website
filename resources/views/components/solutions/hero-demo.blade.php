@@ -114,15 +114,6 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                     </div>
                 </div>
                 
-                <!-- Floating Achievement Badge -->
-                <div class="absolute top-8 right-8 p-4 rounded-2xl border border-white/20" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 20px 40px rgba(30, 192, 141, 0.3);">
-                    <div class="text-center">
-                        <i class="uil uil-award text-3xl text-white mb-2"></i>
-                        <div class="text-white font-bold text-sm">#1 in UAE</div>
-                        <div class="text-white text-xs opacity-90">Real Estate AI</div>
-                    </div>
-                </div>
-                
                 <!-- Live Status Indicator -->
                 <div class="absolute top-8 left-8 p-3 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
                     <div class="flex items-center space-x-2">
