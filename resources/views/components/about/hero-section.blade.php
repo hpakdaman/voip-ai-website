@@ -25,7 +25,7 @@ try {
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             
             <!-- Left Content -->
-            <div class="order-2 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+            <div class="order-1 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Company Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
                     <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
@@ -66,7 +66,7 @@ try {
             </div>
             
             <!-- Right Image -->
-            <div class="order-1 lg:order-2 relative wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+            <div class="order-2 lg:order-2 relative wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Team Image -->
