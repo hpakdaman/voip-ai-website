@@ -100,21 +100,63 @@ $integrations = $capabilitiesData['integrations'] ?? [];
             </div>
         </div>
         
-        <!-- Live Demo CTA -->
-        <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-            <div class="max-w-3xl mx-auto p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
-                <h3 class="text-2xl font-bold text-white mb-4">See Your AI Agent in Action</h3>
-                <p class="text-slate-300 mb-6">Watch a live demonstration of how our AI handles real estate calls</p>
+        <!-- Live Demo CTA with Image -->
+        <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Demo Image -->
+                <div class="relative order-2 lg:order-1">
+                    <img src="{{ asset('assets/images/real/about.jpg') }}" 
+                         alt="Real Estate Professional Using AI Assistant" 
+                         class="w-full h-[400px] object-cover rounded-2xl shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>
+                    
+                    <!-- Floating Stats -->
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(15px);">
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-white">40%</div>
+                                <div class="text-slate-400 text-xs">More Leads</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white">24/7</div>
+                                <div class="text-slate-400 text-xs">Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#voice-samples" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="capabilities-voice-samples">
-                        <i class="uil uil-play text-lg mr-3"></i>
-                        Listen to More Demos
-                    </a>
-                    <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="capabilities-book-demo">
-                        <i class="uil uil-calendar-alt text-lg mr-3"></i>
-                        Book Live Demo
-                    </a>
+                <!-- Demo Content -->
+                <div class="order-1 lg:order-2">
+                    <div class="max-w-lg">
+                        <h3 class="text-3xl font-bold text-white mb-4">See Your AI Agent in Action</h3>
+                        <p class="text-slate-300 mb-6 text-lg">Watch a live demonstration of how our AI handles real estate calls with professional expertise and natural conversation flow.</p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center text-slate-300">
+                                <i class="uil uil-check text-lg mr-3" style="color: var(--voip-link);"></i>
+                                Handles property inquiries and bookings
+                            </div>
+                            <div class="flex items-center text-slate-300">
+                                <i class="uil uil-check text-lg mr-3" style="color: var(--voip-link);"></i>
+                                Qualifies leads with smart questions
+                            </div>
+                            <div class="flex items-center text-slate-300">
+                                <i class="uil uil-check text-lg mr-3" style="color: var(--voip-link);"></i>
+                                Integrates with your CRM automatically
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#voice-samples" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="capabilities-voice-samples">
+                                <i class="uil uil-play text-lg mr-3"></i>
+                                Listen to More Demos
+                            </a>
+                            <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="capabilities-book-demo">
+                                <i class="uil uil-calendar-alt text-lg mr-3"></i>
+                                Book Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

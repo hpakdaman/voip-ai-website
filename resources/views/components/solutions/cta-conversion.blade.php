@@ -1,7 +1,9 @@
 <!-- Strong Conversion CTA Section -->
 <section class="relative py-24" style="background-color: var(--voip-bg);">
     <div class="absolute inset-0">
-        <!-- Conversion-focused background -->
+        <!-- Background Image -->
+        <img src="{{ asset('assets/images/real/bg/01.jpg') }}" alt="Real Estate Success" class="w-full h-full object-cover opacity-20">
+        <!-- Conversion-focused background overlay -->
         <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 50%, transparent 100%);"></div>
     </div>
     

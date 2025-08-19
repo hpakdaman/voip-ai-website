@@ -76,7 +76,7 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 <div class="relative">
                     <!-- Main Demo Image -->
                     <div class="relative">
-                        <img src="{{ asset('assets/images/solutions/real-estate/hero-agent-showing.jpg') }}" 
+                        <img src="{{ asset('assets/images/real/property/1.jpg') }}" 
                              alt="Real Estate Agent AI Call Center Demo" 
                              class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         
