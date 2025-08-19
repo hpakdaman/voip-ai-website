@@ -25,15 +25,15 @@
         <ul class="buy-button list-none mb-0 flex items-center">
             <!-- Language Switcher -->
             <li class="flex items-center relative">
-                <button id="currentLang" class="size-9 inline-flex items-center justify-center tracking-wide duration-500 text-base text-center rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700">
+                <button id="currentLang" class="size-9 inline-flex items-center justify-center tracking-wide duration-500 text-base text-center rounded-full transition-all cursor-pointer" style="background: rgba(30, 192, 141, 0.1); border: 1px solid rgba(30, 192, 141, 0.2);" onmouseover="this.style.background='rgba(30, 192, 141, 0.2)'; this.style.borderColor='rgba(30, 192, 141, 0.3)'; this.style.cursor='pointer'" onmouseout="this.style.background='rgba(30, 192, 141, 0.1)'; this.style.borderColor='rgba(30, 192, 141, 0.2)'">
                     <span class="text-sm">🇺🇸</span>
                 </button>
-                <div id="langDropdown" class="absolute top-full right-0 mt-1 bg-white dark:bg-slate-800 rounded-lg shadow-lg border dark:border-gray-700 min-w-[100px] opacity-0 invisible transform translate-y-2 transition-all duration-300 z-50">
-                    <button class="lang-option w-full flex items-center space-x-2 px-3 py-2 text-sm hover:bg-gray-50 dark:hover:bg-slate-700 rounded-t-lg transition-colors duration-200 text-left" data-lang="en">
+                <div id="langDropdown" class="absolute top-full right-0 mt-1 rounded-lg shadow-lg border min-w-[100px] opacity-0 invisible transform translate-y-2 transition-all duration-300 z-50" style="background-color: var(--voip-dark-bg); border-color: rgba(30, 192, 141, 0.2);">
+                    <button class="lang-option w-full flex items-center space-x-2 px-3 py-2 text-sm text-white rounded-t-lg transition-colors duration-200 text-left cursor-pointer" data-lang="en" onmouseover="this.style.background='rgba(30, 192, 141, 0.2)'; this.style.cursor='pointer'" onmouseout="this.style.background='transparent'">
                         <span>🇺🇸</span>
                         <span>EN</span>
                     </button>
-                    <button class="lang-option w-full flex items-center space-x-2 px-3 py-2 text-sm hover:bg-gray-50 dark:hover:bg-slate-700 rounded-b-lg transition-colors duration-200 text-left" data-lang="ar">
+                    <button class="lang-option w-full flex items-center space-x-2 px-3 py-2 text-sm text-white rounded-b-lg transition-colors duration-200 text-left cursor-pointer" data-lang="ar" onmouseover="this.style.background='rgba(30, 192, 141, 0.2)'; this.style.cursor='pointer'" onmouseout="this.style.background='transparent'">
                         <span>🇦🇪</span>
                         <span>AR</span>
                     </button>
@@ -68,15 +68,15 @@
                 <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">CONTACT</a></li>
                 
                 <!-- Mobile Language Switcher -->
-                <li class="mobile-lang-switcher border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                <li class="mobile-lang-switcher border-t mt-4 pt-4 mb-4" style="border-color: rgba(30, 192, 141, 0.2);">
                     <div class="px-4 py-2">
-                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2 block">Language</span>
-                        <div class="flex space-x-2">
-                            <button class="lang-option-mobile flex items-center space-x-2 px-3 py-2 text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg transition-colors duration-200 flex-1 justify-center" data-lang="en">
+                        <span class="text-sm font-medium mb-3 block" style="color: var(--voip-link);">Language</span>
+                        <div class="flex space-x-3">
+                            <button class="lang-option-mobile flex items-center space-x-2 px-4 py-3 text-sm text-white rounded-xl transition-all duration-200 flex-1 justify-center border cursor-pointer" data-lang="en" style="background: rgba(30, 192, 141, 0.1); border-color: rgba(30, 192, 141, 0.3);" onmouseover="this.style.background='rgba(30, 192, 141, 0.2)'; this.style.borderColor='rgba(30, 192, 141, 0.4)'; this.style.cursor='pointer'" onmouseout="this.style.background='rgba(30, 192, 141, 0.1)'; this.style.borderColor='rgba(30, 192, 141, 0.3)'">
                                 <span>🇺🇸</span>
                                 <span>EN</span>
                             </button>
-                            <button class="lang-option-mobile flex items-center space-x-2 px-3 py-2 text-sm bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg transition-colors duration-200 flex-1 justify-center" data-lang="ar">
+                            <button class="lang-option-mobile flex items-center space-x-2 px-4 py-3 text-sm text-white rounded-xl transition-all duration-200 flex-1 justify-center border cursor-pointer" data-lang="ar" style="background: rgba(30, 192, 141, 0.1); border-color: rgba(30, 192, 141, 0.3);" onmouseover="this.style.background='rgba(30, 192, 141, 0.2)'; this.style.borderColor='rgba(30, 192, 141, 0.4)'; this.style.cursor='pointer'" onmouseout="this.style.background='rgba(30, 192, 141, 0.1)'; this.style.borderColor='rgba(30, 192, 141, 0.3)'">
                                 <span>🇦🇪</span>
                                 <span>AR</span>
                             </button>
