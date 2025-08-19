@@ -61,6 +61,14 @@ class HomeController extends Controller
         return view('privacy-portal');  
     }
 
+    /**
+     * Real Estate AI Solutions Landing Page
+     */
+    public function realEstate()
+    {
+        return view('solutions.real-estate');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

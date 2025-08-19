@@ -1,0 +1,114 @@
+{
+    "section": {
+        "badge": "Voice Demonstrations",
+        "title": "Hear Your AI Agent",
+        "highlighted": "Handle Real Calls",
+        "description": "Listen to actual conversations between prospects and your AI agent across different real estate scenarios."
+    },
+    "demos": [
+        {
+            "title": "Property Inquiry Call",
+            "scenario": "Interested buyer calling about Dubai Marina villa",
+            "description": "A potential buyer calls asking about a 2-bedroom villa listing. Watch how the AI provides detailed information, answers questions about amenities, and books a viewing appointment.",
+            "duration": "2:15",
+            "type": "property-inquiry",
+            "icon": "uil-home",
+            "audio_file": "property-inquiry-demo.mp3",
+            "key_points": [
+                "Instant property details and pricing",
+                "Neighborhood amenities information",
+                "Viewing appointment booking",
+                "Contact information capture",
+                "Follow-up scheduling"
+            ]
+        },
+        {
+            "title": "Lead Qualification",
+            "scenario": "First-time buyer with budget questions",
+            "description": "A first-time buyer calls with budget constraints. The AI qualifies their needs, discusses financing options, and connects them with suitable properties within their range.",
+            "duration": "1:45",
+            "type": "lead-qualification",
+            "icon": "uil-user-check",
+            "audio_file": "lead-qualification-demo.mp3",
+            "key_points": [
+                "Budget assessment and qualification",
+                "Financing options discussion",
+                "Property type preferences",
+                "Timeline establishment",
+                "Agent referral for qualified leads"
+            ]
+        },
+        {
+            "title": "Rescheduling & Coordination",
+            "scenario": "Client needs to reschedule viewing appointment",
+            "description": "An existing client needs to reschedule their property viewing due to a work conflict. The AI checks availability, reschedules seamlessly, and sends confirmations.",
+            "duration": "1:20",
+            "type": "scheduling",
+            "icon": "uil-calendar-alt",
+            "audio_file": "rescheduling-demo.mp3",
+            "key_points": [
+                "Calendar availability checking",
+                "Flexible rescheduling options",
+                "Automatic confirmations sent",
+                "Agent notification system",
+                "Reminder setup"
+            ]
+        },
+        {
+            "title": "Investment Inquiry",
+            "scenario": "Investor asking about ROI and market trends",
+            "description": "An experienced investor calls about potential investment properties in Business Bay. The AI provides market analysis, ROI calculations, and investment insights.",
+            "duration": "2:30",
+            "type": "investment",
+            "icon": "uil-chart-growth",
+            "audio_file": "investment-inquiry-demo.mp3",
+            "key_points": [
+                "Market trend analysis",
+                "ROI calculations and projections",
+                "Comparable sales data",
+                "Investment opportunity assessment",
+                "Portfolio recommendations"
+            ]
+        },
+        {
+            "title": "Arabic Language Support",
+            "scenario": "Arabic-speaking client inquiry",
+            "description": "A client preferring to speak in Arabic calls about family housing options in Dubai. The AI responds fluently in Arabic, understanding cultural preferences and requirements.",
+            "duration": "1:55",
+            "type": "arabic-support",
+            "icon": "uil-comments",
+            "audio_file": "arabic-support-demo.mp3",
+            "key_points": [
+                "Fluent Arabic conversation",
+                "Cultural sensitivity awareness",
+                "Family housing preferences",
+                "Educational district information",
+                "Community amenities discussion"
+            ]
+        },
+        {
+            "title": "Emergency After-Hours",
+            "scenario": "Urgent property issue outside business hours",
+            "description": "A tenant calls at 11 PM about a property maintenance emergency. The AI handles the urgent request, connects with emergency services, and notifies the property manager.",
+            "duration": "1:10",
+            "type": "emergency",
+            "icon": "uil-exclamation-triangle",
+            "audio_file": "emergency-demo.mp3",
+            "key_points": [
+                "24/7 emergency response",
+                "Urgency level assessment",
+                "Emergency service coordination",
+                "Property manager notification",
+                "Follow-up scheduling"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "total_demos": 6,
+        "total_duration": "11:15",
+        "languages": ["English", "Arabic"],
+        "scenarios_covered": ["inquiry", "qualification", "scheduling", "investment", "multilingual", "emergency"]
+    }
+}
