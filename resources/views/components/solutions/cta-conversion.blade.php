@@ -10,8 +10,8 @@
     <div class="container relative z-10">
         <div class="max-w-5xl mx-auto text-center">
             <!-- Urgency Header -->
-            <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-8" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
-                <i class="uil uil-clock text-lg mr-3 text-red-400"></i>
+            <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-8" style="background: rgba(239, 239, 239, 0.1); border-color: rgba(239, 239, 239, 0.3);">
+                <i class="uil uil-clock text-lg mr-3"></i>
                 <span class="text-white font-medium">Limited Time: Free Setup Worth AED 5,000</span>
             </div>
             

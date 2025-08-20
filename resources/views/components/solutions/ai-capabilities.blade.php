@@ -109,20 +109,7 @@ $integrations = $capabilitiesData['integrations'] ?? [];
                          alt="Real Estate Professional Using AI Assistant" 
                          class="w-full h-[400px] object-cover rounded-2xl shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>
-                    
-                    <!-- Floating Stats -->
-                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(15px);">
-                        <div class="grid grid-cols-2 gap-4 text-center">
-                            <div>
-                                <div class="text-2xl font-bold text-white">40%</div>
-                                <div class="text-slate-400 text-xs">More Leads</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-bold text-white">24/7</div>
-                                <div class="text-slate-400 text-xs">Coverage</div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 
                 <!-- Demo Content -->
