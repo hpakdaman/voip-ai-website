@@ -420,11 +420,26 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
         max-height: 8rem;
     }
 }
+@media (min-width: 1100px) {
+    .hero-heading-fixed {
+        max-height: 9rem;
+        font-size: 2.1rem !important;
+    }
+}
 
 /* Extra large screens: text-6xl (60px) */
 @media (min-width: 1280px) {
     .hero-heading-fixed {
         max-height: 10rem;
+        font-size: 2.2rem !important;
+
+    }
+}
+/* Extra large screens: text-6xl (60px) */
+@media (min-width: 1350px) {
+    .hero-heading-fixed {
+        max-height: 11rem;
+        font-size: 2.4rem !important;
     }
 }
 
