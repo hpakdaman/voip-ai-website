@@ -11,7 +11,7 @@
 @include('components.solutions.hero-demo')
 
 {{-- Problem vs Solution Showcase --}}
-@include('components.solutions.problem-solution')
+@include('components.solutions.problem-solution', ['boxHeight' => '250px'])
 
 {{-- AI Capabilities for Real Estate --}}
 @include('components.solutions.ai-capabilities')

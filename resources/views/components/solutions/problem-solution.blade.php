@@ -12,6 +12,10 @@ $problemsData = json_decode(file_get_contents(resource_path("data/solutions/{$in
 $sectionData = $problemsData['section'] ?? [];
 $problems = $problemsData['problems'] ?? [];
 $solutions = $problemsData['solutions'] ?? [];
+
+// Box height parameter - can be overridden by parent page
+$boxHeight = $boxHeight ?? '250px';
+$heightClass = "lg:h-[{$boxHeight}]";
 @endphp
 
 <!-- Problem vs Solution Showcase - Real Estate Focus -->
@@ -57,20 +61,20 @@ $solutions = $problemsData['solutions'] ?? [];
                 <!-- Problems List -->
                 <div class="space-y-6 flex-1">
                     @foreach($problems as $problem)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15);">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15);">
                         <!-- Warning Badge -->
                         <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);">
                             <i class="uil uil-times text-white text-sm"></i>
                         </div>
                         
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);">
+                        <div class="flex items-start space-x-4 flex-1">
+                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);">
                                 <i class="uil {{ $problem['icon'] ?? 'uil-times' }} text-xl text-white"></i>
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 flex flex-col">
                                 <h4 class="text-xl font-bold text-white mb-3">{{ $problem['title'] ?? 'Problem Title' }}</h4>
-                                <p class="text-slate-200 leading-relaxed mb-4">{{ $problem['description'] ?? 'Problem description' }}</p>
-                                <div class="inline-flex items-center px-4 py-2 rounded-full text-white font-semibold text-sm" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.3);">
+                                <p class="text-slate-200 leading-relaxed mb-4 flex-1">{{ $problem['description'] ?? 'Problem description' }}</p>
+                                <div class="inline-flex items-center px-4 py-2 rounded-full text-white font-semibold text-sm mt-auto" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.3);">
                                     <i class="uil uil-chart-down text-sm mr-2"></i>
                                     {{ $problem['impact'] ?? 'Impact metric' }}
                                 </div>
@@ -94,29 +98,24 @@ $solutions = $problemsData['solutions'] ?? [];
                 <!-- Solutions List -->
                 <div class="space-y-6 flex-1">
                     @foreach($solutions as $solution)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
                         <!-- Success Badge -->
                         <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                             <i class="uil uil-check text-white text-sm"></i>
                         </div>
                         
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 6px 15px rgba(30, 192, 141, 0.3);">
+                        <div class="flex items-start space-x-4 flex-1">
+                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 6px 15px rgba(30, 192, 141, 0.3);">
                                 <i class="uil {{ $solution['icon'] ?? 'uil-check' }} text-xl text-white"></i>
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 flex flex-col">
                                 <h4 class="text-xl font-bold text-white mb-3">{{ $solution['title'] ?? 'Solution Title' }}</h4>
-                                <p class="text-slate-200 leading-relaxed mb-4">{{ $solution['description'] ?? 'Solution description' }}</p>
-                                <div class="flex items-center justify-between">
+                                <p class="text-slate-200 leading-relaxed mb-4 flex-1">{{ $solution['description'] ?? 'Solution description' }}</p>
+                                <div class="flex items-center justify-between mt-auto">
                                     <div class="inline-flex items-center px-4 py-2 rounded-full text-white font-semibold text-sm" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.3);">
                                         <i class="uil uil-chart-growth text-sm mr-2"></i>
-                                        {{ $solution['benefit'] ?? 'Benefit metric' }}
+                                        {{ $solution['result'] ?? 'Result metric' }}
                                     </div>
-                                    @if($solution['demo_available'] ?? false)
-                                    <button class="text-xs px-3 py-1 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors">
-                                        <i class="uil uil-play text-xs mr-1"></i>Demo
-                                    </button>
-                                    @endif
                                 </div>
                             </div>
                         </div>
