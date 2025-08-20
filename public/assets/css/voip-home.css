@@ -26,6 +26,12 @@
     --color-slate-950: var(--voip-dark-bg) !important;
 }
 
+/* Prevent FOUC - Ensure consistent body background */
+html, body {
+    background-color: #0c1b27 !important; /* var(--voip-dark-bg) */
+    color: white !important;
+}
+
 /* Hero Section Responsive Typography */
 @media (min-width: 900px) and (max-width: 1024px) {
     .hero-heading-960 {
