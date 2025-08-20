@@ -6,7 +6,7 @@
 @include('components.solutions.hero-demo')
 
 {{-- Problem vs Solution Showcase --}}
-@include('components.solutions.problem-solution')
+@include('components.solutions.problem-solution', ['boxHeight' => '200px'])
 
 {{-- AI Capabilities Section --}}
 @include('components.solutions.ai-capabilities')
