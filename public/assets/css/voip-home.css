@@ -48,6 +48,57 @@
     }
 }
 
+/* Global Audio Player Styling */
+.voice-demo-player audio {
+    width: 100%;
+    height: 42px;
+    border-radius: 21px;
+    /* background: rgba(55, 65, 81, 0.2); */
+    outline: none;
+    border: 1px solid rgb(6 88 63);
+}
+
+.voice-demo-player audio:focus {
+    border-color: rgba(156, 163, 175, 0.5);
+    box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.2);
+}
+
+.voice-demo-player audio::-webkit-media-controls-panel {
+    background-color: rgba(12, 27, 39, 0.9);
+    border-radius: 12px;
+}
+
+.voice-demo-player audio::-webkit-media-controls-play-button {
+    background-color: rgba(75, 85, 99, 0.8);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.voice-demo-player audio::-webkit-media-controls-current-time-display,
+.voice-demo-player audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.voice-demo-player audio::-webkit-media-controls-timeline {
+    background-color: rgba(75, 85, 99, 0.4);
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+.voice-demo-player audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(75, 85, 99, 0.4);
+    border-radius: 25px;
+}
+
+/* Responsive audio player */
+@media (max-width: 768px) {
+    .voice-demo-player audio {
+        height: 38px;
+    }
+}
+
 /* Typewriter Text - Reserve space for 3 lines on small screens */
 @media (max-width: 460px) {
     .hero-heading-fixed {

@@ -30,7 +30,7 @@ $heroData = $contactData['hero'] ?? [];
             </div>
             
             <!-- Main Title -->
-            <h1 class="md:text-6xl text-4xl md:leading-tight tracking-wide leading-normal font-bold text-white mb-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <h1 class="md:text-5xl text-3xl md:leading-tight tracking-wide leading-normal font-bold text-white mb-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 {{ $heroData['title'] ?? 'Contact VoIP AI Experts' }}
             </h1>
             

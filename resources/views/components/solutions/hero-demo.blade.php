@@ -25,7 +25,7 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 </div>
                 
                 <!-- Main Heading -->
-                <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                     {{ $sectionData['main_title'] ?? 'Never Miss Another' }}
                     <span style="color: var(--voip-link);">{{ $sectionData['highlighted_word'] ?? 'Real Estate Lead' }}</span>
                 </h1>
@@ -115,7 +115,7 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 </div>
                 
                 <!-- Live Status Indicator -->
-                <div class="absolute top-8 left-8 p-3 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
+                <div class="absolute top-8 right-8 p-3 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
                     <div class="flex items-center space-x-2">
                         <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
                         <div class="text-white font-medium text-sm">Live 24/7</div>
@@ -132,20 +132,3 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
         </div>
     </div>
 </section>
-
-<style>
-/* Enhanced Audio Player Styling */
-.voice-demo-player audio {
-    width: 100%;
-    height: 42px;
-    border-radius: 12px;
-    background: rgba(30, 192, 141, 0.1);
-    border: 1px solid rgba(30, 192, 141, 0.2);
-    outline: none;
-}
-
-.voice-demo-player audio:focus {
-    border-color: var(--voip-link);
-    box-shadow: 0 0 0 2px rgba(30, 192, 141, 0.2);
-}
-</style>

@@ -76,7 +76,7 @@ $formData = $contactData['contact_form'] ?? [];
                         @csrf
                         
                         @if (session('success'))
-                        <div id="contact-message" class="p-4 rounded-xl border border-green-200 text-green-800" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);">
+                        <div id="contact-message" class="p-4 rounded-xl border border-green-200 text-green-800" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(29, 120, 97, 0.1) 100%);">
                             <div class="flex items-center">
                                 <i class="uil uil-check-circle text-green-600 text-xl mr-3"></i>
                                 {{ session('success') }}
@@ -85,18 +85,18 @@ $formData = $contactData['contact_form'] ?? [];
                         @endif
 
                         @if (session('error'))
-                        <div id="contact-message" class="p-4 rounded-xl border border-red-200 text-red-800" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);">
+                        <div id="contact-message" class="p-4 rounded-xl border border-gray-600 text-gray-200" style="background: linear-gradient(135deg, rgba(55, 65, 81, 0.2) 0%, rgba(75, 85, 99, 0.2) 100%);">
                             <div class="flex items-center">
-                                <i class="uil uil-times-circle text-red-600 text-xl mr-3"></i>
+                                <i class="uil uil-times-circle text-gray-400 text-xl mr-3"></i>
                                 {{ session('error') }}
                             </div>
                         </div>
                         @endif
 
                         @if ($errors->any())
-                        <div id="contact-message" class="p-4 rounded-xl border border-red-200 text-red-800" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);">
+                        <div id="contact-message" class="p-4 rounded-xl border border-gray-600 text-gray-200" style="background: linear-gradient(135deg, rgba(55, 65, 81, 0.2) 0%, rgba(75, 85, 99, 0.2) 100%);">
                             <div class="flex items-start">
-                                <i class="uil uil-times-circle text-red-600 text-xl mr-3 mt-0.5"></i>
+                                <i class="uil uil-times-circle text-gray-400 text-xl mr-3 mt-0.5"></i>
                                 <ul class="list-disc list-inside space-y-1">
                                     @foreach ($errors->all() as $error)
                                         <li>{{ $error }}</li>

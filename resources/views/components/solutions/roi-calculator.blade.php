@@ -25,10 +25,10 @@
             </p>
         </div>
         
-        <div class="grid lg:grid-cols-2 gap-16">
+        <div class="grid lg:grid-cols-2 gap-16 items-stretch">
             <!-- Calculator Input -->
             <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
-                <div class="p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
+                <div class="p-8 rounded-2xl border border-white/10 h-full flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
                     <h3 class="text-2xl font-bold text-white mb-6">Your Business Details</h3>
                     
                     <div class="space-y-6">
@@ -81,44 +81,44 @@
             
             <!-- Results Display -->
             <div class="wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-                <div class="p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(22, 47, 58, 0.4) 100%);">
+                <div class="p-8 rounded-2xl border border-white/10 h-full flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(22, 47, 58, 0.4) 100%);">
                     <h3 class="text-2xl font-bold text-white mb-6">Your Potential Savings</h3>
                     
                     <!-- Key Metrics -->
-                    <div class="space-y-6 mb-8">
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
-                            <div class="text-slate-400 text-sm">Calls Recovered Monthly</div>
-                            <div class="text-2xl font-bold text-white" id="recovered-calls">70</div>
+                    <div class="space-y-4 mb-6 flex-1">
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
+                            <div class="text-slate-400 text-xs">Calls Recovered Monthly</div>
+                            <div class="text-xl font-bold text-white" id="recovered-calls">70</div>
                         </div>
                         
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
-                            <div class="text-slate-400 text-sm">Additional Sales Monthly</div>
-                            <div class="text-2xl font-bold text-white" id="additional-sales">5.6</div>
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
+                            <div class="text-slate-400 text-xs">Additional Sales Monthly</div>
+                            <div class="text-xl font-bold text-white" id="additional-sales">5.6</div>
                         </div>
                         
-                        <div class="p-6 rounded-xl border-2 border-green-400/30" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(30, 192, 141, 0.1) 100%);">
-                            <div class="text-green-400 text-sm font-medium">Monthly Revenue Increase</div>
-                            <div class="text-4xl font-bold text-white" id="revenue-increase">280,000 AED</div>
+                        <div class="p-4 rounded-xl border-2 border-green-400/30" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(29, 120, 97, 0.1) 100%);">
+                            <div class="text-green-400 text-xs font-medium">Monthly Revenue Increase</div>
+                            <div class="text-3xl font-bold text-white" id="revenue-increase">280,000 AED</div>
                         </div>
                         
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
-                            <div class="text-slate-400 text-sm">Sawtic AI Cost</div>
-                            <div class="text-xl font-bold text-white">2,999 AED/month</div>
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
+                            <div class="text-slate-400 text-xs">Sawtic AI Cost</div>
+                            <div class="text-lg font-bold text-white">2,999 AED/month</div>
                         </div>
                     </div>
                     
                     <!-- ROI Summary -->
-                    <div class="p-6 rounded-xl border border-white/10 mb-6" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                    <div class="p-4 rounded-xl border border-white/10 mb-4">
                         <div class="text-center">
-                            <div class="text-white text-sm opacity-90">Your ROI</div>
-                            <div class="text-4xl font-bold text-white" id="roi-percentage">9,333%</div>
-                            <div class="text-white text-sm opacity-90">Return on Investment</div>
+                            <div class="text-white text-xs opacity-90">Your ROI</div>
+                            <div class="text-3xl font-bold text-white" id="roi-percentage">9,333%</div>
+                            <div class="text-white text-xs opacity-90">Return on Investment</div>
                         </div>
                     </div>
                     
                     <!-- CTA Button -->
-                    <a href="/contact-us" class="w-full inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);" data-cta-track="roi-calculator-get-started">
-                        <i class="uil uil-rocket text-lg mr-3"></i>
+                    <a href="/contact-us" class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 mt-auto" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="roi-calculator-get-started">
+                        <i class="uil uil-rocket text-base mr-2"></i>
                         Start Saving Today
                     </a>
                 </div>
