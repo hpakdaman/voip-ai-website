@@ -30,7 +30,7 @@ $testimonials = $data['testimonials'] ?? [];
                 @foreach($testimonials as $index => $testimonial)
                 <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.15) + 0.1 }}s">
                     <!-- Simple Testimonial Card with Fixed Height -->
-                    <div class="h-80 p-6 rounded-xl text-center flex flex-col" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
+                    <div class="h-96 p-6 rounded-xl text-center flex flex-col overflow-hidden" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
                         
                         <!-- 5-Star Rating -->
                         <div class="flex items-center justify-center mb-4">
@@ -40,20 +40,31 @@ $testimonials = $data['testimonials'] ?? [];
                         </div>
                         
                         <!-- Short Quote (Flexible Content) -->
-                        <blockquote class="text-white text-lg leading-relaxed mb-6 flex-1">
+                        <blockquote class="text-white text-lg leading-relaxed mb-6 flex-1 overflow-hidden">
                             "{{ $testimonial['testimonial'] }}"
                         </blockquote>
                         
                         <!-- Client Info (Stuck to Bottom) -->
-                        <div class="mt-auto">
-                            <!-- Client Photo -->
-                            <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2" style="border-color: var(--voip-link);">
-                                <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover">
+                        <div class="mt-auto pt-3 border-t border-white/10">
+                            <div class="flex items-center space-x-3">
+                                <!-- Client Photo -->
+                                <div class="w-10 h-10 rounded-full overflow-hidden border-2 flex-shrink-0" style="border-color: var(--voip-link);">
+                                    @if(isset($testimonial['image']) && !empty($testimonial['image']))
+                                    <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover" 
+                                         onerror="this.src='{{ asset('assets/images/client/01.jpg') }}';">
+                                    @else
+                                    <div class="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                                        <i class="uil uil-user text-white text-xs"></i>
+                                    </div>
+                                    @endif
+                                </div>
+                                
+                                <!-- Client Name & Company -->
+                                <div class="text-left min-w-0">
+                                    <div class="text-white font-bold text-sm truncate">{{ $testimonial['name'] }}</div>
+                                    <div class="text-slate-400 text-xs truncate">{{ $testimonial['company'] }}</div>
+                                </div>
                             </div>
-                            
-                            <!-- Client Name & Company -->
-                            <div class="text-white font-bold">{{ $testimonial['name'] }}</div>
-                            <div class="text-slate-400 text-sm">{{ $testimonial['company'] }}</div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +74,7 @@ $testimonials = $data['testimonials'] ?? [];
         @endif
         
         <!-- Success Stats -->
-        <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+        <div class="mt-20 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
                 <div class="text-center">
                     <div class="text-4xl font-bold text-white mb-2">500+</div>
@@ -88,7 +99,7 @@ $testimonials = $data['testimonials'] ?? [];
         <div class="text-center mt-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
             <div class="max-w-2xl mx-auto">
                 <h3 class="text-2xl font-bold text-white mb-4">Join These Successful Businesses</h3>
-                <p class="text-slate-300 mb-8">Don't let your competitors get ahead. Start capturing more leads today with Sawtic AI.</p>
+                <p class="text-slate-300 mb-8">Start capturing more leads with Sawtic AI.</p>
                 
                 <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
                     <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="success-stories-demo">

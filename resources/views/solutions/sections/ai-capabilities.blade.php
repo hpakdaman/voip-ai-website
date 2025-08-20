@@ -36,43 +36,29 @@ $integrationStats = $data['integration_stats'] ?? [];
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
             @foreach($capabilities as $index => $capability)
             <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.15) + 0.2 }}s">
-                <div class="h-full p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:scale-105 hover:border-white/20" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
-                    <!-- Icon & Badge -->
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil {{ $capability['icon'] ?? 'uil-brain' }} text-2xl text-white"></i>
-                        </div>
-                        @if($capability['is_premium'] ?? false)
-                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-white" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-                            Premium
-                        </span>
-                        @endif
+                <div class="h-full p-6 rounded-2xl border border-white/10 transition-all duration-300 hover:scale-105 hover:border-white/20 text-center flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
+                    <!-- Icon -->
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                        <i class="uil {{ $capability['icon'] ?? 'uil-brain' }} text-2xl text-white"></i>
                     </div>
                     
-                    <!-- Content -->
-                    <h3 class="text-xl font-bold text-white mb-4">{{ $capability['title'] ?? 'Capability Title' }}</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">{{ $capability['description'] ?? 'Capability description' }}</p>
-                    
-                    <!-- Features List -->
-                    @if(isset($capability['features']))
-                    <ul class="space-y-2 mb-6">
-                        @foreach($capability['features'] as $feature)
-                        <li class="flex items-center text-sm text-slate-400">
-                            <i class="uil uil-check text-xs mr-2" style="color: var(--voip-link);"></i>
-                            {{ $feature }}
-                        </li>
-                        @endforeach
-                    </ul>
+                    <!-- Premium Badge -->
+                    @if($capability['is_premium'] ?? false)
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full text-white mb-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        Premium
+                    </span>
                     @endif
+                    
+                    <!-- Content -->
+                    <h3 class="text-lg font-bold text-white mb-3">{{ $capability['title'] ?? 'Capability Title' }}</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-1">{{ $capability['description'] ?? 'Capability description' }}</p>
+                    
                     
                     <!-- Performance Metric -->
                     @if(isset($capability['metric']))
-                    <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400 text-xs">Performance</span>
-                            <span class="text-lg font-bold text-white">{{ $capability['metric'] }}</span>
-                        </div>
-                        <div class="text-xs mt-1" style="color: var(--voip-link);">{{ $capability['metric_label'] ?? 'Accuracy Rate' }}</div>
+                    <div class="text-center mt-auto">
+                        <div class="text-2xl font-bold mb-1" style="color: var(--voip-link);">{{ $capability['metric'] }}</div>
+                        <div class="text-slate-400 text-xs">{{ $capability['metric_label'] ?? 'Accuracy Rate' }}</div>
                     </div>
                     @endif
                 </div>
