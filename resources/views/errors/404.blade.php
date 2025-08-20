@@ -18,7 +18,15 @@
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <!-- Error Code -->
         <div class="mb-8 relative">
-            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-20 select-none"
+            <!-- Background Image -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                <img src="{{ asset('assets/images/error.png') }}" 
+                     alt="Error illustration" 
+                     class="w-64 h-64 md:w-80 md:h-80 object-contain">
+            </div>
+            
+            <!-- 404 Text -->
+            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-30 select-none relative z-10"
                  style="background: var(--primary-gradient);">
                 404
             </div>
@@ -33,14 +41,13 @@
             
             <!-- Subtitle -->
             <p class="text-xl md:text-2xl text-slate-300 mb-6">
-                The page you're looking for seems to have vanished into the digital void
+                This page seems to be taking an unscheduled break
             </p>
             
             <!-- Description -->
             <div class="max-w-2xl mx-auto">
                 <p class="text-lg text-slate-400 leading-relaxed mb-8">
-                    Don't worry, even the most advanced AI call centers occasionally lose a connection. 
-                    Let's get you back on track to discover our intelligent business automation solutions.
+                    Even our AI agents can't find this page! But don't worry, we'll help you navigate back to discovering our intelligent business automation solutions.
                 </p>
             </div>
 
