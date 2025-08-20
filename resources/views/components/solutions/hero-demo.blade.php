@@ -1,7 +1,17 @@
 @php
-$heroData = json_decode(file_get_contents(resource_path('data/solutions/real-estate/hero.json')), true);
-$sectionData = $heroData['section'] ?? [];
-$voiceDemo = $heroData['voice_demo'] ?? [];
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+} elseif (str_contains($currentPath, 'real-estate')) {
+    $industry = 'real-estate';
+}
+
+$heroData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/hero.json")), true);
+$heroStats = $heroData['hero_stats'] ?? [];
+$demoAudio = $heroData['demo_audio'] ?? [];
+$ctaButtons = $heroData['cta_buttons'] ?? [];
 @endphp
 
 <!-- Hero Section with Voice Demo - Real Estate Focus -->
@@ -20,48 +30,42 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
             <div class="order-1 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Industry Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
-                    <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
-                    <span class="text-white font-medium">{{ $sectionData['industry_badge'] ?? 'Real Estate AI Solutions' }}</span>
+                    <i class="uil uil-spa text-sm mr-2" style="color: var(--voip-link);"></i>
+                    <span class="text-white font-medium">{{ $heroData['badge'] ?? 'AI Business Solutions' }}</span>
                 </div>
                 
                 <!-- Main Heading -->
-                <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                    {{ $sectionData['main_title'] ?? 'Never Miss Another' }}
-                    <span style="color: var(--voip-link);">{{ $sectionData['highlighted_word'] ?? 'Real Estate Lead' }}</span>
+                <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                    {{ $heroData['title'] ?? 'AI Call Agents for Your Business' }}
                 </h1>
                 
                 <!-- Subtitle -->
                 <p class="text-slate-300 text-xl leading-relaxed mb-8">
-                    {{ $sectionData['subtitle'] ?? 'Dubai\'s #1 AI call center handles property inquiries, showing bookings, and lead qualification 24/7 - even when you\'re showing other properties.' }}
+                    {{ $heroData['subtitle'] ?? 'Transform your customer experience with intelligent AI agents.' }}
                 </p>
                 
-                <!-- Key Benefits List -->
-                <div class="space-y-4 mb-10">
-                    @foreach($sectionData['key_benefits'] ?? [] as $benefit)
-                    <div class="flex items-start space-x-4">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center mt-1" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-check text-xs text-white"></i>
-                        </div>
-                        <span class="text-slate-300 text-lg">{{ $benefit }}</span>
-                    </div>
-                    @endforeach
-                </div>
+                <p class="text-slate-300 text-lg leading-relaxed mb-8">
+                    {{ $heroData['description'] ?? 'Handle calls, bookings, and customer service 24/7.' }}
+                </p>
+                
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <a href="#voice-demo" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="hero-listen-demo">
+                    @foreach($ctaButtons as $button)
+                    <a href="{{ $button['url'] ?? '#' }}" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 {{ $button['style'] === 'primary' ? 'primary-cta' : 'secondary-cta' }}" data-cta-track="hero-{{ strtolower(str_replace(' ', '-', $button['text'])) }}">
+                        @if($button['style'] === 'primary')
                         <i class="uil uil-play text-lg mr-3"></i>
-                        Listen to Live Demo
-                    </a>
-                    <a href="tel:+97148647245" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="hero-call-now">
+                        @else
                         <i class="uil uil-phone text-lg mr-3"></i>
-                        Call Now: +971 4 864 7245
+                        @endif
+                        {{ $button['text'] ?? 'Learn More' }}
                     </a>
+                    @endforeach
                 </div>
                 
                 <!-- Trust Indicators -->
                 <div class="grid grid-cols-3 gap-6">
-                    @foreach($sectionData['trust_stats'] ?? [] as $stat)
+                    @foreach($heroStats as $stat)
                     <div class="text-center">
                         <div class="text-2xl font-bold text-white mb-1">{{ $stat['number'] ?? '0' }}</div>
                         <div class="text-slate-400 text-sm">{{ $stat['label'] ?? 'Metric' }}</div>
@@ -76,9 +80,15 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 <div class="relative">
                     <!-- Main Demo Image -->
                     <div class="relative">
+                        @if($industry === 'spa-massage')
+                        <img src="{{ asset('assets/images/spa/1.jpg') }}" 
+                             alt="Spa & Massage AI Call Center Demo" 
+                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                        @else
                         <img src="{{ asset('assets/images/real/property/1.jpg') }}" 
                              alt="Real Estate Agent AI Call Center Demo" 
                              class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                        @endif
                         
                         <!-- Demo Overlay -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
@@ -98,8 +108,8 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                         
                         <!-- Audio Player -->
                         <div class="voice-demo-player">
-                            <audio controls class="w-full" data-demo-type="property-inquiry" style="accent-color: var(--voip-link);">
-                                <source src="{{ asset('assets/audio/solutions/real-estate/property-inquiry-demo.mp3') }}" type="audio/mpeg">
+                            <audio controls class="w-full" data-demo-type="{{ str_contains(request()->path(), 'spa-massage') ? 'spa-booking' : 'property-inquiry' }}" style="accent-color: var(--voip-link);">
+                                <source src="{{ asset($demoAudio['file_path'] ?? 'assets/audio/solutions/demo.mp3') }}" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -115,7 +125,7 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 </div>
                 
                 <!-- Live Status Indicator -->
-                <div class="absolute top-8 left-8 p-3 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
+                <div class="absolute top-8 right-8 p-3 rounded-xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
                     <div class="flex items-center space-x-2">
                         <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
                         <div class="text-white font-medium text-sm">Live 24/7</div>
@@ -132,20 +142,3 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
         </div>
     </div>
 </section>
-
-<style>
-/* Enhanced Audio Player Styling */
-.voice-demo-player audio {
-    width: 100%;
-    height: 42px;
-    border-radius: 12px;
-    background: rgba(30, 192, 141, 0.1);
-    border: 1px solid rgba(30, 192, 141, 0.2);
-    outline: none;
-}
-
-.voice-demo-player audio:focus {
-    border-color: var(--voip-link);
-    box-shadow: 0 0 0 2px rgba(30, 192, 141, 0.2);
-}
-</style>

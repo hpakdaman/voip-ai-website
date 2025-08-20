@@ -22,7 +22,7 @@ $sectionData = $heroData['section'] ?? [];
             </div>
 
             <!-- Main Title -->
-            <h1 class="text-6xl font-bold text-white mb-6 leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 {{ $sectionData['title'] ?? 'Privacy Policy' }}
             </h1>
 

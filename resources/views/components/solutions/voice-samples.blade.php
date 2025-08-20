@@ -1,7 +1,16 @@
 @php
-$voiceSamplesData = json_decode(file_get_contents(resource_path('data/solutions/real-estate/voice-demos.json')), true);
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+} elseif (str_contains($currentPath, 'real-estate')) {
+    $industry = 'real-estate';
+}
+
+$voiceSamplesData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/voice-demos.json")), true);
 $sectionData = $voiceSamplesData['section'] ?? [];
-$demos = $voiceSamplesData['demos'] ?? [];
+$demos = $voiceSamplesData['voice_demos'] ?? [];
 @endphp
 
 <!-- Voice Samples Section -->
@@ -59,8 +68,8 @@ $demos = $voiceSamplesData['demos'] ?? [];
                     
                     <!-- Audio Player -->
                     <div class="voice-demo-player mb-6">
-                        <audio controls class="w-full" data-demo-type="{{ $demo['type'] ?? 'general' }}">
-                            <source src="{{ asset('assets/audio/solutions/real-estate/' . ($demo['audio_file'] ?? 'demo.mp3')) }}" type="audio/mpeg">
+                        <audio controls class="w-full" data-demo-type="{{ $demo['scenario'] ?? 'general' }}">
+                            <source src="{{ asset($demo['file_path'] ?? 'assets/audio/solutions/demo.mp3') }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -101,8 +110,16 @@ $demos = $voiceSamplesData['demos'] ?? [];
         <!-- Custom Demo Request -->
         <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
             <div class="max-w-3xl mx-auto p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
-                <h3 class="text-2xl font-bold text-white mb-4">Want a Custom Demo for Your Listings?</h3>
-                <p class="text-slate-300 mb-6">We'll create a personalized voice demo using your actual property listings and scenarios</p>
+                @php
+                $customDemoTitle = 'Want a Custom Demo for Your Listings?';
+                $customDemoDesc = 'We\'ll create a personalized voice demo using your actual property listings and scenarios';
+                if (str_contains(request()->path(), 'spa-massage')) {
+                    $customDemoTitle = 'Want a Custom Demo for Your Spa Services?';
+                    $customDemoDesc = 'We\'ll create a personalized voice demo using your actual spa treatments and booking scenarios';
+                }
+                @endphp
+                <h3 class="text-2xl font-bold text-white mb-4">{{ $customDemoTitle }}</h3>
+                <p class="text-slate-300 mb-6">{{ $customDemoDesc }}</p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="voice-samples-custom-demo">
@@ -118,60 +135,6 @@ $demos = $voiceSamplesData['demos'] ?? [];
         </div>
     </div>
 </section>
-
-<style>
-/* Enhanced Audio Player Styling */
-.voice-demo-player audio {
-    width: 100%;
-    height: 42px;
-    border-radius: 12px;
-    background: rgba(30, 192, 141, 0.1);
-    outline: none;
-    border: 1px solid rgba(30, 192, 141, 0.2);
-}
-
-.voice-demo-player audio::-webkit-media-controls-panel {
-    background-color: rgba(12, 27, 39, 0.9);
-    border-radius: 12px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-play-button {
-    background-color: var(--voip-primary);
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-current-time-display,
-.voice-demo-player audio::-webkit-media-controls-time-remaining-display {
-    color: white;
-    text-shadow: none;
-    font-size: 12px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-timeline {
-    background-color: rgba(30, 192, 141, 0.3);
-    border-radius: 25px;
-    margin: 0 10px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-volume-slider {
-    background-color: rgba(30, 192, 141, 0.3);
-    border-radius: 25px;
-}
-
-/* Demo Card Hover Effects */
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(30, 192, 141, 0.2);
-}
-
-/* Transcript Modal Styling (if implemented) */
-.transcript-modal {
-    background: rgba(12, 27, 39, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(30, 192, 141, 0.2);
-}
-</style>
 
 <script>
 // Audio Player Enhancements

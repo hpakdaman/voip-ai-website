@@ -1,18 +1,18 @@
 <!-- Start Hero -->
-<section class="relative table w-full lg:py-40 md:py-36 pt-36 pb-24 overflow-hidden min-h-screen" style="background-color: var(--voip-dark-bg);">
+<section class="relative table w-full lg:pt-24 lg:pb-8 md:pt-20 md:pb-6 pt-16 pb-4 overflow-hidden min-h-screen" style="background-color: var(--voip-dark-bg);">
     <div class="absolute inset-0 bg-[url('../../assets/images/overlay.png')] bg-repeat opacity-10 dark:opacity-60"></div>
     <div class="container relative z-1">
-        <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
-            <div class="lg:col-span-7">
+        <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[10px]">
+            <div class="lg:col-span-8">
                 <div class="lg:me-6 lg:text-start text-center">
-                    <h1 class="font-bold lg:leading-normal leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 text-white overflow-hidden hero-heading-fixed">
+                    <h1 class="font-bold lg:leading-normal leading-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-5 text-white overflow-hidden hero-heading-fixed hero-heading-960">
                         AI-Powered Call Agents <br>For 
                         <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='["Smart Business Communication", "Real-Time Customer Support", "24/7 Virtual Reception" ]'> 
                             <span class="wrap"></span> 
                         </span>
                     </h1>
 
-                    <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300">Enhance customer experience and streamline operations with AI-powered call agents built for modern UAE businesses.</p>
+                    <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300 hero-description-960">Enhance customer experience and streamline operations with AI-powered call agents built for modern UAE businesses.</p>
                 
                     <div class="mt-8 lg:text-start text-center">
                         <a href="{{ url('/contact-us') }}" class="py-3 px-8 inline-block font-semibold tracking-wide align-middle duration-500 text-lg text-center text-white rounded-full hover-voip-button transition-all hover:scale-105 hover:shadow-lg" style="background-color: var(--voip-primary);">
@@ -32,18 +32,18 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-5">
-                <div class="relative flex items-center justify-center min-h-[400px] overflow-visible">
+            <div class="lg:col-span-4 relative -z-10">
+                <div class="relative flex items-center justify-center min-h-[400px] overflow-visible lg:ml-4">
                     <!-- Spinning circles - behind the image -->
-                    <div class="absolute size-[26rem] sm:size-96 md:size-[30rem] lg:size-[32rem] xl:size-[36rem] border border-dashed rounded-full animate-[spin_120s_linear_infinite] -z-10 spinning-circle" style="border-color: rgba(30, 192, 141, 0.3);"></div>
-                    <div class="absolute size-[30rem] sm:size-[30rem] md:size-[36rem] lg:size-[40rem] xl:size-[48rem] border border-dashed rounded-full animate-[spin_240s_linear_infinite] -z-10 spinning-circle outer" style="border-color: rgba(29, 120, 97, 0.2);"></div>
+                    <div class="absolute size-[24rem] sm:size-96 md:size-[28rem] lg:size-[30rem] xl:size-[34rem] border border-dashed rounded-full animate-[spin_120s_linear_infinite] -z-10 spinning-circle" style="border-color: rgba(30, 192, 141, 0.3);"></div>
+                    <div class="absolute size-[28rem] sm:size-[28rem] md:size-[34rem] lg:size-[38rem] xl:size-[44rem] border border-dashed rounded-full animate-[spin_240s_linear_infinite] -z-10 spinning-circle outer" style="border-color: rgba(29, 120, 97, 0.2);"></div>
                     
                     <!-- Gradient box background -->
-                    <div class="absolute size-80 sm:size-80 md:size-96 lg:size-[28rem] xl:size-[32rem] blur-[200px] rounded-full dark:after:to-indigo-600/50 -z-20" style="background: linear-gradient(135deg, var(--voip-primary), var(--voip-link)); opacity: 0.3;"></div>
+                    <div class="absolute size-80 sm:size-80 md:size-96 lg:size-[26rem] xl:size-[30rem] blur-[200px] rounded-full dark:after:to-indigo-600/50 -z-20" style="background: linear-gradient(135deg, var(--voip-primary), var(--voip-link)); opacity: 0.3;"></div>
                     
                     <!-- Circular container with VoIP color background - perfectly centered -->
-                    <div class="relative w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0" style="background-color: #122a34; aspect-ratio: 1/1;">
-                        <img src="{{ asset('assets/images/personal/a-professional-middle-eastern-woman-without-a-head.png') }}" alt="Professional Customer Service Representative" class="w-[110%] h-[110%] object-cover object-center">
+                    <div class="relative w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0" style="background-color: rgb(18, 42, 52); aspect-ratio: 1 / 1; --darkreader-inline-bgcolor: var(--darkreader-background-122a34, #102027);" data-darkreader-inline-bgcolor="">
+                        <img src="/assets/images/personal/a-professional-middle-eastern-woman-without-a-head.png" alt="Professional Customer Service Representative" class="w-[110%] h-[110%] object-cover object-center">
                     </div>
                 </div>
             </div>

@@ -20,15 +20,24 @@
                 <span style="color: var(--voip-link);">Monthly Savings</span>
             </h2>
             
+            @php
+            // Dynamically determine industry from URL path
+            $currentPath = request()->path();
+            $businessType = 'real estate business';
+            if (str_contains($currentPath, 'spa-massage')) {
+                $businessType = 'spa & wellness business';
+            }
+            @endphp
+            
             <p class="text-slate-300 text-xl leading-relaxed">
-                See exactly how much money Sawtic AI will save your real estate business every month
+                See exactly how much money Sawtic AI will save your {{ $businessType }} every month
             </p>
         </div>
         
-        <div class="grid lg:grid-cols-2 gap-16">
+        <div class="grid lg:grid-cols-2 gap-16 items-stretch">
             <!-- Calculator Input -->
             <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
-                <div class="p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
+                <div class="p-8 rounded-2xl border border-white/10 h-full flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
                     <h3 class="text-2xl font-bold text-white mb-6">Your Business Details</h3>
                     
                     <div class="space-y-6">
@@ -43,14 +52,34 @@
                             </div>
                         </div>
                         
-                        <!-- Average Commission -->
+                        <!-- Average Transaction Value -->
                         <div>
-                            <label class="block text-white font-medium mb-2">Average Commission per Sale (AED)</label>
-                            <input type="range" id="avg-commission" min="10000" max="200000" value="50000" step="5000" class="w-full roi-slider" style="accent-color: var(--voip-link);">
+                            @php
+                            $valueLabel = 'Average Commission per Sale (AED)';
+                            $valueId = 'avg-commission';
+                            $minValue = '10000';
+                            $maxValue = '200000';
+                            $defaultValue = '50000';
+                            $minLabel = '10K';
+                            $maxLabel = '200K+';
+                            $defaultLabel = '50,000 AED';
+                            
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $valueLabel = 'Average Treatment Value (AED)';
+                                $minValue = '150';
+                                $maxValue = '2000';
+                                $defaultValue = '400';
+                                $minLabel = '150';
+                                $maxLabel = '2000+';
+                                $defaultLabel = '400 AED';
+                            }
+                            @endphp
+                            <label class="block text-white font-medium mb-2">{{ $valueLabel }}</label>
+                            <input type="range" id="avg-commission" min="{{ $minValue }}" max="{{ $maxValue }}" value="{{ $defaultValue }}" step="{{ str_contains(request()->path(), 'spa-massage') ? '50' : '5000' }}" class="w-full roi-slider" style="accent-color: var(--voip-link);">
                             <div class="flex justify-between text-sm text-slate-400 mt-1">
-                                <span>10K</span>
-                                <span id="commission-value" class="font-semibold text-white">50,000 AED</span>
-                                <span>200K+</span>
+                                <span>{{ $minLabel }}</span>
+                                <span id="commission-value" class="font-semibold text-white">{{ $defaultLabel }}</span>
+                                <span>{{ $maxLabel }}</span>
                             </div>
                         </div>
                         
@@ -67,12 +96,20 @@
                         
                         <!-- Conversion Rate -->
                         <div>
-                            <label class="block text-white font-medium mb-2">Lead to Sale Conversion Rate (%)</label>
-                            <input type="range" id="conversion-rate" min="1" max="20" value="8" class="w-full roi-slider" style="accent-color: var(--voip-link);">
+                            @php
+                            $conversionLabel = 'Lead to Sale Conversion Rate (%)';
+                            $conversionDefault = '8';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $conversionLabel = 'Call to Booking Conversion Rate (%)';
+                                $conversionDefault = '12';
+                            }
+                            @endphp
+                            <label class="block text-white font-medium mb-2">{{ $conversionLabel }}</label>
+                            <input type="range" id="conversion-rate" min="1" max="30" value="{{ $conversionDefault }}" class="w-full roi-slider" style="accent-color: var(--voip-link);">
                             <div class="flex justify-between text-sm text-slate-400 mt-1">
                                 <span>1%</span>
-                                <span id="conversion-value" class="font-semibold text-white">8%</span>
-                                <span>20%</span>
+                                <span id="conversion-value" class="font-semibold text-white">{{ $conversionDefault }}%</span>
+                                <span>30%</span>
                             </div>
                         </div>
                     </div>
@@ -81,44 +118,76 @@
             
             <!-- Results Display -->
             <div class="wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-                <div class="p-8 rounded-2xl border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(22, 47, 58, 0.4) 100%);">
+                <div class="p-8 rounded-2xl border border-white/10 h-full flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(22, 47, 58, 0.4) 100%);">
                     <h3 class="text-2xl font-bold text-white mb-6">Your Potential Savings</h3>
                     
                     <!-- Key Metrics -->
-                    <div class="space-y-6 mb-8">
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
-                            <div class="text-slate-400 text-sm">Calls Recovered Monthly</div>
-                            <div class="text-2xl font-bold text-white" id="recovered-calls">70</div>
+                    <div class="space-y-4 mb-6 flex-1">
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
+                            <div class="text-slate-400 text-xs">Calls Recovered Monthly</div>
+                            @php
+                            $defaultCalls = '70';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $defaultCalls = '24';
+                            }
+                            @endphp
+                            <div class="text-xl font-bold text-white" id="recovered-calls">{{ $defaultCalls }}</div>
                         </div>
                         
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
-                            <div class="text-slate-400 text-sm">Additional Sales Monthly</div>
-                            <div class="text-2xl font-bold text-white" id="additional-sales">5.6</div>
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
+                            @php
+                            $salesLabel = 'Additional Sales Monthly';
+                            $salesDefault = '5.6';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $salesLabel = 'Additional Bookings Monthly';
+                                $salesDefault = '8';
+                            }
+                            @endphp
+                            <div class="text-slate-400 text-xs">{{ $salesLabel }}</div>
+                            <div class="text-xl font-bold text-white" id="additional-sales">{{ $salesDefault }}</div>
                         </div>
                         
-                        <div class="p-6 rounded-xl border-2 border-green-400/30" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(30, 192, 141, 0.1) 100%);">
-                            <div class="text-green-400 text-sm font-medium">Monthly Revenue Increase</div>
-                            <div class="text-4xl font-bold text-white" id="revenue-increase">280,000 AED</div>
+                        <div class="p-4 rounded-xl border-2 border-green-400/30" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(29, 120, 97, 0.1) 100%);">
+                            <div class="text-green-400 text-xs font-medium">Monthly Revenue Increase</div>
+                            @php
+                            $defaultRevenue = '280,000 AED';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $defaultRevenue = '3,200 AED';
+                            }
+                            @endphp
+                            <div class="text-3xl font-bold text-white" id="revenue-increase">{{ $defaultRevenue }}</div>
                         </div>
                         
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
-                            <div class="text-slate-400 text-sm">Sawtic AI Cost</div>
-                            <div class="text-xl font-bold text-white">2,999 AED/month</div>
+                        <div class="p-3 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
+                            <div class="text-slate-400 text-xs">Sawtic AI Cost</div>
+                            @php
+                            $sawticCost = '2,999 AED/month';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $sawticCost = '999 AED/month';
+                            }
+                            @endphp
+                            <div class="text-lg font-bold text-white">{{ $sawticCost }}</div>
                         </div>
                     </div>
                     
                     <!-- ROI Summary -->
-                    <div class="p-6 rounded-xl border border-white/10 mb-6" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                    <div class="p-4 rounded-xl border border-white/10 mb-4">
                         <div class="text-center">
-                            <div class="text-white text-sm opacity-90">Your ROI</div>
-                            <div class="text-4xl font-bold text-white" id="roi-percentage">9,333%</div>
-                            <div class="text-white text-sm opacity-90">Return on Investment</div>
+                            <div class="text-white text-xs opacity-90">Your ROI</div>
+                            @php
+                            $defaultROI = '9,333%';
+                            if (str_contains(request()->path(), 'spa-massage')) {
+                                $defaultROI = '220%';
+                            }
+                            @endphp
+                            <div class="text-3xl font-bold text-white" id="roi-percentage">{{ $defaultROI }}</div>
+                            <div class="text-white text-xs opacity-90">Return on Investment</div>
                         </div>
                     </div>
                     
                     <!-- CTA Button -->
-                    <a href="/contact-us" class="w-full inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);" data-cta-track="roi-calculator-get-started">
-                        <i class="uil uil-rocket text-lg mr-3"></i>
+                    <a href="/contact-us" class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 mt-auto" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="roi-calculator-get-started">
+                        <i class="uil uil-rocket text-base mr-2"></i>
                         Start Saving Today
                     </a>
                 </div>
@@ -187,26 +256,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateCalculations() {
         const calls = parseInt(monthlyCallsSlider.value);
-        const commission = parseInt(avgCommissionSlider.value);
+        const avgValue = parseInt(avgCommissionSlider.value);
         const missRate = parseInt(missRateSlider.value) / 100;
         const conversionRate = parseInt(conversionRateSlider.value) / 100;
         
+        // Check if this is spa page
+        const isSpaPage = window.location.pathname.includes('spa-massage');
+        
         // Update display values
         callsValue.textContent = calls;
-        commissionValue.textContent = `${commission.toLocaleString()} AED`;
+        commissionValue.textContent = `${avgValue.toLocaleString()} AED`;
         missRateValue.textContent = `${Math.round(missRate * 100)}%`;
         conversionValue.textContent = `${Math.round(conversionRate * 100)}%`;
         
         // Calculate results
         const callsRecovered = Math.round(calls * missRate);
-        const salesGenerated = callsRecovered * conversionRate;
-        const monthlyRevenue = salesGenerated * commission;
-        const sawticCost = 2999;
+        const bookingsGenerated = callsRecovered * conversionRate;
+        const monthlyRevenue = bookingsGenerated * avgValue;
+        const sawticCost = isSpaPage ? 999 : 2999;
         const roi = ((monthlyRevenue - sawticCost) / sawticCost) * 100;
         
-        // Update results
+        // Update results with industry-specific labels
         recoveredCalls.textContent = callsRecovered;
-        additionalSales.textContent = salesGenerated.toFixed(1);
+        if (isSpaPage) {
+            additionalSales.textContent = Math.round(bookingsGenerated);
+        } else {
+            additionalSales.textContent = bookingsGenerated.toFixed(1);
+        }
         revenueIncrease.textContent = `${monthlyRevenue.toLocaleString()} AED`;
         roiPercentage.textContent = `${Math.round(roi).toLocaleString()}%`;
     }
