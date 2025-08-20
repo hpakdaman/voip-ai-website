@@ -35,6 +35,12 @@
             "description": "Staff spend hours verifying insurance coverage and explaining benefits. This delays patient care and increases administrative costs significantly.",
             "icon": "uil-file-times",
             "impact": "2 hours per day on insurance calls"
+        },
+        {
+            "title": "Patient Follow-Up Neglect",
+            "description": "Post-treatment follow-ups, medication reminders, and health check-ins fall through the cracks. Poor follow-up care affects patient outcomes and satisfaction scores.",
+            "icon": "uil-heart-medical",
+            "impact": "45% of patients don't receive follow-up care"
         }
     ],
     "solutions": [
@@ -72,13 +78,20 @@
             "icon": "uil-file-check",
             "benefit": "80% faster insurance processing",
             "demo_available": false
+        },
+        {
+            "title": "Proactive Patient Follow-Up",
+            "description": "Automated follow-up calls for post-treatment care, medication compliance, and wellness check-ins. Improves patient outcomes and satisfaction scores.",
+            "icon": "uil-heart-medical",
+            "benefit": "90% improvement in follow-up care",
+            "demo_available": true
         }
     ],
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "total_problems": 5,
-        "total_solutions": 5,
+        "total_problems": 6,
+        "total_solutions": 6,
         "conversion_focus": "medical_problem_awareness"
     }
 }

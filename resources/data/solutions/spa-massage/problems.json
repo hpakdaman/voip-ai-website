@@ -55,6 +55,32 @@
                 "Room availability coordination",
                 "Special request accommodations"
             ]
+        },
+        {
+            "id": 5,
+            "title": "Language Communication Barriers",
+            "description": "UAE's diverse clientele needs service in multiple languages",
+            "icon": "uil-comment-slash",
+            "impact": "35% market reach limited",
+            "pain_points": [
+                "Arabic-speaking clients underserved",
+                "International tourists can't communicate",
+                "Treatment explanations lost in translation",
+                "Cultural sensitivity requirements"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Staff Overwhelm During Peak Hours",
+            "description": "Reception staff juggling phones, check-ins, payments, and client care",
+            "icon": "uil-user-exclamation",
+            "impact": "40% client satisfaction drop",
+            "pain_points": [
+                "Multi-tasking reduces service quality",
+                "Long hold times frustrate clients",
+                "Mistakes during busy periods",
+                "Staff stress affects client experience"
+            ]
         }
     ],
     "solutions": [

@@ -8,52 +8,27 @@
 
 @section('content')
 
-<!-- Hero Demo Section -->
-@include('components.solutions.hero-demo', [
-    'industry' => 'healthcare',
-    'heroImage' => 'assets/images/hospital/about-2.png',
-    'demoTitle' => 'AI Call Agent for Healthcare',
-    'demoSubtitle' => 'Listen to how our AI agent handles patient appointments, medical inquiries, and emergency calls'
-])
+@php
+$industryService = new \App\Services\IndustryDataService('healthcare');
+@endphp
 
-<!-- Problem vs Solution -->
-@include('components.solutions.problem-solution', [
-    'industry' => 'healthcare'
-])
+{{-- Hero Section --}}
+@include('solutions.sections.hero', ['data' => $industryService->getHeroData()])
 
-<!-- AI Capabilities -->
-@include('components.solutions.ai-capabilities', [
-    'industry' => 'healthcare',
-    'capabilityImage' => 'assets/images/hospital/bg.jpg'
-])
+{{-- Problem-Solution Section --}}
+@include('solutions.sections.problem-solution', ['data' => $industryService->getProblemSolutionData()])
 
-<!-- Voice Samples -->
-@include('components.solutions.voice-samples', [
-    'industry' => 'healthcare'
-])
+{{-- AI Capabilities Section --}}
+@include('solutions.sections.ai-capabilities', ['data' => $industryService->getCapabilitiesData()])
 
-<!-- ROI Calculator -->
-@include('components.solutions.roi-calculator', [
-    'industry' => 'healthcare'
-])
+{{-- Voice Samples Section --}}
+@include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
 
-<!-- Success Stories -->
-@include('components.solutions.success-stories', [
-    'industry' => 'healthcare'
-])
+{{-- Success Stories Section --}}
+@include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])
 
-<!-- Feature Showcase -->
-@include('components.solutions.feature-showcase', [
-    'industry' => 'healthcare',
-    'showcaseImage1' => 'assets/images/hospital/about-2.png',
-    'showcaseImage2' => 'assets/images/hospital/bg.jpg'
-])
-
-<!-- CTA Conversion -->
-@include('components.solutions.cta-conversion', [
-    'industry' => 'healthcare',
-    'ctaBackground' => 'assets/images/hospital/bg.jpg'
-])
+{{-- ROI Calculator Section --}}
+@include('solutions.sections.roi-calculator', ['data' => $industryService->getRoiCalculatorData()])
 
 @endsection
 

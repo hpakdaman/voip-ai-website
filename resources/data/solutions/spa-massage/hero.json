@@ -60,6 +60,9 @@
             "style": "secondary"
         }
     ],
+    "hero_images": {
+        "main": "assets/images/spa/bg.jpg"
+    },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
