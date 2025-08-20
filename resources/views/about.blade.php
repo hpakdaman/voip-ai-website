@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'About VoIP AI Solutions - Leading AI Call Center Innovation in Dubai')
+@section('title', 'Meet Sawtic | Innovating AI Call Agents for UAE Businesses')
 @section('content')
 
 {{-- Hero Section - Left Content, Right Image --}}
