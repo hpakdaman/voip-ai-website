@@ -61,7 +61,7 @@ $heightClass = "lg:h-[{$boxHeight}]";
                 <!-- Problems List -->
                 <div class="space-y-6 flex-1">
                     @foreach($problems as $problem)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15);">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15); display: flex; flex-direction: column;">
                         <!-- Warning Badge -->
                         <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);">
                             <i class="uil uil-times text-white text-sm"></i>
@@ -98,7 +98,7 @@ $heightClass = "lg:h-[{$boxHeight}]";
                 <!-- Solutions List -->
                 <div class="space-y-6 flex-1">
                     @foreach($solutions as $solution)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2); display: flex; flex-direction: column;">
                         <!-- Success Badge -->
                         <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                             <i class="uil uil-check text-white text-sm"></i>
