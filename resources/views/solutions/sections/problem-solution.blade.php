@@ -25,7 +25,7 @@ $solutions = $data['solutions'] ?? [];
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
             @foreach($problems as $index => $problem)
             <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.2) + 0.1 }}s">
-                <div class="h-full p-6 rounded-2xl border border-red-400/20 transition-all duration-300 hover:border-red-400/40" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
+                <div class="h-full p-6 rounded-2xl border border-red-400/20 transition-all duration-300 hover:border-red-400/40 flex flex-col" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
                     <!-- Problem Icon -->
                     <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
                         <i class="uil {{ $problem['icon'] ?? 'uil-times' }} text-2xl text-white"></i>
@@ -35,25 +35,25 @@ $solutions = $data['solutions'] ?? [];
                     <h3 class="text-xl font-bold text-white mb-4">{{ $problem['title'] ?? 'Problem Title' }}</h3>
                     <p class="text-slate-300 mb-6 leading-relaxed">{{ $problem['description'] ?? 'Problem description' }}</p>
                     
-                    <!-- Problem Impact -->
-                    @if(isset($problem['impact']))
-                    <div class="p-4 rounded-xl border border-red-400/20 mb-4" style="background: rgba(239, 68, 68, 0.05);">
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400 text-sm">Business Impact</span>
-                            <span class="text-red-400 font-bold">{{ $problem['impact'] }}</span>
+                    <!-- Problem Pain Points (Clean Structure) -->
+                    @if(isset($problem['pain_points']))
+                    <div class="space-y-3 mb-6 flex-1">
+                        @foreach(array_slice($problem['pain_points'], 0, 4) as $painPoint)
+                        <div class="flex items-start text-sm text-slate-400">
+                            <i class="uil uil-times-circle text-red-400 text-sm mr-3 mt-0.5 flex-shrink-0"></i>
+                            <span class="leading-relaxed">{{ $painPoint }}</span>
                         </div>
+                        @endforeach
                     </div>
                     @endif
                     
-                    <!-- Problem Examples -->
-                    @if(isset($problem['examples']))
-                    <div class="space-y-2">
-                        @foreach(array_slice($problem['examples'], 0, 3) as $example)
-                        <div class="flex items-start text-sm text-slate-400">
-                            <i class="uil uil-minus text-red-400 text-xs mr-2 mt-1"></i>
-                            {{ $example }}
+                    <!-- Business Impact - Stuck to Bottom -->
+                    @if(isset($problem['impact']))
+                    <div class="p-4 rounded-xl border border-red-400/20 mt-auto" style="background: rgba(239, 68, 68, 0.05);">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400 text-sm font-medium">Business Impact</span>
+                            <span class="text-red-400 font-bold text-lg">{{ $problem['impact'] }}</span>
                         </div>
-                        @endforeach
                     </div>
                     @endif
                 </div>
@@ -107,13 +107,11 @@ $solutions = $data['solutions'] ?? [];
                     
                     <!-- Solution Results -->
                     @if(isset($solution['result']))
-                    <div class="p-4 rounded-xl border border-white/10 mt-auto" style="background: rgba(30, 192, 141, 0.05);">
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400 text-sm">Result</span>
-                            <span class="font-bold text-white" style="color: var(--voip-link);">{{ $solution['result'] }}</span>
-                        </div>
+                    <div class="p-4 rounded-xl border border-white/10 mt-auto text-center" style="background: rgba(30, 192, 141, 0.05);">
+                        <div class="text-2xl font-bold mb-1" style="color: var(--voip-link);">{{ $solution['result'] }}</div>
+                        <div class="text-slate-400 text-sm font-medium">Improvement</div>
                         @if(isset($solution['result_description']))
-                        <div class="text-xs text-slate-400 mt-1">{{ $solution['result_description'] }}</div>
+                        <div class="text-xs text-slate-400 mt-2">{{ $solution['result_description'] }}</div>
                         @endif
                     </div>
                     @endif

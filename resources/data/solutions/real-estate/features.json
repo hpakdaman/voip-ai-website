@@ -1,0 +1,53 @@
+{
+    "section": {
+        "badge": "AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "In Action",
+        "description": "Watch how our AI agents transform real estate communication with live demonstrations"
+    },
+    "features": [
+        {
+            "title": "Property Inquiry Handling",
+            "description": "AI answers detailed property questions with market data",
+            "icon": "uil-home",
+            "demo_video": "property-inquiry-demo.mp4",
+            "highlight": "Instant property details and pricing"
+        },
+        {
+            "title": "Lead Qualification",
+            "description": "Smart pre-screening identifies serious buyers",
+            "icon": "uil-user-check",
+            "demo_video": "lead-qualification-demo.mp4",
+            "highlight": "85% qualified lead rate"
+        },
+        {
+            "title": "Appointment Booking",
+            "description": "Seamless calendar integration and scheduling",
+            "icon": "uil-calendar-alt",
+            "demo_video": "booking-demo.mp4",
+            "highlight": "95% show-up rate"
+        }
+    ],
+    "stats": [
+        {
+            "number": "40%",
+            "label": "More Leads",
+            "description": "Captured through 24/7 availability"
+        },
+        {
+            "number": "85%",
+            "label": "Qualified Rate",
+            "description": "Higher quality leads through AI screening"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "description": "Never miss a potential buyer"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "real-estate"
+    }
+}

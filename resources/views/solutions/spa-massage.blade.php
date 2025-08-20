@@ -27,6 +27,6 @@ $industryService = new \App\Services\IndustryDataService('spa-massage');
 @include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])
 
 {{-- ROI Calculator Section --}}
-@include('solutions.sections.roi-calculator', ['data' => $industryService->getRoiCalculatorData()])
+@include('solutions.sections.roi-calculator-advanced', ['data' => $industryService->getRoiCalculatorData()])
 
 @endsection

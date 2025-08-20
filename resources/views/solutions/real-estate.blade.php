@@ -24,10 +24,16 @@ $industryService = new \App\Services\IndustryDataService('real-estate');
 @include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
 
 {{-- Success Stories Section --}}
-{{-- @include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()]) --}}
+@include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])
 
 {{-- ROI Calculator Section --}}
-@include('solutions.sections.roi-calculator', ['data' => $industryService->getRoiCalculatorData()])
+@include('solutions.sections.roi-calculator-advanced', ['data' => $industryService->getRoiCalculatorData()])
+
+{{-- Feature Showcase Section - "See Sawtic AI In Action" --}}
+@include('solutions.sections.feature-showcase', ['data' => $industryService->getFeatureShowcaseData()])
+
+{{-- CTA Conversion Section - "Ready to Stop Losing Real Estate Leads?" --}}
+@include('solutions.sections.cta-conversion', ['data' => $industryService->getCtaData()])
 
 @endsection
 

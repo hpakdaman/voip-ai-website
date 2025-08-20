@@ -1,7 +1,29 @@
 @php
-$heroData = $data['section'] ?? [];
+// Handle multiple data structures for different solution pages
+$heroData = $data['section'] ?? $data['hero'] ?? [];
 $voiceDemo = $data['voice_demo'] ?? [];
+$demoAudio = $data['demo_audio'] ?? [];
 $ctaButtons = $data['cta_buttons'] ?? [];
+
+// Normalize audio demo data from different structures
+$audioDemo = null;
+if (!empty($demoAudio)) {
+    // Spa-massage format
+    $audioDemo = [
+        'title' => $demoAudio['title'] ?? '🎧 Live AI Call Demo',
+        'description' => $demoAudio['description'] ?? 'Real conversation with AI agent',
+        'file_path' => $demoAudio['file_path'] ?? '',
+        'duration' => $demoAudio['duration'] ?? '--:--'
+    ];
+} elseif (!empty($voiceDemo)) {
+    // Healthcare/Real-estate format
+    $audioDemo = [
+        'title' => $voiceDemo['title'] ?? $heroData['demo_title'] ?? '🎧 Live AI Call Demo',
+        'description' => $voiceDemo['description'] ?? $heroData['demo_description'] ?? 'Real conversation with AI agent',
+        'file_path' => 'assets/audio/solutions/' . ($data['industry'] ?? 'demo') . '/' . ($voiceDemo['audio_file'] ?? 'demo.mp3'),
+        'duration' => $voiceDemo['duration'] ?? '--:--'
+    ];
+}
 @endphp
 
 <!-- Hero Section with Voice Demo -->
@@ -97,8 +119,8 @@ $ctaButtons = $data['cta_buttons'] ?? [];
                     <div id="voice-demo" class="absolute bottom-8 left-8 right-8 p-6 rounded-2xl border-2" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); backdrop-filter: blur(15px); box-shadow: 0 12px 30px rgba(30, 192, 141, 0.2);">
                         <div class="flex items-center justify-between mb-4">
                             <div>
-                                <h6 class="text-white font-semibold mb-1">{{ $voiceDemo['title'] ?? '🎧 Live AI Call Demo' }}</h6>
-                                <p class="text-slate-200 text-sm">{{ $voiceDemo['subtitle'] ?? 'Real conversation with AI agent' }}</p>
+                                <h6 class="text-white font-semibold mb-1">{{ $audioDemo['title'] ?? '🎧 Live AI Call Demo' }}</h6>
+                                <p class="text-slate-200 text-sm">{{ $audioDemo['description'] ?? 'Real conversation with AI agent' }}</p>
                             </div>
                             <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                                 <i class="uil uil-headphones text-xl text-white"></i>
@@ -106,12 +128,41 @@ $ctaButtons = $data['cta_buttons'] ?? [];
                         </div>
                         
                         <!-- Audio Player -->
-                        @if(isset($voiceDemo['audio_file']))
+                        @if($audioDemo && !empty($audioDemo['file_path']))
                         <div class="voice-demo-player">
-                            <audio controls class="w-full" data-demo-type="main-demo" style="accent-color: var(--voip-link);">
-                                <source src="{{ asset($voiceDemo['audio_file']) }}" type="audio/mpeg">
+                            <!-- Hidden Audio Element -->
+                            <audio id="hero-demo-audio" preload="metadata" style="display: none;" data-demo-type="main-demo">
+                                <source src="{{ asset($audioDemo['file_path']) }}" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
+                            
+                            <!-- Custom Play Button Interface -->
+                            <div class="flex items-center space-x-4">
+                                <!-- Large Play/Pause Button -->
+                                <button id="play-pause-btn" class="w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.4);">
+                                    <i id="play-icon" class="uil uil-play text-2xl text-white ml-1"></i>
+                                    <i id="pause-icon" class="uil uil-pause text-2xl text-white hidden"></i>
+                                </button>
+                                
+                                <!-- Progress Area -->
+                                <div class="flex-1">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full h-2 rounded-full mb-2" style="background: rgba(255, 255, 255, 0.2);">
+                                        <div id="progress-bar" class="h-full rounded-full transition-all duration-300" style="background: linear-gradient(90deg, var(--voip-primary) 0%, var(--voip-link) 100%); width: 0%;"></div>
+                                    </div>
+                                    
+                                    <!-- Time Display -->
+                                    <div class="flex items-center justify-between text-slate-300 text-sm">
+                                        <span id="current-time">0:00</span>
+                                        <span id="total-time">{{ $audioDemo['duration'] ?? '--:--' }}</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Volume/Speaker Icon -->
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: rgba(255, 255, 255, 0.1);">
+                                    <i class="uil uil-volume text-lg text-white"></i>
+                                </div>
+                            </div>
                         </div>
                         @endif
                         
@@ -137,3 +188,74 @@ $ctaButtons = $data['cta_buttons'] ?? [];
         </div>
     </div>
 </section>
+
+<!-- Audio Player JavaScript -->
+@if($audioDemo && !empty($audioDemo['file_path']))
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('hero-demo-audio');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+    const progressBar = document.getElementById('progress-bar');
+    const currentTimeSpan = document.getElementById('current-time');
+    const totalTimeSpan = document.getElementById('total-time');
+    
+    if (!audio || !playPauseBtn) return;
+    
+    // Format time helper function
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return mins + ':' + (secs < 10 ? '0' + secs : secs);
+    }
+    
+    // Update total time when metadata loads
+    audio.addEventListener('loadedmetadata', function() {
+        totalTimeSpan.textContent = formatTime(audio.duration);
+    });
+    
+    // Play/Pause button click handler
+    playPauseBtn.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.classList.add('hidden');
+            pauseIcon.classList.remove('hidden');
+        } else {
+            audio.pause();
+            playIcon.classList.remove('hidden');
+            pauseIcon.classList.add('hidden');
+        }
+    });
+    
+    // Update progress bar and time
+    audio.addEventListener('timeupdate', function() {
+        if (audio.duration) {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = progress + '%';
+            currentTimeSpan.textContent = formatTime(audio.currentTime);
+        }
+    });
+    
+    // Reset when audio ends
+    audio.addEventListener('ended', function() {
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+        progressBar.style.width = '0%';
+        currentTimeSpan.textContent = '0:00';
+    });
+    
+    // Click on progress bar to seek
+    const progressContainer = progressBar.parentElement;
+    progressContainer.addEventListener('click', function(e) {
+        if (audio.duration) {
+            const rect = progressContainer.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const containerWidth = rect.width;
+            const seekTime = (clickX / containerWidth) * audio.duration;
+            audio.currentTime = seekTime;
+        }
+    });
+});
+</script>
+@endif

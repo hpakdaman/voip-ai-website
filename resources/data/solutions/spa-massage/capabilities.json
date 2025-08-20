@@ -165,7 +165,17 @@
             "icon": "uil-processing"
         }
     ],
+    "demo_title": "See Your AI Agent in Action",
+    "demo_description": "Watch our AI assistant handle spa appointments with expertise, answering treatment questions and managing complex bookings with professional wellness knowledge.",
     "demo_image": "assets/images/spa/ab1.jpg",
+    "demo_alt": "Spa Professional Consulting with Client",
+    "demo_features": [
+        "Natural conversation about wellness treatments",
+        "Expert knowledge of spa services and benefits",
+        "Professional booking management and scheduling",
+        "Personalized treatment recommendations"
+    ],
+    "integration_description": "Seamlessly integrates with popular spa management platforms used across UAE wellness centers",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",

@@ -95,7 +95,17 @@
             "description": "HIPAA and UAE healthcare standards"
         }
     ],
+    "demo_title": "See Your AI Agent in Action",
+    "demo_description": "Watch our AI assistant handle patient appointments with medical expertise, managing complex scheduling and emergency calls with HIPAA compliance.",
     "demo_image": "assets/images/hospital/bg.jpg",
+    "demo_alt": "Healthcare Professional with Patient",
+    "demo_features": [
+        "Natural conversation with medical terminology",
+        "HIPAA-compliant patient data handling",
+        "Emergency call recognition and escalation",
+        "Multi-language patient support"
+    ],
+    "integration_description": "Seamlessly integrates with popular medical practice management systems and EMR platforms used across UAE healthcare facilities",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
