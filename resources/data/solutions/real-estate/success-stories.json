@@ -1,0 +1,59 @@
+{
+    "section": {
+        "badge": "Success Stories",
+        "title": "Real Results from",
+        "highlighted": "UAE Real Estate Pros",
+        "description": "See how Sawtic AI is transforming real estate businesses across the Emirates"
+    },
+    "testimonials": [
+        {
+            "name": "Ahmed Al-Rashid",
+            "company": "Dubai Properties Group",
+            "image": "assets/images/client/01.jpg",
+            "rating": 5,
+            "testimonial": "Sawtic AI recovered 40% more leads for us. We closed 12 extra deals last month just from calls we would have missed!"
+        },
+        {
+            "name": "Sarah Mitchell",
+            "company": "Emirates Real Estate",
+            "image": "assets/images/client/02.jpg",
+            "rating": 5,
+            "testimonial": "Our AI agent handles property inquiries better than our best junior agent. Clients love the 24/7 availability."
+        },
+        {
+            "name": "Omar Hassan",
+            "company": "Marina Properties LLC",
+            "image": "assets/images/client/03.jpg",
+            "rating": 5,
+            "testimonial": "ROI was incredible - paid for itself in the first month. Now I can focus on closing while AI handles all inquiries."
+        }
+    ],
+    "stats": [
+        {
+            "number": "500+",
+            "label": "UAE Real Estate Pros",
+            "description": "Using Sawtic AI daily"
+        },
+        {
+            "number": "40%",
+            "label": "More Leads Captured",
+            "description": "Average increase in qualified leads"
+        },
+        {
+            "number": "95%",
+            "label": "Client Satisfaction",
+            "description": "Customers rate AI interaction highly"
+        },
+        {
+            "number": "24/7",
+            "label": "Lead Capture",
+            "description": "Never miss opportunities"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "real-estate",
+        "testimonial_count": 3
+    }
+}

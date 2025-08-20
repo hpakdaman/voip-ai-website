@@ -23,60 +23,35 @@ $testimonials = $data['testimonials'] ?? [];
             @endif
         </div>
         
-        <!-- Professional Testimonials Grid -->
+        <!-- Simple Testimonials Grid -->
         @if(!empty($testimonials))
-        <div class="max-w-6xl mx-auto mb-16">
-            <div class="grid lg:grid-cols-3 gap-8">
+        <div class="max-w-5xl mx-auto mb-16">
+            <div class="grid lg:grid-cols-3 gap-6">
                 @foreach($testimonials as $index => $testimonial)
                 <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.15) + 0.1 }}s">
-                    <!-- Testimonial Card -->
-                    <div class="h-full p-8 rounded-2xl border border-white/10 transition-all duration-300 hover:scale-105 flex flex-col" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.4) 100%);">
+                    <!-- Simple Testimonial Card -->
+                    <div class="p-6 rounded-xl text-center" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
                         
-                        <!-- Quote Icon & Rating -->
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                                <i class="uil uil-quote-left text-xl text-white"></i>
-                            </div>
-                            <div class="flex items-center">
-                                @for($i = 1; $i <= ($testimonial['rating'] ?? 5); $i++)
-                                <i class="uil uil-star text-yellow-400 text-lg"></i>
-                                @endfor
-                            </div>
+                        <!-- 5-Star Rating -->
+                        <div class="flex items-center justify-center mb-4">
+                            @for($i = 1; $i <= 5; $i++)
+                            <i class="uil uil-star text-yellow-400 text-lg"></i>
+                            @endfor
                         </div>
                         
-                        <!-- Testimonial Text -->
-                        <blockquote class="text-white text-lg leading-relaxed mb-8 italic flex-1">
+                        <!-- Short Quote -->
+                        <blockquote class="text-white text-lg leading-relaxed mb-6">
                             "{{ $testimonial['testimonial'] }}"
                         </blockquote>
                         
-                        <!-- Results Metrics -->
-                        @if(isset($testimonial['results']))
-                        <div class="grid grid-cols-3 gap-3 mb-6 p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.05);">
-                            @foreach($testimonial['results'] as $metric => $value)
-                            <div class="text-center">
-                                <div class="text-xl font-bold mb-1" style="color: var(--voip-link);">{{ $value }}</div>
-                                <div class="text-xs text-slate-400">{{ ucwords(str_replace('_', ' ', $metric)) }}</div>
-                            </div>
-                            @endforeach
+                        <!-- Client Photo -->
+                        <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2" style="border-color: var(--voip-link);">
+                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover">
                         </div>
-                        @endif
                         
-                        <!-- Customer Info -->
-                        <div class="flex items-center mt-auto">
-                            <div class="w-16 h-16 rounded-full overflow-hidden border-2 mr-4" style="border-color: var(--voip-link);">
-                                <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <div class="text-white font-bold text-lg">{{ $testimonial['name'] }}</div>
-                                <div class="text-slate-400 text-sm">{{ $testimonial['title'] ?? '' }}</div>
-                                <div class="text-slate-500 text-xs font-medium">{{ $testimonial['company'] }}</div>
-                                @if(isset($testimonial['specialty']))
-                                <span class="inline-block px-2 py-1 text-xs font-medium rounded-full mt-2" style="background: rgba(30, 192, 141, 0.2); color: var(--voip-link);">
-                                    {{ $testimonial['specialty'] }}
-                                </span>
-                                @endif
-                            </div>
-                        </div>
+                        <!-- Client Name & Company -->
+                        <div class="text-white font-bold">{{ $testimonial['name'] }}</div>
+                        <div class="text-slate-400 text-sm">{{ $testimonial['company'] }}</div>
                     </div>
                 </div>
                 @endforeach

@@ -1,0 +1,39 @@
+{
+    "section": {
+        "title": "Ready to Stop Losing",
+        "highlighted": "Real Estate Leads?",
+        "description": "Join 500+ UAE real estate professionals already using Sawtic AI to capture more leads and close more deals.",
+        "urgency_text": "Don't let another qualified buyer slip away while you're showing properties."
+    },
+    "benefits": [
+        "Capture leads 24/7, even during showings",
+        "Qualify prospects before they reach you",
+        "Book appointments automatically",
+        "Never miss another hot lead to competitors"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/contact-us",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "real-estate-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "real-estate-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee • No setup fees • Cancel anytime",
+    "social_proof": "Trusted by 500+ UAE real estate professionals",
+    "background_image": "assets/images/real/bg/01.jpg",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "real-estate",
+        "conversion_type": "final_cta"
+    }
+}

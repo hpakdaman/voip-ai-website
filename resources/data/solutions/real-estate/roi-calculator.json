@@ -1,0 +1,66 @@
+{
+    "section": {
+        "badge": "ROI Calculator",
+        "title": "Calculate Your",
+        "highlighted": "Monthly Savings",
+        "description": "See exactly how much money Sawtic AI can save your real estate business"
+    },
+    "calculator": {
+        "inputs": [
+            {
+                "id": "missed_calls",
+                "label": "Missed calls per day",
+                "type": "number",
+                "default": 5,
+                "min": 1,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "id": "avg_deal_value",
+                "label": "Average deal value (AED)",
+                "type": "number", 
+                "default": 300000,
+                "min": 50000,
+                "max": 5000000,
+                "step": 10000
+            },
+            {
+                "id": "conversion_rate",
+                "label": "Lead to deal conversion rate (%)",
+                "type": "number",
+                "default": 3,
+                "min": 1,
+                "max": 20,
+                "step": 1
+            },
+            {
+                "id": "commission_rate",
+                "label": "Commission rate (%)",
+                "type": "number",
+                "default": 2,
+                "min": 1,
+                "max": 10,
+                "step": 0.5
+            }
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 2500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
+        }
+    },
+    "benefits": [
+        "Never miss a lead while showing properties",
+        "AI qualifies leads before they reach you", 
+        "Automatic appointment booking and confirmations",
+        "24/7 availability captures after-hours opportunities"
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "real-estate",
+        "currency": "AED"
+    }
+}

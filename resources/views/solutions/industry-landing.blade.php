@@ -47,7 +47,7 @@ $industryData = new \App\Services\IndustryDataService($industry);
 @endif
 
 @if($config['sections_enabled']['roi_calculator'])
-    @include('solutions.sections.roi-calculator', [
+    @include('solutions.sections.roi-calculator-advanced', [
         'industry' => $industry,
         'data' => $industryData->getRoiCalculatorData()
     ])

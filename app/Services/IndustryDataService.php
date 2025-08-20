@@ -107,6 +107,14 @@ class IndustryDataService
     }
 
     /**
+     * Get CTA conversion data
+     */
+    public function getCtaData(): array
+    {
+        return $this->loadData('cta.json');
+    }
+
+    /**
      * Get all available data files for this industry
      */
     public function getAvailableDataFiles(): array
