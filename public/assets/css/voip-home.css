@@ -26,6 +26,42 @@
     --color-slate-950: var(--voip-dark-bg) !important;
 }
 
+/* Hero Section Responsive Typography */
+@media (min-width: 900px) and (max-width: 1024px) {
+    .hero-heading-960 {
+        font-size: 2.25rem !important; /* Between md:text-3xl and lg:text-4xl */
+        line-height: 2.5rem !important;
+    }
+    .hero-description-960 {
+        font-size: 1rem !important; /* Smaller than text-lg */
+    }
+}
+
+/* Small Mobile Devices (375px and below) */
+@media (max-width: 375px) {
+    .hero-heading-960 {
+        font-size: 1.25rem !important; /* Smaller than text-xl */
+        line-height: 1.75rem !important;
+    }
+    .hero-description-960 {
+        font-size: 0.875rem !important; /* text-sm equivalent */
+    }
+}
+
+/* Typewriter Text - Reserve space for 3 lines on small screens */
+@media (max-width: 460px) {
+    .hero-heading-fixed {
+        min-height: 4.5rem !important;/* Height for 3 lines at 1.6rem line-height */
+        line-height: 1.6rem !important;
+        margin-bottom: 0.2rem;
+        max-height: 5rem !important;
+    }
+}@media (max-width: 261px) {
+    .hero-heading-fixed {
+        min-height: 6.5rem !important;
+    }
+}
+
 /* Accessible Focus Styles - Universal Application (bad looking)*/
 /* *:focus {
     outline: 2px solid var(--voip-link) !important;
@@ -366,6 +402,15 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
 @media (min-width: 768px) {
     .hero-heading-fixed {
         max-height: 6rem;
+    }
+}
+
+
+/* Medium screens: text-4xl (36px) */
+@media (min-width: 960px) {
+    .hero-heading-fixed {
+        max-height: 5rem;
+        font-size: 1.9rem !important;
     }
 }
 
