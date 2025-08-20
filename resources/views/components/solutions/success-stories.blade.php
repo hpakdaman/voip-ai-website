@@ -1,11 +1,14 @@
 @php
-// Dynamically determine industry from URL path
+// Dynamically determine industry from URL path or passed parameter
 $currentPath = request()->path();
-$industry = 'real-estate'; // Default fallback
+$industry = $industry ?? 'real-estate'; // Use passed parameter or default fallback
 $industryName = 'Real Estate Pros';
 $industryIcon = 'uil-building';
 
-if (str_contains($currentPath, 'spa-massage')) {
+if (!isset($industry) || empty($industry)) {
+    if (str_contains($currentPath, 'healthcare')) {
+        $industry = 'healthcare';
+    } elseif (str_contains($currentPath, 'spa-massage')) {
     $industry = 'spa-massage';
     $industryName = 'Spa & Wellness Centers';
     $industryIcon = 'uil-spa';

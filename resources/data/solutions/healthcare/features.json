@@ -1,0 +1,193 @@
+{
+    "section": {
+        "badge": "Healthcare Features",
+        "title": "Advanced Medical AI Features",
+        "highlighted": "Built for Healthcare",
+        "description": "Comprehensive AI features designed specifically for medical practices, clinics, and healthcare providers in the UAE."
+    },
+    "feature_categories": [
+        {
+            "category": "Patient Communication",
+            "icon": "uil-comments",
+            "features": [
+                {
+                    "title": "24/7 Medical Hotline",
+                    "description": "Round-the-clock patient support with medical triage capabilities",
+                    "benefits": ["Never miss emergency calls", "Immediate patient response", "After-hours medical guidance"]
+                },
+                {
+                    "title": "Multilingual Medical Support", 
+                    "description": "Fluent medical communication in Arabic, English, Hindi, and Urdu",
+                    "benefits": ["Serve diverse UAE population", "Cultural sensitivity", "Religious consideration awareness"]
+                },
+                {
+                    "title": "Medical Terminology Mastery",
+                    "description": "Advanced understanding of medical conditions, procedures, and treatments",
+                    "benefits": ["Professional medical conversations", "Accurate symptom documentation", "Proper medical referrals"]
+                }
+            ]
+        },
+        {
+            "category": "Appointment Management",
+            "icon": "uil-calendar-alt",
+            "features": [
+                {
+                    "title": "Intelligent Scheduling",
+                    "description": "Smart appointment booking with doctor availability and specialty matching",
+                    "benefits": ["Real-time calendar sync", "Specialty-based routing", "Urgent appointment prioritization"]
+                },
+                {
+                    "title": "Automated Reminders",
+                    "description": "Multi-channel appointment reminders via SMS, calls, and email",
+                    "benefits": ["70% reduction in no-shows", "Customizable reminder timing", "Easy rescheduling options"]
+                },
+                {
+                    "title": "Patient History Integration",
+                    "description": "Access to patient records for personalized scheduling and care",
+                    "benefits": ["Previous appointment awareness", "Medical history consideration", "Personalized care planning"]
+                }
+            ]
+        },
+        {
+            "category": "Emergency Response",
+            "icon": "uil-ambulance", 
+            "features": [
+                {
+                    "title": "Emergency Detection",
+                    "description": "Immediate recognition of medical emergencies with keyword analysis",
+                    "benefits": ["Instant emergency identification", "Automatic doctor notification", "Emergency service coordination"]
+                },
+                {
+                    "title": "Critical Call Escalation",
+                    "description": "Immediate transfer to on-call physicians for urgent medical situations",
+                    "benefits": ["Direct physician connection", "No wait time for emergencies", "Priority medical attention"]
+                },
+                {
+                    "title": "Family Emergency Contacts",
+                    "description": "Automatic notification of emergency contacts during critical situations",
+                    "benefits": ["Family involvement in emergencies", "Emergency contact automation", "Medical decision support"]
+                }
+            ]
+        },
+        {
+            "category": "Clinical Operations",
+            "icon": "uil-hospital",
+            "features": [
+                {
+                    "title": "Insurance Verification",
+                    "description": "Automated insurance coverage verification and benefit explanation",
+                    "benefits": ["Instant coverage confirmation", "Pre-authorization handling", "Billing clarity for patients"]
+                },
+                {
+                    "title": "Prescription Management",
+                    "description": "Prescription refill requests and pharmacy coordination",
+                    "benefits": ["Automated refill processing", "Pharmacy notifications", "Medication adherence tracking"]
+                },
+                {
+                    "title": "Lab Results Coordination",
+                    "description": "Lab result notifications and follow-up appointment scheduling",
+                    "benefits": ["Timely result delivery", "Follow-up care automation", "Patient education on results"]
+                }
+            ]
+        },
+        {
+            "category": "Compliance & Security",
+            "icon": "uil-shield-check",
+            "features": [
+                {
+                    "title": "HIPAA Compliance",
+                    "description": "Full patient privacy protection and secure data handling",
+                    "benefits": ["Encrypted patient data", "Privacy law compliance", "Secure communication channels"]
+                },
+                {
+                    "title": "UAE Healthcare Standards",
+                    "description": "Compliance with UAE Ministry of Health regulations and standards",
+                    "benefits": ["Local regulation adherence", "UAE medical practice alignment", "Ministry approval maintained"]
+                },
+                {
+                    "title": "Audit Trail Management",
+                    "description": "Complete documentation of all patient interactions for compliance",
+                    "benefits": ["Full interaction logging", "Compliance documentation", "Medical record integration"]
+                }
+            ]
+        },
+        {
+            "category": "Analytics & Insights",
+            "icon": "uil-analytics",
+            "features": [
+                {
+                    "title": "Patient Communication Analytics",
+                    "description": "Detailed insights into patient call patterns and communication effectiveness",
+                    "benefits": ["Call volume tracking", "Patient satisfaction metrics", "Communication optimization"]
+                },
+                {
+                    "title": "Medical Practice Insights",
+                    "description": "Operational analytics for practice efficiency and patient care improvement",
+                    "benefits": ["Practice performance metrics", "Patient flow optimization", "Resource allocation insights"]
+                },
+                {
+                    "title": "Emergency Response Metrics",
+                    "description": "Analytics on emergency call handling and response time optimization",
+                    "benefits": ["Emergency response tracking", "Critical call analysis", "Life-saving metric monitoring"]
+                }
+            ]
+        }
+    ],
+    "integrations": [
+        {
+            "category": "Electronic Medical Records (EMR)",
+            "systems": [
+                "Epic Healthcare",
+                "Cerner PowerChart", 
+                "Allscripts Sunrise",
+                "NextGen Healthcare",
+                "AthenaHealth"
+            ]
+        },
+        {
+            "category": "Practice Management",
+            "systems": [
+                "DrChrono",
+                "SimplePractice",
+                "Kareo Clinical",
+                "AdvancedMD",
+                "CareCloud"
+            ]
+        },
+        {
+            "category": "UAE Healthcare Systems",
+            "systems": [
+                "SEHA Network",
+                "Dubai Health Authority",
+                "Abu Dhabi Health Services",
+                "RAK Hospital System",
+                "NMC Healthcare"
+            ]
+        }
+    ],
+    "security_features": [
+        {
+            "title": "End-to-End Encryption",
+            "description": "All patient communications encrypted during transmission and storage"
+        },
+        {
+            "title": "Role-Based Access Control",
+            "description": "Granular access controls for different medical staff roles"
+        },
+        {
+            "title": "Audit Logging",
+            "description": "Complete audit trail of all patient data access and modifications"
+        },
+        {
+            "title": "GDPR Compliance",
+            "description": "European data protection standards for international patients"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_features": 18,
+        "categories": 6,
+        "focus": "comprehensive_healthcare_features"
+    }
+}

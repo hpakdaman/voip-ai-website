@@ -21,10 +21,13 @@
             </h2>
             
             @php
-            // Dynamically determine industry from URL path
+            // Dynamically determine industry from URL path or passed parameter
             $currentPath = request()->path();
             $businessType = 'real estate business';
-            if (str_contains($currentPath, 'spa-massage')) {
+            if (!isset($industry) || empty($industry)) {
+    if (str_contains($currentPath, 'healthcare')) {
+        $industry = 'healthcare';
+    } elseif (str_contains($currentPath, 'spa-massage')) {
                 $businessType = 'spa & wellness business';
             }
             @endphp

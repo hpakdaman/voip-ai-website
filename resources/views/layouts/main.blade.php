@@ -45,7 +45,7 @@
 
     </head>
     
-    <body class="font-sans text-base text-slate-900 dark:text-white dark:bg-slate-900 bg-white overflow-x-hidden">
+    <body class="font-sans text-base text-white overflow-x-hidden" style="background-color: var(--voip-dark-bg);">
 
         <!-- Main Content -->
         <div class="content">

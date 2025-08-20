@@ -58,11 +58,11 @@
                     <ul class="submenu">
                         <li><a href="{{ route('solutions.real-estate') }}" class="sub-menu-item text-base font-medium">Real Estate</a></li>
                         <li><a href="{{ route('solutions.spa-massage') }}" class="sub-menu-item text-base font-medium">Spa & Massage</a></li>
-                        <li><a href="{{ url('/healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
-                        <li><a href="{{ url('/finance') }}" class="sub-menu-item text-base font-medium">Finance & Banking</a></li>
-                        <li><a href="{{ url('/retail') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
-                        <li><a href="{{ url('/education') }}" class="sub-menu-item text-base font-medium">Education</a></li>
-                        <li><a href="{{ url('/government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
+                        <li><a href="{{ route('solutions.healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
+                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Finance & Banking <span class="text-xs">(Coming Soon)</span></a></li>
+                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Retail & E-commerce <span class="text-xs">(Coming Soon)</span></a></li>
+                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Education <span class="text-xs">(Coming Soon)</span></a></li>
+                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Government <span class="text-xs">(Coming Soon)</span></a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('contact-us') }}" class="sub-menu-item">CONTACT</a></li>

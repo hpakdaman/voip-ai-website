@@ -1,0 +1,104 @@
+{
+    "section": {
+        "badge": "AI Healthcare Capabilities",
+        "title": "Advanced Medical AI That Understands",
+        "highlighted": "Patient Care",
+        "description": "Our AI agents are trained specifically for healthcare environments with medical terminology, HIPAA compliance, and UAE healthcare regulations."
+    },
+    "capabilities": [
+        {
+            "icon": "uil-user-md",
+            "title": "Medical Knowledge Base",
+            "description": "Trained on medical terminology, procedures, and common patient inquiries with UAE healthcare system knowledge.",
+            "features": [
+                "Medical procedure explanations",
+                "Symptom assessment protocols",
+                "UAE insurance coverage guidance",
+                "Prescription refill management"
+            ]
+        },
+        {
+            "icon": "uil-shield-check",
+            "title": "HIPAA & UAE Compliance",
+            "description": "Full compliance with international patient privacy laws and UAE healthcare data protection regulations.",
+            "features": [
+                "Encrypted patient data handling",
+                "HIPAA-compliant conversations",
+                "UAE Ministry of Health standards",
+                "Secure appointment scheduling"
+            ]
+        },
+        {
+            "icon": "uil-calendar-alt",
+            "title": "Smart Appointment System",
+            "description": "Intelligent scheduling with doctor availability, specialty matching, and urgent care prioritization.",
+            "features": [
+                "Real-time calendar integration",
+                "Specialist referral routing",
+                "Emergency call escalation",
+                "Insurance verification checks"
+            ]
+        },
+        {
+            "icon": "uil-comment-dots",
+            "title": "Multilingual Medical Support",
+            "description": "Fluent medical communication in Arabic, English, Hindi, and Urdu for UAE's diverse patient population.",
+            "features": [
+                "Medical terminology in multiple languages",
+                "Cultural sensitivity training",
+                "Religious dietary consultation",
+                "Family involvement protocols"
+            ]
+        },
+        {
+            "icon": "uil-bell",
+            "title": "Patient Care Automation",
+            "description": "Automated follow-ups, medication reminders, and post-treatment care instructions.",
+            "features": [
+                "Post-visit care instructions",
+                "Medication reminder calls",
+                "Test result notifications",
+                "Wellness check-in calls"
+            ]
+        },
+        {
+            "icon": "uil-phone-times",
+            "title": "Emergency Call Management",
+            "description": "Immediate emergency recognition with proper escalation to medical professionals and emergency services.",
+            "features": [
+                "Emergency keyword detection",
+                "Immediate doctor notification",
+                "Ambulance service coordination",
+                "Family emergency contacts"
+            ]
+        }
+    ],
+    "integration_stats": [
+        {
+            "number": "50+",
+            "label": "Medical Systems",
+            "description": "EMR and practice management integrations"
+        },
+        {
+            "number": "99.9%",
+            "label": "Uptime SLA",
+            "description": "Critical healthcare communication reliability"
+        },
+        {
+            "number": "15sec",
+            "label": "Response Time",
+            "description": "Average patient query response time"
+        },
+        {
+            "number": "100%",
+            "label": "Compliance",
+            "description": "HIPAA and UAE healthcare standards"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "focus": "medical_ai_capabilities",
+        "compliance": ["HIPAA", "UAE_MOH", "GDPR"]
+    }
+}
