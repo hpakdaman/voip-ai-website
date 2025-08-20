@@ -107,7 +107,7 @@
         {
             "name": "Mindbody",
             "type": "Spa Management",
-            "icon": "uil-spa"
+            "icon": "uil-heart-medical"
         },
         {
             "name": "Booker",
@@ -132,7 +132,7 @@
         {
             "name": "Acuity Scheduling",
             "type": "Online Booking",
-            "icon": "uil-calender"
+            "icon": "uil-calendar-alt"
         },
         {
             "name": "Salesforce",
@@ -162,7 +162,7 @@
         {
             "name": "Zenoti",
             "type": "Spa Software",
-            "icon": "uil-processing"
+            "icon": "uil-desktop-alt"
         }
     ],
     "demo_title": "See Your AI Agent in Action",

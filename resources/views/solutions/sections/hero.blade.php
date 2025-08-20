@@ -146,8 +146,8 @@ if (!empty($demoAudio)) {
                                 
                                 <!-- Progress Area -->
                                 <div class="flex-1">
-                                    <!-- Progress Bar -->
-                                    <div class="w-full h-2 rounded-full mb-2" style="background: rgba(255, 255, 255, 0.2);">
+                                    <!-- Progress Bar Container (Clickable) -->
+                                    <div id="progress-container" class="w-full h-2 rounded-full mb-2 cursor-pointer" style="background: rgba(255, 255, 255, 0.2);">
                                         <div id="progress-bar" class="h-full rounded-full transition-all duration-300" style="background: linear-gradient(90deg, var(--voip-primary) 0%, var(--voip-link) 100%); width: 0%;"></div>
                                     </div>
                                     
@@ -158,9 +158,17 @@ if (!empty($demoAudio)) {
                                     </div>
                                 </div>
                                 
-                                <!-- Volume/Speaker Icon -->
-                                <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: rgba(255, 255, 255, 0.1);">
-                                    <i class="uil uil-volume text-lg text-white"></i>
+                                <!-- Volume Control -->
+                                <div class="flex items-center space-x-2">
+                                    <!-- Volume Icon -->
+                                    <button id="volume-btn" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.1);">
+                                        <i id="volume-icon" class="uil uil-volume text-lg text-white"></i>
+                                    </button>
+                                    
+                                    <!-- Volume Slider (Hidden by default) -->
+                                    <div id="volume-slider-container" class="hidden">
+                                        <input type="range" id="volume-slider" min="0" max="100" value="100" class="w-20 h-1 rounded-full appearance-none cursor-pointer" style="background: rgba(255, 255, 255, 0.2);">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -198,8 +206,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const playIcon = document.getElementById('play-icon');
     const pauseIcon = document.getElementById('pause-icon');
     const progressBar = document.getElementById('progress-bar');
+    const progressContainer = document.getElementById('progress-container');
     const currentTimeSpan = document.getElementById('current-time');
     const totalTimeSpan = document.getElementById('total-time');
+    const volumeBtn = document.getElementById('volume-btn');
+    const volumeIcon = document.getElementById('volume-icon');
+    const volumeSliderContainer = document.getElementById('volume-slider-container');
+    const volumeSlider = document.getElementById('volume-slider');
     
     if (!audio || !playPauseBtn) return;
     
@@ -246,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Click on progress bar to seek
-    const progressContainer = progressBar.parentElement;
     progressContainer.addEventListener('click', function(e) {
         if (audio.duration) {
             const rect = progressContainer.getBoundingClientRect();
@@ -256,6 +268,56 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.currentTime = seekTime;
         }
     });
+    
+    // Volume control functionality
+    volumeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        volumeSliderContainer.classList.toggle('hidden');
+    });
+    
+    // Volume slider change
+    volumeSlider.addEventListener('input', function() {
+        const volume = this.value / 100;
+        audio.volume = volume;
+        updateVolumeIcon(volume);
+    });
+    
+    // Update volume icon based on level
+    function updateVolumeIcon(volume) {
+        if (volume === 0) {
+            volumeIcon.className = 'uil uil-volume-mute text-lg text-white';
+        } else if (volume < 0.5) {
+            volumeIcon.className = 'uil uil-volume-down text-lg text-white';
+        } else {
+            volumeIcon.className = 'uil uil-volume text-lg text-white';
+        }
+    }
+    
+    // Volume button click to mute/unmute
+    let previousVolume = 1;
+    volumeBtn.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        if (audio.volume > 0) {
+            previousVolume = audio.volume;
+            audio.volume = 0;
+            volumeSlider.value = 0;
+        } else {
+            audio.volume = previousVolume;
+            volumeSlider.value = previousVolume * 100;
+        }
+        updateVolumeIcon(audio.volume);
+    });
+    
+    // Hide volume slider when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!volumeBtn.contains(e.target) && !volumeSliderContainer.contains(e.target)) {
+            volumeSliderContainer.classList.add('hidden');
+        }
+    });
+    
+    // Initialize volume
+    audio.volume = 1;
+    updateVolumeIcon(1);
 });
 </script>
 @endif

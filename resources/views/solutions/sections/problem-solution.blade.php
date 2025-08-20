@@ -91,15 +91,15 @@ $solutions = $data['solutions'] ?? [];
                     
                     <!-- Solution Content -->
                     <h3 class="text-xl font-bold text-white mb-4">{{ $solution['title'] ?? 'Solution Title' }}</h3>
-                    <p class="text-slate-300 mb-6 leading-relaxed">{{ $solution['description'] ?? 'Solution description' }}</p>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">{{ $solution['description'] ?? 'Solution description' }}</p>
                     
                     <!-- Solution Benefits -->
                     @if(isset($solution['benefits']))
-                    <ul class="space-y-2 mb-6 flex-1">
+                    <ul class="space-y-3 mb-6 flex-1">
                         @foreach($solution['benefits'] as $benefit)
-                        <li class="flex items-center text-sm text-slate-400">
-                            <i class="uil uil-check text-xs mr-2" style="color: var(--voip-link);"></i>
-                            {{ $benefit }}
+                        <li class="flex items-start text-sm text-slate-300">
+                            <i class="uil uil-check text-sm mr-3 mt-0.5 flex-shrink-0" style="color: var(--voip-link);"></i>
+                            <span>{{ $benefit }}</span>
                         </li>
                         @endforeach
                     </ul>
@@ -108,8 +108,8 @@ $solutions = $data['solutions'] ?? [];
                     <!-- Solution Results -->
                     @if(isset($solution['result']))
                     <div class="p-4 rounded-xl border border-white/10 mt-auto text-center" style="background: rgba(30, 192, 141, 0.05);">
-                        <div class="text-2xl font-bold mb-1" style="color: var(--voip-link);">{{ $solution['result'] }}</div>
-                        <div class="text-slate-400 text-sm font-medium">Improvement</div>
+                        <div class="text-xl font-bold mb-1" style="color: var(--voip-link);">{{ $solution['result'] }}</div>
+                        <div class="text-slate-400 text-xs font-medium uppercase tracking-wide">Result</div>
                         @if(isset($solution['result_description']))
                         <div class="text-xs text-slate-400 mt-2">{{ $solution['result_description'] }}</div>
                         @endif

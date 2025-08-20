@@ -1,0 +1,53 @@
+{
+    "section": {
+        "badge": "AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "In Action",
+        "description": "Watch how our AI agents transform spa and wellness communication with professional service demonstrations"
+    },
+    "features": [
+        {
+            "title": "Appointment Management",
+            "description": "AI handles complex scheduling with multiple therapists and treatments",
+            "icon": "uil-calendar-alt",
+            "demo_video": "appointment-management-demo.mp4",
+            "highlight": "95% booking accuracy with zero conflicts"
+        },
+        {
+            "title": "Treatment Consultation", 
+            "description": "Professional health screening and personalized treatment recommendations",
+            "icon": "uil-stethoscope-alt",
+            "demo_video": "consultation-demo.mp4",
+            "highlight": "100% compliance with health protocols"
+        },
+        {
+            "title": "Client Relationship Management",
+            "description": "Maintains detailed client profiles and preferences for personalized service",
+            "icon": "uil-user-heart",
+            "demo_video": "client-management-demo.mp4",
+            "highlight": "90% client satisfaction increase"
+        }
+    ],
+    "stats": [
+        {
+            "number": "40%",
+            "label": "More Bookings",
+            "description": "Increase in appointments through 24/7 availability"
+        },
+        {
+            "number": "85%", 
+            "label": "Show-up Rate",
+            "description": "Higher appointment attendance with AI reminders"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "description": "Never miss a spa booking opportunity"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "spa-massage"
+    }
+}

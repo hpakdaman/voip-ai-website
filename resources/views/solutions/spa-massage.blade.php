@@ -29,4 +29,10 @@ $industryService = new \App\Services\IndustryDataService('spa-massage');
 {{-- ROI Calculator Section --}}
 @include('solutions.sections.roi-calculator-advanced', ['data' => $industryService->getRoiCalculatorData()])
 
+{{-- Feature Showcase Section - "See Sawtic AI In Action" --}}
+@include('solutions.sections.feature-showcase', ['data' => $industryService->getFeatureShowcaseData()])
+
+{{-- CTA Conversion Section - "Limited Time: Free Setup Worth AED 5,000" --}}
+@include('solutions.sections.cta-conversion', ['data' => $industryService->getCtaData()])
+
 @endsection
