@@ -1,8 +1,36 @@
+@php
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+$ctaContent = [];
+
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+    $ctaContent = [
+        'bg_image' => 'assets/images/spa/cta.jpg',
+        'alt_text' => 'Spa Success',
+        'main_title' => 'Ready to Stop Missing',
+        'highlighted' => 'Spa Appointments?',
+        'description' => 'Join 300+ UAE spa & wellness centers who never miss another booking',
+        'professionals' => 'spa professionals'
+    ];
+} else {
+    $ctaContent = [
+        'bg_image' => 'assets/images/real/bg/01.jpg',
+        'alt_text' => 'Real Estate Success',
+        'main_title' => 'Ready to Stop Losing',
+        'highlighted' => 'Real Estate Leads?',
+        'description' => 'Join 500+ UAE real estate professionals who never miss another call',
+        'professionals' => 'real estate professionals'
+    ];
+}
+@endphp
+
 <!-- Strong Conversion CTA Section -->
 <section class="relative py-24" style="background-color: var(--voip-bg);">
     <div class="absolute inset-0">
         <!-- Background Image -->
-        <img src="{{ asset('assets/images/real/bg/01.jpg') }}" alt="Real Estate Success" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset($ctaContent['bg_image']) }}" alt="{{ $ctaContent['alt_text'] }}" class="w-full h-full object-cover opacity-20">
         <!-- Conversion-focused background overlay -->
         <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 50%, transparent 100%);"></div>
     </div>
@@ -17,12 +45,12 @@
             
             <!-- Main CTA -->
             <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-                Ready to Stop Losing
-                <span style="color: var(--voip-link);">Real Estate Leads?</span>
+                {{ $ctaContent['main_title'] }}
+                <span style="color: var(--voip-link);">{{ $ctaContent['highlighted'] }}</span>
             </h2>
             
             <p class="text-slate-300 text-2xl mb-12 leading-relaxed">
-                Join 500+ UAE real estate professionals who never miss another call
+                {{ $ctaContent['description'] }}
             </p>
             
             <!-- CTA Buttons -->

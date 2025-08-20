@@ -69,6 +69,14 @@ class HomeController extends Controller
         return view('solutions.real-estate');  
     }
 
+    /**
+     * Spa & Massage AI Solutions Landing Page
+     */
+    public function spaMassage()
+    {
+        return view('solutions.spa-massage');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

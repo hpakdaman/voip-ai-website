@@ -31,6 +31,7 @@ if ($maintenanceMode) {
 
     // Solutions Landing Pages
     Route::get('/solutions/real-estate', [HomeController::class, 'realEstate'])->name('solutions.real-estate');
+    Route::get('/solutions/spa-massage', [HomeController::class, 'spaMassage'])->name('solutions.spa-massage');
     
     // Additional solutions pages will be added here as they are created
     // Route::get('/solutions/medical-spa', [HomeController::class, 'medicalSpa'])->name('solutions.medical-spa');

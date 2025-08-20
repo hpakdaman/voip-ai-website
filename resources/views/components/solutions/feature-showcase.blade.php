@@ -1,3 +1,41 @@
+@php
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+$industrySpecific = [];
+
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+    $industrySpecific = [
+        'dashboard_title' => 'Spa Booking Dashboard',
+        'dashboard_desc' => 'Monitor all appointment bookings, client interactions, and treatment schedules in real-time.',
+        'dashboard_image' => 'assets/images/spa/1.jpg',
+        'consultation_title' => 'Professional Wellness Consultations',
+        'consultation_desc' => 'Your AI agent provides expert-level consultations with deep knowledge of spa treatments and wellness protocols.',
+        'consultation_image' => 'assets/images/spa/2.jpg',
+        'consultation_features' => [
+            'Treatment recommendations based on client needs',
+            'Health screening and contraindication checks',
+            'Personalized wellness advice and aftercare'
+        ]
+    ];
+} else {
+    $industrySpecific = [
+        'dashboard_title' => 'Real-Time Lead Dashboard',
+        'dashboard_desc' => 'Monitor all incoming calls, lead status, and conversions in real-time from your mobile device.',
+        'dashboard_image' => 'assets/images/real/property/2.jpg',
+        'consultation_title' => 'Professional Property Consultations',
+        'consultation_desc' => 'Your AI agent provides expert-level consultations with deep knowledge of UAE real estate market trends and regulations.',
+        'consultation_image' => 'assets/images/real/property/5.jpg',
+        'consultation_features' => [
+            'Real-time property values and market trends',
+            'UAE property law and RERA regulations',
+            'Investment advice and ROI calculations'
+        ]
+    ];
+}
+@endphp
+
 <!-- Feature Showcase with Visuals -->
 <section class="relative py-24" style="background-color: var(--voip-dark-bg);">
     <div class="container relative z-10">
@@ -12,14 +50,14 @@
         <!-- Feature Grid -->
         <div class="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
-                <h3 class="text-3xl font-bold text-white mb-6">Real-Time Lead Dashboard</h3>
-                <p class="text-slate-300 text-lg mb-6">Monitor all incoming calls, lead status, and conversions in real-time from your mobile device.</p>
+                <h3 class="text-3xl font-bold text-white mb-6">{{ $industrySpecific['dashboard_title'] }}</h3>
+                <p class="text-slate-300 text-lg mb-6">{{ $industrySpecific['dashboard_desc'] }}</p>
                 <ul class="space-y-3">
                     <li class="flex items-center text-slate-300">
                         <i class="uil uil-check mr-3" style="color: var(--voip-link);"></i>Live call monitoring
                     </li>
                     <li class="flex items-center text-slate-300">
-                        <i class="uil uil-check mr-3" style="color: var(--voip-link);"></i>Instant lead notifications
+                        <i class="uil uil-check mr-3" style="color: var(--voip-link);"></i>Instant {{ $industry === 'spa-massage' ? 'booking' : 'lead' }} notifications
                     </li>
                     <li class="flex items-center text-slate-300">
                         <i class="uil uil-check mr-3" style="color: var(--voip-link);"></i>Conversion analytics
@@ -27,7 +65,7 @@
                 </ul>
             </div>
             <div class="relative">
-                <img src="{{ asset('assets/images/real/property/2.jpg') }}" alt="Real Estate Success Dashboard" class="w-full rounded-2xl shadow-2xl">
+                <img src="{{ asset($industrySpecific['dashboard_image']) }}" alt="{{ $industrySpecific['dashboard_title'] }}" class="w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
                 
                 <!-- Floating Dashboard Overlay -->
@@ -53,7 +91,7 @@
         <!-- Second Feature Row -->
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative order-2 lg:order-1">
-                <img src="{{ asset('assets/images/real/property/5.jpg') }}" alt="Professional Real Estate Service" class="w-full rounded-2xl shadow-2xl">
+                <img src="{{ asset($industrySpecific['consultation_image']) }}" alt="{{ $industrySpecific['consultation_title'] }}" class="w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
                 
                 <!-- Live Status Indicator -->
@@ -66,18 +104,20 @@
             </div>
             
             <div class="order-1 lg:order-2">
-                <h3 class="text-3xl font-bold text-white mb-6">Professional Property Consultations</h3>
-                <p class="text-slate-300 text-lg mb-6">Your AI agent provides expert-level consultations with deep knowledge of UAE real estate market trends and regulations.</p>
+                <h3 class="text-3xl font-bold text-white mb-6">{{ $industrySpecific['consultation_title'] }}</h3>
+                <p class="text-slate-300 text-lg mb-6">{{ $industrySpecific['consultation_desc'] }}</p>
                 <div class="space-y-4">
+                    @foreach($industrySpecific['consultation_features'] as $index => $feature)
                     <div class="flex items-start">
                         <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-brain text-sm text-white"></i>
+                            <i class="uil uil-{{ $index === 0 ? 'brain' : ($index === 1 ? 'shield-check' : 'heart-medical') }} text-sm text-white"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold mb-1">Market Intelligence</h4>
-                            <p class="text-slate-400 text-sm">Real-time property values and market trends</p>
+                            <h4 class="text-white font-semibold mb-1">{{ ucfirst(explode(' ', $feature)[0]) }} {{ ucfirst(explode(' ', $feature)[1] ?? '') }}</h4>
+                            <p class="text-slate-400 text-sm">{{ $feature }}</p>
                         </div>
                     </div>
+                    @endforeach
                     <div class="flex items-start">
                         <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
                             <i class="uil uil-shield-check text-sm text-white"></i>
