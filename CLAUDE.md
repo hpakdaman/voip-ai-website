@@ -348,6 +348,54 @@ resources/views/solutions/
 
 **This comprehensive solutions system will position Sawtic as the definitive AI solution provider for UAE businesses across all major industries.**
 
+## 🚨 CRITICAL: Laravel Named Routes Requirement
+
+### **MANDATORY: Always Use Named Routes**
+**ALL links in Blade templates MUST use Laravel named routes instead of hardcoded URLs.**
+
+#### **❌ FORBIDDEN URL Patterns:**
+```blade
+<!-- NEVER USE hardcoded URLs -->
+<a href="{{ url('/contact-us') }}">Contact</a>
+<a href="{{ url('/features') }}">Features</a>
+<a href="/pricing">Pricing</a>
+```
+
+#### **✅ REQUIRED Named Route Usage:**
+```blade
+<!-- ALWAYS USE named routes -->
+<a href="{{ route('contact-us') }}">Contact</a>
+<a href="{{ route('features') }}">Features</a>
+<a href="{{ route('pricing') }}">Pricing</a>
+<a href="{{ route('solutions.real-estate') }}">Real Estate</a>
+```
+
+#### **Available Named Routes:**
+- `route('home')` - Homepage (/)
+- `route('about')` - About page (/about)  
+- `route('features')` - Features page (/features)
+- `route('pricing')` - Pricing page (/pricing)
+- `route('contact-us')` - Contact page (/contact-us)
+- `route('privacy')` - Privacy policy (/privacy)
+- `route('terms')` - Terms of service (/terms)
+- `route('solutions.real-estate')` - Real estate solutions (/solutions/real-estate)
+- `route('solutions.spa-massage')` - Spa & massage solutions (/solutions/spa-massage)
+
+#### **Benefits of Named Routes:**
+- ✅ **Maintainability**: Easy to update URLs without changing templates
+- ✅ **Error Prevention**: Laravel validates route existence
+- ✅ **URL Generation**: Automatic URL generation based on route definitions
+- ✅ **Consistency**: Centralized route management in routes/web.php
+- ✅ **Refactoring Safety**: IDE support and better code organization
+
+#### **Implementation Requirements:**
+- Update ALL existing hardcoded URLs to use named routes
+- Check navbar.blade.php, footer.blade.php, and all component files
+- Verify all buttons, links, and navigation elements
+- Test route functionality after updates
+
+**This rule ensures maintainable, scalable URL management across the entire application.**
+
 ## 🚨 CRITICAL: CSS File Management Guidelines
 
 ### **FORBIDDEN: Never Write CSS in Blade Files**
