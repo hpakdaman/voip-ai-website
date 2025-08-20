@@ -33,10 +33,6 @@ if ($maintenanceMode) {
     Route::get('/solutions/real-estate', [HomeController::class, 'realEstate'])->name('solutions.real-estate');
     Route::get('/solutions/spa-massage', [HomeController::class, 'spaMassage'])->name('solutions.spa-massage');
     Route::get('/solutions/healthcare', [HomeController::class, 'healthcare'])->name('solutions.healthcare');
-    
-    // Additional solutions pages will be added here as they are created
-    // Route::get('/solutions/medical-spa', [HomeController::class, 'medicalSpa'])->name('solutions.medical-spa');
-    // Route::get('/solutions/restaurants', [HomeController::class, 'restaurants'])->name('solutions.restaurants');
 
     // Additional VoIP-specific routes (add as needed)
 }

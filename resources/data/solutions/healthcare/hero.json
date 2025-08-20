@@ -65,6 +65,9 @@
             }
         ]
     },
+    "hero_images": {
+        "main": "assets/images/hospital/bg.jpg"
+    },
     "metadata": {
         "industry": "healthcare",
         "version": "1.0",

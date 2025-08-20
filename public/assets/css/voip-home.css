@@ -1021,6 +1021,42 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
     border-color: var(--voip-link) !important;
 }
 
+/* VoIP Theme Slider Styles */
+.voip-slider {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.voip-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.voip-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.voip-slider::-webkit-slider-track {
+    background: linear-gradient(to right, var(--voip-link) 0%, var(--voip-link) var(--value, 50%), rgba(255, 255, 255, 0.2) var(--value, 50%), rgba(255, 255, 255, 0.2) 100%);
+    height: 6px;
+    border-radius: 3px;
+}
+
 /* Print Styles */
 @media print {
     .floating-element,
