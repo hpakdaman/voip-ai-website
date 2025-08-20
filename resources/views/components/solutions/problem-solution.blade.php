@@ -51,7 +51,7 @@ $heightClass = "lg:h-[{$boxHeight}]";
             <!-- Problems Column -->
             <div class="wow animate__animated animate__fadeInLeft flex flex-col" data-wow-delay="0.2s">
                 <div class="text-center mb-8">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);">
                         <i class="uil uil-times text-2xl text-white"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Current Problems</h3>
@@ -61,21 +61,21 @@ $heightClass = "lg:h-[{$boxHeight}]";
                 <!-- Problems List -->
                 <div class="space-y-6 flex-1">
                     @foreach($problems as $problem)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15); display: flex; flex-direction: column;">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl h-auto {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15); display: flex; flex-direction: column; overflow: hidden;">
                         <!-- Warning Badge -->
-                        <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);">
+                        <div class="absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);">
                             <i class="uil uil-times text-white text-sm"></i>
                         </div>
                         
                         <div class="flex items-start space-x-4 flex-1">
-                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);">
+                            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); box-shadow: 0 6px 15px rgba(220, 38, 38, 0.3);">
                                 <i class="uil {{ $problem['icon'] ?? 'uil-times' }} text-xl text-white"></i>
                             </div>
                             <div class="flex-1 flex flex-col">
                                 <h4 class="text-xl font-bold text-white mb-3">{{ $problem['title'] ?? 'Problem Title' }}</h4>
-                                <p class="text-slate-200 leading-relaxed mb-4 flex-1">{{ $problem['description'] ?? 'Problem description' }}</p>
-                                <div class="inline-flex items-center px-4 py-2 rounded-full text-white font-semibold text-sm mt-auto" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.3);">
-                                    <i class="uil uil-chart-down text-sm mr-2"></i>
+                                <p class="text-slate-200 leading-relaxed mb-4 flex-1 line-clamp-3">{{ $problem['description'] ?? 'Problem description' }}</p>
+                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-white font-medium text-xs mt-auto border" style="background: rgba(220, 38, 38, 0.15); border-color: rgba(220, 38, 38, 0.3); color: #fca5a5;">
+                                    <i class="uil uil-chart-down text-xs mr-1.5"></i>
                                     {{ $problem['impact'] ?? 'Impact metric' }}
                                 </div>
                             </div>
@@ -98,9 +98,9 @@ $heightClass = "lg:h-[{$boxHeight}]";
                 <!-- Solutions List -->
                 <div class="space-y-6 flex-1">
                     @foreach($solutions as $solution)
-                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2); display: flex; flex-direction: column;">
+                    <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl h-auto {{ $heightClass }}" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2); display: flex; flex-direction: column; overflow: hidden;">
                         <!-- Success Badge -->
-                        <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
+                        <div class="absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                             <i class="uil uil-check text-white text-sm"></i>
                         </div>
                         
@@ -110,12 +110,10 @@ $heightClass = "lg:h-[{$boxHeight}]";
                             </div>
                             <div class="flex-1 flex flex-col">
                                 <h4 class="text-xl font-bold text-white mb-3">{{ $solution['title'] ?? 'Solution Title' }}</h4>
-                                <p class="text-slate-200 leading-relaxed mb-4 flex-1">{{ $solution['description'] ?? 'Solution description' }}</p>
-                                <div class="flex items-center justify-between mt-auto">
-                                    <div class="inline-flex items-center px-4 py-2 rounded-full text-white font-semibold text-sm" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.3);">
-                                        <i class="uil uil-chart-growth text-sm mr-2"></i>
-                                        {{ $solution['result'] ?? 'Result metric' }}
-                                    </div>
+                                <p class="text-slate-200 leading-relaxed mb-4 flex-1 line-clamp-3">{{ $solution['description'] ?? 'Solution description' }}</p>
+                                <div class="inline-flex items-center px-3 py-1.5 rounded-lg text-white font-medium text-xs mt-auto border" style="background: rgba(30, 192, 141, 0.15); border-color: rgba(30, 192, 141, 0.3); color: #6ee7b7;">
+                                    <i class="uil uil-chart-growth text-xs mr-1.5"></i>
+                                    {{ $solution['benefit'] ?? $solution['result'] ?? 'Benefit metric' }}
                                 </div>
                             </div>
                         </div>

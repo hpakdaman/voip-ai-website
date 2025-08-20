@@ -2,7 +2,7 @@
 <nav id="topnav" class="defaultscroll is-sticky">
     <div class="container relative">
         <!-- Logo container-->
-        <a class="logo" href="{{ url('/') }}">
+        <a class="logo" href="{{ route('home') }}">
             <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="inline-block h-10" alt="Sawtic">
         </a>
 
@@ -42,7 +42,7 @@
             
             <!-- Get Started Button -->
             {{-- <li class="flex items-center">
-                <a href="{{ url('/contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border duration-500 text-base text-center text-white rounded-md hover-voip-button" style="background-color: var(--voip-primary); border-color: var(--voip-primary);">Get Started</a>
+                <a href="{{ route('contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border duration-500 text-base text-center text-white rounded-md hover-voip-button" style="background-color: var(--voip-primary); border-color: var(--voip-primary);">Get Started</a>
             </li> --}}
         </ul>
         <!--Simple Controls End-->
@@ -50,14 +50,14 @@
         <div id="navigation">
             <!-- Navigation Menu-->   
             <ul class="navigation-menu">
-                <li><a href="{{ url('/') }}" class="sub-menu-item active">HOME</a></li>
-                <li><a href="{{ url('/about') }}" class="sub-menu-item">ABOUT</a></li>
-                <li><a href="{{ url('/features') }}" class="sub-menu-item">FEATURES</a></li>
+                <li><a href="{{ route('home') }}" class="sub-menu-item active">HOME</a></li>
+                <li><a href="{{ route('about') }}" class="sub-menu-item">ABOUT</a></li>
+                <li><a href="{{ route('features') }}" class="sub-menu-item">FEATURES</a></li>
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">SOLUTIONS</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="{{ url('/solutions/real-estate') }}" class="sub-menu-item text-base font-medium">Real Estate</a></li>
-                        <li><a href="{{ url('/solutions/spa-massage') }}" class="sub-menu-item text-base font-medium">Spa & Massage</a></li>
+                        <li><a href="{{ route('solutions.real-estate') }}" class="sub-menu-item text-base font-medium">Real Estate</a></li>
+                        <li><a href="{{ route('solutions.spa-massage') }}" class="sub-menu-item text-base font-medium">Spa & Massage</a></li>
                         <li><a href="{{ url('/healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
                         <li><a href="{{ url('/finance') }}" class="sub-menu-item text-base font-medium">Finance & Banking</a></li>
                         <li><a href="{{ url('/retail') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
@@ -65,7 +65,7 @@
                         <li><a href="{{ url('/government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ url('/contact-us') }}" class="sub-menu-item">CONTACT</a></li>
+                <li><a href="{{ route('contact-us') }}" class="sub-menu-item">CONTACT</a></li>
                 
                 <!-- Mobile Language Switcher -->
                 <li class="mobile-lang-switcher border-t mt-4 pt-4 mb-4" style="border-color: rgba(30, 192, 141, 0.2);">

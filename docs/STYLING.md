@@ -1,6 +1,6 @@
-# STYLING.md
+# CSS & Styling Guidelines
 
-Complete styling guidelines and patterns for the VoIP AI project.
+Complete styling guidelines, responsive design standards, and brand theme system for the Sawtic AI project.
 
 ## VoIP AI Brand Theme System
 
