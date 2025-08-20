@@ -119,60 +119,6 @@ $demos = $voiceSamplesData['demos'] ?? [];
     </div>
 </section>
 
-<style>
-/* Enhanced Audio Player Styling */
-.voice-demo-player audio {
-    width: 100%;
-    height: 42px;
-    border-radius: 12px;
-    background: rgba(30, 192, 141, 0.1);
-    outline: none;
-    border: 1px solid rgba(30, 192, 141, 0.2);
-}
-
-.voice-demo-player audio::-webkit-media-controls-panel {
-    background-color: rgba(12, 27, 39, 0.9);
-    border-radius: 12px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-play-button {
-    background-color: var(--voip-primary);
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-current-time-display,
-.voice-demo-player audio::-webkit-media-controls-time-remaining-display {
-    color: white;
-    text-shadow: none;
-    font-size: 12px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-timeline {
-    background-color: rgba(30, 192, 141, 0.3);
-    border-radius: 25px;
-    margin: 0 10px;
-}
-
-.voice-demo-player audio::-webkit-media-controls-volume-slider {
-    background-color: rgba(30, 192, 141, 0.3);
-    border-radius: 25px;
-}
-
-/* Demo Card Hover Effects */
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(30, 192, 141, 0.2);
-}
-
-/* Transcript Modal Styling (if implemented) */
-.transcript-modal {
-    background: rgba(12, 27, 39, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(30, 192, 141, 0.2);
-}
-</style>
-
 <script>
 // Audio Player Enhancements
 document.addEventListener('DOMContentLoaded', function() {

@@ -33,10 +33,10 @@ $solutions = $problemsData['solutions'] ?? [];
         </div>
         
         <!-- Problem vs Solution Grid -->
-        <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div class="grid lg:grid-cols-2 gap-12 items-stretch">
             
             <!-- Problems Column -->
-            <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+            <div class="wow animate__animated animate__fadeInLeft flex flex-col" data-wow-delay="0.2s">
                 <div class="text-center mb-8">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
                         <i class="uil uil-times text-2xl text-white"></i>
@@ -46,17 +46,17 @@ $solutions = $problemsData['solutions'] ?? [];
                 </div>
                 
                 <!-- Problems List -->
-                <div class="space-y-6">
+                <div class="space-y-6 flex-1">
                     @foreach($problems as $problem)
                     <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%); border-color: rgba(30, 192, 141, 0.25); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15);">
                         <!-- Warning Badge -->
                         <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);">
-                            <i class="uil uil-exclamation text-white text-sm"></i>
+                            <i class="uil uil-times text-white text-sm"></i>
                         </div>
                         
                         <div class="flex items-start space-x-4">
                             <div class="w-12 h-12 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);">
-                                <i class="uil {{ $problem['icon'] ?? 'uil-exclamation' }} text-xl text-white"></i>
+                                <i class="uil {{ $problem['icon'] ?? 'uil-times' }} text-xl text-white"></i>
                             </div>
                             <div class="flex-1">
                                 <h4 class="text-xl font-bold text-white mb-3">{{ $problem['title'] ?? 'Problem Title' }}</h4>
@@ -73,7 +73,7 @@ $solutions = $problemsData['solutions'] ?? [];
             </div>
             
             <!-- Solutions Column -->
-            <div class="wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+            <div class="wow animate__animated animate__fadeInRight flex flex-col" data-wow-delay="0.4s">
                 <div class="text-center mb-8">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
                         <i class="uil uil-check text-2xl text-white"></i>
@@ -83,7 +83,7 @@ $solutions = $problemsData['solutions'] ?? [];
                 </div>
                 
                 <!-- Solutions List -->
-                <div class="space-y-6">
+                <div class="space-y-6 flex-1">
                     @foreach($solutions as $solution)
                     <div class="relative p-6 rounded-2xl border-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);">
                         <!-- Success Badge -->
@@ -123,7 +123,7 @@ $solutions = $problemsData['solutions'] ?? [];
                 <h3 class="text-2xl font-bold text-white mb-4">Ready to Transform Your Real Estate Business?</h3>
                 <p class="text-slate-300 mb-8">Join 500+ UAE real estate professionals who never miss another lead</p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
                     <a href="#roi-calculator" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="problem-solution-calculator">
                         <i class="uil uil-calculator text-lg mr-3"></i>
                         Calculate Your ROI
@@ -137,25 +137,3 @@ $solutions = $problemsData['solutions'] ?? [];
         </div>
     </div>
 </section>
-
-<style>
-/* Hover animations for problem/solution cards */
-.problem-solution-card {
-    transition: all 0.3s ease;
-}
-
-.problem-solution-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-/* Pulse animation for impact metrics */
-@keyframes pulse-glow {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-}
-
-.impact-metric {
-    animation: pulse-glow 2s ease-in-out infinite;
-}
-</style>

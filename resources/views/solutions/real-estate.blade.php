@@ -1,5 +1,10 @@
 @extends('layouts.main')
 @section('title', 'AI Call Agents for Real Estate | Sawtic Smart Call Center Solutions UAE')
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/solutions/real-estate.css') }}">
+@endpush
+
 @section('content')
 
 {{-- Hero Section with Voice Demo --}}

@@ -31,7 +31,7 @@ try {
                 </div>
             </div>
             
-            <h1 class="mb-8 md:text-7xl text-5xl font-bold text-white leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <h1 class="mb-8 md:text-5xl text-3xl font-bold text-white leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 The Most <span style="background: linear-gradient(135deg, var(--voip-link) 0%, #ffffff 50%, var(--voip-primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Advanced</span><br/>
                 AI Call Center Platform
             </h1>

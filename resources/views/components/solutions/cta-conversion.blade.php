@@ -26,7 +26,7 @@
             </p>
             
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <div class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center mb-16">
                 <a href="tel:+97148647245" class="inline-flex items-center px-12 py-6 rounded-2xl font-bold text-white text-xl transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="final-cta-call">
                     <i class="uil uil-phone text-2xl mr-4"></i>
                     Call Now: +971 4 864 7245
@@ -54,7 +54,7 @@
             </div>
             
             <!-- Guarantee -->
-            <div class="max-w-2xl mx-auto p-6 rounded-2xl border border-green-400/30" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(30, 192, 141, 0.1) 100%);">
+            <div class="max-w-2xl mx-auto p-6 rounded-2xl border border-green-400/30" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(29, 120, 97, 0.1) 100%);">
                 <div class="flex items-center justify-center mb-4">
                     <i class="uil uil-shield-check text-3xl text-green-400 mr-3"></i>
                     <h3 class="text-xl font-bold text-white">30-Day Money-Back Guarantee</h3>
