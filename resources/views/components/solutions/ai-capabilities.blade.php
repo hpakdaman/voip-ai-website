@@ -1,17 +1,23 @@
 @php
-// Dynamically determine industry from URL path
+// Dynamically determine industry from URL path or passed parameter
 $currentPath = request()->path();
-$industry = 'real-estate'; // Default fallback
-if (str_contains($currentPath, 'spa-massage')) {
-    $industry = 'spa-massage';
-} elseif (str_contains($currentPath, 'real-estate')) {
-    $industry = 'real-estate';
+$industry = $industry ?? 'real-estate'; // Use passed parameter or default fallback
+
+if (!isset($industry) || empty($industry)) {
+    if (str_contains($currentPath, 'healthcare')) {
+        $industry = 'healthcare';
+    } elseif (str_contains($currentPath, 'spa-massage')) {
+        $industry = 'spa-massage';
+    } elseif (str_contains($currentPath, 'real-estate')) {
+        $industry = 'real-estate';
+    }
 }
 
 $capabilitiesData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/capabilities.json")), true);
 $sectionData = $capabilitiesData['section'] ?? [];
 $capabilities = $capabilitiesData['capabilities'] ?? [];
 $integrations = $capabilitiesData['integrations'] ?? [];
+$integrationStats = $capabilitiesData['integration_stats'] ?? [];
 @endphp
 
 <!-- AI Capabilities for Real Estate -->

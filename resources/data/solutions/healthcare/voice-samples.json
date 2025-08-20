@@ -1,0 +1,136 @@
+{
+    "section": {
+        "badge": "Healthcare Voice Demos",
+        "title": "Listen to AI Agents Handle Real",
+        "highlighted": "Medical Scenarios",
+        "description": "Experience how our AI agents professionally manage different types of patient calls with medical expertise and empathy."
+    },
+    "voice_samples": [
+        {
+            "title": "Emergency After-Hours Call",
+            "description": "AI agent handles urgent patient call outside office hours with proper emergency protocols",
+            "audio_file": "healthcare-emergency-demo.mp3",
+            "duration": "45 seconds",
+            "scenario": "Patient with chest pain calling after hours",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Dubai Medical Center emergency line, this is your AI assistant. I detect this may be urgent - please describe your symptoms."
+                },
+                {
+                    "speaker": "Patient", 
+                    "text": "I'm having chest pain and shortness of breath. Should I go to the hospital?"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "I'm immediately connecting you to our on-call physician and have notified emergency services. Please stay on the line while I transfer you to Dr. Hassan."
+                }
+            ]
+        },
+        {
+            "title": "Specialist Appointment Booking",
+            "description": "Complex scheduling for specialist consultation with insurance verification",
+            "audio_file": "healthcare-specialist-demo.mp3", 
+            "duration": "60 seconds",
+            "scenario": "Patient needs cardiology referral appointment",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Thank you for calling Dubai Medical Center. How may I assist you today?"
+                },
+                {
+                    "speaker": "Patient",
+                    "text": "I need to see a cardiologist. My doctor said I need a stress test."
+                },
+                {
+                    "speaker": "AI Agent", 
+                    "text": "I can help schedule your cardiology appointment. Let me verify your insurance covers this procedure and find the earliest available slot with Dr. Al-Rashid."
+                }
+            ]
+        },
+        {
+            "title": "Prescription Refill Request",
+            "description": "Patient requesting medication refill with pharmacy coordination",
+            "audio_file": "healthcare-prescription-demo.mp3",
+            "duration": "35 seconds", 
+            "scenario": "Diabetes patient needs insulin refill",
+            "transcript": [
+                {
+                    "speaker": "Patient",
+                    "text": "Hi, I need to refill my insulin prescription. I'm running low."
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "I see your insulin prescription in our system. I'll send the refill request to Dr. Ahmed for approval and notify your pharmacy. You should have it ready for pickup by tomorrow afternoon."
+                }
+            ]
+        },
+        {
+            "title": "Insurance Query in Arabic",
+            "description": "Arabic-speaking patient asking about insurance coverage for treatment",
+            "audio_file": "healthcare-insurance-arabic-demo.mp3",
+            "duration": "50 seconds",
+            "scenario": "Patient inquiring about insurance coverage in Arabic",
+            "transcript": [
+                {
+                    "speaker": "Patient",
+                    "text": "مرحبا، أريد أن أعرف إذا كان التأمين يغطي العملية"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "أهلاً وسهلاً. سأتحقق من تغطية التأمين الخاص بك للعملية المطلوبة. دعني أراجع ملفك الطبي وبوليصة التأمين."
+                }
+            ]
+        },
+        {
+            "title": "Post-Surgery Follow-up",
+            "description": "Automated follow-up call checking on patient recovery after procedure",
+            "audio_file": "healthcare-followup-demo.mp3",
+            "duration": "40 seconds",
+            "scenario": "Post-operative care check-in call",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Good afternoon, Mrs. Khan. This is a follow-up call from Dubai Medical Center. How are you feeling after your surgery yesterday?"
+                },
+                {
+                    "speaker": "Patient",
+                    "text": "Much better, thank you. The pain is manageable with the medication."
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Excellent. I'll update your recovery notes and schedule your follow-up appointment with Dr. Patel for next week."
+                }
+            ]
+        }
+    ],
+    "demo_benefits": [
+        {
+            "icon": "uil-clock-nine",
+            "title": "24/7 Availability",
+            "description": "Patients never get voicemail, even during emergencies"
+        },
+        {
+            "icon": "uil-shield-check", 
+            "title": "HIPAA Secure",
+            "description": "All conversations encrypted and privacy-compliant"
+        },
+        {
+            "icon": "uil-comments",
+            "title": "Multilingual",
+            "description": "Arabic, English, Hindi, and Urdu support"
+        },
+        {
+            "icon": "uil-user-md",
+            "title": "Medical Expertise",
+            "description": "Trained on medical protocols and terminology"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_samples": 5,
+        "languages": ["English", "Arabic"],
+        "focus": "healthcare_communication_scenarios"
+    }
+}

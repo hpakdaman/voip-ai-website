@@ -1,15 +1,21 @@
 @php
-// Dynamically determine industry from URL path
+// Dynamically determine industry from URL path or passed parameter
 $currentPath = request()->path();
-$industry = 'real-estate'; // Default fallback
-if (str_contains($currentPath, 'spa-massage')) {
-    $industry = 'spa-massage';
-} elseif (str_contains($currentPath, 'real-estate')) {
-    $industry = 'real-estate';
+$industry = $industry ?? 'real-estate'; // Use passed parameter or default fallback
+
+if (!isset($industry) || empty($industry)) {
+    if (str_contains($currentPath, 'healthcare')) {
+        $industry = 'healthcare';
+    } elseif (str_contains($currentPath, 'spa-massage')) {
+        $industry = 'spa-massage';
+    } elseif (str_contains($currentPath, 'real-estate')) {
+        $industry = 'real-estate';
+    }
 }
 
 $heroData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/hero.json")), true);
-$sectionData = $heroData['section'] ?? [];
+$heroSection = $heroData['hero'] ?? [];
+$stats = $heroData['stats'] ?? [];
 $voiceDemo = $heroData['voice_demo'] ?? [];
 @endphp
 
@@ -29,57 +35,53 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
             <div class="order-1 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Industry Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
-                    @if($industry === 'spa-massage')
+                    @if($industry === 'healthcare')
+                    <i class="uil uil-heartbeat text-sm mr-2" style="color: var(--voip-link);"></i>
+                    @elseif($industry === 'spa-massage')
                     <i class="uil uil-spa text-sm mr-2" style="color: var(--voip-link);"></i>
                     @else
                     <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
                     @endif
-                    <span class="text-white font-medium">{{ $sectionData['industry_badge'] ?? ($industry === 'spa-massage' ? 'Spa & Wellness AI Solutions' : 'Real Estate AI Solutions') }}</span>
+                    <span class="text-white font-medium">{{ $heroSection['badge'] ?? ($industry === 'healthcare' ? 'Healthcare AI Solutions' : ($industry === 'spa-massage' ? 'Spa & Wellness AI Solutions' : 'Real Estate AI Solutions')) }}</span>
                 </div>
                 
                 <!-- Main Heading -->
                 <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                    {{ $sectionData['main_title'] ?? 'Never Miss Another' }}
-                    <span style="color: var(--voip-link);">{{ $sectionData['highlighted_word'] ?? ($industry === 'spa-massage' ? 'Spa Booking' : 'Real Estate Lead') }}</span>
+                    {{ $heroSection['title'] ?? 'Never Miss Another' }}
+                    <span style="color: var(--voip-link);">{{ $heroSection['highlighted_word'] ?? ($industry === 'healthcare' ? 'Patient Call' : ($industry === 'spa-massage' ? 'Spa Booking' : 'Real Estate Lead')) }}</span>
                 </h1>
                 
                 <!-- Subtitle -->
+                <h2 class="text-slate-200 text-2xl font-semibold mb-4">
+                    {{ $heroSection['subtitle'] ?? ($industry === 'healthcare' ? '24/7 AI Call Agents for Healthcare' : ($industry === 'spa-massage' ? '24/7 AI Call Agents for Spa & Wellness' : '24/7 AI Call Agents for Real Estate')) }}
+                </h2>
+                
+                <!-- Description -->
                 <p class="text-slate-300 text-xl leading-relaxed mb-8">
-                    {{ $sectionData['subtitle'] ?? ($industry === 'spa-massage' ? 'Dubai\'s #1 AI call center handles spa bookings, treatment inquiries, and client consultations 24/7 - even when you\'re with other clients.' : 'Dubai\'s #1 AI call center handles property inquiries, showing bookings, and lead qualification 24/7 - even when you\'re showing other properties.') }}
+                    {{ $heroSection['description'] ?? ($industry === 'healthcare' ? 'Transform your medical practice with intelligent AI call agents that handle patient appointments, medical inquiries, and emergency calls with professional medical knowledge and HIPAA compliance.' : ($industry === 'spa-massage' ? 'Dubai\'s #1 AI call center handles spa bookings, treatment inquiries, and client consultations 24/7 - even when you\'re with other clients.' : 'Dubai\'s #1 AI call center handles property inquiries, showing bookings, and lead qualification 24/7 - even when you\'re showing other properties.')) }}
                 </p>
                 
-                <!-- Key Benefits List -->
-                <div class="space-y-4 mb-10">
-                    @foreach($sectionData['key_benefits'] ?? [] as $benefit)
-                    <div class="flex items-start space-x-4">
-                        <div class="w-6 h-6 rounded-full flex items-center justify-center mt-1" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                            <i class="uil uil-check text-xs text-white"></i>
-                        </div>
-                        <span class="text-slate-300 text-lg">{{ $benefit }}</span>
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                    @foreach($stats as $stat)
+                    <div class="text-center p-4 rounded-xl" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.2);">
+                        <div class="text-2xl font-bold text-white mb-1">{{ $stat['number'] ?? '0' }}</div>
+                        <div class="text-slate-300 text-sm font-medium mb-1">{{ $stat['label'] ?? 'Metric' }}</div>
+                        <div class="text-slate-400 text-xs">{{ $stat['description'] ?? '' }}</div>
                     </div>
                     @endforeach
                 </div>
                 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center lg:justify-start">
                     <a href="#voice-demo" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="hero-listen-demo">
                         <i class="uil uil-play text-lg mr-3"></i>
-                        Listen to Live Demo
+                        {{ $heroSection['primary_cta'] ?? 'Listen to Live Demo' }}
                     </a>
                     <a href="tel:+97148647245" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="hero-call-now">
                         <i class="uil uil-phone text-lg mr-3"></i>
-                        Call Now: +971 4 864 7245
+                        {{ $heroSection['secondary_cta'] ?? 'Call +971 4 864 7245' }}
                     </a>
-                </div>
-                
-                <!-- Trust Indicators -->
-                <div class="grid grid-cols-3 gap-6">
-                    @foreach($sectionData['trust_stats'] ?? [] as $stat)
-                    <div class="text-center">
-                        <div class="text-2xl font-bold text-white mb-1">{{ $stat['number'] ?? '0' }}</div>
-                        <div class="text-slate-400 text-sm">{{ $stat['label'] ?? 'Metric' }}</div>
-                    </div>
-                    @endforeach
                 </div>
             </div>
             
@@ -89,7 +91,11 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                 <div class="relative">
                     <!-- Main Demo Image -->
                     <div class="relative">
-                        @if($industry === 'spa-massage')
+                        @if($industry === 'healthcare')
+                        <img src="{{ $heroImage ?? asset('assets/images/hospital/about-2.png') }}" 
+                             alt="Healthcare AI Call Center Demo" 
+                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                        @elseif($industry === 'spa-massage')
                         <img src="{{ asset('assets/images/spa/1.jpg') }}" 
                              alt="Spa & Massage AI Call Center Demo" 
                              class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
@@ -107,8 +113,8 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                     <div id="voice-demo" class="absolute bottom-8 left-8 right-8 p-6 rounded-2xl border-2" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%); border-color: rgba(30, 192, 141, 0.4); backdrop-filter: blur(15px); box-shadow: 0 12px 30px rgba(30, 192, 141, 0.2);">
                         <div class="flex items-center justify-between mb-4">
                             <div>
-                                <h6 class="text-white font-semibold mb-1">{{ $voiceDemo['title'] ?? 'Live Property Inquiry Demo' }}</h6>
-                                <p class="text-slate-200 text-sm">{{ $voiceDemo['description'] ?? 'Real conversation with AI agent' }}</p>
+                                <h6 class="text-white font-semibold mb-1">{{ $heroSection['demo_title'] ?? ($industry === 'healthcare' ? '🎧 Live Healthcare Demo' : 'Live Demo') }}</h6>
+                                <p class="text-slate-200 text-sm">{{ $heroSection['demo_description'] ?? 'Real conversation with AI agent' }}</p>
                             </div>
                             <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 12px rgba(30, 192, 141, 0.4);">
                                 <i class="uil uil-headphones text-xl text-white"></i>
@@ -117,8 +123,10 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                         
                         <!-- Audio Player -->
                         <div class="voice-demo-player">
-                            <audio controls class="w-full" data-demo-type="{{ str_contains(request()->path(), 'spa-massage') ? 'spa-booking' : 'property-inquiry' }}" style="accent-color: var(--voip-link);">
-                                @if($industry === 'spa-massage')
+                            <audio controls class="w-full" data-demo-type="{{ $industry === 'healthcare' ? 'healthcare-appointment' : ($industry === 'spa-massage' ? 'spa-booking' : 'property-inquiry') }}" style="accent-color: var(--voip-link);">
+                                @if($industry === 'healthcare')
+                                <source src="{{ asset('assets/audio/solutions/healthcare/' . ($voiceDemo['audio_file'] ?? 'healthcare-appointment-demo.mp3')) }}" type="audio/mpeg">
+                                @elseif($industry === 'spa-massage')
                                 <source src="{{ asset('assets/audio/solutions/spa-massage/spa-booking-demo.mp3') }}" type="audio/mpeg">
                                 @else
                                 <source src="{{ asset('assets/audio/solutions/real-estate/property-inquiry-demo.mp3') }}" type="audio/mpeg">
@@ -129,7 +137,7 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                         
                         <!-- Demo Actions -->
                         <div class="flex items-center justify-between mt-4">
-                            <span class="text-slate-400 text-xs">{{ $voiceDemo['duration'] ?? '45 seconds' }}</span>
+                            <span class="text-slate-400 text-xs">45 seconds</span>
                             <a href="#" class="text-white text-sm hover:text-green-400 transition-colors" style="color: var(--voip-link);">
                                 <i class="uil uil-download-alt mr-1"></i>Download Demo
                             </a>
