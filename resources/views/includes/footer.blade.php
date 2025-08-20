@@ -28,10 +28,12 @@
                         </div>
 
                         <div class="lg:col-span-3 md:col-span-4">
-                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Legal</h5>
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold">Solutions</h5>
                             <ul class="list-none footer-list mt-6">
-                                <li><a href="{{ url('/terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms of Service</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/privacy') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Privacy Policy</a></li>
+                                <li><a href="{{ url('/solutions/real-estate') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Real Estate</a></li>
+                                <li class="mt-[10px]"><a href="{{ url('/healthcare') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Healthcare</a></li>
+                                <li class="mt-[10px]"><a href="{{ url('/finance') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Finance & Banking</a></li>
+                                <li class="mt-[10px]"><a href="{{ url('/terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms & Privacy</a></li>
                             </ul>
                         </div>
 
