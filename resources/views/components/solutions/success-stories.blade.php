@@ -73,7 +73,7 @@ if (str_contains($currentPath, 'spa-massage')) {
                 ],
                 [
                     'quote' => '24/7 lead capture changed our business. We\'re getting qualified leads even while sleeping!',
-                    'name' => 'Mohammad Hassan',
+                    'name' => 'Mona Abbasi',
                     'company' => 'DIFC Real Estate',
                     'image' => 'assets/images/client/03.jpg'
                 ]

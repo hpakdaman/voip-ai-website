@@ -1,2 +1,42 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow legal pages from search engine indexing
+Disallow: /terms
+Disallow: /privacy
+Disallow: /privacy-portal
+
+# Disallow admin and development files
+Disallow: /admin/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /.env
+
+# Allow important business pages
+Allow: /
+Allow: /about
+Allow: /features  
+Allow: /pricing
+Allow: /contact-us
+Allow: /solutions/
+
+# Allow solution landing pages
+Allow: /solutions/real-estate
+Allow: /solutions/spa-massage
+
+# Sitemap locations
+Sitemap: https://sawtic.com/sitemap.xml
+Sitemap: https://sawtic.com/sitemap-solutions.xml
+
+# Crawl delay for respectful crawling (1 second)
+Crawl-delay: 1
+
+# Additional search engine specific rules
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot  
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 1

@@ -47,7 +47,7 @@
             <!-- Action Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <!-- Go Home Button -->
-                <a href="{{ url('/') }}" 
+                <a href="{{ route('home') }}" 
                    class="px-8 py-4 rounded-xl text-white font-semibold text-lg"
                    style="background: var(--primary-gradient);">
                     <div class="flex items-center space-x-3">
@@ -59,7 +59,7 @@
                 </a>
 
                 <!-- Contact Support Button -->
-                <a href="{{ url('/contact-us') }}" 
+                <a href="{{ route('contact-us') }}" 
                    class="px-8 py-4 rounded-xl border-2 text-white font-semibold text-lg"
                    style="border-color: var(--voip-link); color: var(--voip-link);">
                     <div class="flex items-center space-x-3">
@@ -73,9 +73,8 @@
 
             <!-- Quick Links -->
             <div class="mt-12 pt-8 border-t border-slate-700">
-                <p class="text-slate-400 mb-6 text-sm uppercase tracking-wider font-medium">Or explore these popular sections:</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-md mx-auto">
-                    <a href="{{ url('/features') }}" 
+                    <a href="{{ route('features') }}" 
                        class="p-4 rounded-lg border border-slate-700" 
                        style="color: var(--voip-link);">
                         <div class="flex flex-col items-center text-center space-y-2">
@@ -86,7 +85,7 @@
                         </div>
                     </a>
                     
-                    <a href="{{ url('/pricing') }}" 
+                    <a href="{{ route('pricing') }}" 
                        class="p-4 rounded-lg border border-slate-700" 
                        style="color: var(--voip-link);">
                         <div class="flex flex-col items-center text-center space-y-2">
@@ -97,7 +96,7 @@
                         </div>
                     </a>
                     
-                    <a href="{{ url('/about') }}" 
+                    <a href="{{ route('about') }}" 
                        class="p-4 rounded-lg border border-slate-700" 
                        style="color: var(--voip-link);">
                         <div class="flex flex-col items-center text-center space-y-2">

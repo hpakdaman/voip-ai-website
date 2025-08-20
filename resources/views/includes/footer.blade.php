@@ -6,7 +6,7 @@
                 <div class="py-[60px] px-0">
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
-                            <a href="{{ url('/') }}" class="text-[22px] focus:outline-none">
+                            <a href="{{ route('home') }}" class="text-[22px] focus:outline-none">
                                 <img src="{{ asset('assets/images/sawtic-white-logo-min.svg') }}" class="h-8" alt="Sawtic">
                             </a>
                             <p class="mt-6 text-gray-300">Transforming customer service with intelligent AI call center solutions that work 24/7 for your business.</p>
@@ -20,20 +20,20 @@
                         <div class="lg:col-span-2 md:col-span-4">
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
                             <ul class="list-none footer-list mt-6">
-                                <li><a href="{{ url('/about') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> About Us</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/features') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Features</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/pricing') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Pricing</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/contact-us') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Contact Us</a></li>
+                                <li><a href="{{ route('about') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> About Us</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('features') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Features</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('pricing') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Pricing</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('contact-us') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Contact Us</a></li>
                             </ul>
                         </div>
 
                         <div class="lg:col-span-3 md:col-span-4">
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Solutions</h5>
                             <ul class="list-none footer-list mt-6">
-                                <li><a href="{{ url('/solutions/real-estate') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Real Estate</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/solutions/spa-massage') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Spa & Massage</a></li>
+                                <li><a href="{{ route('solutions.real-estate') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Real Estate</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('solutions.spa-massage') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Spa & Massage</a></li>
                                 <li class="mt-[10px]"><a href="{{ url('/healthcare') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Healthcare</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms & Privacy</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms & Privacy</a></li>
                             </ul>
                         </div>
 
@@ -41,7 +41,7 @@
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Get Started</h5>
                             <p class="mt-6 text-gray-300">Ready to transform your customer service? Contact us for a demo.</p>
                             <div class="mt-6">
-                                <a href="{{ url('/contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center hover-voip-button text-white rounded-md" style="background-color: var(--voip-primary); border-color: var(--voip-primary);">
+                                <a href="{{ route('contact-us') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center hover-voip-button text-white rounded-md" style="background-color: var(--voip-primary); border-color: var(--voip-primary);">
                                     Request Demo
                                 </a>
                             </div>
