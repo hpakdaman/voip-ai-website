@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'AI Call Center for Real Estate - Never Miss Another Lead | Sawtic Dubai')
+@section('title', 'AI Call Agents for Real Estate | Sawtic Smart Call Center Solutions UAE')
 @section('content')
 
 {{-- Hero Section with Voice Demo --}}
