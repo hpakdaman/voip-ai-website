@@ -19,13 +19,13 @@ echo -e "${BLUE}======================================${NC}"
 COMMIT_MESSAGE="$1"
 if [ -z "$COMMIT_MESSAGE" ]; then
     echo -e "${RED}❌ Error: Deployment message required${NC}"
-    echo -e "${YELLOW}💡 Usage: ./scripts/deploy-with-merge.sh \"Production deployment message\"${NC}"
+    echo -e "${YELLOW}💡 Usage: ./deploy-with-merge.sh \"Production deployment message\"${NC}"
     exit 1
 fi
 
 # Step 1: Merge dev to main
 echo -e "${BLUE}📋 Step 1: Merging dev to production...${NC}"
-./scripts/merge-to-production.sh "$COMMIT_MESSAGE"
+./merge-to-production.sh "$COMMIT_MESSAGE"
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Production merge failed. Deployment cancelled.${NC}"
@@ -36,7 +36,7 @@ echo -e "${GREEN}✅ Step 1 completed: dev merged to main${NC}"
 
 # Step 2: Deploy to production server
 echo -e "${BLUE}📋 Step 2: Deploying to production server...${NC}"
-./scripts/deploy-production.sh
+./deploy-production.sh
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Production deployment failed.${NC}"

@@ -1,0 +1,43 @@
+{
+    "section": {
+        "industry_badge": "Real Estate AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Real Estate Lead",
+        "subtitle": "Dubai's #1 AI call center handles property inquiries, showing bookings, and lead qualification 24/7 - even when you're showing other properties.",
+        "key_benefits": [
+            "Qualify leads instantly while you're in showings",
+            "Book property viewings automatically 24/7", 
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "500+",
+                "label": "UAE Properties"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live Property Inquiry Demo",
+        "description": "Real conversation with AI agent handling Dubai Marina property inquiry",
+        "duration": "45 seconds",
+        "audio_file": "property-inquiry-demo.mp3",
+        "transcript": "Caller: Hi, I'm interested in the 2-bedroom villa in Dubai Marina that's listed for AED 2.8 million. Is it still available?\n\nAI Agent: Good evening! Yes, the stunning 2-bedroom villa in Dubai Marina is still available. It features a private balcony with marina views, premium finishes, and access to world-class amenities. Would you like to schedule a viewing? I have availability tomorrow at 2 PM or 5 PM.\n\nCaller: The 2 PM slot works perfectly. Can you also tell me about the parking and maintenance fees?\n\nAI Agent: Excellent! I've booked your viewing for tomorrow at 2 PM. The property includes 2 parking spaces and the monthly maintenance fee is AED 850. I'm sending you a confirmation SMS with all the details and the property manager's direct contact. See you tomorrow!"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "industry": "real-estate",
+        "target_audience": "UAE real estate agencies, property developers, real estate brokers",
+        "conversion_goals": ["demo_booking", "phone_calls", "lead_generation"]
+    }
+}

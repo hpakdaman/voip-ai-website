@@ -1,0 +1,175 @@
+{
+    "section": {
+        "badge": "AI Real Estate Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Real Estate Inside Out",
+        "description": "Advanced AI trained specifically for UAE real estate market, property laws, and client management."
+    },
+    "capabilities": [
+        {
+            "title": "Property Information Expert",
+            "description": "Instantly provides detailed property information, pricing, availability, and neighborhood insights for any listing in your database.",
+            "icon": "uil-home",
+            "is_premium": false,
+            "features": [
+                "Complete property details",
+                "Neighborhood analytics",
+                "Market comparisons",
+                "Investment ROI calculations",
+                "Mortgage assistance"
+            ],
+            "metric": "99%",
+            "metric_label": "Data Accuracy",
+            "delay": "0.2s"
+        },
+        {
+            "title": "Smart Lead Qualification",
+            "description": "AI conducts intelligent pre-screening interviews, identifying serious buyers and their specific requirements before connecting to you.",
+            "icon": "uil-user-check",
+            "is_premium": false,
+            "features": [
+                "Budget qualification",
+                "Timeline assessment",
+                "Property preferences",
+                "Financing pre-approval",
+                "Urgency scoring"
+            ],
+            "metric": "85%",
+            "metric_label": "Qualified Rate",
+            "delay": "0.3s"
+        },
+        {
+            "title": "Automated Booking System",
+            "description": "Seamlessly books property viewings, coordinates schedules, and manages appointments with automatic confirmations and reminders.",
+            "icon": "uil-calendar-alt",
+            "is_premium": true,
+            "features": [
+                "Real-time calendar sync",
+                "Double booking prevention",
+                "SMS confirmations",
+                "Reminder notifications",
+                "Rescheduling management"
+            ],
+            "metric": "95%",
+            "metric_label": "Show-up Rate",
+            "delay": "0.4s"
+        },
+        {
+            "title": "Market Intelligence",
+            "description": "Provides real-time market insights, comparable sales data, and investment analysis to help close more deals.",
+            "icon": "uil-chart-growth",
+            "is_premium": true,
+            "features": [
+                "Comparable sales data",
+                "Market trend analysis",
+                "Investment projections",
+                "ROI calculations",
+                "Area development insights"
+            ],
+            "metric": "92%",
+            "metric_label": "Market Accuracy",
+            "delay": "0.5s"
+        },
+        {
+            "title": "Follow-up Automation",
+            "description": "Nurtures leads with intelligent follow-up sequences, property recommendations, and personalized communication.",
+            "icon": "uil-envelope-heart",
+            "is_premium": true,
+            "features": [
+                "Automated follow-ups",
+                "Property recommendations",
+                "Market updates",
+                "Personalized messaging",
+                "Conversion tracking"
+            ],
+            "metric": "78%",
+            "metric_label": "Response Rate",
+            "delay": "0.6s"
+        },
+        {
+            "title": "Multi-Language Fluency",
+            "description": "Communicates perfectly in Arabic and English, adapting tone and terminology for UAE's diverse real estate market.",
+            "icon": "uil-comments",
+            "is_premium": false,
+            "features": [
+                "Fluent Arabic & English",
+                "Cultural sensitivity",
+                "Local terminology",
+                "Professional tone",
+                "Accent adaptation"
+            ],
+            "metric": "97%",
+            "metric_label": "Communication Score",
+            "delay": "0.7s"
+        }
+    ],
+    "integrations": [
+        {
+            "name": "Dubizzle",
+            "type": "Property Portal",
+            "icon": "uil-estate"
+        },
+        {
+            "name": "Bayut",
+            "type": "Listing Platform",
+            "icon": "uil-building"
+        },
+        {
+            "name": "Property Finder",
+            "type": "Search Portal",
+            "icon": "uil-search"
+        },
+        {
+            "name": "Salesforce",
+            "type": "CRM System",
+            "icon": "uil-database"
+        },
+        {
+            "name": "HubSpot",
+            "type": "Marketing Hub",
+            "icon": "uil-chart-pie"
+        },
+        {
+            "name": "Zoho CRM",
+            "type": "Contact Management",
+            "icon": "uil-users-alt"
+        },
+        {
+            "name": "Google Calendar",
+            "type": "Scheduling",
+            "icon": "uil-calendar-alt"
+        },
+        {
+            "name": "WhatsApp Business",
+            "type": "Messaging",
+            "icon": "uil-whatsapp"
+        },
+        {
+            "name": "Pipedrive",
+            "type": "Sales Pipeline",
+            "icon": "uil-process"
+        },
+        {
+            "name": "Mailchimp",
+            "type": "Email Marketing",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "Slack",
+            "type": "Team Communication",
+            "icon": "uil-slack"
+        },
+        {
+            "name": "Microsoft Teams",
+            "type": "Collaboration",
+            "icon": "uil-microsoft"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE real estate market"
+    }
+}

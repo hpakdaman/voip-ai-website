@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'VoIP AI Features - Complete Feature Overview | Dubai VoIP Solutions')
+@section('title', 'Features | Sawtic AI Call Agents & Call Center Solutions in UAE')
 @section('content')
 
 {{-- Hero Section --}}

@@ -1,0 +1,84 @@
+{
+    "section": {
+        "badge": "Real Estate Challenges",
+        "title": "Stop Losing Leads While You're",
+        "highlighted": "Showing Properties",
+        "description": "Every missed call is a lost commission. See how Sawtic AI transforms real estate challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "Missed Calls During Showings",
+            "description": "You're showing a property but missing 5 other potential leads calling about different listings. By the time you call back, they've already contacted competitors.",
+            "icon": "uil-phone-slash",
+            "impact": "65% of leads lost to competitors"
+        },
+        {
+            "title": "After-Hours Inquiries Ignored",
+            "description": "Properties get viewed on weekends and evenings, but your office is closed. Hot leads slip away because they can't reach anyone immediately.",
+            "icon": "uil-clock",
+            "impact": "40% of calls happen after hours"
+        },
+        {
+            "title": "Lead Qualification Bottleneck",
+            "description": "You spend hours on unqualified leads while serious buyers can't get through. Time wasted on tire-kickers instead of genuine prospects.",
+            "icon": "uil-user-times",
+            "impact": "70% of time wasted on bad leads"
+        },
+        {
+            "title": "Language Barriers",
+            "description": "Dubai's diverse market speaks Arabic, English, and more. Missing opportunities because you can't communicate effectively with all prospects.",
+            "icon": "uil-comment-slash",
+            "impact": "30% of market unreachable"
+        },
+        {
+            "title": "Manual Booking Chaos",
+            "description": "Double bookings, missed appointments, and scheduling conflicts create unprofessional experiences that cost you repeat business and referrals.",
+            "icon": "uil-calendar-slash",
+            "impact": "25% appointment no-shows"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "Never Miss Another Lead",
+            "description": "AI agent handles all incoming calls instantly while you focus on current clients. Every lead gets immediate, professional response.",
+            "icon": "uil-phone",
+            "benefit": "100% call answer rate guaranteed",
+            "demo_available": true
+        },
+        {
+            "title": "24/7 Professional Service", 
+            "description": "Your AI agent works around the clock, qualifying leads, providing property information, and booking viewings even at midnight.",
+            "icon": "uil-clock-three",
+            "benefit": "3x more leads captured",
+            "demo_available": true
+        },
+        {
+            "title": "Instant Lead Qualification",
+            "description": "AI pre-screens every caller with intelligent questions, routing only qualified, ready-to-buy prospects to your phone.",
+            "icon": "uil-user-check",
+            "benefit": "80% time saved on unqualified leads",
+            "demo_available": true
+        },
+        {
+            "title": "Fluent Arabic & English",
+            "description": "Communicate perfectly with all UAE prospects in their preferred language, expanding your market reach and closing more deals.",
+            "icon": "uil-comments",
+            "benefit": "45% more market coverage",
+            "demo_available": true
+        },
+        {
+            "title": "Smart Calendar Integration",
+            "description": "Automatic viewing bookings synced with your calendar, with SMS confirmations and reminders to eliminate no-shows.",
+            "icon": "uil-calendar-alt",
+            "benefit": "90% appointment attendance rate",
+            "demo_available": false
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "total_problems": 5,
+        "total_solutions": 5,
+        "conversion_focus": "problem_awareness"
+    }
+}

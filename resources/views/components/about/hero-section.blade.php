@@ -25,7 +25,7 @@ try {
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             
             <!-- Left Content -->
-            <div class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+            <div class="order-1 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Company Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
                     <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
@@ -66,13 +66,13 @@ try {
             </div>
             
             <!-- Right Image -->
-            <div class="relative wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+            <div class="order-2 lg:order-2 relative wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Team Image -->
                     <img src="{{ asset('assets/images/about/about02.png') }}" 
                          alt="VoIP AI Solutions Dubai Professional Team" 
-                         class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl">
+                         class="w-full h-[500px] lg:h-[600px] object-contain rounded-2xl">
                     
                     <!-- Image Overlay with Company Info - Covers bottom -->
                     <div class="absolute bottom-0 left-0 right-0 p-6 rounded-b-2xl" style="background: linear-gradient(to top, rgba(12, 27, 39, 0.95) 0%, rgba(12, 27, 39, 0.8) 50%, transparent 100%); backdrop-filter: blur(15px);">
@@ -89,7 +89,7 @@ try {
                 </div>
                 
                 <!-- Floating Achievement Badge -->
-                <div class="absolute -top-6 -right-6 p-4 rounded-2xl border border-white/20" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 20px 40px rgba(30, 192, 141, 0.3);">
+                <div class="absolute top-0 right-0 lg:-top-6 lg:-right-6 p-4 rounded-2xl border border-white/20" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 20px 40px rgba(30, 192, 141, 0.3);">
                     <div class="text-center">
                         <i class="uil uil-trophy text-3xl text-white mb-2"></i>
                         <div class="text-white font-bold text-sm">Dubai Chamber</div>
@@ -98,7 +98,7 @@ try {
                 </div>
                 
                 <!-- Floating Stats -->
-                <div class="absolute -bottom-6 -left-6 p-4 rounded-2xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
+                <div class="absolute bottom-24 left-0 lg:-bottom-6 lg:-left-6 p-4 rounded-2xl border border-white/20" style="background: rgba(12, 27, 39, 0.95); backdrop-filter: blur(10px);">
                     <div class="flex items-center space-x-3">
                         <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
                         <div>

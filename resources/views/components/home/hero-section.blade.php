@@ -6,13 +6,13 @@
             <div class="lg:col-span-7">
                 <div class="lg:me-6 lg:text-start text-center">
                     <h1 class="font-bold lg:leading-normal leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 text-white overflow-hidden hero-heading-fixed">
-                        Access powerful AI <br>For 
-                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='[ "VoIP Solutions", "Customer Service", "Business Growth" ]'> 
+                        AI-Powered Call Agents <br>For 
+                        <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='["Smart Business Communication", "Real-Time Customer Support", "24/7 Virtual Reception" ]'> 
                             <span class="wrap"></span> 
                         </span>
                     </h1>
 
-                    <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300">Transform your business communications with AI-powered VoIP solutions designed for the modern enterprise.</p>
+                    <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300">Enhance customer experience and streamline operations with AI-powered call agents built for modern UAE businesses.</p>
                 
                     <div class="mt-8 lg:text-start text-center">
                         <a href="{{ url('/contact-us') }}" class="py-3 px-8 inline-block font-semibold tracking-wide align-middle duration-500 text-lg text-center text-white rounded-full hover-voip-button transition-all hover:scale-105 hover:shadow-lg" style="background-color: var(--voip-primary);">

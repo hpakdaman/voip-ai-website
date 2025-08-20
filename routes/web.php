@@ -29,5 +29,12 @@ if ($maintenanceMode) {
     Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
     Route::get('/privacy-portal', [HomeController::class, 'privacyPortal'])->name('privacy-portal');
 
+    // Solutions Landing Pages
+    Route::get('/solutions/real-estate', [HomeController::class, 'realEstate'])->name('solutions.real-estate');
+    
+    // Additional solutions pages will be added here as they are created
+    // Route::get('/solutions/medical-spa', [HomeController::class, 'medicalSpa'])->name('solutions.medical-spa');
+    // Route::get('/solutions/restaurants', [HomeController::class, 'restaurants'])->name('solutions.restaurants');
+
     // Additional VoIP-specific routes (add as needed)
 }
