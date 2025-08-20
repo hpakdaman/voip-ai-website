@@ -9,9 +9,8 @@ if (str_contains($currentPath, 'spa-massage')) {
 }
 
 $heroData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/hero.json")), true);
-$heroStats = $heroData['hero_stats'] ?? [];
-$demoAudio = $heroData['demo_audio'] ?? [];
-$ctaButtons = $heroData['cta_buttons'] ?? [];
+$sectionData = $heroData['section'] ?? [];
+$voiceDemo = $heroData['voice_demo'] ?? [];
 @endphp
 
 <!-- Hero Section with Voice Demo - Real Estate Focus -->
@@ -30,42 +29,52 @@ $ctaButtons = $heroData['cta_buttons'] ?? [];
             <div class="order-1 lg:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                 <!-- Industry Badge -->
                 <div class="inline-flex items-center px-6 py-3 rounded-full border border-white/20 mb-6" style="background: rgba(30, 192, 141, 0.1); backdrop-filter: blur(10px);">
+                    @if($industry === 'spa-massage')
                     <i class="uil uil-spa text-sm mr-2" style="color: var(--voip-link);"></i>
-                    <span class="text-white font-medium">{{ $heroData['badge'] ?? 'AI Business Solutions' }}</span>
+                    @else
+                    <i class="uil uil-building text-sm mr-2" style="color: var(--voip-link);"></i>
+                    @endif
+                    <span class="text-white font-medium">{{ $sectionData['industry_badge'] ?? ($industry === 'spa-massage' ? 'Spa & Wellness AI Solutions' : 'Real Estate AI Solutions') }}</span>
                 </div>
                 
                 <!-- Main Heading -->
                 <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                    {{ $heroData['title'] ?? 'AI Call Agents for Your Business' }}
+                    {{ $sectionData['main_title'] ?? 'Never Miss Another' }}
+                    <span style="color: var(--voip-link);">{{ $sectionData['highlighted_word'] ?? ($industry === 'spa-massage' ? 'Spa Booking' : 'Real Estate Lead') }}</span>
                 </h1>
                 
                 <!-- Subtitle -->
                 <p class="text-slate-300 text-xl leading-relaxed mb-8">
-                    {{ $heroData['subtitle'] ?? 'Transform your customer experience with intelligent AI agents.' }}
+                    {{ $sectionData['subtitle'] ?? ($industry === 'spa-massage' ? 'Dubai\'s #1 AI call center handles spa bookings, treatment inquiries, and client consultations 24/7 - even when you\'re with other clients.' : 'Dubai\'s #1 AI call center handles property inquiries, showing bookings, and lead qualification 24/7 - even when you\'re showing other properties.') }}
                 </p>
                 
-                <p class="text-slate-300 text-lg leading-relaxed mb-8">
-                    {{ $heroData['description'] ?? 'Handle calls, bookings, and customer service 24/7.' }}
-                </p>
-                
+                <!-- Key Benefits List -->
+                <div class="space-y-4 mb-10">
+                    @foreach($sectionData['key_benefits'] ?? [] as $benefit)
+                    <div class="flex items-start space-x-4">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center mt-1" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                            <i class="uil uil-check text-xs text-white"></i>
+                        </div>
+                        <span class="text-slate-300 text-lg">{{ $benefit }}</span>
+                    </div>
+                    @endforeach
+                </div>
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    @foreach($ctaButtons as $button)
-                    <a href="{{ $button['url'] ?? '#' }}" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 {{ $button['style'] === 'primary' ? 'primary-cta' : 'secondary-cta' }}" data-cta-track="hero-{{ strtolower(str_replace(' ', '-', $button['text'])) }}">
-                        @if($button['style'] === 'primary')
+                    <a href="#voice-demo" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="hero-listen-demo">
                         <i class="uil uil-play text-lg mr-3"></i>
-                        @else
-                        <i class="uil uil-phone text-lg mr-3"></i>
-                        @endif
-                        {{ $button['text'] ?? 'Learn More' }}
+                        Listen to Live Demo
                     </a>
-                    @endforeach
+                    <a href="tel:+97148647245" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="hero-call-now">
+                        <i class="uil uil-phone text-lg mr-3"></i>
+                        Call Now: +971 4 864 7245
+                    </a>
                 </div>
                 
                 <!-- Trust Indicators -->
                 <div class="grid grid-cols-3 gap-6">
-                    @foreach($heroStats as $stat)
+                    @foreach($sectionData['trust_stats'] ?? [] as $stat)
                     <div class="text-center">
                         <div class="text-2xl font-bold text-white mb-1">{{ $stat['number'] ?? '0' }}</div>
                         <div class="text-slate-400 text-sm">{{ $stat['label'] ?? 'Metric' }}</div>
@@ -109,7 +118,11 @@ $ctaButtons = $heroData['cta_buttons'] ?? [];
                         <!-- Audio Player -->
                         <div class="voice-demo-player">
                             <audio controls class="w-full" data-demo-type="{{ str_contains(request()->path(), 'spa-massage') ? 'spa-booking' : 'property-inquiry' }}" style="accent-color: var(--voip-link);">
-                                <source src="{{ asset($demoAudio['file_path'] ?? 'assets/audio/solutions/demo.mp3') }}" type="audio/mpeg">
+                                @if($industry === 'spa-massage')
+                                <source src="{{ asset('assets/audio/solutions/spa-massage/spa-booking-demo.mp3') }}" type="audio/mpeg">
+                                @else
+                                <source src="{{ asset('assets/audio/solutions/real-estate/property-inquiry-demo.mp3') }}" type="audio/mpeg">
+                                @endif
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
