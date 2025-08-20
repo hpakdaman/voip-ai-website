@@ -18,15 +18,7 @@
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <!-- Error Code -->
         <div class="mb-8 relative">
-            <!-- Background Image -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-10">
-                <img src="{{ asset('assets/images/error.png') }}" 
-                     alt="Error illustration" 
-                     class="w-64 h-64 md:w-80 md:h-80 object-contain">
-            </div>
-            
-            <!-- 404 Text -->
-            <div class="text-[12rem] md:text-[16rem] font-bold opacity-20 select-none relative z-10"
+            <div class="text-[12rem] md:text-[16rem] font-bold opacity-20 select-none"
                  style="color: var(--voip-link);">
                 404
             </div>
