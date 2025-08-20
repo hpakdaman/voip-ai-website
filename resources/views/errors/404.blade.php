@@ -18,8 +18,8 @@
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <!-- Error Code -->
         <div class="mb-8 relative">
-            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-20 select-none"
-                 style="background: var(--primary-gradient);">
+            <div class="text-[12rem] md:text-[16rem] font-bold opacity-20 select-none"
+                 style="color: var(--voip-link);">
                 404
             </div>
         </div>
@@ -33,19 +33,18 @@
             
             <!-- Subtitle -->
             <p class="text-xl md:text-2xl text-slate-300 mb-6">
-                The page you're looking for seems to have vanished into the digital void
+                This page seems to be taking an unscheduled break
             </p>
             
             <!-- Description -->
             <div class="max-w-2xl mx-auto">
                 <p class="text-lg text-slate-400 leading-relaxed mb-8">
-                    Don't worry, even the most advanced AI call centers occasionally lose a connection. 
-                    Let's get you back on track to discover our intelligent business automation solutions.
+                    Even our AI agents can't find this page! But don't worry, we'll help you navigate back to discovering our intelligent business automation solutions.
                 </p>
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
                 <!-- Go Home Button -->
                 <a href="{{ route('home') }}" 
                    class="px-8 py-4 rounded-xl text-white font-semibold text-lg"
@@ -71,43 +70,6 @@
                 </a>
             </div>
 
-            <!-- Quick Links -->
-            <div class="mt-12 pt-8 border-t border-slate-700">
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-md mx-auto">
-                    <a href="{{ route('features') }}" 
-                       class="p-4 rounded-lg border border-slate-700" 
-                       style="color: var(--voip-link);">
-                        <div class="flex flex-col items-center text-center space-y-2">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                            <span class="text-sm font-medium">AI Features</span>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ route('pricing') }}" 
-                       class="p-4 rounded-lg border border-slate-700" 
-                       style="color: var(--voip-link);">
-                        <div class="flex flex-col items-center text-center space-y-2">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-                            </svg>
-                            <span class="text-sm font-medium">Pricing Plans</span>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ route('about') }}" 
-                       class="p-4 rounded-lg border border-slate-700" 
-                       style="color: var(--voip-link);">
-                        <div class="flex flex-col items-center text-center space-y-2">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
-                            <span class="text-sm font-medium">About Sawtic</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </div>
