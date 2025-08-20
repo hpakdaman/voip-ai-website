@@ -1,0 +1,47 @@
+{
+    "section": {
+        "title": "Limited Time: Free Setup Worth",
+        "highlighted": "AED 5,000",
+        "description": "Transform your spa business with Sawtic AI call agents. Join 100+ UAE wellness centers already using our technology to boost bookings and client satisfaction.",
+        "urgency_text": "Don't miss appointments while you're with clients. Our AI never sleeps, never takes a break."
+    },
+    "benefits": [
+        "Never miss a spa appointment call again", 
+        "Handle health screenings and consultations professionally",
+        "Manage complex treatment bookings automatically",
+        "Provide 24/7 wellness support to your clients"
+    ],
+    "offer": {
+        "title": "🎯 Limited Time Offer", 
+        "value": "AED 5,000",
+        "description": "Free setup and onboarding - normally AED 5,000",
+        "conditions": "Valid until March 31st, 2025 • No contracts • Cancel anytime",
+        "urgency": "Only 15 spa businesses remaining this month"
+    },
+    "cta_buttons": [
+        {
+            "text": "Claim Your Free Setup",
+            "url": "/contact-us",
+            "style": "primary",
+            "icon": "uil-gift",
+            "tracking": "spa-massage-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245", 
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "spa-massage-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day satisfaction guarantee • Free cancellation • No setup fees",
+    "social_proof": "Trusted by 100+ UAE spa and wellness centers",
+    "background_image": "assets/images/spa/bg.jpg",
+    "metadata": {
+        "version": "1.0", 
+        "last_updated": "2025-01-20",
+        "industry": "spa-massage",
+        "conversion_type": "limited_offer_cta",
+        "offer_expires": "2025-03-31"
+    }
+}

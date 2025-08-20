@@ -29,8 +29,8 @@ $testimonials = $data['testimonials'] ?? [];
             <div class="grid lg:grid-cols-3 gap-6">
                 @foreach($testimonials as $index => $testimonial)
                 <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.15) + 0.1 }}s">
-                    <!-- Simple Testimonial Card -->
-                    <div class="p-6 rounded-xl text-center" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
+                    <!-- Simple Testimonial Card with Fixed Height -->
+                    <div class="h-80 p-6 rounded-xl text-center flex flex-col" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
                         
                         <!-- 5-Star Rating -->
                         <div class="flex items-center justify-center mb-4">
@@ -39,19 +39,22 @@ $testimonials = $data['testimonials'] ?? [];
                             @endfor
                         </div>
                         
-                        <!-- Short Quote -->
-                        <blockquote class="text-white text-lg leading-relaxed mb-6">
+                        <!-- Short Quote (Flexible Content) -->
+                        <blockquote class="text-white text-lg leading-relaxed mb-6 flex-1">
                             "{{ $testimonial['testimonial'] }}"
                         </blockquote>
                         
-                        <!-- Client Photo -->
-                        <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2" style="border-color: var(--voip-link);">
-                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover">
+                        <!-- Client Info (Stuck to Bottom) -->
+                        <div class="mt-auto">
+                            <!-- Client Photo -->
+                            <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2" style="border-color: var(--voip-link);">
+                                <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Client Name & Company -->
+                            <div class="text-white font-bold">{{ $testimonial['name'] }}</div>
+                            <div class="text-slate-400 text-sm">{{ $testimonial['company'] }}</div>
                         </div>
-                        
-                        <!-- Client Name & Company -->
-                        <div class="text-white font-bold">{{ $testimonial['name'] }}</div>
-                        <div class="text-slate-400 text-sm">{{ $testimonial['company'] }}</div>
                     </div>
                 </div>
                 @endforeach
