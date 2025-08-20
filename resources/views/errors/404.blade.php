@@ -26,8 +26,8 @@
             </div>
             
             <!-- 404 Text -->
-            <div class="text-[12rem] md:text-[16rem] font-bold text-transparent bg-clip-text opacity-30 select-none relative z-10"
-                 style="background: var(--primary-gradient);">
+            <div class="text-[12rem] md:text-[16rem] font-bold opacity-20 select-none relative z-10"
+                 style="color: var(--voip-link);">
                 404
             </div>
         </div>
