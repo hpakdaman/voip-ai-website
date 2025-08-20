@@ -348,6 +348,75 @@ resources/views/solutions/
 
 **This comprehensive solutions system will position Sawtic as the definitive AI solution provider for UAE businesses across all major industries.**
 
+## 🚨 CRITICAL: CSS File Management Guidelines
+
+### **FORBIDDEN: Never Write CSS in Blade Files**
+**ABSOLUTELY NEVER write `<style>` tags or inline CSS directly in Blade template files.**
+
+#### **❌ FORBIDDEN PRACTICES:**
+```blade
+<!-- NEVER DO THIS -->
+<style>
+.custom-class {
+    color: red;
+}
+</style>
+
+<!-- NEVER DO THIS -->
+<div style="color: red; background: blue;">Content</div>
+```
+
+#### **✅ REQUIRED CSS LOCATION:**
+**ALL custom CSS MUST be written in the appropriate CSS files:**
+
+1. **Main Styling**: `public/assets/css/voip-home.css`
+2. **Tailwind Utilities**: Use existing Tailwind classes when possible
+3. **Component-Specific**: Add to `voip-home.css` with proper naming
+
+#### **✅ PROPER CSS IMPLEMENTATION:**
+```css
+/* In public/assets/css/voip-home.css */
+
+/* Regular CSS classes */
+.custom-button {
+    background-color: var(--voip-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Responsive CSS with media queries when needed */
+@media (min-width: 900px) and (max-width: 1024px) {
+    .hero-heading-960 {
+        font-size: 2.25rem !important;
+        line-height: 2.5rem !important;
+    }
+}
+
+/* CSS Variables */
+:root {
+    --custom-color: #1ec08d;
+}
+```
+
+#### **✅ PROPER BLADE USAGE:**
+```blade
+<!-- Use CSS classes, not inline styles -->
+<h1 class="hero-heading-960 font-bold text-white">Title</h1>
+
+<!-- Use Tailwind utilities when possible -->
+<div class="bg-voip-primary text-white p-4">Content</div>
+```
+
+#### **CSS Organization Rules:**
+- ✅ **Separation of Concerns**: Keep styling separate from markup
+- ✅ **Maintainability**: Centralized CSS files for easier updates
+- ✅ **Performance**: Avoid inline styles that can't be cached
+- ✅ **Consistency**: Use CSS variables and Tailwind utilities
+- ✅ **Debugging**: Easier to debug and modify styles
+
+**This rule ensures clean, maintainable, and professional code architecture.**
+
 ## Git Workflow for Team Development
 
 ### **🌿 4-Branch Structure Overview**
