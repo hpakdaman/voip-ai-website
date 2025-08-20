@@ -1162,7 +1162,7 @@ The Sawtic website uses a custom color scheme defined in `public/assets/css/voip
 1. **Ask user to run project**: "Please run the project now to test the changes"
 2. **Wait for confirmation**: User runs `composer run dev` or visits site
 3. **Check logs**: "Now shall I check logs to see if any new errors occurred?"
-4. **Fix any issues**: Read `storage/logs/laravel.log` for new errors only
+4. **Fix any issues**: Read `storage/logs/laravel.log` for new errors only and after you fixed the issue remove the log file
 5. **Never skip this step**: Essential for maintaining project stability
 
 ## Additional Documentation
