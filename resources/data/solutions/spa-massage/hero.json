@@ -1,0 +1,68 @@
+{
+    "industry": "spa-massage",
+    "badge": "AI Spa & Wellness Assistant",
+    "title": "Never Miss an Appointment Again",
+    "subtitle": "24/7 AI call agents for spa and massage salon bookings",
+    "description": "Transform your spa's customer experience with intelligent AI agents that handle bookings, answer treatment questions, and manage client communications around the clock.",
+    "hero_stats": [
+        {
+            "number": "40%",
+            "label": "More Bookings",
+            "description": "Increase appointment bookings"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "description": "Never miss after-hours calls"
+        },
+        {
+            "number": "85%",
+            "label": "Show-up Rate",
+            "description": "Reduce no-shows with reminders"
+        }
+    ],
+    "demo_audio": {
+        "title": "Listen to Your AI Spa Receptionist",
+        "description": "Hear how our AI handles real spa appointment bookings with natural conversation",
+        "file_path": "/assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
+        "transcript": [
+            {
+                "speaker": "AI Agent",
+                "text": "Thank you for calling Serenity Spa. I'm Sarah, your virtual assistant. How may I help you today?"
+            },
+            {
+                "speaker": "Client",
+                "text": "Hi, I'd like to book a massage appointment for this weekend."
+            },
+            {
+                "speaker": "AI Agent",
+                "text": "I'd be happy to help you book a massage. We have several options available - Swedish, deep tissue, hot stone, or aromatherapy massage. Do you have a preference?"
+            },
+            {
+                "speaker": "Client", 
+                "text": "I think a deep tissue massage would be perfect."
+            },
+            {
+                "speaker": "AI Agent",
+                "text": "Excellent choice! Our deep tissue massage is 60 minutes and costs 280 AED. I have availability on Saturday at 2 PM or Sunday at 11 AM. Which works better for you?"
+            }
+        ]
+    },
+    "cta_buttons": [
+        {
+            "text": "Book Free Demo",
+            "url": "/contact-us",
+            "style": "primary"
+        },
+        {
+            "text": "View Pricing",
+            "url": "/pricing",
+            "style": "secondary"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry_focus": "spa and massage salons"
+    }
+}

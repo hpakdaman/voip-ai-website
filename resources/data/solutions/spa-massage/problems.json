@@ -1,0 +1,121 @@
+{
+    "section": {
+        "title": "Common Spa & Massage Salon Challenges",
+        "description": "See how Sawtic AI solves the biggest operational challenges facing wellness businesses in the UAE"
+    },
+    "problems": [
+        {
+            "id": 1,
+            "title": "Missed Appointment Calls",
+            "description": "Clients calling during treatments can't be answered, leading to lost bookings",
+            "icon": "uil-phone-times",
+            "impact": "30% revenue loss",
+            "pain_points": [
+                "Therapists can't answer phones during sessions",
+                "After-hours calls go to voicemail",
+                "Weekend bookings missed",
+                "Emergency cancellations not handled"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Treatment Questions & Information",
+            "description": "Clients need detailed information about services, pricing, and preparation",
+            "icon": "uil-question-circle",
+            "impact": "45% inquiry abandonment",
+            "pain_points": [
+                "Complex treatment explanations needed",
+                "Pricing questions for packages",
+                "Pre-treatment preparation instructions",
+                "Health condition consultations required"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "High No-Show Rates",
+            "description": "Clients forget appointments without proper reminder systems",
+            "icon": "uil-calendar-slash",
+            "impact": "25% no-show rate",
+            "pain_points": [
+                "No automated confirmation system",
+                "Missed reminder calls",
+                "Last-minute cancellations not filled",
+                "Double-booking risks"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Scheduling Conflicts",
+            "description": "Manual booking systems lead to double bookings and confusion",
+            "icon": "uil-schedule",
+            "impact": "15% booking errors",
+            "pain_points": [
+                "Paper-based appointment books",
+                "Multiple therapist schedules to manage",
+                "Room availability coordination",
+                "Special request accommodations"
+            ]
+        }
+    ],
+    "solutions": [
+        {
+            "id": 1,
+            "title": "24/7 Smart Booking System",
+            "description": "AI handles all appointment calls with instant availability checking",
+            "icon": "uil-phone",
+            "benefits": [
+                "Never miss a booking call again",
+                "Handle multiple calls simultaneously",
+                "After-hours booking capability",
+                "Real-time calendar integration"
+            ],
+            "result": "40% increase in bookings"
+        },
+        {
+            "id": 2,
+            "title": "Treatment Expert Assistant",
+            "description": "AI provides detailed service information and personalized recommendations",
+            "icon": "uil-brain",
+            "benefits": [
+                "Comprehensive treatment explanations",
+                "Personalized service recommendations",
+                "Instant pricing and package information",
+                "Health screening and consultation"
+            ],
+            "result": "60% better conversion"
+        },
+        {
+            "id": 3,
+            "title": "Automated Reminders & Confirmations",
+            "description": "Smart reminder system reduces no-shows with multi-channel notifications",
+            "icon": "uil-bell",
+            "benefits": [
+                "Automated appointment confirmations",
+                "Multi-stage reminder system",
+                "SMS and call reminders",
+                "Last-minute rebooking for cancellations"
+            ],
+            "result": "85% show-up rate"
+        },
+        {
+            "id": 4,
+            "title": "Intelligent Schedule Management",
+            "description": "AI prevents conflicts and optimizes therapist and room scheduling",
+            "icon": "uil-calendar-alt",
+            "benefits": [
+                "Real-time availability checking",
+                "Multi-therapist coordination",
+                "Room and equipment scheduling",
+                "Special request handling"
+            ],
+            "result": "95% booking accuracy"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "problem_count": 4,
+        "solution_count": 4,
+        "industry": "spa and massage wellness"
+    }
+}

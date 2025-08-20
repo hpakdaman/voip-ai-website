@@ -1,0 +1,145 @@
+{
+    "section": {
+        "title": "Hear Your AI Spa Assistant in Action",
+        "description": "Listen to real conversations showcasing how our AI handles various spa and wellness scenarios with natural, professional communication."
+    },
+    "voice_demos": [
+        {
+            "id": 1,
+            "title": "Appointment Booking",
+            "description": "AI handles a new client booking a relaxation massage",
+            "duration": "45 seconds",
+            "scenario": "New client booking",
+            "file_path": "/assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Thank you for calling Serenity Spa. I'm Sarah, your virtual assistant. How may I help you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "Hi, I'd like to book a massage appointment for this weekend.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent", 
+                    "text": "I'd be happy to help you book a massage. We have Swedish, deep tissue, hot stone, and aromatherapy massages available. Do you have a preference?",
+                    "timestamp": "0:12"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "What would you recommend for stress relief?",
+                    "timestamp": "0:20"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "For stress relief, I'd recommend our aromatherapy massage with lavender essential oils. It's 60 minutes for 280 AED and perfect for relaxation. I have availability Saturday at 2 PM or Sunday at 11 AM.",
+                    "timestamp": "0:24"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Treatment Information",
+            "description": "Client asking about facial treatments and packages",
+            "duration": "38 seconds", 
+            "scenario": "Service inquiry",
+            "file_path": "/assets/audio/solutions/spa-massage/treatment-inquiry-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Good morning! This is Wellness Oasis Spa. How can I assist you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "I'm interested in your facial treatments. What do you offer for anti-aging?",
+                    "timestamp": "0:06"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "We have several excellent anti-aging options! Our signature Gold Collagen Facial is very popular - it includes deep cleansing, collagen mask, and LED light therapy for 420 AED. We also offer our Vitamin C Brightening Facial for 350 AED.",
+                    "timestamp": "0:12"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "Do you have any package deals?",
+                    "timestamp": "0:25"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Yes! Our 'Glow & Relax' package combines the Gold Collagen Facial with a 30-minute relaxation massage for only 580 AED - you save 120 AED compared to booking separately.",
+                    "timestamp": "0:28"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Appointment Confirmation",
+            "description": "AI confirming and providing pre-treatment instructions",
+            "duration": "32 seconds",
+            "scenario": "Appointment reminder",
+            "file_path": "/assets/audio/solutions/spa-massage/appointment-confirmation-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Hello Mrs. Ahmed, this is Sarah from Serenity Spa calling to confirm your hot stone massage appointment tomorrow at 3 PM with therapist Layla.",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "Yes, that's confirmed. Anything I need to prepare?",
+                    "timestamp": "0:10"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Perfect! Please arrive 15 minutes early for check-in. Avoid heavy meals 2 hours before your treatment, and let us know if you have any new health conditions. We'll provide robes and slippers. Looking forward to seeing you!",
+                    "timestamp": "0:14"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Health Screening",
+            "description": "AI conducting health assessment for new client",
+            "duration": "42 seconds",
+            "scenario": "Health consultation", 
+            "file_path": "/assets/audio/solutions/spa-massage/health-screening-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Before we book your deep tissue massage, I need to ask a few quick health questions to ensure your safety and comfort.",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "Of course, go ahead.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Do you have any injuries, chronic pain, or are you taking any medications? Also, is this your first deep tissue massage?",
+                    "timestamp": "0:10"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "I have some lower back tension from desk work, but no injuries. And yes, it's my first time.",
+                    "timestamp": "0:18"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Perfect! I'll note that for your therapist. They'll start gently and adjust pressure based on your comfort. Deep tissue is excellent for desk-related tension. Let's book you with our specialist, Amira.",
+                    "timestamp": "0:25"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_demos": 4,
+        "industry": "spa and massage wellness",
+        "demo_types": ["booking", "inquiry", "confirmation", "screening"]
+    }
+}

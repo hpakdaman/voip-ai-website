@@ -1,5 +1,14 @@
 @php
-$problemsData = json_decode(file_get_contents(resource_path('data/solutions/real-estate/problems.json')), true);
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+} elseif (str_contains($currentPath, 'real-estate')) {
+    $industry = 'real-estate';
+}
+
+$problemsData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/problems.json")), true);
 $sectionData = $problemsData['section'] ?? [];
 $problems = $problemsData['problems'] ?? [];
 $solutions = $problemsData['solutions'] ?? [];
@@ -120,8 +129,16 @@ $solutions = $problemsData['solutions'] ?? [];
         <!-- Bottom CTA -->
         <div class="text-center mt-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="max-w-2xl mx-auto">
-                <h3 class="text-2xl font-bold text-white mb-4">Ready to Transform Your Real Estate Business?</h3>
-                <p class="text-slate-300 mb-8">Join 500+ UAE real estate professionals who never miss another lead</p>
+                @php
+                $ctaTitle = 'Ready to Transform Your Real Estate Business?';
+                $ctaDesc = 'Join 500+ UAE real estate professionals who never miss another lead';
+                if (str_contains(request()->path(), 'spa-massage')) {
+                    $ctaTitle = 'Ready to Transform Your Spa & Wellness Business?';
+                    $ctaDesc = 'Join 300+ UAE spa & wellness centers who never miss another booking';
+                }
+                @endphp
+                <h3 class="text-2xl font-bold text-white mb-4">{{ $ctaTitle }}</h3>
+                <p class="text-slate-300 mb-8">{{ $ctaDesc }}</p>
                 
                 <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
                     <a href="#roi-calculator" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="problem-solution-calculator">

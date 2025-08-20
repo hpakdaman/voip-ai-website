@@ -1,5 +1,14 @@
 @php
-$capabilitiesData = json_decode(file_get_contents(resource_path('data/solutions/real-estate/capabilities.json')), true);
+// Dynamically determine industry from URL path
+$currentPath = request()->path();
+$industry = 'real-estate'; // Default fallback
+if (str_contains($currentPath, 'spa-massage')) {
+    $industry = 'spa-massage';
+} elseif (str_contains($currentPath, 'real-estate')) {
+    $industry = 'real-estate';
+}
+
+$capabilitiesData = json_decode(file_get_contents(resource_path("data/solutions/{$industry}/capabilities.json")), true);
 $sectionData = $capabilitiesData['section'] ?? [];
 $capabilities = $capabilitiesData['capabilities'] ?? [];
 $integrations = $capabilitiesData['integrations'] ?? [];
@@ -81,7 +90,13 @@ $integrations = $capabilitiesData['integrations'] ?? [];
         <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="text-center mb-12">
                 <h3 class="text-3xl font-bold text-white mb-4">Seamless Integration with Your Tools</h3>
-                <p class="text-slate-300">Works with popular real estate platforms used across UAE</p>
+                @php
+                $integrationDesc = 'Works with popular real estate platforms used across UAE';
+                if (str_contains(request()->path(), 'spa-massage')) {
+                    $integrationDesc = 'Works with popular spa management and booking platforms used across UAE';
+                }
+                @endphp
+                <p class="text-slate-300">{{ $integrationDesc }}</p>
             </div>
             
             <!-- Integration Logos Grid -->
@@ -105,9 +120,15 @@ $integrations = $capabilitiesData['integrations'] ?? [];
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Demo Image -->
                 <div class="relative order-2 lg:order-1">
+                    @if(str_contains(request()->path(), 'spa-massage'))
+                    <img src="{{ asset('assets/images/spa/ab1.jpg') }}" 
+                         alt="Spa Professional Using AI Assistant" 
+                         class="w-full h-[400px] object-cover rounded-2xl shadow-2xl">
+                    @else
                     <img src="{{ asset('assets/images/real/about.jpg') }}" 
                          alt="Real Estate Professional Using AI Assistant" 
                          class="w-full h-[400px] object-cover rounded-2xl shadow-2xl">
+                    @endif
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>
 
                 </div>
@@ -116,12 +137,22 @@ $integrations = $capabilitiesData['integrations'] ?? [];
                 <div class="order-1 lg:order-2">
                     <div class="max-w-lg">
                         <h3 class="text-3xl font-bold text-white mb-4">See Your AI Agent in Action</h3>
-                        <p class="text-slate-300 mb-6 text-lg">Watch a live demonstration of how our AI handles real estate calls with professional expertise and natural conversation flow.</p>
+                        @php
+                        $demoDesc = 'Watch a live demonstration of how our AI handles real estate calls with professional expertise and natural conversation flow.';
+                        if (str_contains(request()->path(), 'spa-massage')) {
+                            $demoDesc = 'Watch a live demonstration of how our AI handles spa bookings with professional wellness expertise and natural conversation flow.';
+                        }
+                        @endphp
+                        <p class="text-slate-300 mb-6 text-lg">{{ $demoDesc }}</p>
                         
                         <div class="space-y-4 mb-8">
                             <div class="flex items-center text-slate-300">
                                 <i class="uil uil-check text-lg mr-3" style="color: var(--voip-link);"></i>
+                                @if(str_contains(request()->path(), 'spa-massage'))
+                                Handles treatment inquiries and bookings
+                                @else
                                 Handles property inquiries and bookings
+                                @endif
                             </div>
                             <div class="flex items-center text-slate-300">
                                 <i class="uil uil-check text-lg mr-3" style="color: var(--voip-link);"></i>
