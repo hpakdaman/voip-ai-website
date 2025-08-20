@@ -72,6 +72,39 @@ This ensures each page section provides a fresh, engaging experience while maint
 6. **Privacy Policy** (`/privacy`) - UAE GDPR & TDRA compliance
 7. **Terms of Service** (`/terms`) - AI call center legal framework
 
+## Page Title Standards
+
+### **🏷️ MANDATORY: Sawtic Brand Consistency in Page Titles**
+**ALL pages MUST start with "Sawtic" in the page title for consistent brand recognition and SEO optimization.**
+
+#### **Page Title Format**
+```
+Sawtic | [Page-Specific Description]
+```
+
+#### **Required Page Titles**
+- **Homepage**: `Sawtic | AI Call Agents & Virtual Call Center Solutions in UAE`
+- **Features Page**: `Sawtic | Advanced AI Call Center Features & Capabilities`
+- **Pricing Page**: `Sawtic | AI Call Center Pricing Plans - UAE Business Solutions`
+- **About Page**: `Sawtic | About Us - Leading AI Call Center Provider in Dubai`
+- **Contact Page**: `Sawtic | Contact Us - AI Call Center Solutions in UAE`
+- **Privacy Policy**: `Sawtic | Privacy Policy - Data Protection & AI Transparency`
+- **Terms of Service**: `Sawtic | Terms of Service - AI Call Center Legal Framework`
+- **Solutions Pages**: `Sawtic | AI Solutions for [Industry] - [Industry-Specific Benefits]`
+
+#### **SEO Guidelines**
+- ✅ **Always start with "Sawtic"** for brand recognition
+- ✅ **Include UAE/Dubai** for local SEO targeting
+- ✅ **Add AI/Call Center keywords** for search optimization
+- ✅ **Keep total length** under 60 characters when possible
+- ✅ **Make each title unique** and descriptive
+
+#### **Implementation Requirements**
+- Update all existing pages with proper Sawtic titles
+- Ensure new pages follow this title format
+- Include meta descriptions with Sawtic branding
+- Use consistent title structure across all pages
+
 ## 🚀 NEW: Solutions Landing Pages System
 
 ### **📋 CRITICAL REQUIREMENT: Business-Specific AI Solutions**
