@@ -123,7 +123,7 @@ $demos = $voiceSamplesData['demos'] ?? [];
 /* Enhanced Audio Player Styling */
 .voice-demo-player audio {
     width: 100%;
-    height: 50px;
+    height: 42px;
     border-radius: 12px;
     background: rgba(30, 192, 141, 0.1);
     outline: none;

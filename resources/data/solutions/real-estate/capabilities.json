@@ -147,7 +147,7 @@
         {
             "name": "Pipedrive",
             "type": "Sales Pipeline",
-            "icon": "uil-line-chart"
+            "icon": "uil-process"
         },
         {
             "name": "Mailchimp",

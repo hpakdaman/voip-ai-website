@@ -632,7 +632,7 @@ usort($items, function($a, $b) {
 
 ```html
 <!-- Only for client-side data fetching -->
-<div id="loading-error" class="hidden p-4 rounded-xl border border-red-200 text-red-800" style="background: rgba(239, 68, 68, 0.1);">
+<div id="loading-error" class="hidden p-4 rounded-xl border border-red-200 text-red-800" style="background: rgba(239, 239, 239, 0.1);">
     <div class="flex items-center">
         <i class="uil uil-times-circle text-red-600 text-xl mr-3"></i>
         <span>Failed to load content. Please refresh the page.</span>
