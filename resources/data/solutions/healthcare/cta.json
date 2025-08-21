@@ -6,10 +6,10 @@
         "urgency_text": "Don't let critical patient calls go unanswered while you're with other patients."
     },
     "benefits": [
-        "Handle patient calls 24/7, including emergencies",
-        "Reduce appointment no-shows with automated reminders",
-        "Provide multilingual support (Arabic, English, Hindi, Urdu)",
-        "Ensure HIPAA-compliant patient data handling"
+        "24/7 emergency call handling",
+        "Automated appointment reminders",
+        "Multilingual medical support",
+        "HIPAA-compliant data security"
     ],
     "cta_buttons": [
         {
