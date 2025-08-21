@@ -1,0 +1,97 @@
+{
+    "section": {
+        "badge": "Healthcare Challenges",
+        "title": "Missing Patient Calls Costs Lives and",
+        "highlighted": "Revenue",
+        "description": "Every missed medical call could be an emergency or a lost patient. See how Sawtic AI transforms healthcare communication challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "Missed Emergency Calls After Hours",
+            "description": "Medical emergencies don't follow office hours. When patients can't reach your practice after 5 PM or on weekends, they go to expensive emergency rooms or competitor clinics.",
+            "icon": "uil-clock",
+            "impact": "40% of calls happen after hours"
+        },
+        {
+            "title": "Appointment Booking Bottlenecks",
+            "description": "Reception staff overwhelmed with appointment requests while managing walk-ins. Patients get frustrated waiting on hold and book with competitors who answer faster.",
+            "icon": "uil-phone-slash",
+            "impact": "60% lost patients due to wait times"
+        },
+        {
+            "title": "High No-Show Rates",
+            "description": "Patients forget appointments without proper reminder systems. No-shows cost your practice revenue and prevent other patients from getting care.",
+            "icon": "uil-calendar-slash",
+            "impact": "25% appointment no-show rate"
+        },
+        {
+            "title": "Language Barriers with Patients",
+            "description": "UAE's diverse population speaks Arabic, English, Hindi, and more. Communication barriers lead to misunderstandings and frustrated international patients.",
+            "icon": "uil-comment-slash",
+            "impact": "30% of UAE patients need language support"
+        },
+        {
+            "title": "Manual Insurance Verification",
+            "description": "Staff spend hours verifying insurance coverage and explaining benefits. This delays patient care and increases administrative costs significantly.",
+            "icon": "uil-file-times",
+            "impact": "2 hours per day on insurance calls"
+        },
+        {
+            "title": "Patient Follow-Up Neglect",
+            "description": "Post-treatment follow-ups, medication reminders, and health check-ins fall through the cracks. Poor follow-up care affects patient outcomes and satisfaction scores.",
+            "icon": "uil-heart-medical",
+            "impact": "45% of patients don't receive follow-up care"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "24/7 Medical Call Coverage",
+            "description": "AI agent handles after-hours calls, screens emergencies, schedules urgent appointments, and provides basic medical guidance following your protocols.",
+            "icon": "uil-phone",
+            "benefit": "100% call coverage guaranteed",
+            "demo_available": true
+        },
+        {
+            "title": "Instant Appointment Scheduling",
+            "description": "Smart scheduling system integrated with your practice management software. Patients book appointments instantly without waiting for staff availability.",
+            "icon": "uil-calendar-alt",
+            "benefit": "3x faster appointment booking",
+            "demo_available": true
+        },
+        {
+            "title": "Automated Patient Reminders",
+            "description": "Multi-channel reminder system via SMS, calls, and email. Reduces no-shows with personalized reminders and easy rescheduling options.",
+            "icon": "uil-bell",
+            "benefit": "70% reduction in no-shows",
+            "demo_available": true
+        },
+        {
+            "title": "Multilingual Patient Support",
+            "description": "Fluent communication in Arabic, English, Hindi, and Urdu. Ensures all UAE patients receive professional medical support in their preferred language.",
+            "icon": "uil-comments",
+            "benefit": "40% more patient accessibility",
+            "demo_available": true
+        },
+        {
+            "title": "Smart Insurance Verification",
+            "description": "Automated insurance verification and benefit explanation. Streamlines admin work and helps patients understand their coverage before visits.",
+            "icon": "uil-file-check",
+            "benefit": "80% faster insurance processing",
+            "demo_available": false
+        },
+        {
+            "title": "Proactive Patient Follow-Up",
+            "description": "Automated follow-up calls for post-treatment care, medication compliance, and wellness check-ins. Improves patient outcomes and satisfaction scores.",
+            "icon": "uil-heart-medical",
+            "benefit": "90% improvement in follow-up care",
+            "demo_available": true
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "medical_problem_awareness"
+    }
+}

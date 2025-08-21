@@ -26,6 +26,12 @@
     --color-slate-950: var(--voip-dark-bg) !important;
 }
 
+/* Prevent FOUC - Ensure consistent body background */
+html, body {
+    background-color: #0c1b27 !important; /* var(--voip-dark-bg) */
+    color: white !important;
+}
+
 /* Hero Section Responsive Typography */
 @media (min-width: 900px) and (max-width: 1024px) {
     .hero-heading-960 {
@@ -97,6 +103,38 @@
     .voice-demo-player audio {
         height: 38px;
     }
+}
+
+/* Audio Player Volume Slider Styling */
+#volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 15px;
+    height: 4px;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Typewriter Text - Reserve space for 3 lines on small screens */
@@ -292,6 +330,13 @@ footer {
 }
 
 /* Small Desktop Navbar Fixes */
+@media (min-width: 992px) {
+     #topnav .buy-button {
+      margin-inline-start: 0;
+      margin-inline-end: 15px;
+      padding-inline-start: 0;
+    }
+}
 @media (max-width: 1140px) and (min-width: 769px) {
     #topnav .buy-button {
         position: absolute !important;
@@ -1013,6 +1058,42 @@ a:not(.hover-voip-button):not([style*="background"]):hover {
 /* Override any existing indigo hover effects */
 .faq-card:hover, .uae-card:hover, .who-we-are-card:hover {
     border-color: var(--voip-link) !important;
+}
+
+/* VoIP Theme Slider Styles */
+.voip-slider {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.voip-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.voip-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.voip-slider::-webkit-slider-track {
+    background: linear-gradient(to right, var(--voip-link) 0%, var(--voip-link) var(--value, 50%), rgba(255, 255, 255, 0.2) var(--value, 50%), rgba(255, 255, 255, 0.2) 100%);
+    height: 6px;
+    border-radius: 3px;
 }
 
 /* Print Styles */

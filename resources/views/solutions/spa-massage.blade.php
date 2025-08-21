@@ -1,29 +1,38 @@
 @extends('layouts.main')
-@section('title', 'AI Call Agents for Spa & Massage Salons | Sawtic Smart Call Center Solutions UAE')
+@section('title', 'Sawtic | AI Call Center Solutions for Spa & Massage Centers in UAE')
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/solutions/spa-massage.css') }}">
+@endpush
+
 @section('content')
 
-{{-- Hero Section with Voice Demo --}}
-@include('components.solutions.hero-demo')
+@php
+$industryService = new \App\Services\IndustryDataService('spa-massage');
+@endphp
 
-{{-- Problem vs Solution Showcase --}}
-@include('components.solutions.problem-solution', ['boxHeight' => '200px'])
+{{-- Hero Section --}}
+@include('solutions.sections.hero', ['data' => $industryService->getHeroData()])
+
+{{-- Problem-Solution Section --}}
+@include('solutions.sections.problem-solution', ['data' => $industryService->getProblemSolutionData()])
 
 {{-- AI Capabilities Section --}}
-@include('components.solutions.ai-capabilities')
+@include('solutions.sections.ai-capabilities', ['data' => $industryService->getCapabilitiesData()])
 
-{{-- Voice Samples & Demos --}}
-@include('components.solutions.voice-samples')
+{{-- Voice Samples Section --}}
+@include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
 
-{{-- ROI Calculator --}}
-@include('components.solutions.roi-calculator')
+{{-- Success Stories Section --}}
+@include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])
 
-{{-- Success Stories & Testimonials --}}
-@include('components.solutions.success-stories')
+{{-- ROI Calculator Section --}}
+@include('solutions.sections.roi-calculator-advanced', ['data' => $industryService->getRoiCalculatorData()])
 
-{{-- Feature Showcase --}}
-@include('components.solutions.feature-showcase')
+{{-- Feature Showcase Section - "See Sawtic AI In Action" --}}
+@include('solutions.sections.feature-showcase', ['data' => $industryService->getFeatureShowcaseData()])
 
-{{-- Final CTA Conversion --}}
-@include('components.solutions.cta-conversion')
+{{-- CTA Conversion Section - "Limited Time: Free Setup Worth AED 5,000" --}}
+@include('solutions.sections.cta-conversion', ['data' => $industryService->getCtaData()])
 
 @endsection

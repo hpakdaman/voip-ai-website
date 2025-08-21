@@ -32,7 +32,7 @@
                             <ul class="list-none footer-list mt-6">
                                 <li><a href="{{ route('solutions.real-estate') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Real Estate</a></li>
                                 <li class="mt-[10px]"><a href="{{ route('solutions.spa-massage') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Spa & Massage</a></li>
-                                <li class="mt-[10px]"><a href="{{ url('/healthcare') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Healthcare</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('solutions.healthcare') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Healthcare</a></li>
                                 <li class="mt-[10px]"><a href="{{ route('terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms & Privacy</a></li>
                             </ul>
                         </div>

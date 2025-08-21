@@ -3,7 +3,16 @@
         "badge": "AI Real Estate Assistant",
         "title": "Your AI Agent Knows",
         "highlighted": "Real Estate Inside Out",
-        "description": "Advanced AI trained specifically for UAE real estate market, property laws, and client management."
+        "description": "Advanced AI trained specifically for UAE real estate market, property laws, and client management.",
+        "demo_image": "assets/images/real/about.jpg",
+        "demo_alt": "Real Estate Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles property inquiries with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Handles property inquiries and bookings",
+            "Qualifies leads with smart questions",
+            "Integrates with your CRM automatically"
+        ]
     },
     "capabilities": [
         {

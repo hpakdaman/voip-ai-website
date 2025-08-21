@@ -35,6 +35,12 @@
             "description": "Double bookings, missed appointments, and scheduling conflicts create unprofessional experiences that cost you repeat business and referrals.",
             "icon": "uil-calendar-slash",
             "impact": "25% appointment no-shows"
+        },
+        {
+            "title": "Follow-Up Failure",
+            "description": "Promising leads go cold because you forget to follow up consistently. Without systematic nurturing, prospects lose interest and choose competitors.",
+            "icon": "uil-comment-question",
+            "impact": "50% of leads never get followed up"
         }
     ],
     "solutions": [
@@ -72,13 +78,20 @@
             "icon": "uil-calendar-alt",
             "benefit": "90% appointment attendance rate",
             "demo_available": false
+        },
+        {
+            "title": "Automated Follow-Up System",
+            "description": "AI nurtures leads with personalized follow-up calls, property updates, and appointment reminders, keeping you top-of-mind until they're ready to buy.",
+            "icon": "uil-comment-heart",
+            "benefit": "75% more leads convert to sales",
+            "demo_available": true
         }
     ],
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-19",
-        "total_problems": 5,
-        "total_solutions": 5,
+        "total_problems": 6,
+        "total_solutions": 6,
         "conversion_focus": "problem_awareness"
     }
 }

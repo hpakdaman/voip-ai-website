@@ -55,6 +55,32 @@
                 "Room availability coordination",
                 "Special request accommodations"
             ]
+        },
+        {
+            "id": 5,
+            "title": "Language Communication Barriers",
+            "description": "UAE's diverse clientele needs service in multiple languages",
+            "icon": "uil-comment-slash",
+            "impact": "35% market reach limited",
+            "pain_points": [
+                "Arabic-speaking clients underserved",
+                "International tourists can't communicate",
+                "Treatment explanations lost in translation",
+                "Cultural sensitivity requirements"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Staff Overwhelm During Peak Hours",
+            "description": "Reception staff juggling phones, check-ins, payments, and client care",
+            "icon": "uil-user-exclamation",
+            "impact": "40% client satisfaction drop",
+            "pain_points": [
+                "Multi-tasking reduces service quality",
+                "Long hold times frustrate clients",
+                "Mistakes during busy periods",
+                "Staff stress affects client experience"
+            ]
         }
     ],
     "solutions": [
@@ -109,13 +135,39 @@
                 "Special request handling"
             ],
             "result": "95% booking accuracy"
+        },
+        {
+            "id": 5,
+            "title": "Multilingual Client Communication",
+            "description": "AI communicates fluently in Arabic and English with cultural wellness understanding",
+            "icon": "uil-comments",
+            "benefits": [
+                "Fluent Arabic and English conversations",
+                "Cultural wellness practice knowledge",
+                "Respectful health discussions",
+                "International client accommodation"
+            ],
+            "result": "50% market expansion"
+        },
+        {
+            "id": 6,
+            "title": "Peak Hour Traffic Management",
+            "description": "AI handles multiple calls simultaneously, reducing staff workload and client wait times",
+            "icon": "uil-users-alt",
+            "benefits": [
+                "Handle unlimited simultaneous calls",
+                "Instant response during busy periods",
+                "Reduce reception staff workload",
+                "Maintain service quality under pressure"
+            ],
+            "result": "70% efficiency improvement"
         }
     ],
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "problem_count": 4,
-        "solution_count": 4,
+        "problem_count": 6,
+        "solution_count": 6,
         "industry": "spa and massage wellness"
     }
 }

@@ -1,0 +1,55 @@
+{
+    "section": {
+        "badge": "Success Stories",
+        "title": "Real Results from",
+        "highlighted": "UAE Spas",
+        "description": "See how Sawtic AI transformed spa and wellness businesses across the UAE"
+    },
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Amira Al-Zahra",
+            "title": "Spa Director",
+            "company": "Serenity Wellness Spa - Dubai",
+            "image": "assets/images/client/01.jpg",
+            "testimonial": "Sawtic AI doubled our appointment bookings within just 2 months. Our AI agent handles everything from treatment inquiries to scheduling, and clients love the professional service.",
+            "rating": 5,
+            "results": {
+                "bookings_increase": "+150%",
+                "missed_calls": "0%",
+                "revenue_growth": "+85%"
+            },
+            "specialty": "Luxury Spa"
+        },
+        {
+            "id": 2,
+            "name": "Fatima Hassan",
+            "title": "Owner",
+            "company": "Bliss Massage Center - Abu Dhabi",
+            "image": "assets/images/client/02.jpg", 
+            "testimonial": "The AI answers all our clients' questions about treatments, pricing, and availability. It even handles appointment confirmations and follow-ups. Game changer!",
+            "rating": 5,
+            "results": {
+                "call_response": "100%",
+                "client_satisfaction": "98%",
+                "staff_efficiency": "+60%"
+            },
+            "specialty": "Therapeutic Massage"
+        },
+        {
+            "id": 3,
+            "name": "Sarah Mitchell",
+            "title": "Manager",
+            "company": "Zen Garden Spa - Sharjah",
+            "image": "assets/images/client/03.jpg",
+            "testimonial": "Our AI agent speaks perfect Arabic and English, helping us serve all our UAE clients excellently. No more language barriers or missed opportunities.",
+            "rating": 5,
+            "results": {
+                "multilingual_support": "100%",
+                "new_clients": "+120%",
+                "retention_rate": "92%"
+            },
+            "specialty": "Wellness & Beauty"
+        }
+    ]
+}

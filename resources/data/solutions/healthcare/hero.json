@@ -1,0 +1,77 @@
+{
+    "hero": {
+        "badge": "Healthcare AI Solutions",
+        "title": "Never Miss a Patient Call",
+        "subtitle": "24/7 AI Call Agents for Healthcare",
+        "highlighted_word": "Again",
+        "description": "Transform your medical practice with intelligent AI call agents that handle patient appointments, medical inquiries, and emergency calls with professional medical knowledge and HIPAA compliance.",
+        "primary_cta": "Book Medical Demo",
+        "secondary_cta": "Call +971 4 864 7245",
+        "demo_title": "🎧 Live Healthcare Demo",
+        "demo_description": "Listen to our AI agent handling a patient appointment booking with medical expertise"
+    },
+    "stats": [
+        {
+            "number": "95%",
+            "label": "Patient Satisfaction",
+            "description": "Higher satisfaction with 24/7 availability"
+        },
+        {
+            "number": "70%",
+            "label": "Reduced No-Shows",
+            "description": "Automated reminders and confirmations"
+        },
+        {
+            "number": "24/7",
+            "label": "Medical Coverage",
+            "description": "Round-the-clock patient support"
+        },
+        {
+            "number": "HIPAA",
+            "label": "Compliant",
+            "description": "Secure patient data handling"
+        }
+    ],
+    "voice_demo": {
+        "audio_file": "healthcare-appointment-demo.mp3",
+        "transcript": [
+            {
+                "speaker": "AI Agent",
+                "text": "Good morning! Thank you for calling Dubai Medical Center. I'm your AI assistant. How may I help you today?"
+            },
+            {
+                "speaker": "Patient",
+                "text": "Hi, I'd like to schedule an appointment with Dr. Ahmed for a general check-up."
+            },
+            {
+                "speaker": "AI Agent", 
+                "text": "I'd be happy to help you schedule that appointment. May I have your full name and date of birth for verification?"
+            },
+            {
+                "speaker": "Patient",
+                "text": "Sarah Al-Mansouri, born March 15th, 1985."
+            },
+            {
+                "speaker": "AI Agent",
+                "text": "Thank you, Ms. Al-Mansouri. I have your patient record here. Dr. Ahmed has availability this Thursday at 2 PM or Friday at 10 AM. Which works better for you?"
+            },
+            {
+                "speaker": "Patient",
+                "text": "Thursday at 2 PM would be perfect."
+            },
+            {
+                "speaker": "AI Agent",
+                "text": "Excellent! I've scheduled your general check-up with Dr. Ahmed for Thursday, October 26th at 2:00 PM. Please arrive 15 minutes early and bring your Emirates ID. You'll receive SMS and email confirmations shortly. Is there anything else I can help you with today?"
+            }
+        ]
+    },
+    "hero_images": {
+        "main": "assets/images/hospital/bg.jpg"
+    },
+    "metadata": {
+        "industry": "healthcare",
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "focus": "AI call agents for medical practices"
+    }
+}

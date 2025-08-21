@@ -15,8 +15,8 @@
                     <p class="text-lg max-w-xl lg:ms-0 mx-auto text-slate-300 hero-description-960">Enhance customer experience and streamline operations with AI-powered call agents built for modern UAE businesses.</p>
                 
                     <div class="mt-8 lg:text-start text-center">
-                        <a href="{{ route('contact-us') }}" class="py-3 px-8 inline-block font-semibold tracking-wide align-middle duration-500 text-lg text-center text-white rounded-full hover-voip-button transition-all hover:scale-105 hover:shadow-lg" style="background-color: var(--voip-primary);">
-                            Request Demo
+                        <a href="{{ route('demo.booking') }}" class="py-3 px-8 inline-block font-semibold tracking-wide align-middle duration-500 text-lg text-center text-white rounded-full hover-voip-button transition-all hover:scale-105 hover:shadow-lg" style="background-color: var(--voip-primary);">
+                            Book Live Demo
                         </a>
                     </div>
 

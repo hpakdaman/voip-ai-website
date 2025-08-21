@@ -1,0 +1,39 @@
+{
+    "section": {
+        "badge": "ROI Calculator",
+        "title": "Calculate Your",
+        "highlighted": "Potential Savings",
+        "description": "See exactly how much money Sawtic AI will save your spa business every month"
+    },
+    "calculator": {
+        "min_calls": 20,
+        "max_calls": 150,
+        "default_calls": 60,
+        "min_value": 150,
+        "max_value": 800,
+        "default_value": 350,
+        "value_label": "Average treatment value (AED)",
+        "conversion_rate": 15,
+        "miss_rate": 25,
+        "sawtic_cost": 999
+    },
+    "advanced_calculator": {
+        "calls": {
+            "min": 20,
+            "max": 150,
+            "default": 60
+        },
+        "value": {
+            "label": "Average Treatment Value (AED)",
+            "min": 150,
+            "max": 800,
+            "default": 350,
+            "step": 25
+        },
+        "conversion": {
+            "label": "Call to Booking Rate (%)",
+            "default": 15
+        },
+        "miss_rate": 25
+    }
+}
