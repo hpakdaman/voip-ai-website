@@ -330,6 +330,13 @@ footer {
 }
 
 /* Small Desktop Navbar Fixes */
+@media (min-width: 992px) {
+     #topnav .buy-button {
+      margin-inline-start: 0;
+      margin-inline-end: 15px;
+      padding-inline-start: 0;
+    }
+}
 @media (max-width: 1140px) and (min-width: 769px) {
     #topnav .buy-button {
         position: absolute !important;

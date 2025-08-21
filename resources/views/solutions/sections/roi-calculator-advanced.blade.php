@@ -90,13 +90,14 @@ $calculatorData = $data['advanced_calculator'] ?? [];
                             </div>
                         </div>
 
-                        <!-- Sawtic Cost -->
-                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(30, 192, 141, 0.1);">
-                            <div class="text-center">
-                                <div class="text-slate-400 text-sm">Monthly Sawtic Cost</div>
-                                <div class="text-2xl font-bold text-white">999 AED</div>
-                                <div class="text-slate-400 text-xs">All-inclusive pricing</div>
-                            </div>
+                    </div>
+                    
+                    <!-- Sawtic Cost - Moved to Bottom -->
+                    <div class="p-4 rounded-xl border border-white/10 mt-auto" style="background: rgba(30, 192, 141, 0.1);">
+                        <div class="text-center">
+                            <div class="text-slate-400 text-sm">Monthly Sawtic Cost</div>
+                            <div class="text-2xl font-bold text-white">999 AED</div>
+                            <div class="text-slate-400 text-xs">All-inclusive pricing</div>
                         </div>
                     </div>
                 </div>
@@ -127,11 +128,11 @@ $calculatorData = $data['advanced_calculator'] ?? [];
                             <div class="text-slate-400 text-xs">After Sawtic costs</div>
                         </div>
 
-                        <div class="p-4 rounded-xl border-2" style="border-color: var(--voip-link); background: rgba(30, 192, 141, 0.2);">
+                        <div class="p-4 rounded-xl border border-white/10" style="background: rgba(22, 47, 58, 0.3);">
                             <div class="text-center">
-                                <div class="text-slate-300 text-sm">Annual ROI</div>
+                                <div class="text-slate-400 text-sm">Annual ROI</div>
                                 <div id="annual-roi" class="text-4xl font-bold" style="color: var(--voip-link);">10.2x</div>
-                                <div class="text-slate-300 text-xs">Return on investment</div>
+                                <div class="text-slate-400 text-xs">Return on investment</div>
                             </div>
                         </div>
                     </div>

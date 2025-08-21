@@ -12,6 +12,11 @@
             "audio_file": "healthcare-emergency-demo.mp3",
             "duration": "45 seconds",
             "scenario": "Patient with chest pain calling after hours",
+            "highlights": [
+                "Emergency detection and triage",
+                "Immediate physician connection",
+                "Critical situation escalation"
+            ],
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -33,6 +38,11 @@
             "audio_file": "healthcare-specialist-demo.mp3", 
             "duration": "60 seconds",
             "scenario": "Patient needs cardiology referral appointment",
+            "highlights": [
+                "Insurance verification",
+                "Specialist scheduling",
+                "Medical referral handling"
+            ],
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -54,6 +64,11 @@
             "audio_file": "healthcare-prescription-demo.mp3",
             "duration": "35 seconds", 
             "scenario": "Diabetes patient needs insulin refill",
+            "highlights": [
+                "Prescription management",
+                "Pharmacy coordination", 
+                "Doctor approval process"
+            ],
             "transcript": [
                 {
                     "speaker": "Patient",
@@ -71,6 +86,11 @@
             "audio_file": "healthcare-insurance-arabic-demo.mp3",
             "duration": "50 seconds",
             "scenario": "Patient inquiring about insurance coverage in Arabic",
+            "highlights": [
+                "Arabic language support",
+                "Insurance coverage analysis",
+                "Bilingual medical assistance"
+            ],
             "transcript": [
                 {
                     "speaker": "Patient",
@@ -88,6 +108,11 @@
             "audio_file": "healthcare-followup-demo.mp3",
             "duration": "40 seconds",
             "scenario": "Post-operative care check-in call",
+            "highlights": [
+                "Post-operative monitoring",
+                "Recovery assessment",
+                "Follow-up scheduling"
+            ],
             "transcript": [
                 {
                     "speaker": "AI Agent",
