@@ -30,6 +30,12 @@ $industryService = new \App\Services\IndustryDataService('healthcare');
 {{-- ROI Calculator Section --}}
 @include('solutions.sections.roi-calculator-advanced', ['data' => $industryService->getRoiCalculatorData()])
 
+{{-- Feature Showcase Section - "See Sawtic AI In Action" --}}
+@include('solutions.sections.feature-showcase', ['data' => $industryService->getFeatureShowcaseData()])
+
+{{-- CTA Conversion Section - "Ready to Transform Healthcare Communication?" --}}
+@include('solutions.sections.cta-conversion', ['data' => $industryService->getCtaData()])
+
 @endsection
 
 @push('scripts')

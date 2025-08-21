@@ -5,6 +5,26 @@
         "highlighted": "Built for Healthcare",
         "description": "Comprehensive AI features designed specifically for medical practices, clinics, and healthcare providers in the UAE."
     },
+    "dashboard": {
+        "title": "Medical Practice Dashboard",
+        "description": "Monitor all patient calls, appointment bookings, and emergency alerts in real-time from your medical dashboard.",
+        "image": "assets/images/hospital/bg.jpg",
+        "features": [
+            "Live call monitoring",
+            "Instant patient notifications", 
+            "Conversion analytics"
+        ]
+    },
+    "consultation": {
+        "title": "Professional Medical Consultations",
+        "description": "Your AI agent provides expert medical support with deep knowledge of healthcare protocols and patient care standards.",
+        "image": "assets/images/hospital/bg.jpg",
+        "features": [
+            "Medical triage and emergency detection",
+            "HIPAA-compliant patient data handling",
+            "Multi-language medical terminology support"
+        ]
+    },
     "feature_categories": [
         {
             "category": "Patient Communication",
@@ -185,7 +205,7 @@
     ],
     "metadata": {
         "version": "1.0",
-        "last_updated": "2025-01-20",
+        "last_updated": "2025-01-21",
         "total_features": 18,
         "categories": 6,
         "focus": "comprehensive_healthcare_features"

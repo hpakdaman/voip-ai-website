@@ -50,9 +50,9 @@ $solutions = $data['solutions'] ?? [];
                     <!-- Business Impact - Stuck to Bottom -->
                     @if(isset($problem['impact']))
                     <div class="p-4 rounded-xl border border-red-400/20 mt-auto" style="background: rgba(239, 68, 68, 0.05);">
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400 text-sm font-medium">Business Impact</span>
-                            <span class="text-red-400 font-bold text-lg">{{ $problem['impact'] }}</span>
+                        <div class="text-center">
+                            <div class="text-slate-400 text-xs font-medium uppercase tracking-wide mb-2">Business Impact</div>
+                            <div class="text-red-400 font-bold text-lg leading-tight">{{ $problem['impact'] }}</div>
                         </div>
                     </div>
                     @endif

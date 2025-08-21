@@ -44,8 +44,8 @@ $integrationStats = $data['integration_stats'] ?? [];
                     
                     <!-- Premium Badge -->
                     @if($capability['is_premium'] ?? false)
-                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full text-white mb-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-                        Premium
+                    <span class="inline-block px-2 py-1 text-xs font-medium rounded-full text-white mb-3" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        Pro
                     </span>
                     @endif
                     

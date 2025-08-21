@@ -1,38 +1,18 @@
 @php
-    // Dynamically determine industry from URL path or passed parameter
-    $currentPath = request()->path();
-    $industry = $industry ?? 'real-estate'; // Use passed parameter or default fallback
-    $ctaContent = [];
-
-    if (str_contains($currentPath, 'healthcare')) {
-        $industry = 'healthcare';
-    } elseif (str_contains($currentPath, 'spa-massage')) {
-        $industry = 'spa-massage';
-        $ctaContent = [
-            'bg_image' => 'assets/images/spa/cta.jpg',
-            'alt_text' => 'Spa Success',
-            'main_title' => 'Ready to Stop Missing',
-            'highlighted' => 'Spa Appointments?',
-            'description' => 'Join 300+ UAE spa & wellness centers who never miss another booking',
-            'professionals' => 'spa professionals',
-        ];
-    } else {
-        $ctaContent = [
-            'bg_image' => 'assets/images/real/bg/01.jpg',
-            'alt_text' => 'Real Estate Success',
-            'main_title' => 'Ready to Stop Losing',
-            'highlighted' => 'Real Estate Leads?',
-            'description' => 'Join 500+ UAE real estate professionals who never miss another call',
-            'professionals' => 'real estate professionals',
-        ];
-    }
+$sectionData = $data['section'] ?? [];
+$ctaButtons = $data['cta_buttons'] ?? [];
+$benefits = $data['benefits'] ?? [];
+$guarantee = $data['guarantee'] ?? '';
+$socialProof = $data['social_proof'] ?? '';
+$bgImage = $data['bg_image'] ?? 'assets/images/default-bg.jpg';
+$altText = $data['alt_text'] ?? 'CTA Background';
 @endphp
 
 <!-- Strong Conversion CTA Section -->
 <section class="relative py-24" style="background-color: var(--voip-bg);">
     <div class="absolute inset-0">
         <!-- Background Image -->
-        <img src="{{ asset($ctaContent['bg_image']) }}" alt="{{ $ctaContent['alt_text'] }}"
+        <img src="{{ asset($bgImage) }}" alt="{{ $altText }}"
             class="w-full h-full object-cover opacity-20">
         <!-- Conversion-focused background overlay -->
         <div class="absolute inset-0"
@@ -51,56 +31,66 @@
 
             <!-- Main CTA -->
             <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-                {{ $ctaContent['main_title'] }}
-                <span style="color: var(--voip-link);">{{ $ctaContent['highlighted'] }}</span>
+                {{ $sectionData['title'] ?? 'Ready to Transform' }}
+                <span style="color: var(--voip-link);">{{ $sectionData['highlighted'] ?? 'Your Business?' }}</span>
             </h2>
 
             <p class="text-slate-300 text-2xl mb-12 leading-relaxed">
-                {{ $ctaContent['description'] }}
+                {{ $sectionData['description'] ?? 'Transform your business communication today' }}
             </p>
 
             <!-- CTA Buttons -->
             <div class="flex flex-wrap gap-4 sm:gap-6 items-center justify-center mb-16">
-                <a href="tel:+97148647245"
-                    class="inline-flex items-center px-12 py-6 rounded-2xl font-bold text-white text-xl transition-all duration-300 hover:scale-105"
-                    style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);"
-                    data-cta-track="final-cta-call">
-                    <i class="uil uil-phone text-2xl mr-4"></i>
-                    Call Now: +971 4 864 7245
-                </a>
-                <a href="/contact-us"
-                    class="inline-flex items-center px-12 py-6 rounded-2xl font-bold text-white border-2 text-xl transition-all duration-300 hover:bg-white/10"
-                    style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="final-cta-demo">
-                    <i class="uil uil-calendar-alt text-2xl mr-4"></i>
-                    Book Free Demo
-                </a>
+                @if(!empty($ctaButtons))
+                    @foreach($ctaButtons as $button)
+                    <a href="{{ $button['url'] ?? '#' }}"
+                        @if($button['style'] === 'primary')
+                        class="inline-flex items-center px-12 py-6 rounded-2xl font-bold text-white text-xl transition-all duration-300 hover:scale-105"
+                        style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);"
+                        @else
+                        class="inline-flex items-center px-12 py-6 rounded-2xl font-bold text-white border-2 text-xl transition-all duration-300 hover:bg-white/10"
+                        style="border-color: var(--voip-link); color: var(--voip-link);"
+                        @endif
+                        data-cta-track="{{ $button['tracking'] ?? 'cta-click' }}">
+                        <i class="uil {{ $button['icon'] ?? 'uil-arrow-right' }} text-2xl mr-4"></i>
+                        {{ $button['text'] ?? 'Learn More' }}
+                    </a>
+                    @endforeach
+                @endif
             </div>
 
-            <!-- Trust Indicators -->
-            <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto mb-12">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-2">500+</div>
-                    <div class="text-slate-400">UAE Businesses</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-2">24/7</div>
-                    <div class="text-slate-400">AI Support</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-2">95%</div>
-                    <div class="text-slate-400">Lead Capture</div>
-                </div>
+            <!-- Benefits List -->
+            @if(!empty($benefits))
+            <div class="max-w-3xl mx-auto mb-12">
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    @foreach($benefits as $benefit)
+                    <li class="flex items-center text-white text-lg">
+                        <i class="uil uil-check text-2xl mr-3" style="color: var(--voip-link);"></i>
+                        {{ $benefit }}
+                    </li>
+                    @endforeach
+                </ul>
             </div>
+            @endif
 
             <!-- Guarantee -->
-            <div class="max-w-2xl mx-auto p-6 rounded-2xl border border-green-400/30"
+            @if($guarantee)
+            <div class="max-w-2xl mx-auto p-6 rounded-2xl border border-green-400/30 mb-8"
                 style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(29, 120, 97, 0.1) 100%);">
                 <div class="flex items-center justify-center mb-4">
                     <i class="uil uil-shield-check text-3xl text-green-400 mr-3"></i>
-                    <h3 class="text-xl font-bold text-white">30-Day Money-Back Guarantee</h3>
+                    <h3 class="text-xl font-bold text-white">Guarantee</h3>
                 </div>
-                <p class="text-slate-300">Not satisfied? Get your full refund within 30 days. No questions asked.</p>
+                <p class="text-slate-300 text-center">{{ $guarantee }}</p>
             </div>
+            @endif
+
+            <!-- Social Proof -->
+            @if($socialProof)
+            <div class="text-center">
+                <p class="text-slate-400 text-lg">{{ $socialProof }}</p>
+            </div>
+            @endif
         </div>
     </div>
 </section>

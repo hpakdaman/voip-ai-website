@@ -1,0 +1,40 @@
+{
+    "section": {
+        "title": "Ready to Transform",
+        "highlighted": "Healthcare Communication?",
+        "description": "Join 200+ UAE healthcare providers already using Sawtic AI to improve patient care and reduce missed calls.",
+        "urgency_text": "Don't let critical patient calls go unanswered while you're with other patients."
+    },
+    "benefits": [
+        "Handle patient calls 24/7, including emergencies",
+        "Reduce appointment no-shows with automated reminders",
+        "Provide multilingual support (Arabic, English, Hindi, Urdu)",
+        "Ensure HIPAA-compliant patient data handling"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/contact-us",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "healthcare-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "healthcare-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee • HIPAA compliant • No setup fees",
+    "social_proof": "Trusted by 200+ UAE healthcare professionals",
+    "bg_image": "assets/images/hospital/bg.jpg",
+    "alt_text": "Healthcare professionals using Sawtic AI",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-21",
+        "industry": "healthcare",
+        "conversion_type": "final_cta"
+    }
+}
