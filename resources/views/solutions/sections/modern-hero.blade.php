@@ -29,7 +29,7 @@ $voiceDemo = $data['voice_demo'] ?? [];
                 @endif
                 
                 <!-- Main Headlines -->
-                <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                     {{ $heroData['main_title'] ?? 'Transform Your Services with' }}
                     <span class="relative">
                         <span style="color: var(--voip-link);">{{ $heroData['highlighted_word'] ?? 'AI Agents' }}</span>
@@ -126,7 +126,7 @@ $voiceDemo = $data['voice_demo'] ?? [];
                                     <!-- Progress Section -->
                                     <div class="flex-1">
                                         <!-- Progress Bar -->
-                                        <div id="modern-progress-container" class="w-full h-2 rounded-full mb-3 cursor-pointer" style="background: rgba(255, 255, 255, 0.2);">
+                                        <div id="modern-progress-container" class="w-full h-2 rounded-full mb-3 cursor-pointer hover:h-3 transition-all duration-200" style="background: rgba(255, 255, 255, 0.2);">
                                             <div id="modern-progress-bar" class="h-full rounded-full transition-all duration-300" style="background: linear-gradient(90deg, var(--voip-primary) 0%, var(--voip-link) 100%); width: 0%;"></div>
                                         </div>
                                         
@@ -195,9 +195,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Click to seek
     progressContainer.addEventListener('click', function(e) {
-        const rect = progressContainer.getBoundingClientRect();
-        const percent = (e.clientX - rect.left) / rect.width;
-        audio.currentTime = percent * audio.duration;
+        if (audio.duration && !isNaN(audio.duration)) {
+            const rect = progressContainer.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        }
     });
     
     // Reset when ended

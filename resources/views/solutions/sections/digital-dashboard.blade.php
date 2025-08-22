@@ -25,9 +25,9 @@
                     
                     <div class="space-y-4">
                         @foreach($category['metrics'] ?? [] as $metric)
-                            <div class="metric-item flex items-center justify-between p-4 rounded-xl" style="background: {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.1)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.05)' : 'rgba(239, 68, 68, 0.05)') }}; border: 1px solid {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.2)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.1)' : 'rgba(239, 68, 68, 0.2)') }};">
+                            <div class="metric-item flex items-center justify-between p-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer group" style="background: {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.1)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.05)' : 'rgba(239, 68, 68, 0.05)') }}; border: 1px solid {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.2)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.1)' : 'rgba(239, 68, 68, 0.2)') }};">
                                 <div class="flex items-center space-x-3">
-                                    <div class="metric-icon w-10 h-10 rounded-full flex items-center justify-center" style="background: {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.2)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.15)' : 'rgba(239, 68, 68, 0.15)') }}; color: {{ $metric['trend'] === 'positive' ? 'var(--voip-link)' : ($metric['trend'] === 'neutral' ? 'var(--voip-primary)' : '#ef4444') }};">
+                                    <div class="metric-icon w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" style="background: {{ $metric['trend'] === 'positive' ? 'rgba(30, 192, 141, 0.2)' : ($metric['trend'] === 'neutral' ? 'rgba(30, 192, 141, 0.15)' : 'rgba(239, 68, 68, 0.15)') }}; color: {{ $metric['trend'] === 'positive' ? 'var(--voip-link)' : ($metric['trend'] === 'neutral' ? 'var(--voip-primary)' : '#ef4444') }};">
                                         <i class="{{ $metric['icon'] ?? 'uil-chart-line' }} text-lg"></i>
                                     </div>
                                     <div>
@@ -67,7 +67,7 @@
                 
                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     @foreach($liveServices as $service)
-                        <div class="service-status-item p-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-slate-800 flex items-center justify-between">
+                        <div class="service-status-item p-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-slate-800 flex items-center justify-between transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer group">
                             <div class="flex items-center space-x-3">
                                 <div class="status-indicator w-3 h-3 rounded-full animate-pulse" style="background: var(--voip-link); box-shadow: 0 0 10px rgba(30, 192, 141, 0.5);"></div>
                                 <div>

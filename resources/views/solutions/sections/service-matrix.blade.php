@@ -120,7 +120,7 @@
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
                     @foreach($integrationBenefits as $benefit)
                         <div class="benefit-card p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-600 hover:border-slate-500 transition-all duration-300 group">
-                            <div class="benefit-icon w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <div class="benefit-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 text-white" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
                                 <i class="{{ $benefit['icon'] ?? 'uil-cog' }} text-xl"></i>
                             </div>
                             
@@ -134,7 +134,7 @@
                             
                             <div class="mt-4 flex items-center space-x-2">
                                 <div class="flex-1 h-1 bg-slate-700 rounded-full overflow-hidden">
-                                    <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full transform transition-transform duration-1000 group-hover:translate-x-0" style="width: 85%; transform: translateX(-100%);"></div>
+                                    <div class="h-full rounded-full transform transition-transform duration-1000 group-hover:translate-x-0" style="width: 85%; transform: translateX(-100%); background: linear-gradient(90deg, var(--voip-primary) 0%, var(--voip-link) 100%);"></div>
                                 </div>
                                 <span class="text-xs text-slate-400">Active</span>
                             </div>
