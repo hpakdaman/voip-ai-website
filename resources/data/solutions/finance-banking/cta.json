@@ -14,7 +14,7 @@
     "cta_buttons": [
         {
             "text": "Get Your Free Demo",
-            "url": "/contact-us",
+            "url": "/demo/book",
             "style": "primary",
             "icon": "uil-calendar-alt",
             "tracking": "finance-banking-final-cta-demo"

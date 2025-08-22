@@ -133,7 +133,7 @@ $integrationStats = $data['integration_stats'] ?? [];
                                 <i class="uil uil-play text-lg mr-3"></i>
                                 Listen to More Demos
                             </a>
-                            <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="capabilities-book-demo">
+                            <a href="{{ route('demo.booking') }}" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="capabilities-book-demo">
                                 <i class="uil uil-calendar-alt text-lg mr-3"></i>
                                 Book Live Demo
                             </a>
