@@ -1,0 +1,155 @@
+{
+    "section": {
+        "title": "Hear Your AI Shopping Assistant in Action",
+        "description": "Listen to real conversations showcasing how our AI handles various e-commerce scenarios with natural, helpful communication."
+    },
+    "voice_demos": [
+        {
+            "id": 1,
+            "title": "Cart Recovery Call",
+            "description": "AI proactively contacts customer who abandoned their cart",
+            "duration": "42 seconds",
+            "scenario": "Abandoned cart recovery",
+            "file_path": "assets/audio/solutions/retail-ecommerce/cart-recovery-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Hello! This is Maya from TechMart UAE. I noticed you were looking at our wireless earbuds earlier but didn't complete your purchase. Is there anything I can help you with?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Hi! Yes, I was interested but wasn't sure about the battery life and compatibility with my iPhone.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent", 
+                    "text": "Great questions! These earbuds have 8-hour battery life with the case providing 32 hours total. They're fully compatible with iPhone and include fast charging - 15 minutes gives you 3 hours of use. Plus, we have free shipping and 30-day returns.",
+                    "timestamp": "0:15"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "That sounds perfect! Can you help me complete the order?",
+                    "timestamp": "0:28"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Absolutely! I can complete your order right now. I also noticed you might like our phone case collection - I can add a 20% discount if you're interested. Your earbuds will arrive tomorrow with our express delivery.",
+                    "timestamp": "0:32"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Product Information Inquiry",
+            "description": "Customer asking detailed questions about product specifications",
+            "duration": "38 seconds", 
+            "scenario": "Product consultation",
+            "file_path": "assets/audio/solutions/retail-ecommerce/product-inquiry-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Thank you for calling Dubai Fashion Online. I'm Layla, your shopping assistant. How can I help you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "I'm looking for a formal dress for a wedding. I need size 12 and prefer navy or dark green.",
+                    "timestamp": "0:06"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Perfect! I have several beautiful options in size 12. Our navy blue silk dress with lace details is very popular - it's AED 450 and perfect for weddings. We also have a stunning emerald green chiffon dress for AED 380.",
+                    "timestamp": "0:12"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "The navy one sounds nice. What's the return policy if it doesn't fit?",
+                    "timestamp": "0:25"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Our return policy is very flexible - 30 days for exchanges or full refunds. We also offer free alterations at our Dubai Mall location if you need minor adjustments. Would you like me to reserve both sizes for you?",
+                    "timestamp": "0:28"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Order Status Check",
+            "description": "Customer checking delivery status and requesting modifications",
+            "duration": "35 seconds",
+            "scenario": "Order management",
+            "file_path": "assets/audio/solutions/retail-ecommerce/order-status-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Hello! This is Sawtic AI for Sports Zone Dubai. I can help you with your order status. May I have your order number?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Hi, my order number is SZ78945. I need to change the delivery address urgently.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "I found your order - running shoes and sports clothes for AED 680. Good news! Your order is still processing so I can update the delivery address. What's the new address?",
+                    "timestamp": "0:14"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Please change it to Dubai Marina, Building 5, Apartment 1204. Same contact number.",
+                    "timestamp": "0:24"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Perfect! I've updated your delivery address to Dubai Marina. Your order will arrive tomorrow between 10 AM and 2 PM. I'm sending you a confirmation SMS with the updated details now.",
+                    "timestamp": "0:28"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Multilingual Support",
+            "description": "AI handling customer service in Arabic and English",
+            "duration": "40 seconds",
+            "scenario": "Bilingual customer service", 
+            "file_path": "assets/audio/solutions/retail-ecommerce/multilingual-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "أهلاً وسهلاً! مرحباً بكم في متجر الإمارات للإلكترونيات. كيف يمكنني مساعدتكم اليوم؟",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "السلام عليكم، أريد شراء لابتوب للطلاب، ما هي أفضل الخيارات المتاحة؟",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "وعليكم السلام! لدينا خيارات ممتازة للطلاب. أنصحكم بلابتوب HP بسعر 2,200 درهم أو Lenovo بسعر 1,800 درهم. كلاهما مناسب للدراسة ولديه ضمان سنتين.",
+                    "timestamp": "0:15"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Can you switch to English please? I'd like to know about the HP specifications.",
+                    "timestamp": "0:25"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Of course! The HP laptop has Intel i5 processor, 8GB RAM, 512GB SSD storage, and 15.6-inch display. Perfect for students with excellent battery life. Would you like me to reserve one for you?",
+                    "timestamp": "0:30"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_demos": 4,
+        "industry": "retail and e-commerce",
+        "demo_types": ["cart_recovery", "product_inquiry", "order_management", "multilingual_support"]
+    }
+}

@@ -93,6 +93,14 @@ class HomeController extends Controller
         return view('solutions.finance-banking');  
     }
 
+    /**
+     * Retail & E-commerce AI Solutions Landing Page
+     */
+    public function retailEcommerce()
+    {
+        return view('solutions.retail-ecommerce');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

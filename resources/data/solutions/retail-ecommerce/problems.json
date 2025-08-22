@@ -1,0 +1,97 @@
+{
+    "section": {
+        "badge": "E-commerce Challenges",
+        "title": "Abandoned Carts & Lost Sales Cost UAE Retailers",
+        "highlighted": "Millions",
+        "description": "Every missed customer inquiry could be a lost sale or negative review. See how Sawtic AI transforms e-commerce communication challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "High Cart Abandonment Rates",
+            "description": "Customers abandon shopping carts when they can't get immediate answers about shipping, returns, or product details. Without real-time support, they shop with competitors instead.",
+            "icon": "uil-shopping-cart-alt",
+            "impact": "70% average cart abandonment rate"
+        },
+        {
+            "title": "Overwhelmed Customer Service",
+            "description": "Customer service teams can't handle peak shopping periods during sales events and holidays. Long wait times frustrate customers and damage brand reputation.",
+            "icon": "uil-phone-slash",
+            "impact": "60% of calls during peak hours go unanswered"
+        },
+        {
+            "title": "After-Hours Shopping Support",
+            "description": "Online shoppers browse and buy at all hours, especially during evening and weekend peak times. Without 24/7 support, businesses lose international and late-night customers.",
+            "icon": "uil-clock",
+            "impact": "40% of online traffic happens after business hours"
+        },
+        {
+            "title": "Complex Product Information",
+            "description": "Customers need detailed product specs, compatibility info, and sizing guidance. Without expert assistance, they either buy wrong items or don't buy at all.",
+            "icon": "uil-info-circle",
+            "impact": "30% of returns due to product mismatch"
+        },
+        {
+            "title": "Order Tracking & Support Issues",
+            "description": "Customers constantly check order status, delivery updates, and need help with changes or cancellations. Manual processes slow down resolution and frustrate customers.",
+            "icon": "uil-package",
+            "impact": "25% of calls are order-related inquiries"
+        },
+        {
+            "title": "Language Barriers with Expat Shoppers",
+            "description": "UAE's international community shops online in multiple languages. Language barriers prevent sales and create customer service complications.",
+            "icon": "uil-comment-slash",
+            "impact": "35% of UAE online shoppers prefer non-English support"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "24/7 Cart Recovery Assistant",
+            "description": "AI agent proactively contacts customers with abandoned carts, answers questions, offers assistance, and guides them through checkout completion.",
+            "icon": "uil-redo",
+            "benefit": "85% cart recovery rate",
+            "demo_available": true
+        },
+        {
+            "title": "Intelligent Product Consultation",
+            "description": "Smart product recommendation system with detailed specs, compatibility checks, and personalized suggestions based on customer needs and preferences.",
+            "icon": "uil-search",
+            "benefit": "50% increase in average order value",
+            "demo_available": true
+        },
+        {
+            "title": "Instant Order Management",
+            "description": "Real-time order tracking, modification support, and delivery coordination. Customers get immediate updates and can make changes without waiting.",
+            "icon": "uil-truck",
+            "benefit": "90% faster order resolution",
+            "demo_available": true
+        },
+        {
+            "title": "Peak Season Support Scaling",
+            "description": "AI automatically handles increased volume during sales events, holidays, and peak shopping periods without hiring temporary staff.",
+            "icon": "uil-chart-line",
+            "benefit": "Handle 10x more inquiries during sales",
+            "demo_available": true
+        },
+        {
+            "title": "Multilingual Shopping Assistant",
+            "description": "Fluent support in Arabic, English, Hindi, and Urdu for UAE's diverse online shopping community with cultural shopping preferences.",
+            "icon": "uil-comments",
+            "benefit": "60% increase in international customer satisfaction",
+            "demo_available": true
+        },
+        {
+            "title": "Smart Returns & Exchanges",
+            "description": "Automated returns processing, exchange coordination, and refund management with instant policy explanations and resolution tracking.",
+            "icon": "uil-exchange",
+            "benefit": "80% faster returns processing",
+            "demo_available": false
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "ecommerce_problem_awareness"
+    }
+}

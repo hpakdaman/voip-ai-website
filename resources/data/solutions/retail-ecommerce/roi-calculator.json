@@ -1,0 +1,162 @@
+{
+    "section": {
+        "badge": "E-commerce ROI Calculator",
+        "title": "Calculate Your Online Store",
+        "highlighted": "Revenue Growth",
+        "description": "See exactly how much Sawtic AI can boost your e-commerce sales while improving customer satisfaction and operational efficiency."
+    },
+    "calculator": {
+        "title": "E-commerce ROI Calculator",
+        "subtitle": "Calculate your monthly revenue growth with AI shopping assistants",
+        "inputs": [
+            {
+                "id": "monthly_visitors",
+                "label": "Monthly Website Visitors",
+                "type": "number",
+                "min": 100,
+                "max": 100000,
+                "default": 5000,
+                "tooltip": "Average number of unique visitors to your online store monthly"
+            },
+            {
+                "id": "current_conversion_rate",
+                "label": "Current Conversion Rate (%)",
+                "type": "number", 
+                "min": 0.5,
+                "max": 15,
+                "default": 2.5,
+                "tooltip": "Percentage of visitors who currently make a purchase"
+            },
+            {
+                "id": "average_order_value",
+                "label": "Average Order Value (AED)",
+                "type": "number",
+                "min": 50,
+                "max": 2000,
+                "default": 180,
+                "tooltip": "Average amount customers spend per order"
+            },
+            {
+                "id": "cart_abandonment_rate",
+                "label": "Current Cart Abandonment Rate (%)",
+                "type": "number",
+                "min": 30,
+                "max": 90,
+                "default": 70,
+                "tooltip": "Percentage of shopping carts abandoned before checkout"
+            },
+            {
+                "id": "customer_service_hours",
+                "label": "Customer Service Hours (Daily)",
+                "type": "number",
+                "min": 2,
+                "max": 16,
+                "default": 8,
+                "tooltip": "Daily hours spent on customer service and order support"
+            }
+        ],
+        "calculations": {
+            "conversion_improvement": 35,
+            "cart_recovery_rate": 85,
+            "upselling_increase": 25,
+            "customer_service_automation": 70,
+            "sawtic_monthly_cost": 1800
+        },
+        "results": [
+            {
+                "id": "conversion_revenue_boost",
+                "label": "Monthly Conversion Revenue Boost",
+                "description": "Additional revenue from improved conversion rates",
+                "formula": "(monthly_visitors * current_conversion_rate / 100 * conversion_improvement / 100) * average_order_value",
+                "prefix": "AED ",
+                "color": "voip-link"
+            },
+            {
+                "id": "cart_recovery_revenue", 
+                "label": "Cart Recovery Revenue",
+                "description": "Revenue recovered from abandoned shopping carts",
+                "formula": "(monthly_visitors * cart_abandonment_rate / 100 * cart_recovery_rate / 100 * 0.3) * average_order_value",
+                "prefix": "AED ",
+                "color": "voip-primary"
+            },
+            {
+                "id": "upselling_revenue",
+                "label": "Upselling Revenue Increase",
+                "description": "Additional revenue from AI-powered product recommendations",
+                "formula": "(monthly_visitors * current_conversion_rate / 100) * average_order_value * upselling_increase / 100",
+                "prefix": "AED ",
+                "color": "voip-accent"
+            },
+            {
+                "id": "total_monthly_revenue_increase",
+                "label": "Total Monthly Revenue Increase",
+                "description": "Combined monthly revenue improvements",
+                "formula": "conversion_revenue_boost + cart_recovery_revenue + upselling_revenue",
+                "prefix": "AED ",
+                "color": "voip-link",
+                "highlight": true
+            },
+            {
+                "id": "roi_percentage",
+                "label": "Return on Investment",
+                "description": "ROI percentage after Sawtic subscription cost",
+                "formula": "((total_monthly_revenue_increase - sawtic_monthly_cost) / sawtic_monthly_cost) * 100",
+                "suffix": "%",
+                "color": "voip-primary",
+                "highlight": true
+            },
+            {
+                "id": "payback_period",
+                "label": "Payback Period",
+                "description": "Time to recover Sawtic investment",
+                "formula": "sawtic_monthly_cost / (total_monthly_revenue_increase - sawtic_monthly_cost) * 30",
+                "suffix": " days",
+                "color": "voip-accent"
+            }
+        ]
+    },
+    "benefits_summary": [
+        {
+            "icon": "uil-shopping-cart",
+            "title": "24/7 Shopping Support",
+            "description": "Round-the-clock customer assistance for all shopping needs"
+        },
+        {
+            "icon": "uil-redo",
+            "title": "Cart Recovery System",
+            "description": "Proactively recover abandoned carts and convert to sales"
+        },
+        {
+            "icon": "uil-chart-growth",
+            "title": "Intelligent Upselling",
+            "description": "AI-powered product recommendations increase order values"
+        },
+        {
+            "icon": "uil-comments",
+            "title": "Multilingual Support",
+            "description": "Serve UAE's diverse online shopping community effectively"
+        }
+    ],
+    "case_study": {
+        "store_name": "Dubai Electronics Mart",
+        "before": {
+            "monthly_visitors": 8000,
+            "conversion_rate": "2.1%",
+            "cart_abandonment": "75%",
+            "monthly_revenue": "AED 85,000"
+        },
+        "after": {
+            "monthly_visitors": 8000,
+            "conversion_rate": "3.8%",
+            "cart_abandonment": "35%",
+            "monthly_revenue": "AED 165,000"
+        },
+        "testimonial": "Sawtic AI transformed our online store. We now capture sales we never knew we were losing and provide better customer service than ever."
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "focus": "ecommerce_revenue_growth",
+        "calculator_type": "retail_sales_optimization"
+    }
+}

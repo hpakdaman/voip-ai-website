@@ -84,6 +84,8 @@
         <script src="{{ asset('assets/js/app.js') }}"></script>
         <!-- VoIP AI Interactive Features -->
         <script src="{{ asset('assets/js/voip-home.js') }}"></script>
+        <!-- Image Fallback Handler -->
+        <script src="{{ asset('assets/js/image-fallback.js') }}"></script>
         <!-- JAVASCRIPTS -->
 
         <script>

@@ -60,7 +60,7 @@
                         <li><a href="{{ route('solutions.spa-massage') }}" class="sub-menu-item text-base font-medium">Spa & Massage</a></li>
                         <li><a href="{{ route('solutions.healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
                         <li><a href="{{ route('solutions.finance-banking') }}" class="sub-menu-item text-base font-medium">Finance & Banking</a></li>
-                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Retail & E-commerce <span class="text-xs">(Coming Soon)</span></a></li>
+                        <li><a href="{{ route('solutions.retail-ecommerce') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
                         <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Education <span class="text-xs">(Coming Soon)</span></a></li>
                         <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Government <span class="text-xs">(Coming Soon)</span></a></li>
                     </ul>
