@@ -1,0 +1,155 @@
+{
+    "section": {
+        "title": "Hear Your AI Banking Assistant in Action",
+        "description": "Listen to real conversations showcasing how our AI handles various banking scenarios with professional, secure communication following Central Bank guidelines."
+    },
+    "voice_demos": [
+        {
+            "id": 1,
+            "title": "Account Opening Inquiry",
+            "description": "AI guides new customer through business account opening process",
+            "duration": "50 seconds",
+            "scenario": "New business account",
+            "file_path": "assets/audio/solutions/finance-banking/account-opening-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Thank you for calling Emirates First Bank. I'm Aisha, your AI banking assistant. How may I help you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Hello, I'd like to open a business account for my new consulting company in Dubai.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent", 
+                    "text": "Congratulations on your new business! I'd be happy to help you open a business account. May I start by getting your trade license number and the nature of your consulting business?",
+                    "timestamp": "0:12"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Sure, it's license number 785692, and we provide IT consulting services.",
+                    "timestamp": "0:22"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Perfect! For IT consulting, our Business Plus account offers excellent benefits including free international transfers and priority customer service. I can schedule an appointment with our business specialist tomorrow at 10 AM or 2 PM to complete the process.",
+                    "timestamp": "0:28"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Loan Pre-Qualification",
+            "description": "Customer inquiring about personal loan eligibility and rates",
+            "duration": "45 seconds", 
+            "scenario": "Loan inquiry",
+            "file_path": "assets/audio/solutions/finance-banking/loan-inquiry-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Good afternoon! This is Dubai Investment Bank. I'm Omar, your AI assistant. How can I help you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "I'm interested in a personal loan for home renovation. What are your current rates?",
+                    "timestamp": "0:06"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "I'd be happy to help with your home renovation loan! Our current personal loan rates start from 4.99% APR for qualified customers. May I ask your monthly salary to check your eligibility?",
+                    "timestamp": "0:12"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "My monthly salary is 18,000 AED, and I need about 100,000 AED for the renovation.",
+                    "timestamp": "0:22"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Excellent! Based on your salary, you're pre-qualified for up to 150,000 AED at 5.2% APR. For 100,000 AED over 5 years, your monthly payment would be approximately 1,890 AED. Would you like me to start your application?",
+                    "timestamp": "0:28"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Investment Consultation",
+            "description": "High-net-worth client seeking investment advice and portfolio guidance",
+            "duration": "55 seconds",
+            "scenario": "Investment advisory",
+            "file_path": "assets/audio/solutions/finance-banking/investment-consultation-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Good morning, Mr. Al-Mansouri. This is Fatima from ADCB Wealth Management. Thank you for your interest in our investment services.",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "Hello Fatima. I'm looking to diversify my portfolio with some UAE and international investments. I have about 500,000 AED to invest.",
+                    "timestamp": "0:10"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "That's a substantial investment amount. Based on current market conditions, I'd recommend a balanced portfolio: 40% UAE stocks and bonds, 35% international equity funds, and 25% in our UAE real estate investment trust. This provides diversification with strong local exposure.",
+                    "timestamp": "0:18"
+                },
+                {
+                    "speaker": "Client",
+                    "text": "What kind of returns should I expect, and what are the fees?",
+                    "timestamp": "0:35"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Historically, this allocation has delivered 8-12% annual returns. Our management fee is 1.2% annually, and I can schedule a detailed consultation with our senior wealth advisor to discuss your specific financial goals and risk tolerance.",
+                    "timestamp": "0:38"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Account Service Request",
+            "description": "Existing customer requesting account information and transaction help",
+            "duration": "40 seconds",
+            "scenario": "Customer service", 
+            "file_path": "assets/audio/solutions/finance-banking/account-service-demo.mp3",
+            "transcript": [
+                {
+                    "speaker": "AI Agent",
+                    "text": "Hello, thank you for calling First Abu Dhabi Bank customer service. I'm Khalid, your AI assistant. How may I assist you today?",
+                    "timestamp": "0:00"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Hi, I need to check my account balance and also set up a standing order for my rent payment.",
+                    "timestamp": "0:08"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "I'd be happy to help with both requests. For security, may I please verify your account with the last 4 digits of your Emirates ID and your date of birth?",
+                    "timestamp": "0:15"
+                },
+                {
+                    "speaker": "Customer",
+                    "text": "Sure, Emirates ID ends in 9247, and my birthday is March 15th, 1985.",
+                    "timestamp": "0:23"
+                },
+                {
+                    "speaker": "AI Agent",
+                    "text": "Thank you for verification. Your current account balance is 45,680 AED. For the standing order, I can set up monthly rent payments. What amount and date would you like the transfer to occur each month?",
+                    "timestamp": "0:28"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_demos": 4,
+        "industry": "banking and financial services",
+        "demo_types": ["account_opening", "loan_inquiry", "investment_advisory", "customer_service"]
+    }
+}

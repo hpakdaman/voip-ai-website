@@ -25,7 +25,7 @@ $solutions = $data['solutions'] ?? [];
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
             @foreach($problems as $index => $problem)
             <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.2) + 0.1 }}s">
-                <div class="h-full p-6 rounded-2xl border border-red-400/20 transition-all duration-300 hover:border-red-400/40 flex flex-col" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
+                <div class="h-full p-6 rounded-2xl border-0 transition-all duration-300 hover:scale-105 flex flex-col" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
                     <!-- Problem Icon -->
                     <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
                         <i class="uil {{ $problem['icon'] ?? 'uil-times' }} text-2xl text-white"></i>
@@ -49,7 +49,7 @@ $solutions = $data['solutions'] ?? [];
                     
                     <!-- Business Impact - Stuck to Bottom -->
                     @if(isset($problem['impact']))
-                    <div class="p-4 rounded-xl border border-red-400/20 mt-auto" style="background: rgba(239, 68, 68, 0.05);">
+                    <div class="p-4 rounded-xl border-0 mt-auto" style="background: rgba(239, 68, 68, 0.05);">
                         <div class="text-center">
                             <div class="text-slate-400 text-xs font-medium uppercase tracking-wide mb-2">Business Impact</div>
                             <div class="text-red-400 font-bold text-lg leading-tight">{{ $problem['impact'] }}</div>

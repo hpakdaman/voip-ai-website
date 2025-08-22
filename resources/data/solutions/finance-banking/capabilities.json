@@ -1,0 +1,186 @@
+{
+    "section": {
+        "badge": "AI Financial Services Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Banking & Finance Inside Out",
+        "description": "Advanced AI trained specifically for UAE financial services, banking regulations, and customer service excellence following Central Bank guidelines."
+    },
+    "capabilities": [
+        {
+            "title": "Banking Product Expert",
+            "description": "Instantly provides detailed information about accounts, loans, credit cards, and investment products with personalized recommendations.",
+            "icon": "uil-credit-card",
+            "is_premium": false,
+            "features": [
+                "Complete product descriptions",
+                "Interest rate comparisons",
+                "Eligibility requirement explanations",
+                "Feature and benefit details",
+                "Personalized product matching"
+            ],
+            "metric": "99%",
+            "metric_label": "Product Accuracy",
+            "delay": "0.2s"
+        },
+        {
+            "title": "Smart Loan Processing",
+            "description": "Handles complex loan applications with credit assessment, documentation guidance, and approval status tracking.",
+            "icon": "uil-money-bill",
+            "is_premium": false,
+            "features": [
+                "Real-time eligibility checking",
+                "Document requirement guidance",
+                "Credit score evaluation",
+                "Application status tracking",
+                "Pre-approval notifications"
+            ],
+            "metric": "96%",
+            "metric_label": "Processing Accuracy",
+            "delay": "0.3s"
+        },
+        {
+            "title": "Investment Advisory Services",
+            "description": "Provides sophisticated investment guidance with market analysis and portfolio recommendations tailored to client risk profiles.",
+            "icon": "uil-chart-growth",
+            "is_premium": true,
+            "features": [
+                "Market trend analysis",
+                "Risk profile assessment",
+                "Portfolio diversification advice",
+                "Investment product comparisons",
+                "Performance monitoring"
+            ],
+            "metric": "94%",
+            "metric_label": "Investment Accuracy",
+            "delay": "0.4s"
+        },
+        {
+            "title": "Customer Relationship Excellence",
+            "description": "Maintains comprehensive customer profiles with transaction history, preferences, and personalized financial service recommendations.",
+            "icon": "uil-users-alt",
+            "is_premium": true,
+            "features": [
+                "Transaction history analysis",
+                "Customer preference tracking",
+                "Personalized service recommendations",
+                "Special milestone reminders",
+                "Loyalty program management"
+            ],
+            "metric": "92%",
+            "metric_label": "Customer Satisfaction",
+            "delay": "0.5s"
+        },
+        {
+            "title": "Automated Financial Planning",
+            "description": "Provides comprehensive financial planning services with goal setting, savings strategies, and retirement planning guidance.",
+            "icon": "uil-calculator",
+            "is_premium": true,
+            "features": [
+                "Financial goal assessment",
+                "Savings plan recommendations",
+                "Retirement planning guidance",
+                "Insurance needs analysis",
+                "Investment strategy development"
+            ],
+            "metric": "88%",
+            "metric_label": "Planning Success",
+            "delay": "0.6s"
+        },
+        {
+            "title": "Multi-Language Financial Communication",
+            "description": "Communicates fluently in Arabic and English with cultural sensitivity for UAE's diverse financial market and expat community.",
+            "icon": "uil-comments",
+            "is_premium": false,
+            "features": [
+                "Fluent Arabic & English",
+                "Islamic banking knowledge",
+                "Local financial terminology",
+                "Cultural investment practices",
+                "Privacy-conscious communication"
+            ],
+            "metric": "98%",
+            "metric_label": "Communication Score",
+            "delay": "0.7s"
+        }
+    ],
+    "integrations": [
+        {
+            "name": "Core Banking Systems",
+            "type": "Banking Platform",
+            "icon": "uil-database"
+        },
+        {
+            "name": "Temenos T24",
+            "type": "Banking Software",
+            "icon": "uil-money-bill"
+        },
+        {
+            "name": "Oracle FLEXCUBE",
+            "type": "Banking Solution",
+            "icon": "uil-credit-card"
+        },
+        {
+            "name": "FIS Profile",
+            "type": "Banking Platform",
+            "icon": "uil-chart-line"
+        },
+        {
+            "name": "Salesforce Financial Cloud",
+            "type": "CRM System",
+            "icon": "uil-users-alt"
+        },
+        {
+            "name": "Microsoft Dynamics",
+            "type": "Customer Management",
+            "icon": "uil-desktop-alt"
+        },
+        {
+            "name": "SWIFT Network",
+            "type": "Payment System",
+            "icon": "uil-exchange"
+        },
+        {
+            "name": "WhatsApp Business",
+            "type": "Messaging",
+            "icon": "uil-whatsapp"
+        },
+        {
+            "name": "SMS Gateway",
+            "type": "Notifications",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "Al Etihad Credit Bureau",
+            "type": "Credit Verification",
+            "icon": "uil-file-check"
+        },
+        {
+            "name": "Central Bank of UAE",
+            "type": "Regulatory Compliance",
+            "icon": "uil-shield-check"
+        },
+        {
+            "name": "Bloomberg Terminal",
+            "type": "Market Data",
+            "icon": "uil-chart-growth"
+        }
+    ],
+    "demo_title": "See Your AI Agent in Action",
+    "demo_description": "Watch our AI assistant handle banking inquiries with expertise, answering financial questions and managing complex service requests with professional financial knowledge.",
+    "demo_image": "assets/images/finance/consultation.jpg",
+    "demo_alt": "Financial Advisor Consulting with Client",
+    "demo_features": [
+        "Natural conversation about financial products",
+        "Expert knowledge of banking services and regulations",
+        "Professional account management and services",
+        "Personalized financial recommendations"
+    ],
+    "integration_description": "Seamlessly integrates with leading banking platforms and financial systems used across UAE financial institutions",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE banking and financial services market"
+    }
+}

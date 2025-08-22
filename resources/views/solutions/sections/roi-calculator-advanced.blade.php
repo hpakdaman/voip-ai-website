@@ -139,7 +139,7 @@ $calculatorData = $data['advanced_calculator'] ?? [];
 
                     <!-- CTA Button -->
                     <div class="mt-auto">
-                        <a href="/contact-us" class="block w-full text-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="advanced-roi-contact">
+                        <a href="{{ route('demo.booking') }}" class="block w-full text-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="advanced-roi-contact">
                             <i class="uil uil-rocket text-xl mr-3"></i>
                             Start Saving Today
                         </a>

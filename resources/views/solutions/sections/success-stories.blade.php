@@ -143,7 +143,7 @@ $testimonials = $data['testimonials'] ?? [];
                 <p class="text-slate-300 mb-8">Start capturing more leads with Sawtic AI.</p>
                 
                 <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
-                    <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="success-stories-demo">
+                    <a href="{{ route('demo.booking') }}" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="success-stories-demo">
                         <i class="uil uil-calendar-alt text-xl mr-3"></i>
                         Get Your Free Demo
                     </a>

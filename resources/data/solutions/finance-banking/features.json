@@ -1,0 +1,73 @@
+{
+    "section": {
+        "badge": "Financial AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "Transform Banking",
+        "description": "Watch how our AI agents revolutionize financial services communication with live banking demonstrations"
+    },
+    "dashboard": {
+        "title": "Real-Time Banking Analytics",
+        "description": "Monitor all customer interactions, loan applications, and service requests in real-time from your executive dashboard.",
+        "image": "assets/images/finance/dashboard.jpg",
+        "features": [
+            "Live customer interaction monitoring",
+            "Instant loan application notifications",
+            "Customer satisfaction analytics"
+        ]
+    },
+    "consultation": {
+        "title": "Expert Financial Consultations",
+        "description": "Your AI agent provides professional financial advice with deep knowledge of UAE banking regulations, investment products, and Central Bank guidelines.",
+        "image": "assets/images/finance/consultation.jpg",
+        "features": [
+            "Real-time market rates and investment options",
+            "UAE Central Bank compliance and regulations",
+            "Personalized financial planning and advice"
+        ]
+    },
+    "features": [
+        {
+            "title": "Account Service Management",
+            "description": "AI handles balance inquiries, transfer requests, and account maintenance",
+            "icon": "uil-credit-card",
+            "demo_video": "account-service-demo.mp4",
+            "highlight": "Instant account access and services"
+        },
+        {
+            "title": "Loan Application Processing",
+            "description": "Smart pre-qualification and application guidance",
+            "icon": "uil-money-bill",
+            "demo_video": "loan-application-demo.mp4",
+            "highlight": "90% faster loan processing"
+        },
+        {
+            "title": "Investment Consultation",
+            "description": "Personalized investment advice and portfolio management",
+            "icon": "uil-chart-growth",
+            "demo_video": "investment-demo.mp4",
+            "highlight": "Expert investment guidance 24/7"
+        }
+    ],
+    "stats": [
+        {
+            "number": "55%",
+            "label": "More Applications",
+            "description": "Loan applications through 24/7 AI support"
+        },
+        {
+            "number": "92%",
+            "label": "Customer Satisfaction",
+            "description": "Higher satisfaction with instant service"
+        },
+        {
+            "number": "24/7",
+            "label": "Banking Support",
+            "description": "Round-the-clock financial assistance"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "finance-banking"
+    }
+}

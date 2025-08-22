@@ -54,7 +54,7 @@ $stats = $data['stats'] ?? $data['hero_stats'] ?? [];
                         <i class="uil uil-phone text-xl mr-3"></i>
                         Call Now: +971 4 864 7245
                     </a>
-                    <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="hero-demo">
+                    <a href="{{ route('demo.booking') }}" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white border-2 transition-all duration-300 hover:bg-white/10" style="border-color: var(--voip-link); color: var(--voip-link);" data-cta-track="hero-demo">
                         <i class="uil uil-calendar-alt text-xl mr-3"></i>
                         Book Free Demo
                     </a>
