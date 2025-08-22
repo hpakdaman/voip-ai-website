@@ -21,7 +21,7 @@
                 <div class="w-10 h-10 rounded-full overflow-hidden border-2 flex-shrink-0" style="border-color: var(--voip-link);">
                     @if(isset($testimonial['image']) && !empty($testimonial['image']))
                     <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover" 
-                         onerror="this.src='{{ asset('assets/images/client/01.jpg') }}';">
+                         onerror="this.src='{{ asset('assets/images/no-image.svg') }}';">
                     @else
                     <div class="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
                         <i class="uil uil-user text-white text-xs"></i>
