@@ -38,6 +38,8 @@ if ($maintenanceMode) {
     Route::get('/solutions/healthcare', [HomeController::class, 'healthcare'])->name('solutions.healthcare');
     Route::get('/solutions/finance-banking', [HomeController::class, 'financeBanking'])->name('solutions.finance-banking');
     Route::get('/solutions/retail-ecommerce', [HomeController::class, 'retailEcommerce'])->name('solutions.retail-ecommerce');
+    Route::get('/solutions/education', [HomeController::class, 'education'])->name('solutions.education');
+    Route::get('/solutions/government', [HomeController::class, 'government'])->name('solutions.government');
 
     // Demo Booking Routes (Public)
     Route::prefix('demo')->name('demo.')->group(function () {

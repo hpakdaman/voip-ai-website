@@ -115,6 +115,40 @@ class IndustryDataService
     }
 
     /**
+     * Alias methods for consistent naming
+     */
+    public function getProblemsData(): array
+    {
+        return $this->getProblemSolutionData();
+    }
+
+    public function getFeaturesData(): array
+    {
+        return $this->getFeatureShowcaseData();
+    }
+
+    public function getVoiceDemosData(): array
+    {
+        return $this->getVoiceSamplesData();
+    }
+
+    /**
+     * Get digital dashboard data (government-specific)
+     */
+    public function getDigitalDashboardData(): array
+    {
+        return $this->loadData('digital-dashboard.json');
+    }
+
+    /**
+     * Get service matrix data (government-specific)
+     */
+    public function getServiceMatrixData(): array
+    {
+        return $this->loadData('service-matrix.json');
+    }
+
+    /**
      * Get all available data files for this industry
      */
     public function getAvailableDataFiles(): array

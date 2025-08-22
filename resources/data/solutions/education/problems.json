@@ -1,0 +1,133 @@
+{
+    "section": {
+        "problems_badge": "Education Service Challenges",
+        "problems_title": "Educational Institutions Are Losing Students to",
+        "problems_highlighted": "Missed Opportunities",
+        "solutions_title": "How Sawtic AI Transforms",
+        "solutions_highlighted": "Education Services"
+    },
+    "problems": [
+            {
+                "title": "Missed After-Hours Inquiries",
+                "description": "Prospective students call outside business hours and get voicemail. 73% never call back.",
+                "icon": "uil-clock-nine",
+                "impact": "Lost Students",
+                "color": "red"
+            },
+            {
+                "title": "Overwhelmed Admissions Staff",
+                "description": "Peak inquiry periods overwhelm your team, leading to long wait times and frustrated prospects.",
+                "icon": "uil-users-alt",
+                "impact": "Poor Experience",
+                "color": "red"
+            },
+            {
+                "title": "Inconsistent Information",
+                "description": "Different staff members provide varying information about programs, requirements, and deadlines.",
+                "icon": "uil-question-circle",
+                "impact": "Confusion",
+                "color": "red"
+            },
+            {
+                "title": "Limited Multilingual Support",
+                "description": "International students struggle with language barriers when seeking information.",
+                "icon": "uil-comment-alt-question",
+                "impact": "Accessibility Issues",
+                "color": "red"
+            },
+            {
+                "title": "No Follow-up System",
+                "description": "Potential students slip through cracks without proper nurturing and follow-up communications.",
+                "icon": "uil-phone-slash",
+                "impact": "Lost Opportunities",
+                "color": "red"
+            },
+            {
+                "title": "Manual Student Support",
+                "description": "Current students face delays getting answers about grades, schedules, and campus services.",
+                "icon": "uil-file-question-alt",
+                "impact": "Student Dissatisfaction",
+                "color": "red"
+            }
+        ],
+    "solutions": [
+        {
+            "title": "24/7 Student Inquiry Support",
+            "description": "AI agent handles admissions questions, program information, and application guidance any time students need help - evenings, weekends, and holidays.",
+            "icon": "uil-phone",
+            "result": "95% inquiry response rate",
+            "result_description": "Never miss another prospective student",
+            "benefits": [
+                "Instant responses to program questions",
+                "Application deadline reminders",
+                "Campus tour scheduling",
+                "Financial aid guidance"
+            ]
+        },
+        {
+            "title": "Multilingual Student Services",
+            "description": "Support international students in 50+ languages with culturally aware responses about programs, visas, and campus life.",
+            "icon": "uil-comments",
+            "result": "85% international satisfaction",
+            "result_description": "Inclusive access for all students",
+            "benefits": [
+                "Native-quality language support",
+                "Cultural context awareness",
+                "Visa and immigration guidance",
+                "International program information"
+            ]
+        },
+        {
+            "title": "Automated Academic Support",
+            "description": "Instantly provide grade information, course schedules, registration help, and connect students with appropriate campus resources.",
+            "icon": "uil-graduation-cap",
+            "result": "78% faster support resolution",
+            "result_description": "Students get help when they need it",
+            "benefits": [
+                "Grade and transcript requests",
+                "Course registration assistance",
+                "Academic advisor connections",
+                "Campus service directory"
+            ]
+        },
+        {
+            "title": "Intelligent Parent Communication",
+            "description": "Keep parents informed about academic progress, billing, campus events, and provide answers to their questions professionally.",
+            "icon": "uil-users-alt",
+            "result": "90% parent satisfaction",
+            "result_description": "Stronger family engagement",
+            "benefits": [
+                "Academic progress updates",
+                "Billing and payment assistance",
+                "Campus safety information",
+                "Event and activity notifications"
+            ]
+        },
+        {
+            "title": "Smart Enrollment Management",
+            "description": "Guide prospective students through application processes, requirements, and deadlines with personalized assistance.",
+            "icon": "uil-file-check-alt",
+            "result": "67% higher enrollment conversion",
+            "result_description": "Turn inquiries into enrolled students",
+            "benefits": [
+                "Application process guidance",
+                "Requirement clarification",
+                "Deadline management",
+                "Document submission help"
+            ]
+        },
+        {
+            "title": "Crisis Communication System",
+            "description": "Instantly distribute emergency alerts, campus closures, and safety information to students, parents, and staff during critical situations.",
+            "icon": "uil-exclamation-triangle",
+            "result": "100% emergency coverage",
+            "result_description": "Campus safety when it matters most",
+            "benefits": [
+                "Emergency alert distribution",
+                "Weather-related updates",
+                "Campus closure notifications",
+                "Safety protocol information"
+            ]
+        }
+    ]
+}

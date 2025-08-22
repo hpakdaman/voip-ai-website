@@ -1,0 +1,44 @@
+{
+    "section": {
+        "headline": "Powerful Features for Educational Excellence",
+        "subheadline": "Advanced AI capabilities designed specifically for educational institutions",
+        "features": [
+            {
+                "title": "Academic Calendar Integration",
+                "description": "Automatically provide accurate information about enrollment deadlines, exam dates, holidays, and important academic milestones",
+                "icon": "uil-calendar-alt",
+                "highlight": false
+            },
+            {
+                "title": "Student Information System Sync",
+                "description": "Real-time integration with your SIS to provide accurate grades, schedules, and account information",
+                "icon": "uil-database",
+                "highlight": true
+            },
+            {
+                "title": "Financial Aid Guidance",
+                "description": "Assist students with scholarship information, application processes, and financial planning resources",
+                "icon": "uil-dollar-sign",
+                "highlight": false
+            },
+            {
+                "title": "Course Recommendation Engine",
+                "description": "Suggest appropriate courses based on student's major, prerequisites, and graduation requirements",
+                "icon": "uil-lightbulb",
+                "highlight": true
+            },
+            {
+                "title": "Campus Resource Directory",
+                "description": "Provide detailed information about campus services, facilities, dining, parking, and student resources",
+                "icon": "uil-map-marker",
+                "highlight": false
+            },
+            {
+                "title": "Registration Support",
+                "description": "Guide students through course registration, drop/add processes, and schedule optimization",
+                "icon": "uil-edit-alt",
+                "highlight": false
+            }
+        ]
+    }
+}

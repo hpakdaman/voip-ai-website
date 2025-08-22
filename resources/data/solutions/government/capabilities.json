@@ -1,0 +1,86 @@
+{
+    "section": {
+        "headline": "Comprehensive Government AI Solutions",
+        "subheadline": "Everything needed to deliver exceptional public services that citizens can rely on",
+        "capabilities": [
+            {
+                "title": "Citizen Services Support",
+                "description": "Handle inquiries about permits, licenses, municipal services, and general government information with empathy and accuracy",
+                "icon": "uil-user-check",
+                "features": [
+                    "Building and business permits guidance",
+                    "License renewals and applications",
+                    "Municipal service requests",
+                    "Tax and fee information",
+                    "Department directory assistance"
+                ],
+                "badge": "Essential"
+            },
+            {
+                "title": "Multilingual Public Access",
+                "description": "Serve diverse communities in their preferred languages, ensuring equitable access to government services for all residents",
+                "icon": "uil-comment-alt-lines",
+                "features": [
+                    "50+ language support including Arabic",
+                    "Cultural context awareness",
+                    "Immigration service guidance",
+                    "Translation of key documents",
+                    "Community outreach support"
+                ],
+                "badge": "Inclusive"
+            },
+            {
+                "title": "Emergency & Crisis Communication",
+                "description": "Provide critical information during emergencies, natural disasters, and public health situations when citizens need it most",
+                "icon": "uil-exclamation-triangle",
+                "features": [
+                    "Emergency alert distribution",
+                    "Evacuation procedure guidance",
+                    "Service closure notifications",
+                    "Public health information",
+                    "Crisis resource coordination"
+                ],
+                "badge": "Critical"
+            },
+            {
+                "title": "Digital Services Navigation",
+                "description": "Guide citizens through online portals, applications, and digital government services with patient, step-by-step assistance",
+                "icon": "uil-laptop-cloud",
+                "features": [
+                    "Online portal navigation help",
+                    "Digital form completion guidance",
+                    "Account setup and login support",
+                    "Document upload assistance",
+                    "Payment processing help"
+                ],
+                "badge": "Modern"
+            },
+            {
+                "title": "Compliance & Regulatory Guidance",
+                "description": "Help businesses and individuals understand and comply with local regulations, codes, and legal requirements",
+                "icon": "uil-shield-check",
+                "features": [
+                    "Zoning and building code information",
+                    "Business compliance requirements",
+                    "Environmental regulation guidance",
+                    "Safety code explanations",
+                    "Permit requirement clarification"
+                ],
+                "badge": "Legal"
+            },
+            {
+                "title": "Community Engagement",
+                "description": "Facilitate citizen participation in local government through meeting information, feedback collection, and civic engagement",
+                "icon": "uil-users-alt",
+                "features": [
+                    "Town hall meeting schedules",
+                    "Public comment submissions",
+                    "Volunteer opportunity coordination",
+                    "Community event information",
+                    "Civic participation guidance"
+                ],
+                "badge": "Democratic"
+            }
+        ]
+    }
+}

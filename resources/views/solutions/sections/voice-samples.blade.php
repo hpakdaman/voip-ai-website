@@ -1,6 +1,7 @@
 @php
 $sectionData = $data['section'] ?? [];
-$voiceSamples = $data['voice_samples'] ?? [];
+// Handle different data structures - some use 'voice_samples', government uses 'demos' in section
+$voiceSamples = $data['voice_samples'] ?? $sectionData['demos'] ?? [];
 @endphp
 
 <!-- Voice Samples Section - Dashboard Style Interactive Player -->
@@ -22,13 +23,11 @@ $voiceSamples = $data['voice_samples'] ?? [];
             </div>
             
             <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
-                {{ $sectionData['title'] ?? 'Control Your AI Agent' }}
-                <span style="color: var(--voip-link);">{{ $sectionData['highlighted'] ?? 'Command Center' }}</span>
+                {{ $sectionData['headline'] ?? $sectionData['title'] ?? 'See Sawtic AI' }}
+                <span style="color: var(--voip-link);">In Action</span>
             </h2>
             
-            @if(isset($sectionData['description']))
-            <p class="text-slate-300 text-xl leading-relaxed">{{ $sectionData['description'] }}</p>
-            @endif
+            <p class="text-slate-300 text-xl leading-relaxed">{{ $sectionData['subheadline'] ?? $sectionData['description'] ?? 'Real conversations showing how our AI serves clients with empathy, accuracy, and professionalism' }}</p>
         </div>
         
         <!-- Interactive Voice Dashboard -->
@@ -57,7 +56,7 @@ $voiceSamples = $data['voice_samples'] ?? [];
                                     </div>
                                     <div>
                                         <div class="text-white font-medium text-sm">{{ $sample['title'] ?? 'Voice Sample' }}</div>
-                                        <div class="text-slate-400 text-xs">{{ $sample['duration'] ?? '1:30' }} • {{ $sample['language'] ?? 'English' }}</div>
+                                        <div class="text-slate-400 text-xs">{{ $sample['duration'] ?? '1:30' }} • {{ isset($sample['tags'][0]) ? $sample['tags'][0] : 'Government Services' }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +71,8 @@ $voiceSamples = $data['voice_samples'] ?? [];
                         <!-- Current Demo Header -->
                         <div class="flex items-center justify-between mb-8">
                             <div>
-                                <h3 class="text-2xl font-bold text-white mb-2" id="current-demo-title">{{ $voiceSamples[0]['title'] ?? 'Property Inquiry Call' }}</h3>
-                                <p class="text-slate-400" id="current-demo-scenario">{{ $voiceSamples[0]['scenario'] ?? 'Customer calling about property details' }}</p>
+                                <h3 class="text-2xl font-bold text-white mb-2" id="current-demo-title">{{ $voiceSamples[0]['title'] ?? 'Government Service Call' }}</h3>
+                                <p class="text-slate-400" id="current-demo-scenario">{{ $voiceSamples[0]['description'] ?? $voiceSamples[0]['scenario'] ?? 'AI assisting citizen with government services' }}</p>
                             </div>
                             <div class="flex items-center space-x-4">
                                 <div class="flex items-center">
@@ -116,6 +115,13 @@ $voiceSamples = $data['voice_samples'] ?? [];
                                             {{ $highlight }}
                                         </div>
                                         @endforeach
+                                    @elseif(isset($voiceSamples[0]['tags']))
+                                        @foreach(array_slice($voiceSamples[0]['tags'], 0, 3) as $tag)
+                                        <div class="flex items-center text-sm text-white">
+                                            <i class="uil uil-check text-xs mr-2" style="color: var(--voip-link);"></i>
+                                            {{ $tag }}
+                                        </div>
+                                        @endforeach
                                     @endif
                                 </div>
                             </div>
@@ -133,7 +139,7 @@ $voiceSamples = $data['voice_samples'] ?? [];
                                     </div>
                                     <div class="flex justify-between text-sm">
                                         <span class="text-white">Language</span>
-                                        <span style="color: var(--voip-link);" id="demo-language">{{ $voiceSamples[0]['language'] ?? 'English' }}</span>
+                                        <span style="color: var(--voip-link);" id="demo-language">{{ isset($voiceSamples[0]['tags'][0]) ? $voiceSamples[0]['tags'][0] : 'English' }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -233,8 +239,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (voiceSamples[index]) {
                 const sample = voiceSamples[index];
                 currentTitle.textContent = sample.title || 'Voice Sample';
-                currentScenario.textContent = sample.scenario || 'Call Scenario';
-                demoLanguage.textContent = sample.language || 'English';
+                currentScenario.textContent = sample.description || sample.scenario || 'Call Scenario';
+                demoLanguage.textContent = (sample.tags && sample.tags[0]) || sample.language || 'English';
                 
                 // Update audio source
                 if (sample.audio_file && audioPlayer) {
@@ -243,9 +249,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 // Update highlights
-                if (sample.highlights && demoHighlights) {
+                if (demoHighlights) {
                     demoHighlights.innerHTML = '';
-                    sample.highlights.slice(0, 3).forEach(highlight => {
+                    const highlights = sample.highlights || sample.tags || [];
+                    highlights.slice(0, 3).forEach(highlight => {
                         const div = document.createElement('div');
                         div.className = 'flex items-center text-sm text-white';
                         div.innerHTML = `<i class="uil uil-check text-xs mr-2" style="color: var(--voip-link);"></i>${highlight}`;

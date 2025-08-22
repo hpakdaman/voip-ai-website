@@ -1,0 +1,62 @@
+{
+    "section": {
+        "headline": "Government AI Voice Demonstrations",
+        "subheadline": "Real conversations showing how our AI serves citizens with empathy, accuracy, and respect",
+        "demos": [
+            {
+                "title": "Building Permit Inquiry",
+                "description": "AI helps a resident understand residential addition permit requirements with patience and clarity",
+                "scenario": "municipal_permit",
+                "duration": "4:20",
+                "audio_file": "/assets/audio/solutions/government/government-building-permit.mp3",
+                "transcript": "Citizen: Hi, I want to build a deck on my house. What permits do I need?\n\nAI Agent: I'd be happy to help you with your deck project! For residential decks, you'll typically need a building permit if the deck is over 18 inches high or attached to your home. I can walk you through the requirements: you'll need property surveys, structural plans, and soil tests. The permit fee is $275, and typical processing time is 7-10 business days. Would you like me to connect you with our building department to schedule a pre-application consultation? They can review your specific situation and ensure you have everything needed.",
+                "tags": ["Municipal Services", "Building Permits", "Citizen Guidance"]
+            },
+            {
+                "title": "Emergency Services Information",
+                "description": "AI provides critical emergency preparedness information during a community safety briefing",
+                "scenario": "emergency_services",
+                "duration": "3:15",
+                "audio_file": "/assets/audio/solutions/government/government-emergency.mp3",
+                "transcript": "Citizen: I heard there might be flooding in our area. What should I do to prepare?\n\nAI Agent: Thank you for being proactive about your family's safety. For potential flooding, here's what you should do: First, ensure you have an emergency kit with water, non-perishable food, flashlights, and battery-powered radio. Second, identify your evacuation route - for your neighborhood, that's Highway 101 north to the community center. Third, sign up for our emergency alert system by texting ALERTS to 67283. If an evacuation is ordered, you'll receive immediate notification. Do you have any family members with special needs I can help you plan for?",
+                "tags": ["Emergency Preparedness", "Public Safety", "Community Care"]
+            },
+            {
+                "title": "Business License Application", 
+                "description": "AI guides an entrepreneur through small business license requirements with encouragement",
+                "scenario": "business_services",
+                "duration": "5:10",
+                "audio_file": "/assets/audio/solutions/government/government-business.mp3",
+                "transcript": "Citizen: I'm starting a small bakery and need to know about licenses and regulations.\n\nAI Agent: Congratulations on your new business venture! I'm excited to help you get started properly. For a bakery, you'll need several licenses: a general business license ($85), food service permit from health department ($150), and if you're doing retail sales, a sales tax permit (free). You'll also need to pass a health inspection before opening. I can connect you with our Small Business Development Center - they offer free consultations to help entrepreneurs like yourself navigate all requirements and even discuss financing options. Would you like me to schedule that appointment for you?",
+                "tags": ["Business Services", "Entrepreneurship Support", "Economic Development"]
+            },
+            {
+                "title": "Multilingual Social Services",
+                "description": "AI assists a Spanish-speaking resident with social service program enrollment",
+                "scenario": "social_services_spanish", 
+                "duration": "4:45",
+                "audio_file": "/assets/audio/solutions/government/government-multilingual.mp3",
+                "transcript": "Citizen: Hola, necesito ayuda con programas de asistencia alimentaria para mi familia.\n\nAI Agent: ¡Hola! Me da mucho gusto poder ayudarle con los programas de asistencia alimentaria. Hay varios programas disponibles para familias: SNAP (cupones de alimentos), WIC para mujeres y niños, y nuestro banco de alimentos comunitario. Para aplicar a SNAP, necesitará identificación, comprobante de ingresos, y comprobante de residencia. Puedo ayudarle a completar la aplicación por teléfono ahora mismo si tiene estos documentos. También puedo conectarle con nuestro navegador de servicios sociales que habla español. ¿Qué sería más útil para usted?",
+                "tags": ["Social Services", "Multilingual Support", "Family Assistance"]
+            },
+            {
+                "title": "Tax Information Assistance",
+                "description": "AI helps a senior citizen understand property tax exemptions with patience and clarity",
+                "scenario": "tax_services",
+                "duration": "3:35",
+                "audio_file": "/assets/audio/solutions/government/government-tax.mp3",
+                "transcript": "Citizen: I'm 67 years old and heard I might qualify for property tax reduction. Can you help me?\n\nAI Agent: Absolutely! As a senior citizen, you may qualify for several tax benefits. At 67, you're eligible for our senior citizen property tax exemption, which can reduce your assessment by up to $50,000. You'll need proof of age and income documentation showing your household income is below $65,000 annually. The application deadline is April 30th, and if approved, the reduction will appear on next year's tax bill. I can mail you the forms today, or if you prefer, our senior services coordinator can visit your home to help complete the application. Which option sounds better for you?",
+                "tags": ["Tax Services", "Senior Citizens", "Financial Assistance"]
+            },
+            {
+                "title": "Public Meeting Information",
+                "description": "AI informs a engaged citizen about upcoming town halls and civic participation opportunities",
+                "scenario": "civic_engagement",
+                "duration": "2:55",
+                "audio_file": "/assets/audio/solutions/government/government-civic.mp3",
+                "transcript": "Citizen: I want to get more involved in local government. When are the city council meetings?\n\nAI Agent: That's wonderful that you want to engage in your community! City council meetings are held the first and third Tuesday of each month at 7 PM in the council chambers at City Hall. The next meeting is this Tuesday, October 15th. This month's agenda includes the downtown revitalization project and next year's budget proposal. Public comment period is at the beginning - just sign up at the front desk when you arrive. We also have several citizen committees you might be interested in: Parks and Recreation, Transportation, and Economic Development. Each meets monthly and always welcomes new members. Would you like me to send you information about any of these committees?",
+                "tags": ["Civic Engagement", "Public Participation", "Community Involvement"]
+            }
+        ]
+    }
+}

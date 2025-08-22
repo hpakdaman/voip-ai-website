@@ -1,0 +1,133 @@
+{
+    "section": {
+        "problems_badge": "Government Service Challenges",
+        "problems_title": "Citizens Deserve Better",
+        "problems_highlighted": "Public Services",
+        "solutions_title": "How Sawtic AI Transforms",
+        "solutions_highlighted": "Government Services"
+    },
+        "problems": [
+            {
+                "title": "Long Wait Times for Citizens",
+                "description": "Residents wait hours on hold for simple questions about permits, licenses, or municipal services, creating frustration and lost productivity.",
+                "icon": "uil-clock",
+                "impact": "Public Dissatisfaction",
+                "color": "red"
+            },
+            {
+                "title": "Limited Service Hours",
+                "description": "Government offices close at 5 PM, but citizens need help evenings and weekends when they're free from work responsibilities.",
+                "icon": "uil-schedule",
+                "impact": "Accessibility Barriers",
+                "color": "red"
+            },
+            {
+                "title": "Complex Bureaucratic Processes",
+                "description": "Citizens get transferred between departments, creating confusion about which office handles their specific needs or questions.",
+                "icon": "uil-arrow-random",
+                "impact": "Citizen Confusion",
+                "color": "red"
+            },
+            {
+                "title": "Language Barriers",
+                "description": "Non-native speakers struggle to navigate government services, limiting their access to essential public programs and support.",
+                "icon": "uil-comment-alt-question",
+                "impact": "Service Inequality",
+                "color": "red"
+            },
+            {
+                "title": "Outdated Information Systems",
+                "description": "Staff provide conflicting information because different departments use outdated or non-integrated systems and procedures.",
+                "icon": "uil-database",
+                "impact": "Misinformation",
+                "color": "red"
+            },
+            {
+                "title": "No Emergency Communication",
+                "description": "During crises, citizens can't get timely updates about services, closures, or emergency procedures when they need them most.",
+                "icon": "uil-exclamation-triangle",
+                "impact": "Public Safety Risk",
+                "color": "red"
+            }
+        ],
+    "solutions": [
+        {
+            "title": "24/7 Citizen Support",
+            "description": "AI agents handle government inquiries around the clock, ensuring citizens always get help with permits, services, and questions.",
+            "icon": "uil-phone",
+            "result": "96% citizen satisfaction",
+            "result_description": "Always available when citizens need help",
+            "benefits": [
+                "Instant responses to service questions",
+                "Permit and license guidance",
+                "Municipal service requests",
+                "Department directory assistance"
+            ]
+        },
+        {
+            "title": "Multilingual Public Access",
+            "description": "Support diverse communities in 50+ languages, ensuring equal access to government services for all residents.",
+            "icon": "uil-comments",
+            "result": "89% accessibility improvement",
+            "result_description": "Inclusive service for all citizens",
+            "benefits": [
+                "Arabic and English fluency",
+                "Cultural context awareness",
+                "Immigration service guidance",
+                "Community outreach support"
+            ]
+        },
+        {
+            "title": "Emergency Communication System",
+            "description": "Instantly distribute critical alerts, safety information, and emergency updates to keep communities informed and safe.",
+            "icon": "uil-exclamation-triangle",
+            "result": "100% emergency coverage",
+            "result_description": "Critical information when it matters most",
+            "benefits": [
+                "Emergency alert distribution",
+                "Evacuation procedure guidance",
+                "Service closure notifications",
+                "Public health information"
+            ]
+        },
+        {
+            "title": "Smart Service Navigation",
+            "description": "Guide citizens through complex government processes, forms, and requirements with patient, step-by-step assistance.",
+            "icon": "uil-laptop-cloud",
+            "result": "78% process completion rate",
+            "result_description": "Citizens complete what they start",
+            "benefits": [
+                "Online portal navigation help",
+                "Form completion guidance", 
+                "Document requirements",
+                "Payment processing support"
+            ]
+        },
+        {
+            "title": "Compliance & Legal Guidance",
+            "description": "Help businesses and individuals understand regulations, permits, and legal requirements for full compliance.",
+            "icon": "uil-shield-check",
+            "result": "85% compliance improvement",
+            "result_description": "Clear guidance prevents violations",
+            "benefits": [
+                "Zoning and building codes",
+                "Business permit requirements",
+                "Environmental regulations",
+                "Safety compliance information"
+            ]
+        },
+        {
+            "title": "Democratic Participation Hub",
+            "description": "Facilitate citizen engagement in local government through meeting information, feedback collection, and civic participation.",
+            "icon": "uil-users-alt",
+            "result": "92% civic engagement increase",
+            "result_description": "More citizens participate in democracy",
+            "benefits": [
+                "Town hall meeting schedules",
+                "Public comment submissions",
+                "Voting information and locations",
+                "Community involvement opportunities"
+            ]
+        }
+    ]
+}

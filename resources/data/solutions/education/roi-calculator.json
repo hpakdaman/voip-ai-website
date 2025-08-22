@@ -1,0 +1,80 @@
+{
+    "section": {
+        "headline": "Calculate Your Education ROI",
+        "subheadline": "See how much your institution can save and earn with AI agents",
+        "calculator": {
+            "inputs": [
+                {
+                    "id": "students",
+                    "label": "Current Student Population",
+                    "type": "range",
+                    "min": 100,
+                    "max": 10000,
+                    "step": 100,
+                    "default": 1500,
+                    "unit": "students"
+                },
+                {
+                    "id": "inquiries",
+                    "label": "Monthly Inquiries",
+                    "type": "range", 
+                    "min": 50,
+                    "max": 2000,
+                    "step": 50,
+                    "default": 500,
+                    "unit": "calls"
+                },
+                {
+                    "id": "staff_cost",
+                    "label": "Average Staff Hourly Cost",
+                    "type": "range",
+                    "min": 15,
+                    "max": 50,
+                    "step": 5,
+                    "default": 25,
+                    "unit": "$/hour"
+                }
+            ],
+            "calculations": {
+                "current_costs": {
+                    "formula": "(inquiries * 8 * staff_cost) + (students * 2 * staff_cost)",
+                    "description": "Current monthly communication costs"
+                },
+                "ai_costs": {
+                    "formula": "students * 0.75",
+                    "description": "Monthly AI agent service cost"
+                },
+                "enrollment_boost": {
+                    "formula": "inquiries * 0.35 * 2500",
+                    "description": "Additional revenue from improved conversion"
+                },
+                "time_savings": {
+                    "formula": "(inquiries * 6) + (students * 1.5)",
+                    "description": "Hours saved per month"
+                }
+            }
+        },
+        "benefits": [
+            {
+                "title": "Cost Reduction",
+                "description": "Reduce administrative communication costs by up to 65%",
+                "icon": "uil-money-withdraw"
+            },
+            {
+                "title": "Enrollment Growth",
+                "description": "Increase enrollment rates through better inquiry management",
+                "icon": "uil-chart-growth"
+            },
+            {
+                "title": "Student Satisfaction",
+                "description": "Improve student experience with 24/7 support availability",
+                "icon": "uil-smile"
+            },
+            {
+                "title": "Staff Efficiency",
+                "description": "Free staff to focus on high-value educational activities",
+                "icon": "uil-users-alt"
+            }
+        ]
+    }
+}
