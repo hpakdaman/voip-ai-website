@@ -35,6 +35,8 @@
                                 <li class="mt-[10px]"><a href="{{ route('solutions.healthcare') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Healthcare</a></li>
                                 <li class="mt-[10px]"><a href="{{ route('solutions.finance-banking') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Finance & Banking</a></li>
                                 <li class="mt-[10px]"><a href="{{ route('solutions.retail-ecommerce') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Retail & E-commerce</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('solutions.education') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Education</a></li>
+                                <li class="mt-[10px]"><a href="{{ route('solutions.government') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Government</a></li>
                                 <li class="mt-[10px]"><a href="{{ route('terms') }}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="uil uil-angle-right-b"></i> Terms & Privacy</a></li>
                             </ul>
                         </div>

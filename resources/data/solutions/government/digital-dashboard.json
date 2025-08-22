@@ -1,0 +1,112 @@
+{
+    "section": {
+        "headline": "Real-Time Government Service Analytics",
+        "subheadline": "Monitor and optimize public service delivery with intelligent insights that help you serve citizens better",
+        "dashboard_metrics": [
+            {
+                "category": "Citizen Satisfaction",
+                "metrics": [
+                    {
+                        "title": "Average Response Time",
+                        "value": "23 seconds",
+                        "change": "-67%",
+                        "trend": "positive",
+                        "icon": "uil-clock-three"
+                    },
+                    {
+                        "title": "Resolution Rate",
+                        "value": "94.8%",
+                        "change": "+28%", 
+                        "trend": "positive",
+                        "icon": "uil-check-circle"
+                    },
+                    {
+                        "title": "Citizen Satisfaction Score",
+                        "value": "4.7/5",
+                        "change": "+0.9",
+                        "trend": "positive", 
+                        "icon": "uil-smile"
+                    }
+                ]
+            },
+            {
+                "category": "Service Efficiency",
+                "metrics": [
+                    {
+                        "title": "Daily Service Requests",
+                        "value": "12,847",
+                        "change": "+156%",
+                        "trend": "neutral",
+                        "icon": "uil-phone"
+                    },
+                    {
+                        "title": "Multi-department Transfers",
+                        "value": "8%",
+                        "change": "-73%",
+                        "trend": "positive",
+                        "icon": "uil-exchange"
+                    },
+                    {
+                        "title": "After-hours Service Coverage",
+                        "value": "24/7",
+                        "change": "New",
+                        "trend": "positive",
+                        "icon": "uil-moon"
+                    }
+                ]
+            },
+            {
+                "category": "Cost Optimization",
+                "metrics": [
+                    {
+                        "title": "Monthly Operational Savings",
+                        "value": "$284K",
+                        "change": "+$127K",
+                        "trend": "positive",
+                        "icon": "uil-money-withdraw"
+                    },
+                    {
+                        "title": "Staff Efficiency Improvement",
+                        "value": "68%",
+                        "change": "+43%",
+                        "trend": "positive",
+                        "icon": "uil-chart-growth"
+                    },
+                    {
+                        "title": "Resource Reallocation",
+                        "value": "45 FTE",
+                        "change": "Optimized",
+                        "trend": "positive",
+                        "icon": "uil-users-alt"
+                    }
+                ]
+            }
+        ],
+        "live_services": [
+            {
+                "service": "Building Permits",
+                "status": "operational",
+                "requests_today": 847,
+                "avg_response": "1.2 min"
+            },
+            {
+                "service": "Business Licenses", 
+                "status": "operational",
+                "requests_today": 234,
+                "avg_response": "45 sec"
+            },
+            {
+                "service": "Municipal Services",
+                "status": "operational", 
+                "requests_today": 1205,
+                "avg_response": "32 sec"
+            },
+            {
+                "service": "Tax Information",
+                "status": "operational",
+                "requests_today": 567,
+                "avg_response": "28 sec"
+            }
+        ]
+    }
+}

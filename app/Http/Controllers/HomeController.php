@@ -101,6 +101,22 @@ class HomeController extends Controller
         return view('solutions.retail-ecommerce');  
     }
 
+    /**
+     * Education AI Solutions Landing Page
+     */
+    public function education()
+    {
+        return view('solutions.education');  
+    }
+
+    /**
+     * Government AI Solutions Landing Page
+     */
+    public function government()
+    {
+        return view('solutions.government');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

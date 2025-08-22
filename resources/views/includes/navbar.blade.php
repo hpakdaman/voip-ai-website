@@ -61,8 +61,8 @@
                         <li><a href="{{ route('solutions.healthcare') }}" class="sub-menu-item text-base font-medium">Healthcare</a></li>
                         <li><a href="{{ route('solutions.finance-banking') }}" class="sub-menu-item text-base font-medium">Finance & Banking</a></li>
                         <li><a href="{{ route('solutions.retail-ecommerce') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
-                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Education <span class="text-xs">(Coming Soon)</span></a></li>
-                        <li><a href="#" class="sub-menu-item text-base font-medium text-slate-400">Government <span class="text-xs">(Coming Soon)</span></a></li>
+                        <li><a href="{{ route('solutions.education') }}" class="sub-menu-item text-base font-medium">Education</a></li>
+                        <li><a href="{{ route('solutions.government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('contact-us') }}" class="sub-menu-item">CONTACT</a></li>

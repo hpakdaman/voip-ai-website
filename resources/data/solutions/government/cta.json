@@ -1,0 +1,34 @@
+{
+    "section": {
+        "headline": "Ready to Serve Your Citizens Better?",
+        "subheadline": "Join forward-thinking government agencies using AI to create more accessible, efficient public services",
+        "description": "Your community deserves government services that work around their schedules, speak their language, and treat every citizen with dignity and respect.",
+        "cta": {
+            "primary": "Transform Public Services",
+            "secondary": "Schedule Government Demo"
+        },
+        "features": [
+            {
+                "title": "Rapid Deployment",
+                "description": "Go live in 72 hours with full integration to existing government systems",
+                "icon": "uil-rocket"
+            },
+            {
+                "title": "Security Certified",
+                "description": "Meet all government security standards with encrypted, compliant data handling",
+                "icon": "uil-shield-check"
+            },
+            {
+                "title": "Citizen-Focused Design",
+                "description": "Built specifically for public sector needs with accessibility and inclusion at the core",
+                "icon": "uil-users-alt"
+            }
+        ],
+        "background_image": "/assets/images/solutions/government/cta-bg.jpg",
+        "urgency": {
+            "title": "Special Government Pricing",
+            "description": "Public agencies get 40% off implementation costs - limited time offer for early adopters",
+            "countdown": true
+        }
+    }
+}

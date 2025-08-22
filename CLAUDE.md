@@ -149,6 +149,51 @@ Sawtic | [Page-Specific Description]
 📋 **Forbidden**: Floating dots, hub designs, hexagons, rotating elements, glass-morphism overuse  
 📋 **Required**: Clean professional layouts, purposeful animations, consistent Sawtic branding
 
+## 🚨 CRITICAL: Development Best Practices 
+
+### **📋 MANDATORY CODE QUALITY STANDARDS**
+**These guidelines MUST be followed for every development task. Failure to follow results in poor quality deliverables.**
+
+#### **🎨 Design & UI Standards**
+- ✅ **Responsive Design**: Always test and implement mobile-first responsive design with proper breakpoints
+- ✅ **Theme Colors**: Strictly use `var(--voip-primary)`, `var(--voip-link)`, `var(--voip-bg)` - NEVER hardcode colors
+- ✅ **Ready Components**: Use existing Tailwind/JS libraries and components - DON'T reinvent the wheel
+- ✅ **Clean Structure**: Write well-structured, organized code with proper indentation and naming conventions
+
+#### **💻 Code Architecture Standards** 
+- ❌ **NO Inline Styles**: Never write inline `style=""` attributes in HTML/Blade files
+- ❌ **NO CSS in Blade**: Never write `<style>` tags in Blade files
+- ❌ **NO Content in Blade**: Never write static content directly in Blade files - use JSON data files
+- ✅ **Separate CSS Files**: Create dedicated CSS files for each new page/component
+- ✅ **Component Reuse**: Don't repeat yourself - use existing components and patterns
+
+#### **🔗 Navigation & Integration Standards**
+- ✅ **Template Integration**: Always check and update header/footer navigation when adding new pages
+- ✅ **Named Routes**: Use Laravel named routes `route('name')` instead of hardcoded URLs
+- ✅ **Cross-linking**: Ensure all new pages are properly linked from relevant sections
+- ✅ **SEO Integration**: Update sitemaps and meta information for new pages
+
+#### **📸 Asset Management Standards**
+- ✅ **Existing Resources**: Always check existing image/asset libraries before requesting new ones
+- ✅ **Asset Requests**: When new images needed, provide specific search terms or Google search strings
+- ✅ **Proper Paths**: Follow established asset organization and naming conventions
+- ✅ **Optimization**: Use appropriate image formats and sizes for web performance
+
+#### **🧪 Quality Assurance Standards**
+- ✅ **Cross-browser Testing**: Test on multiple browsers and devices
+- ✅ **Performance Optimization**: Ensure fast loading times and smooth animations
+- ✅ **Error Handling**: Implement proper error handling and fallbacks
+- ✅ **Code Validation**: Validate HTML, CSS, and JavaScript syntax
+
+### **⚡ WORKFLOW ENFORCEMENT**
+**Every task must follow this checklist:**
+1. ✅ **Plan**: Use TodoWrite to break down complex tasks
+2. ✅ **Research**: Check existing components and patterns first  
+3. ✅ **Develop**: Follow architecture and design standards
+4. ✅ **Test**: Verify responsive design and cross-browser compatibility
+5. ✅ **Integrate**: Update navigation and cross-links
+6. ✅ **Validate**: Ensure code quality and performance standards
+
 ## Error Checking Protocol
 
 **MANDATORY AFTER EVERY CHANGE:**
@@ -170,3 +215,4 @@ Sawtic | [Page-Specific Description]
 - **[docs/STYLING.md](docs/STYLING.md)** - Complete styling guidelines and patterns  
 - **[docs/TEMPLATES.md](docs/TEMPLATES.md)** - Template pattern library and examples  
 - **[docs/ASSETS.md](docs/ASSETS.md)** - Image library and asset management
+- continue
