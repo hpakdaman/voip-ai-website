@@ -1,0 +1,43 @@
+{
+    "section": {
+        "industry_badge": "Financial Services AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Banking Opportunity",
+        "subtitle": "Transform your financial institution with AI call agents that handle customer inquiries, loan applications, and account services 24/7 - while ensuring ADCB compliance and CBE regulatory standards.",
+        "key_benefits": [
+            "Process loan applications instantly 24/7",
+            "Handle account inquiries & balance checks automatically", 
+            "Provide bilingual Arabic & English banking support",
+            "Ensure UAE Central Bank compliance & security",
+            "Never lose potential customers to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "200+",
+                "label": "UAE Banks"
+            },
+            {
+                "number": "24/7",
+                "label": "Banking Support"
+            },
+            {
+                "number": "98%",
+                "label": "Security Rating"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live Banking Inquiry Demo",
+        "description": "Real conversation with AI agent handling UAE banking customer service",
+        "duration": "50 seconds",
+        "audio_file": "banking-inquiry-demo.mp3",
+        "transcript": "Customer: Hello, I'd like to inquire about opening a business account for my new Dubai company.\n\nAI Agent: Good afternoon! I'd be happy to help you with opening a business account. May I start by getting your trade license number and the nature of your business?\n\nCustomer: Sure, it's license number 789456123 and we're in the technology consultancy sector.\n\nAI Agent: Perfect! For technology consultancy, we have excellent business banking packages. You'll need your trade license, memorandum of association, and passport copies. I can schedule an appointment with our business banking specialist tomorrow at 10 AM or 2 PM. Which works better for you?\n\nCustomer: 10 AM would be ideal. What documents should I bring?\n\nAI Agent: Excellent! I've scheduled your appointment for tomorrow at 10 AM at our DIFC branch. I'm sending you a detailed checklist via SMS and email. Our specialist will guide you through our competitive rates and digital banking solutions. See you tomorrow!"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "finance-banking",
+        "target_audience": "UAE banks, financial institutions, investment firms, insurance companies",
+        "conversion_goals": ["demo_booking", "phone_calls", "financial_consultation"]
+    }
+}
