@@ -1,0 +1,97 @@
+{
+    "section": {
+        "badge": "Financial Services Challenges",
+        "title": "Lost Banking Opportunities Cost Millions in",
+        "highlighted": "Revenue",
+        "description": "Every missed financial inquiry could be a major investment opportunity or loan application. See how Sawtic AI transforms banking communication challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "After-Hours Customer Service Gaps",
+            "description": "Banking customers need support 24/7 for urgent transfers, loan inquiries, and account issues. When they can't reach your bank after hours, they switch to competitors offering round-the-clock service.",
+            "icon": "uil-clock",
+            "impact": "45% of banking calls happen after hours"
+        },
+        {
+            "title": "Loan Application Bottlenecks",
+            "description": "Loan officers overwhelmed with applications while managing existing clients. Potential borrowers get frustrated waiting for responses and take their business to faster-processing competitors.",
+            "icon": "uil-phone-slash",
+            "impact": "65% lost loan prospects due to delays"
+        },
+        {
+            "title": "High Account Opening Abandonment",
+            "description": "Complex account opening processes without proper guidance. Customers abandon applications halfway through and choose simpler online banking alternatives.",
+            "icon": "uil-file-times",
+            "impact": "35% account application abandonment rate"
+        },
+        {
+            "title": "Language Barriers with Expat Clients",
+            "description": "UAE's international business hub requires Arabic, English, Hindi, and other language support. Communication barriers frustrate expat clients seeking banking services.",
+            "icon": "uil-comment-slash",
+            "impact": "40% of UAE banking clients need multilingual support"
+        },
+        {
+            "title": "Manual Credit Inquiry Processing",
+            "description": "Staff spend hours on initial credit checks and explaining loan terms. This delays customer service and increases operational costs significantly.",
+            "icon": "uil-calculator",
+            "impact": "3 hours per day on manual credit inquiries"
+        },
+        {
+            "title": "Investment Opportunity Follow-Up Gaps",
+            "description": "High-net-worth clients requiring investment follow-ups and portfolio reviews slip through the cracks. Poor follow-up affects client retention and revenue growth.",
+            "icon": "uil-chart-growth",
+            "impact": "50% of investment clients don't receive timely follow-ups"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "24/7 Banking Customer Service",
+            "description": "AI agent handles after-hours banking inquiries, account balance checks, transfer requests, and urgent financial assistance following CBE compliance standards.",
+            "icon": "uil-phone",
+            "benefit": "100% customer service coverage",
+            "demo_available": true
+        },
+        {
+            "title": "Instant Loan Pre-Qualification",
+            "description": "Smart loan assessment system integrated with credit bureaus and core banking. Customers receive instant pre-qualification without waiting for loan officers.",
+            "icon": "uil-money-bill",
+            "benefit": "5x faster loan processing",
+            "demo_available": true
+        },
+        {
+            "title": "Streamlined Account Opening",
+            "description": "Guided digital account opening with real-time assistance. Reduces abandonment with step-by-step support and instant documentation verification.",
+            "icon": "uil-user-plus",
+            "benefit": "75% reduction in abandonment",
+            "demo_available": true
+        },
+        {
+            "title": "Multilingual Financial Support",
+            "description": "Fluent communication in Arabic, English, Hindi, and Urdu. Ensures all UAE banking customers receive professional financial guidance in their preferred language.",
+            "icon": "uil-comments",
+            "benefit": "50% increase in expat customer satisfaction",
+            "demo_available": true
+        },
+        {
+            "title": "Automated Credit Screening",
+            "description": "Instant credit verification and eligibility assessment. Streamlines loan applications and provides immediate feedback to potential borrowers.",
+            "icon": "uil-file-check",
+            "benefit": "85% faster credit processing",
+            "demo_available": false
+        },
+        {
+            "title": "Proactive Investment Follow-Up",
+            "description": "Automated follow-up calls for portfolio reviews, market updates, and investment opportunities. Enhances client relationships and maximizes revenue potential.",
+            "icon": "uil-chart-line",
+            "benefit": "95% improvement in client follow-up",
+            "demo_available": true
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "financial_problem_awareness"
+    }
+}

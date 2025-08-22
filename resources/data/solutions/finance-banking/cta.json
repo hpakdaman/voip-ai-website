@@ -1,0 +1,40 @@
+{
+    "section": {
+        "title": "Ready to Transform",
+        "highlighted": "Banking Operations?",
+        "description": "Join 200+ UAE financial institutions already using Sawtic AI to enhance customer service and capture more opportunities.",
+        "urgency_text": "Don't let valuable banking opportunities slip away during peak hours or after-hours service gaps."
+    },
+    "benefits": [
+        "24/7 customer banking support",
+        "Automated loan pre-qualification",
+        "Multilingual financial assistance",
+        "Central Bank compliant security"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/contact-us",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "finance-banking-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "finance-banking-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee • CBE compliant • No setup fees",
+    "social_proof": "Trusted by 200+ UAE financial institutions",
+    "bg_image": "assets/images/finance/banking-bg.jpg",
+    "alt_text": "Banking professionals using Sawtic AI",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "finance-banking",
+        "conversion_type": "final_cta"
+    }
+}

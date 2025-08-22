@@ -85,6 +85,14 @@ class HomeController extends Controller
         return view('solutions.healthcare');  
     }
 
+    /**
+     * Finance & Banking AI Solutions Landing Page
+     */
+    public function financeBanking()
+    {
+        return view('solutions.finance-banking');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*

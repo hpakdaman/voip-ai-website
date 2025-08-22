@@ -1,0 +1,162 @@
+{
+    "section": {
+        "badge": "Banking ROI Calculator",
+        "title": "Calculate Your Financial Institution",
+        "highlighted": "Growth",
+        "description": "See exactly how much Sawtic AI can boost your banking operations while improving customer satisfaction and operational efficiency."
+    },
+    "calculator": {
+        "title": "Banking ROI Calculator",
+        "subtitle": "Calculate your monthly growth with AI banking agents",
+        "inputs": [
+            {
+                "id": "missed_calls_per_day",
+                "label": "Missed Customer Calls Per Day",
+                "type": "number",
+                "min": 0,
+                "max": 200,
+                "default": 25,
+                "tooltip": "Average number of banking calls that go unanswered daily"
+            },
+            {
+                "id": "average_account_value",
+                "label": "Average New Account Value (AED)",
+                "type": "number", 
+                "min": 1000,
+                "max": 50000,
+                "default": 8000,
+                "tooltip": "Average value of new customer accounts opened"
+            },
+            {
+                "id": "loan_application_drop_rate",
+                "label": "Current Application Drop Rate (%)",
+                "type": "number",
+                "min": 0,
+                "max": 80,
+                "default": 35,
+                "tooltip": "Percentage of loan applications abandoned due to delays"
+            },
+            {
+                "id": "staff_hours_on_calls",
+                "label": "Staff Hours on Customer Calls (Daily)",
+                "type": "number",
+                "min": 2,
+                "max": 20,
+                "default": 10,
+                "tooltip": "Total daily hours staff spend on customer service calls"
+            },
+            {
+                "id": "hourly_staff_cost",
+                "label": "Average Staff Hourly Cost (AED)",
+                "type": "number",
+                "min": 25,
+                "max": 150,
+                "default": 65,
+                "tooltip": "Average hourly cost including salary and benefits"
+            }
+        ],
+        "calculations": {
+            "call_recovery_percentage": 90,
+            "application_completion_improvement": 75,
+            "staff_time_savings_percentage": 70,
+            "customer_service_improvement": 100,
+            "sawtic_monthly_cost": 2500
+        },
+        "results": [
+            {
+                "id": "new_account_revenue",
+                "label": "Monthly New Account Revenue",
+                "description": "Revenue from previously missed calls converted to new accounts",
+                "formula": "(missed_calls_per_day * 30 * call_recovery_percentage / 100 * 0.15) * average_account_value",
+                "prefix": "AED ",
+                "color": "voip-link"
+            },
+            {
+                "id": "loan_completion_revenue", 
+                "label": "Loan Application Completion",
+                "description": "Revenue from improved loan application completion rates",
+                "formula": "(loan_applications_per_month * loan_application_drop_rate / 100 * application_completion_improvement / 100) * 2500",
+                "prefix": "AED ",
+                "color": "voip-primary"
+            },
+            {
+                "id": "staff_cost_savings",
+                "label": "Staff Cost Savings", 
+                "description": "Monthly savings from automated customer service",
+                "formula": "(staff_hours_on_calls * 30 * staff_time_savings_percentage / 100) * hourly_staff_cost",
+                "prefix": "AED ",
+                "color": "voip-accent"
+            },
+            {
+                "id": "total_monthly_benefit",
+                "label": "Total Monthly Benefit",
+                "description": "Combined monthly financial benefits",
+                "formula": "new_account_revenue + loan_completion_revenue + staff_cost_savings",
+                "prefix": "AED ",
+                "color": "voip-link",
+                "highlight": true
+            },
+            {
+                "id": "roi_percentage",
+                "label": "Return on Investment",
+                "description": "ROI percentage after Sawtic subscription cost",
+                "formula": "((total_monthly_benefit - sawtic_monthly_cost) / sawtic_monthly_cost) * 100",
+                "suffix": "%",
+                "color": "voip-primary",
+                "highlight": true
+            },
+            {
+                "id": "payback_period",
+                "label": "Payback Period",
+                "description": "Time to recover Sawtic investment",
+                "formula": "sawtic_monthly_cost / (total_monthly_benefit - sawtic_monthly_cost) * 30",
+                "suffix": " days",
+                "color": "voip-accent"
+            }
+        ]
+    },
+    "benefits_summary": [
+        {
+            "icon": "uil-phone-volume",
+            "title": "24/7 Banking Support",
+            "description": "Round-the-clock customer service for all banking needs"
+        },
+        {
+            "icon": "uil-money-bill",
+            "title": "Instant Loan Processing",
+            "description": "Automated pre-qualification and application guidance"
+        },
+        {
+            "icon": "uil-shield-check",
+            "title": "Central Bank Compliance",
+            "description": "Secure transactions following UAE CBE regulations"
+        },
+        {
+            "icon": "uil-comments",
+            "title": "Multilingual Support",
+            "description": "Serve UAE's diverse banking customers effectively"
+        }
+    ],
+    "case_study": {
+        "bank_name": "Emirates Commercial Bank",
+        "before": {
+            "missed_calls": 35,
+            "application_drop_rate": 40,
+            "staff_hours": 12,
+            "monthly_loss": "AED 85,000"
+        },
+        "after": {
+            "missed_calls": 4,
+            "application_drop_rate": 10,
+            "staff_hours": 4,
+            "monthly_growth": "AED 125,000"
+        },
+        "testimonial": "Sawtic AI revolutionized our customer service. We now provide instant banking support while our staff focus on complex financial advisory."
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "focus": "banking_growth_roi",
+        "calculator_type": "financial_services"
+    }
+}
