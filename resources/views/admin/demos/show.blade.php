@@ -249,6 +249,26 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Danger Zone -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-red-500">
+                    <h3 class="text-lg font-bold mb-4 text-red-600">Danger Zone</h3>
+                    
+                    <form action="{{ route('admin.demos.destroy', $demo) }}" method="POST" 
+                          onsubmit="return confirm('Are you sure you want to permanently delete this booking? This action cannot be undone.')">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" 
+                                class="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition-all duration-300">
+                            <i class="uil uil-trash-alt mr-2"></i>
+                            Delete Booking Permanently
+                        </button>
+                    </form>
+                    
+                    <p class="text-xs text-gray-500 mt-2">
+                        This will permanently delete the booking and cannot be recovered.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

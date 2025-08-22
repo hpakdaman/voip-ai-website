@@ -125,9 +125,19 @@ class AdminDemoController extends Controller
      */
     public function destroy(DemoBooking $demo)
     {
+        // Store demo info for success message
+        $clientName = $demo->name;
+        $scheduledAt = $demo->formatted_scheduled_at;
+        
+        // If this booking has an availability slot, we might want to free it up
+        if ($demo->availabilitySlot) {
+            // The slot becomes available again (no explicit action needed as the booking is just deleted)
+            // The relationship will handle this automatically
+        }
+        
         $demo->delete();
 
         return redirect()->route('admin.demos.index')
-                        ->with('success', 'Demo booking deleted.');
+                        ->with('success', "Demo booking for {$clientName} on {$scheduledAt} has been deleted successfully.");
     }
 }
