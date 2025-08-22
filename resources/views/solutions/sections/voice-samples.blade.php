@@ -156,7 +156,7 @@ $voiceSamples = $data['voice_samples'] ?? [];
                 <p class="text-slate-300 mb-8 text-lg">Experience these powerful voice capabilities in your own business environment.</p>
                 
                 <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
-                    <a href="/contact-us" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="voice-dashboard-demo">
+                    <a href="{{ route('demo.booking') }}" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="voice-dashboard-demo">
                         <i class="uil uil-desktop text-xl mr-3"></i>
                         Get Full Dashboard Access
                     </a>
