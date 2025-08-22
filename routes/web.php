@@ -37,6 +37,7 @@ if ($maintenanceMode) {
     Route::get('/solutions/spa-massage', [HomeController::class, 'spaMassage'])->name('solutions.spa-massage');
     Route::get('/solutions/healthcare', [HomeController::class, 'healthcare'])->name('solutions.healthcare');
     Route::get('/solutions/finance-banking', [HomeController::class, 'financeBanking'])->name('solutions.finance-banking');
+    Route::get('/solutions/retail-ecommerce', [HomeController::class, 'retailEcommerce'])->name('solutions.retail-ecommerce');
 
     // Demo Booking Routes (Public)
     Route::prefix('demo')->name('demo.')->group(function () {

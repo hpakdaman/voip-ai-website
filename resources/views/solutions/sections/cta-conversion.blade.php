@@ -4,7 +4,7 @@ $ctaButtons = $data['cta_buttons'] ?? [];
 $benefits = $data['benefits'] ?? [];
 $guarantee = $data['guarantee'] ?? '';
 $socialProof = $data['social_proof'] ?? '';
-$bgImage = $data['bg_image'] ?? 'assets/images/cta-bg.jpg';
+$bgImage = $data['bg_image'] ?? 'assets/images/no-image.svg';
 $altText = $data['alt_text'] ?? 'CTA Background';
 @endphp
 

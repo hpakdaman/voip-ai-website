@@ -1,0 +1,186 @@
+{
+    "section": {
+        "badge": "AI E-commerce Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Retail & E-commerce Inside Out",
+        "description": "Advanced AI trained specifically for UAE retail industry, product catalogs, customer service excellence, and online shopping optimization."
+    },
+    "capabilities": [
+        {
+            "title": "Product Catalog Expert",
+            "description": "Instantly provides detailed product information, specifications, availability, and personalized recommendations based on customer preferences and shopping history.",
+            "icon": "uil-apps",
+            "is_premium": false,
+            "features": [
+                "Complete product specifications",
+                "Stock availability checking",
+                "Price comparisons and promotions",
+                "Personalized product matching",
+                "Cross-selling and upselling suggestions"
+            ],
+            "metric": "97%",
+            "metric_label": "Product Information Accuracy",
+            "delay": "0.2s"
+        },
+        {
+            "title": "Smart Order Processing",
+            "description": "Handles complex order management including modifications, tracking, delivery coordination, and customer communication throughout the purchase journey.",
+            "icon": "uil-shopping-cart",
+            "is_premium": false,
+            "features": [
+                "Real-time order status updates",
+                "Delivery tracking and coordination",
+                "Order modification assistance",
+                "Payment issue resolution",
+                "Shipping option optimization"
+            ],
+            "metric": "95%",
+            "metric_label": "Order Accuracy",
+            "delay": "0.3s"
+        },
+        {
+            "title": "Advanced Customer Insights",
+            "description": "Analyzes customer behavior, purchase patterns, and preferences to provide personalized shopping experiences and targeted recommendations.",
+            "icon": "uil-analytics",
+            "is_premium": true,
+            "features": [
+                "Purchase behavior analysis",
+                "Personalization engine",
+                "Customer lifetime value tracking",
+                "Seasonal shopping pattern recognition",
+                "Abandoned cart recovery strategies"
+            ],
+            "metric": "89%",
+            "metric_label": "Conversion Rate Improvement",
+            "delay": "0.4s"
+        },
+        {
+            "title": "Omnichannel Integration",
+            "description": "Seamlessly connects online and offline shopping experiences with inventory sync, store pickup coordination, and unified customer profiles.",
+            "icon": "uil-sync",
+            "is_premium": true,
+            "features": [
+                "Online-to-store integration",
+                "Unified inventory management",
+                "Cross-channel customer profiles",
+                "Store pickup coordination",
+                "Return-to-store processing"
+            ],
+            "metric": "93%",
+            "metric_label": "Channel Consistency",
+            "delay": "0.5s"
+        },
+        {
+            "title": "Dynamic Pricing & Promotions",
+            "description": "Provides real-time pricing information, applies promotional codes, explains discount eligibility, and optimizes offers based on customer segments.",
+            "icon": "uil-tag-alt",
+            "is_premium": true,
+            "features": [
+                "Dynamic pricing updates",
+                "Automated coupon application",
+                "Loyalty program integration",
+                "Seasonal promotion management",
+                "Customer-specific offers"
+            ],
+            "metric": "91%",
+            "metric_label": "Promotion Effectiveness",
+            "delay": "0.6s"
+        },
+        {
+            "title": "Multilingual Shopping Support",
+            "description": "Communicates fluently in Arabic, English, Hindi, and Urdu with cultural shopping preferences and localized product recommendations for UAE market.",
+            "icon": "uil-comments",
+            "is_premium": false,
+            "features": [
+                "Fluent Arabic & English",
+                "Hindi & Urdu support",
+                "Cultural shopping preferences",
+                "Local product terminology",
+                "Region-specific recommendations"
+            ],
+            "metric": "96%",
+            "metric_label": "Language Accuracy",
+            "delay": "0.7s"
+        }
+    ],
+    "integrations": [
+        {
+            "name": "Shopify",
+            "type": "E-commerce Platform",
+            "icon": "uil-shopping-bag"
+        },
+        {
+            "name": "WooCommerce",
+            "type": "WordPress E-commerce",
+            "icon": "uil-wordpress"
+        },
+        {
+            "name": "Magento",
+            "type": "E-commerce Solution",
+            "icon": "uil-store"
+        },
+        {
+            "name": "BigCommerce",
+            "type": "Online Store Platform",
+            "icon": "uil-shop"
+        },
+        {
+            "name": "Amazon Seller Central",
+            "type": "Marketplace",
+            "icon": "uil-amazon"
+        },
+        {
+            "name": "eBay",
+            "type": "Online Marketplace",
+            "icon": "uil-receipt"
+        },
+        {
+            "name": "PayPal",
+            "type": "Payment Gateway",
+            "icon": "uil-paypal"
+        },
+        {
+            "name": "Stripe",
+            "type": "Payment Processing",
+            "icon": "uil-credit-card"
+        },
+        {
+            "name": "Mailchimp",
+            "type": "Email Marketing",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "Google Analytics",
+            "type": "Analytics Platform",
+            "icon": "uil-chart-pie"
+        },
+        {
+            "name": "Zendesk",
+            "type": "Customer Service",
+            "icon": "uil-headphones"
+        },
+        {
+            "name": "Klaviyo",
+            "type": "E-commerce Marketing",
+            "icon": "uil-envelope-alt"
+        }
+    ],
+    "demo_title": "See Your AI Agent in Action",
+    "demo_description": "Watch our AI assistant handle e-commerce inquiries with expertise, managing orders, recommending products, and resolving customer issues with professional retail knowledge.",
+    "demo_image": "assets/images/ecommerce/customer-service.jpg",
+    "demo_alt": "E-commerce Customer Service Representative",
+    "demo_features": [
+        "Natural conversation about products and orders",
+        "Expert knowledge of inventory and pricing",
+        "Professional order management and tracking",
+        "Personalized shopping recommendations"
+    ],
+    "integration_description": "Seamlessly integrates with leading e-commerce platforms and retail systems used across UAE online businesses",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE retail and e-commerce market"
+    }
+}
