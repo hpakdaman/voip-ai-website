@@ -6,10 +6,10 @@
         "urgency_text": "Don't miss appointments while you're with clients. Our AI never sleeps, never takes a break."
     },
     "benefits": [
-        "Never miss a spa appointment call again", 
-        "Handle health screenings and consultations professionally",
-        "Manage complex treatment bookings automatically",
-        "Provide 24/7 wellness support to your clients"
+        "Never miss appointment calls", 
+        "Professional health screenings",
+        "Automatic treatment bookings",
+        "24/7 wellness support"
     ],
     "offer": {
         "title": "🎯 Limited Time Offer", 
@@ -36,7 +36,8 @@
     ],
     "guarantee": "30-day satisfaction guarantee • Free cancellation • No setup fees",
     "social_proof": "Trusted by 100+ UAE spa and wellness centers",
-    "background_image": "assets/images/spa/bg.jpg",
+    "bg_image": "assets/images/spa/bg.jpg",
+    "alt_text": "Spa and Wellness Center",
     "metadata": {
         "version": "1.0", 
         "last_updated": "2025-01-20",
