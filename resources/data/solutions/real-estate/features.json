@@ -5,6 +5,26 @@
         "highlighted": "In Action",
         "description": "Watch how our AI agents transform real estate communication with live demonstrations"
     },
+    "dashboard": {
+        "title": "Real-Time Lead Dashboard",
+        "description": "Monitor all incoming calls, lead status, and conversions in real-time from your mobile device.",
+        "image": "assets/images/real/property/2.jpg",
+        "features": [
+            "Live call monitoring",
+            "Instant lead notifications",
+            "Conversion analytics"
+        ]
+    },
+    "consultation": {
+        "title": "Professional Property Consultations",
+        "description": "Your AI agent provides expert-level consultations with deep knowledge of UAE real estate market trends and regulations.",
+        "image": "assets/images/real/property/5.jpg",
+        "features": [
+            "Real-time property values and market trends",
+            "UAE property law and RERA regulations",
+            "Investment advice and ROI calculations"
+        ]
+    },
     "features": [
         {
             "title": "Property Inquiry Handling",

@@ -23,53 +23,94 @@ $testimonials = $data['testimonials'] ?? [];
             @endif
         </div>
         
-        <!-- Simple Testimonials Grid -->
+        <!-- Testimonials: Grid or Slider -->
         @if(!empty($testimonials))
         <div class="max-w-5xl mx-auto mb-16">
-            <div class="grid lg:grid-cols-3 gap-6">
-                @foreach($testimonials as $index => $testimonial)
-                <div class="wow animate__animated animate__fadeInUp" data-wow-delay="{{ ($index * 0.15) + 0.1 }}s">
-                    <!-- Simple Testimonial Card with Fixed Height -->
-                    <div class="h-96 p-6 rounded-xl text-center flex flex-col overflow-hidden" style="background: rgba(30, 192, 141, 0.05); border: 1px solid rgba(30, 192, 141, 0.1);">
-                        
-                        <!-- 5-Star Rating -->
-                        <div class="flex items-center justify-center mb-4">
-                            @for($i = 1; $i <= 5; $i++)
-                            <i class="uil uil-star text-yellow-400 text-lg"></i>
-                            @endfor
-                        </div>
-                        
-                        <!-- Short Quote (Flexible Content) -->
-                        <blockquote class="text-white text-lg leading-relaxed mb-6 flex-1 overflow-hidden">
-                            "{{ $testimonial['testimonial'] }}"
-                        </blockquote>
-                        
-                        <!-- Client Info (Stuck to Bottom) -->
-                        <div class="mt-auto pt-3 border-t border-white/10">
-                            <div class="flex items-center space-x-3">
-                                <!-- Client Photo -->
-                                <div class="w-10 h-10 rounded-full overflow-hidden border-2 flex-shrink-0" style="border-color: var(--voip-link);">
-                                    @if(isset($testimonial['image']) && !empty($testimonial['image']))
-                                    <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="w-full h-full object-cover" 
-                                         onerror="this.src='{{ asset('assets/images/client/01.jpg') }}';">
-                                    @else
-                                    <div class="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-                                        <i class="uil uil-user text-white text-xs"></i>
+            @if(count($testimonials) <= 3)
+                <!-- Static Grid for 3 or fewer testimonials -->
+                <div class="grid lg:grid-cols-{{ count($testimonials) }} gap-6 justify-center">
+                    @foreach($testimonials as $index => $testimonial)
+                    @include('solutions.sections.partials.testimonial-card', ['testimonial' => $testimonial, 'index' => $index])
+                    @endforeach
+                </div>
+            @else
+                <!-- Splide Slider for more than 3 testimonials -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+                
+                <div class="splide testimonials-splide" role="group">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            @foreach($testimonials as $index => $testimonial)
+                            <li class="splide__slide">
+                                <div class="flex justify-center px-4">
+                                    <div class="w-full max-w-sm">
+                                        @include('solutions.sections.partials.testimonial-card', ['testimonial' => $testimonial, 'index' => $index])
                                     </div>
-                                    @endif
                                 </div>
-                                
-                                <!-- Client Name & Company -->
-                                <div class="text-left min-w-0">
-                                    <div class="text-white font-bold text-sm truncate">{{ $testimonial['name'] }}</div>
-                                    <div class="text-slate-400 text-xs truncate">{{ $testimonial['company'] }}</div>
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
-                @endforeach
-            </div>
+
+                <!-- Splide CSS Customization -->
+                <style>
+                    .testimonials-splide .splide__arrow {
+                        background: rgba(30, 192, 141, 0.1);
+                        border: 1px solid rgba(30, 192, 141, 0.3);
+                        backdrop-filter: blur(10px);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    
+                    .testimonials-splide .splide__arrow svg {
+                        fill: rgb(30, 192, 141);
+                        width: 18px;
+                        height: 18px;
+                    }
+                    
+                    .testimonials-splide .splide__pagination__page {
+                        background: rgba(255, 255, 255, 0.3);
+                        width: 12px;
+                        height: 12px;
+                        margin: 0 4px;
+                    }
+                    
+                    .testimonials-splide .splide__pagination__page.is-active {
+                        background: rgb(30, 192, 141);
+                        transform: scale(1.2);
+                    }
+                    
+                    .testimonials-splide .splide__track {
+                        padding-bottom: 50px;
+                    }
+                </style>
+
+                <!-- Splide JS -->
+                <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+                
+                <!-- Initialize Splide -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        new Splide('.testimonials-splide', {
+                            type: 'loop',
+                            perPage: 1,
+                            perMove: 1,
+                            gap: '2rem',
+                            pagination: true,
+                            arrows: true,
+                            autoplay: true,
+                            interval: 5000,
+                            pauseOnHover: true,
+                            pauseOnFocus: true,
+                            resetProgress: false,
+                            height: 'auto',
+                            fixedHeight: false
+                        }).mount();
+                    });
+                </script>
+            @endif
         </div>
         @endif
         

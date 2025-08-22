@@ -162,6 +162,16 @@
                                                     </button>
                                                 </form>
                                             @endif
+                                            
+                                            <!-- Delete Button -->
+                                            <form action="{{ route('admin.demos.destroy', $booking) }}" method="POST" class="inline" 
+                                                  onsubmit="return confirm('Are you sure you want to delete this booking?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="text-red-600 hover:text-red-500 font-medium transition-colors">
+                                                    Delete
+                                                </button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>

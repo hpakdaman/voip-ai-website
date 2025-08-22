@@ -20,7 +20,7 @@ if (!empty($demoAudio)) {
     $audioDemo = [
         'title' => $voiceDemo['title'] ?? $heroData['demo_title'] ?? '🎧 Live AI Call Demo',
         'description' => $voiceDemo['description'] ?? $heroData['demo_description'] ?? 'Real conversation with AI agent',
-        'file_path' => 'assets/audio/solutions/' . ($data['industry'] ?? 'demo') . '/' . ($voiceDemo['audio_file'] ?? 'demo.mp3'),
+        'file_path' => 'assets/audio/solutions/' . (str_contains(request()->path(), 'healthcare') ? 'healthcare' : (str_contains(request()->path(), 'real-estate') ? 'real-estate' : 'demo')) . '/' . ($voiceDemo['audio_file'] ?? 'demo.mp3'),
         'duration' => $voiceDemo['duration'] ?? '--:--'
     ];
 }
