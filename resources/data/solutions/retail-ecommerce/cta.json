@@ -1,0 +1,40 @@
+{
+    "section": {
+        "title": "Ready to Transform",
+        "highlighted": "Your Online Sales?",
+        "description": "Join 300+ UAE retailers already using Sawtic AI to boost conversions and provide exceptional customer service 24/7.",
+        "urgency_text": "Don't let abandoned carts and missed inquiries cost you sales while competitors capture your customers."
+    },
+    "benefits": [
+        "24/7 cart recovery assistance",
+        "Intelligent product recommendations",
+        "Multilingual shopping support",
+        "Real-time order management"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/demo/book",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "retail-ecommerce-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "retail-ecommerce-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee • No setup fees • Cancel anytime",
+    "social_proof": "Trusted by 300+ UAE online retailers",
+    "bg_image": "assets/images/ecommerce/shopping-bg.jpg",
+    "alt_text": "Online shopping with AI assistance",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "retail-ecommerce",
+        "conversion_type": "final_cta"
+    }
+}

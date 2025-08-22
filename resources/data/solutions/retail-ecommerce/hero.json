@@ -1,0 +1,43 @@
+{
+    "section": {
+        "industry_badge": "Retail & E-commerce AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Online Sale",
+        "subtitle": "Transform your retail business with AI call agents that handle customer inquiries, order support, and sales assistance 24/7 - boosting conversions while you focus on growth.",
+        "key_benefits": [
+            "Convert abandoned carts into sales 24/7",
+            "Handle product inquiries & order tracking automatically", 
+            "Provide personalized shopping assistance in real-time",
+            "Process returns and exchanges seamlessly",
+            "Never lose customers to slower competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "300+",
+                "label": "UAE Retailers"
+            },
+            {
+                "number": "24/7",
+                "label": "Sales Support"
+            },
+            {
+                "number": "85%",
+                "label": "Cart Recovery"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live E-commerce Support Demo",
+        "description": "Real conversation with AI agent handling UAE online shopping customer service",
+        "duration": "48 seconds",
+        "audio_file": "ecommerce-support-demo.mp3",
+        "transcript": "Customer: Hi, I placed an order yesterday but haven't received a confirmation email. Can you help me?\n\nAI Agent: Hello! I'd be happy to help you with your order. May I have your order number or the email address you used to place the order?\n\nCustomer: I used sara.ahmed@email.com, and I think the order number was something like EC12345.\n\nAI Agent: Perfect! I found your order EC12347 placed yesterday for AED 450. I can see the confirmation email was sent but might be in your spam folder. The order includes a wireless headset and phone case, with delivery expected tomorrow by 2 PM. I'm resending the confirmation now.\n\nCustomer: That's great! Can I also add express shipping to get it today instead?\n\nAI Agent: Absolutely! I can upgrade you to same-day delivery for an additional AED 25. Your order will arrive today between 4-8 PM. Shall I process this upgrade for you?"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "retail-ecommerce",
+        "target_audience": "UAE online stores, retail businesses, e-commerce platforms, marketplace sellers",
+        "conversion_goals": ["demo_booking", "phone_calls", "sales_consultation"]
+    }
+}

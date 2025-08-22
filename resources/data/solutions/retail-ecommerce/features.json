@@ -1,0 +1,73 @@
+{
+    "section": {
+        "badge": "E-commerce AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "Boost Sales",
+        "description": "Watch how our AI agents revolutionize online retail with live e-commerce demonstrations"
+    },
+    "dashboard": {
+        "title": "Real-Time Sales Dashboard",
+        "description": "Monitor all customer interactions, cart recoveries, and sales conversions in real-time from your retail management dashboard.",
+        "image": "assets/images/ecommerce/dashboard.jpg",
+        "features": [
+            "Live customer shopping behavior",
+            "Instant cart abandonment alerts",
+            "Sales conversion analytics"
+        ]
+    },
+    "consultation": {
+        "title": "Expert Product Consultations",
+        "description": "Your AI agent provides professional product guidance with deep knowledge of your inventory, pricing, and customer preferences.",
+        "image": "assets/images/ecommerce/consultation.jpg",
+        "features": [
+            "Real-time inventory and pricing information",
+            "Product compatibility and recommendations",
+            "Personalized shopping assistance and upselling"
+        ]
+    },
+    "features": [
+        {
+            "title": "Cart Recovery Assistant",
+            "description": "AI proactively contacts customers with abandoned carts",
+            "icon": "uil-redo",
+            "demo_video": "cart-recovery-demo.mp4",
+            "highlight": "85% cart recovery success rate"
+        },
+        {
+            "title": "Product Recommendation Engine",
+            "description": "Smart suggestions based on customer preferences",
+            "icon": "uil-lightbulb",
+            "demo_video": "product-recommendations-demo.mp4",
+            "highlight": "50% increase in average order value"
+        },
+        {
+            "title": "Order Status Management",
+            "description": "Real-time tracking and instant customer updates",
+            "icon": "uil-package",
+            "demo_video": "order-tracking-demo.mp4",
+            "highlight": "95% customer satisfaction rate"
+        }
+    ],
+    "stats": [
+        {
+            "number": "40%",
+            "label": "More Sales",
+            "description": "Increase in conversions through AI assistance"
+        },
+        {
+            "number": "85%",
+            "label": "Cart Recovery",
+            "description": "Abandoned carts converted to sales"
+        },
+        {
+            "number": "24/7",
+            "label": "Shopping Support",
+            "description": "Never miss a potential customer"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "industry": "retail-ecommerce"
+    }
+}
