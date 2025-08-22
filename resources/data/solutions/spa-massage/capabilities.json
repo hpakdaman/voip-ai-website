@@ -9,7 +9,7 @@
         {
             "title": "Treatment & Service Expert",
             "description": "Instantly provides detailed information about all treatments, packages, benefits, and pricing with personalized recommendations.",
-            "icon": "uil-spa",
+            "icon": "uil-heart-medical",
             "is_premium": false,
             "features": [
                 "Complete treatment descriptions",
@@ -57,7 +57,7 @@
         {
             "title": "Client Relationship Management",
             "description": "Maintains detailed client profiles with treatment history, preferences, and personalized service recommendations.",
-            "icon": "uil-user-heart",
+            "icon": "uil-users-alt",
             "is_premium": true,
             "features": [
                 "Treatment history tracking",
