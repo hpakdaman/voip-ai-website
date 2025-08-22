@@ -1,0 +1,34 @@
+{
+    "section": {
+        "industry_badge": "Education AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Student Inquiry",
+        "subtitle": "Transform your educational institution with intelligent AI call agents that handle admissions, student support, and enrollment 24/7.",
+        "description": "From handling prospective student questions to managing current student support requests, our AI agents ensure every educational opportunity is captured and nurtured.",
+        "stats": [
+            {
+                "number": "85%",
+                "label": "Higher Enrollment Rates"
+            },
+            {
+                "number": "24/7",
+                "label": "Student Support"
+            },
+            {
+                "number": "60%",
+                "label": "Reduced Admin Workload"
+            }
+        ],
+        "cta": {
+            "primary": "Start Free Education Trial",
+            "secondary": "See How It Works"
+        },
+        "hero_image": "/assets/images/solutions/education/hero.jpg"
+    },
+    "voice_demo": {
+        "title": "🎧 Listen: AI Handling Student Admission Inquiry",
+        "description": "Hear how our AI manages complex student questions about programs, requirements, and enrollment processes.",
+        "audio_file": "education-demo.mp3",
+        "duration": "2:15"
+    }
+}

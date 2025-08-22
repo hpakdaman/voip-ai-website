@@ -1,0 +1,121 @@
+{
+    "section": {
+        "headline": "Integrated Government Service Ecosystem",
+        "subheadline": "See how AI connects all departments and services to provide seamless citizen experiences",
+        "service_categories": [
+            {
+                "department": "Municipal Services",
+                "color": "blue",
+                "services": [
+                    {
+                        "name": "Building Permits",
+                        "complexity": "high",
+                        "volume": "850/day",
+                        "ai_impact": "78% faster processing"
+                    },
+                    {
+                        "name": "Zoning Inquiries", 
+                        "complexity": "medium",
+                        "volume": "340/day",
+                        "ai_impact": "90% accuracy improvement"
+                    },
+                    {
+                        "name": "Code Violations",
+                        "complexity": "medium",
+                        "volume": "125/day", 
+                        "ai_impact": "65% quicker resolution"
+                    }
+                ]
+            },
+            {
+                "department": "Business Services",
+                "color": "green", 
+                "services": [
+                    {
+                        "name": "Business Licenses",
+                        "complexity": "high",
+                        "volume": "420/day",
+                        "ai_impact": "85% faster approvals"
+                    },
+                    {
+                        "name": "Tax Registration",
+                        "complexity": "medium",
+                        "volume": "280/day",
+                        "ai_impact": "92% error reduction"
+                    },
+                    {
+                        "name": "Compliance Checks",
+                        "complexity": "high", 
+                        "volume": "180/day",
+                        "ai_impact": "73% cost savings"
+                    }
+                ]
+            },
+            {
+                "department": "Public Safety",
+                "color": "red",
+                "services": [
+                    {
+                        "name": "Emergency Services",
+                        "complexity": "critical",
+                        "volume": "24/7",
+                        "ai_impact": "99.9% uptime guarantee"
+                    },
+                    {
+                        "name": "Public Health Alerts",
+                        "complexity": "high",
+                        "volume": "Variable",
+                        "ai_impact": "Instant mass distribution"
+                    },
+                    {
+                        "name": "Safety Inspections",
+                        "complexity": "medium",
+                        "volume": "95/day",
+                        "ai_impact": "68% scheduling efficiency"
+                    }
+                ]
+            },
+            {
+                "department": "Citizen Services",
+                "color": "purple",
+                "services": [
+                    {
+                        "name": "General Information",
+                        "complexity": "low",
+                        "volume": "2,400/day", 
+                        "ai_impact": "95% self-service rate"
+                    },
+                    {
+                        "name": "Document Requests",
+                        "complexity": "medium",
+                        "volume": "640/day",
+                        "ai_impact": "80% digital processing"
+                    },
+                    {
+                        "name": "Complaint Resolution",
+                        "complexity": "variable",
+                        "volume": "320/day",
+                        "ai_impact": "89% satisfaction rate"
+                    }
+                ]
+            }
+        ],
+        "integration_benefits": [
+            {
+                "title": "Seamless Handoffs",
+                "description": "Citizens never get lost between departments - AI maintains context across all service interactions",
+                "icon": "uil-exchange-alt"
+            },
+            {
+                "title": "Unified Knowledge Base", 
+                "description": "All departments access the same updated information, ensuring consistent and accurate citizen guidance",
+                "icon": "uil-database"
+            },
+            {
+                "title": "Proactive Service Delivery",
+                "description": "AI anticipates citizen needs and proactively offers related services and information",
+                "icon": "uil-brain"
+            }
+        ]
+    }
+}

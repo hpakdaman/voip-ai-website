@@ -1,0 +1,77 @@
+{
+    "section": {
+        "headline": "Educational Success Stories",
+        "subheadline": "See how institutions are transforming student experience with AI",
+        "stories": [
+            {
+                "institution_name": "Dubai International Academy",
+                "institution_type": "Private International School",
+                "location": "Dubai, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "92%",
+                        "label": "Inquiry Response Rate"
+                    },
+                    "metric_2": {
+                        "value": "35%",
+                        "label": "Enrollment Increase"
+                    },
+                    "metric_3": {
+                        "value": "2.3min",
+                        "label": "Average Response Time"
+                    }
+                },
+                "quote": "Our AI agent has revolutionized how we handle prospective parent inquiries. We're capturing leads that would have been lost to competitors.",
+                "author": "Sarah Mitchell",
+                "position": "Director of Admissions",
+                "image": "/assets/images/testimonials/education-1.jpg"
+            },
+            {
+                "institution_name": "Emirates University",
+                "institution_type": "Higher Education Institution",
+                "location": "Abu Dhabi, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "78%",
+                        "label": "Student Satisfaction"
+                    },
+                    "metric_2": {
+                        "value": "60%",
+                        "label": "Admin Time Saved"
+                    },
+                    "metric_3": {
+                        "value": "15k+",
+                        "label": "Monthly Interactions"
+                    }
+                },
+                "quote": "Students love the 24/7 support. Our AI handles everything from course registration to campus dining hours - it's incredible.",
+                "author": "Dr. Ahmed Hassan",
+                "position": "Vice President of Student Services",
+                "image": "/assets/images/testimonials/education-2.jpg"
+            },
+            {
+                "institution_name": "International College of Management",
+                "institution_type": "Business School",
+                "location": "Sharjah, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "45%",
+                        "label": "International Enrollment Growth"
+                    },
+                    "metric_2": {
+                        "value": "30+",
+                        "label": "Languages Supported"
+                    },
+                    "metric_3": {
+                        "value": "98%",
+                        "label": "Information Accuracy"
+                    }
+                },
+                "quote": "Supporting international students in multiple languages has opened new markets for us. Our global reach has expanded dramatically.",
+                "author": "Maria Rodriguez",
+                "position": "International Student Coordinator",
+                "image": "/assets/images/testimonials/education-3.jpg"
+            }
+        ]
+    }
+}

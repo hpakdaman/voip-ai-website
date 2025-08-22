@@ -1,0 +1,62 @@
+{
+    "section": {
+        "headline": "Hear Education AI in Action",
+        "subheadline": "Real conversations showing how our AI handles diverse educational scenarios",
+        "demos": [
+            {
+                "title": "Prospective Student Inquiry",
+                "description": "AI handles detailed questions about program requirements, application deadlines, and campus life",
+                "scenario": "undergraduate_inquiry",
+                "duration": "3:45",
+                "audio_file": "/assets/audio/demos/education-inquiry.mp3",
+                "transcript": "Student: Hi, I'm interested in your business administration program. What are the admission requirements?\n\nAI Agent: Hello! I'd be happy to help you with information about our Business Administration program. For undergraduate admission, you'll need: a high school diploma with minimum 3.0 GPA, SAT scores of 1200+ or ACT 25+, two letters of recommendation, and a personal statement. The program includes concentrations in Marketing, Finance, and Management. Would you like specific information about any of these concentrations?",
+                "tags": ["Admissions", "Program Information", "Requirements"]
+            },
+            {
+                "title": "Current Student Support",
+                "description": "AI assists enrolled student with course registration and academic planning",
+                "scenario": "student_support",
+                "duration": "2:30",
+                "audio_file": "/assets/audio/demos/education-support.mp3",
+                "transcript": "Student: I need help with course registration for next semester. I'm a junior majoring in Computer Science.\n\nAI Agent: I can help you with registration! Based on your academic record, you need 15 more credits in core CS courses and 6 elective credits to stay on track for graduation. For next semester, I recommend CS 335 Database Systems and CS 342 Software Engineering, both are available with morning and afternoon sections. Would you like me to check the current enrollment status for these courses?",
+                "tags": ["Student Support", "Registration", "Academic Planning"]
+            },
+            {
+                "title": "International Student Assistance",
+                "description": "Multilingual support for international student visa and program questions",
+                "scenario": "international_support",
+                "duration": "4:15",
+                "audio_file": "/assets/audio/demos/education-international.mp3",
+                "transcript": "Student: مرحبا، أنا طالب دولي من الإمارات وأريد معلومات عن برنامج الهندسة\n\nAI Agent: أهلاً وسهلاً! يسعدني مساعدتك. برنامج الهندسة لدينا معترف به دولياً ويقبل الطلاب الدوليين. بالنسبة للطلاب من الإمارات، ستحتاج إلى شهادة الثانوية العامة مع معدل 85% على الأقل، ودرجة IELTS 6.5 أو TOEFL 80. كما نساعد في إجراءات الفيزا الدراسية. هل تريد معلومات أكثر عن التخصصات المتاحة؟",
+                "tags": ["International Students", "Arabic Support", "Visa Information"]
+            },
+            {
+                "title": "Parent Information Call",
+                "description": "AI provides comprehensive information to concerned parent about student services and safety",
+                "scenario": "parent_inquiry",
+                "duration": "3:20",
+                "audio_file": "/assets/audio/demos/education-parent.mp3",
+                "transcript": "Parent: I'm calling about my daughter who's starting next fall. What security measures do you have on campus?\n\nAI Agent: I understand your concern for your daughter's safety. Our campus has 24/7 security patrol, emergency call boxes every 100 yards, well-lit pathways, and a campus escort service until 2 AM. We also have a campus safety app that connects directly to security. All residence halls require key card access, and we conduct monthly safety drills. Would you like information about our campus orientation program for new students and parents?",
+                "tags": ["Parent Communication", "Campus Safety", "Student Services"]
+            },
+            {
+                "title": "Financial Aid Guidance",
+                "description": "AI explains scholarship opportunities and financial aid application process",
+                "scenario": "financial_aid",
+                "duration": "3:55",
+                "audio_file": "/assets/audio/demos/education-financial.mp3",
+                "transcript": "Student: I need help understanding the financial aid options available. My family's income is around $45,000.\n\nAI Agent: Based on your family income, you'll likely qualify for significant financial aid. I recommend applying for the Pell Grant first - with your income level, you could receive up to $6,895 per year. We also have institutional need-based grants averaging $8,000 for qualifying students. Additionally, there are merit scholarships based on academic performance. The priority deadline for financial aid is March 1st. Would you like me to help you understand the FAFSA application process?",
+                "tags": ["Financial Aid", "Scholarships", "FAFSA"]
+            },
+            {
+                "title": "Alumni Engagement",
+                "description": "AI maintains connection with graduates for networking and donation opportunities",
+                "scenario": "alumni_relations",
+                "duration": "2:45",
+                "audio_file": "/assets/audio/demos/education-alumni.mp3",
+                "transcript": "Alumni: Hi, I graduated in 2018 with a degree in Marketing. I heard about the new business incubator program.\n\nAI Agent: Congratulations on your continued success! Yes, our new Business Innovation Incubator launched last year and it's been fantastic. As a marketing graduate, you'd be perfect for our mentor network. We're looking for professionals to guide current students and recent graduates. The program also hosts quarterly networking events - our next one is November 15th. Would you be interested in learning more about mentoring opportunities or attending the networking event?",
+                "tags": ["Alumni Relations", "Mentoring", "Networking"]
+            }
+        ]
+    }
+}

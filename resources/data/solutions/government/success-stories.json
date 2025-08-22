@@ -1,0 +1,77 @@
+{
+    "section": {
+        "headline": "Government Success Stories",
+        "subheadline": "See how public agencies are transforming citizen services with compassionate AI solutions",
+        "stories": [
+            {
+                "institution_name": "Dubai Municipality",
+                "institution_type": "Municipal Government",
+                "location": "Dubai, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "96%",
+                        "label": "Citizen Satisfaction"
+                    },
+                    "metric_2": {
+                        "value": "75%",
+                        "label": "Cost Reduction"
+                    },
+                    "metric_3": {
+                        "value": "18sec",
+                        "label": "Average Response Time"
+                    }
+                },
+                "quote": "Our AI agent has revolutionized how we serve Dubai residents. Citizens get instant, accurate help with building permits and municipal services, day or night.",
+                "author": "Ahmed Al-Mansoori",
+                "position": "Director of Public Services",
+                "image": "/assets/images/testimonials/government-1.jpg"
+            },
+            {
+                "institution_name": "Ministry of Health UAE",
+                "institution_type": "Federal Government",
+                "location": "Abu Dhabi, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "89%",
+                        "label": "Query Resolution Rate"
+                    },
+                    "metric_2": {
+                        "value": "45K+",
+                        "label": "Citizens Served Monthly"
+                    },
+                    "metric_3": {
+                        "value": "12+",
+                        "label": "Languages Supported"
+                    }
+                },
+                "quote": "During COVID-19, our AI handled thousands of health inquiries daily, providing accurate information when our community needed it most. It was invaluable.",
+                "author": "Dr. Fatima Al-Zahra",
+                "position": "Deputy Minister for Digital Services",
+                "image": "/assets/images/testimonials/government-2.jpg"
+            },
+            {
+                "institution_name": "Sharjah City Council",
+                "institution_type": "Local Government",
+                "location": "Sharjah, UAE",
+                "results": {
+                    "metric_1": {
+                        "value": "82%",
+                        "label": "Digital Service Adoption"
+                    },
+                    "metric_2": {
+                        "value": "68%",
+                        "label": "Staff Efficiency Gain"
+                    },
+                    "metric_3": {
+                        "value": "24/7",
+                        "label": "Service Availability"
+                    }
+                },
+                "quote": "Our residents love having 24/7 access to city services. The AI speaks Arabic fluently and understands local customs - it's like having a helpful neighbor who never sleeps.",
+                "author": "Khalid bin Sultan",
+                "position": "Head of Citizen Services",
+                "image": "/assets/images/testimonials/government-3.jpg"
+            }
+        ]
+    }
+}

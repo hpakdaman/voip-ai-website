@@ -1,0 +1,80 @@
+{
+    "section": {
+        "headline": "Calculate Government ROI Impact",
+        "subheadline": "Discover how much your agency can save while dramatically improving citizen services",
+        "calculator": {
+            "inputs": [
+                {
+                    "id": "population",
+                    "label": "Population Served",
+                    "type": "range",
+                    "min": 10000,
+                    "max": 1000000,
+                    "step": 10000,
+                    "default": 100000,
+                    "unit": "citizens"
+                },
+                {
+                    "id": "daily_calls",
+                    "label": "Daily Service Calls",
+                    "type": "range", 
+                    "min": 50,
+                    "max": 5000,
+                    "step": 50,
+                    "default": 800,
+                    "unit": "calls"
+                },
+                {
+                    "id": "staff_hourly",
+                    "label": "Average Staff Cost Per Hour",
+                    "type": "range",
+                    "min": 20,
+                    "max": 80,
+                    "step": 5,
+                    "default": 35,
+                    "unit": "$/hour"
+                }
+            ],
+            "calculations": {
+                "current_costs": {
+                    "formula": "(daily_calls * 12 * staff_hourly * 22)",
+                    "description": "Current monthly communication costs"
+                },
+                "ai_costs": {
+                    "formula": "population * 0.08",
+                    "description": "Monthly AI service cost per capita"
+                },
+                "efficiency_savings": {
+                    "formula": "(daily_calls * 8 * staff_hourly * 22)",
+                    "description": "Staff efficiency improvements"
+                },
+                "citizen_satisfaction": {
+                    "formula": "daily_calls * 0.85 * 30",
+                    "description": "Additional satisfied citizens per month"
+                }
+            }
+        },
+        "benefits": [
+            {
+                "title": "Taxpayer Value",
+                "description": "Reduce operational costs while expanding service availability and quality",
+                "icon": "uil-money-withdraw"
+            },
+            {
+                "title": "Staff Empowerment", 
+                "description": "Free skilled government workers for high-value policy and program development",
+                "icon": "uil-users-alt"
+            },
+            {
+                "title": "Democratic Access",
+                "description": "Ensure equal access to government services regardless of work schedule or language",
+                "icon": "uil-balance-scale"
+            },
+            {
+                "title": "Public Trust",
+                "description": "Build citizen confidence through consistent, reliable, and transparent service delivery",
+                "icon": "uil-shield-check"
+            }
+        ]
+    }
+}

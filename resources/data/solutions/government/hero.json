@@ -1,0 +1,34 @@
+{
+    "section": {
+        "industry_badge": "Government AI Solutions",
+        "main_title": "Empowering Citizens with",
+        "highlighted_word": "Smart Government",
+        "subtitle": "Transform public services with intelligent AI agents that serve citizens 24/7, making government more accessible, efficient, and responsive to community needs.",
+        "description": "From visa inquiries to municipal services, our AI agents ensure every citizen interaction is handled with care, accuracy, and the respect your community deserves.",
+        "stats": [
+            {
+                "number": "95%",
+                "label": "Citizen Satisfaction"
+            },
+            {
+                "number": "24/7",
+                "label": "Public Services"
+            },
+            {
+                "number": "70%",
+                "label": "Cost Reduction"
+            }
+        ],
+        "cta": {
+            "primary": "Transform Your Services",
+            "secondary": "See Government Demo"
+        },
+        "hero_image": "/assets/images/solutions/government/hero-smart-city.jpg"
+    },
+    "voice_demo": {
+        "title": "🎧 Listen: AI Handling Citizen Service Request",
+        "description": "Hear how our AI compassionately assists a citizen with municipal permit questions, providing clear guidance and next steps.",
+        "audio_file": "government-citizen-service.mp3",
+        "duration": "2:45"
+    }
+}

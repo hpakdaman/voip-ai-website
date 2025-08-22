@@ -1,0 +1,192 @@
+/* Education Solutions Landing Page CSS */
+
+/* Academic Card Hover Effects */
+.demo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Academic Transcript Modal Styling */
+.transcript-modal {
+    background: rgba(12, 27, 39, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(30, 192, 141, 0.2);
+}
+
+/* Education ROI Calculator Slider Styling */
+.roi-slider {
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(30, 192, 141, 0.3);
+    outline: none;
+}
+
+.roi-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.roi-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+/* Academic Problem Solution Cards Hover Effects */
+.problem-solution-card {
+    transition: all 0.3s ease;
+}
+
+.problem-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Graduation cap animation for education metrics */
+@keyframes academic-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.academic-metric {
+    animation: academic-pulse 3s ease-in-out infinite;
+}
+
+/* Education Specific Responsive Adjustments */
+@media (max-width: 768px) {
+    .demo-card {
+        padding: 1rem;
+    }
+    
+    .roi-calculator-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .academic-problem-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Academic Book Icon Glow Effects */
+.academic-icon:hover {
+    filter: drop-shadow(0 0 10px rgba(30, 192, 141, 0.5));
+    transition: filter 0.3s ease;
+}
+
+/* Student Stats Counter Animation */
+@keyframes student-count-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.student-counter {
+    animation: student-count-up 0.6s ease-out;
+}
+
+/* Enrollment Card Hover Effects */
+.enrollment-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Academic CTA Button Gradient Animation */
+.academic-cta-button {
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    transition: all 0.3s ease;
+}
+
+.academic-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);
+}
+
+/* Student Success Animation */
+@keyframes success-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.success-icon {
+    animation: success-bounce 2s ease-in-out infinite;
+}
+
+/* Academic Progress Bar */
+.academic-progress {
+    background: linear-gradient(90deg, var(--voip-link) 0%, rgba(30, 192, 141, 0.3) 100%);
+    height: 4px;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+/* Language Support Indicators */
+.language-indicator {
+    background: rgba(30, 192, 141, 0.1);
+    border: 1px solid rgba(30, 192, 141, 0.3);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.language-indicator:hover {
+    background: rgba(30, 192, 141, 0.2);
+    border-color: rgba(30, 192, 141, 0.5);
+}
+
+/* Student Information System Integration Visual */
+.sis-integration {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(30, 192, 141, 0.05) 100%);
+    border: 2px dashed rgba(30, 192, 141, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sis-integration:hover {
+    border-color: rgba(30, 192, 141, 0.5);
+    background: rgba(30, 192, 141, 0.15);
+}
+
+/* Academic Calendar Visual Elements */
+.calendar-highlight {
+    background: rgba(30, 192, 141, 0.2);
+    border-radius: 8px;
+    padding: 0.5rem;
+    border-left: 4px solid var(--voip-link);
+}
+
+/* Education Mobile Responsiveness */
+@media (max-width: 640px) {
+    .academic-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .academic-icon {
+        font-size: 1.5rem;
+    }
+    
+    .academic-cta-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .language-indicator {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+}
