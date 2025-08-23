@@ -104,7 +104,7 @@ if (!empty($demoAudio)) {
                     <div class="relative">
                         @php
                         $heroImages = $data['hero_images'] ?? [];
-                        $defaultImage = 'assets/images/real/property/1.jpg';
+                        $defaultImage = 'assets/images/no-image.svg';
                         $heroImage = $heroImages['main'] ?? $defaultImage;
                         @endphp
                         <img src="{{ asset($heroImage) }}" 
