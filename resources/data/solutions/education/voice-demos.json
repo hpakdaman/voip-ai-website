@@ -1,8 +1,11 @@
 {
     "section": {
-        "headline": "Hear Education AI in Action",
-        "subheadline": "Real conversations showing how our AI handles diverse educational scenarios",
-        "demos": [
+        "badge": "AI Command Center",
+        "headline": "See Sawtic AI",
+        "title": "See Sawtic AI",
+        "subheadline": "Real conversations showing how our AI serves educational institutions with empathy, accuracy, and professionalism"
+    },
+    "voice_samples": [
             {
                 "title": "Prospective Student Inquiry",
                 "description": "AI handles detailed questions about program requirements, application deadlines, and campus life",

@@ -62,7 +62,7 @@
         }
     ],
     "hero_images": {
-        "main": "assets/images/spa/bg.jpg"
+        "main": "assets/images/spa/hero.jpg"
     },
     "metadata": {
         "version": "1.0",
