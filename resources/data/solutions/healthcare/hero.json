@@ -66,7 +66,7 @@
         ]
     },
     "hero_images": {
-        "main": "assets/images/hospital/bg.jpg"
+        "main": "assets/images/hospital/hero.jpg"
     },
     "metadata": {
         "industry": "healthcare",
