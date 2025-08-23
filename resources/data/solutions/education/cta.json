@@ -1,34 +1,35 @@
 {
     "section": {
-        "headline": "Ready to Transform Your Institution?",
-        "subheadline": "Join leading educational institutions using AI to enhance student experience and boost enrollment",
-        "description": "Don't let another prospective student slip away. Our AI agents work 24/7 to ensure every inquiry becomes an opportunity.",
-        "cta": {
-            "primary": "Start Free Education Trial",
-            "secondary": "Schedule Demo"
+        "title": "Ready to Transform Your",
+        "highlighted": "Educational Institution?",
+        "description": "Join leading schools and universities using AI to enhance student experience, boost enrollment, and never miss another important inquiry."
+    },
+    "cta_buttons": [
+        {
+            "text": "Start Free Education Trial",
+            "url": "/demo/booking",
+            "style": "primary",
+            "icon": "uil-graduation-cap",
+            "tracking": "education-cta-trial"
         },
-        "features": [
-            {
-                "title": "Quick Setup",
-                "description": "Integration with your existing systems in under 48 hours",
-                "icon": "uil-rocket"
-            },
-            {
-                "title": "No Risk Trial",
-                "description": "30-day money-back guarantee - see results or get refunded",
-                "icon": "uil-shield-check"
-            },
-            {
-                "title": "Expert Support",
-                "description": "Dedicated education specialists help optimize your AI agent",
-                "icon": "uil-user-check"
-            }
-        ],
-        "background_image": "/assets/images/solutions/education/cta-bg.jpg",
-        "urgency": {
-            "title": "Limited Time: Education Package",
-            "description": "Get 50% off setup fees for the next 50 educational institutions",
-            "countdown": true
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary", 
+            "icon": "uil-phone",
+            "tracking": "education-cta-call"
         }
-    }
+    ],
+    "benefits": [
+        "24/7 AI student support agents",
+        "Integration with existing student systems",
+        "30-day money-back guarantee",
+        "Dedicated education specialists",
+        "Multi-language support (English/Arabic)",
+        "Free setup worth AED 5,000"
+    ],
+    "guarantee": "30-day money-back guarantee - see increased enrollment results or get fully refunded",
+    "social_proof": "Trusted by 150+ educational institutions across UAE and Middle East",
+    "bg_image": "assets/images/education/bg.jpg",
+    "alt_text": "Education AI Agent Background"
 }

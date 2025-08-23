@@ -154,8 +154,8 @@ $voiceSamples = $data['voice_samples'] ?? $sectionData['demos'] ?? [];
         <div class="text-center mt-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="max-w-4xl mx-auto p-8 rounded-2xl border border-white/20" style="background: linear-gradient(135deg, rgba(12, 27, 39, 0.8) 0%, rgba(22, 47, 58, 0.6) 100%); backdrop-filter: blur(15px);">
                 <div class="flex items-center justify-center mb-6">
-                    <div class="w-12 h-12 rounded-xl flex items-center justify-center mr-4" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
-                        <i class="uil uil-rocket text-xl text-white"></i>
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center mr-4 overflow-hidden" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);">
+                        <img src="{{ asset('assets/images/education/action.jpg') }}" alt="AI Agent in Action" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white">Launch Your AI Command Center</h3>
                 </div>

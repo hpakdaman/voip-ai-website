@@ -1,0 +1,144 @@
+{
+  "section": {
+    "badge": "Dubai Travel AI Voice Demos",
+    "title": "Hear AI Agents Handle",
+    "highlighted": "Real Dubai Travel Scenarios",
+    "description": "Listen to authentic conversations showing how our AI call agents handle desert safari bookings, Dubai visa inquiries, car rentals, and attraction tickets with expert Dubai knowledge."
+  },
+  "demos": [
+    {
+      "id": 1,
+      "title": "Desert Safari Booking with Hotel Pickup",
+      "description": "AI agent handles complete desert safari booking including pricing, hotel pickup coordination, dietary requirements, and special requests for family with children.",
+      "duration": "1:45",
+      "type": "Desert Safari Booking",
+      "scenario": "Family of 5 booking evening desert safari with specific dietary needs",
+      "complexity": "Medium - Group booking with special requirements",
+      "icon": "uil-desert",
+      "file_path": "assets/audio/solutions/travel-services/desert-safari-booking.mp3",
+      "transcript": [
+        "Hello, Dubai Desert Adventures! I'm Sarah, your AI travel specialist. How can I help you experience the magic of Dubai's desert today?",
+        "Perfect! I can arrange your evening desert safari for tonight. Our Premium Desert Safari includes hotel pickup, thrilling dune bashing, camel riding, sandboarding, BBQ dinner, and traditional entertainment.",
+        "For your family of 5, including 2 children ages 8 and 12, the total is 1,250 AED. Kids get 25% discount. We accommodate vegetarian meals and can arrange child-safe activities. Pickup from your Downtown Dubai hotel at 3:30 PM.",
+        "Excellent! I'm confirming your booking now. You'll receive WhatsApp confirmation with your guide Mohammed's contact, pickup details, what to wear, and our emergency support line. Your desert adventure begins tonight!"
+      ],
+      "key_points": [
+        "Instant safari availability check",
+        "Family pricing with child discounts",
+        "Dietary requirement accommodation",
+        "Hotel pickup coordination",
+        "Real guide contact provided"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dubai Visa Inquiry - Tourist from India", 
+      "description": "AI provides complete Dubai visa guidance for Indian tourist including document requirements, processing time, fees, and application process.",
+      "duration": "1:30",
+      "type": "Visa Assistance",
+      "scenario": "Indian tourist needs Dubai visa information and application guidance",
+      "complexity": "Medium - Country-specific visa requirements",
+      "icon": "uil-file-check-alt",
+      "file_path": "assets/audio/solutions/travel-services/dubai-visa-inquiry.mp3",
+      "transcript": [
+        "Hello! Welcome to Dubai Visa Express. I'm Ahmed, your AI visa specialist. I can help you get your Dubai visa quickly and easily. Which country are you traveling from?",
+        "Perfect! For Indian citizens, you need a Dubai tourist visa. I can arrange a 30-day single entry visa for 350 AED or 90-day multiple entry for 1,050 AED. Processing takes 3-4 working days.",
+        "You'll need your passport (minimum 6 months validity), passport photos, confirmed hotel booking, return flight ticket, and bank statement. I can email you the complete checklist right now.",
+        "Great! I'm sending you the document checklist and application link. You can apply online, and we'll process everything. You'll get visa approval directly on your email within 4 days maximum!"
+      ],
+      "key_points": [
+        "Country-specific visa requirements",
+        "Multiple visa option pricing",
+        "Complete document checklist",
+        "Processing timeframe clarity",
+        "Online application guidance"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Car Rental with Dubai License Questions",
+      "description": "AI handles complex car rental inquiry including Dubai driving license requirements, insurance options, Salik toll system, and pickup logistics.",
+      "duration": "2:00",
+      "type": "Car Rental Booking",
+      "scenario": "International tourist needs car rental with Dubai license and insurance guidance",
+      "complexity": "High - Complex Dubai driving regulations",
+      "icon": "uil-car",
+      "file_path": "assets/audio/solutions/travel-services/car-rental-booking.mp3",
+      "transcript": [
+        "Welcome to Dubai Drive Rentals! I'm Fatima, your AI car rental expert. I'll help you explore Dubai safely and legally. Do you have questions about driving in Dubai?",
+        "Great question! With your UK license, you can drive in Dubai for 30 days as a tourist. You'll need an International Driving Permit though. Our Toyota Camry is 180 AED per day including comprehensive insurance.",
+        "Insurance covers everything except Salik tolls - that's Dubai's electronic toll system. It costs 4-6 AED per toll gate. I recommend our Salik card package for 50 AED - much easier than paying individual tolls.",
+        "Perfect choice! I'm booking your Toyota Camry for 5 days from Dubai Airport pickup. Total: 900 AED plus 50 AED Salik card. You'll get GPS, emergency roadside assistance, and our 24/7 support number."
+      ],
+      "key_points": [
+        "International license validity explained",
+        "Insurance coverage details",
+        "Salik toll system guidance",
+        "Airport pickup coordination",
+        "Emergency support included"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Dubai Attraction Package Booking",
+      "description": "AI coordinates complex Dubai attraction package including Burj Khalifa, Dubai Mall, Gold Souk tour with timing optimization and transportation.",
+      "duration": "1:55",
+      "type": "Attraction Package",
+      "scenario": "Group booking for multiple Dubai attractions with transportation coordination",
+      "complexity": "High - Multi-location package coordination",
+      "icon": "uil-building",
+      "file_path": "assets/audio/solutions/travel-services/dubai-attractions-package.mp3",
+      "transcript": [
+        "Hello! Dubai Attractions Central here. I'm Omar, your AI tour coordinator. I can create the perfect Dubai experience package for you. What attractions interest you most?",
+        "Excellent choices! I'll create your Ultimate Dubai Package: Burj Khalifa At The Top for 2 PM, Dubai Mall Aquarium, Gold Souk traditional tour, and Dubai Marina dinner cruise. All with private transportation.",
+        "For your group of 8 people, the complete package is 2,400 AED including skip-the-line tickets, private air-conditioned transport, English-speaking guide, and traditional Emirati lunch at Al Fahidi.",
+        "Perfect! Your Dubai experience starts at 10 AM hotel pickup. I'm sending you the detailed itinerary, attraction timings, guide contact Khalid, and emergency support. Get ready for an amazing Dubai adventure!"
+      ],
+      "key_points": [
+        "Multi-attraction coordination",
+        "Skip-the-line ticket arrangements",
+        "Private transportation included",
+        "Local guide assignment",
+        "Optimized timing schedule"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Emergency Flight Change Support",
+      "description": "AI handles urgent flight modification due to family emergency with rebooking options, fee waivers, and family notification coordination.",
+      "duration": "1:40",
+      "type": "Emergency Support", 
+      "scenario": "Tourist needs immediate flight change due to family emergency back home",
+      "complexity": "Critical - Emergency response protocol",
+      "icon": "uil-plane-departure",
+      "file_path": "assets/audio/solutions/travel-services/emergency-flight-change.mp3",
+      "transcript": [
+        "This is Dubai Travel Emergency Support. I'm Layla, and I'm here to help you immediately. I understand you have a family emergency and need urgent flight changes. Please tell me your booking details.",
+        "I found your Emirates flight EK012 to London scheduled for Friday. Given your family emergency, I can move you to tonight's EK002 departing at 11:30 PM with priority boarding at no extra cost.",
+        "I'm waiving all change fees due to emergency circumstances and coordinating with London airport for family assistance services. Your rebooking is processed, and I'm notifying your family of your new arrival time.",
+        "Everything is confirmed. New boarding pass is on your phone, priority check-in arranged, family notified of 6:30 AM London arrival, and emergency support will meet you at Heathrow. Safe travels, and my thoughts are with your family."
+      ],
+      "key_points": [
+        "Immediate emergency response",
+        "Fee waiver for emergency situations",
+        "Priority boarding arrangement",
+        "Family notification coordination",
+        "Airport assistance services"
+      ]
+    }
+  ],
+  "demo_categories": {
+    "desert_safari": "Premium desert experiences",
+    "visa_assistance": "UAE visa and immigration support",
+    "car_rental": "Dubai driving and rental guidance", 
+    "attractions": "Dubai landmark and tour packages",
+    "emergency_support": "Crisis management and urgent changes"
+  },
+  "technical_features": {
+    "response_time": "< 5 seconds average",
+    "dubai_expertise": "Complete Dubai tourism knowledge",
+    "language_quality": "Native English & Arabic",
+    "booking_integration": "Real-time availability checking",
+    "emergency_protocols": "24/7 urgent support procedures"
+  }
+}

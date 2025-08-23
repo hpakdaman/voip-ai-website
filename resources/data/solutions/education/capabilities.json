@@ -1,8 +1,20 @@
 {
     "section": {
-        "headline": "Comprehensive Education AI Solutions",
-        "subheadline": "Everything you need to manage student communications and boost enrollment",
-        "capabilities": [
+        "badge": "AI Education Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Education Inside Out",
+        "description": "Advanced AI trained specifically for educational institutions, with deep knowledge of admissions, student services, and academic operations.",
+        "demo_image": "assets/images/education/action.jpg",
+        "demo_alt": "Education Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles student inquiries with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Natural conversation with students and parents",
+            "Instant access to course and program information",
+            "Multi-language support for international students"
+        ]
+    },
+    "capabilities": [
             {
                 "title": "Admissions & Enrollment Support",
                 "description": "Handle program inquiries, application processes, requirements, and deadline information",

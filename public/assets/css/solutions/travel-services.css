@@ -1,0 +1,159 @@
+/* Travel Services Solutions Page - Sawtic AI */
+
+/* Travel-specific color enhancements */
+.travel-gradient {
+    background: linear-gradient(135deg, #1d7861 0%, #1ec08d 50%, #162f3a 100%);
+}
+
+.travel-accent {
+    background: rgba(29, 120, 97, 0.1);
+    border: 1px solid rgba(30, 192, 141, 0.2);
+}
+
+.travel-hover:hover {
+    background: rgba(30, 192, 141, 0.2);
+    border-color: rgba(30, 192, 141, 0.3);
+}
+
+/* Travel industry specific animations */
+.travel-float {
+    animation: travel-floating 6s ease-in-out infinite;
+}
+
+@keyframes travel-floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Enhanced travel service cards */
+.travel-service-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.12) 100%);
+    border: 2px solid rgba(30, 192, 141, 0.25);
+    box-shadow: 0 8px 25px rgba(30, 192, 141, 0.15);
+}
+
+.travel-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(30, 192, 141, 0.25);
+    border-color: rgba(30, 192, 141, 0.4);
+}
+
+/* Voice demo player styling for travel */
+.travel-audio-player {
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 8px 25px rgba(30, 192, 141, 0.2);
+}
+
+.travel-audio-player audio {
+    width: 100%;
+    height: 45px;
+    filter: sepia(100%) saturate(200%) hue-rotate(140deg);
+}
+
+/* ROI Calculator travel theme */
+.travel-roi-calculator {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 100%);
+    border: 2px solid rgba(30, 192, 141, 0.3);
+    border-radius: 20px;
+}
+
+.travel-roi-result {
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);
+}
+
+/* Travel testimonial enhancements */
+.travel-testimonial {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.12) 0%, rgba(22, 47, 58, 0.08) 100%);
+    border-left: 4px solid var(--voip-link);
+    position: relative;
+    overflow: hidden;
+}
+
+.travel-testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+}
+
+/* Travel CTA buttons */
+.travel-cta-button {
+    background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(30, 192, 141, 0.3);
+}
+
+.travel-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(30, 192, 141, 0.4);
+    color: white;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .travel-service-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .travel-roi-calculator {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .travel-cta-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Premium travel industry styling */
+.travel-premium-badge {
+    background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Travel destination highlights */
+.travel-destination {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, transparent 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-left: 3px solid var(--voip-link);
+}
+
+/* Loading states for travel booking demos */
+.travel-loading {
+    background: linear-gradient(90deg, rgba(30, 192, 141, 0.1) 25%, rgba(30, 192, 141, 0.3) 50%, rgba(30, 192, 141, 0.1) 75%);
+    background-size: 200% 100%;
+    animation: travel-shimmer 2s infinite;
+}
+
+@keyframes travel-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}

@@ -112,7 +112,7 @@ if (!empty($demoAudio)) {
                              class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         
                         <!-- Image Overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                        <div class=""></div>
                     </div>
                     
                     <!-- Floating Voice Demo Player -->
