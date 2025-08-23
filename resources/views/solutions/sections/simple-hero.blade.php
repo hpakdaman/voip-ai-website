@@ -83,7 +83,7 @@ $stats = $data['stats'] ?? $data['hero_stats'] ?? [];
                     <!-- Main Hero Image -->
                     <div class="relative">
                         @php
-                        $defaultImage = 'assets/images/real/property/1.jpg';
+                        $defaultImage = 'assets/images/no-image.svg';
                         $heroImage = $heroImages['main'] ?? $defaultImage;
                         @endphp
                         <img src="{{ asset($heroImage) }}" 
