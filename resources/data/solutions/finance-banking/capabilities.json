@@ -3,7 +3,17 @@
         "badge": "AI Financial Services Assistant",
         "title": "Your AI Agent Knows",
         "highlighted": "Banking & Finance Inside Out",
-        "description": "Advanced AI trained specifically for UAE financial services, banking regulations, and customer service excellence following Central Bank guidelines."
+        "description": "Advanced AI trained specifically for UAE financial services, banking regulations, and customer service excellence following Central Bank guidelines.",
+        "demo_image": "/assets/images/finance/action.jpg",
+        "demo_alt": "Financial Advisor Consulting with Client",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch our AI assistant handle banking inquiries with expertise, answering financial questions and managing complex service requests with professional financial knowledge.",
+        "demo_features": [
+            "Natural conversation about financial products",
+            "Expert knowledge of banking services and regulations",
+            "Professional account management and services",
+            "Personalized financial recommendations"
+        ]
     },
     "capabilities": [
         {
@@ -165,17 +175,6 @@
             "icon": "uil-chart-growth"
         }
     ],
-    "demo_title": "See Your AI Agent in Action",
-    "demo_description": "Watch our AI assistant handle banking inquiries with expertise, answering financial questions and managing complex service requests with professional financial knowledge.",
-    "demo_image": "/assets/images/finance/action.jpg",
-    "demo_alt": "Financial Advisor Consulting with Client",
-    "demo_features": [
-        "Natural conversation about financial products",
-        "Expert knowledge of banking services and regulations",
-        "Professional account management and services",
-        "Personalized financial recommendations"
-    ],
-    "integration_description": "Seamlessly integrates with leading banking platforms and financial systems used across UAE financial institutions",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-22",

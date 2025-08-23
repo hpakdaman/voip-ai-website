@@ -1,0 +1,59 @@
+{
+    "section": {
+        "badge": "Success Stories",
+        "title": "Real Results from",
+        "highlighted": "UAE [Industry] Professionals",
+        "description": "See how Sawtic AI is transforming [industry] businesses across the Emirates"
+    },
+    "testimonials": [
+        {
+            "name": "[Client Name 1]",
+            "company": "[Company Name 1]",
+            "image": "/assets/images/client/01.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        },
+        {
+            "name": "[Client Name 2]",
+            "company": "[Company Name 2]",
+            "image": "/assets/images/client/02.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        },
+        {
+            "name": "[Client Name 3]",
+            "company": "[Company Name 3]",
+            "image": "/assets/images/client/03.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        }
+    ],
+    "stats": [
+        {
+            "number": "[number]+",
+            "label": "UAE [Industry] Professionals",
+            "description": "Using Sawtic AI daily"
+        },
+        {
+            "number": "[number]%",
+            "label": "More Leads Captured",
+            "description": "Average increase in qualified leads"
+        },
+        {
+            "number": "95%",
+            "label": "Client Satisfaction",
+            "description": "Customers rate AI interaction highly"
+        },
+        {
+            "number": "24/7",
+            "label": "Lead Capture",
+            "description": "Never miss opportunities"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "[industry-slug]",
+        "testimonial_count": 3
+    }
+}

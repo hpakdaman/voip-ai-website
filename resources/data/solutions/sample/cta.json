@@ -1,0 +1,40 @@
+{
+    "section": {
+        "title": "Ready to Transform Your",
+        "highlighted": "[Industry] Business?",
+        "description": "Join [number]+ [industry] professionals already using Sawtic AI to capture more leads and grow their business.",
+        "urgency_text": "Don't let another qualified lead slip away while you're busy with other clients."
+    },
+    "benefits": [
+        "24/7 lead capture",
+        "Automatic [industry-specific] qualification",
+        "Instant appointment booking",
+        "Zero missed opportunities"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/demo/book",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "[industry]-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "[industry]-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee • No setup fees • Cancel anytime",
+    "social_proof": "Trusted by [number]+ UAE [industry] professionals",
+    "bg_image": "/assets/images/[industry]/bg/01.jpg",
+    "alt_text": "[Industry] Success",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "[industry-slug]",
+        "conversion_type": "final_cta"
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Retail & E-commerce Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Retail Excellence",
+        "description": "Real examples of how our AI transforms retail operations and enhances customer shopping experiences"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Customer Shopping Support",
+            "description": "AI agents provide instant product information, order assistance, and personalized shopping recommendations across all channels",
+            "image": "/assets/images/retail-ecommerce/showcase/1.jpg",
+            "alt": "Retail Customer Support",
+            "metrics": [
+                {
+                    "value": "93%",
+                    "label": "Customer Satisfaction"
+                },
+                {
+                    "value": "4x",
+                    "label": "Sales Conversion"
+                }
+            ],
+            "features": [
+                "Instant product catalog access",
+                "Personalized recommendation engine",
+                "Multi-channel order tracking"
+            ]
+        },
+        {
+            "title": "Inventory & Order Management",
+            "description": "Intelligent inventory tracking with real-time stock updates, automated reordering, and supply chain optimization",
+            "image": "/assets/images/retail-ecommerce/showcase/2.jpg",
+            "alt": "Retail Inventory Management",
+            "metrics": [
+                {
+                    "value": "87%",
+                    "label": "Stock Accuracy"
+                },
+                {
+                    "value": "65%",
+                    "label": "Cost Reduction"
+                }
+            ],
+            "features": [
+                "Real-time inventory tracking",
+                "Automated supply chain management",
+                "Demand forecasting analytics"
+            ]
+        },
+        {
+            "title": "Customer Experience Optimization",
+            "description": "Personalized shopping journeys with AI-powered customer insights, loyalty program management, and retention strategies",
+            "image": "/assets/images/retail-ecommerce/showcase/3.jpg",
+            "alt": "Customer Experience AI",
+            "metrics": [
+                {
+                    "value": "76%",
+                    "label": "Customer Retention"
+                },
+                {
+                    "value": "52%",
+                    "label": "Loyalty Engagement"
+                }
+            ],
+            "features": [
+                "Behavioral shopping analytics",
+                "Automated loyalty rewards",
+                "Personalized marketing campaigns"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "retail-ecommerce",
+        "showcase_count": 3
+    }
+}

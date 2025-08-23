@@ -1,115 +1,179 @@
 {
     "section": {
-        "badge": "AI Healthcare Capabilities",
-        "title": "Advanced Medical AI That Understands",
-        "highlighted": "Patient Care",
-        "description": "Our AI agents are trained specifically for healthcare environments with medical terminology, HIPAA compliance, and UAE healthcare regulations."
+        "badge": "AI Healthcare Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Healthcare Inside Out",
+        "description": "Advanced AI trained specifically for healthcare environments with medical terminology, HIPAA compliance, and UAE healthcare regulations.",
+        "demo_image": "assets/images/hospital/action.jpg",
+        "demo_alt": "Healthcare Professional with Patient",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch our AI assistant handle patient appointments with medical expertise, managing complex scheduling and emergency calls with HIPAA compliance.",
+        "demo_features": [
+            "Natural conversation with medical terminology",
+            "HIPAA-compliant patient data handling", 
+            "Emergency call recognition and escalation",
+            "Multi-language patient support"
+        ]
     },
     "capabilities": [
         {
-            "icon": "uil-user-md",
             "title": "Medical Knowledge Base",
             "description": "Trained on medical terminology, procedures, and common patient inquiries with UAE healthcare system knowledge.",
+            "icon": "uil-user-md",
+            "is_premium": false,
             "features": [
                 "Medical procedure explanations",
                 "Symptom assessment protocols",
                 "UAE insurance coverage guidance",
                 "Prescription refill management"
-            ]
+            ],
+            "metric": "99%",
+            "metric_label": "Medical Accuracy",
+            "delay": "0.2s"
         },
         {
-            "icon": "uil-shield-check",
             "title": "HIPAA & UAE Compliance",
             "description": "Full compliance with international patient privacy laws and UAE healthcare data protection regulations.",
+            "icon": "uil-shield-check",
+            "is_premium": false,
             "features": [
                 "Encrypted patient data handling",
                 "HIPAA-compliant conversations",
                 "UAE Ministry of Health standards",
                 "Secure appointment scheduling"
-            ]
+            ],
+            "metric": "100%",
+            "metric_label": "Compliance Rate",
+            "delay": "0.3s"
         },
         {
-            "icon": "uil-calendar-alt",
             "title": "Smart Appointment System",
             "description": "Intelligent scheduling with doctor availability, specialty matching, and urgent care prioritization.",
+            "icon": "uil-calendar-alt",
+            "is_premium": true,
             "features": [
                 "Real-time calendar integration",
                 "Specialist referral routing",
                 "Emergency call escalation",
                 "Insurance verification checks"
-            ]
+            ],
+            "metric": "95%",
+            "metric_label": "Booking Success",
+            "delay": "0.4s"
         },
         {
-            "icon": "uil-comment-dots",
             "title": "Multilingual Medical Support",
             "description": "Fluent medical communication in Arabic, English, Hindi, and Urdu for UAE's diverse patient population.",
+            "icon": "uil-comment-dots",
+            "is_premium": false,
             "features": [
                 "Medical terminology in multiple languages",
                 "Cultural sensitivity training",
                 "Religious dietary consultation",
                 "Family involvement protocols"
-            ]
+            ],
+            "metric": "97%",
+            "metric_label": "Communication Score",
+            "delay": "0.5s"
         },
         {
-            "icon": "uil-bell",
             "title": "Patient Care Automation",
             "description": "Automated follow-ups, medication reminders, and post-treatment care instructions.",
+            "icon": "uil-bell",
+            "is_premium": true,
             "features": [
                 "Post-visit care instructions",
                 "Medication reminder calls",
                 "Test result notifications",
                 "Wellness check-in calls"
-            ]
+            ],
+            "metric": "88%",
+            "metric_label": "Patient Compliance",
+            "delay": "0.6s"
         },
         {
-            "icon": "uil-phone-times",
             "title": "Emergency Call Management",
             "description": "Immediate emergency recognition with proper escalation to medical professionals and emergency services.",
+            "icon": "uil-phone-times",
+            "is_premium": true,
             "features": [
                 "Emergency keyword detection",
                 "Immediate doctor notification",
                 "Ambulance service coordination",
                 "Family emergency contacts"
-            ]
+            ],
+            "metric": "99.9%",
+            "metric_label": "Emergency Response",
+            "delay": "0.7s"
         }
     ],
-    "integration_stats": [
+    "integrations": [
         {
-            "number": "50+",
-            "label": "Medical Systems",
-            "description": "EMR and practice management integrations"
+            "name": "Epic EMR",
+            "type": "Electronic Medical Records",
+            "icon": "uil-file-medical"
         },
         {
-            "number": "99.9%",
-            "label": "Uptime SLA",
-            "description": "Critical healthcare communication reliability"
+            "name": "Cerner PowerChart",
+            "type": "Healthcare Information System",
+            "icon": "uil-hospital"
         },
         {
-            "number": "15sec",
-            "label": "Response Time",
-            "description": "Average patient query response time"
+            "name": "Allscripts",
+            "type": "Practice Management",
+            "icon": "uil-stethoscope"
         },
         {
-            "number": "100%",
-            "label": "Compliance",
-            "description": "HIPAA and UAE healthcare standards"
+            "name": "NextGen Healthcare",
+            "type": "EHR Platform",
+            "icon": "uil-heartbeat"
+        },
+        {
+            "name": "DrChrono",
+            "type": "Medical Practice Platform",
+            "icon": "uil-user-md"
+        },
+        {
+            "name": "Salesforce Health Cloud",
+            "type": "Patient Relationship Management",
+            "icon": "uil-users-alt"
+        },
+        {
+            "name": "Zoom for Healthcare",
+            "type": "Telemedicine Platform",
+            "icon": "uil-video"
+        },
+        {
+            "name": "WhatsApp Business",
+            "type": "Patient Messaging",
+            "icon": "uil-whatsapp"
+        },
+        {
+            "name": "SMS Gateway",
+            "type": "Appointment Reminders",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "Dubai Health Authority",
+            "type": "Regulatory Compliance",
+            "icon": "uil-shield-check"
+        },
+        {
+            "name": "UAE Ministry of Health",
+            "type": "Healthcare Standards",
+            "icon": "uil-hospital-symbol"
+        },
+        {
+            "name": "HAAD/DHA Integration",
+            "type": "Insurance Verification",
+            "icon": "uil-file-check"
         }
     ],
-    "demo_title": "See Your AI Agent in Action",
-    "demo_description": "Watch our AI assistant handle patient appointments with medical expertise, managing complex scheduling and emergency calls with HIPAA compliance.",
-    "demo_image": "assets/images/hospital/action.jpg",
-    "demo_alt": "Healthcare Professional with Patient",
-    "demo_features": [
-        "Natural conversation with medical terminology",
-        "HIPAA-compliant patient data handling",
-        "Emergency call recognition and escalation",
-        "Multi-language patient support"
-    ],
-    "integration_description": "Seamlessly integrates with popular medical practice management systems and EMR platforms used across UAE healthcare facilities",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "focus": "medical_ai_capabilities",
-        "compliance": ["HIPAA", "UAE_MOH", "GDPR"]
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE healthcare market"
     }
 }

@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Real Estate Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Property Success",
+        "description": "Real examples of how our AI transforms real estate operations and drives property sales"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Property Lead Management",
+            "description": "AI agents capture and qualify property leads around the clock, ensuring no potential buyer slips through the cracks",
+            "image": "/assets/images/real-estate/showcase/1.jpg",
+            "alt": "Real Estate Lead Management",
+            "metrics": [
+                {
+                    "value": "95%",
+                    "label": "Lead Capture Rate"
+                },
+                {
+                    "value": "3x",
+                    "label": "Qualified Leads"
+                }
+            ],
+            "features": [
+                "Instant property information delivery",
+                "Smart buyer qualification process",
+                "Automated viewing appointments"
+            ]
+        },
+        {
+            "title": "Property Investment Analysis",
+            "description": "Intelligent investment guidance with real-time market analysis, ROI calculations, and property comparison for UAE investors",
+            "image": "/assets/images/real-estate/showcase/2.jpg",
+            "alt": "Property Investment AI",
+            "metrics": [
+                {
+                    "value": "92%",
+                    "label": "Accuracy Rate"
+                },
+                {
+                    "value": "30",
+                    "label": "Seconds Analysis"
+                }
+            ],
+            "features": [
+                "Real-time market data integration",
+                "Investment ROI calculations",
+                "Neighborhood trend analysis"
+            ]
+        },
+        {
+            "title": "Multi-Language Property Services",
+            "description": "Seamless property services in Arabic and English, expanding market reach and serving Dubai's diverse real estate market",
+            "image": "/assets/images/real-estate/showcase/3.jpg",
+            "alt": "Multi-Language Property Services",
+            "metrics": [
+                {
+                    "value": "45%",
+                    "label": "Market Expansion"
+                },
+                {
+                    "value": "97%",
+                    "label": "Communication Score"
+                }
+            ],
+            "features": [
+                "Fluent Arabic and English support",
+                "Cultural property preferences",
+                "Local market expertise"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "real-estate",
+        "showcase_count": 3
+    }
+}

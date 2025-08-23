@@ -19,6 +19,7 @@
             "title": "Admissions & Enrollment Support",
             "description": "Handle program inquiries, application processes, requirements, and deadline information",
             "icon": "uil-graduation-cap",
+            "is_premium": false,
             "features": [
                 "Program information and requirements",
                 "Application deadline management",
@@ -26,12 +27,15 @@
                 "Financial aid information",
                 "Campus tour scheduling"
             ],
-            "badge": "Core"
+            "metric": "97%",
+            "metric_label": "Inquiry Accuracy",
+            "delay": "0.2s"
         },
         {
             "title": "Student Support Services",
             "description": "Provide 24/7 support for current students' academic and administrative needs",
             "icon": "uil-user-check",
+            "is_premium": false,
             "features": [
                 "Grade inquiries and academic status",
                 "Schedule and course information",
@@ -39,12 +43,15 @@
                 "Academic advisor appointments",
                 "Student account management"
             ],
-            "badge": "Essential"
+            "metric": "95%",
+            "metric_label": "Support Success",
+            "delay": "0.3s"
         },
         {
             "title": "Multilingual Communication",
             "description": "Support international students with native-quality language capabilities",
             "icon": "uil-comment-alt-lines",
+            "is_premium": true,
             "features": [
                 "50+ language support",
                 "Cultural context awareness",
@@ -52,12 +59,15 @@
                 "Visa and immigration guidance",
                 "Cultural orientation support"
             ],
-            "badge": "Premium"
+            "metric": "98%",
+            "metric_label": "Language Coverage",
+            "delay": "0.4s"
         },
         {
             "title": "Parent & Family Relations",
             "description": "Manage communications with parents and family members professionally",
             "icon": "uil-users-alt",
+            "is_premium": false,
             "features": [
                 "Academic progress updates",
                 "Billing and payment inquiries",
@@ -65,12 +75,15 @@
                 "Event and activity updates",
                 "Emergency contact protocols"
             ],
-            "badge": "Standard"
+            "metric": "92%",
+            "metric_label": "Family Satisfaction",
+            "delay": "0.5s"
         },
         {
             "title": "Alumni Engagement",
             "description": "Maintain connections with graduates for networking and development",
             "icon": "uil-heart-alt",
+            "is_premium": true,
             "features": [
                 "Alumni event notifications",
                 "Donation campaign management",
@@ -78,12 +91,15 @@
                 "Networking opportunities",
                 "Update contact information"
             ],
-            "badge": "Advanced"
+            "metric": "89%",
+            "metric_label": "Alumni Engagement",
+            "delay": "0.6s"
         },
         {
             "title": "Emergency Communications",
             "description": "Provide critical information during campus emergencies and alerts",
             "icon": "uil-exclamation-triangle",
+            "is_premium": true,
             "features": [
                 "Emergency alert distribution",
                 "Safety protocol information",
@@ -91,7 +107,78 @@
                 "Weather-related updates",
                 "Crisis communication management"
             ],
-            "badge": "Critical"
+            "metric": "99.9%",
+            "metric_label": "Emergency Response",
+            "delay": "0.7s"
         }
-    ]
+    ],
+    "integrations": [
+        {
+            "name": "Blackboard",
+            "type": "Learning Management System",
+            "icon": "uil-book-alt"
+        },
+        {
+            "name": "Canvas LMS",
+            "type": "Educational Platform",
+            "icon": "uil-graduation-cap"
+        },
+        {
+            "name": "Moodle",
+            "type": "Course Management",
+            "icon": "uil-university"
+        },
+        {
+            "name": "Banner ERP",
+            "type": "Student Information System",
+            "icon": "uil-database"
+        },
+        {
+            "name": "Salesforce Education Cloud",
+            "type": "Student Relationship Management",
+            "icon": "uil-users-alt"
+        },
+        {
+            "name": "Microsoft Teams for Education",
+            "type": "Collaboration Platform",
+            "icon": "uil-microsoft"
+        },
+        {
+            "name": "Google Classroom",
+            "type": "Educational Workspace",
+            "icon": "uil-google"
+        },
+        {
+            "name": "Zoom for Education",
+            "type": "Virtual Learning Platform",
+            "icon": "uil-video"
+        },
+        {
+            "name": "WhatsApp Business",
+            "type": "Student Messaging",
+            "icon": "uil-whatsapp"
+        },
+        {
+            "name": "SMS Gateway",
+            "type": "Emergency Notifications",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "UAE Ministry of Education",
+            "type": "Regulatory Compliance",
+            "icon": "uil-shield-check"
+        },
+        {
+            "name": "ADEK/KHDA Integration",
+            "type": "Educational Authority",
+            "icon": "uil-file-check"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-23",
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE education sector"
+    }
 }

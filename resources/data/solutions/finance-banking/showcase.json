@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Finance & Banking Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Financial Excellence",
+        "description": "Real examples of how our AI transforms banking operations and enhances customer financial services"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Banking Customer Support",
+            "description": "AI agents provide instant banking support, account information, and transaction assistance with complete security and compliance",
+            "image": "/assets/images/finance-banking/showcase/1.jpg",
+            "alt": "Banking Customer Support",
+            "metrics": [
+                {
+                    "value": "98%",
+                    "label": "Security Compliance"
+                },
+                {
+                    "value": "4x",
+                    "label": "Query Resolution Speed"
+                }
+            ],
+            "features": [
+                "Secure account verification processes",
+                "Real-time fraud detection alerts",
+                "Multi-currency transaction support"
+            ]
+        },
+        {
+            "title": "Investment Advisory Services",
+            "description": "Intelligent investment guidance with real-time market analysis and personalized portfolio recommendations for UAE investors",
+            "image": "/assets/images/finance-banking/showcase/2.jpg",
+            "alt": "Investment Advisory AI",
+            "metrics": [
+                {
+                    "value": "89%",
+                    "label": "Client Satisfaction"
+                },
+                {
+                    "value": "45",
+                    "label": "Seconds Analysis Time"
+                }
+            ],
+            "features": [
+                "Real-time market data integration",
+                "Risk assessment and profiling",
+                "Sharia-compliant investment options"
+            ]
+        },
+        {
+            "title": "Loan Processing Automation",
+            "description": "Streamlined loan applications with AI-powered document verification, credit assessment, and instant pre-approval decisions",
+            "image": "/assets/images/finance-banking/showcase/3.jpg",
+            "alt": "Automated Loan Processing",
+            "metrics": [
+                {
+                    "value": "75%",
+                    "label": "Faster Processing"
+                },
+                {
+                    "value": "92%",
+                    "label": "Accuracy Rate"
+                }
+            ],
+            "features": [
+                "Automated document verification",
+                "Credit risk assessment",
+                "Instant eligibility confirmation"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "finance-banking",
+        "showcase_count": 3
+    }
+}

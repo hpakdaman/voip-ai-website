@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Spa & Massage Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Wellness Excellence",
+        "description": "Real examples of how our AI transforms spa operations and enhances customer wellness experiences"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Spa Booking & Consultation",
+            "description": "AI agents provide instant spa service information, personalized treatment recommendations, and seamless appointment booking",
+            "image": "/assets/images/spa-massage/showcase/1.jpg",
+            "alt": "Spa Booking System",
+            "metrics": [
+                {
+                    "value": "91%",
+                    "label": "Booking Success Rate"
+                },
+                {
+                    "value": "5x",
+                    "label": "Appointment Capacity"
+                }
+            ],
+            "features": [
+                "Personalized treatment matching",
+                "Therapist availability coordination",
+                "Wellness goal consultation"
+            ]
+        },
+        {
+            "title": "Wellness Program Management",
+            "description": "Intelligent wellness tracking with customized spa packages, treatment progress monitoring, and health goal achievement",
+            "image": "/assets/images/spa-massage/showcase/2.jpg",
+            "alt": "Wellness Program AI",
+            "metrics": [
+                {
+                    "value": "84%",
+                    "label": "Goal Achievement"
+                },
+                {
+                    "value": "70%",
+                    "label": "Client Retention"
+                }
+            ],
+            "features": [
+                "Customized wellness plans",
+                "Treatment progress tracking",
+                "Health milestone celebrations"
+            ]
+        },
+        {
+            "title": "Luxury Customer Experience",
+            "description": "Premium spa experience with AI-powered preference management, VIP service coordination, and luxury amenity recommendations",
+            "image": "/assets/images/spa-massage/showcase/3.jpg",
+            "alt": "Luxury Spa Experience",
+            "metrics": [
+                {
+                    "value": "96%",
+                    "label": "Luxury Satisfaction"
+                },
+                {
+                    "value": "68%",
+                    "label": "Upsell Success"
+                }
+            ],
+            "features": [
+                "VIP preference management",
+                "Luxury service coordination",
+                "Premium amenity recommendations"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "spa-massage",
+        "showcase_count": 3
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Government Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Public Service Excellence",
+        "description": "Real examples of how our AI transforms government operations and improves citizen services"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Citizen Service Portal",
+            "description": "AI agents handle thousands of daily inquiries across all government departments with instant, accurate responses",
+            "image": "/assets/images/government/showcase/1.jpg",
+            "alt": "Government 24/7 Service Portal",
+            "metrics": [
+                {
+                    "value": "94%",
+                    "label": "First-Call Resolution"
+                },
+                {
+                    "value": "3x",
+                    "label": "Service Capacity"
+                }
+            ],
+            "features": [
+                "Multi-department knowledge integration",
+                "Real-time policy and procedure updates",
+                "Seamless citizen case management"
+            ]
+        },
+        {
+            "title": "Emergency Response Coordination",
+            "description": "Intelligent emergency management with instant multilingual alerts and coordinated response across all public safety departments",
+            "image": "/assets/images/government/showcase/2.jpg",
+            "alt": "Government Emergency Response",
+            "metrics": [
+                {
+                    "value": "99.9%",
+                    "label": "System Uptime"
+                },
+                {
+                    "value": "15",
+                    "label": "Seconds Response Time"
+                }
+            ],
+            "features": [
+                "Critical incident prioritization",
+                "Multi-agency coordination",
+                "Real-time status updates"
+            ]
+        },
+        {
+            "title": "Digital Government Transformation",
+            "description": "Complete digitization of government processes with AI-powered document processing and citizen workflow automation",
+            "image": "/assets/images/government/showcase/3.jpg",
+            "alt": "Digital Government Services",
+            "metrics": [
+                {
+                    "value": "280K",
+                    "label": "Monthly Savings (AED)"
+                },
+                {
+                    "value": "68%",
+                    "label": "Process Efficiency"
+                }
+            ],
+            "features": [
+                "Automated permit processing",
+                "Intelligent document verification",
+                "Proactive citizen notifications"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "government",
+        "showcase_count": 3
+    }
+}

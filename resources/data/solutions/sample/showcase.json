@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "[Industry] Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "[Industry] Success",
+        "description": "Real examples of how our AI transforms [industry] operations and drives results"
+    },
+    "showcases": [
+        {
+            "title": "[Showcase 1 Title]",
+            "description": "Description of showcase example 1",
+            "image": "/assets/images/[industry]/showcase/1.jpg",
+            "alt": "[Industry] Showcase 1",
+            "metrics": [
+                {
+                    "value": "[number]%",
+                    "label": "[Metric 1]"
+                },
+                {
+                    "value": "[number]x",
+                    "label": "[Metric 2]"
+                }
+            ],
+            "features": [
+                "Feature 1 demonstrated",
+                "Feature 2 demonstrated",
+                "Feature 3 demonstrated"
+            ]
+        },
+        {
+            "title": "[Showcase 2 Title]",
+            "description": "Description of showcase example 2",
+            "image": "/assets/images/[industry]/showcase/2.jpg",
+            "alt": "[Industry] Showcase 2",
+            "metrics": [
+                {
+                    "value": "[number]%",
+                    "label": "[Metric 1]"
+                },
+                {
+                    "value": "[number]",
+                    "label": "[Metric 2]"
+                }
+            ],
+            "features": [
+                "Feature 1 demonstrated",
+                "Feature 2 demonstrated",
+                "Feature 3 demonstrated"
+            ]
+        },
+        {
+            "title": "[Showcase 3 Title]",
+            "description": "Description of showcase example 3",
+            "image": "/assets/images/[industry]/showcase/3.jpg",
+            "alt": "[Industry] Showcase 3",
+            "metrics": [
+                {
+                    "value": "[number]",
+                    "label": "[Metric 1]"
+                },
+                {
+                    "value": "[number]%",
+                    "label": "[Metric 2]"
+                }
+            ],
+            "features": [
+                "Feature 1 demonstrated",
+                "Feature 2 demonstrated",
+                "Feature 3 demonstrated"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "[industry-slug]",
+        "showcase_count": 3
+    }
+}
