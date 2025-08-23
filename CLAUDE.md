@@ -164,8 +164,11 @@ Sawtic | [Page-Specific Description]
 - ❌ **NO Inline Styles**: Never write inline `style=""` attributes in HTML/Blade files
 - ❌ **NO CSS in Blade**: Never write `<style>` tags in Blade files
 - ❌ **NO Content in Blade**: Never write static content directly in Blade files - use JSON data files
+- ❌ **NO Solution Blade Content**: Never write content or hardcode image paths in solution Blade files - ALL data MUST be in `resources/data/solutions/[industry]/` JSON files
+- ❌ **NO Hardcoded Images**: Never use hardcoded image paths in solution components - use data structure with fallback to `no-image.svg`
 - ✅ **Separate CSS Files**: Create dedicated CSS files for each new page/component
 - ✅ **Component Reuse**: Don't repeat yourself - use existing components and patterns
+- ✅ **Data-Driven Solutions**: All solution pages must be completely data-driven from JSON files
 
 #### **🔗 Navigation & Integration Standards**
 - ✅ **Template Integration**: Always check and update header/footer navigation when adding new pages
