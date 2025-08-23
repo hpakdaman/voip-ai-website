@@ -1,0 +1,157 @@
+{
+  "section": {
+    "badge": "Dubai Travel Success Stories", 
+    "title": "Real Results from",
+    "highlighted": "Dubai Travel Companies",
+    "description": "See how Dubai travel agencies, desert safari operators, and tourism businesses have transformed their customer service and booking rates with Sawtic AI call center solutions."
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Mohammed Al-Rashid",
+      "title": "Founder & CEO",
+      "company": "Dubai Desert Safari Kings",
+      "location": "Al Awir, Dubai, UAE",
+      "image": "/assets/images/client/01.jpg",
+      "rating": 5,
+      "years_with_sawtic": "18 months with Sawtic AI",
+      "content": "Before Sawtic AI, we missed 40% of safari bookings during busy tourist seasons. Now our AI agents handle 200+ daily calls, coordinate hotel pickups across Dubai, and process group bookings instantly. Our revenue increased 180% in the first year, and customers love the 24/7 Arabic and English support.",
+      "detailed_metrics": {
+        "safari_bookings": "+180%",
+        "missed_calls": "-95%",
+        "group_bookings": "50+ people handled easily", 
+        "customer_satisfaction": "96%",
+        "pickup_coordination": "All Dubai zones covered",
+        "peak_season_calls": "200+ daily",
+        "response_time": "< 8 seconds"
+      },
+      "business_details": {
+        "business_type": "Desert Safari & Arabian Adventures",
+        "annual_bookings": "15,000+ safaris",
+        "average_booking": "1,200 AED",
+        "specialization": "Premium desert experiences"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "title": "Operations Manager",
+      "company": "Dubai Visa Express Services",
+      "location": "Deira, Dubai, UAE", 
+      "image": "/assets/images/client/02.jpg",
+      "rating": 5,
+      "years_with_sawtic": "2 years with Sawtic AI",
+      "content": "Processing Dubai visa inquiries used to take 45 minutes per call with endless document questions. Sawtic AI now handles visa requirements for 195 countries in under 3 minutes with 99% accuracy. We process 5x more applications daily and our customer stress levels dropped dramatically.",
+      "detailed_metrics": {
+        "inquiry_time": "45 min → 3 min",
+        "daily_applications": "+400%",
+        "visa_accuracy": "99%",
+        "countries_covered": "195 nations",
+        "customer_stress": "-80%",
+        "processing_speed": "5x faster",
+        "documentation_errors": "-92%"
+      },
+      "business_details": {
+        "business_type": "Dubai Visa & Immigration Services",
+        "daily_inquiries": "300+ visa calls",
+        "success_rate": "98% visa approvals",
+        "specialization": "Tourist & business visas"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ahmed Hassan",
+      "title": "General Manager",
+      "company": "Emirates Car Rental Dubai",
+      "location": "Dubai Airport, UAE",
+      "image": "/assets/images/client/03.jpg",
+      "rating": 5,
+      "years_with_sawtic": "14 months with Sawtic AI",
+      "content": "Car rental inquiries are complex - Dubai license rules, Salik tolls, insurance options, pickup logistics. Our AI explains everything perfectly and books 85% of callers versus 45% before. International tourists get accurate information immediately instead of waiting for callbacks from busy agents.",
+      "detailed_metrics": {
+        "booking_conversion": "45% → 85%",
+        "explanation_accuracy": "98%",
+        "international_tourists": "+150% bookings",
+        "callback_elimination": "100%",
+        "salik_understanding": "Perfect guidance",
+        "insurance_clarity": "95% satisfaction",
+        "pickup_coordination": "Airport + hotels"
+      },
+      "business_details": {
+        "business_type": "Car Rental & Dubai Transport",
+        "daily_bookings": "80+ rentals",
+        "fleet_size": "500+ vehicles",
+        "specialization": "Tourist & business rentals"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Fatima Al-Zahra",
+      "title": "Tour Director",
+      "company": "Dubai Attractions Central",
+      "location": "Downtown Dubai, UAE",
+      "image": "/assets/images/client/04.jpg",
+      "rating": 5,
+      "years_with_sawtic": "10 months with Sawtic AI", 
+      "content": "Coordinating Burj Khalifa, Dubai Mall, Gold Souk, and Marina tours manually was chaos - timing conflicts, transportation issues, sold-out slots. Now AI creates perfect itineraries instantly, handles group bookings up to 50 people, and never double-books attractions.",
+      "detailed_metrics": {
+        "package_success": "92%",
+        "coordination_time": "Hours → 5 minutes",
+        "group_capacity": "Up to 50 people",
+        "double_bookings": "Eliminated",
+        "timing_optimization": "Perfect schedules",
+        "attraction_coverage": "25+ Dubai sites",
+        "customer_satisfaction": "94%"
+      },
+      "business_details": {
+        "business_type": "Dubai Attraction Packages & Tours",
+        "monthly_packages": "800+ tours",
+        "average_package": "2,500 AED",
+        "specialization": "Multi-attraction experiences"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sarah Johnson",
+      "title": "Customer Service Director",
+      "company": "Dubai Travel Emergency Support",
+      "location": "Business Bay, Dubai, UAE",
+      "image": "/assets/images/client/05.jpg",
+      "rating": 5,
+      "years_with_sawtic": "6 months with Sawtic AI",
+      "content": "Travel emergencies require immediate response - flight changes, family crises, medical issues. Our AI handles urgent rebookings in under 2 minutes, coordinates with airlines, arranges airport assistance, and notifies families. During recent disruptions, we helped 500+ tourists seamlessly.",
+      "detailed_metrics": {
+        "emergency_response": "< 2 minutes",
+        "rebooking_success": "98%",
+        "family_coordination": "Automatic notifications",
+        "airline_integration": "Real-time changes",
+        "crisis_handling": "500+ tourists helped",
+        "fee_waivers": "Emergency protocols",
+        "satisfaction_rating": "97%"
+      },
+      "business_details": {
+        "business_type": "Travel Emergency & Crisis Management",
+        "emergency_calls": "24/7 operations",
+        "crisis_capacity": "1000+ simultaneous",
+        "specialization": "Urgent travel support"
+      }
+    }
+  ],
+  "industry_stats": {
+    "dubai_companies": "180+",
+    "total_bookings": "85,000+",
+    "average_increase": "165%",
+    "satisfaction_rate": "95.8%",
+    "response_time": "< 6 seconds",
+    "languages": "Arabic & English",
+    "coverage": "24/7 Dubai time",
+    "accuracy_rate": "97.2%"
+  },
+  "dubai_impact": {
+    "tourism_boost": "Supporting Dubai Tourism Strategy 2025",
+    "revenue_generated": "AED 120M+ additional bookings",
+    "visitor_satisfaction": "Enhanced Dubai reputation",
+    "cultural_preservation": "Authentic Emirati hospitality",
+    "global_recognition": "Leading AI tourism innovation"
+  }
+}

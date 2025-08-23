@@ -55,7 +55,7 @@
         ]
     },
     "visual": {
-        "image_path": "assets/images/business/about01.jpg",
+        "image_path": "/assets/images/business/about01.jpg",
         "alt_text": "Professional business team collaboration"
     },
     "cta": {

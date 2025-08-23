@@ -9,21 +9,21 @@
         {
             "name": "Ahmed Al-Rashid",
             "company": "Dubai Properties Group",
-            "image": "assets/images/client/01.jpg",
+            "image": "/assets/images/client/01.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI recovered 40% more leads for us. We closed 12 extra deals last month just from calls we would have missed!"
         },
         {
             "name": "Sarah Mitchell",
             "company": "Emirates Real Estate",
-            "image": "assets/images/client/02.jpg",
+            "image": "/assets/images/client/02.jpg",
             "rating": 5,
             "testimonial": "Our AI agent handles property inquiries better than our best junior agent. Clients love the 24/7 availability."
         },
         {
             "name": "Omar Hassan",
             "company": "Marina Properties LLC",
-            "image": "assets/images/client/03.jpg",
+            "image": "/assets/images/client/03.jpg",
             "rating": 5,
             "testimonial": "ROI was incredible - paid for itself in the first month. Now I can focus on closing while AI handles all inquiries."
         }

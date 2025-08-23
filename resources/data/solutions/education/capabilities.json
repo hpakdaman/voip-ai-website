@@ -1,86 +1,97 @@
 {
     "section": {
-        "headline": "Comprehensive Education AI Solutions",
-        "subheadline": "Everything you need to manage student communications and boost enrollment",
-        "capabilities": [
-            {
-                "title": "Admissions & Enrollment Support",
-                "description": "Handle program inquiries, application processes, requirements, and deadline information",
-                "icon": "uil-graduation-cap",
-                "features": [
-                    "Program information and requirements",
-                    "Application deadline management",
-                    "Prerequisite course guidance",
-                    "Financial aid information",
-                    "Campus tour scheduling"
-                ],
-                "badge": "Core"
-            },
-            {
-                "title": "Student Support Services",
-                "description": "Provide 24/7 support for current students' academic and administrative needs",
-                "icon": "uil-user-check",
-                "features": [
-                    "Grade inquiries and academic status",
-                    "Schedule and course information",
-                    "Campus services and facilities",
-                    "Academic advisor appointments",
-                    "Student account management"
-                ],
-                "badge": "Essential"
-            },
-            {
-                "title": "Multilingual Communication",
-                "description": "Support international students with native-quality language capabilities",
-                "icon": "uil-comment-alt-lines",
-                "features": [
-                    "50+ language support",
-                    "Cultural context awareness",
-                    "International program information",
-                    "Visa and immigration guidance",
-                    "Cultural orientation support"
-                ],
-                "badge": "Premium"
-            },
-            {
-                "title": "Parent & Family Relations",
-                "description": "Manage communications with parents and family members professionally",
-                "icon": "uil-users-alt",
-                "features": [
-                    "Academic progress updates",
-                    "Billing and payment inquiries",
-                    "Campus safety information",
-                    "Event and activity updates",
-                    "Emergency contact protocols"
-                ],
-                "badge": "Standard"
-            },
-            {
-                "title": "Alumni Engagement",
-                "description": "Maintain connections with graduates for networking and development",
-                "icon": "uil-heart-alt",
-                "features": [
-                    "Alumni event notifications",
-                    "Donation campaign management",
-                    "Career service connections",
-                    "Networking opportunities",
-                    "Update contact information"
-                ],
-                "badge": "Advanced"
-            },
-            {
-                "title": "Emergency Communications",
-                "description": "Provide critical information during campus emergencies and alerts",
-                "icon": "uil-exclamation-triangle",
-                "features": [
-                    "Emergency alert distribution",
-                    "Safety protocol information",
-                    "Campus closure notifications",
-                    "Weather-related updates",
-                    "Crisis communication management"
-                ],
-                "badge": "Critical"
-            }
+        "badge": "AI Education Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "Education Inside Out",
+        "description": "Advanced AI trained specifically for educational institutions, with deep knowledge of admissions, student services, and academic operations.",
+        "demo_image": "/assets/images/education/action.jpg",
+        "demo_alt": "Education Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles student inquiries with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Natural conversation with students and parents",
+            "Instant access to course and program information",
+            "Multi-language support for international students"
         ]
-    }
+    },
+    "capabilities": [
+        {
+            "title": "Admissions & Enrollment Support",
+            "description": "Handle program inquiries, application processes, requirements, and deadline information",
+            "icon": "uil-graduation-cap",
+            "features": [
+                "Program information and requirements",
+                "Application deadline management",
+                "Prerequisite course guidance",
+                "Financial aid information",
+                "Campus tour scheduling"
+            ],
+            "badge": "Core"
+        },
+        {
+            "title": "Student Support Services",
+            "description": "Provide 24/7 support for current students' academic and administrative needs",
+            "icon": "uil-user-check",
+            "features": [
+                "Grade inquiries and academic status",
+                "Schedule and course information",
+                "Campus services and facilities",
+                "Academic advisor appointments",
+                "Student account management"
+            ],
+            "badge": "Essential"
+        },
+        {
+            "title": "Multilingual Communication",
+            "description": "Support international students with native-quality language capabilities",
+            "icon": "uil-comment-alt-lines",
+            "features": [
+                "50+ language support",
+                "Cultural context awareness",
+                "International program information",
+                "Visa and immigration guidance",
+                "Cultural orientation support"
+            ],
+            "badge": "Premium"
+        },
+        {
+            "title": "Parent & Family Relations",
+            "description": "Manage communications with parents and family members professionally",
+            "icon": "uil-users-alt",
+            "features": [
+                "Academic progress updates",
+                "Billing and payment inquiries",
+                "Campus safety information",
+                "Event and activity updates",
+                "Emergency contact protocols"
+            ],
+            "badge": "Standard"
+        },
+        {
+            "title": "Alumni Engagement",
+            "description": "Maintain connections with graduates for networking and development",
+            "icon": "uil-heart-alt",
+            "features": [
+                "Alumni event notifications",
+                "Donation campaign management",
+                "Career service connections",
+                "Networking opportunities",
+                "Update contact information"
+            ],
+            "badge": "Advanced"
+        },
+        {
+            "title": "Emergency Communications",
+            "description": "Provide critical information during campus emergencies and alerts",
+            "icon": "uil-exclamation-triangle",
+            "features": [
+                "Emergency alert distribution",
+                "Safety protocol information",
+                "Campus closure notifications",
+                "Weather-related updates",
+                "Crisis communication management"
+            ],
+            "badge": "Critical"
+        }
+    ]
 }

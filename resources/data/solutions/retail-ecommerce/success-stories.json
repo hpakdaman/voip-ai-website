@@ -9,35 +9,35 @@
         {
             "name": "Yasmin Al-Rashid",
             "company": "Dubai Fashion Online",
-            "image": "assets/images/client/01.jpg",
+            "image": "/assets/images/client/01.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI recovered 85% of our abandoned carts! We increased monthly revenue by AED 120,000 just from better customer support."
         },
         {
             "name": "Mohammed Hassan",
             "company": "TechMart UAE",
-            "image": "assets/images/client/02.jpg",
+            "image": "/assets/images/client/02.jpg",
             "rating": 5,
             "testimonial": "Our AI agent handles complex product questions better than our staff. Customer satisfaction improved 40% since implementation."
         },
         {
             "name": "Jennifer Smith",
             "company": "Home & Garden Emirates",
-            "image": "assets/images/client/03.jpg",
+            "image": "/assets/images/client/03.jpg",
             "rating": 5,
             "testimonial": "ROI was incredible - paid for itself in 2 weeks. Now we handle 10x more customers during sale periods without stress."
         },
         {
             "name": "Omar Al-Zahra",
             "company": "Sports Zone Dubai",
-            "image": "assets/images/client/04.jpg",
+            "image": "/assets/images/client/04.jpg",
             "rating": 5,
             "testimonial": "24/7 support transformed our international sales. We now serve customers from different time zones effortlessly."
         },
         {
             "name": "Sarah Chen",
             "company": "Beauty Box Online",
-            "image": "assets/images/client/05.jpg",
+            "image": "/assets/images/client/05.jpg",
             "rating": 5,
             "testimonial": "The multilingual support is amazing. Our expat customers love getting help in their native languages - sales up 60%!"
         }

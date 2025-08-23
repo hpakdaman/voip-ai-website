@@ -1,0 +1,36 @@
+{
+    "dashboard": {
+        "title": "Intelligent Student Services Dashboard",
+        "description": "Real-time monitoring and management of student interactions, enrollment inquiries, and academic support requests with comprehensive analytics and automated response tracking.",
+        "features": [
+            "Live call monitoring with sentiment analysis",
+            "Automated enrollment and registration assistance",
+            "Student inquiry categorization and routing",
+            "Academic calendar integration and reminders",
+            "Financial aid inquiry management"
+        ],
+        "image": "/assets/images/education/dashboard.jpg",
+        "stats": {
+            "calls_today": 142,
+            "answered_rate": "89%",
+            "qualified_leads": 23,
+            "average_response": "< 30s"
+        }
+    },
+    "consultation": {
+        "title": "AI Academic Consultations",
+        "description": "Sophisticated AI-powered consultations that provide personalized academic guidance, course recommendations, and comprehensive support for student success throughout their educational journey.",
+        "features": [
+            "Personalized Course Planning: AI analyzes student transcripts, interests, and career goals to recommend optimal course sequences",
+            "Academic Progress Tracking: Real-time monitoring of degree completion status with early intervention for at-risk students",
+            "Career Guidance Integration: Connect academic choices with career outcomes using industry data and alumni success stories"
+        ],
+        "image": "/assets/images/education/consultation.jpg",
+        "capabilities": [
+            "Multi-language support for international students",
+            "24/7 availability for global student populations",
+            "Integration with learning management systems",
+            "Automated appointment scheduling and reminders"
+        ]
+    }
+}

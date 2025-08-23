@@ -8,7 +8,7 @@
     "dashboard": {
         "title": "Real-Time Banking Analytics",
         "description": "Monitor all customer interactions, loan applications, and service requests in real-time from your executive dashboard.",
-        "image": "assets/images/finance/dashboard.jpg",
+        "image": "/assets/images/finance/analysis.jpg",
         "features": [
             "Live customer interaction monitoring",
             "Instant loan application notifications",
@@ -18,7 +18,7 @@
     "consultation": {
         "title": "Expert Financial Consultations",
         "description": "Your AI agent provides professional financial advice with deep knowledge of UAE banking regulations, investment products, and Central Bank guidelines.",
-        "image": "assets/images/finance/consultation.jpg",
+        "image": "/assets/images/finance/consult.jpg",
         "features": [
             "Real-time market rates and investment options",
             "UAE Central Bank compliance and regulations",

@@ -11,7 +11,7 @@
             "name": "Amira Al-Zahra",
             "title": "Spa Director",
             "company": "Serenity Wellness Spa - Dubai",
-            "image": "assets/images/client/01.jpg",
+            "image": "/assets/images/client/01.jpg",
             "testimonial": "Sawtic AI doubled our appointment bookings within just 2 months. Our AI agent handles everything from treatment inquiries to scheduling, and clients love the professional service.",
             "rating": 5,
             "results": {
@@ -26,7 +26,7 @@
             "name": "Fatima Hassan",
             "title": "Owner",
             "company": "Bliss Massage Center - Abu Dhabi",
-            "image": "assets/images/client/02.jpg", 
+            "image": "/assets/images/client/02.jpg", 
             "testimonial": "The AI answers all our clients' questions about treatments, pricing, and availability. It even handles appointment confirmations and follow-ups. Game changer!",
             "rating": 5,
             "results": {
@@ -41,7 +41,7 @@
             "name": "Sarah Mitchell",
             "title": "Manager",
             "company": "Zen Garden Spa - Sharjah",
-            "image": "assets/images/client/03.jpg",
+            "image": "/assets/images/client/03.jpg",
             "testimonial": "Our AI agent speaks perfect Arabic and English, helping us serve all our UAE clients excellently. No more language barriers or missed opportunities.",
             "rating": 5,
             "results": {
