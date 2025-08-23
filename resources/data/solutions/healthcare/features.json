@@ -8,7 +8,7 @@
     "dashboard": {
         "title": "Medical Practice Dashboard",
         "description": "Monitor all patient calls, appointment bookings, and emergency alerts in real-time from your medical dashboard.",
-        "image": "assets/images/hospital/bg.jpg",
+        "image": "assets/images/hospital/dashboard.jpg",
         "features": [
             "Live call monitoring",
             "Instant patient notifications", 
@@ -18,7 +18,7 @@
     "consultation": {
         "title": "Professional Medical Consultations",
         "description": "Your AI agent provides expert medical support with deep knowledge of healthcare protocols and patient care standards.",
-        "image": "assets/images/hospital/bg.jpg",
+        "image": "assets/images/hospital/consultation.jpg",
         "features": [
             "Medical triage and emergency detection",
             "HIPAA-compliant patient data handling",
