@@ -1,0 +1,97 @@
+{
+    "section": {
+        "badge": "[Industry] Challenges",
+        "title": "Stop Losing Clients While You're",
+        "highlighted": "[Busy Context]",
+        "description": "Every missed call is a lost opportunity. See how Sawtic AI transforms [industry] challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "[Problem 1]",
+            "description": "Description of problem 1 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        },
+        {
+            "title": "[Problem 2]",
+            "description": "Description of problem 2 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        },
+        {
+            "title": "[Problem 3]",
+            "description": "Description of problem 3 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        },
+        {
+            "title": "[Problem 4]",
+            "description": "Description of problem 4 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        },
+        {
+            "title": "[Problem 5]",
+            "description": "Description of problem 5 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        },
+        {
+            "title": "[Problem 6]",
+            "description": "Description of problem 6 specific to the industry context",
+            "icon": "uil-[icon-name]",
+            "impact": "[percentage]% of [impact description]"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "[Solution 1]",
+            "description": "How AI solves problem 1 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "[Solution 2]",
+            "description": "How AI solves problem 2 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "[Solution 3]",
+            "description": "How AI solves problem 3 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "[Solution 4]",
+            "description": "How AI solves problem 4 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "[Solution 5]",
+            "description": "How AI solves problem 5 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": false
+        },
+        {
+            "title": "[Solution 6]",
+            "description": "How AI solves problem 6 with specific benefits",
+            "icon": "uil-[icon-name]",
+            "benefit": "[benefit description]",
+            "demo_available": true
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "problem_awareness"
+    }
+}

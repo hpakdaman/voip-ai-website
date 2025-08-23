@@ -1,0 +1,79 @@
+{
+    "section": {
+        "badge": "Healthcare Showcase",
+        "title": "Sawtic AI in Action for",
+        "highlighted": "Healthcare Excellence",
+        "description": "Real examples of how our AI transforms healthcare operations and improves patient care delivery"
+    },
+    "showcases": [
+        {
+            "title": "24/7 Patient Care Support",
+            "description": "AI agents provide immediate medical assistance, appointment scheduling, and health information with HIPAA compliance and medical expertise",
+            "image": "/assets/images/healthcare/showcase/1.jpg",
+            "alt": "Healthcare Patient Support",
+            "metrics": [
+                {
+                    "value": "96%",
+                    "label": "Patient Satisfaction"
+                },
+                {
+                    "value": "5x",
+                    "label": "Response Speed"
+                }
+            ],
+            "features": [
+                "Medical symptom assessment",
+                "Emergency triage protocols",
+                "Multi-language health support"
+            ]
+        },
+        {
+            "title": "Appointment & Treatment Coordination",
+            "description": "Intelligent scheduling system managing complex medical appointments, specialist referrals, and treatment plan coordination",
+            "image": "/assets/images/healthcare/showcase/2.jpg",
+            "alt": "Medical Appointment System",
+            "metrics": [
+                {
+                    "value": "87%",
+                    "label": "Show-up Rate"
+                },
+                {
+                    "value": "60",
+                    "label": "Seconds Booking Time"
+                }
+            ],
+            "features": [
+                "Multi-specialist coordination",
+                "Insurance verification automation",
+                "Treatment timeline management"
+            ]
+        },
+        {
+            "title": "Preventive Health Management",
+            "description": "Proactive patient health monitoring with automated reminders, health screenings, and wellness program enrollment",
+            "image": "/assets/images/healthcare/showcase/3.jpg",
+            "alt": "Preventive Healthcare AI",
+            "metrics": [
+                {
+                    "value": "78%",
+                    "label": "Prevention Compliance"
+                },
+                {
+                    "value": "40%",
+                    "label": "Health Improvements"
+                }
+            ],
+            "features": [
+                "Automated health reminders",
+                "Wellness program matching",
+                "Chronic condition monitoring"
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "healthcare",
+        "showcase_count": 3
+    }
+}

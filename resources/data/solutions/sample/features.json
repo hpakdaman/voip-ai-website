@@ -1,0 +1,73 @@
+{
+    "section": {
+        "badge": "AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "In Action",
+        "description": "Watch how our AI agents transform [industry] communication with live demonstrations"
+    },
+    "dashboard": {
+        "title": "Real-Time [Industry] Dashboard",
+        "description": "Monitor all incoming calls, lead status, and conversions in real-time from your mobile device.",
+        "image": "/assets/images/[industry]/dashboard.jpg",
+        "features": [
+            "Live call monitoring",
+            "Instant lead notifications",
+            "Conversion analytics"
+        ]
+    },
+    "consultation": {
+        "title": "Professional [Industry] Consultations",
+        "description": "Your AI agent provides expert-level consultations with deep knowledge of [industry] market trends and regulations.",
+        "image": "/assets/images/[industry]/consultation.jpg",
+        "features": [
+            "[Industry-specific] insights and trends",
+            "UAE [industry] regulations and compliance",
+            "Expert advice and calculations"
+        ]
+    },
+    "features": [
+        {
+            "title": "[Feature 1]",
+            "description": "AI handles [industry-specific] requests with expertise",
+            "icon": "uil-[icon-name]",
+            "demo_video": "[feature1]-demo.mp4",
+            "highlight": "Instant [industry] expertise"
+        },
+        {
+            "title": "[Feature 2]",
+            "description": "Smart pre-screening identifies [qualified leads/clients]",
+            "icon": "uil-user-check",
+            "demo_video": "[feature2]-demo.mp4",
+            "highlight": "85% qualified rate"
+        },
+        {
+            "title": "[Feature 3]",
+            "description": "Seamless calendar integration and scheduling",
+            "icon": "uil-calendar-alt",
+            "demo_video": "[feature3]-demo.mp4",
+            "highlight": "95% show-up rate"
+        }
+    ],
+    "stats": [
+        {
+            "number": "40%",
+            "label": "More Leads",
+            "description": "Captured through 24/7 availability"
+        },
+        {
+            "number": "85%",
+            "label": "Qualified Rate",
+            "description": "Higher quality leads through AI screening"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "description": "Never miss a potential client"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "industry": "[industry-slug]"
+    }
+}

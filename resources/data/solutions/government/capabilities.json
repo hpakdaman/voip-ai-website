@@ -19,6 +19,7 @@
             "title": "Citizen Services Support",
             "description": "Handle inquiries about permits, licenses, municipal services, and general government information with empathy and accuracy",
             "icon": "uil-user-check",
+            "is_premium": false,
             "features": [
                 "Building and business permits guidance",
                 "License renewals and applications",
@@ -26,12 +27,15 @@
                 "Tax and fee information",
                 "Department directory assistance"
             ],
-            "badge": "Essential"
+            "metric": "98%",
+            "metric_label": "Service Accuracy",
+            "delay": "0.2s"
         },
         {
             "title": "Multilingual Public Access",
             "description": "Serve diverse communities in their preferred languages, ensuring equitable access to government services for all residents",
             "icon": "uil-comment-alt-lines",
+            "is_premium": false,
             "features": [
                 "50+ language support including Arabic",
                 "Cultural context awareness",
@@ -39,12 +43,15 @@
                 "Translation of key documents",
                 "Community outreach support"
             ],
-            "badge": "Inclusive"
+            "metric": "95%",
+            "metric_label": "Language Coverage",
+            "delay": "0.3s"
         },
         {
             "title": "Emergency & Crisis Communication",
             "description": "Provide critical information during emergencies, natural disasters, and public health situations when citizens need it most",
             "icon": "uil-exclamation-triangle",
+            "is_premium": true,
             "features": [
                 "Emergency alert distribution",
                 "Evacuation procedure guidance",
@@ -52,12 +59,15 @@
                 "Public health information",
                 "Crisis resource coordination"
             ],
-            "badge": "Critical"
+            "metric": "99.9%",
+            "metric_label": "Emergency Response",
+            "delay": "0.4s"
         },
         {
             "title": "Digital Services Navigation",
             "description": "Guide citizens through online portals, applications, and digital government services with patient, step-by-step assistance",
             "icon": "uil-laptop-cloud",
+            "is_premium": true,
             "features": [
                 "Online portal navigation help",
                 "Digital form completion guidance",
@@ -65,12 +75,15 @@
                 "Document upload assistance",
                 "Payment processing help"
             ],
-            "badge": "Modern"
+            "metric": "92%",
+            "metric_label": "Navigation Success",
+            "delay": "0.5s"
         },
         {
             "title": "Compliance & Regulatory Guidance",
             "description": "Help businesses and individuals understand and comply with local regulations, codes, and legal requirements",
             "icon": "uil-shield-check",
+            "is_premium": true,
             "features": [
                 "Zoning and building code information",
                 "Business compliance requirements",
@@ -78,12 +91,15 @@
                 "Safety code explanations",
                 "Permit requirement clarification"
             ],
-            "badge": "Legal"
+            "metric": "96%",
+            "metric_label": "Compliance Accuracy",
+            "delay": "0.6s"
         },
         {
             "title": "Community Engagement",
             "description": "Facilitate citizen participation in local government through meeting information, feedback collection, and civic engagement",
             "icon": "uil-users-alt",
+            "is_premium": false,
             "features": [
                 "Town hall meeting schedules",
                 "Public comment submissions",
@@ -91,7 +107,78 @@
                 "Community event information",
                 "Civic participation guidance"
             ],
-            "badge": "Democratic"
+            "metric": "89%",
+            "metric_label": "Engagement Rate",
+            "delay": "0.7s"
         }
-    ]
+    ],
+    "integrations": [
+        {
+            "name": "CityWorks",
+            "type": "Municipal Management",
+            "icon": "uil-city"
+        },
+        {
+            "name": "Tyler Technologies",
+            "type": "Government Software",
+            "icon": "uil-building"
+        },
+        {
+            "name": "Accela",
+            "type": "Permit Management",
+            "icon": "uil-file-check-alt"
+        },
+        {
+            "name": "Granicus",
+            "type": "Government Communications",
+            "icon": "uil-megaphone"
+        },
+        {
+            "name": "Microsoft 365 Government",
+            "type": "Collaboration Platform",
+            "icon": "uil-microsoft"
+        },
+        {
+            "name": "Salesforce Public Sector",
+            "type": "Citizen Relationship Management",
+            "icon": "uil-users-alt"
+        },
+        {
+            "name": "ArcGIS",
+            "type": "Geographic Information System",
+            "icon": "uil-map"
+        },
+        {
+            "name": "Oracle Government Cloud",
+            "type": "Enterprise Resource Planning",
+            "icon": "uil-database"
+        },
+        {
+            "name": "IBM Watson Government",
+            "type": "AI Analytics Platform",
+            "icon": "uil-brain"
+        },
+        {
+            "name": "WhatsApp Business",
+            "type": "Citizen Messaging",
+            "icon": "uil-whatsapp"
+        },
+        {
+            "name": "SMS Gateway",
+            "type": "Emergency Notifications",
+            "icon": "uil-envelope"
+        },
+        {
+            "name": "UAE Government Portal",
+            "type": "National Services Integration",
+            "icon": "uil-shield-check"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-23",
+        "total_capabilities": 6,
+        "total_integrations": 12,
+        "industry_focus": "UAE government and public services"
+    }
 }

@@ -197,6 +197,42 @@ Sawtic | [Page-Specific Description]
 5. ✅ **Integrate**: Update navigation and cross-links
 6. ✅ **Validate**: Ensure code quality and performance standards
 
+## 🚨 CRITICAL: Solution Data Structure Standards
+
+### **📋 MANDATORY 9-File Solution Structure**
+**Every industry solution MUST have these 9 core JSON data files in `/resources/data/solutions/[industry]/`:**
+
+1. **`capabilities.json`** - AI capabilities and integrations showcase
+2. **`cta.json`** - Call-to-action section with conversion buttons
+3. **`features.json`** - AI features demonstration and dashboard
+4. **`hero.json`** - Landing page hero section with voice demo
+5. **`problems.json`** - Industry problems and AI solutions
+6. **`roi-calculator.json`** - ROI calculator with industry-specific metrics
+7. **`showcase.json`** - Success showcases and real-world examples  
+8. **`success-stories.json`** - Testimonials and performance statistics
+9. **`voice-demos.json`** - Voice demonstration scenarios
+
+### **📋 Sample Data Structure Reference**
+**Use `/resources/data/solutions/sample/` as the template for all new industry solutions.**
+- Contains properly structured arrays and objects for all 9 core files
+- Includes placeholder content with `[industry]`, `[capability]`, etc. for easy customization
+- Demonstrates correct data patterns, metrics formats, and metadata structure
+
+### **📋 Industry-Specific Extensions**
+**Some industries may require additional data files beyond the core 8:**
+- ✅ **Government**: Has extra `digital-dashboard.json` and `service-matrix.json` for complex public service features
+- ✅ **Education**: May have additional learning-specific data files
+- ✅ **Healthcare**: May have medical compliance or HIPAA-specific data files
+
+**IMPORTANT**: Never remove existing industry-specific data files - they provide specialized functionality for complex industries.
+
+### **📋 Data Structure Quality Standards**
+- ✅ **Array Consistency**: All similar data (capabilities, problems, demos) must use consistent array structures
+- ✅ **Metadata Required**: Every JSON file must include proper metadata section with version, date, and industry
+- ✅ **Placeholder Standards**: Use clear placeholders like `[industry]`, `[capability-name]` for template customization
+- ✅ **Icon Standards**: Use consistent `uil-[icon-name]` format for all icons
+- ✅ **Metric Formats**: Standardize metrics as `"value": "95%"` and `"label": "Success Rate"`
+
 ## Error Checking Protocol
 
 **MANDATORY AFTER EVERY CHANGE:**

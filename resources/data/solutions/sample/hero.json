@@ -1,0 +1,46 @@
+{
+    "section": {
+        "industry_badge": "[Industry] AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "[Industry] Lead",
+        "subtitle": "Dubai's #1 AI call center handles [industry-specific] inquiries, [service] bookings, and lead qualification 24/7 - even when you're [busy context].",
+        "key_benefits": [
+            "Qualify leads instantly while you're [context]",
+            "Book [services] automatically 24/7",
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "[number]+",
+                "label": "UAE [Industry Units]"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live [Industry] Inquiry Demo",
+        "description": "Real conversation with AI agent handling [specific scenario]",
+        "duration": "45 seconds",
+        "audio_file": "[industry]-inquiry-demo.mp3",
+        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+    },
+    "hero_images": {
+        "main": "/assets/images/[industry]/hero/1.jpg"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "industry": "[industry-slug]",
+        "target_audience": "UAE [industry] businesses, [target segments]",
+        "conversion_goals": ["demo_booking", "phone_calls", "lead_generation"]
+    }
+}

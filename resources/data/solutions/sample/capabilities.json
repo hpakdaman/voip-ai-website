@@ -1,0 +1,86 @@
+{
+    "section": {
+        "badge": "AI [Industry] Assistant",
+        "title": "Your AI Agent Knows",
+        "highlighted": "[Industry] Inside Out",
+        "description": "Advanced AI trained specifically for [Industry] sector, regulations, and client management.",
+        "demo_image": "/assets/images/[industry]/about.jpg",
+        "demo_alt": "[Industry] Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles [industry] inquiries with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Handles [industry-specific] inquiries and bookings",
+            "Qualifies leads with smart questions",
+            "Integrates with your CRM automatically"
+        ]
+    },
+    "capabilities": [
+        {
+            "title": "[Capability 1]",
+            "description": "Description of capability 1 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": false,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "99%",
+            "metric_label": "Accuracy Rate",
+            "delay": "0.2s"
+        },
+        {
+            "title": "[Capability 2]",
+            "description": "Description of capability 2 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": false,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "85%",
+            "metric_label": "Success Rate",
+            "delay": "0.3s"
+        },
+        {
+            "title": "[Capability 3]",
+            "description": "Description of capability 3 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": true,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "95%",
+            "metric_label": "Performance Rate",
+            "delay": "0.4s"
+        }
+    ],
+    "integrations": [
+        {
+            "name": "[Integration 1]",
+            "type": "[Integration Type]",
+            "icon": "uil-[icon-name]"
+        },
+        {
+            "name": "[Integration 2]",
+            "type": "[Integration Type]",
+            "icon": "uil-[icon-name]"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-19",
+        "total_capabilities": 3,
+        "total_integrations": 2,
+        "industry_focus": "[Industry] market"
+    }
+}
