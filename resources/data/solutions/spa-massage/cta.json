@@ -36,7 +36,7 @@
     ],
     "guarantee": "30-day satisfaction guarantee • Free cancellation • No setup fees",
     "social_proof": "Trusted by 100+ UAE spa and wellness centers",
-    "bg_image": "assets/images/spa/bg.jpg",
+    "bg_image": "/assets/images/spa/bg.jpg",
     "alt_text": "Spa and Wellness Center",
     "metadata": {
         "version": "1.0", 

@@ -10,7 +10,7 @@
             "description": "AI proactively contacts customer who abandoned their cart",
             "duration": "42 seconds",
             "scenario": "Abandoned cart recovery",
-            "file_path": "assets/audio/solutions/retail-ecommerce/cart-recovery-demo.mp3",
+            "file_path": "/assets/audio/solutions/retail-ecommerce/cart-recovery-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -45,7 +45,7 @@
             "description": "Customer asking detailed questions about product specifications",
             "duration": "38 seconds", 
             "scenario": "Product consultation",
-            "file_path": "assets/audio/solutions/retail-ecommerce/product-inquiry-demo.mp3",
+            "file_path": "/assets/audio/solutions/retail-ecommerce/product-inquiry-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -80,7 +80,7 @@
             "description": "Customer checking delivery status and requesting modifications",
             "duration": "35 seconds",
             "scenario": "Order management",
-            "file_path": "assets/audio/solutions/retail-ecommerce/order-status-demo.mp3",
+            "file_path": "/assets/audio/solutions/retail-ecommerce/order-status-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -115,7 +115,7 @@
             "description": "AI handling customer service in Arabic and English",
             "duration": "40 seconds",
             "scenario": "Bilingual customer service", 
-            "file_path": "assets/audio/solutions/retail-ecommerce/multilingual-demo.mp3",
+            "file_path": "/assets/audio/solutions/retail-ecommerce/multilingual-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",

@@ -15,7 +15,7 @@
       "scenario": "Family of 5 booking evening desert safari with specific dietary needs",
       "complexity": "Medium - Group booking with special requirements",
       "icon": "uil-desert",
-      "file_path": "assets/audio/solutions/travel-services/desert-safari-booking.mp3",
+      "file_path": "/assets/audio/solutions/travel-services/desert-safari-booking.mp3",
       "transcript": [
         "Hello, Dubai Desert Adventures! I'm Sarah, your AI travel specialist. How can I help you experience the magic of Dubai's desert today?",
         "Perfect! I can arrange your evening desert safari for tonight. Our Premium Desert Safari includes hotel pickup, thrilling dune bashing, camel riding, sandboarding, BBQ dinner, and traditional entertainment.",
@@ -39,7 +39,7 @@
       "scenario": "Indian tourist needs Dubai visa information and application guidance",
       "complexity": "Medium - Country-specific visa requirements",
       "icon": "uil-file-check-alt",
-      "file_path": "assets/audio/solutions/travel-services/dubai-visa-inquiry.mp3",
+      "file_path": "/assets/audio/solutions/travel-services/dubai-visa-inquiry.mp3",
       "transcript": [
         "Hello! Welcome to Dubai Visa Express. I'm Ahmed, your AI visa specialist. I can help you get your Dubai visa quickly and easily. Which country are you traveling from?",
         "Perfect! For Indian citizens, you need a Dubai tourist visa. I can arrange a 30-day single entry visa for 350 AED or 90-day multiple entry for 1,050 AED. Processing takes 3-4 working days.",
@@ -63,7 +63,7 @@
       "scenario": "International tourist needs car rental with Dubai license and insurance guidance",
       "complexity": "High - Complex Dubai driving regulations",
       "icon": "uil-car",
-      "file_path": "assets/audio/solutions/travel-services/car-rental-booking.mp3",
+      "file_path": "/assets/audio/solutions/travel-services/car-rental-booking.mp3",
       "transcript": [
         "Welcome to Dubai Drive Rentals! I'm Fatima, your AI car rental expert. I'll help you explore Dubai safely and legally. Do you have questions about driving in Dubai?",
         "Great question! With your UK license, you can drive in Dubai for 30 days as a tourist. You'll need an International Driving Permit though. Our Toyota Camry is 180 AED per day including comprehensive insurance.",
@@ -87,7 +87,7 @@
       "scenario": "Group booking for multiple Dubai attractions with transportation coordination",
       "complexity": "High - Multi-location package coordination",
       "icon": "uil-building",
-      "file_path": "assets/audio/solutions/travel-services/dubai-attractions-package.mp3",
+      "file_path": "/assets/audio/solutions/travel-services/dubai-attractions-package.mp3",
       "transcript": [
         "Hello! Dubai Attractions Central here. I'm Omar, your AI tour coordinator. I can create the perfect Dubai experience package for you. What attractions interest you most?",
         "Excellent choices! I'll create your Ultimate Dubai Package: Burj Khalifa At The Top for 2 PM, Dubai Mall Aquarium, Gold Souk traditional tour, and Dubai Marina dinner cruise. All with private transportation.",
@@ -111,7 +111,7 @@
       "scenario": "Tourist needs immediate flight change due to family emergency back home",
       "complexity": "Critical - Emergency response protocol",
       "icon": "uil-plane-departure",
-      "file_path": "assets/audio/solutions/travel-services/emergency-flight-change.mp3",
+      "file_path": "/assets/audio/solutions/travel-services/emergency-flight-change.mp3",
       "transcript": [
         "This is Dubai Travel Emergency Support. I'm Layla, and I'm here to help you immediately. I understand you have a family emergency and need urgent flight changes. Please tell me your booking details.",
         "I found your Emirates flight EK012 to London scheduled for Friday. Given your family emergency, I can move you to tonight's EK002 departing at 11:30 PM with priority boarding at no extra cost.",

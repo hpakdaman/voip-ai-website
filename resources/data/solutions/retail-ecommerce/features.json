@@ -8,7 +8,7 @@
     "dashboard": {
         "title": "Real-Time Sales Dashboard",
         "description": "Monitor all customer interactions, cart recoveries, and sales conversions in real-time from your retail management dashboard.",
-        "image": "assets/images/ecommerce/dashboard.jpg",
+        "image": "/assets/images/ecommerce/dashboard.jpg",
         "features": [
             "Live customer shopping behavior",
             "Instant cart abandonment alerts",
@@ -18,7 +18,7 @@
     "consultation": {
         "title": "Expert Product Consultations",
         "description": "Your AI agent provides professional product guidance with deep knowledge of your inventory, pricing, and customer preferences.",
-        "image": "assets/images/ecommerce/consultation.jpg",
+        "image": "/assets/images/ecommerce/consultation.jpg",
         "features": [
             "Real-time inventory and pricing information",
             "Product compatibility and recommendations",

@@ -24,7 +24,7 @@
     "demo_audio": {
         "title": "Listen to Your AI Spa Receptionist",
         "description": "Hear how our AI handles real spa appointment bookings with natural conversation",
-        "file_path": "assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
+        "file_path": "/assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
         "duration": "1:45",
         "transcript": [
             {
@@ -62,7 +62,7 @@
         }
     ],
     "hero_images": {
-        "main": "assets/images/spa/hero.jpg"
+        "main": "/assets/images/spa/hero.jpg"
     },
     "metadata": {
         "version": "1.0",
