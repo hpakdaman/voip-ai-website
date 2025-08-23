@@ -22,8 +22,10 @@
         "cta": {
             "primary": "Start Free Education Trial",
             "secondary": "See How It Works"
-        },
-        "hero_image": "/assets/images/solutions/education/hero.jpg"
+        }
+    },
+    "hero_images": {
+        "main": "/assets/images/solutions/education/hero.jpg"
     },
     "voice_demo": {
         "title": "🎧 Listen: AI Handling Student Admission Inquiry",

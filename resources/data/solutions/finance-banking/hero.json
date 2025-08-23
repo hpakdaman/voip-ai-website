@@ -33,6 +33,9 @@
         "audio_file": "banking-inquiry-demo.mp3",
         "transcript": "Customer: Hello, I'd like to inquire about opening a business account for my new Dubai company.\n\nAI Agent: Good afternoon! I'd be happy to help you with opening a business account. May I start by getting your trade license number and the nature of your business?\n\nCustomer: Sure, it's license number 789456123 and we're in the technology consultancy sector.\n\nAI Agent: Perfect! For technology consultancy, we have excellent business banking packages. You'll need your trade license, memorandum of association, and passport copies. I can schedule an appointment with our business banking specialist tomorrow at 10 AM or 2 PM. Which works better for you?\n\nCustomer: 10 AM would be ideal. What documents should I bring?\n\nAI Agent: Excellent! I've scheduled your appointment for tomorrow at 10 AM at our DIFC branch. I'm sending you a detailed checklist via SMS and email. Our specialist will guide you through our competitive rates and digital banking solutions. See you tomorrow!"
     },
+    "hero_images": {
+        "main": "/assets/images/solutions/government/hero-smart-city.jpg"
+    },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-22",

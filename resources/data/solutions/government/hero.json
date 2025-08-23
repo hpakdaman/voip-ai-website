@@ -22,8 +22,10 @@
         "cta": {
             "primary": "Transform Your Services",
             "secondary": "See Government Demo"
-        },
-        "hero_image": "/assets/images/solutions/government/hero-smart-city.jpg"
+        }
+    },
+    "hero_images": {
+        "main": null
     },
     "voice_demo": {
         "title": "🎧 Listen: AI Handling Citizen Service Request",
