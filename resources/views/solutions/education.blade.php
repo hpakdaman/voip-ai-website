@@ -12,7 +12,7 @@ $industryService = new \App\Services\IndustryDataService('education');
 @endphp
 
 {{-- Hero Section --}}
-@include('solutions.sections.modern-hero', ['data' => $industryService->getHeroData()])
+@include('solutions.sections.hero', ['data' => $industryService->getHeroData()])
 
 {{-- Problem-Solution Section --}}
 @include('solutions.sections.problem-solution', ['data' => $industryService->getProblemSolutionData()])

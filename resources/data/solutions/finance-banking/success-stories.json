@@ -9,28 +9,28 @@
         {
             "name": "Khalid Al-Mahmoud",
             "company": "Emirates First Bank",
-            "image": "assets/images/client/01.jpg",
+            "image": "/assets/images/client/01.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI increased our loan applications by 55%. We processed 200 more applications last month with zero wait times!"
         },
         {
             "name": "Fatima Al-Zahra",
             "company": "Dubai Investment Bank",
-            "image": "assets/images/client/02.jpg",
+            "image": "/assets/images/client/02.jpg",
             "rating": 5,
             "testimonial": "Our AI agent handles customer service better than our top-performing staff. Clients appreciate instant account access 24/7."
         },
         {
             "name": "Robert Chen",
             "company": "ADCB Capital Markets",
-            "image": "assets/images/client/03.jpg",
+            "image": "/assets/images/client/03.jpg",
             "rating": 5,
             "testimonial": "ROI exceeded expectations - payback in 3 weeks. Now our advisors focus on complex investments while AI handles routine banking."
         },
         {
             "name": "Amira Hassan",
             "company": "First Abu Dhabi Bank",
-            "image": "assets/images/client/04.jpg",
+            "image": "/assets/images/client/04.jpg",
             "rating": 5,
             "testimonial": "Customer satisfaction jumped to 98%. Our AI agent provides consistent, accurate financial guidance in both Arabic and English."
         }

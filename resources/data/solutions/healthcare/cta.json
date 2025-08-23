@@ -29,7 +29,7 @@
     ],
     "guarantee": "30-day money-back guarantee • HIPAA compliant • No setup fees",
     "social_proof": "Trusted by 200+ UAE healthcare professionals",
-    "bg_image": "assets/images/hospital/bg.jpg",
+    "bg_image": "/assets/images/hospital/bg.jpg",
     "alt_text": "Healthcare professionals using Sawtic AI",
     "metadata": {
         "version": "1.0",

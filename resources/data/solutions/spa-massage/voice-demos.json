@@ -10,7 +10,7 @@
             "description": "AI handles a new client booking a relaxation massage",
             "duration": "45 seconds",
             "scenario": "New client booking",
-            "file_path": "assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
+            "file_path": "/assets/audio/solutions/spa-massage/appointment-booking-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -45,7 +45,7 @@
             "description": "Client asking about facial treatments and packages",
             "duration": "38 seconds", 
             "scenario": "Service inquiry",
-            "file_path": "assets/audio/solutions/spa-massage/treatment-inquiry-demo.mp3",
+            "file_path": "/assets/audio/solutions/spa-massage/treatment-inquiry-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -80,7 +80,7 @@
             "description": "AI confirming and providing pre-treatment instructions",
             "duration": "32 seconds",
             "scenario": "Appointment reminder",
-            "file_path": "assets/audio/solutions/spa-massage/appointment-confirmation-demo.mp3",
+            "file_path": "/assets/audio/solutions/spa-massage/appointment-confirmation-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
@@ -105,7 +105,7 @@
             "description": "AI conducting health assessment for new client",
             "duration": "42 seconds",
             "scenario": "Health consultation", 
-            "file_path": "assets/audio/solutions/spa-massage/health-screening-demo.mp3",
+            "file_path": "/assets/audio/solutions/spa-massage/health-screening-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",

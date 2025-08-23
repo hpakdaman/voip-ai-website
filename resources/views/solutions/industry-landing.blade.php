@@ -72,14 +72,14 @@ $industryData = new \App\Services\IndustryDataService($industry);
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/solutions/industry-landing.css') }}">
-@if(file_exists(public_path("assets/css/solutions/{$industry}.css")))
-<link rel="stylesheet" href="{{ asset("assets/css/solutions/{$industry}.css") }}">
+@if(file_exists(public_path("/assets/css/solutions/{$industry}.css")))
+<link rel="stylesheet" href="{{ asset("/assets/css/solutions/{$industry}.css") }}">
 @endif
 @endpush
 
 @push('scripts')
 <script src="{{ asset('assets/js/solutions/industry-landing.js') }}"></script>
-@if(file_exists(public_path("assets/js/solutions/{$industry}.js")))
-<script src="{{ asset("assets/js/solutions/{$industry}.js") }}"></script>
+@if(file_exists(public_path("/assets/js/solutions/{$industry}.js")))
+<script src="{{ asset("/assets/js/solutions/{$industry}.js") }}"></script>
 @endif
 @endpush

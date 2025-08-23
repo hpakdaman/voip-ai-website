@@ -8,7 +8,7 @@
     "dashboard": {
         "title": "Spa Booking Dashboard",
         "description": "Monitor all appointment bookings, client interactions, and treatment schedules in real-time.",
-        "image": "assets/images/spa/1.jpg",
+        "image": "/assets/images/spa/1.jpg",
         "features": [
             "Live booking monitoring",
             "Instant client notifications", 
@@ -18,7 +18,7 @@
     "consultation": {
         "title": "Professional Wellness Consultations",
         "description": "Your AI agent provides expert-level consultations with deep knowledge of spa treatments and wellness protocols.",
-        "image": "assets/images/spa/2.jpg",
+        "image": "/assets/images/spa/2.jpg",
         "features": [
             "Treatment recommendations based on client needs",
             "Health screening and contraindication checks",

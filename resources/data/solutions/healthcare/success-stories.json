@@ -12,7 +12,7 @@
             "title": "Chief Medical Officer",
             "company": "Dubai Family Medical Center",
             "location": "Dubai Healthcare City",
-            "image": "assets/images/client/01.jpg",
+            "image": "/assets/images/client/01.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI has revolutionized our patient communication. We now handle 300+ calls daily with zero missed emergencies. Our patient satisfaction increased 40% since implementing 24/7 AI support.",
             "results": {
@@ -29,7 +29,7 @@
             "title": "Practice Director",
             "company": "Emirates Pediatric Clinic",
             "location": "Jumeirah, Dubai",
-            "image": "assets/images/client/02.jpg",
+            "image": "/assets/images/client/02.jpg",
             "rating": 5,
             "testimonial": "Parents call at all hours with concerns about their children. Sawtic AI provides immediate triage and schedules urgent appointments automatically. It's like having a pediatric nurse available 24/7.",
             "results": {
@@ -46,7 +46,7 @@
             "title": "Cardiology Department Head",
             "company": "Al-Zahra Heart Center",
             "location": "Sheikh Zayed Road, Dubai",
-            "image": "assets/images/client/03.jpg",
+            "image": "/assets/images/client/03.jpg",
             "rating": 5,
             "testimonial": "Cardiac emergencies don't wait for business hours. Sawtic AI recognizes cardiac symptoms and immediately connects patients to our on-call cardiologist. We've saved lives with this technology.",
             "results": {
@@ -63,7 +63,7 @@
             "title": "Managing Partner",
             "company": "International Medical Clinic",
             "location": "Business Bay, Dubai",
-            "image": "assets/images/client/04.jpg",
+            "image": "/assets/images/client/04.jpg",
             "rating": 5,
             "testimonial": "Our diverse patient base speaks multiple languages. Sawtic AI handles consultations in Arabic, English, Hindi, and Urdu fluently. It's eliminated language barriers completely.",
             "results": {
@@ -80,7 +80,7 @@
             "title": "Clinic Operations Manager",
             "company": "American Hospital Dubai",
             "location": "Oud Metha, Dubai",
-            "image": "assets/images/client/05.jpg",
+            "image": "/assets/images/client/05.jpg",
             "rating": 5,
             "testimonial": "Managing 1000+ daily calls was overwhelming our staff. Sawtic AI reduced our reception workload by 60% while improving patient experience. Our no-show rate dropped from 25% to 8%.",
             "results": {
@@ -97,7 +97,7 @@
             "title": "Emergency Department Director",
             "company": "UAE University Hospital",
             "location": "Al Ain, UAE",
-            "image": "assets/images/client/06.jpg",
+            "image": "/assets/images/client/06.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI triages emergency calls perfectly, directing critical cases to our ER immediately while handling routine inquiries. It's improved our emergency response time by 40%.",
             "results": {

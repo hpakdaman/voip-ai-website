@@ -30,6 +30,6 @@
     ],
     "guarantee": "30-day money-back guarantee - see increased enrollment results or get fully refunded",
     "social_proof": "Trusted by 150+ educational institutions across UAE and Middle East",
-    "bg_image": "assets/images/education/bg.jpg",
+    "bg_image": "/assets/images/education/bg.jpg",
     "alt_text": "Education AI Agent Background"
 }
