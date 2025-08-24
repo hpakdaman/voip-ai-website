@@ -34,7 +34,7 @@
         "transcript": "Customer: Hi, I placed an order yesterday but haven't received a confirmation email. Can you help me?\n\nAI Agent: Hello! I'd be happy to help you with your order. May I have your order number or the email address you used to place the order?\n\nCustomer: I used sara.ahmed@email.com, and I think the order number was something like EC12345.\n\nAI Agent: Perfect! I found your order EC12347 placed yesterday for AED 450. I can see the confirmation email was sent but might be in your spam folder. The order includes a wireless headset and phone case, with delivery expected tomorrow by 2 PM. I'm resending the confirmation now.\n\nCustomer: That's great! Can I also add express shipping to get it today instead?\n\nAI Agent: Absolutely! I can upgrade you to same-day delivery for an additional AED 25. Your order will arrive today between 4-8 PM. Shall I process this upgrade for you?"
     },
     "hero_images": {
-        "main": "/assets/images/solutions/retail-ecommerce/hero.jpg"
+        "main": "/assets/images/retail-ecommerce/hero.jpg"
     },
     "metadata": {
         "version": "1.0",
