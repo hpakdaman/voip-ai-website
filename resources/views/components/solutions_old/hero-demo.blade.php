@@ -92,15 +92,15 @@ $voiceDemo = $heroData['voice_demo'] ?? [];
                     <!-- Main Demo Image -->
                     <div class="relative">
                         @if($industry === 'healthcare')
-                        <img src="{{ $heroImage ?? asset('assets/images/hospital/about-2.png') }}" 
+                        <img data-lazy="{{ $heroImage ?? asset('assets/images/hospital/about-2.png') }}" 
                              alt="Healthcare AI Call Center Demo" 
-                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                             class="lazy-loading w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         @elseif($industry === 'spa-massage')
-                        <img src="{{ asset('assets/images/spa/1.jpg') }}" 
+                        <img data-lazy="{{ asset('assets/images/spa/1.jpg') }}" 
                              alt="Spa & Massage AI Call Center Demo" 
-                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                             class="lazy-loading w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         @else
-                        <img src="{{ asset('assets/images/real/property/1.jpg') }}" 
+                        <img data-lazy="{{ asset('assets/images/real/property/1.jpg') }}" 
                              alt="Real Estate Agent AI Call Center Demo" 
                              class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         @endif
