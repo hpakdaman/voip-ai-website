@@ -2,7 +2,7 @@
 <html lang="en" class="dark scroll-smooth" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>@yield('title')</title>
+        {{-- <title>@yield('title')</title> --}}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- SEO Meta Tags -->
         {!! SEOMeta::generate() !!}
