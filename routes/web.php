@@ -56,7 +56,7 @@ if ($maintenanceMode) {
 
 // Auth::routes(); // Commented out - requires laravel/ui package
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.redirect');
 
 // Admin routes (protected by auth middleware)  
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
@@ -81,4 +81,11 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::patch('/demos/{demo}/confirm', [\App\Http\Controllers\Admin\AdminDemoController::class, 'confirm'])->name('demos.confirm');
     Route::patch('/demos/{demo}/complete', [\App\Http\Controllers\Admin\AdminDemoController::class, 'complete'])->name('demos.complete');
     Route::patch('/demos/{demo}/no-show', [\App\Http\Controllers\Admin\AdminDemoController::class, 'noShow'])->name('demos.no-show');
+    
+    // Contact submissions management
+    Route::get('/contacts', [\App\Http\Controllers\Admin\ContactSubmissionController::class, 'index'])->name('contacts.index');
+    Route::get('/contacts/{id}', [\App\Http\Controllers\Admin\ContactSubmissionController::class, 'show'])->name('contacts.show');
+    Route::delete('/contacts/{id}', [\App\Http\Controllers\Admin\ContactSubmissionController::class, 'destroy'])->name('contacts.destroy');
+    Route::post('/contacts/mark-read', [\App\Http\Controllers\Admin\ContactSubmissionController::class, 'markAsRead'])->name('contacts.mark-read');
+    Route::post('/contacts/bulk-delete', [\App\Http\Controllers\Admin\ContactSubmissionController::class, 'bulkDelete'])->name('contacts.bulk-delete');
 });
