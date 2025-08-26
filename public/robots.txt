@@ -26,7 +26,7 @@ Allow: /solutions/spa-massage
 
 # Sitemap locations
 Sitemap: https://sawtic.com/sitemap.xml
-Sitemap: https://sawtic.com/sitemap-solutions.xml
+Sitemap: https://sawtic.com/sitemap-index.xml
 
 # Crawl delay for respectful crawling (1 second)
 Crawl-delay: 1
