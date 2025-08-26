@@ -51,6 +51,11 @@ if ($maintenanceMode) {
         Route::get('/slots/available', [DemoBookingController::class, 'getAvailableSlots'])->name('slots.available');
     });
 
+    // SEO and Sitemap routes
+    Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap.xml');
+    Route::get('/sitemap-index.xml', [App\Http\Controllers\SitemapController::class, 'sitemapIndex'])->name('sitemap.index');
+    Route::get('/robots.txt', [App\Http\Controllers\SitemapController::class, 'robots'])->name('robots.txt');
+
     // Additional VoIP-specific routes (add as needed)
 }
 
