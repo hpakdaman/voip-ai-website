@@ -23,7 +23,8 @@
       "Bash(php artisan make:migration:*)",
       "Bash(./scripts/sync-to-dev.sh:*)",
       "Bash(php artisan:*)",
-      "Read(//Users/hamed/Sites/dubai-voip/examples/Admin/resources/views/**)"
+      "Read(/Users/hamed/Sites/dubai-voip/examples/Admin/resources/views/**)",
+      "Bash(./scripts/optimize-images.sh:*)"
     ],
     "deny": [],
     "ask": []

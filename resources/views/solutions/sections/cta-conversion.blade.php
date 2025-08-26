@@ -12,8 +12,8 @@ $altText = $data['alt_text'] ?? 'CTA Background';
 <section class="relative py-24" style="background-color: var(--voip-bg);">
     <div class="absolute inset-0">
         <!-- Background Image -->
-        <img src="{{ asset($bgImage) }}" alt="{{ $altText }}"
-            class="w-full h-full object-cover opacity-20">
+        <img data-lazy="{{ asset($bgImage) }}" alt="{{ $altText }}"
+            class="lazy-loading w-full h-full object-cover opacity-20">
         <!-- Conversion-focused background overlay -->
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.15) 0%, rgba(29, 120, 97, 0.1) 50%, transparent 100%);">

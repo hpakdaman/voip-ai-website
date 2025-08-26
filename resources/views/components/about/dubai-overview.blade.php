@@ -35,9 +35,9 @@ try {
                 <!-- Circular Masked Image - Larger -->
                 <div class="relative">
                     <div class="w-full max-w-[350px] lg:max-w-[450px] aspect-square mx-auto rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(30, 192, 141, 0.3);">
-                        <img src="{{ asset('assets/images/about/about01.png') }}" 
+                        <img data-lazy="{{ asset('assets/images/about/about01.png') }}" 
                              alt="UAE Business Innovation" 
-                             class="w-full h-full object-contain">
+                             class="lazy-loading w-full h-full object-contain">
                     </div>
                     
                     <!-- Floating Achievement Stats -->

@@ -107,9 +107,9 @@ if (!empty($demoAudio)) {
                         $defaultImage = 'assets/images/no-image.svg';
                         $heroImage = $heroImages['main'] ?? $defaultImage;
                         @endphp
-                        <img src="{{ asset($heroImage) }}" 
+                        <img data-lazy="{{ asset($heroImage) }}" 
                              alt="{{ $data['hero']['alt_text'] ?? 'AI Call Center Demo' }}" 
-                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                             class="lazy-loading w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         
                         <!-- Image Overlay -->
                         <div class=""></div>

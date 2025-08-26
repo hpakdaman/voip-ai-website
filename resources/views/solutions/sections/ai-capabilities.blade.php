@@ -98,9 +98,9 @@ $integrationStats = $data['integration_stats'] ?? [];
                 <!-- Demo Image -->
                 <div class="relative order-2 lg:order-1">
                     @if(isset($data['demo_image']) || isset($sectionData['demo_image']))
-                    <img src="{{ asset($data['demo_image'] ?? $sectionData['demo_image']) }}" 
+                    <img data-lazy="{{ asset($data['demo_image'] ?? $sectionData['demo_image']) }}" 
                          alt="{{ $data['demo_alt'] ?? $sectionData['demo_alt'] ?? 'Professional Using AI Assistant' }}" 
-                         class="w-full h-[400px] object-cover rounded-2xl shadow-2xl">
+                         class="lazy-loading w-full h-[400px] object-cover rounded-2xl shadow-2xl">
                     @else
                     <div class="w-full h-[400px] rounded-2xl flex items-center justify-center border border-white/10" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
                         <i class="uil uil-robot text-6xl text-white opacity-20"></i>

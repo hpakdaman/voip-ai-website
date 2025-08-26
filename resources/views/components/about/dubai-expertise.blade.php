@@ -32,9 +32,9 @@ try {
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Business Image -->
-                    <img src="{{ asset('assets/images/business/uae-business-growth.png') }}" 
+                    <img data-lazy="{{ asset('assets/images/business/uae-business-growth.png') }}" 
                          alt="UAE Business Excellence" 
-                         class="w-full h-auto object-contain">
+                         class="lazy-loading w-full h-auto object-contain">
                     
                     
                     <!-- Achievement Overlays -->
