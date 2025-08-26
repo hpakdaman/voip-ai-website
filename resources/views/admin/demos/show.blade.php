@@ -5,6 +5,36 @@
 @section('content')
 <div class="min-h-screen" style="background: var(--voip-bg);">
     <div class="container mx-auto px-6 pt-24 pb-8">
+        <!-- Breadcrumbs -->
+        <nav class="flex mb-6 mt-4" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="{{ url('/') }}" class="inline-flex items-center text-sm font-medium text-slate-300 hover:text-white">
+                        <i class="uil uil-estate mr-1"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="uil uil-angle-right text-slate-400"></i>
+                        <a href="{{ route('admin.dashboard') }}" class="ml-1 text-sm font-medium text-slate-300 hover:text-white md:ml-2">Admin Dashboard</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="uil uil-angle-right text-slate-400"></i>
+                        <a href="{{ route('admin.demos.index') }}" class="ml-1 text-sm font-medium text-slate-300 hover:text-white md:ml-2">Demo Bookings</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="uil uil-angle-right text-slate-400"></i>
+                        <span class="ml-1 text-sm font-medium text-white md:ml-2">{{ $demo->full_name }}</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
         <!-- Header -->
         <div class="flex justify-between items-center mb-8">
             <div>

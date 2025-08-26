@@ -54,7 +54,7 @@ if ($maintenanceMode) {
     // Additional VoIP-specific routes (add as needed)
 }
 
-// Auth::routes(); // Commented out - requires laravel/ui package
+Auth::routes(); // Laravel UI authentication routes
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.redirect');
 
