@@ -32,10 +32,6 @@ if ($maintenanceMode) {
     Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
     Route::get('/privacy-portal', [HomeController::class, 'privacyPortal'])->name('privacy-portal');
 
-    // Social Media Pages
-    Route::get('/linkedin', [HomeController::class, 'linkedin'])->name('social.linkedin');
-    Route::get('/twitter', [HomeController::class, 'twitter'])->name('social.twitter');
-
     // Solutions Landing Pages
     Route::get('/solutions/real-estate', [HomeController::class, 'realEstate'])->name('solutions.real-estate');
     Route::get('/solutions/spa-massage', [HomeController::class, 'spaMassage'])->name('solutions.spa-massage');
