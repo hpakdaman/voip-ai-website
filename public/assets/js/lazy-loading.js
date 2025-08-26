@@ -64,29 +64,70 @@ class SawticLazyLoader {
         });
     }
 
-    loadImage(img) {
+    async loadImage(img) {
         const src = img.dataset.lazy;
         const srcset = img.dataset.lazySrcset;
 
         // Add loading state
         img.classList.remove(this.options.loadingClass);
         
+        // Try WebP version first if browser supports it
+        let finalSrc = src;
+        const supportsWebP = await WebPSupport.detect();
+        if (supportsWebP && src && /\.(jpe?g|png)$/i.test(src)) {
+            const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+            finalSrc = webpSrc;
+        }
+        
         // Handle load success
         const onLoad = () => {
             img.classList.add(this.options.loadedClass);
             img.removeEventListener('load', onLoad);
             img.removeEventListener('error', onError);
+            console.log('Lazy loaded:', finalSrc);
         };
 
-        // Handle load error
+        // Handle load error - try original if WebP fails
         const onError = () => {
+            // If WebP failed, try original image
+            if (finalSrc !== src && src) {
+                console.log('WebP failed, trying original:', src);
+                img.removeEventListener('load', onLoad);
+                img.removeEventListener('error', onError);
+                
+                // Try original image
+                const onOriginalLoad = () => {
+                    img.classList.add(this.options.loadedClass);
+                    img.removeEventListener('load', onOriginalLoad);
+                    img.removeEventListener('error', onOriginalError);
+                    console.log('Loaded original after WebP failed:', src);
+                };
+                
+                const onOriginalError = () => {
+                    img.classList.add(this.options.errorClass);
+                    img.removeEventListener('load', onOriginalLoad);
+                    img.removeEventListener('error', onOriginalError);
+                    
+                    // Try fallback image if available
+                    const fallback = img.dataset.fallback || '/assets/images/no-image.svg';
+                    if (img.src !== fallback) {
+                        img.src = fallback;
+                    }
+                };
+                
+                img.addEventListener('load', onOriginalLoad);
+                img.addEventListener('error', onOriginalError);
+                img.src = src;
+                return;
+            }
+            
+            // Direct fallback
             img.classList.add(this.options.errorClass);
             img.removeEventListener('load', onLoad);
             img.removeEventListener('error', onError);
             
-            // Try fallback image if available
-            const fallback = img.dataset.fallback;
-            if (fallback && img.src !== fallback) {
+            const fallback = img.dataset.fallback || '/assets/images/no-image.svg';
+            if (img.src !== fallback) {
                 img.src = fallback;
             }
         };
@@ -98,7 +139,7 @@ class SawticLazyLoader {
         if (srcset) {
             img.srcset = srcset;
         }
-        img.src = src;
+        img.src = finalSrc;
 
         // Remove data attributes
         delete img.dataset.lazy;
@@ -188,11 +229,10 @@ class SawticImageHelper {
             img.dataset.fallback = fallback;
             img.loading = loading;
             
-            // Placeholder while loading
+            // Transparent placeholder while loading - no visible content
             img.src = 'data:image/svg+xml;base64,' + btoa(`
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                    <rect width="400" height="300" fill="#f8fafc"/>
-                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#64748b">Loading...</text>
+                    <rect width="400" height="300" fill="rgba(248, 250, 252, 0.1)"/>
                 </svg>
             `);
         } else {
@@ -217,8 +257,7 @@ class SawticImageHelper {
                 img.dataset.fallback = '/assets/images/no-image.svg';
                 img.src = 'data:image/svg+xml;base64,' + btoa(`
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-                        <rect width="400" height="300" fill="#f8fafc"/>
-                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#64748b">Loading...</text>
+                        <rect width="400" height="300" fill="rgba(248, 250, 252, 0.1)"/>
                     </svg>
                 `);
             }
