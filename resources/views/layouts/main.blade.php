@@ -4,9 +4,50 @@
         <meta charset="UTF-8">
         <title>@yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Sawtic - Dubai's premier AI call center and business automation solution provider. Transform your customer service with intelligent AI agents and advanced automation.">
-        <meta name="keywords" content="AI call center, business automation, Dubai AI solutions, intelligent agents, customer service automation, UAE AI technology, call center software, business intelligence">
-        <meta name="author" content="Sawtic">
+        @php
+            $seoHelper = new \App\Helpers\SEOHelper();
+            $metaTags = $seoHelper::generateMetaTags('home', [
+                'title' => $pageTitle ?? 'Sawtic | AI Call Center Solutions UAE - Dubai Business Automation',
+                'description' => $pageDescription ?? 'Leading AI call center solutions in UAE. Advanced virtual assistants, automated customer service, and intelligent communication technology for Dubai businesses.',
+                'keywords' => $pageKeywords ?? 'AI call center UAE, virtual assistant Dubai, AI customer service, business automation Dubai, intelligent communication UAE, voice AI technology',
+                'image' => $pageImage ?? url('/assets/images/og-image.jpg'),
+                'url' => url()->current()
+            ]);
+        @endphp
+        
+        <!-- Basic Meta Tags -->
+        <meta name="description" content="{{ $metaTags['description'] }}">
+        <meta name="keywords" content="{{ $metaTags['keywords'] }}">
+        <meta name="author" content="{{ $metaTags['author'] }}">
+        <meta name="publisher" content="{{ $metaTags['publisher'] }}">
+        <meta name="robots" content="{{ $metaTags['robots'] }}">
+        <link rel="canonical" href="{{ $metaTags['canonical'] }}">
+        
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="{{ $metaTags['og:title'] }}">
+        <meta property="og:description" content="{{ $metaTags['og:description'] }}">
+        <meta property="og:image" content="{{ $metaTags['og:image'] }}">
+        <meta property="og:url" content="{{ $metaTags['og:url'] }}">
+        <meta property="og:type" content="{{ $metaTags['og:type'] }}">
+        <meta property="og:site_name" content="{{ $metaTags['og:site_name'] }}">
+        <meta property="og:locale" content="{{ $metaTags['og:locale'] }}">
+        <meta property="og:locale:alternate" content="{{ $metaTags['og:locale:alternate'] }}">
+        
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="{{ $metaTags['twitter:card'] }}">
+        <meta name="twitter:title" content="{{ $metaTags['twitter:title'] }}">
+        <meta name="twitter:description" content="{{ $metaTags['twitter:description'] }}">
+        <meta name="twitter:image" content="{{ $metaTags['twitter:image'] }}">
+        <meta name="twitter:site" content="{{ $metaTags['twitter:site'] }}">
+        
+        <!-- Geographic and Language Tags -->
+        <meta name="geo.region" content="{{ $metaTags['geo.region'] }}">
+        <meta name="geo.placename" content="{{ $metaTags['geo.placename'] }}">
+        <meta name="geo.position" content="{{ $metaTags['geo.position'] }}">
+        <meta name="ICBM" content="{{ $metaTags['ICBM'] }}">
+        <meta name="language" content="{{ $metaTags['language'] }}">
+        
+        <!-- Additional Meta Tags -->
         <meta name="website" content="https://sawtic.com">
         <meta name="email" content="dubai@sawtic.com">
         <meta name="version" content="3.0.0">
@@ -42,6 +83,22 @@
         <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
         <!-- VoIP AI Custom Styles -->
         <link rel="stylesheet" href="{{ asset('assets/css/voip-home.css') }}">
+
+        <!-- JSON-LD Structured Data -->
+        @php
+            $websiteSchema = $seoHelper::generateStructuredData('website');
+            $organizationSchema = $seoHelper::generateStructuredData('organization');
+        @endphp
+        
+        <script type="application/ld+json">
+            {!! json_encode($websiteSchema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
+        </script>
+        
+        <script type="application/ld+json">
+            {!! json_encode($organizationSchema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
+        </script>
+
+        @stack('structured-data')
 
     </head>
     
