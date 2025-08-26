@@ -1,6 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.admin')
 
-@section('title', 'Admin Dashboard - Sawtic AI Call Center')
+@section('title', 'Dashboard - Admin')
 
 @section('content')
 <div class="min-h-screen" style="background: var(--voip-bg);">
@@ -27,12 +27,16 @@
         </div>
 
         <!-- Stats Cards -->
-        <div class="grid md:grid-cols-4 gap-6 mb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4 mb-8">
             @php
                 $totalBookings = \App\Models\DemoBooking::count();
                 $pendingBookings = \App\Models\DemoBooking::where('status', 'pending')->count();
                 $confirmedBookings = \App\Models\DemoBooking::where('status', 'confirmed')->count();
                 $todayBookings = \App\Models\DemoBooking::whereDate('scheduled_at', today())->count();
+                
+                $totalContacts = \App\Models\ContactSubmission::count();
+                $unreadContacts = \App\Models\ContactSubmission::where('is_read', false)->count();
+                $todayContacts = \App\Models\ContactSubmission::whereDate('created_at', today())->count();
             @endphp
 
             <div class="bg-white rounded-xl p-6 shadow-lg">
@@ -79,6 +83,43 @@
                     </div>
                     <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(30, 192, 141, 0.2);">
                         <i class="uil uil-today-alt text-xl" style="color: var(--voip-link);"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Submission Stats -->
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm">Total Contacts</p>
+                        <p class="text-2xl font-bold text-purple-600">{{ $totalContacts }}</p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center bg-purple-100">
+                        <i class="uil uil-envelope text-xl text-purple-600"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm">Unread</p>
+                        <p class="text-2xl font-bold text-red-600">{{ $unreadContacts }}</p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center bg-red-100">
+                        <i class="uil uil-envelope-exclamation text-xl text-red-600"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm">Today</p>
+                        <p class="text-2xl font-bold text-indigo-600">{{ $todayContacts }}</p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center bg-indigo-100">
+                        <i class="uil uil-calendar-alt text-xl text-indigo-600"></i>
                     </div>
                 </div>
             </div>
