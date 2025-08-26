@@ -4,7 +4,31 @@
 
 @section('content')
 <div class="min-h-screen" style="background: var(--voip-bg);">
-    <div class="container mx-auto px-6 pt-24 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 pt-24 pb-8">
+        <!-- Breadcrumbs -->
+        <nav class="flex mb-6 mt-4" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="{{ url('/') }}" class="inline-flex items-center text-sm font-medium text-slate-300 hover:text-white">
+                        <i class="uil uil-estate mr-1"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="uil uil-angle-right text-slate-400"></i>
+                        <a href="{{ route('admin.dashboard') }}" class="ml-1 text-sm font-medium text-slate-300 hover:text-white md:ml-2">Admin Dashboard</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="uil uil-angle-right text-slate-400"></i>
+                        <span class="ml-1 text-sm font-medium text-white md:ml-2">Demo Bookings</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
         <!-- Header -->
         <div class="flex justify-between items-center mb-8">
             <div>
@@ -41,10 +65,10 @@
                 Filter Bookings
             </h2>
             
-            <form method="GET" action="{{ route('admin.demos.index') }}" class="grid md:grid-cols-4 gap-4">
+            <form method="GET" action="{{ route('admin.demos.index') }}" class="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-4">
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Status</label>
-                    <select name="status" class="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300">
+                    <select name="status" class="w-full px-3 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm">
                         <option value="">All Statuses</option>
                         <option value="pending" {{ request('status') === 'pending' ? 'selected' : '' }}>Pending</option>
                         <option value="confirmed" {{ request('status') === 'confirmed' ? 'selected' : '' }}>Confirmed</option>
@@ -57,26 +81,32 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">From Date</label>
                     <input type="date" name="date_from" value="{{ request('date_from') }}"
-                           class="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300">
+                           class="w-full px-3 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm">
                 </div>
                 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">To Date</label>
                     <input type="date" name="date_to" value="{{ request('date_to') }}"
-                           class="w-full px-4 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300">
+                           class="w-full px-3 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm">
                 </div>
                 
-                <div>
+                <div class="lg:col-span-1">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Search</label>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 min-w-0">
                         <input type="text" name="search" value="{{ request('search') }}" 
                                placeholder="Name, email, company..."
-                               class="flex-1 px-4 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300">
+                               class="flex-1 min-w-0 px-3 py-3 border border-gray-300 rounded-xl bg-white text-gray-700 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm">
                         <button type="submit" 
-                                class="px-6 py-3 rounded-xl text-white font-semibold hover:scale-105 transform transition-all duration-300"
+                                class="px-4 py-3 rounded-xl text-white font-semibold hover:scale-105 transform transition-all duration-300 flex-shrink-0"
                                 style="background: var(--voip-primary);">
-                            <i class="uil uil-search"></i>
+                            <i class="uil uil-search text-sm"></i>
                         </button>
+                        @if(request()->hasAny(['status', 'date_from', 'date_to', 'search']))
+                        <a href="{{ route('admin.demos.index') }}" 
+                           class="px-4 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all duration-300 flex-shrink-0">
+                            <i class="uil uil-times text-sm"></i>
+                        </a>
+                        @endif
                     </div>
                 </div>
             </form>

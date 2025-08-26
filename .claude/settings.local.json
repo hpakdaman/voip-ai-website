@@ -22,7 +22,8 @@
       "Bash(composer:*)",
       "Bash(php artisan make:migration:*)",
       "Bash(./scripts/sync-to-dev.sh:*)",
-      "Bash(php artisan:*)"
+      "Bash(php artisan:*)",
+      "Read(//Users/hamed/Sites/dubai-voip/examples/Admin/resources/views/**)"
     ],
     "deny": [],
     "ask": []
