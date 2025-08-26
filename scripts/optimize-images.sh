@@ -128,14 +128,14 @@ record_optimization() {
     local file="$1"
     local original_size="$2"
     local new_size="$3"
+    local original_hash="$4"
     local relative_path="${file#$IMAGES_DIR/}"
-    local file_hash=$(get_file_hash "$file")
     local current_settings="q${JPEG_QUALITY}_w${MAX_WIDTH}_h${MAX_HEIGHT}"
     local timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
     
     # Create optimization record
     local record=$(jq -n \
-        --arg hash "$file_hash" \
+        --arg hash "$original_hash" \
         --arg settings "$current_settings" \
         --arg timestamp "$timestamp" \
         --argjson original_size "$original_size" \
@@ -196,6 +196,7 @@ backup_file() {
 optimize_jpeg() {
     local file="$1"
     local original_size=$(get_file_size "$file")
+    local original_hash=$(get_file_hash "$file")
     
     echo -e "  🔧 Optimizing JPEG: $(basename "$file")"
     
@@ -216,8 +217,17 @@ optimize_jpeg() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
-        record_optimization "$file" "$original_size" "$new_size"
+        # Record optimization in log with original hash
+        record_optimization "$file" "$original_size" "$new_size" "$original_hash"
+    else
+        # Optimization made file larger - restore original
+        echo -e "    ${YELLOW}⚠️  File got larger ($(format_bytes $((new_size - original_size)))) - restoring original${NC}"
+        local relative_path="${file#$IMAGES_DIR/}"
+        local backup_file="$BACKUP_DIR/$relative_path"
+        if [ -f "$backup_file" ]; then
+            cp "$backup_file" "$file"
+            echo -e "    ${GREEN}✅ Original file restored${NC}"
+        fi
     fi
 }
 
@@ -225,6 +235,7 @@ optimize_jpeg() {
 optimize_png() {
     local file="$1"
     local original_size=$(get_file_size "$file")
+    local original_hash=$(get_file_hash "$file")
     
     echo -e "  🔧 Optimizing PNG: $(basename "$file")"
     
@@ -245,8 +256,17 @@ optimize_png() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
-        record_optimization "$file" "$original_size" "$new_size"
+        # Record optimization in log with original hash
+        record_optimization "$file" "$original_size" "$new_size" "$original_hash"
+    else
+        # Optimization made file larger - restore original
+        echo -e "    ${YELLOW}⚠️  File got larger ($(format_bytes $((new_size - original_size)))) - restoring original${NC}"
+        local relative_path="${file#$IMAGES_DIR/}"
+        local backup_file="$BACKUP_DIR/$relative_path"
+        if [ -f "$backup_file" ]; then
+            cp "$backup_file" "$file"
+            echo -e "    ${GREEN}✅ Original file restored${NC}"
+        fi
     fi
 }
 
@@ -318,6 +338,19 @@ process_image() {
 optimize_images() {
     echo -e "${YELLOW}🚀 Starting image optimization...${NC}"
     
+    # Check if single file specified
+    if [ -n "$SINGLE_FILE" ]; then
+        if [ ! -f "$SINGLE_FILE" ]; then
+            echo -e "${RED}❌ File not found: $SINGLE_FILE${NC}"
+            exit 1
+        fi
+        
+        echo -e "${BLUE}📁 Optimizing single file: $SINGLE_FILE${NC}"
+        process_image "$SINGLE_FILE"
+        return
+    fi
+    
+    # Default: optimize all images in directory
     if [ ! -d "$IMAGES_DIR" ]; then
         echo -e "${RED}❌ Images directory not found: $IMAGES_DIR${NC}"
         exit 1
@@ -355,7 +388,7 @@ generate_report() {
 show_help() {
     echo "Sawtic Image Optimization Script"
     echo ""
-    echo "Usage: $0 [OPTIONS]"
+    echo "Usage: $0 [OPTIONS] [FILE_PATH]"
     echo ""
     echo "Options:"
     echo "  -h, --help     Show this help message"
@@ -365,14 +398,19 @@ show_help() {
     echo "  --webp         Generate WebP versions (default: enabled)"
     echo "  --no-webp      Skip WebP generation"
     echo ""
+    echo "Arguments:"
+    echo "  FILE_PATH      Optimize only this specific file"
+    echo ""
     echo "Examples:"
-    echo "  $0                    # Optimize with default settings"
-    echo "  $0 -q 90             # Use 90% JPEG quality"
-    echo "  $0 -w 1280 -H 720    # Resize to max 1280x720"
+    echo "  $0                                  # Optimize all images"
+    echo "  $0 -q 90                           # Use 90% JPEG quality"
+    echo "  $0 public/assets/images/hero.jpg   # Optimize single file"
+    echo "  $0 --webp -q 85 specific/image.png # Single file with options"
 }
 
 # Parse command line arguments
 SKIP_WEBP=false
+SINGLE_FILE=""
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -401,9 +439,15 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         *)
-            echo "Unknown option: $1"
-            show_help
-            exit 1
+            # If it's not an option, treat it as a file path
+            if [[ "$1" != -* ]]; then
+                SINGLE_FILE="$1"
+                shift
+            else
+                echo "Unknown option: $1"
+                show_help
+                exit 1
+            fi
             ;;
     esac
 done

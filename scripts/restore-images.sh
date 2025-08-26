@@ -59,10 +59,18 @@ restore_backup() {
         restored_files=$((restored_files + 1))
     done < <(find "$backup_path" -type f -print0)
     
+    # Clear optimization log since files have been restored
+    local optimization_log="storage/app/images-optimization-history.json"
+    if [ -f "$optimization_log" ]; then
+        echo '{\"version\": \"1.0\", \"optimizations\": {}}' > "$optimization_log"
+        echo -e "${YELLOW}🗑️  Cleared optimization log (files restored to originals)${NC}"
+    fi
+    
     echo ""
     echo -e "${GREEN}✅ Restoration complete!${NC}"
     echo -e "   Files restored: ${GREEN}$restored_files${NC}"
     echo -e "   From backup: ${YELLOW}$backup_date${NC}"
+    echo -e "${BLUE}💡 Optimization log cleared - files ready for fresh optimization${NC}"
 }
 
 # Compare backup with current files
