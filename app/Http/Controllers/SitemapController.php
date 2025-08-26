@@ -32,6 +32,12 @@ class SitemapController extends Controller
             ['url' => route('privacy-portal'), 'priority' => '0.2', 'changefreq' => 'yearly'],
         ];
 
+        // Social Media Pages
+        $socialPages = [
+            ['url' => route('social.linkedin'), 'priority' => '0.6', 'changefreq' => 'monthly'],
+            ['url' => route('social.twitter'), 'priority' => '0.6', 'changefreq' => 'monthly'],
+        ];
+
         // Solution pages with high SEO value
         $solutionPages = [
             ['url' => route('solutions.real-estate'), 'priority' => '0.8', 'changefreq' => 'monthly'],
@@ -44,7 +50,7 @@ class SitemapController extends Controller
         ];
 
         // Combine all URLs
-        $allPages = array_merge($mainPages, $legalPages, $solutionPages);
+        $allPages = array_merge($mainPages, $legalPages, $socialPages, $solutionPages);
 
         foreach ($allPages as $page) {
             $urls->push([
