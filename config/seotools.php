@@ -42,7 +42,7 @@ return [
             'url'         => null,
             'type'        => 'website',
             'site_name'   => 'Sawtic',
-            'images'      => ['/assets/images/logo-light.png'],
+            'images'      => ['/assets/images/sawtic-logo-darken-green-min.svg'],
         ],
     ],
     'twitter' => [
@@ -63,7 +63,7 @@ return [
             'description' => 'Leading AI call center solutions in UAE. Advanced virtual assistants, automated customer service, and intelligent communication technology for Dubai businesses.',
             'url'         => 'current',
             'type'        => 'WebPage',
-            'images'      => ['/assets/images/logo-light.png'],
+            'images'      => ['/assets/images/sawtic-logo-darken-green-min.svg'],
         ],
     ],
 ];
