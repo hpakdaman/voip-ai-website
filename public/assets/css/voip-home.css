@@ -32,6 +32,32 @@ html, body {
     color: white !important;
 }
 
+/* Form Input Text Colors - Override global white text for inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    color: #374151 !important; /* text-gray-700 */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+input[type="url"]::placeholder,
+input[type="search"]::placeholder,
+textarea::placeholder {
+    color: #9CA3AF !important; /* text-gray-400 */
+}
+
 /* Hero Section Responsive Typography */
 @media (min-width: 900px) and (max-width: 1024px) {
     .hero-heading-960 {

@@ -21,7 +21,8 @@
       "Bash(./scripts/merge-to-production.sh:*)",
       "Bash(composer:*)",
       "Bash(php artisan make:migration:*)",
-      "Bash(./scripts/sync-to-dev.sh:*)"
+      "Bash(./scripts/sync-to-dev.sh:*)",
+      "Bash(php artisan:*)"
     ],
     "deny": [],
     "ask": []
