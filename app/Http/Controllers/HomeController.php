@@ -117,6 +117,22 @@ class HomeController extends Controller
         return view('solutions.government');  
     }
 
+    /**
+     * LinkedIn Social Media Page
+     */
+    public function linkedin()
+    {
+        return view('pages.social.linkedin');  
+    }
+
+    /**
+     * Twitter Social Media Page
+     */
+    public function twitter()
+    {
+        return view('pages.social.twitter');  
+    }
+
     // Additional VoIP methods (add as needed):
     
     /*
