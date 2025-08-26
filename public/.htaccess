@@ -140,15 +140,18 @@
     
     # Check if browser accepts WebP
     RewriteCond %{HTTP_ACCEPT} image/webp
-    # Check if WebP version exists
-    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.webp -f
+    # Check if WebP version exists  
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} ^(.+)\.(jpg|jpeg|png)$
+    RewriteCond %{DOCUMENT_ROOT}%1.webp -f
     # Serve WebP instead of original image
-    RewriteRule ^(.+)\.(jpg|jpeg|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+    RewriteRule ^(.+)\.(jpg|jpeg|png)$ $1.webp [T=image/webp,E=accept:1]
 </IfModule>
 
 <IfModule mod_headers.c>
     # Add Vary header for WebP serving
-    Header append Vary Accept env=REDIRECT_accept
+    <FilesMatch "\.(jpg|jpeg|png|webp)$">
+        Header append Vary Accept
+    </FilesMatch>
 </IfModule>
 
 # ==========================================
