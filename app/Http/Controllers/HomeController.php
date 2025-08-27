@@ -117,6 +117,7 @@ class HomeController extends Controller
         return view('solutions.government');  
     }
 
+
     // Additional VoIP methods (add as needed):
     
     /*

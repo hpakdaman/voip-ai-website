@@ -1,3 +1,163 @@
+# ==========================================
+# SAWTIC PERFORMANCE OPTIMIZATION
+# ==========================================
+
+# Enable Apache modules (if available)
+<IfModule mod_deflate.c>
+    # Enable Gzip compression for better performance
+</IfModule>
+
+<IfModule mod_expires.c>
+    # Enable expires headers for browser caching
+</IfModule>
+
+# ==========================================
+# BROWSER CACHING HEADERS
+# ==========================================
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    
+    # Images - Cache for 1 year (since they're optimized and rarely change)
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+    
+    # Fonts - Cache for 1 year
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/eot "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    
+    # CSS and JS - Cache for 1 month (may change with updates)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # Documents and Media - Cache for 1 week
+    ExpiresByType application/pdf "access plus 1 week"
+    ExpiresByType audio/mp3 "access plus 1 month"
+    ExpiresByType video/mp4 "access plus 1 month"
+    
+    # Default for other static files - Cache for 1 week
+    ExpiresDefault "access plus 1 week"
+</IfModule>
+
+# ==========================================
+# CACHE CONTROL HEADERS (Alternative method)
+# ==========================================
+
+<IfModule mod_headers.c>
+    # Images - 1 year cache
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
+        Header unset Last-Modified
+        Header unset ETag
+        FileETag None
+    </FilesMatch>
+    
+    # Fonts - 1 year cache
+    <FilesMatch "\.(woff|woff2|ttf|eot|otf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
+    </FilesMatch>
+    
+    # CSS and JS - 1 month cache
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+        Header set Expires "Fri, 30 Sep 2024 23:59:59 GMT"
+    </FilesMatch>
+    
+    # Security headers for better performance and security
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Remove server signature for security
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# ==========================================
+# GZIP COMPRESSION
+# ==========================================
+
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    
+    # Remove browser bugs (only needed for really old browsers)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# ==========================================
+# IMAGE-SPECIFIC OPTIMIZATIONS
+# ==========================================
+
+# Prevent image hotlinking (optional)
+<IfModule mod_rewrite.c>
+    # RewriteCond %{HTTP_REFERER} !^$
+    # RewriteCond %{HTTP_REFERER} !^https://(www\.)?sawtic\.com/ [NC]
+    # RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F]
+</IfModule>
+
+# WebP serving (if browser supports it)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Check if browser accepts WebP
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    # Check if WebP version exists  
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} ^(.+)\.(jpg|jpeg|png)$
+    RewriteCond %{DOCUMENT_ROOT}%1.webp -f
+    # Serve WebP instead of original image
+    RewriteRule ^(.+)\.(jpg|jpeg|png)$ $1.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Add Vary header for WebP serving
+    <FilesMatch "\.(jpg|jpeg|png|webp)$">
+        Header append Vary Accept
+    </FilesMatch>
+</IfModule>
+
+# ==========================================
+# LARAVEL FRAMEWORK RULES
+# ==========================================
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes

@@ -2,11 +2,22 @@
 <html lang="en" class="dark scroll-smooth" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>@yield('title')</title>
+        {{-- <title>@yield('title')</title> --}}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Sawtic - Dubai's premier AI call center and business automation solution provider. Transform your customer service with intelligent AI agents and advanced automation.">
-        <meta name="keywords" content="AI call center, business automation, Dubai AI solutions, intelligent agents, customer service automation, UAE AI technology, call center software, business intelligence">
-        <meta name="author" content="Sawtic">
+        <!-- SEO Meta Tags -->
+        {!! SEOMeta::generate() !!}
+        {!! OpenGraph::generate() !!}
+        {!! Twitter::generate() !!}
+        {!! JsonLd::generate() !!}
+        
+        <!-- Geographic and Language Tags -->
+        <meta name="geo.region" content="AE-DU">
+        <meta name="geo.placename" content="Dubai, UAE">
+        <meta name="geo.position" content="25.276987;55.296249">
+        <meta name="ICBM" content="25.276987, 55.296249">
+        <meta name="language" content="en">
+        
+        <!-- Additional Meta Tags -->
         <meta name="website" content="https://sawtic.com">
         <meta name="email" content="dubai@sawtic.com">
         <meta name="version" content="3.0.0">
@@ -42,6 +53,8 @@
         <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
         <!-- VoIP AI Custom Styles -->
         <link rel="stylesheet" href="{{ asset('assets/css/voip-home.css') }}">
+
+        @stack('structured-data')
 
     </head>
     
@@ -86,6 +99,8 @@
         <script src="{{ asset('assets/js/voip-home.js') }}"></script>
         <!-- Image Fallback Handler -->
         <script src="{{ asset('assets/js/image-fallback.js') }}"></script>
+        <!-- Lazy Loading for Performance -->
+        <script src="{{ asset('assets/js/lazy-loading.js') }}"></script>
         <!-- JAVASCRIPTS -->
 
         <script>

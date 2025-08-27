@@ -27,11 +27,18 @@
         // Add a class to indicate this is a fallback image
         img.classList.add('fallback-image');
         
-        // Optionally add some styling to fallback images
-        img.style.opacity = '0.7';
-        img.style.filter = 'grayscale(20%)';
+        // Only apply subtle styling to actual fallback images (no-image.svg)
+        // Don't apply opacity reduction to actual content images
+        if (img.src.includes('no-image.svg')) {
+            img.style.filter = 'grayscale(20%)';
+        }
         
-        console.log('Image failed to load, replaced with fallback:', img.getAttribute('data-original-src') || img.dataset.src || 'unknown');
+        console.log('Image failed to load, replaced with fallback:', {
+            originalSrc: img.getAttribute('data-original-src') || 'unknown',
+            currentSrc: img.src,
+            dataLazy: img.dataset.lazy,
+            hasLazyClass: img.classList.contains('lazy-loading')
+        });
     }
     
     /**

@@ -25,7 +25,7 @@ fi
 
 # Step 1: Merge dev to main
 echo -e "${BLUE}📋 Step 1: Merging dev to production...${NC}"
-./merge-to-production.sh "$COMMIT_MESSAGE"
+./scripts/merge-to-production.sh "$COMMIT_MESSAGE"
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Production merge failed. Deployment cancelled.${NC}"
@@ -36,7 +36,7 @@ echo -e "${GREEN}✅ Step 1 completed: dev merged to main${NC}"
 
 # Step 2: Deploy to production server
 echo -e "${BLUE}📋 Step 2: Deploying to production server...${NC}"
-./deploy-production.sh
+./scripts/deploy-production.sh
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Production deployment failed.${NC}"
