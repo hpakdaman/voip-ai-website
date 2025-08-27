@@ -25,7 +25,7 @@
         }
     },
     "hero_images": {
-        "main": "/assets/images/solutions/education/hero.jpg"
+        "main": "/assets/images/education/hero.jpg"
     },
     "voice_demo": {
         "title": "🎧 Listen: AI Handling Student Admission Inquiry",

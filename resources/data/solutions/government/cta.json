@@ -24,7 +24,7 @@
                 "icon": "uil-users-alt"
             }
         ],
-        "background_image": "/assets/images/solutions/government/cta-bg.jpg",
+        "background_image": "/assets/images/government/bg.jpg",
         "urgency": {
             "title": "Special Government Pricing",
             "description": "Public agencies get 40% off implementation costs - limited time offer for early adopters",
