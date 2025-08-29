@@ -24,7 +24,8 @@
       "Bash(./scripts/sync-to-dev.sh:*)",
       "Bash(php artisan:*)",
       "Read(/Users/hamed/Sites/dubai-voip/examples/Admin/resources/views/**)",
-      "Bash(./scripts/optimize-images.sh:*)"
+      "Bash(./scripts/optimize-images.sh:*)",
+      "Bash(php scripts/validate-solutions.php:*)"
     ],
     "deny": [],
     "ask": []
