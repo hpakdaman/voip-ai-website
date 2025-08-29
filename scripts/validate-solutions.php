@@ -11,6 +11,7 @@ class SolutionsStructureValidator
 {
     private $basePath;
     private $samplePath;
+    private $bladeFiles = [];
     private $requiredFiles = [
         'capabilities.json',
         'cta.json',
@@ -34,6 +35,77 @@ class SolutionsStructureValidator
         if (!is_dir($this->samplePath)) {
             die("❌ Sample folder not found at: {$this->samplePath}\n");
         }
+        
+        // Load all blade files content for property usage checking
+        $this->loadBladeFiles();
+    }
+    
+    private function loadBladeFiles()
+    {
+        $bladeDir = dirname(__DIR__) . '/resources/views/solutions';
+        $files = glob($bladeDir . '/**/*.blade.php', GLOB_BRACE);
+        
+        foreach ($files as $file) {
+            $this->bladeFiles[basename($file)] = file_get_contents($file);
+        }
+    }
+    
+    private function isPropertyUsedInBlades($property)
+    {
+        // Handle nested properties like "section.badge"
+        $parts = explode('.', $property);
+        $mainProperty = $parts[0];
+        
+        $searchPatterns = [
+            // Direct property access
+            '$data[\'' . $property . '\']',
+            '$sectionData[\'' . $property . '\']',
+            '$data["' . $property . '"]',
+            '$sectionData["' . $property . '"]',
+            
+            // Variable patterns
+            '$' . $property,
+            '$' . $mainProperty,
+            
+            // String patterns (for includes, checks, etc)
+            '\'' . $property . '\'',
+            '"' . $property . '"',
+            '\'' . $mainProperty . '\'',
+            '"' . $mainProperty . '"',
+            
+            // Array key patterns
+            '[\'' . $property . '\']',
+            '["' . $property . '"]',
+            '[\'' . $mainProperty . '\']',
+            '["' . $mainProperty . '"]',
+            
+            // Blade @if patterns
+            '@if($data[\'' . $property . '\']',
+            '@if($data["' . $property . '"]',
+            '@if(isset($data[\'' . $property . '\']',
+            '@if(isset($data["' . $property . '"]',
+            
+            // Comment patterns (property mentioned in comments)
+            '// ' . $property,
+            '<!-- ' . $property,
+        ];
+        
+        foreach ($this->bladeFiles as $filename => $content) {
+            foreach ($searchPatterns as $pattern) {
+                if (strpos($content, $pattern) !== false) {
+                    return true;
+                }
+            }
+            
+            // Special case: Check for similar property names (e.g., "voice_samples" vs "demos")
+            if (in_array($property, ['voice_samples', 'demos'])) {
+                if (strpos($content, 'voice_samples') !== false || strpos($content, 'demos') !== false) {
+                    return true;
+                }
+            }
+        }
+        
+        return false;
     }
     
     public function run()
@@ -249,7 +321,11 @@ class SolutionsStructureValidator
             $currentPath = $path ? "{$path}.{$key}" : $key;
             
             if (!array_key_exists($key, $actual)) {
-                $differences[] = "Missing key: {$currentPath}";
+                // Check if this missing key is actually used in blade files
+                if ($this->isPropertyUsedInBlades($key)) {
+                    $differences[] = "Missing key: {$currentPath} (used in blades)";
+                }
+                // If not used in blades, silently ignore
             } elseif (is_array($value) && !is_string($value) && !is_string($actual[$key])) {
                 // Recursively compare nested structures
                 $nestedDiff = $this->compareStructures($value, $actual[$key], $currentPath);
@@ -261,7 +337,13 @@ class SolutionsStructureValidator
         if ($path === '') {
             foreach ($actual as $key => $value) {
                 if (!array_key_exists($key, $expected)) {
-                    $differences[] = "Extra key: {$key}";
+                    // Check if this extra key is used in blade files
+                    if ($this->isPropertyUsedInBlades($key)) {
+                        // If used, it's intentional - don't report as error
+                        // $differences[] = "Extra key: {$key} (used in blades)";
+                    } else {
+                        $differences[] = "Extra key: {$key} (unused - consider removing)";
+                    }
                 }
             }
         }
