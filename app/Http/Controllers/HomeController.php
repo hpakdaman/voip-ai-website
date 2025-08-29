@@ -23,7 +23,7 @@ class HomeController extends Controller
         OpenGraph::setTitle('Sawtic | AI Call Center Solutions UAE');
         OpenGraph::setDescription('Advanced AI call center solutions for UAE businesses. Virtual assistants, automated customer service, and intelligent communication technology in Dubai.');
         OpenGraph::setUrl('https://sawtic.com/');
-        OpenGraph::addImage('https://sawtic.com/assets/images/sawtic-ai-solutions.webp');
+        OpenGraph::addImage('https://sawtic.com/assets/images/corporate/experience-wall.webp');
         
         return view('index');  
     }
