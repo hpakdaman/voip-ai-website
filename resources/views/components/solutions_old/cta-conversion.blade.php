@@ -32,7 +32,7 @@
 <section class="relative py-24" style="background-color: var(--voip-bg);">
     <div class="absolute inset-0">
         <!-- Background Image -->
-        <img data-lazy="{{ asset($ctaContent['bg_image']) }}" alt="{{ $ctaContent['alt_text'] }}"
+        <img data-src="{{ asset($ctaContent['bg_image']) }}" alt="{{ $ctaContent['alt_text'] }}"
             class="lazy-loading w-full h-full object-cover opacity-20">
         <!-- Conversion-focused background overlay -->
         <div class="absolute inset-0"

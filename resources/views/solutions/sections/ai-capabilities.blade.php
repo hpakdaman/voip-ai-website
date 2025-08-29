@@ -98,7 +98,7 @@ $integrationStats = $data['integration_stats'] ?? [];
                 <!-- Demo Image -->
                 <div class="relative order-2 lg:order-1">
                     @if(isset($data['demo_image']) || isset($sectionData['demo_image']))
-                    <img data-lazy="{{ asset($data['demo_image'] ?? $sectionData['demo_image']) }}" 
+                    <img data-src="{{ asset($data['demo_image'] ?? $sectionData['demo_image']) }}" 
                          alt="{{ $data['demo_alt'] ?? $sectionData['demo_alt'] ?? 'Professional Using AI Assistant' }}" 
                          class="lazy-loading w-full h-[400px] object-cover rounded-2xl shadow-2xl">
                     @else

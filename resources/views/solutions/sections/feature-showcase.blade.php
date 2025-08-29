@@ -30,7 +30,7 @@ $consultationData = $data['consultation'] ?? [];
                 </ul>
             </div>
             <div class="relative">
-                <img data-lazy="{{ asset($dashboardData['image'] ?? 'assets/images/no-image.svg') }}"
+                <img data-src="{{ asset($dashboardData['image'] ?? 'assets/images/no-image.svg') }}"
                     alt="{{ $dashboardData['title'] ?? 'Dashboard' }}" class="lazy-loading w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl">
                 </div>
@@ -59,7 +59,7 @@ $consultationData = $data['consultation'] ?? [];
         <!-- Second Feature Row -->
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative order-2 lg:order-1">
-                <img data-lazy="{{ asset($consultationData['image'] ?? 'assets/images/no-image.svg') }}"
+                <img data-src="{{ asset($consultationData['image'] ?? 'assets/images/no-image.svg') }}"
                     alt="{{ $consultationData['title'] ?? 'Consultation' }}" class="lazy-loading w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl">
                 </div>

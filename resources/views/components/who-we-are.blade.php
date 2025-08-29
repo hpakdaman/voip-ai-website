@@ -100,12 +100,12 @@ usort($whoWeAreFeatures, function($a, $b) {
                     <!-- Professional business image -->
                     <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                         @if(isset($visualData['image_path']))
-                            <img data-lazy="{{ asset($visualData['image_path']) }}" 
+                            <img data-src="{{ asset($visualData['image_path']) }}" 
                                  alt="{{ $visualData['alt_text'] ?? 'Professional business team' }}" 
                                  class="lazy-loading w-full h-full object-cover">
                         @else
                             <!-- Fallback placeholder -->
-                            <img data-lazy="{{ asset('assets/images/business/about01.jpg') }}" 
+                            <img data-src="{{ asset('assets/images/business/about01.jpg') }}" 
                                  alt="Professional business team collaboration" 
                                  class="lazy-loading w-full h-full object-cover">
                         @endif

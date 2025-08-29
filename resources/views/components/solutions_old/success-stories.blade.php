@@ -97,7 +97,7 @@
                     <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
                     <p class="text-slate-300 text-lg leading-relaxed mb-6">"{{ $testimonial['quote'] }}"</p>
                     <div class="flex items-center">
-                        <img data-lazy="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}"
+                        <img data-src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}"
                             class="lazy-loading w-12 h-12 rounded-full mr-4 object-cover">
                         <div>
                             <h4 class="text-white font-semibold">{{ $testimonial['name'] }}</h4>

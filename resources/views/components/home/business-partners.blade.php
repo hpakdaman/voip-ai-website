@@ -27,37 +27,37 @@
         <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-8 items-center justify-items-center">
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/amazon.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Amazon">
+                    <img data-src="{{ asset('assets/images/client/amazon.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Amazon">
                 </div>
             </div>
             
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/google.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Google">
+                    <img data-src="{{ asset('assets/images/client/google.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Google">
                 </div>
             </div>
             
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/lenovo.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Lenovo">
+                    <img data-src="{{ asset('assets/images/client/lenovo.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Lenovo">
                 </div>
             </div>
             
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/paypal.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="PayPal">
+                    <img data-src="{{ asset('assets/images/client/paypal.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="PayPal">
                 </div>
             </div>
             
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/shopify.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Shopify">
+                    <img data-src="{{ asset('assets/images/client/shopify.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Shopify">
                 </div>
             </div>
             
             <div class="group wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
                 <div class="relative p-6 rounded-2xl border border-white/10 transition-all duration-500 hover:border-white/30 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, rgba(22, 47, 58, 0.2) 100%); backdrop-filter: blur(10px);">
-                    <img data-lazy="{{ asset('assets/images/client/spotify.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Spotify">
+                    <img data-src="{{ asset('assets/images/client/spotify.svg') }}" class="lazy-loading h-8 opacity-70 group-hover:opacity-100 transition-opacity duration-300" alt="Spotify">
                 </div>
             </div>
         </div>

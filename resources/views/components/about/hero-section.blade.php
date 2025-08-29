@@ -70,7 +70,7 @@ try {
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Team Image -->
-                    <img data-lazy="{{ asset('assets/images/about/about02.png') }}" 
+                    <img data-src="{{ asset('assets/images/about/about02.png') }}" 
                          alt="VoIP AI Solutions Dubai Professional Team" 
                          class="lazy-loading w-full h-[500px] lg:h-[600px] object-contain rounded-2xl">
                     

@@ -127,11 +127,11 @@ $integrationStats = $capabilitiesData['integration_stats'] ?? [];
                 <!-- Demo Image -->
                 <div class="relative order-2 lg:order-1">
                     @if(str_contains(request()->path(), 'spa-massage'))
-                    <img data-lazy="{{ asset('assets/images/spa/ab1.jpg') }}" 
+                    <img data-src="{{ asset('assets/images/spa/ab1.jpg') }}" 
                          alt="Spa Professional Using AI Assistant" 
                          class="lazy-loading w-full h-[400px] object-cover rounded-2xl shadow-2xl">
                     @else
-                    <img data-lazy="{{ asset('assets/images/real/about.jpg') }}" 
+                    <img data-src="{{ asset('assets/images/real/about.jpg') }}" 
                          alt="Real Estate Professional Using AI Assistant" 
                          class="lazy-loading w-full h-[400px] object-cover rounded-2xl shadow-2xl">
                     @endif
