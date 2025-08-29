@@ -179,8 +179,23 @@ feather.replace();
 /*     Small Menu    */
 /*********************/
 try {
-    new Gumshoe('#navmenu-nav a');
-} catch (err) { }
+    // Only initialize Gumshoe if the navigation menu exists
+    const navMenu = document.querySelector('#navmenu-nav');
+    if (navMenu && navMenu.querySelectorAll('a').length > 0) {
+        new Gumshoe('#navmenu-nav a', {
+            offset: 80,
+            reflow: true,
+            navClass: 'active',
+            contentClass: 'active',
+            nested: false,
+            nestedClass: 'active',
+            events: false
+        });
+    }
+} catch (err) { 
+    // Silently fail if Gumshoe has issues
+    console.log('Gumshoe navigation not initialized:', err.message);
+}
 
 /*********************/
 /*      WoW Js       */
