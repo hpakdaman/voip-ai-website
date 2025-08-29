@@ -53,7 +53,7 @@
     "dashboard": {
         "title": "Real-Time Dashboard",
         "description": "Monitor your operations with comprehensive analytics.",
-        "image": "/assets/images/dashboard.jpg",
+        "image": "/assets/images/education/dashboard.jpg",
         "features": [
             "Live call monitoring",
             "Instant lead notifications",
@@ -63,7 +63,7 @@
     "consultation": {
         "title": "Expert Consultation",
         "description": "Get professional insights tailored to your needs.",
-        "image": "/assets/images/consultation.jpg",
+        "image": "/assets/images/education/consultation.webp",
         "features": [
             "Real-time policy and regulation information",
             "UAE federal and emirate-specific guidelines",
