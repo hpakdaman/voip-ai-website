@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Sawtic | AI Call Agents & Virtual Call Center Solutions in UAE')
+@section('title', 'Sawtic | AI Call Center Solutions UAE - Dubai Business')
 
 @section('content')
 

@@ -136,6 +136,15 @@ Sawtic | [Page-Specific Description]
 
 📋 **Detailed Guidelines**: See [docs/COMPONENT-ARCHITECTURE.md](docs/COMPONENT-ARCHITECTURE.md) for complete modular architecture, JSON patterns, and integration requirements.
 
+## 🚨 CRITICAL: SEO Management with Laravel SEOTools
+📋 **SEO Library**: Uses `artesaos/seotools` package for comprehensive SEO management  
+📋 **Meta Tags**: All pages use SEOTools in main layout (`layouts/main.blade.php` lines 8-11)  
+📋 **Page Titles**: Set via `@section('title', 'Page Title')` in each view (must be <580 pixels)  
+📋 **Meta Descriptions**: Configure via SEOTools::setDescription() in controllers  
+📋 **Schema Markup**: JsonLd automatically generated via SEOTools  
+
+📋 **SEO Standards**: All titles must start with "Sawtic |", include UAE/Dubai keywords, and be under 580 pixels length
+
 ## Git Workflow for Team Development
 📋 **4-Branch Structure**: main → dev → hamed/ashkan (production → shared → personal branches)  
 📋 **Deployment Commands**: `./scripts/sync-to-dev.sh`, `./scripts/deploy-production.sh`, `./scripts/hotfix-to-main.sh`  

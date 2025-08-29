@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use SEOMeta;
+use OpenGraph;
+use Twitter;
+use JsonLd;
 
 class HomeController extends Controller
 {
@@ -10,6 +14,17 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // SEO Meta Tags
+        SEOMeta::setTitle('Sawtic | AI Call Center Solutions UAE - Dubai Business');
+        SEOMeta::setDescription('Leading AI call center solutions in UAE. Advanced virtual assistants, automated customer service, and intelligent communication technology for Dubai businesses.');
+        SEOMeta::setCanonical('https://sawtic.com/');
+        
+        // Open Graph
+        OpenGraph::setTitle('Sawtic | AI Call Center Solutions UAE');
+        OpenGraph::setDescription('Advanced AI call center solutions for UAE businesses. Virtual assistants, automated customer service, and intelligent communication technology in Dubai.');
+        OpenGraph::setUrl('https://sawtic.com/');
+        OpenGraph::addImage('https://sawtic.com/assets/images/sawtic-ai-solutions.webp');
+        
         return view('index');  
     }
 
