@@ -1,0 +1,28 @@
+/* ==========================================
+   SAWTIC AI - BUNDLED CSS FILE
+   All CSS files combined into single bundle for performance
+   ========================================== */
+
+/* Base App CSS (Tailwind) */
+@import './app.css';
+
+/* Third Party Libraries CSS */
+@import '@assets/libs/animate.css/animate.min.css';
+@import '@assets/libs/tobii/css/tobii.min.css';
+@import '@assets/libs/tiny-slider/tiny-slider.css';
+@import '@assets/libs/swiper/swiper-bundle.min.css';
+@import '@assets/libs/js-datepicker/datepicker.min.css';
+@import '@assets/libs/choices.js/public/assets/styles/choices.min.css';
+
+/* Icon Libraries */
+@import '@assets/libs/@iconscout/unicons/css/line.css';
+@import '@assets/libs/@mdi/font/css/materialdesignicons.min.css';
+
+/* Local Fonts (Development) */
+@import '@assets/css/local-fonts.css';
+
+/* Main Tailwind CSS */
+@import '@assets/css/tailwind.css';
+
+/* VoIP AI Custom Styles */
+@import '@assets/css/voip-home.css';

@@ -29,16 +29,6 @@
         <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}">
         <link rel="apple-touch-icon" href="{{ asset('assets/images/favicon.svg') }}">
 
-        <!-- Css -->
-        <link href="{{ asset('assets/libs/animate.css/animate.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/libs/tobii/css/tobii.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/libs/tiny-slider/tiny-slider.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/libs/js-datepicker/datepicker.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/libs/choices.js/public/assets/styles/choices.min.css') }}" rel="stylesheet">
-        <!-- Main Css -->
-        <link href="{{ asset('assets/libs/@iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet">
-        <link href="{{ asset('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css">
         @if(is_localhost())
             <!-- Local Fonts for Development -->
             <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
@@ -49,10 +39,11 @@
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         @endif
         
-        @vite('resources/css/app.css')
-        <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}">
-        <!-- VoIP AI Custom Styles -->
-        <link rel="stylesheet" href="{{ asset('assets/css/voip-home.css') }}">
+        <!-- Bundled CSS and JS Assets - CSS loaded first to prevent FOUC -->
+        @vite(['resources/css/bundle.css', 'resources/js/bundle.js'])
+        
+        <!-- WOW.js loaded directly to avoid module issues -->
+        <script src="{{ asset('assets/libs/wow.js/wow.min.js') }}"></script>
 
         @stack('structured-data')
 
@@ -79,29 +70,7 @@
         <!-- Back to top -->
 
 
-        <!-- JAVASCRIPTS -->
-        <script src="{{ asset('assets/libs/jarallax/jarallax.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/particles.js/particles.js') }}"></script>
-        <script src="{{ asset('assets/libs/wow.js/wow.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/tobii/js/tobii.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/swiper/swiper-bundle.min.js') }}"></script>
-        <script src="{{ asset('assets/js/easy_background.js') }}"></script>
         @stack('scripts')
-        <script src="{{ asset('assets/libs/shufflejs/shuffle.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/js-datepicker/datepicker.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/choices.js/public/assets/scripts/choices.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/gumshoejs/gumshoe.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/feather-icons/feather.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/tiny-slider/min/tiny-slider.js') }}"></script>
-        <script src="{{ asset('assets/js/plugins.init.js') }}"></script>
-        <script src="{{ asset('assets/js/app.js') }}"></script>
-        <!-- VoIP AI Interactive Features -->
-        <script src="{{ asset('assets/js/voip-home.js') }}"></script>
-        <!-- Image Fallback Handler -->
-        <script src="{{ asset('assets/js/image-fallback.js') }}"></script>
-        <!-- Vanilla Lazy Loading for Performance -->
-        <script src="{{ asset('assets/js/vanilla-lazy-loading.js') }}"></script>
-        <!-- JAVASCRIPTS -->
 
         <script>
             const handleChange = () => {
@@ -128,9 +97,6 @@
         <!-- JAVASCRIPTS -->
 
         <script>
-            // Hide all WOW elements immediately to prevent flash
-            document.documentElement.style.setProperty('--wow-visibility', 'hidden');
-            
             document.addEventListener("DOMContentLoaded", function () {
                 // Force dark theme permanently
                 const htmlElement = document.documentElement;
