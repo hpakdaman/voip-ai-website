@@ -18,7 +18,7 @@
         
         // IMPORTANT: Don't handle errors for lazy loading images
         // Let the lazy loader handle its own fallback logic
-        if (img.hasAttribute('data-lazy') || img.classList.contains('lazy-loading')) {
+        if (img.hasAttribute('data-lazy') || img.hasAttribute('data-src') || img.classList.contains('lazy-loading') || img.classList.contains('lozad')) {
             return;
         }
         
