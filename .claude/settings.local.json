@@ -24,7 +24,9 @@
       "Bash(./scripts/sync-to-dev.sh:*)",
       "Bash(php artisan:*)",
       "Read(/Users/hamed/Sites/dubai-voip/examples/Admin/resources/views/**)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl:*)",
+      "Bash(brew services restart:*)"
     ],
     "deny": [],
     "ask": []
