@@ -109,6 +109,7 @@
         "total_demos": 6,
         "total_duration": "11:15",
         "languages": ["English", "Arabic"],
-        "scenarios_covered": ["inquiry", "qualification", "scheduling", "investment", "multilingual", "emergency"]
+        "scenarios_covered": ["inquiry", "qualification", "scheduling", "investment", "multilingual", "emergency"],
+        "industry": "real_estate"
     }
 }

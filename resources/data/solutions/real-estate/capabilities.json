@@ -179,6 +179,7 @@
         "last_updated": "2025-01-19",
         "total_capabilities": 6,
         "total_integrations": 12,
-        "industry_focus": "UAE real estate market"
+        "industry_focus": "UAE real estate market",
+        "industry": "real_estate"
     }
 }

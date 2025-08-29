@@ -1,9 +1,36 @@
 {
     "section": {
         "title": "Hear Your AI Banking Assistant in Action",
-        "description": "Listen to real conversations showcasing how our AI handles various banking scenarios with professional, secure communication following Central Bank guidelines."
+        "description": "Listen to real conversations showcasing how our AI handles various banking scenarios with professional, secure communication following Central Bank guidelines.",
+        "badge": "Voice Demonstrations",
+        "highlighted": "Handle Real Calls"
     },
-    "voice_demos": [
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_demos": 4,
+        "industry": "finance_banking",
+        "demo_types": [
+            "account_opening",
+            "loan_inquiry",
+            "investment_advisory",
+            "customer_service"
+        ],
+        "total_duration": "11:15",
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "scenarios_covered": [
+            "[scenario1]",
+            "[scenario2]",
+            "[scenario3]",
+            "[scenario4]",
+            "[scenario5]",
+            "[scenario6]"
+        ]
+    },
+    "demos": [
         {
             "id": 1,
             "title": "Account Opening Inquiry",
@@ -23,7 +50,7 @@
                     "timestamp": "0:08"
                 },
                 {
-                    "speaker": "AI Agent", 
+                    "speaker": "AI Agent",
                     "text": "Congratulations on your new business! I'd be happy to help you open a business account. May I start by getting your trade license number and the nature of your consulting business?",
                     "timestamp": "0:12"
                 },
@@ -37,13 +64,23 @@
                     "text": "Perfect! For IT consulting, our Business Plus account offers excellent benefits including free international transfers and priority customer service. I can schedule an appointment with our business specialist tomorrow at 10 AM or 2 PM to complete the process.",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "[demo-type-1]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo1]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
             "id": 2,
             "title": "Loan Pre-Qualification",
             "description": "Customer inquiring about personal loan eligibility and rates",
-            "duration": "45 seconds", 
+            "duration": "45 seconds",
             "scenario": "Loan inquiry",
             "file_path": "/assets/audio/solutions/finance-banking/loan-inquiry-demo.mp3",
             "transcript": [
@@ -72,6 +109,16 @@
                     "text": "Excellent! Based on your salary, you're pre-qualified for up to 150,000 AED at 5.2% APR. For 100,000 AED over 5 years, your monthly payment would be approximately 1,890 AED. Would you like me to start your application?",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "[demo-type-2]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo2]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -107,6 +154,16 @@
                     "text": "Historically, this allocation has delivered 8-12% annual returns. Our management fee is 1.2% annually, and I can schedule a detailed consultation with our senior wealth advisor to discuss your specific financial goals and risk tolerance.",
                     "timestamp": "0:38"
                 }
+            ],
+            "type": "[demo-type-3]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo3]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -114,7 +171,7 @@
             "title": "Account Service Request",
             "description": "Existing customer requesting account information and transaction help",
             "duration": "40 seconds",
-            "scenario": "Customer service", 
+            "scenario": "Customer service",
             "file_path": "/assets/audio/solutions/finance-banking/account-service-demo.mp3",
             "transcript": [
                 {
@@ -142,14 +199,49 @@
                     "text": "Thank you for verification. Your current account balance is 45,680 AED. For the standing order, I can set up monthly rent payments. What amount and date would you like the transfer to occur each month?",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "[demo-type-4]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo4]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 5 Title]",
+            "scenario": "[Demo 5 scenario description]",
+            "description": "Detailed description of what happens in demo 5, showing AI expertise",
+            "duration": "1:55",
+            "type": "[demo-type-5]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo5]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 6 Title]",
+            "scenario": "[Demo 6 scenario description]",
+            "description": "Detailed description of what happens in demo 6, showing AI expertise",
+            "duration": "1:10",
+            "type": "[demo-type-6]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo6]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         }
-    ],
-    "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-22",
-        "total_demos": 4,
-        "industry": "banking and financial services",
-        "demo_types": ["account_opening", "loan_inquiry", "investment_advisory", "customer_service"]
-    }
+    ]
 }

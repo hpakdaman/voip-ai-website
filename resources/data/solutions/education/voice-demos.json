@@ -3,63 +3,161 @@
         "badge": "AI Command Center",
         "headline": "See Sawtic AI",
         "title": "See Sawtic AI",
-        "subheadline": "Real conversations showing how our AI serves educational institutions with empathy, accuracy, and professionalism"
+        "subheadline": "Real conversations showing how our AI serves educational institutions with empathy, accuracy, and professionalism",
+        "highlighted": "Voice Demonstrations",
+        "description": "Listen to real conversations showing AI in action."
     },
-    "voice_samples": [
-            {
-                "title": "Prospective Student Inquiry",
-                "description": "AI handles detailed questions about program requirements, application deadlines, and campus life",
-                "scenario": "undergraduate_inquiry",
-                "duration": "3:45",
-                "audio_file": "/assets/audio/solutions/education/education-inquiry.mp3",
-                "transcript": "Student: Hi, I'm interested in your business administration program. What are the admission requirements?\n\nAI Agent: Hello! I'd be happy to help you with information about our Business Administration program. For undergraduate admission, you'll need: a high school diploma with minimum 3.0 GPA, SAT scores of 1200+ or ACT 25+, two letters of recommendation, and a personal statement. The program includes concentrations in Marketing, Finance, and Management. Would you like specific information about any of these concentrations?",
-                "tags": ["Admissions", "Program Information", "Requirements"]
-            },
-            {
-                "title": "Current Student Support",
-                "description": "AI assists enrolled student with course registration and academic planning",
-                "scenario": "student_support",
-                "duration": "2:30",
-                "audio_file": "/assets/audio/solutions/education/education-support.mp3",
-                "transcript": "Student: I need help with course registration for next semester. I'm a junior majoring in Computer Science.\n\nAI Agent: I can help you with registration! Based on your academic record, you need 15 more credits in core CS courses and 6 elective credits to stay on track for graduation. For next semester, I recommend CS 335 Database Systems and CS 342 Software Engineering, both are available with morning and afternoon sections. Would you like me to check the current enrollment status for these courses?",
-                "tags": ["Student Support", "Registration", "Academic Planning"]
-            },
-            {
-                "title": "International Student Assistance",
-                "description": "Multilingual support for international student visa and program questions",
-                "scenario": "international_support",
-                "duration": "4:15",
-                "audio_file": "/assets/audio/solutions/education/education-international.mp3",
-                "transcript": "Student: مرحبا، أنا طالب دولي من الإمارات وأريد معلومات عن برنامج الهندسة\n\nAI Agent: أهلاً وسهلاً! يسعدني مساعدتك. برنامج الهندسة لدينا معترف به دولياً ويقبل الطلاب الدوليين. بالنسبة للطلاب من الإمارات، ستحتاج إلى شهادة الثانوية العامة مع معدل 85% على الأقل، ودرجة IELTS 6.5 أو TOEFL 80. كما نساعد في إجراءات الفيزا الدراسية. هل تريد معلومات أكثر عن التخصصات المتاحة؟",
-                "tags": ["International Students", "Arabic Support", "Visa Information"]
-            },
-            {
-                "title": "Parent Information Call",
-                "description": "AI provides comprehensive information to concerned parent about student services and safety",
-                "scenario": "parent_inquiry",
-                "duration": "3:20",
-                "audio_file": "/assets/audio/solutions/education/education-parent.mp3",
-                "transcript": "Parent: I'm calling about my daughter who's starting next fall. What security measures do you have on campus?\n\nAI Agent: I understand your concern for your daughter's safety. Our campus has 24/7 security patrol, emergency call boxes every 100 yards, well-lit pathways, and a campus escort service until 2 AM. We also have a campus safety app that connects directly to security. All residence halls require key card access, and we conduct monthly safety drills. Would you like information about our campus orientation program for new students and parents?",
-                "tags": ["Parent Communication", "Campus Safety", "Student Services"]
-            },
-            {
-                "title": "Financial Aid Guidance",
-                "description": "AI explains scholarship opportunities and financial aid application process",
-                "scenario": "financial_aid",
-                "duration": "3:55",
-                "audio_file": "/assets/audio/solutions/education/education-financial.mp3",
-                "transcript": "Student: I need help understanding the financial aid options available. My family's income is around $45,000.\n\nAI Agent: Based on your family income, you'll likely qualify for significant financial aid. I recommend applying for the Pell Grant first - with your income level, you could receive up to $6,895 per year. We also have institutional need-based grants averaging $8,000 for qualifying students. Additionally, there are merit scholarships based on academic performance. The priority deadline for financial aid is March 1st. Would you like me to help you understand the FAFSA application process?",
-                "tags": ["Financial Aid", "Scholarships", "FAFSA"]
-            },
-            {
-                "title": "Alumni Engagement",
-                "description": "AI maintains connection with graduates for networking and donation opportunities",
-                "scenario": "alumni_relations",
-                "duration": "2:45",
-                "audio_file": "/assets/audio/solutions/education/education-alumni.mp3",
-                "transcript": "Alumni: Hi, I graduated in 2018 with a degree in Marketing. I heard about the new business incubator program.\n\nAI Agent: Congratulations on your continued success! Yes, our new Business Innovation Incubator launched last year and it's been fantastic. As a marketing graduate, you'd be perfect for our mentor network. We're looking for professionals to guide current students and recent graduates. The program also hosts quarterly networking events - our next one is November 15th. Would you be interested in learning more about mentoring opportunities or attending the networking event?",
-                "tags": ["Alumni Relations", "Mentoring", "Networking"]
-            }
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-26",
+        "industry": "education",
+        "total_demos": 5,
+        "total_duration": "17:05",
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "scenarios_covered": [
+            "admissions",
+            "student_support",
+            "parent_communication",
+            "financial_aid",
+            "alumni_relations",
+            "[scenario6]"
         ]
-    }
+    },
+    "demos": [
+        {
+            "title": "Prospective Student Inquiry",
+            "description": "AI handles detailed questions about program requirements, application deadlines, and campus life",
+            "scenario": "undergraduate_inquiry",
+            "duration": "3:45",
+            "audio_file": "/assets/audio/solutions/education/education-inquiry.mp3",
+            "transcript": "Student: Hi, I'm interested in your business administration program. What are the admission requirements?\n\nAI Agent: Hello! I'd be happy to help you with information about our Business Administration program. For undergraduate admission, you'll need: a high school diploma with minimum 3.0 GPA, SAT scores of 1200+ or ACT 25+, two letters of recommendation, and a personal statement. The program includes concentrations in Marketing, Finance, and Management. Would you like specific information about any of these concentrations?",
+            "tags": [
+                "Admissions",
+                "Program Information",
+                "Requirements"
+            ],
+            "type": "[demo-type-1]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Current Student Support",
+            "description": "AI assists enrolled student with course registration and academic planning",
+            "scenario": "student_support",
+            "duration": "2:30",
+            "audio_file": "/assets/audio/solutions/education/education-support.mp3",
+            "transcript": "Student: I need help with course registration for next semester. I'm a junior majoring in Computer Science.\n\nAI Agent: I can help you with registration! Based on your academic record, you need 15 more credits in core CS courses and 6 elective credits to stay on track for graduation. For next semester, I recommend CS 335 Database Systems and CS 342 Software Engineering, both are available with morning and afternoon sections. Would you like me to check the current enrollment status for these courses?",
+            "tags": [
+                "Student Support",
+                "Registration",
+                "Academic Planning"
+            ],
+            "type": "[demo-type-2]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "International Student Assistance",
+            "description": "Multilingual support for international student visa and program questions",
+            "scenario": "international_support",
+            "duration": "4:15",
+            "audio_file": "/assets/audio/solutions/education/education-international.mp3",
+            "transcript": "Student: \u0645\u0631\u062d\u0628\u0627\u060c \u0623\u0646\u0627 \u0637\u0627\u0644\u0628 \u062f\u0648\u0644\u064a \u0645\u0646 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0648\u0623\u0631\u064a\u062f \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0639\u0646 \u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0644\u0647\u0646\u062f\u0633\u0629\n\nAI Agent: \u0623\u0647\u0644\u0627\u064b \u0648\u0633\u0647\u0644\u0627\u064b! \u064a\u0633\u0639\u062f\u0646\u064a \u0645\u0633\u0627\u0639\u062f\u062a\u0643. \u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0644\u062f\u064a\u0646\u0627 \u0645\u0639\u062a\u0631\u0641 \u0628\u0647 \u062f\u0648\u0644\u064a\u0627\u064b \u0648\u064a\u0642\u0628\u0644 \u0627\u0644\u0637\u0644\u0627\u0628 \u0627\u0644\u062f\u0648\u0644\u064a\u064a\u0646. \u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0644\u0644\u0637\u0644\u0627\u0628 \u0645\u0646 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u060c \u0633\u062a\u062d\u062a\u0627\u062c \u0625\u0644\u0649 \u0634\u0647\u0627\u062f\u0629 \u0627\u0644\u062b\u0627\u0646\u0648\u064a\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0645\u0639 \u0645\u0639\u062f\u0644 85% \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644\u060c \u0648\u062f\u0631\u062c\u0629 IELTS 6.5 \u0623\u0648 TOEFL 80. \u0643\u0645\u0627 \u0646\u0633\u0627\u0639\u062f \u0641\u064a \u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0641\u064a\u0632\u0627 \u0627\u0644\u062f\u0631\u0627\u0633\u064a\u0629. \u0647\u0644 \u062a\u0631\u064a\u062f \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0623\u0643\u062b\u0631 \u0639\u0646 \u0627\u0644\u062a\u062e\u0635\u0635\u0627\u062a \u0627\u0644\u0645\u062a\u0627\u062d\u0629\u061f",
+            "tags": [
+                "International Students",
+                "Arabic Support",
+                "Visa Information"
+            ],
+            "type": "[demo-type-3]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Parent Information Call",
+            "description": "AI provides comprehensive information to concerned parent about student services and safety",
+            "scenario": "parent_inquiry",
+            "duration": "3:20",
+            "audio_file": "/assets/audio/solutions/education/education-parent.mp3",
+            "transcript": "Parent: I'm calling about my daughter who's starting next fall. What security measures do you have on campus?\n\nAI Agent: I understand your concern for your daughter's safety. Our campus has 24/7 security patrol, emergency call boxes every 100 yards, well-lit pathways, and a campus escort service until 2 AM. We also have a campus safety app that connects directly to security. All residence halls require key card access, and we conduct monthly safety drills. Would you like information about our campus orientation program for new students and parents?",
+            "tags": [
+                "Parent Communication",
+                "Campus Safety",
+                "Student Services"
+            ],
+            "type": "[demo-type-4]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Financial Aid Guidance",
+            "description": "AI explains scholarship opportunities and financial aid application process",
+            "scenario": "financial_aid",
+            "duration": "3:55",
+            "audio_file": "/assets/audio/solutions/education/education-financial.mp3",
+            "transcript": "Student: I need help understanding the financial aid options available. My family's income is around $45,000.\n\nAI Agent: Based on your family income, you'll likely qualify for significant financial aid. I recommend applying for the Pell Grant first - with your income level, you could receive up to $6,895 per year. We also have institutional need-based grants averaging $8,000 for qualifying students. Additionally, there are merit scholarships based on academic performance. The priority deadline for financial aid is March 1st. Would you like me to help you understand the FAFSA application process?",
+            "tags": [
+                "Financial Aid",
+                "Scholarships",
+                "FAFSA"
+            ],
+            "type": "[demo-type-5]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Alumni Engagement",
+            "description": "AI maintains connection with graduates for networking and donation opportunities",
+            "scenario": "alumni_relations",
+            "duration": "2:45",
+            "audio_file": "/assets/audio/solutions/education/education-alumni.mp3",
+            "transcript": "Alumni: Hi, I graduated in 2018 with a degree in Marketing. I heard about the new business incubator program.\n\nAI Agent: Congratulations on your continued success! Yes, our new Business Innovation Incubator launched last year and it's been fantastic. As a marketing graduate, you'd be perfect for our mentor network. We're looking for professionals to guide current students and recent graduates. The program also hosts quarterly networking events - our next one is November 15th. Would you be interested in learning more about mentoring opportunities or attending the networking event?",
+            "tags": [
+                "Alumni Relations",
+                "Mentoring",
+                "Networking"
+            ],
+            "type": "[demo-type-6]",
+            "icon": "uil-[icon-name]",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        }
+    ]
 }

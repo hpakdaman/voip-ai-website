@@ -4,52 +4,56 @@
         "problems_title": "Educational Institutions Are Losing Students to",
         "problems_highlighted": "Missed Opportunities",
         "solutions_title": "How Sawtic AI Transforms",
-        "solutions_highlighted": "Education Services"
+        "solutions_highlighted": "Education Services",
+        "badge": "Education Challenges",
+        "title": "Stop Losing Clients While You're",
+        "highlighted": "[Busy Context]",
+        "description": "Every missed call is a lost opportunity. See how Sawtic AI transforms education challenges into competitive advantages."
     },
     "problems": [
-            {
-                "title": "Missed After-Hours Inquiries",
-                "description": "Prospective students call outside business hours and get voicemail. 73% never call back.",
-                "icon": "uil-clock-nine",
-                "impact": "Lost Students",
-                "color": "red"
-            },
-            {
-                "title": "Overwhelmed Admissions Staff",
-                "description": "Peak inquiry periods overwhelm your team, leading to long wait times and frustrated prospects.",
-                "icon": "uil-users-alt",
-                "impact": "Poor Experience",
-                "color": "red"
-            },
-            {
-                "title": "Inconsistent Information",
-                "description": "Different staff members provide varying information about programs, requirements, and deadlines.",
-                "icon": "uil-question-circle",
-                "impact": "Confusion",
-                "color": "red"
-            },
-            {
-                "title": "Limited Multilingual Support",
-                "description": "International students struggle with language barriers when seeking information.",
-                "icon": "uil-comment-alt-question",
-                "impact": "Accessibility Issues",
-                "color": "red"
-            },
-            {
-                "title": "No Follow-up System",
-                "description": "Potential students slip through cracks without proper nurturing and follow-up communications.",
-                "icon": "uil-phone-slash",
-                "impact": "Lost Opportunities",
-                "color": "red"
-            },
-            {
-                "title": "Manual Student Support",
-                "description": "Current students face delays getting answers about grades, schedules, and campus services.",
-                "icon": "uil-file-question-alt",
-                "impact": "Student Dissatisfaction",
-                "color": "red"
-            }
-        ],
+        {
+            "title": "Missed After-Hours Inquiries",
+            "description": "Prospective students call outside business hours and get voicemail. 73% never call back.",
+            "icon": "uil-clock-nine",
+            "impact": "Lost Students",
+            "color": "red"
+        },
+        {
+            "title": "Overwhelmed Admissions Staff",
+            "description": "Peak inquiry periods overwhelm your team, leading to long wait times and frustrated prospects.",
+            "icon": "uil-users-alt",
+            "impact": "Poor Experience",
+            "color": "red"
+        },
+        {
+            "title": "Inconsistent Information",
+            "description": "Different staff members provide varying information about programs, requirements, and deadlines.",
+            "icon": "uil-question-circle",
+            "impact": "Confusion",
+            "color": "red"
+        },
+        {
+            "title": "Limited Multilingual Support",
+            "description": "International students struggle with language barriers when seeking information.",
+            "icon": "uil-comment-alt-question",
+            "impact": "Accessibility Issues",
+            "color": "red"
+        },
+        {
+            "title": "No Follow-up System",
+            "description": "Potential students slip through cracks without proper nurturing and follow-up communications.",
+            "icon": "uil-phone-slash",
+            "impact": "Lost Opportunities",
+            "color": "red"
+        },
+        {
+            "title": "Manual Student Support",
+            "description": "Current students face delays getting answers about grades, schedules, and campus services.",
+            "icon": "uil-file-question-alt",
+            "impact": "Student Dissatisfaction",
+            "color": "red"
+        }
+    ],
     "solutions": [
         {
             "title": "24/7 Student Inquiry Support",
@@ -62,7 +66,9 @@
                 "Application deadline reminders",
                 "Campus tour scheduling",
                 "Financial aid guidance"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Multilingual Student Services",
@@ -75,7 +81,9 @@
                 "Cultural context awareness",
                 "Visa and immigration guidance",
                 "International program information"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Automated Academic Support",
@@ -88,7 +96,9 @@
                 "Course registration assistance",
                 "Academic advisor connections",
                 "Campus service directory"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Intelligent Parent Communication",
@@ -101,7 +111,9 @@
                 "Billing and payment assistance",
                 "Campus safety information",
                 "Event and activity notifications"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Smart Enrollment Management",
@@ -114,7 +126,9 @@
                 "Requirement clarification",
                 "Deadline management",
                 "Document submission help"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": false
         },
         {
             "title": "Crisis Communication System",
@@ -127,7 +141,17 @@
                 "Weather-related updates",
                 "Campus closure notifications",
                 "Safety protocol information"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         }
-    ]
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "education",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "problem_awareness"
+    }
 }

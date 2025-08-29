@@ -1,9 +1,36 @@
 {
     "section": {
         "title": "Hear Your AI Spa Assistant in Action",
-        "description": "Listen to real conversations showcasing how our AI handles various spa and wellness scenarios with natural, professional communication."
+        "description": "Listen to real conversations showcasing how our AI handles various spa and wellness scenarios with natural, professional communication.",
+        "badge": "Voice Demonstrations",
+        "highlighted": "Handle Real Calls"
     },
-    "voice_demos": [
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_demos": 4,
+        "industry": "spa_massage",
+        "demo_types": [
+            "booking",
+            "inquiry",
+            "confirmation",
+            "screening"
+        ],
+        "total_duration": "11:15",
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "scenarios_covered": [
+            "appointment_booking",
+            "treatment_consultation",
+            "appointment_confirmation",
+            "health_screening",
+            "package_booking",
+            "follow_up_care"
+        ]
+    },
+    "demos": [
         {
             "id": 1,
             "title": "Appointment Booking",
@@ -23,7 +50,7 @@
                     "timestamp": "0:08"
                 },
                 {
-                    "speaker": "AI Agent", 
+                    "speaker": "AI Agent",
                     "text": "I'd be happy to help you book a massage. We have Swedish, deep tissue, hot stone, and aromatherapy massages available. Do you have a preference?",
                     "timestamp": "0:12"
                 },
@@ -37,13 +64,23 @@
                     "text": "For stress relief, I'd recommend our aromatherapy massage with lavender essential oils. It's 60 minutes for 280 AED and perfect for relaxation. I have availability Saturday at 2 PM or Sunday at 11 AM.",
                     "timestamp": "0:24"
                 }
+            ],
+            "type": "appointment_booking",
+            "icon": "uil-calendar-alt",
+            "audio_file": "spa-appointment-booking-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
             "id": 2,
             "title": "Treatment Information",
             "description": "Client asking about facial treatments and packages",
-            "duration": "38 seconds", 
+            "duration": "38 seconds",
             "scenario": "Service inquiry",
             "file_path": "/assets/audio/solutions/spa-massage/treatment-inquiry-demo.mp3",
             "transcript": [
@@ -72,6 +109,16 @@
                     "text": "Yes! Our 'Glow & Relax' package combines the Gold Collagen Facial with a 30-minute relaxation massage for only 580 AED - you save 120 AED compared to booking separately.",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "treatment_consultation",
+            "icon": "uil-spa",
+            "audio_file": "spa-treatment-inquiry-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -97,6 +144,16 @@
                     "text": "Perfect! Please arrive 15 minutes early for check-in. Avoid heavy meals 2 hours before your treatment, and let us know if you have any new health conditions. We'll provide robes and slippers. Looking forward to seeing you!",
                     "timestamp": "0:14"
                 }
+            ],
+            "type": "appointment_confirmation",
+            "icon": "uil-check-circle",
+            "audio_file": "spa-appointment-confirmation-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -104,7 +161,7 @@
             "title": "Health Screening",
             "description": "AI conducting health assessment for new client",
             "duration": "42 seconds",
-            "scenario": "Health consultation", 
+            "scenario": "Health consultation",
             "file_path": "/assets/audio/solutions/spa-massage/health-screening-demo.mp3",
             "transcript": [
                 {
@@ -132,14 +189,49 @@
                     "text": "Perfect! I'll note that for your therapist. They'll start gently and adjust pressure based on your comfort. Deep tissue is excellent for desk-related tension. Let's book you with our specialist, Amira.",
                     "timestamp": "0:25"
                 }
+            ],
+            "type": "health_screening",
+            "icon": "uil-heart-rate",
+            "audio_file": "spa-health-screening-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Couples Spa Package Booking",
+            "scenario": "Anniversary couple requesting romantic spa package with dinner",
+            "description": "AI agent handles complex package booking with custom requirements and special occasion coordination",
+            "duration": "1:55",
+            "type": "package_booking",
+            "icon": "uil-heart",
+            "audio_file": "spa-couples-package-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Post-Treatment Follow-up",
+            "scenario": "Client follow-up call after facial treatment asking about home care",
+            "description": "AI agent provides post-treatment care instructions and schedules next appointment",
+            "duration": "1:10",
+            "type": "follow_up_care",
+            "icon": "uil-phone",
+            "audio_file": "spa-followup-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         }
-    ],
-    "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-20",
-        "total_demos": 4,
-        "industry": "spa and massage wellness",
-        "demo_types": ["booking", "inquiry", "confirmation", "screening"]
-    }
+    ]
 }

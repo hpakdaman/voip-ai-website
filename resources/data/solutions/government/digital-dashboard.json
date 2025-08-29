@@ -16,7 +16,7 @@
                     {
                         "title": "Resolution Rate",
                         "value": "94.8%",
-                        "change": "+28%", 
+                        "change": "+28%",
                         "trend": "positive",
                         "icon": "uil-check-circle"
                     },
@@ -24,7 +24,7 @@
                         "title": "Citizen Satisfaction Score",
                         "value": "4.7/5",
                         "change": "+0.9",
-                        "trend": "positive", 
+                        "trend": "positive",
                         "icon": "uil-smile"
                     }
                 ]
@@ -90,14 +90,14 @@
                 "avg_response": "1.2 min"
             },
             {
-                "service": "Business Licenses", 
+                "service": "Business Licenses",
                 "status": "operational",
                 "requests_today": 234,
                 "avg_response": "45 sec"
             },
             {
                 "service": "Municipal Services",
-                "status": "operational", 
+                "status": "operational",
                 "requests_today": 1205,
                 "avg_response": "32 sec"
             },
@@ -108,5 +108,10 @@
                 "avg_response": "28 sec"
             }
         ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "government"
     }
 }

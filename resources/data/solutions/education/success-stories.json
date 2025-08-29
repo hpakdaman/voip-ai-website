@@ -72,6 +72,61 @@
                 "position": "International Student Coordinator",
                 "image": "/assets/images/testimonials/education-3.jpg"
             }
-        ]
-    }
+        ],
+        "badge": "Success Stories",
+        "title": "Real Results from",
+        "highlighted": "UAE Education Professionals",
+        "description": "See how Sawtic AI is transforming education businesses across the Emirates"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "education",
+        "testimonial_count": 3
+    },
+    "testimonials": [
+        {
+            "name": "[Client Name 1]",
+            "company": "[Company Name 1]",
+            "image": "/assets/images/client/01.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        },
+        {
+            "name": "[Client Name 2]",
+            "company": "[Company Name 2]",
+            "image": "/assets/images/client/02.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        },
+        {
+            "name": "[Client Name 3]",
+            "company": "[Company Name 3]",
+            "image": "/assets/images/client/03.jpg",
+            "rating": 5,
+            "testimonial": "[Testimonial text showing specific results and benefits for industry]"
+        }
+    ],
+    "stats": [
+        {
+            "number": "[number]+",
+            "label": "UAE Education Professionals",
+            "description": "Using Sawtic AI daily"
+        },
+        {
+            "number": "[number]%",
+            "label": "More Leads Captured",
+            "description": "Average increase in qualified leads"
+        },
+        {
+            "number": "95%",
+            "label": "Client Satisfaction",
+            "description": "Customers rate AI interaction highly"
+        },
+        {
+            "number": "24/7",
+            "label": "Lead Capture",
+            "description": "Never miss opportunities"
+        }
+    ]
 }

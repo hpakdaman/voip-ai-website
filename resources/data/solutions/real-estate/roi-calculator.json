@@ -60,7 +60,7 @@
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "industry": "real-estate",
+        "industry": "real_estate",
         "currency": "AED"
     }
 }

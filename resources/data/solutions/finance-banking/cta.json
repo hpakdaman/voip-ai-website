@@ -27,14 +27,14 @@
             "tracking": "finance-banking-final-cta-call"
         }
     ],
-    "guarantee": "30-day money-back guarantee • CBE compliant • No setup fees",
+    "guarantee": "30-day money-back guarantee \u2022 CBE compliant \u2022 No setup fees",
     "social_proof": "Trusted by 200+ UAE financial institutions",
     "bg_image": "/assets/images/finance/bg.jpg",
     "alt_text": "Banking professionals using Sawtic AI",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-22",
-        "industry": "finance-banking",
+        "industry": "finance_banking",
         "conversion_type": "final_cta"
     }
 }

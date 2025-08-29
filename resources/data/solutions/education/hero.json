@@ -22,15 +22,48 @@
         "cta": {
             "primary": "Start Free Education Trial",
             "secondary": "See How It Works"
-        }
+        },
+        "key_benefits": [
+            "Qualify leads instantly while you're [context]",
+            "Book [services] automatically 24/7",
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "[number]+",
+                "label": "UAE [Industry Units]"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
     },
     "hero_images": {
         "main": "/assets/images/solutions/education/hero.jpg"
     },
     "voice_demo": {
-        "title": "🎧 Listen: AI Handling Student Admission Inquiry",
+        "title": "\ud83c\udfa7 Listen: AI Handling Student Admission Inquiry",
         "description": "Hear how our AI manages complex student questions about programs, requirements, and enrollment processes.",
         "audio_file": "education-demo.mp3",
-        "duration": "2:15"
+        "duration": "2:15",
+        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "education",
+        "target_audience": "UAE education businesses, [target segments]",
+        "conversion_goals": [
+            "demo_booking",
+            "phone_calls",
+            "lead_generation"
+        ]
     }
 }

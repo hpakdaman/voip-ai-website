@@ -16,16 +16,18 @@
                 "min": 100,
                 "max": 100000,
                 "default": 5000,
-                "tooltip": "Average number of unique visitors to your online store monthly"
+                "tooltip": "Average number of unique visitors to your online store monthly",
+                "step": 1
             },
             {
                 "id": "current_conversion_rate",
                 "label": "Current Conversion Rate (%)",
-                "type": "number", 
+                "type": "number",
                 "min": 0.5,
                 "max": 15,
                 "default": 2.5,
-                "tooltip": "Percentage of visitors who currently make a purchase"
+                "tooltip": "Percentage of visitors who currently make a purchase",
+                "step": 500
             },
             {
                 "id": "average_order_value",
@@ -34,7 +36,8 @@
                 "min": 50,
                 "max": 2000,
                 "default": 180,
-                "tooltip": "Average amount customers spend per order"
+                "tooltip": "Average amount customers spend per order",
+                "step": 1
             },
             {
                 "id": "cart_abandonment_rate",
@@ -43,7 +46,8 @@
                 "min": 30,
                 "max": 90,
                 "default": 70,
-                "tooltip": "Percentage of shopping carts abandoned before checkout"
+                "tooltip": "Percentage of shopping carts abandoned before checkout",
+                "step": 5
             },
             {
                 "id": "customer_service_hours",
@@ -72,7 +76,7 @@
                 "color": "voip-link"
             },
             {
-                "id": "cart_recovery_revenue", 
+                "id": "cart_recovery_revenue",
                 "label": "Cart Recovery Revenue",
                 "description": "Revenue recovered from abandoned shopping carts",
                 "formula": "(monthly_visitors * cart_abandonment_rate / 100 * cart_recovery_rate / 100 * 0.3) * average_order_value",
@@ -113,50 +117,26 @@
                 "suffix": " days",
                 "color": "voip-accent"
             }
-        ]
-    },
-    "benefits_summary": [
-        {
-            "icon": "uil-shopping-cart",
-            "title": "24/7 Shopping Support",
-            "description": "Round-the-clock customer assistance for all shopping needs"
-        },
-        {
-            "icon": "uil-redo",
-            "title": "Cart Recovery System",
-            "description": "Proactively recover abandoned carts and convert to sales"
-        },
-        {
-            "icon": "uil-chart-growth",
-            "title": "Intelligent Upselling",
-            "description": "AI-powered product recommendations increase order values"
-        },
-        {
-            "icon": "uil-comments",
-            "title": "Multilingual Support",
-            "description": "Serve UAE's diverse online shopping community effectively"
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 1500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
         }
-    ],
-    "case_study": {
-        "store_name": "Dubai Electronics Mart",
-        "before": {
-            "monthly_visitors": 8000,
-            "conversion_rate": "2.1%",
-            "cart_abandonment": "75%",
-            "monthly_revenue": "AED 85,000"
-        },
-        "after": {
-            "monthly_visitors": 8000,
-            "conversion_rate": "3.8%",
-            "cart_abandonment": "35%",
-            "monthly_revenue": "AED 165,000"
-        },
-        "testimonial": "Sawtic AI transformed our online store. We now capture sales we never knew we were losing and provide better customer service than ever."
     },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-22",
         "focus": "ecommerce_revenue_growth",
-        "calculator_type": "retail_sales_optimization"
-    }
+        "calculator_type": "retail_sales_optimization",
+        "industry": "retail_ecommerce",
+        "currency": "AED"
+    },
+    "benefits": [
+        "Never miss a lead while [busy context]",
+        "AI qualifies leads before they reach you",
+        "Automatic appointment booking and confirmations",
+        "24/7 availability captures after-hours opportunities"
+    ]
 }

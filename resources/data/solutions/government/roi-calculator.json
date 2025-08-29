@@ -17,7 +17,7 @@
                 {
                     "id": "daily_calls",
                     "label": "Daily Service Calls",
-                    "type": "range", 
+                    "type": "range",
                     "min": 50,
                     "max": 5000,
                     "step": 50,
@@ -61,7 +61,7 @@
                 "icon": "uil-money-withdraw"
             },
             {
-                "title": "Staff Empowerment", 
+                "title": "Staff Empowerment",
                 "description": "Free skilled government workers for high-value policy and program development",
                 "icon": "uil-users-alt"
             },
@@ -75,6 +75,68 @@
                 "description": "Build citizen confidence through consistent, reliable, and transparent service delivery",
                 "icon": "uil-shield-check"
             }
-        ]
-    }
+        ],
+        "badge": "ROI Calculator",
+        "title": "Calculate Your",
+        "highlighted": "Monthly Savings",
+        "description": "See exactly how much money Sawtic AI can save your government business"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "government",
+        "currency": "AED"
+    },
+    "calculator": {
+        "inputs": [
+            {
+                "id": "missed_calls",
+                "label": "Missed calls per day",
+                "type": "number",
+                "default": 5,
+                "min": 1,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "id": "avg_deal_value",
+                "label": "Average [service] value (AED)",
+                "type": "number",
+                "default": 5000,
+                "min": 500,
+                "max": 500000,
+                "step": 500
+            },
+            {
+                "id": "conversion_rate",
+                "label": "Lead to [service] conversion rate (%)",
+                "type": "number",
+                "default": 10,
+                "min": 1,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "id": "profit_margin",
+                "label": "Profit margin (%)",
+                "type": "number",
+                "default": 30,
+                "min": 10,
+                "max": 80,
+                "step": 5
+            }
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 1500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
+        }
+    },
+    "benefits": [
+        "Never miss a lead while [busy context]",
+        "AI qualifies leads before they reach you",
+        "Automatic appointment booking and confirmations",
+        "24/7 availability captures after-hours opportunities"
+    ]
 }

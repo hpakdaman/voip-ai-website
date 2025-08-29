@@ -180,6 +180,7 @@
         "last_updated": "2025-01-22",
         "total_capabilities": 6,
         "total_integrations": 12,
-        "industry_focus": "UAE banking and financial services market"
+        "industry_focus": "UAE banking and financial services market",
+        "industry": "finance_banking"
     }
 }

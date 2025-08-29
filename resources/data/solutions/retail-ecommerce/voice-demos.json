@@ -1,9 +1,36 @@
 {
     "section": {
         "title": "Hear Your AI Shopping Assistant in Action",
-        "description": "Listen to real conversations showcasing how our AI handles various e-commerce scenarios with natural, helpful communication."
+        "description": "Listen to real conversations showcasing how our AI handles various e-commerce scenarios with natural, helpful communication.",
+        "badge": "Voice Demonstrations",
+        "highlighted": "Handle Real Calls"
     },
-    "voice_demos": [
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "total_demos": 4,
+        "industry": "retail_ecommerce",
+        "demo_types": [
+            "cart_recovery",
+            "product_inquiry",
+            "order_management",
+            "multilingual_support"
+        ],
+        "total_duration": "11:15",
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "scenarios_covered": [
+            "cart_recovery",
+            "product_consultation",
+            "order_management",
+            "multilingual_support",
+            "customer_support",
+            "sales_assistance"
+        ]
+    },
+    "demos": [
         {
             "id": 1,
             "title": "Cart Recovery Call",
@@ -23,7 +50,7 @@
                     "timestamp": "0:08"
                 },
                 {
-                    "speaker": "AI Agent", 
+                    "speaker": "AI Agent",
                     "text": "Great questions! These earbuds have 8-hour battery life with the case providing 32 hours total. They're fully compatible with iPhone and include fast charging - 15 minutes gives you 3 hours of use. Plus, we have free shipping and 30-day returns.",
                     "timestamp": "0:15"
                 },
@@ -37,13 +64,23 @@
                     "text": "Absolutely! I can complete your order right now. I also noticed you might like our phone case collection - I can add a 20% discount if you're interested. Your earbuds will arrive tomorrow with our express delivery.",
                     "timestamp": "0:32"
                 }
+            ],
+            "type": "cart_recovery",
+            "icon": "uil-shopping-cart",
+            "audio_file": "retail-cart-recovery-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
             "id": 2,
             "title": "Product Information Inquiry",
             "description": "Customer asking detailed questions about product specifications",
-            "duration": "38 seconds", 
+            "duration": "38 seconds",
             "scenario": "Product consultation",
             "file_path": "/assets/audio/solutions/retail-ecommerce/product-inquiry-demo.mp3",
             "transcript": [
@@ -72,6 +109,16 @@
                     "text": "Our return policy is very flexible - 30 days for exchanges or full refunds. We also offer free alterations at our Dubai Mall location if you need minor adjustments. Would you like me to reserve both sizes for you?",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "product_consultation",
+            "icon": "uil-search",
+            "audio_file": "retail-product-inquiry-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -107,6 +154,16 @@
                     "text": "Perfect! I've updated your delivery address to Dubai Marina. Your order will arrive tomorrow between 10 AM and 2 PM. I'm sending you a confirmation SMS with the updated details now.",
                     "timestamp": "0:28"
                 }
+            ],
+            "type": "order_management",
+            "icon": "uil-package",
+            "audio_file": "retail-order-status-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -114,22 +171,22 @@
             "title": "Multilingual Support",
             "description": "AI handling customer service in Arabic and English",
             "duration": "40 seconds",
-            "scenario": "Bilingual customer service", 
+            "scenario": "Bilingual customer service",
             "file_path": "/assets/audio/solutions/retail-ecommerce/multilingual-demo.mp3",
             "transcript": [
                 {
                     "speaker": "AI Agent",
-                    "text": "أهلاً وسهلاً! مرحباً بكم في متجر الإمارات للإلكترونيات. كيف يمكنني مساعدتكم اليوم؟",
+                    "text": "\u0623\u0647\u0644\u0627\u064b \u0648\u0633\u0647\u0644\u0627\u064b! \u0645\u0631\u062d\u0628\u0627\u064b \u0628\u0643\u0645 \u0641\u064a \u0645\u062a\u062c\u0631 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0644\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0627\u062a. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646\u0646\u064a \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u0645 \u0627\u0644\u064a\u0648\u0645\u061f",
                     "timestamp": "0:00"
                 },
                 {
                     "speaker": "Customer",
-                    "text": "السلام عليكم، أريد شراء لابتوب للطلاب، ما هي أفضل الخيارات المتاحة؟",
+                    "text": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645\u060c \u0623\u0631\u064a\u062f \u0634\u0631\u0627\u0621 \u0644\u0627\u0628\u062a\u0648\u0628 \u0644\u0644\u0637\u0644\u0627\u0628\u060c \u0645\u0627 \u0647\u064a \u0623\u0641\u0636\u0644 \u0627\u0644\u062e\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u062a\u0627\u062d\u0629\u061f",
                     "timestamp": "0:08"
                 },
                 {
                     "speaker": "AI Agent",
-                    "text": "وعليكم السلام! لدينا خيارات ممتازة للطلاب. أنصحكم بلابتوب HP بسعر 2,200 درهم أو Lenovo بسعر 1,800 درهم. كلاهما مناسب للدراسة ولديه ضمان سنتين.",
+                    "text": "\u0648\u0639\u0644\u064a\u0643\u0645 \u0627\u0644\u0633\u0644\u0627\u0645! \u0644\u062f\u064a\u0646\u0627 \u062e\u064a\u0627\u0631\u0627\u062a \u0645\u0645\u062a\u0627\u0632\u0629 \u0644\u0644\u0637\u0644\u0627\u0628. \u0623\u0646\u0635\u062d\u0643\u0645 \u0628\u0644\u0627\u0628\u062a\u0648\u0628 HP \u0628\u0633\u0639\u0631 2,200 \u062f\u0631\u0647\u0645 \u0623\u0648 Lenovo \u0628\u0633\u0639\u0631 1,800 \u062f\u0631\u0647\u0645. \u0643\u0644\u0627\u0647\u0645\u0627 \u0645\u0646\u0627\u0633\u0628 \u0644\u0644\u062f\u0631\u0627\u0633\u0629 \u0648\u0644\u062f\u064a\u0647 \u0636\u0645\u0627\u0646 \u0633\u0646\u062a\u064a\u0646.",
                     "timestamp": "0:15"
                 },
                 {
@@ -142,14 +199,49 @@
                     "text": "Of course! The HP laptop has Intel i5 processor, 8GB RAM, 512GB SSD storage, and 15.6-inch display. Perfect for students with excellent battery life. Would you like me to reserve one for you?",
                     "timestamp": "0:30"
                 }
+            ],
+            "type": "multilingual_support",
+            "icon": "uil-comments",
+            "audio_file": "retail-multilingual-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Product Recommendation Engine",
+            "scenario": "AI suggesting personalized products based on customer preferences",
+            "description": "Advanced AI analyzes customer history and preferences to provide tailored product recommendations",
+            "duration": "1:55",
+            "type": "recommendation_engine",
+            "icon": "uil-brain",
+            "audio_file": "retail-recommendations-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Return & Exchange Processing",
+            "scenario": "Customer requesting return for damaged electronics with warranty claim",
+            "description": "AI agent handles complex return process with warranty verification and replacement coordination",
+            "duration": "1:10",
+            "type": "return_processing",
+            "icon": "uil-redo",
+            "audio_file": "retail-returns-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         }
-    ],
-    "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-22",
-        "total_demos": 4,
-        "industry": "retail and e-commerce",
-        "demo_types": ["cart_recovery", "product_inquiry", "order_management", "multilingual_support"]
-    }
+    ]
 }
