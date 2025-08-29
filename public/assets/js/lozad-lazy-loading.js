@@ -14,8 +14,16 @@ class SawticLazyLoader {
     }
 
     init() {
+        // Check if there are any lazy loading elements
+        const lazyElements = document.querySelectorAll('[data-src], [data-lazy], .lazy-loading');
+        
+        if (lazyElements.length === 0) {
+            console.log('🔍 No lazy loading elements found');
+            return;
+        }
+
         // Initialize Lozad with Sawtic-specific configuration
-        this.observer = lozad('[data-lazy], .lazy-loading', {
+        this.observer = lozad('[data-src], [data-lazy], .lazy-loading', {
             rootMargin: '50px',
             threshold: 0.1,
             
@@ -33,7 +41,7 @@ class SawticLazyLoader {
             loaded: (element) => {
                 element.classList.add('lazy-loaded');
                 element.classList.remove('lazy-loading', 'lazy-error');
-                console.log('✅ Lazy loaded:', element.dataset.lazy || element.dataset.src);
+                console.log('✅ Lazy loaded:', element.dataset.src || element.dataset.lazy);
             },
             
             // Error callback
@@ -43,16 +51,23 @@ class SawticLazyLoader {
         });
 
         // Start observing
-        this.observer.observe();
-        
-        console.log('🚀 Sawtic Lozad Lazy Loader initialized');
+        try {
+            this.observer.observe();
+            console.log(`🚀 Sawtic Lozad Lazy Loader initialized with ${lazyElements.length} elements`);
+        } catch (error) {
+            console.error('Lozad initialization error:', error);
+            // Fallback: load all images immediately
+            lazyElements.forEach(element => this.loadImage(element));
+        }
     }
 
     async loadImage(element) {
-        const originalSrc = element.dataset.lazy || element.dataset.src;
+        const originalSrc = element.dataset.src || element.dataset.lazy;
         
         if (!originalSrc) {
-            throw new Error('No data-lazy or data-src attribute found');
+            console.warn('No data-src or data-lazy attribute found:', element);
+            this.handleImageError(element);
+            return;
         }
 
         // Try WebP first if supported and image is PNG/JPG
@@ -69,15 +84,23 @@ class SawticLazyLoader {
         }
 
         // Set the final source
-        element.src = finalSrc;
+        if (element.tagName === 'IMG') {
+            element.src = finalSrc;
+        } else {
+            // Handle background images
+            element.style.backgroundImage = `url('${finalSrc}')`;
+        }
         
         // Handle srcset if present
-        if (element.dataset.lazySrcset) {
-            element.srcset = element.dataset.lazySrcset;
+        const srcset = element.dataset.srcset || element.dataset.lazySrcset;
+        if (srcset && element.tagName === 'IMG') {
+            element.srcset = srcset;
         }
 
         // Clean up data attributes
+        delete element.dataset.src;
         delete element.dataset.lazy;
+        delete element.dataset.srcset;
         delete element.dataset.lazySrcset;
     }
 
@@ -138,18 +161,28 @@ class SawticLazyLoader {
 let sawticLazyLoader;
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
+function initSawticLazyLoader() {
     sawticLazyLoader = new SawticLazyLoader();
     
     // Make it globally accessible
     window.sawticLazyLoader = sawticLazyLoader;
     
     // Add WebP class to HTML for CSS targeting
-    sawticLazyLoader.checkWebPSupport().then(supported => {
-        document.documentElement.classList.toggle('webp-supported', supported);
-        console.log('WebP support:', supported);
-    });
-});
+    if (sawticLazyLoader.checkWebPSupport) {
+        sawticLazyLoader.checkWebPSupport().then(supported => {
+            document.documentElement.classList.toggle('webp-supported', supported);
+            console.log('WebP support:', supported);
+        });
+    }
+}
+
+// Initialize based on document state
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSawticLazyLoader);
+} else {
+    // DOM is already ready
+    initSawticLazyLoader();
+}
 
 // Handle dynamic content
 if (window.MutationObserver) {
