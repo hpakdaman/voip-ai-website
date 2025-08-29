@@ -12,10 +12,14 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Configuration
-IMAGES_DIR="public/assets/images"
-BACKUP_DIR="storage/image-backups/$(date +%Y-%m-%d_%H-%M-%S)"
-OPTIMIZATION_DB="storage/app/images-optimization-history.json"
+# Get script directory and set paths relative to project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Configuration - paths relative to project root
+IMAGES_DIR="$PROJECT_ROOT/public/assets/images"
+BACKUP_DIR="$PROJECT_ROOT/storage/image-backups/$(date +%Y-%m-%d_%H-%M-%S)"
+OPTIMIZATION_DB="$PROJECT_ROOT/storage/app/images-optimization-db.json"
 MAX_WIDTH=1920
 MAX_HEIGHT=1080
 JPEG_QUALITY=85
@@ -120,10 +124,18 @@ needs_optimization() {
     local path_hash=$(generate_path_hash "$file")
     local current_signature=$(generate_file_signature "$file")
     
-    # Check if file exists in database with same signature
-    local logged_signature=$(jq -r ".optimizations[\"$path_hash\"] // empty" "$OPTIMIZATION_DB" 2>/dev/null)
+    # Check if database exists
+    if [ ! -f "$OPTIMIZATION_DB" ]; then
+        return 0  # File needs optimization if no database
+    fi
     
-    if [ "$logged_signature" = "$current_signature" ]; then
+    # Check if file exists in database with same signature
+    local logged_signature=$(jq -r ".optimizations[\"$path_hash\"] // \"\"" "$OPTIMIZATION_DB" 2>/dev/null)
+    
+    # Debug output for troubleshooting
+    # echo "File: $(basename "$file"), Hash: $path_hash, Current: $current_signature, Logged: $logged_signature"
+    
+    if [ -n "$logged_signature" ] && [ "$logged_signature" = "$current_signature" ]; then
         return 1  # File doesn't need optimization
     fi
     
@@ -205,7 +217,7 @@ optimize_jpeg() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
+        # Record optimization in database
         record_optimization "$file" "$original_size" "$new_size"
     else
         # Optimization made file larger - restore original
@@ -215,6 +227,9 @@ optimize_jpeg() {
         if [ -f "$backup_file" ]; then
             cp "$backup_file" "$file"
             echo -e "    ${GREEN}✅ Original file restored${NC}"
+            
+            # Record attempted optimization to prevent retrying
+            record_optimization "$file" "$original_size" "$original_size"
         fi
     fi
 }
@@ -243,7 +258,7 @@ optimize_png() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
+        # Record optimization in database
         record_optimization "$file" "$original_size" "$new_size"
     else
         # Optimization made file larger - restore original
@@ -253,6 +268,9 @@ optimize_png() {
         if [ -f "$backup_file" ]; then
             cp "$backup_file" "$file"
             echo -e "    ${GREEN}✅ Original file restored${NC}"
+            
+            # Record attempted optimization to prevent retrying
+            record_optimization "$file" "$original_size" "$original_size"
         fi
     fi
 }
@@ -344,9 +362,9 @@ optimize_images() {
     fi
     
     # Find all image files
-    while IFS= read -r -d '' file; do
+    find "$IMAGES_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -print0 | while IFS= read -r -d '' file; do
         process_image "$file"
-    done < <(find "$IMAGES_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -print0)
+    done
 }
 
 # Generate optimization report
