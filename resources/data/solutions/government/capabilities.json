@@ -179,6 +179,7 @@
         "last_updated": "2025-01-23",
         "total_capabilities": 6,
         "total_integrations": 12,
-        "industry_focus": "UAE government and public services"
+        "industry_focus": "UAE government and public services",
+        "industry": "government"
     }
 }

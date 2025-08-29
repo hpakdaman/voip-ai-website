@@ -39,6 +39,75 @@
                 "icon": "uil-edit-alt",
                 "highlight": false
             }
+        ],
+        "badge": "AI in Action",
+        "title": "See Sawtic AI",
+        "highlighted": "In Action",
+        "description": "Watch how our AI agents transform education communication with live demonstrations"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "education"
+    },
+    "dashboard": {
+        "title": "Real-Time Dashboard",
+        "description": "Monitor your operations with comprehensive analytics.",
+        "image": "/assets/images/dashboard.jpg",
+        "features": [
+            "Live call monitoring",
+            "Instant lead notifications",
+            "Conversion analytics"
         ]
-    }
+    },
+    "consultation": {
+        "title": "Expert Consultation",
+        "description": "Get professional insights tailored to your needs.",
+        "image": "/assets/images/consultation.jpg",
+        "features": [
+            "Real-time policy and regulation information",
+            "UAE federal and emirate-specific guidelines",
+            "Multi-language support (Arabic, English, Hindi, Urdu)"
+        ]
+    },
+    "features": [
+        {
+            "title": "[Feature 1]",
+            "description": "AI handles education-specific requests with expertise",
+            "icon": "uil-[icon-name]",
+            "demo_video": "[feature1]-demo.mp4",
+            "highlight": "Instant education expertise"
+        },
+        {
+            "title": "[Feature 2]",
+            "description": "Smart pre-screening identifies [qualified leads/clients]",
+            "icon": "uil-user-check",
+            "demo_video": "[feature2]-demo.mp4",
+            "highlight": "85% qualified rate"
+        },
+        {
+            "title": "[Feature 3]",
+            "description": "Seamless calendar integration and scheduling",
+            "icon": "uil-calendar-alt",
+            "demo_video": "[feature3]-demo.mp4",
+            "highlight": "95% show-up rate"
+        }
+    ],
+    "stats": [
+        {
+            "number": "40%",
+            "label": "More Leads",
+            "description": "Captured through 24/7 availability"
+        },
+        {
+            "number": "85%",
+            "label": "Qualified Rate",
+            "description": "Higher quality leads through AI screening"
+        },
+        {
+            "number": "24/7",
+            "label": "Availability",
+            "description": "Never miss a potential client"
+        }
+    ]
 }

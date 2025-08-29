@@ -14,7 +14,7 @@
                         "ai_impact": "78% faster processing"
                     },
                     {
-                        "name": "Zoning Inquiries", 
+                        "name": "Zoning Inquiries",
                         "complexity": "medium",
                         "volume": "340/day",
                         "ai_impact": "90% accuracy improvement"
@@ -22,14 +22,14 @@
                     {
                         "name": "Code Violations",
                         "complexity": "medium",
-                        "volume": "125/day", 
+                        "volume": "125/day",
                         "ai_impact": "65% quicker resolution"
                     }
                 ]
             },
             {
                 "department": "Business Services",
-                "color": "green", 
+                "color": "green",
                 "services": [
                     {
                         "name": "Business Licenses",
@@ -45,7 +45,7 @@
                     },
                     {
                         "name": "Compliance Checks",
-                        "complexity": "high", 
+                        "complexity": "high",
                         "volume": "180/day",
                         "ai_impact": "73% cost savings"
                     }
@@ -82,7 +82,7 @@
                     {
                         "name": "General Information",
                         "complexity": "low",
-                        "volume": "2,400/day", 
+                        "volume": "2,400/day",
                         "ai_impact": "95% self-service rate"
                     },
                     {
@@ -107,7 +107,7 @@
                 "icon": "uil-exchange-alt"
             },
             {
-                "title": "Unified Knowledge Base", 
+                "title": "Unified Knowledge Base",
                 "description": "All departments access the same updated information, ensuring consistent and accurate citizen guidance",
                 "icon": "uil-database"
             },
@@ -117,5 +117,10 @@
                 "icon": "uil-brain"
             }
         ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "government"
     }
 }

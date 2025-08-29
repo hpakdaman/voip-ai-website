@@ -3,7 +3,16 @@
         "badge": "AI Spa & Wellness Assistant",
         "title": "Your AI Agent Knows",
         "highlighted": "Spa & Wellness Inside Out",
-        "description": "Advanced AI trained specifically for UAE spa and wellness industry, treatment protocols, and client care standards."
+        "description": "Advanced AI trained specifically for UAE spa and wellness industry, treatment protocols, and client care standards.",
+        "demo_image": "/assets/images/spa/wellness-demo.jpg",
+        "demo_alt": "Spa Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles client bookings, treatment consultations, and wellness guidance with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Handles treatment inquiries and bookings professionally",
+            "Conducts health screenings and consultations",
+            "Integrates with your spa management system automatically"
+        ]
     },
     "capabilities": [
         {
@@ -181,6 +190,7 @@
         "last_updated": "2025-01-20",
         "total_capabilities": 6,
         "total_integrations": 12,
-        "industry_focus": "UAE spa and wellness market"
+        "industry_focus": "UAE spa and wellness market",
+        "industry": "spa_massage"
     }
 }

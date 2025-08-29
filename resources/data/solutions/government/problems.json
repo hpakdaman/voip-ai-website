@@ -4,52 +4,56 @@
         "problems_title": "Citizens Deserve Better",
         "problems_highlighted": "Public Services",
         "solutions_title": "How Sawtic AI Transforms",
-        "solutions_highlighted": "Government Services"
+        "solutions_highlighted": "Government Services",
+        "badge": "Government Challenges",
+        "title": "Stop Losing Clients While You're",
+        "highlighted": "[Busy Context]",
+        "description": "Every missed call is a lost opportunity. See how Sawtic AI transforms government challenges into competitive advantages."
     },
-        "problems": [
-            {
-                "title": "Long Wait Times for Citizens",
-                "description": "Residents wait hours on hold for simple questions about permits, licenses, or municipal services, creating frustration and lost productivity.",
-                "icon": "uil-clock",
-                "impact": "Public Dissatisfaction",
-                "color": "red"
-            },
-            {
-                "title": "Limited Service Hours",
-                "description": "Government offices close at 5 PM, but citizens need help evenings and weekends when they're free from work responsibilities.",
-                "icon": "uil-schedule",
-                "impact": "Accessibility Barriers",
-                "color": "red"
-            },
-            {
-                "title": "Complex Bureaucratic Processes",
-                "description": "Citizens get transferred between departments, creating confusion about which office handles their specific needs or questions.",
-                "icon": "uil-arrow-random",
-                "impact": "Citizen Confusion",
-                "color": "red"
-            },
-            {
-                "title": "Language Barriers",
-                "description": "Non-native speakers struggle to navigate government services, limiting their access to essential public programs and support.",
-                "icon": "uil-comment-alt-question",
-                "impact": "Service Inequality",
-                "color": "red"
-            },
-            {
-                "title": "Outdated Information Systems",
-                "description": "Staff provide conflicting information because different departments use outdated or non-integrated systems and procedures.",
-                "icon": "uil-database",
-                "impact": "Misinformation",
-                "color": "red"
-            },
-            {
-                "title": "No Emergency Communication",
-                "description": "During crises, citizens can't get timely updates about services, closures, or emergency procedures when they need them most.",
-                "icon": "uil-exclamation-triangle",
-                "impact": "Public Safety Risk",
-                "color": "red"
-            }
-        ],
+    "problems": [
+        {
+            "title": "Long Wait Times for Citizens",
+            "description": "Residents wait hours on hold for simple questions about permits, licenses, or municipal services, creating frustration and lost productivity.",
+            "icon": "uil-clock",
+            "impact": "Public Dissatisfaction",
+            "color": "red"
+        },
+        {
+            "title": "Limited Service Hours",
+            "description": "Government offices close at 5 PM, but citizens need help evenings and weekends when they're free from work responsibilities.",
+            "icon": "uil-schedule",
+            "impact": "Accessibility Barriers",
+            "color": "red"
+        },
+        {
+            "title": "Complex Bureaucratic Processes",
+            "description": "Citizens get transferred between departments, creating confusion about which office handles their specific needs or questions.",
+            "icon": "uil-arrow-random",
+            "impact": "Citizen Confusion",
+            "color": "red"
+        },
+        {
+            "title": "Language Barriers",
+            "description": "Non-native speakers struggle to navigate government services, limiting their access to essential public programs and support.",
+            "icon": "uil-comment-alt-question",
+            "impact": "Service Inequality",
+            "color": "red"
+        },
+        {
+            "title": "Outdated Information Systems",
+            "description": "Staff provide conflicting information because different departments use outdated or non-integrated systems and procedures.",
+            "icon": "uil-database",
+            "impact": "Misinformation",
+            "color": "red"
+        },
+        {
+            "title": "No Emergency Communication",
+            "description": "During crises, citizens can't get timely updates about services, closures, or emergency procedures when they need them most.",
+            "icon": "uil-exclamation-triangle",
+            "impact": "Public Safety Risk",
+            "color": "red"
+        }
+    ],
     "solutions": [
         {
             "title": "24/7 Citizen Support",
@@ -62,7 +66,9 @@
                 "Permit and license guidance",
                 "Municipal service requests",
                 "Department directory assistance"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Multilingual Public Access",
@@ -75,7 +81,9 @@
                 "Cultural context awareness",
                 "Immigration service guidance",
                 "Community outreach support"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Emergency Communication System",
@@ -88,7 +96,9 @@
                 "Evacuation procedure guidance",
                 "Service closure notifications",
                 "Public health information"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Smart Service Navigation",
@@ -98,10 +108,12 @@
             "result_description": "Citizens complete what they start",
             "benefits": [
                 "Online portal navigation help",
-                "Form completion guidance", 
+                "Form completion guidance",
                 "Document requirements",
                 "Payment processing support"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Compliance & Legal Guidance",
@@ -114,7 +126,9 @@
                 "Business permit requirements",
                 "Environmental regulations",
                 "Safety compliance information"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": false
         },
         {
             "title": "Democratic Participation Hub",
@@ -127,7 +141,17 @@
                 "Public comment submissions",
                 "Voting information and locations",
                 "Community involvement opportunities"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         }
-    ]
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-26",
+        "industry": "government",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "citizen_service_improvement"
+    }
 }

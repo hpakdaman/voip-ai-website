@@ -6,7 +6,7 @@
         "subtitle": "Transform your financial institution with AI call agents that handle customer inquiries, loan applications, and account services 24/7 - while ensuring ADCB compliance and CBE regulatory standards.",
         "key_benefits": [
             "Process loan applications instantly 24/7",
-            "Handle account inquiries & balance checks automatically", 
+            "Handle account inquiries & balance checks automatically",
             "Provide bilingual Arabic & English banking support",
             "Ensure UAE Central Bank compliance & security",
             "Never lose potential customers to competitors"
@@ -39,8 +39,12 @@
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-22",
-        "industry": "finance-banking",
+        "industry": "finance_banking",
         "target_audience": "UAE banks, financial institutions, investment firms, insurance companies",
-        "conversion_goals": ["demo_booking", "phone_calls", "financial_consultation"]
+        "conversion_goals": [
+            "demo_booking",
+            "phone_calls",
+            "financial_consultation"
+        ]
     }
 }

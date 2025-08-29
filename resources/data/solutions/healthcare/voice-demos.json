@@ -5,7 +5,28 @@
         "highlighted": "Medical Scenarios",
         "description": "Experience how our AI agents professionally manage different types of patient calls with medical expertise and empathy."
     },
-    "voice_samples": [
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-20",
+        "total_samples": 5,
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "focus": "healthcare_communication_scenarios",
+        "industry": "healthcare",
+        "total_demos": 6,
+        "total_duration": "11:15",
+        "scenarios_covered": [
+            "emergency_after_hours",
+            "specialist_booking",
+            "prescription_refill",
+            "insurance_arabic",
+            "post_surgery_followup",
+            "appointment_scheduling"
+        ]
+    },
+    "demos": [
         {
             "title": "Emergency After-Hours Call",
             "description": "AI agent handles urgent patient call outside office hours with proper emergency protocols",
@@ -23,19 +44,28 @@
                     "text": "Dubai Medical Center emergency line, this is your AI assistant. I detect this may be urgent - please describe your symptoms."
                 },
                 {
-                    "speaker": "Patient", 
+                    "speaker": "Patient",
                     "text": "I'm having chest pain and shortness of breath. Should I go to the hospital?"
                 },
                 {
                     "speaker": "AI Agent",
                     "text": "I'm immediately connecting you to our on-call physician and have notified emergency services. Please stay on the line while I transfer you to Dr. Hassan."
                 }
+            ],
+            "type": "emergency_response",
+            "icon": "uil-heart-medical",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
             "title": "Specialist Appointment Booking",
             "description": "Complex scheduling for specialist consultation with insurance verification",
-            "audio_file": "healthcare-specialist-demo.mp3", 
+            "audio_file": "healthcare-specialist-demo.mp3",
             "duration": "60 seconds",
             "scenario": "Patient needs cardiology referral appointment",
             "highlights": [
@@ -53,20 +83,29 @@
                     "text": "I need to see a cardiologist. My doctor said I need a stress test."
                 },
                 {
-                    "speaker": "AI Agent", 
+                    "speaker": "AI Agent",
                     "text": "I can help schedule your cardiology appointment. Let me verify your insurance covers this procedure and find the earliest available slot with Dr. Al-Rashid."
                 }
+            ],
+            "type": "appointment_booking",
+            "icon": "uil-calendar-alt",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
             "title": "Prescription Refill Request",
             "description": "Patient requesting medication refill with pharmacy coordination",
             "audio_file": "healthcare-prescription-demo.mp3",
-            "duration": "35 seconds", 
+            "duration": "35 seconds",
             "scenario": "Diabetes patient needs insulin refill",
             "highlights": [
                 "Prescription management",
-                "Pharmacy coordination", 
+                "Pharmacy coordination",
                 "Doctor approval process"
             ],
             "transcript": [
@@ -78,6 +117,15 @@
                     "speaker": "AI Agent",
                     "text": "I see your insulin prescription in our system. I'll send the refill request to Dr. Ahmed for approval and notify your pharmacy. You should have it ready for pickup by tomorrow afternoon."
                 }
+            ],
+            "type": "prescription_management",
+            "icon": "uil-prescription",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -94,12 +142,21 @@
             "transcript": [
                 {
                     "speaker": "Patient",
-                    "text": "مرحبا، أريد أن أعرف إذا كان التأمين يغطي العملية"
+                    "text": "\u0645\u0631\u062d\u0628\u0627\u060c \u0623\u0631\u064a\u062f \u0623\u0646 \u0623\u0639\u0631\u0641 \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u062a\u0623\u0645\u064a\u0646 \u064a\u063a\u0637\u064a \u0627\u0644\u0639\u0645\u0644\u064a\u0629"
                 },
                 {
                     "speaker": "AI Agent",
-                    "text": "أهلاً وسهلاً. سأتحقق من تغطية التأمين الخاص بك للعملية المطلوبة. دعني أراجع ملفك الطبي وبوليصة التأمين."
+                    "text": "\u0623\u0647\u0644\u0627\u064b \u0648\u0633\u0647\u0644\u0627\u064b. \u0633\u0623\u062a\u062d\u0642\u0642 \u0645\u0646 \u062a\u063a\u0637\u064a\u0629 \u0627\u0644\u062a\u0623\u0645\u064a\u0646 \u0627\u0644\u062e\u0627\u0635 \u0628\u0643 \u0644\u0644\u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629. \u062f\u0639\u0646\u064a \u0623\u0631\u0627\u062c\u0639 \u0645\u0644\u0641\u0643 \u0627\u0644\u0637\u0628\u064a \u0648\u0628\u0648\u0644\u064a\u0635\u0629 \u0627\u0644\u062a\u0623\u0645\u064a\u0646."
                 }
+            ],
+            "type": "multilingual_support",
+            "icon": "uil-comment-alt-question",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         },
         {
@@ -126,36 +183,32 @@
                     "speaker": "AI Agent",
                     "text": "Excellent. I'll update your recovery notes and schedule your follow-up appointment with Dr. Patel for next week."
                 }
+            ],
+            "type": "post_operative_care",
+            "icon": "uil-user-check",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "Lab Results Consultation",
+            "scenario": "Patient calling to discuss recent blood test results",
+            "description": "AI agent handles sensitive lab result inquiry with proper medical protocol and physician coordination",
+            "duration": "1:10",
+            "type": "medical_consultation",
+            "icon": "uil-flask",
+            "audio_file": "healthcare-lab-results-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
             ]
         }
-    ],
-    "demo_benefits": [
-        {
-            "icon": "uil-clock-nine",
-            "title": "24/7 Availability",
-            "description": "Patients never get voicemail, even during emergencies"
-        },
-        {
-            "icon": "uil-shield-check", 
-            "title": "HIPAA Secure",
-            "description": "All conversations encrypted and privacy-compliant"
-        },
-        {
-            "icon": "uil-comments",
-            "title": "Multilingual",
-            "description": "Arabic, English, Hindi, and Urdu support"
-        },
-        {
-            "icon": "uil-user-md",
-            "title": "Medical Expertise",
-            "description": "Trained on medical protocols and terminology"
-        }
-    ],
-    "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-20",
-        "total_samples": 5,
-        "languages": ["English", "Arabic"],
-        "focus": "healthcare_communication_scenarios"
-    }
+    ]
 }
