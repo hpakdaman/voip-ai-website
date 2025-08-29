@@ -16,6 +16,17 @@
     function handleImageError(event) {
         const img = event.target;
         
+        // IMPORTANT: Don't handle errors for lazy loading images
+        // Let the lazy loader handle its own fallback logic
+        if (img.hasAttribute('data-lazy') || img.classList.contains('lazy-loading')) {
+            return;
+        }
+        
+        // Don't handle transparent placeholder images
+        if (img.src.startsWith('data:image/svg+xml')) {
+            return;
+        }
+        
         // Prevent infinite loop if the fallback image also fails
         if (img.src === window.location.origin + noImageSvg) {
             return;
