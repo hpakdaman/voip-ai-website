@@ -14,7 +14,7 @@
                 <!-- Company Info -->
                 <div class="lg:col-span-2">
                     <a href="{{ url('/') }}" class="inline-block mb-6">
-                        <img data-lazy="{{ asset('assets/images/sawtic-logo-darken-green-min.svg') }}" class="lazy-loading h-10" alt="Sawtic">
+                        <img data-src="{{ asset('assets/images/sawtic-logo-darken-green-min.svg') }}" class="lazy-loading h-10" alt="Sawtic">
                     </a>
                     <p class="text-slate-300 text-lg leading-relaxed mb-8">
                         Dubai's premier AI solution provider and call center specialists, transforming business communications across the UAE and globally with intelligent AI automation.

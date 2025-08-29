@@ -72,7 +72,7 @@
                 </ul>
             </div>
             <div class="relative">
-                <img data-lazy="{{ asset($industrySpecific['dashboard_image']) }}"
+                <img data-src="{{ asset($industrySpecific['dashboard_image']) }}"
                     alt="{{ $industrySpecific['dashboard_title'] }}" class="lazy-loading w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl">
                 </div>
@@ -101,7 +101,7 @@
         <!-- Second Feature Row -->
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative order-2 lg:order-1">
-                <img data-lazy="{{ asset($industrySpecific['consultation_image']) }}"
+                <img data-src="{{ asset($industrySpecific['consultation_image']) }}"
                     alt="{{ $industrySpecific['consultation_title'] }}" class="lazy-loading w-full rounded-2xl shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl">
                 </div>

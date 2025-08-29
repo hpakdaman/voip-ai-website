@@ -191,7 +191,7 @@
 
             <div class="md:col-span-5">
                 <div class="relative wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
-                    <img data-lazy="{{ asset('assets/images/illustrator/Startup_SVG.svg') }}" alt="Enterprise Solutions" class="lazy-loading mx-auto">
+                    <img data-src="{{ asset('assets/images/illustrator/Startup_SVG.svg') }}" alt="Enterprise Solutions" class="lazy-loading mx-auto">
                 </div>
             </div>
         </div>

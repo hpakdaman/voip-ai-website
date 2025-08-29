@@ -46,7 +46,7 @@ try {
                     <!-- Main Image Container -->
                     <div class="relative rounded-2xl overflow-hidden"
                          style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.1) 0%, rgba(22, 47, 58, 0.3) 100%);">
-                        <img data-lazy="{{ asset($sectionData['image'] ?? '/assets/images/saas/home.png') }}" 
+                        <img data-src="{{ asset($sectionData['image'] ?? '/assets/images/saas/home.png') }}" 
                              class="lazy-loading w-full h-auto rounded-2xl shadow-2xl transition-transform duration-500 hover:scale-105"
                              alt="{{ $sectionData['image_alt'] ?? 'AI Call Center Demo' }}" />
                         

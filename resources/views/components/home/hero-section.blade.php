@@ -43,7 +43,7 @@
                     
                     <!-- Circular container with VoIP color background - perfectly centered -->
                     <div class="relative w-100 h-100 sm:w-80 sm:h-80 md:w-100 md:h-100 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0" style="background-color: rgb(18, 42, 52); aspect-ratio: 1 / 1; --darkreader-inline-bgcolor: var(--darkreader-background-122a34, #102027);" data-darkreader-inline-bgcolor="">
-                        <img data-lazy="/assets/images/personal/a-professional-middle-eastern-woman-without-a-head.png" alt="Professional Customer Service Representative" class="lazy-loading w-[110%] h-[110%] object-cover object-center">
+                        <img data-src="/assets/images/personal/a-professional-middle-eastern-woman-without-a-head.png" alt="Professional Customer Service Representative" class="lazy-loading w-[110%] h-[110%] object-cover object-center">
                     </div>
                 </div>
             </div>

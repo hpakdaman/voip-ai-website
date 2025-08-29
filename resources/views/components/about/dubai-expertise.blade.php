@@ -32,7 +32,7 @@ try {
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Business Image -->
-                    <img data-lazy="{{ asset('assets/images/business/uae-business-growth.png') }}" 
+                    <img data-src="{{ asset('assets/images/business/uae-business-growth.png') }}" 
                          alt="UAE Business Excellence" 
                          class="lazy-loading w-full h-auto object-contain">
                     
