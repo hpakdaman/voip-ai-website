@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Sawtic Image Optimization Script - Fixed Version
-# Fixes: Large log files + Double optimization prevention
+# Sawtic Image Optimization Script
+# Automatically optimizes images for web performance
 
 set -e  # Exit on any error
 
@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 # Configuration
 IMAGES_DIR="public/assets/images"
 BACKUP_DIR="storage/image-backups/$(date +%Y-%m-%d_%H-%M-%S)"
-OPTIMIZATION_DB="storage/app/images-optimization-history.json"
+OPTIMIZATION_LOG="storage/app/images-optimization-history.json"
 MAX_WIDTH=1920
 MAX_HEIGHT=1080
 JPEG_QUALITY=85
@@ -27,8 +27,8 @@ TOTAL_FILES=0
 OPTIMIZED_FILES=0
 TOTAL_SAVINGS=0
 
-echo -e "${BLUE}🖼️  Sawtic Image Optimization Script (Fixed)${NC}"
-echo "================================================"
+echo -e "${BLUE}🖼️  Sawtic Image Optimization Script${NC}"
+echo "=========================================="
 
 # Check if required tools are installed
 check_dependencies() {
@@ -75,75 +75,86 @@ create_backup_dir() {
     fi
 }
 
-# Initialize or load optimization database
-load_optimization_db() {
-    local db_dir=$(dirname "$OPTIMIZATION_DB")
-    if [ ! -d "$db_dir" ]; then
-        mkdir -p "$db_dir"
+# Initialize or load optimization log
+load_optimization_log() {
+    local log_dir=$(dirname "$OPTIMIZATION_LOG")
+    if [ ! -d "$log_dir" ]; then
+        mkdir -p "$log_dir"
     fi
     
-    if [ ! -f "$OPTIMIZATION_DB" ]; then
-        echo '{"version": "2.0", "optimizations": {}}' > "$OPTIMIZATION_DB"
-        echo -e "${GREEN}📋 Created optimization database: $OPTIMIZATION_DB${NC}"
+    if [ ! -f "$OPTIMIZATION_LOG" ]; then
+        echo '{"version": "1.0", "optimizations": {}}' > "$OPTIMIZATION_LOG"
+        echo -e "${GREEN}📋 Created optimization log: $OPTIMIZATION_LOG${NC}"
     fi
 }
 
-# Generate compact file hash for path
-generate_path_hash() {
-    local file="$1"
-    local relative_path="${file#$IMAGES_DIR/}"
-    # Use first 12 characters of SHA-256 hash for compact storage
-    echo -n "$relative_path" | shasum -a 256 | cut -c1-12
-}
-
-# Generate file signature for optimization tracking  
-generate_file_signature() {
-    local file="$1"
-    local file_size=$(get_file_size "$file")
-    local mod_time
-    
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        mod_time=$(stat -f%m "$file")
-    else
-        mod_time=$(stat -c%Y "$file")
-    fi
-    
-    local current_settings="q${JPEG_QUALITY}_w${MAX_WIDTH}_h${MAX_HEIGHT}"
-    
-    # Create a compact signature: size_modtime_settings
-    echo "${file_size}_${mod_time}_${current_settings}"
-}
-
-# Check if file needs optimization (improved logic)
+# Check if file needs optimization
 needs_optimization() {
     local file="$1"
-    local path_hash=$(generate_path_hash "$file")
-    local current_signature=$(generate_file_signature "$file")
+    local relative_path="${file#$IMAGES_DIR/}"
+    local file_hash=$(get_file_hash "$file")
+    local file_size=$(get_file_size "$file")
+    local current_settings="q${JPEG_QUALITY}_w${MAX_WIDTH}_h${MAX_HEIGHT}"
     
-    # Check if file exists in database with same signature
-    local logged_signature=$(jq -r ".optimizations[\"$path_hash\"] // empty" "$OPTIMIZATION_DB" 2>/dev/null)
+    # Check if file exists in log with same hash and settings
+    local log_entry=$(jq -r ".optimizations[\"$relative_path\"]" "$OPTIMIZATION_LOG" 2>/dev/null)
     
-    if [ "$logged_signature" = "$current_signature" ]; then
-        return 1  # File doesn't need optimization
+    if [ "$log_entry" != "null" ] && [ "$log_entry" != "" ]; then
+        local logged_hash=$(echo "$log_entry" | jq -r '.hash // empty' 2>/dev/null)
+        local logged_settings=$(echo "$log_entry" | jq -r '.settings // empty' 2>/dev/null)
+        
+        if [ "$logged_hash" = "$file_hash" ] && [ "$logged_settings" = "$current_settings" ]; then
+            return 1  # File doesn't need optimization
+        fi
     fi
     
     return 0  # File needs optimization
 }
 
-# Record optimization in database (compact format)
+# Get file hash (for change detection)
+get_file_hash() {
+    if command -v shasum >/dev/null 2>&1; then
+        shasum -a 256 "$1" | cut -d' ' -f1
+    elif command -v sha256sum >/dev/null 2>&1; then
+        sha256sum "$1" | cut -d' ' -f1
+    else
+        # Fallback to file size + modification time
+        echo "$(get_file_size "$1")_$(stat -c %Y "$1" 2>/dev/null || stat -f %m "$1")"
+    fi
+}
+
+# Record optimization in log
 record_optimization() {
     local file="$1"
     local original_size="$2"
     local new_size="$3"
-    local path_hash=$(generate_path_hash "$file")
-    local current_signature=$(generate_file_signature "$file")
+    local original_hash="$4"
+    local relative_path="${file#$IMAGES_DIR/}"
+    local current_settings="q${JPEG_QUALITY}_w${MAX_WIDTH}_h${MAX_HEIGHT}"
+    local timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
     
-    # Store only the signature (size_time_settings) as value
-    # This is ultra-compact: just hash -> signature mapping
-    jq --arg hash "$path_hash" --arg signature "$current_signature" \
-        '.optimizations[$hash] = $signature' \
-        "$OPTIMIZATION_DB" > "${OPTIMIZATION_DB}.tmp" && \
-    mv "${OPTIMIZATION_DB}.tmp" "$OPTIMIZATION_DB"
+    # Create optimization record
+    local record=$(jq -n \
+        --arg hash "$original_hash" \
+        --arg settings "$current_settings" \
+        --arg timestamp "$timestamp" \
+        --argjson original_size "$original_size" \
+        --argjson new_size "$new_size" \
+        --argjson savings "$((original_size - new_size))" \
+        '{
+            hash: $hash,
+            settings: $settings,
+            timestamp: $timestamp,
+            original_size: $original_size,
+            new_size: $new_size,
+            savings: $savings
+        }')
+    
+    # Update log file
+    jq --arg path "$relative_path" --argjson record "$record" \
+        '.optimizations[$path] = $record' \
+        "$OPTIMIZATION_LOG" > "${OPTIMIZATION_LOG}.tmp" && \
+    mv "${OPTIMIZATION_LOG}.tmp" "$OPTIMIZATION_LOG"
 }
 
 # Get file size in bytes
@@ -185,6 +196,7 @@ backup_file() {
 optimize_jpeg() {
     local file="$1"
     local original_size=$(get_file_size "$file")
+    local original_hash=$(get_file_hash "$file")
     
     echo -e "  🔧 Optimizing JPEG: $(basename "$file")"
     
@@ -205,8 +217,8 @@ optimize_jpeg() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
-        record_optimization "$file" "$original_size" "$new_size"
+        # Record optimization in log with original hash
+        record_optimization "$file" "$original_size" "$new_size" "$original_hash"
     else
         # Optimization made file larger - restore original
         echo -e "    ${YELLOW}⚠️  File got larger ($(format_bytes $((new_size - original_size)))) - restoring original${NC}"
@@ -223,6 +235,7 @@ optimize_jpeg() {
 optimize_png() {
     local file="$1"
     local original_size=$(get_file_size "$file")
+    local original_hash=$(get_file_hash "$file")
     
     echo -e "  🔧 Optimizing PNG: $(basename "$file")"
     
@@ -243,8 +256,8 @@ optimize_png() {
         TOTAL_SAVINGS=$((TOTAL_SAVINGS + savings))
         OPTIMIZED_FILES=$((OPTIMIZED_FILES + 1))
         
-        # Record optimization in log
-        record_optimization "$file" "$original_size" "$new_size"
+        # Record optimization in log with original hash
+        record_optimization "$file" "$original_size" "$new_size" "$original_hash"
     else
         # Optimization made file larger - restore original
         echo -e "    ${YELLOW}⚠️  File got larger ($(format_bytes $((new_size - original_size)))) - restoring original${NC}"
@@ -362,13 +375,6 @@ generate_report() {
         echo -e "Average savings per file: ${GREEN}$(format_bytes $((TOTAL_SAVINGS / OPTIMIZED_FILES)))${NC}"
     fi
     
-    # Show database file size
-    if [ -f "$OPTIMIZATION_DB" ]; then
-        local db_size=$(get_file_size "$OPTIMIZATION_DB")
-        local db_entries=$(jq '.optimizations | length' "$OPTIMIZATION_DB" 2>/dev/null || echo "0")
-        echo -e "Optimization database: ${YELLOW}$db_entries entries, $(format_bytes $db_size)${NC}"
-    fi
-    
     echo ""
     echo -e "${GREEN}✅ Image optimization complete!${NC}"
     
@@ -380,7 +386,7 @@ generate_report() {
 
 # Show help
 show_help() {
-    echo "Sawtic Image Optimization Script (Fixed Version)"
+    echo "Sawtic Image Optimization Script"
     echo ""
     echo "Usage: $0 [OPTIONS] [FILE_PATH]"
     echo ""
@@ -391,51 +397,26 @@ show_help() {
     echo "  -H, --height   Set maximum height (default: $MAX_HEIGHT)"
     echo "  --webp         Generate WebP versions (default: enabled)"
     echo "  --no-webp      Skip WebP generation"
-    echo "  --clean-db     Clean optimization database (forces re-optimization)"
     echo ""
     echo "Arguments:"
     echo "  FILE_PATH      Optimize only this specific file"
     echo ""
-    echo "Improvements:"
-    echo "  ✅ Ultra-compact database format (95% smaller)"
-    echo "  ✅ Hash-based path storage (no file paths stored)"
-    echo "  ✅ Fixed double optimization prevention"
-    echo "  ✅ Better file change detection"
-    echo "  ✅ No arbitrary size limits or cleanup"
-}
-
-# Clean optimization database manually (if really needed)
-clean_db() {
-    if [ -f "$OPTIMIZATION_DB" ]; then
-        echo -e "${YELLOW}🧹 Cleaning optimization database...${NC}"
-        echo -e "${RED}⚠️  Warning: This will force re-optimization of ALL images!${NC}"
-        read -p "Are you sure? (y/N): " -n 1 -r
-        echo
-        if [[ $REPLY =~ ^[Yy]$ ]]; then
-            echo '{"version": "2.0", "optimizations": {}}' > "$OPTIMIZATION_DB"
-            echo -e "${GREEN}✅ Optimization database cleaned${NC}"
-        else
-            echo -e "${YELLOW}❌ Database cleaning cancelled${NC}"
-        fi
-    else
-        echo -e "${YELLOW}⚠️  No optimization database found${NC}"
-    fi
+    echo "Examples:"
+    echo "  $0                                  # Optimize all images"
+    echo "  $0 -q 90                           # Use 90% JPEG quality"
+    echo "  $0 public/assets/images/hero.jpg   # Optimize single file"
+    echo "  $0 --webp -q 85 specific/image.png # Single file with options"
 }
 
 # Parse command line arguments
 SKIP_WEBP=false
 SINGLE_FILE=""
-CLEAN_DB_ONLY=false
 
 while [[ $# -gt 0 ]]; do
     case $1 in
         -h|--help)
             show_help
             exit 0
-            ;;
-        --clean-db)
-            CLEAN_DB_ONLY=true
-            shift
             ;;
         -q|--quality)
             JPEG_QUALITY="$2"
@@ -473,14 +454,9 @@ done
 
 # Main execution
 main() {
-    if [ "$CLEAN_DB_ONLY" = true ]; then
-        clean_db
-        exit 0
-    fi
-    
     check_dependencies
     create_backup_dir
-    load_optimization_db
+    load_optimization_log
     optimize_images
     generate_report
 }
