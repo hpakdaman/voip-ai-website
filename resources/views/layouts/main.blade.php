@@ -99,8 +99,8 @@
         <script src="{{ asset('assets/js/voip-home.js') }}"></script>
         <!-- Image Fallback Handler -->
         <script src="{{ asset('assets/js/image-fallback.js') }}"></script>
-        <!-- Lozad Lazy Loading for Performance -->
-        <script src="{{ asset('assets/js/lozad-lazy-loading.js') }}"></script>
+        <!-- Vanilla Lazy Loading for Performance -->
+        <script src="{{ asset('assets/js/vanilla-lazy-loading.js') }}"></script>
         <!-- JAVASCRIPTS -->
 
         <script>
