@@ -1,5 +1,4 @@
 {
-    "industry": "spa-massage",
     "badge": "AI Spa & Wellness Assistant",
     "title": "Never Miss an Appointment Again",
     "subtitle": "24/7 AI call agents for spa and massage salon bookings",
@@ -40,7 +39,7 @@
                 "text": "I'd be happy to help you book a massage. We have several options available - Swedish, deep tissue, hot stone, or aromatherapy massage. Do you have a preference?"
             },
             {
-                "speaker": "Client", 
+                "speaker": "Client",
                 "text": "I think a deep tissue massage would be perfect."
             },
             {
@@ -67,6 +66,47 @@
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "industry_focus": "spa and massage salons"
+        "industry_focus": "spa and massage salons",
+        "industry": "spa_massage",
+        "target_audience": "UAE spa_massage businesses, [target segments]",
+        "conversion_goals": [
+            "demo_booking",
+            "phone_calls",
+            "lead_generation"
+        ]
+    },
+    "section": {
+        "industry_badge": "Spa Massage AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Spa Massage Lead",
+        "subtitle": "Dubai's #1 AI call center handles spa-massage-specific inquiries, [service] bookings, and lead qualification 24/7 - even when you're [busy context].",
+        "key_benefits": [
+            "Qualify leads instantly while you're [context]",
+            "Book [services] automatically 24/7",
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "[number]+",
+                "label": "UAE [Industry Units]"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live Spa Massage Inquiry Demo",
+        "description": "Real conversation with AI agent handling [specific scenario]",
+        "duration": "45 seconds",
+        "audio_file": "spa_massage-inquiry-demo.mp3",
+        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
     }
 }

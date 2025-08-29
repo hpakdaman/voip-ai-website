@@ -3,7 +3,16 @@
         "badge": "AI E-commerce Assistant",
         "title": "Your AI Agent Knows",
         "highlighted": "Retail & E-commerce Inside Out",
-        "description": "Advanced AI trained specifically for UAE retail industry, product catalogs, customer service excellence, and online shopping optimization."
+        "description": "Advanced AI trained specifically for UAE retail industry, product catalogs, customer service excellence, and online shopping optimization.",
+        "demo_image": "/assets/images/retail/ecommerce-demo.jpg",
+        "demo_alt": "E-commerce Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles customer inquiries, product recommendations, and sales with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Handles product inquiries and shopping assistance",
+            "Converts browsers to buyers with smart recommendations",
+            "Integrates with your e-commerce platform automatically"
+        ]
     },
     "capabilities": [
         {
@@ -181,6 +190,7 @@
         "last_updated": "2025-01-22",
         "total_capabilities": 6,
         "total_integrations": 12,
-        "industry_focus": "UAE retail and e-commerce market"
+        "industry_focus": "UAE retail and e-commerce market",
+        "industry": "retail_ecommerce"
     }
 }

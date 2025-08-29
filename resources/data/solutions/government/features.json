@@ -1,44 +1,99 @@
 {
     "section": {
-        "headline": "Advanced Features for Modern Government",
-        "subheadline": "Cutting-edge AI capabilities designed specifically for public sector excellence and citizen satisfaction",
+        "badge": "Digital Government",
+        "title": "See Sawtic AI",
+        "highlighted": "Serving Citizens",
+        "description": "Experience how our AI agents transform government services with intelligent automation and 24/7 citizen support"
+    },
+    "dashboard": {
+        "title": "Citizen Service Command Center",
+        "description": "Monitor all citizen interactions, service requests, and satisfaction metrics in real-time from a unified dashboard.",
+        "image": "/assets/images/government/command-center.jpg",
         "features": [
-            {
-                "title": "Constitutional Rights Protection",
-                "description": "Ensure all citizen interactions respect privacy rights, due process, and equal access to public services regardless of background",
-                "icon": "uil-balance-scale",
-                "highlight": true
-            },
-            {
-                "title": "Multi-Agency Coordination",
-                "description": "Seamlessly coordinate between federal, state, and local agencies to provide unified citizen experiences without bureaucratic barriers",
-                "icon": "uil-sitemap",
-                "highlight": false
-            },
-            {
-                "title": "Regulatory Compliance Engine",
-                "description": "Stay current with changing laws, codes, and regulations, automatically updating citizen guidance to reflect latest requirements",
-                "icon": "uil-shield-check",
-                "highlight": true
-            },
-            {
-                "title": "Public Record Management",
-                "description": "Help citizens navigate freedom of information requests and public record access with transparent, efficient processes",
-                "icon": "uil-file-search-alt",
-                "highlight": false
-            },
-            {
-                "title": "Accessibility Compliance",
-                "description": "Meet ADA requirements and ensure equal access for citizens with disabilities through multiple communication channels",
-                "icon": "uil-wheelchair-alt",
-                "highlight": false
-            },
-            {
-                "title": "Crisis Management Integration",
-                "description": "Instantly activate emergency protocols, coordinate with first responders, and keep communities informed during critical situations",
-                "icon": "uil-exclamation-triangle",
-                "highlight": true
-            }
+            "Live service request tracking",
+            "Multi-department coordination",
+            "Citizen satisfaction analytics"
         ]
+    },
+    "consultation": {
+        "title": "Government Services Assistant",
+        "description": "Your AI agent provides comprehensive support for all government services with deep knowledge of UAE federal and local regulations.",
+        "image": "/assets/images/government/digital-services.jpg",
+        "features": [
+            "Real-time policy and regulation information",
+            "UAE federal and emirate-specific guidelines",
+            "Multi-language support (Arabic, English, Hindi, Urdu)"
+        ]
+    },
+    "features": [
+        {
+            "title": "Citizen Service Inquiries",
+            "description": "AI handles visa, permits, licensing, and documentation queries instantly",
+            "icon": "uil-file-check-alt",
+            "demo_video": "citizen-service-demo.mp4",
+            "highlight": "90% first-call resolution"
+        },
+        {
+            "title": "Emergency Response Routing",
+            "description": "Intelligent triage and routing for emergency and urgent requests",
+            "icon": "uil-shield-check",
+            "demo_video": "emergency-routing-demo.mp4",
+            "highlight": "3-second emergency routing"
+        },
+        {
+            "title": "Multi-Department Integration",
+            "description": "Seamless handoff between departments with context preservation",
+            "icon": "uil-sitemap",
+            "demo_video": "department-integration-demo.mp4",
+            "highlight": "Zero information loss"
+        },
+        {
+            "title": "Document Status Tracking",
+            "description": "Real-time updates on application and document processing status",
+            "icon": "uil-file-search-alt",
+            "demo_video": "status-tracking-demo.mp4",
+            "highlight": "Instant status updates"
+        },
+        {
+            "title": "Appointment Scheduling",
+            "description": "Smart booking for government services and department visits",
+            "icon": "uil-schedule",
+            "demo_video": "appointment-booking-demo.mp4",
+            "highlight": "85% online booking rate"
+        },
+        {
+            "title": "Compliance & Regulations",
+            "description": "AI ensures all interactions comply with UAE government standards",
+            "icon": "uil-balance-scale",
+            "demo_video": "compliance-demo.mp4",
+            "highlight": "100% compliance rate"
+        }
+    ],
+    "stats": [
+        {
+            "number": "70%",
+            "label": "Cost Reduction",
+            "description": "Lower operational costs through automation"
+        },
+        {
+            "number": "90%",
+            "label": "Citizen Satisfaction",
+            "description": "Higher satisfaction through instant support"
+        },
+        {
+            "number": "24/7",
+            "label": "Service Availability",
+            "description": "Round-the-clock citizen support"
+        },
+        {
+            "number": "5 Sec",
+            "label": "Response Time",
+            "description": "Average time to first response"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-26",
+        "industry": "government"
     }
 }

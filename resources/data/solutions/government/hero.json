@@ -22,15 +22,48 @@
         "cta": {
             "primary": "Transform Your Services",
             "secondary": "See Government Demo"
-        }
+        },
+        "key_benefits": [
+            "Qualify leads instantly while you're [context]",
+            "Book [services] automatically 24/7",
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "[number]+",
+                "label": "UAE [Industry Units]"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
     },
     "hero_images": {
-        "main": null
+        "main": "/assets/images/government/hero/1.jpg"
     },
     "voice_demo": {
-        "title": "🎧 Listen: AI Handling Citizen Service Request",
+        "title": "\ud83c\udfa7 Listen: AI Handling Citizen Service Request",
         "description": "Hear how our AI compassionately assists a citizen with municipal permit questions, providing clear guidance and next steps.",
         "audio_file": "government-citizen-service.mp3",
-        "duration": "2:45"
+        "duration": "2:45",
+        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-26",
+        "industry": "government",
+        "target_audience": "government_agencies",
+        "conversion_goals": [
+            "demo_request",
+            "consultation_booking",
+            "lead_generation"
+        ]
     }
 }

@@ -92,6 +92,7 @@
         "last_updated": "2025-01-22",
         "total_problems": 6,
         "total_solutions": 6,
-        "conversion_focus": "financial_problem_awareness"
+        "conversion_focus": "financial_problem_awareness",
+        "industry": "finance_banking"
     }
 }

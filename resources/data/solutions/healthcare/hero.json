@@ -7,7 +7,7 @@
         "description": "Transform your medical practice with intelligent AI call agents that handle patient appointments, medical inquiries, and emergency calls with professional medical knowledge and HIPAA compliance.",
         "primary_cta": "Book Medical Demo",
         "secondary_cta": "Call +971 4 864 7245",
-        "demo_title": "🎧 Live Healthcare Demo",
+        "demo_title": "\ud83c\udfa7 Live Healthcare Demo",
         "demo_description": "Listen to our AI agent handling a patient appointment booking with medical expertise"
     },
     "stats": [
@@ -44,7 +44,7 @@
                 "text": "Hi, I'd like to schedule an appointment with Dr. Ahmed for a general check-up."
             },
             {
-                "speaker": "AI Agent", 
+                "speaker": "AI Agent",
                 "text": "I'd be happy to help you schedule that appointment. May I have your full name and date of birth for verification?"
             },
             {
@@ -63,7 +63,10 @@
                 "speaker": "AI Agent",
                 "text": "Excellent! I've scheduled your general check-up with Dr. Ahmed for Thursday, October 26th at 2:00 PM. Please arrive 15 minutes early and bring your Emirates ID. You'll receive SMS and email confirmations shortly. Is there anything else I can help you with today?"
             }
-        ]
+        ],
+        "title": "Live Healthcare Inquiry Demo",
+        "description": "Real conversation with AI agent handling [specific scenario]",
+        "duration": "45 seconds"
     },
     "hero_images": {
         "main": "assets/images/hospital/hero.jpg"
@@ -72,6 +75,39 @@
         "industry": "healthcare",
         "version": "1.0",
         "last_updated": "2025-01-20",
-        "focus": "AI call agents for medical practices"
+        "focus": "AI call agents for medical practices",
+        "target_audience": "UAE healthcare businesses, [target segments]",
+        "conversion_goals": [
+            "demo_booking",
+            "phone_calls",
+            "lead_generation"
+        ]
+    },
+    "section": {
+        "industry_badge": "Healthcare AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Healthcare Lead",
+        "subtitle": "Dubai's #1 AI call center handles healthcare-specific inquiries, [service] bookings, and lead qualification 24/7 - even when you're [busy context].",
+        "key_benefits": [
+            "Qualify leads instantly while you're [context]",
+            "Book [services] automatically 24/7",
+            "Handle Arabic & English inquiries fluently",
+            "Integrate with your CRM and calendar systems",
+            "Never lose another hot lead to competitors"
+        ],
+        "trust_stats": [
+            {
+                "number": "[number]+",
+                "label": "UAE [Industry Units]"
+            },
+            {
+                "number": "24/7",
+                "label": "Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Lead Conversion"
+            }
+        ]
     }
 }

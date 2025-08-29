@@ -16,16 +16,18 @@
                 "min": 0,
                 "max": 200,
                 "default": 25,
-                "tooltip": "Average number of banking calls that go unanswered daily"
+                "tooltip": "Average number of banking calls that go unanswered daily",
+                "step": 1
             },
             {
                 "id": "average_account_value",
                 "label": "Average New Account Value (AED)",
-                "type": "number", 
+                "type": "number",
                 "min": 1000,
                 "max": 50000,
                 "default": 8000,
-                "tooltip": "Average value of new customer accounts opened"
+                "tooltip": "Average value of new customer accounts opened",
+                "step": 500
             },
             {
                 "id": "loan_application_drop_rate",
@@ -34,7 +36,8 @@
                 "min": 0,
                 "max": 80,
                 "default": 35,
-                "tooltip": "Percentage of loan applications abandoned due to delays"
+                "tooltip": "Percentage of loan applications abandoned due to delays",
+                "step": 1
             },
             {
                 "id": "staff_hours_on_calls",
@@ -43,7 +46,8 @@
                 "min": 2,
                 "max": 20,
                 "default": 10,
-                "tooltip": "Total daily hours staff spend on customer service calls"
+                "tooltip": "Total daily hours staff spend on customer service calls",
+                "step": 5
             },
             {
                 "id": "hourly_staff_cost",
@@ -72,16 +76,16 @@
                 "color": "voip-link"
             },
             {
-                "id": "loan_completion_revenue", 
+                "id": "loan_completion_revenue",
                 "label": "Loan Application Completion",
                 "description": "Revenue from improved loan application completion rates",
-                "formula": "(loan_applications_per_month * loan_application_drop_rate / 100 * application_completion_improvement / 100) * 2500",
+                "formula": "(50 * loan_application_drop_rate / 100 * application_completion_improvement / 100) * 2500",
                 "prefix": "AED ",
                 "color": "voip-primary"
             },
             {
                 "id": "staff_cost_savings",
-                "label": "Staff Cost Savings", 
+                "label": "Staff Cost Savings",
                 "description": "Monthly savings from automated customer service",
                 "formula": "(staff_hours_on_calls * 30 * staff_time_savings_percentage / 100) * hourly_staff_cost",
                 "prefix": "AED ",
@@ -113,9 +117,23 @@
                 "suffix": " days",
                 "color": "voip-accent"
             }
-        ]
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 1500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
+        }
     },
-    "benefits_summary": [
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-22",
+        "focus": "banking_growth_roi",
+        "calculator_type": "financial_services",
+        "industry": "finance_banking",
+        "currency": "AED"
+    },
+    "benefits": [
         {
             "icon": "uil-phone-volume",
             "title": "24/7 Banking Support",
@@ -136,27 +154,5 @@
             "title": "Multilingual Support",
             "description": "Serve UAE's diverse banking customers effectively"
         }
-    ],
-    "case_study": {
-        "bank_name": "Emirates Commercial Bank",
-        "before": {
-            "missed_calls": 35,
-            "application_drop_rate": 40,
-            "staff_hours": 12,
-            "monthly_loss": "AED 85,000"
-        },
-        "after": {
-            "missed_calls": 4,
-            "application_drop_rate": 10,
-            "staff_hours": 4,
-            "monthly_growth": "AED 125,000"
-        },
-        "testimonial": "Sawtic AI revolutionized our customer service. We now provide instant banking support while our staff focus on complex financial advisory."
-    },
-    "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-22",
-        "focus": "banking_growth_roi",
-        "calculator_type": "financial_services"
-    }
+    ]
 }

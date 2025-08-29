@@ -1,7 +1,9 @@
 {
     "section": {
         "title": "Common Spa & Massage Salon Challenges",
-        "description": "See how Sawtic AI solves the biggest operational challenges facing wellness businesses in the UAE"
+        "description": "See how Sawtic AI solves the biggest operational challenges facing wellness businesses in the UAE",
+        "badge": "Spa Massage Challenges",
+        "highlighted": "[Busy Context]"
     },
     "problems": [
         {
@@ -95,7 +97,9 @@
                 "After-hours booking capability",
                 "Real-time calendar integration"
             ],
-            "result": "40% increase in bookings"
+            "result": "40% increase in bookings",
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "id": 2,
@@ -108,7 +112,9 @@
                 "Instant pricing and package information",
                 "Health screening and consultation"
             ],
-            "result": "60% better conversion"
+            "result": "60% better conversion",
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "id": 3,
@@ -121,7 +127,9 @@
                 "SMS and call reminders",
                 "Last-minute rebooking for cancellations"
             ],
-            "result": "85% show-up rate"
+            "result": "85% show-up rate",
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "id": 4,
@@ -134,7 +142,9 @@
                 "Room and equipment scheduling",
                 "Special request handling"
             ],
-            "result": "95% booking accuracy"
+            "result": "95% booking accuracy",
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "id": 5,
@@ -147,7 +157,9 @@
                 "Respectful health discussions",
                 "International client accommodation"
             ],
-            "result": "50% market expansion"
+            "result": "50% market expansion",
+            "benefit": "[benefit description]",
+            "demo_available": false
         },
         {
             "id": 6,
@@ -160,7 +172,9 @@
                 "Reduce reception staff workload",
                 "Maintain service quality under pressure"
             ],
-            "result": "70% efficiency improvement"
+            "result": "70% efficiency improvement",
+            "benefit": "[benefit description]",
+            "demo_available": true
         }
     ],
     "metadata": {
@@ -168,6 +182,9 @@
         "last_updated": "2025-01-20",
         "problem_count": 6,
         "solution_count": 6,
-        "industry": "spa and massage wellness"
+        "industry": "spa_massage",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "problem_awareness"
     }
 }

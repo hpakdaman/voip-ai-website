@@ -26,7 +26,7 @@
             "name": "Fatima Hassan",
             "title": "Owner",
             "company": "Bliss Massage Center - Abu Dhabi",
-            "image": "/assets/images/client/02.jpg", 
+            "image": "/assets/images/client/02.jpg",
             "testimonial": "The AI answers all our clients' questions about treatments, pricing, and availability. It even handles appointment confirmations and follow-ups. Game changer!",
             "rating": 5,
             "results": {
@@ -50,6 +50,34 @@
                 "retention_rate": "92%"
             },
             "specialty": "Wellness & Beauty"
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-01-26",
+        "industry": "spa_massage",
+        "testimonial_count": 3
+    },
+    "stats": [
+        {
+            "number": "[number]+",
+            "label": "UAE Spa Massage Professionals",
+            "description": "Using Sawtic AI daily"
+        },
+        {
+            "number": "[number]%",
+            "label": "More Leads Captured",
+            "description": "Average increase in qualified leads"
+        },
+        {
+            "number": "95%",
+            "label": "Client Satisfaction",
+            "description": "Customers rate AI interaction highly"
+        },
+        {
+            "number": "24/7",
+            "label": "Lead Capture",
+            "description": "Never miss opportunities"
         }
     ]
 }

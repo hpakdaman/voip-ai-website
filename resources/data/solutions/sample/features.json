@@ -16,13 +16,13 @@
         ]
     },
     "consultation": {
-        "title": "Professional [Industry] Consultations",
-        "description": "Your AI agent provides expert-level consultations with deep knowledge of [industry] market trends and regulations.",
-        "image": "/assets/images/[industry]/consultation.jpg",
+        "title": "Government Services Assistant",
+        "description": "Your AI agent provides comprehensive support for all government services with deep knowledge of UAE federal and local regulations.",
+        "image": "/assets/images/government/digital-services.jpg",
         "features": [
-            "[Industry-specific] insights and trends",
-            "UAE [industry] regulations and compliance",
-            "Expert advice and calculations"
+            "Real-time policy and regulation information",
+            "UAE federal and emirate-specific guidelines",
+            "Multi-language support (Arabic, English, Hindi, Urdu)"
         ]
     },
     "features": [

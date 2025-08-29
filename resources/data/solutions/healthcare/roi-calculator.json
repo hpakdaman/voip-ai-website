@@ -16,16 +16,18 @@
                 "min": 0,
                 "max": 100,
                 "default": 15,
-                "tooltip": "Average number of patient calls that go unanswered daily"
+                "tooltip": "Average number of patient calls that go unanswered daily",
+                "step": 1
             },
             {
                 "id": "average_appointment_value",
                 "label": "Average Appointment Value (AED)",
-                "type": "number", 
+                "type": "number",
                 "min": 100,
                 "max": 2000,
                 "default": 400,
-                "tooltip": "Average revenue per patient appointment"
+                "tooltip": "Average revenue per patient appointment",
+                "step": 500
             },
             {
                 "id": "no_show_rate",
@@ -34,7 +36,8 @@
                 "min": 0,
                 "max": 50,
                 "default": 25,
-                "tooltip": "Percentage of appointments with patient no-shows"
+                "tooltip": "Percentage of appointments with patient no-shows",
+                "step": 1
             },
             {
                 "id": "staff_hours_on_calls",
@@ -43,7 +46,8 @@
                 "min": 1,
                 "max": 16,
                 "default": 6,
-                "tooltip": "Total daily hours staff spend on patient calls"
+                "tooltip": "Total daily hours staff spend on patient calls",
+                "step": 5
             },
             {
                 "id": "hourly_staff_cost",
@@ -72,7 +76,7 @@
                 "color": "voip-link"
             },
             {
-                "id": "no_show_savings", 
+                "id": "no_show_savings",
                 "label": "No-Show Reduction Savings",
                 "description": "Revenue saved from reduced appointment cancellations",
                 "formula": "(appointments_per_month * no_show_rate / 100 * no_show_reduction_percentage / 100) * average_appointment_value",
@@ -81,7 +85,7 @@
             },
             {
                 "id": "staff_cost_savings",
-                "label": "Staff Cost Savings", 
+                "label": "Staff Cost Savings",
                 "description": "Monthly savings from automated call handling",
                 "formula": "(staff_hours_on_calls * 30 * staff_time_savings_percentage / 100) * hourly_staff_cost",
                 "prefix": "AED ",
@@ -113,50 +117,26 @@
                 "suffix": " days",
                 "color": "voip-accent"
             }
-        ]
-    },
-    "benefits_summary": [
-        {
-            "icon": "uil-phone-volume",
-            "title": "Never Miss Emergency Calls",
-            "description": "24/7 emergency response even outside office hours"
-        },
-        {
-            "icon": "uil-calendar-alt",
-            "title": "Automated Scheduling",
-            "description": "Reduce administrative burden on medical staff"
-        },
-        {
-            "icon": "uil-shield-check",
-            "title": "HIPAA Compliance",
-            "description": "Secure patient data handling and privacy protection"
-        },
-        {
-            "icon": "uil-comments",
-            "title": "Multilingual Support",
-            "description": "Serve UAE's diverse patient population effectively"
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 1500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
         }
-    ],
-    "case_study": {
-        "clinic_name": "Dubai Family Medical Center",
-        "before": {
-            "missed_calls": 25,
-            "no_show_rate": 30,
-            "staff_hours": 8,
-            "monthly_loss": "AED 18,500"
-        },
-        "after": {
-            "missed_calls": 3,
-            "no_show_rate": 9,
-            "staff_hours": 3,
-            "monthly_savings": "AED 16,200"
-        },
-        "testimonial": "Sawtic AI transformed our patient communication. We now provide 24/7 care access while reducing staff workload."
     },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-01-20",
         "focus": "medical_practice_roi",
-        "calculator_type": "healthcare_savings"
-    }
+        "calculator_type": "healthcare_savings",
+        "industry": "healthcare",
+        "currency": "AED"
+    },
+    "benefits": [
+        "Never miss a lead while [busy context]",
+        "AI qualifies leads before they reach you",
+        "Automatic appointment booking and confirmations",
+        "24/7 availability captures after-hours opportunities"
+    ]
 }

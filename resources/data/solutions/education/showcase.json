@@ -32,5 +32,16 @@
             "Integration with learning management systems",
             "Automated appointment scheduling and reminders"
         ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-29",
+        "industry": "education"
+    },
+    "section": {
+        "badge": "AI Solutions",
+        "title": "Transform Your Business",
+        "highlighted": "with AI",
+        "description": "Experience the power of AI-driven automation in your industry."
     }
 }

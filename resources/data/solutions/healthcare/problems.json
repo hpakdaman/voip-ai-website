@@ -92,6 +92,7 @@
         "last_updated": "2025-01-20",
         "total_problems": 6,
         "total_solutions": 6,
-        "conversion_focus": "medical_problem_awareness"
+        "conversion_focus": "medical_problem_awareness",
+        "industry": "healthcare"
     }
 }
