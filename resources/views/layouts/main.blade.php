@@ -51,8 +51,11 @@
         @endif
         
 
-        <!-- Vite - Consolidated Assets (CSS + JavaScript) -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- Vite - CSS Only -->
+        @vite('resources/css/app.css')
+
+        <!-- Laravel Mix - JavaScript Bundle -->
+        <script src="{{ asset('js/app.min.js') }}" defer></script>
 
         @stack('structured-data')
 

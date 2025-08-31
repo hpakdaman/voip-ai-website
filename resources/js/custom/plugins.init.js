@@ -477,21 +477,8 @@ try {
 /*/*            09) Fade Animation         */
 //=========================================//
 
-/* global AOS */
-
-try {
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            easing: 'ease-in-out-sine',
-            duration: 1000
-        });
-        console.log('AOS initialized successfully.');
-    } else {
-        console.warn('AOS library not found.');
-    }
-} catch (err) {
-    console.error('Error initializing AOS:', err);
-}
+// AOS removed - using WOW.js instead (initialized in main app.js)
+console.log('Animation handling via WOW.js (see main app.js)');
 
 
 //=========================================//

@@ -173,7 +173,13 @@ function topFunction() {
 /*********************/
 /*   Feather Icons   */
 /*********************/
-feather.replace();
+// Initialize Feather Icons
+if (typeof feather !== 'undefined') {
+    feather.replace();
+    console.log('Feather icons initialized successfully');
+} else {
+    console.warn('Feather icons library not found');
+}
 
 /*********************/
 /*     Small Menu    */
