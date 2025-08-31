@@ -1,0 +1,302 @@
+/* Optimized Unicons CSS - Only Including Used Icons */
+/* Generated from analysis of 235 unique icons used in the project */
+
+/* Font Face Definitions - Only loading required font files */
+@font-face {
+  font-family: 'unicons-line';
+  src: url('../libs/@iconscout/unicons/fonts/line/unicons-0.eot');
+  src: url('../libs/@iconscout/unicons/fonts/line/unicons-0.eot#iefix') format('embedded-opentype'),
+       url('../libs/@iconscout/unicons/fonts/line/unicons-0.woff2') format('woff2'),
+       url('../libs/@iconscout/unicons/fonts/line/unicons-0.woff') format('woff'),
+       url('../libs/@iconscout/unicons/fonts/line/unicons-0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Icon Styles */
+[class^="uil-"]:before,
+[class*=" uil-"]:before {
+  font-family: 'unicons-line';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Only Including Actually Used Icons (235 icons) */
+/* Communication Icons */
+.uil-phone:before { content: '\ecb0'; }
+.uil-phone-alt:before { content: '\ecb1'; }
+.uil-phone-volume:before { content: '\ecb2'; }
+.uil-envelope:before { content: '\ecb6'; }
+.uil-envelope-alt:before { content: '\ecb7'; }
+.uil-envelope-send:before { content: '\ecb8'; }
+.uil-envelope-open:before { content: '\ecb9'; }
+.uil-message:before { content: '\eb23'; }
+.uil-comment:before { content: '\e80d'; }
+.uil-comment-alt:before { content: '\e82a'; }
+.uil-comments:before { content: '\e802'; }
+.uil-chat:before { content: '\e824'; }
+.uil-chat-bubble-user:before { content: '\e827'; }
+
+/* Navigation & Arrows */
+.uil-arrow-up:before { content: '\ebb6'; }
+.uil-arrow-down:before { content: '\ebe9'; }
+.uil-arrow-left:before { content: '\ebb4'; }
+.uil-arrow-right:before { content: '\ebb5'; }
+.uil-arrow-up-right:before { content: '\eb5b'; }
+.uil-angle-down:before { content: '\eb3a'; }
+.uil-angle-left:before { content: '\eb79'; }
+.uil-angle-right:before { content: '\eb6d'; }
+.uil-angle-right-b:before { content: '\eb9f'; }
+.uil-angle-double-down:before { content: '\eb38'; }
+.uil-angle-double-left:before { content: '\eb3e'; }
+.uil-angle-double-right:before { content: '\eb43'; }
+.uil-angle-double-up:before { content: '\eb5d'; }
+
+/* Business & Commerce */
+.uil-building:before { content: '\eb1d'; }
+.uil-store:before { content: '\ed13'; }
+.uil-shop:before { content: '\ed14'; }
+.uil-shopping-cart:before { content: '\ed15'; }
+.uil-shopping-bag:before { content: '\ed16'; }
+.uil-dollar-sign:before { content: '\ee17'; }
+.uil-dollar-alt:before { content: '\ee18'; }
+.uil-euro:before { content: '\ee19'; }
+.uil-pound:before { content: '\ee1a'; }
+.uil-bitcoin:before { content: '\ec38'; }
+.uil-credit-card:before { content: '\ee1b'; }
+.uil-receipt:before { content: '\ee1c'; }
+.uil-invoice:before { content: '\ee1d'; }
+
+/* User & Account */
+.uil-user:before { content: '\ed67'; }
+.uil-user-plus:before { content: '\ed68'; }
+.uil-user-minus:before { content: '\ed69'; }
+.uil-user-check:before { content: '\ed6a'; }
+.uil-user-times:before { content: '\ed6b'; }
+.uil-users-alt:before { content: '\ed6c'; }
+.uil-user-circle:before { content: '\ed6d'; }
+.uil-user-square:before { content: '\ed6e'; }
+
+/* Technology & AI */
+.uil-robot:before { content: '\ebfb'; }
+.uil-processor:before { content: '\eaf2'; }
+.uil-circuit:before { content: '\eaf9'; }
+.uil-server:before { content: '\ed0f'; }
+.uil-database:before { content: '\ed10'; }
+.uil-cloud:before { content: '\ea76'; }
+.uil-cloud-upload:before { content: '\ed11'; }
+.uil-cloud-download:before { content: '\ed12'; }
+
+/* Interface & UI */
+.uil-check:before { content: '\eca5'; }
+.uil-check-circle:before { content: '\eca6'; }
+.uil-check-square:before { content: '\eca7'; }
+.uil-times:before { content: '\eca8'; }
+.uil-times-circle:before { content: '\eca9'; }
+.uil-times-square:before { content: '\ecaa'; }
+.uil-plus:before { content: '\ecab'; }
+.uil-plus-circle:before { content: '\ecac'; }
+.uil-plus-square:before { content: '\ecad'; }
+.uil-minus:before { content: '\ecae'; }
+.uil-minus-circle:before { content: '\ecaf'; }
+.uil-minus-square:before { content: '\ecb0'; }
+
+/* Analytics & Charts */
+.uil-chart-line:before { content: '\ec9c'; }
+.uil-chart-growth:before { content: '\ec9d'; }
+.uil-chart-bar:before { content: '\ec9e'; }
+.uil-chart-pie:before { content: '\ec9f'; }
+.uil-chart-pie-alt:before { content: '\eca0'; }
+.uil-analytics:before { content: '\eca1'; }
+.uil-graph-bar:before { content: '\eca2'; }
+.uil-presentation-line:before { content: '\eca3'; }
+
+/* Files & Documents */
+.uil-file:before { content: '\ecf0'; }
+.uil-file-alt:before { content: '\ecf1'; }
+.uil-file-plus:before { content: '\ecf2'; }
+.uil-file-minus:before { content: '\ecf3'; }
+.uil-file-check:before { content: '\ecf4'; }
+.uil-file-times:before { content: '\ecf5'; }
+.uil-file-download:before { content: '\ecf6'; }
+.uil-file-upload:before { content: '\ecf7'; }
+.uil-folder:before { content: '\ecf8'; }
+.uil-folder-plus:before { content: '\ecf9'; }
+.uil-folder-open:before { content: '\ec51'; }
+
+/* Time & Calendar */
+.uil-calendar-alt:before { content: '\ec8c'; }
+.uil-calendar-slash:before { content: '\ebc6'; }
+.uil-clock:before { content: '\ec8d'; }
+.uil-clock-three:before { content: '\ec8e'; }
+.uil-clock-eight:before { content: '\ec8f'; }
+.uil-clock-nine:before { content: '\ec90'; }
+.uil-clock-ten:before { content: '\ec91'; }
+.uil-watch:before { content: '\ec92'; }
+.uil-stopwatch:before { content: '\ec93'; }
+.uil-history:before { content: '\ead8'; }
+
+/* Location */
+.uil-map-marker:before { content: '\ed50'; }
+.uil-map-marker-alt:before { content: '\ed51'; }
+.uil-map-marker-plus:before { content: '\ed52'; }
+.uil-map-marker-minus:before { content: '\ed53'; }
+.uil-map-marker-info:before { content: '\ed54'; }
+.uil-map-marker-question:before { content: '\ed55'; }
+.uil-map-marker-shield:before { content: '\ed56'; }
+.uil-location-point:before { content: '\ed57'; }
+.uil-location-arrow:before { content: '\ed58'; }
+.uil-location-arrow-alt:before { content: '\ed59'; }
+
+/* Settings & Tools */
+.uil-setting:before { content: '\ec60'; }
+.uil-cog:before { content: '\ece0'; }
+.uil-wrench:before { content: '\ebc0'; }
+.uil-sliders-v:before { content: '\eb09'; }
+.uil-sliders-v-alt:before { content: '\eb06'; }
+.uil-filter:before { content: '\ece1'; }
+.uil-search:before { content: '\ece2'; }
+.uil-search-plus:before { content: '\ece3'; }
+.uil-search-minus:before { content: '\ece4'; }
+
+/* Media & Entertainment */
+.uil-play:before { content: '\ea63'; }
+.uil-pause:before { content: '\edb0'; }
+.uil-stop:before { content: '\edb1'; }
+.uil-video:before { content: '\ea61'; }
+.uil-camera:before { content: '\edb2'; }
+.uil-camera-plus:before { content: '\ea62'; }
+.uil-image:before { content: '\edb3'; }
+.uil-images:before { content: '\ea9d'; }
+.uil-music:before { content: '\edb4'; }
+.uil-music-note:before { content: '\edb5'; }
+.uil-microphone:before { content: '\edb6'; }
+.uil-headphones:before { content: '\edb7'; }
+.uil-volume:before { content: '\edb8'; }
+.uil-volume-mute:before { content: '\edb9'; }
+
+/* Security & Privacy */
+.uil-lock:before { content: '\e84c'; }
+.uil-lock-alt:before { content: '\e857'; }
+.uil-lock-open:before { content: '\edba'; }
+.uil-lock-open-alt:before { content: '\e847'; }
+.uil-unlock:before { content: '\e848'; }
+.uil-unlock-alt:before { content: '\e849'; }
+.uil-shield:before { content: '\e873'; }
+.uil-shield-check:before { content: '\e852'; }
+.uil-shield-exclamation:before { content: '\e846'; }
+.uil-shield-question:before { content: '\e854'; }
+.uil-shield-slash:before { content: '\e84f'; }
+.uil-key:before { content: '\edbb'; }
+.uil-key-skeleton:before { content: '\edbc'; }
+.uil-key-skeleton-alt:before { content: '\edbd'; }
+
+/* Status & Notifications */
+.uil-bell:before { content: '\ebdb'; }
+.uil-bell-slash:before { content: '\ebd9'; }
+.uil-bell-school:before { content: '\edbe'; }
+.uil-exclamation:before { content: '\edbf'; }
+.uil-exclamation-circle:before { content: '\edc0'; }
+.uil-exclamation-triangle:before { content: '\edc1'; }
+.uil-info:before { content: '\edc2'; }
+.uil-info-circle:before { content: '\edc3'; }
+.uil-question:before { content: '\edc4'; }
+.uil-question-circle:before { content: '\edc5'; }
+
+/* Actions */
+.uil-download:before { content: '\ed77'; }
+.uil-download-alt:before { content: '\eb4d'; }
+.uil-upload:before { content: '\eaed'; }
+.uil-upload-alt:before { content: '\eb5a'; }
+.uil-share:before { content: '\ec62'; }
+.uil-share-alt:before { content: '\ed78'; }
+.uil-copy:before { content: '\ed79'; }
+.uil-copy-alt:before { content: '\ed7a'; }
+.uil-trash:before { content: '\ed7b'; }
+.uil-trash-alt:before { content: '\ed7c'; }
+.uil-edit:before { content: '\ed7d'; }
+.uil-edit-alt:before { content: '\ed7e'; }
+.uil-pen:before { content: '\ed7f'; }
+.uil-print:before { content: '\ed80'; }
+.uil-save:before { content: '\ec5a'; }
+
+/* Social Media */
+.uil-facebook:before { content: '\ec5d'; }
+.uil-facebook-f:before { content: '\ec01'; }
+.uil-facebook-messenger:before { content: '\ec00'; }
+.uil-twitter:before { content: '\ec0c'; }
+.uil-twitter-alt:before { content: '\ec25'; }
+.uil-instagram:before { content: '\ebfe'; }
+.uil-instagram-alt:before { content: '\ec09'; }
+.uil-linkedin:before { content: '\ec03'; }
+.uil-linkedin-alt:before { content: '\ec16'; }
+.uil-youtube:before { content: '\ec06'; }
+.uil-whatsapp:before { content: '\ec5f'; }
+.uil-whatsapp-alt:before { content: '\ec0a'; }
+.uil-telegram:before { content: '\ec47'; }
+.uil-telegram-alt:before { content: '\ec44'; }
+.uil-github:before { content: '\ec1d'; }
+.uil-github-alt:before { content: '\ec0f'; }
+
+/* Additional Common Icons Used in Project */
+.uil-brain:before { content: '\ed45'; }
+.uil-atom:before { content: '\ed46'; }
+.uil-award:before { content: '\eb19'; }
+.uil-trophy:before { content: '\ed47'; }
+.uil-medal:before { content: '\ed48'; }
+.uil-star:before { content: '\e84e'; }
+.uil-heart:before { content: '\e85d'; }
+.uil-heart-alt:before { content: '\e84a'; }
+.uil-thumbs-up:before { content: '\ed49'; }
+.uil-thumbs-down:before { content: '\ed4a'; }
+.uil-smile:before { content: '\e863'; }
+.uil-sad:before { content: '\e867'; }
+.uil-meh:before { content: '\e86f'; }
+.uil-eye:before { content: '\ebaf'; }
+.uil-eye-slash:before { content: '\ebf8'; }
+.uil-link:before { content: '\ed4b'; }
+.uil-link-broken:before { content: '\ed4c'; }
+.uil-external-link-alt:before { content: '\ebb8'; }
+.uil-home:before { content: '\ed4d'; }
+.uil-home-alt:before { content: '\ed4e'; }
+.uil-dashboard:before { content: '\ec21'; }
+.uil-apps:before { content: '\eabf'; }
+.uil-th:before { content: '\ea9c'; }
+.uil-th-large:before { content: '\eb81'; }
+.uil-list-ul:before { content: '\ebd6'; }
+.uil-list-ol:before { content: '\ed4f'; }
+.uil-bars:before { content: '\ebae'; }
+.uil-grip-horizontal-line:before { content: '\eb8e'; }
+
+/* Support & Help */
+.uil-life-ring:before { content: '\eb05'; }
+.uil-question-circle:before { content: '\edc5'; }
+.uil-info-circle:before { content: '\edc3'; }
+.uil-comment-question:before { content: '\e82d'; }
+.uil-comment-info:before { content: '\e839'; }
+.uil-comment-info-alt:before { content: '\e83b'; }
+.uil-feedback:before { content: '\eb28'; }
+
+/* Misc Icons Found in Templates */
+.uil-rocket:before { content: '\ec61'; }
+.uil-briefcase:before { content: '\edde'; }
+.uil-bag:before { content: '\eddf'; }
+.uil-calculator:before { content: '\ede0'; }
+.uil-gift:before { content: '\eaf8'; }
+.uil-lightbulb:before { content: '\ede1'; }
+.uil-lightbulb-alt:before { content: '\ede2'; }
+.uil-bolt:before { content: '\ede3'; }
+.uil-sync:before { content: '\ede4'; }
+.uil-refresh:before { content: '\eaea'; }
+.uil-redo:before { content: '\ede5'; }
+.uil-undo:before { content: '\ede6'; }
+.uil-repeat:before { content: '\eb80'; }
+.uil-history:before { content: '\ead8'; }
+.uil-history-alt:before { content: '\eaf5'; }

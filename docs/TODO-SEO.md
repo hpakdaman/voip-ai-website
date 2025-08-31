@@ -65,6 +65,15 @@
 - [ ] **SEO Impact**: Monitor SEO ranking changes
 - [ ] **User Experience**: Test real-world performance
 
+### **Phase 9: SEO Audit Fixes (from seositecheckup.com)**
+- [ ] **URL Canonicalization**: Ensure all pages have a `rel="canonical"` link to prevent duplicate content issues.
+- [ ] **HTML Compression**: The audit noted this was missing, but Gzip is enabled in .htaccess. Verify it's working for all HTML content.
+- [ ] **JavaScript Minification**: Ensure all JS files are minified in the production build.
+- [ ] **HTTP/2 Protocol**: Verify the server is configured to use HTTP/2 for improved performance.
+- [ ] **Render-Blocking Resources**: Analyze and defer or async non-critical CSS and JS.
+- [ ] **Image Optimization (Modern Formats)**: The audit flagged this. Double-check that the WebP solution is covering all images.
+- [ ] **Social Media Integration**: Connect social media profiles to the site to build authority.
+
 ## 📊 Target Performance Metrics
 
 ### **Current Baseline** (to be measured)

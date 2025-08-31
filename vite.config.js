@@ -7,8 +7,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/bundle.css',  // CSS bundle (separate entry)
-                'resources/js/bundle.js'     // JS bundle
+                'resources/css/app.css'  // Tailwind configuration
             ],
             refresh: false,
         }),
@@ -33,9 +32,14 @@ export default defineConfig({
         cssCodeSplit: true   // Allow CSS to be a separate entry
     },
     server: {
+        host: true, // Listen on all addresses
+        port: 5173,
+        strictPort: false,
         hmr: false,
         watch: {    
             ignored: ['**/*.blade.php']
-        }
+        },
+        // Custom message to show network URL
+        open: false
     }
 });
