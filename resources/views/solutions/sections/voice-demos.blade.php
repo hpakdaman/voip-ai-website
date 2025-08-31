@@ -55,13 +55,13 @@ $metadata = $data['metadata'] ?? [];
                 <div id="demosSlider" class="flex transition-transform duration-500 ease-in-out">
                     @foreach($demos as $index => $demo)
                     <div class="demo-card w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                        <div class="group relative rounded-2xl border border-white/10 p-6 min-h-[420px] max-h-[480px] flex flex-col transition-all duration-500 hover:scale-105 hover:border-white/30"
+                        <div class="group relative rounded-2xl border border-white/10 p-5 h-auto flex flex-col transition-all duration-500 hover:scale-105 hover:border-white/30"
                              style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.4) 100%); backdrop-filter: blur(10px); box-shadow: 0 8px 25px rgba(0,0,0,0.3);"
                              onmouseover="this.style.boxShadow='0 15px 40px rgba(30, 192, 141, 0.2)'"
                              onmouseout="this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)'">
                             
                             <!-- Demo Header -->
-                            <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center justify-between mb-4">
                                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center"
                                      style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 15px rgba(30, 192, 141, 0.3);">
                                     <i class="{{ $demo['icon'] ?? 'uil uil-microphone' }} text-2xl text-white"></i>
@@ -71,17 +71,17 @@ $metadata = $data['metadata'] ?? [];
                                           style="background-color: rgba(30, 192, 141, 0.2); border: 1px solid rgba(30, 192, 141, 0.3);">
                                         {{ $demo['duration'] ?? '2:00' }}
                                     </span>
-                                    <div class="text-xs text-slate-400 mt-1">{{ $demo['type'] ?? 'Demo' }}</div>
+                                    <div class="text-xs text-slate-400 mt-2">{{ $demo['type'] ?? 'Demo' }}</div>
                                 </div>
                             </div>
 
                             <!-- Demo Content -->
-                            <div class="mb-6">
-                                <h4 class="text-lg font-bold text-white mb-3 leading-tight">{{ $demo['title'] ?? 'Demo Title' }}</h4>
-                                <p class="text-sm text-slate-300 mb-3 leading-relaxed">
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-white mb-2 leading-tight">{{ $demo['title'] ?? 'Demo Title' }}</h4>
+                                <p class="text-sm text-slate-300 mb-2 leading-relaxed">
                                     {{ $demo['description'] ?? 'Demo description showcasing AI capabilities' }}
                                 </p>
-                                <div class="p-3 rounded-lg mb-4" style="background-color: rgba(12, 27, 39, 0.6); border: 1px solid rgba(30, 192, 141, 0.2);">
+                                <div class="p-2 rounded-lg mb-3" style="background-color: rgba(12, 27, 39, 0.6); border: 1px solid rgba(30, 192, 141, 0.2);">
                                     <p class="text-xs text-slate-400">
                                         <strong style="color: var(--voip-link);">Scenario:</strong> {{ $demo['scenario'] ?? 'Demo scenario' }}
                                     </p>
@@ -90,8 +90,8 @@ $metadata = $data['metadata'] ?? [];
 
                             <!-- Key Features Tags -->
                             @if(isset($demo['key_points']) && is_array($demo['key_points']))
-                            <div class="mb-6">
-                                <h6 class="text-xs font-semibold text-white/80 mb-3 uppercase tracking-wide">What You'll Hear:</h6>
+                            <div class="mb-4">
+                                <h6 class="text-xs font-semibold text-white/80 mb-2 uppercase tracking-wide">What You'll Hear:</h6>
                                 <div class="flex flex-wrap gap-2">
                                     @foreach(array_slice($demo['key_points'], 0, 3) as $feature)
                                     <span class="text-xs px-3 py-1 rounded-full border text-white/90"
