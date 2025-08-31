@@ -1,0 +1,37 @@
+/**
+ * Minimal Critical CSS - Performance Focused, Non-Conflicting
+ * Only includes essential above-the-fold optimizations
+ */
+
+/* Prevent FOUC - Essential Background Only */
+html, body {
+    background-color: #0c1b27;
+}
+
+/* Font Loading Optimization */
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent Layout Shift for Images */
+img[data-src] {
+    background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Reduce CLS for WOW Animations */
+[data-wow-delay] {
+    opacity: 0;
+}
+
+.wow.animated {
+    opacity: 1;
+}

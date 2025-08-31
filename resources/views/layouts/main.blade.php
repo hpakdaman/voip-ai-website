@@ -17,6 +17,19 @@
         <meta name="ICBM" content="25.276987, 55.296249">
         <meta name="language" content="en">
         
+        <!-- Performance & SEO Resource Hints -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Critical CSS for Above-the-Fold (Minimal, Non-Conflicting) -->
+        @if(file_exists(public_path('assets/css/critical.css')))
+        <style>
+            {!! file_get_contents(public_path('assets/css/critical.css')) !!}
+        </style>
+        @endif
+        
         <!-- Additional Meta Tags -->
         <meta name="website" content="https://sawtic.com">
         <meta name="email" content="dubai@sawtic.com">
@@ -33,18 +46,20 @@
             <!-- Local Fonts for Development -->
             <link rel="stylesheet" href="{{ asset('assets/css/local-fonts.css') }}">
         @else
-            <!-- Google Fonts for Production -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <!-- Google Fonts for Production - Optimized Loading with font-display:swap -->
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         @endif
         
 
         <!-- Vite - Processed Tailwind Configuration -->
         @vite('resources/css/app.css')
+
+        <!-- Preload Critical Assets -->
+        <link rel="preload" href="{{ asset('css/app.min.css') }}" as="style">
+        <link rel="preload" href="{{ asset('js/app.min.js') }}" as="script">
+
         <!-- Laravel Mix - Library CSS/JS Bundle -->
         <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
-        
         
         <!-- Laravel Mix - Minified and Compressed JavaScript --> 
         <script src="{{ asset('js/app.min.js') }}" defer></script>

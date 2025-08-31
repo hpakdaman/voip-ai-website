@@ -1,0 +1,3689 @@
+{
+    "timestamp": "2025-08-31 15:06:44",
+    "total_solutions": 8,
+    "solutions_checked": {
+        "education": {
+            "solution": "education",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 83,
+            "total_comparisons": 543,
+            "unchanged_values": {
+                "features.json": [
+                    {
+                        "path": "features.0.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature1]-demo.mp4",
+                        "solution_value": "[feature1]-demo.mp4"
+                    },
+                    {
+                        "path": "features.1.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature2]-demo.mp4",
+                        "solution_value": "[feature2]-demo.mp4"
+                    },
+                    {
+                        "path": "features.2.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature3]-demo.mp4",
+                        "solution_value": "[feature3]-demo.mp4"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "voice_demo.transcript",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries.",
+                        "solution_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+                    },
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "roi-calculator.json": [
+                    {
+                        "path": "calculator.inputs.1.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Average [service] value (AED)",
+                        "solution_value": "Average [service] value (AED)"
+                    },
+                    {
+                        "path": "calculator.inputs.2.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Lead to [service] conversion rate (%)",
+                        "solution_value": "Lead to [service] conversion rate (%)"
+                    }
+                ],
+                "showcase.json": [
+                    {
+                        "path": "showcases",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            {
+                                "title": "[Showcase 1 Title]",
+                                "description": "Description of showcase example 1",
+                                "image": "\/assets\/images\/[industry]\/showcase\/1.jpg",
+                                "alt": "[Industry] Showcase 1",
+                                "metrics": [
+                                    {
+                                        "value": "[number]%",
+                                        "label": "[Metric 1]"
+                                    },
+                                    {
+                                        "value": "[number]x",
+                                        "label": "[Metric 2]"
+                                    }
+                                ],
+                                "features": [
+                                    "Feature 1 demonstrated",
+                                    "Feature 2 demonstrated",
+                                    "Feature 3 demonstrated"
+                                ]
+                            },
+                            {
+                                "title": "[Showcase 2 Title]",
+                                "description": "Description of showcase example 2",
+                                "image": "\/assets\/images\/[industry]\/showcase\/2.jpg",
+                                "alt": "[Industry] Showcase 2",
+                                "metrics": [
+                                    {
+                                        "value": "[number]%",
+                                        "label": "[Metric 1]"
+                                    },
+                                    {
+                                        "value": "[number]",
+                                        "label": "[Metric 2]"
+                                    }
+                                ],
+                                "features": [
+                                    "Feature 1 demonstrated",
+                                    "Feature 2 demonstrated",
+                                    "Feature 3 demonstrated"
+                                ]
+                            },
+                            {
+                                "title": "[Showcase 3 Title]",
+                                "description": "Description of showcase example 3",
+                                "image": "\/assets\/images\/[industry]\/showcase\/3.jpg",
+                                "alt": "[Industry] Showcase 3",
+                                "metrics": [
+                                    {
+                                        "value": "[number]",
+                                        "label": "[Metric 1]"
+                                    },
+                                    {
+                                        "value": "[number]%",
+                                        "label": "[Metric 2]"
+                                    }
+                                ],
+                                "features": [
+                                    "Feature 1 demonstrated",
+                                    "Feature 2 demonstrated",
+                                    "Feature 3 demonstrated"
+                                ]
+                            }
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "metadata.showcase_count",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-1",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-1]",
+                        "solution_value": "[demo-type-1]"
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-2",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-2]",
+                        "solution_value": "[demo-type-2]"
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-3",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-3]",
+                        "solution_value": "[demo-type-3]"
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-4",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-4]",
+                        "solution_value": "[demo-type-4]"
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-5]",
+                        "solution_value": "[demo-type-5]"
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-6]",
+                        "solution_value": "[demo-type-6]"
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "finance-banking": {
+            "solution": "finance-banking",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 80,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-1]",
+                        "solution_value": "[demo-type-1]"
+                    },
+                    {
+                        "path": "demos.0.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo1]-demo.mp3",
+                        "solution_value": "[demo1]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-2]",
+                        "solution_value": "[demo-type-2]"
+                    },
+                    {
+                        "path": "demos.1.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo2]-demo.mp3",
+                        "solution_value": "[demo2]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-3]",
+                        "solution_value": "[demo-type-3]"
+                    },
+                    {
+                        "path": "demos.2.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo3]-demo.mp3",
+                        "solution_value": "[demo3]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-4]",
+                        "solution_value": "[demo-type-4]"
+                    },
+                    {
+                        "path": "demos.3.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo4]-demo.mp3",
+                        "solution_value": "[demo4]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 5, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 5, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.4.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-5]",
+                        "solution_value": "[demo-type-5]"
+                    },
+                    {
+                        "path": "demos.4.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo5]-demo.mp3",
+                        "solution_value": "[demo5]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 6, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 6, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.5.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-6]",
+                        "solution_value": "[demo-type-6]"
+                    },
+                    {
+                        "path": "demos.5.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo6]-demo.mp3",
+                        "solution_value": "[demo6]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "government": {
+            "solution": "government",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json",
+                "digital-dashboard.json",
+                "service-matrix.json"
+            ],
+            "issues_found": 90,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "voice_demo.transcript",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries.",
+                        "solution_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+                    }
+                ],
+                "roi-calculator.json": [
+                    {
+                        "path": "calculator.inputs.1.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Average [service] value (AED)",
+                        "solution_value": "Average [service] value (AED)"
+                    },
+                    {
+                        "path": "calculator.inputs.2.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Lead to [service] conversion rate (%)",
+                        "solution_value": "Lead to [service] conversion rate (%)"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-1",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 1, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 1, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.0.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-1]",
+                        "solution_value": "[demo-type-1]"
+                    },
+                    {
+                        "path": "demos.0.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo1]-demo.mp3",
+                        "solution_value": "[demo1]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-2",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 2, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 2, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.1.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-2]",
+                        "solution_value": "[demo-type-2]"
+                    },
+                    {
+                        "path": "demos.1.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo2]-demo.mp3",
+                        "solution_value": "[demo2]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-3",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 3, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 3, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.2.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-3]",
+                        "solution_value": "[demo-type-3]"
+                    },
+                    {
+                        "path": "demos.2.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo3]-demo.mp3",
+                        "solution_value": "[demo3]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-4",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 4, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 4, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.3.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-4]",
+                        "solution_value": "[demo-type-4]"
+                    },
+                    {
+                        "path": "demos.3.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo4]-demo.mp3",
+                        "solution_value": "[demo4]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 5, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 5, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.4.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-5]",
+                        "solution_value": "[demo-type-5]"
+                    },
+                    {
+                        "path": "demos.4.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo5]-demo.mp3",
+                        "solution_value": "[demo5]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 6, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 6, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.5.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-6]",
+                        "solution_value": "[demo-type-6]"
+                    },
+                    {
+                        "path": "demos.5.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo6]-demo.mp3",
+                        "solution_value": "[demo6]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "healthcare": {
+            "solution": "healthcare",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 76,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "capabilities.json": [
+                    {
+                        "path": "capabilities.0.features.4",
+                        "issue": "missing_key",
+                        "sample_value": "Feature 5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "capabilities.1.features.4",
+                        "issue": "missing_key",
+                        "sample_value": "Feature 5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "capabilities.2.features.4",
+                        "issue": "missing_key",
+                        "sample_value": "Feature 5",
+                        "solution_value": null
+                    }
+                ],
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "features.json": [
+                    {
+                        "path": "features.0.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature1]-demo.mp4",
+                        "solution_value": "[feature1]-demo.mp4"
+                    },
+                    {
+                        "path": "features.1.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature2]-demo.mp4",
+                        "solution_value": "[feature2]-demo.mp4"
+                    },
+                    {
+                        "path": "features.2.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature3]-demo.mp4",
+                        "solution_value": "[feature3]-demo.mp4"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-1",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-2",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-3",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-4",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "home-services": {
+            "solution": "home-services",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 93,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "features.json": [
+                    {
+                        "path": "features.0.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature1]-demo.mp4",
+                        "solution_value": "[feature1]-demo.mp4"
+                    },
+                    {
+                        "path": "features.1.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature2]-demo.mp4",
+                        "solution_value": "[feature2]-demo.mp4"
+                    },
+                    {
+                        "path": "features.2.demo_video",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[feature3]-demo.mp4",
+                        "solution_value": "[feature3]-demo.mp4"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "roi-calculator.json": [
+                    {
+                        "path": "calculator.inputs.1.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Average [service] value (AED)",
+                        "solution_value": "Average [service] value (AED)"
+                    },
+                    {
+                        "path": "calculator.inputs.2.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Lead to [service] conversion rate (%)",
+                        "solution_value": "Lead to [service] conversion rate (%)"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-1",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 1, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 1, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.0.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-1]",
+                        "solution_value": "[demo-type-1]"
+                    },
+                    {
+                        "path": "demos.0.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo1]-demo.mp3",
+                        "solution_value": "[demo1]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-2",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 2, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 2, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.1.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-2]",
+                        "solution_value": "[demo-type-2]"
+                    },
+                    {
+                        "path": "demos.1.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo2]-demo.mp3",
+                        "solution_value": "[demo2]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-3",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 3, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 3, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.2.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-3]",
+                        "solution_value": "[demo-type-3]"
+                    },
+                    {
+                        "path": "demos.2.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo3]-demo.mp3",
+                        "solution_value": "[demo3]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-4",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 4, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 4, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.3.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-4]",
+                        "solution_value": "[demo-type-4]"
+                    },
+                    {
+                        "path": "demos.3.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo4]-demo.mp3",
+                        "solution_value": "[demo4]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 5, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 5, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.4.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-5]",
+                        "solution_value": "[demo-type-5]"
+                    },
+                    {
+                        "path": "demos.4.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo5]-demo.mp3",
+                        "solution_value": "[demo5]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.description",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Detailed description of what happens in demo 6, showing AI expertise",
+                        "solution_value": "Detailed description of what happens in demo 6, showing AI expertise"
+                    },
+                    {
+                        "path": "demos.5.type",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo-type-6]",
+                        "solution_value": "[demo-type-6]"
+                    },
+                    {
+                        "path": "demos.5.audio_file",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "[demo6]-demo.mp3",
+                        "solution_value": "[demo6]-demo.mp3"
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "real-estate": {
+            "solution": "real-estate",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 2,
+            "total_comparisons": 609,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "retail-ecommerce": {
+            "solution": "retail-ecommerce",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 66,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.key_points.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 1 demonstrated",
+                        "solution_value": "Key point 1 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.1",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 2 demonstrated",
+                        "solution_value": "Key point 2 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.2",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 3 demonstrated",
+                        "solution_value": "Key point 3 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.3",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 4 demonstrated",
+                        "solution_value": "Key point 4 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.key_points.4",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Key point 5 demonstrated",
+                        "solution_value": "Key point 5 demonstrated"
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        },
+        "spa-massage": {
+            "solution": "spa-massage",
+            "files_checked": [
+                "capabilities.json",
+                "cta.json",
+                "features.json",
+                "hero.json",
+                "problems.json",
+                "roi-calculator.json",
+                "showcase.json",
+                "success-stories.json",
+                "voice-demos.json"
+            ],
+            "issues_found": 39,
+            "total_comparisons": 591,
+            "unchanged_values": {
+                "cta.json": [
+                    {
+                        "path": "cta_buttons.0.url",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "\/demo\/book",
+                        "solution_value": "\/demo\/book"
+                    }
+                ],
+                "hero.json": [
+                    {
+                        "path": "voice_demo.transcript",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries.",
+                        "solution_value": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+                    },
+                    {
+                        "path": "metadata.conversion_goals.0",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "demo_booking",
+                        "solution_value": "demo_booking"
+                    }
+                ],
+                "roi-calculator.json": [
+                    {
+                        "path": "calculator.inputs.1.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Average [service] value (AED)",
+                        "solution_value": "Average [service] value (AED)"
+                    },
+                    {
+                        "path": "calculator.inputs.2.label",
+                        "issue": "unchanged_placeholder",
+                        "sample_value": "Lead to [service] conversion rate (%)",
+                        "solution_value": "Lead to [service] conversion rate (%)"
+                    }
+                ],
+                "voice-demos.json": [
+                    {
+                        "path": "section.cta_title",
+                        "issue": "missing_key",
+                        "sample_value": "Want a Custom Demo for Your [Industry] Business?",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "section.cta_description",
+                        "issue": "missing_key",
+                        "sample_value": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.priority",
+                        "issue": "missing_key",
+                        "sample_value": 1,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.0.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.priority",
+                        "issue": "missing_key",
+                        "sample_value": 2,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.1.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.priority",
+                        "issue": "missing_key",
+                        "sample_value": 3,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.2.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.priority",
+                        "issue": "missing_key",
+                        "sample_value": 4,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.3.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-5",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.priority",
+                        "issue": "missing_key",
+                        "sample_value": 5,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.4.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.id",
+                        "issue": "missing_key",
+                        "sample_value": "demo-6",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.priority",
+                        "issue": "missing_key",
+                        "sample_value": 6,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.business_type",
+                        "issue": "missing_key",
+                        "sample_value": "[Industry] [Service Type]",
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.features",
+                        "issue": "missing_key",
+                        "sample_value": [
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ],
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.transcript_available",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    },
+                    {
+                        "path": "demos.5.downloadable",
+                        "issue": "missing_key",
+                        "sample_value": true,
+                        "solution_value": null
+                    }
+                ]
+            },
+            "missing_files": [],
+            "status": "processed"
+        }
+    },
+    "summary": {
+        "total_issues": 529,
+        "solutions_with_issues": 8,
+        "solutions_clean": 0,
+        "file_statistics": {
+            "capabilities.json": {
+                "checked": 8,
+                "issues": 3
+            },
+            "cta.json": {
+                "checked": 8,
+                "issues": 7
+            },
+            "features.json": {
+                "checked": 8,
+                "issues": 9
+            },
+            "hero.json": {
+                "checked": 8,
+                "issues": 10
+            },
+            "problems.json": {
+                "checked": 8,
+                "issues": 0
+            },
+            "roi-calculator.json": {
+                "checked": 8,
+                "issues": 8
+            },
+            "showcase.json": {
+                "checked": 8,
+                "issues": 2
+            },
+            "success-stories.json": {
+                "checked": 8,
+                "issues": 0
+            },
+            "voice-demos.json": {
+                "checked": 8,
+                "issues": 490
+            },
+            "digital-dashboard.json": {
+                "checked": 1,
+                "issues": 0
+            },
+            "service-matrix.json": {
+                "checked": 1,
+                "issues": 0
+            }
+        },
+        "completion_rate": 0
+    },
+    "detailed_issues": []
+}

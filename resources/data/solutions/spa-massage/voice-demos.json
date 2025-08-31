@@ -81,11 +81,11 @@
             "icon": "uil-calendar-alt",
             "audio_file": "spa-appointment-booking-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional appointment booking",
+                "Calendar availability check",
+                "Service recommendations",
+                "Booking confirmation",
+                "Follow-up scheduling"
             ]
         },
         {
@@ -123,14 +123,14 @@
                 }
             ],
             "type": "treatment_consultation",
-            "icon": "uil-spa",
+            "icon": "uil-info-circle",
             "audio_file": "spa-treatment-inquiry-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Detailed treatment descriptions",
+                "Package pricing and savings",
+                "Professional recommendations",
+                "Availability and booking",
+                "Aftercare instructions"
             ]
         },
         {
@@ -161,11 +161,11 @@
             "icon": "uil-check-circle",
             "audio_file": "spa-appointment-confirmation-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Appointment confirmation",
+                "Pre-treatment preparation",
+                "Arrival instructions",
+                "Health considerations",
+                "Customer care details"
             ]
         },
         {
@@ -203,14 +203,14 @@
                 }
             ],
             "type": "health_screening",
-            "icon": "uil-heart-rate",
+            "icon": "uil-heartbeat",
             "audio_file": "spa-health-screening-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Health safety assessment",
+                "Medical history review",
+                "Pressure preference check",
+                "Specialist matching",
+                "Treatment customization"
             ]
         },
         {
@@ -222,11 +222,11 @@
             "icon": "uil-heart",
             "audio_file": "spa-couples-package-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional appointment booking",
+                "Calendar availability check",
+                "Service recommendations",
+                "Booking confirmation",
+                "Follow-up scheduling"
             ]
         },
         {
@@ -238,11 +238,11 @@
             "icon": "uil-phone",
             "audio_file": "spa-followup-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional appointment booking",
+                "Calendar availability check",
+                "Service recommendations",
+                "Booking confirmation",
+                "Follow-up scheduling"
             ]
         }
     ]
