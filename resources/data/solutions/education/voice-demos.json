@@ -24,7 +24,19 @@
             "financial_aid",
             "alumni_relations",
             "[scenario6]"
-        ]
+        ],
+        "slider_enabled": true,
+        "audio_base_path": "/assets/audio/solutions/education/",
+        "features": {
+            "responsive_slider": true,
+            "touch_swipe": true,
+            "audio_controls": true,
+            "progress_seek": true,
+            "volume_control": true,
+            "download_demos": true,
+            "transcript_support": true,
+            "auto_slide": true
+        }
     },
     "demos": [
         {
