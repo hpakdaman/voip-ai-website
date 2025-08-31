@@ -86,9 +86,9 @@ $stats = $data['stats'] ?? $data['hero_stats'] ?? [];
                         $defaultImage = 'assets/images/no-image.svg';
                         $heroImage = $heroImages['main'] ?? $defaultImage;
                         @endphp
-                        <img data-src="{{ asset($heroImage) }}" 
+                        <img src="{{ asset($heroImage) }}" 
                              alt="{{ $heroData['alt_text'] ?? 'AI Call Center Demo' }}" 
-                             class="lazy-loading w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
+                             class="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl">
                         
                         <!-- Image Overlay -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>

@@ -129,6 +129,27 @@ Sawtic | [Page-Specific Description]
 
 📋 **Detailed Guidelines**: See [docs/CSS-AND-RESPONSIVE.md](docs/CSS-AND-RESPONSIVE.md) for complete CSS architecture, responsive patterns, and QA checklist.
 
+## 🚨 CRITICAL: Hero Images & Above-the-Fold Content
+📋 **NO LAZY LOADING**: NEVER use lazy loading (`data-src` or `lazy-loading` class) on hero images or above-the-fold content  
+📋 **Immediate Loading**: Hero images MUST load immediately with `src` attribute for optimal Core Web Vitals and UX  
+📋 **Performance Impact**: Lazy loading hero images creates poor user experience and hurts SEO rankings
+
+**✅ Correct Implementation:**
+```html
+<!-- Hero image - loads immediately -->
+<img src="{{ asset('assets/images/hero.jpg') }}" 
+     alt="Hero Image" 
+     class="w-full h-[500px] object-cover">
+```
+
+**❌ Wrong Implementation:**
+```html
+<!-- Never do this for hero images -->
+<img data-src="{{ asset('assets/images/hero.jpg') }}" 
+     alt="Hero Image" 
+     class="lazy-loading w-full h-[500px] object-cover">
+```
+
 ## 🚨 CRITICAL: Component Architecture & Data Management
 📋 **Page Segmentation**: Divide every new page into 3-8 logical Blade components in dedicated folders  
 📋 **JSON Data Storage**: ALL content MUST be stored in separate JSON files - NO fallback data  

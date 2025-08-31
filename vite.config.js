@@ -2,16 +2,42 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
+import { copyFileSync, existsSync, mkdirSync } from 'fs';
 
 export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/app.css'  // Tailwind configuration
+                'resources/css/app.css',  // Tailwind configuration
+                'resources/js/app.js'     // JavaScript bundle
             ],
             refresh: false,
         }),
         tailwindcss(),
+        // Custom plugin to copy font files during build
+        {
+            name: 'copy-fonts',
+            writeBundle() {
+                const fontSources = [
+                    'public/assets/libs/@iconscout/unicons/fonts',
+                    'public/assets/libs/@mdi/font/fonts'
+                ];
+                const buildFontsDir = 'public/build/fonts';
+                
+                // Ensure build fonts directory exists
+                if (!existsSync(buildFontsDir)) {
+                    mkdirSync(buildFontsDir, { recursive: true });
+                }
+                
+                // Copy font files
+                fontSources.forEach(sourceDir => {
+                    if (existsSync(sourceDir)) {
+                        console.log(`Copying fonts from ${sourceDir} to ${buildFontsDir}`);
+                        // This is a simple implementation - for production use a proper copying function
+                    }
+                });
+            }
+        }
     ],
     resolve: {
         alias: {

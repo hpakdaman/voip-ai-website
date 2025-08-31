@@ -51,14 +51,8 @@
         @endif
         
 
-        <!-- Vite - Consolidated CSS (Tailwind + Vendor Libraries) -->
-        @vite('resources/css/app.css')
-
-        <!-- Preload JavaScript Bundle -->
-        <link rel="preload" href="{{ asset('js/app.min.js') }}" as="script">
-        
-        <!-- Laravel Mix - Minified and Compressed JavaScript --> 
-        <script src="{{ asset('js/app.min.js') }}" defer></script>
+        <!-- Vite - Consolidated Assets (CSS + JavaScript) -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @stack('structured-data')
 

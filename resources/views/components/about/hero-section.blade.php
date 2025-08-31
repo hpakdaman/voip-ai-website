@@ -70,9 +70,9 @@ try {
                 <!-- Main Image Container -->
                 <div class="relative">
                     <!-- Professional UAE Team Image -->
-                    <img data-src="{{ asset('assets/images/about/about02.png') }}" 
+                    <img src="{{ asset('assets/images/about/about02.png') }}" 
                          alt="VoIP AI Solutions Dubai Professional Team" 
-                         class="lazy-loading w-full h-[500px] lg:h-[600px] object-contain rounded-2xl">
+                         class="w-full h-[500px] lg:h-[600px] object-contain rounded-2xl">
                     
                     <!-- Image Overlay with Company Info - Covers bottom -->
                     <div class="absolute bottom-0 left-0 right-0 p-6 rounded-b-2xl" style="background: linear-gradient(to top, rgba(12, 27, 39, 0.95) 0%, rgba(12, 27, 39, 0.8) 50%, transparent 100%); backdrop-filter: blur(15px);">

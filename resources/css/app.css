@@ -1,14 +1,18 @@
 @import 'tailwindcss';
-
+/*
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@source '../ ** / *.blade.php';
+@source '../ ** / *.js';
 
 @theme {
     --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+*/
+
+/* Additional Tailwind CSS - Compiled version (for extended styles) */
+@import '../vendor-css/tailwind.css';
 
 /* Vendor CSS Libraries - Imported via Vite from local resources */
 @import '../vendor-css/animate.min.css';                          /* WOW.js animations */
