@@ -129,7 +129,7 @@ $integrationStats = $data['integration_stats'] ?? [];
                         
                         <!-- Demo CTA Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#voice-samples" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="capabilities-voice-samples">
+                            <a href="#voice-demos" class="inline-flex items-center px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 10px 30px rgba(30, 192, 141, 0.3);" data-cta-track="capabilities-voice-demos">
                                 <i class="uil uil-play text-lg mr-3"></i>
                                 Listen to More Demos
                             </a>

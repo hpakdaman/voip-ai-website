@@ -29,7 +29,7 @@ resources/views/solutions/
 │   ├── hero-demo.blade.php             # Hero with voice demo player
 │   ├── problem-solution.blade.php      # Industry problems vs AI solutions
 │   ├── ai-capabilities.blade.php       # AI features for this business
-│   ├── voice-samples.blade.php         # Multiple voice demos
+│   ├── voice-demos.blade.php         # Multiple voice demos
 │   ├── success-stories.blade.php       # Business testimonials
 │   ├── roi-calculator.blade.php        # Industry-specific ROI
 │   ├── feature-showcase.blade.php      # Visual feature demonstrations
@@ -191,7 +191,7 @@ resources/views/solutions/
     ├── hero-demo.blade.php             # ✅ Hero with real estate property image + voice demo
     ├── problem-solution.blade.php      # ✅ Industry problems vs AI solutions
     ├── ai-capabilities.blade.php       # ✅ AI features + real estate office image
-    ├── voice-samples.blade.php         # ✅ Multiple voice demos with audio players
+    ├── voice-demos.blade.php         # ✅ Multiple voice demos with audio players
     ├── roi-calculator.blade.php        # ✅ Interactive ROI calculator for real estate
     ├── success-stories.blade.php       # ✅ UAE real estate testimonials + client photos
     ├── feature-showcase.blade.php      # ✅ Visual features + 2 property images

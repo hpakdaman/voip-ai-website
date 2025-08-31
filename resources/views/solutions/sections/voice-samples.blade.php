@@ -5,7 +5,7 @@ $voiceSamples = $data['voice_samples'] ?? $sectionData['demos'] ?? [];
 @endphp
 
 <!-- Voice Samples Section - Dashboard Style Interactive Player -->
-<section id="voice-samples" class="relative py-24" style="background-color: var(--voip-dark-bg);">
+<section id="voice-demos" class="relative py-24" style="background-color: var(--voip-dark-bg);">
     <!-- Command Center Background Pattern -->
     <div class="absolute inset-0">
         <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.05) 0%, transparent 60%), radial-gradient(circle at 30% 80%, rgba(29, 120, 97, 0.1) 0%, transparent 50%);"></div>
@@ -162,7 +162,7 @@ $voiceSamples = $data['voice_samples'] ?? $sectionData['demos'] ?? [];
                 <p class="text-slate-300 mb-8 text-lg">Experience these powerful voice capabilities in your own business environment.</p>
                 
                 <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center">
-                    <a href="#voice-demos" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105 scroll-to-carousel" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="voice-samples-more-demos">
+                    <a href="#voice-demos" class="inline-flex items-center px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 hover:scale-105 scroll-to-carousel" style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 15px 40px rgba(30, 192, 141, 0.4);" data-cta-track="voice-demos-more-demos">
                         <i class="uil uil-play-circle text-xl mr-3"></i>
                         Listen to More Demos
                     </a>

@@ -17,7 +17,7 @@
 @include('components.solutions.ai-capabilities')
 
 {{-- Voice Samples Section --}}
-@include('components.solutions.voice-samples')
+@include('components.solutions.voice-demos')
 
 {{-- ROI Calculator --}}
 @include('components.solutions.roi-calculator')
