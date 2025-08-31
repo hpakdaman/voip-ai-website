@@ -40,6 +40,7 @@ if ($maintenanceMode) {
     Route::get('/solutions/retail-ecommerce', [HomeController::class, 'retailEcommerce'])->name('solutions.retail-ecommerce');
     Route::get('/solutions/education', [HomeController::class, 'education'])->name('solutions.education');
     Route::get('/solutions/government', [HomeController::class, 'government'])->name('solutions.government');
+    Route::get('/solutions/home-services', [HomeController::class, 'homeServices'])->name('solutions.home-services');
 
     // Demo Booking Routes (Public)
     Route::prefix('demo')->name('demo.')->group(function () {

@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-$basePath = dirname(__DIR__) . '/resources/data/solutions';
+$basePath = dirname(dirname(__DIR__)) . '/resources/data/solutions';
 $solutions = ['education', 'finance-banking', 'government', 'healthcare', 'real-estate', 'retail-ecommerce', 'spa-massage'];
 
 $fixedCount = 0;

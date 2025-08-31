@@ -67,10 +67,10 @@
                 <div>
                     <h5 class="text-white font-bold text-lg mb-6">Solutions</h5>
                     <ul class="space-y-3">
-                        <li><a href="{{ url('/healthcare') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Healthcare</a></li>
-                        <li><a href="{{ url('/finance') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Finance</a></li>
-                        <li><a href="{{ url('/real-estate') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Real Estate</a></li>
-                        <li><a href="{{ url('/retail') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Retail</a></li>
+                        <li><a href="{{ route('solutions.healthcare') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Healthcare</a></li>
+                        <li><a href="{{ route('solutions.finance-banking') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Finance</a></li>
+                        <li><a href="{{ route('solutions.real-estate') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Real Estate</a></li>
+                        <li><a href="{{ route('solutions.home-services') }}" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-center"><i class="uil uil-angle-right text-xs mr-2" style="color: var(--voip-link);"></i>Home Services</a></li>
                     </ul>
                 </div>
 

@@ -1,0 +1,179 @@
+/* Home Services Solutions Landing Page CSS */
+
+/* Service Category Cards with Emergency Theme */
+.service-category-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.service-category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--voip-link);
+    box-shadow: 0 20px 40px rgba(30, 192, 141, 0.15);
+}
+
+.service-category-card.emergency {
+    border-left: 4px solid #ef4444;
+}
+
+.service-category-card.maintenance {
+    border-left: 4px solid #f59e0b;
+}
+
+.service-category-card.regular {
+    border-left: 4px solid var(--voip-link);
+}
+
+/* Emergency Response Badge */
+.emergency-badge {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* Demo Card Hover Effects - Voice Samples */
+.demo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.demo-card.emergency-demo {
+    border-top: 3px solid #ef4444;
+}
+
+.demo-card.maintenance-demo {
+    border-top: 3px solid #f59e0b;
+}
+
+.demo-card.repair-demo {
+    border-top: 3px solid var(--voip-primary);
+}
+
+/* Transcript Modal Styling */
+.transcript-modal {
+    background: rgba(12, 27, 39, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(30, 192, 141, 0.2);
+}
+
+/* ROI Calculator Slider Styling */
+.roi-slider {
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(30, 192, 141, 0.3);
+    outline: none;
+}
+
+.roi-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+.roi-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--voip-link);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(30, 192, 141, 0.3);
+}
+
+/* Problem Solution Cards Hover Effects */
+.problem-solution-card {
+    transition: all 0.3s ease;
+}
+
+.problem-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Services Specific Animations */
+.technician-tracking-animation {
+    animation: tracking-pulse 3s infinite;
+}
+
+@keyframes tracking-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 0 0 rgba(30, 192, 141, 0.7);
+    }
+    50% { 
+        box-shadow: 0 0 0 20px rgba(30, 192, 141, 0);
+    }
+}
+
+/* Service Response Time Indicators */
+.response-time-emergency {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.response-time-same-day {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.response-time-scheduled {
+    color: var(--voip-link);
+    font-weight: 600;
+}
+
+/* Feature Showcase Cards */
+.feature-showcase-card {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.1), rgba(12, 27, 39, 0.8));
+    border: 1px solid rgba(30, 192, 141, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature-showcase-card:hover {
+    background: linear-gradient(135deg, rgba(30, 192, 141, 0.15), rgba(12, 27, 39, 0.9));
+    border-color: var(--voip-link);
+}
+
+/* Success Metrics Animation */
+.success-metric {
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service-category-card {
+        margin-bottom: 1rem;
+    }
+    
+    .demo-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .roi-calculator-section {
+        padding: 1rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .service-category-card {
+        border-width: 3px;
+    }
+    
+    .emergency-badge {
+        border: 2px solid #fff;
+    }
+}

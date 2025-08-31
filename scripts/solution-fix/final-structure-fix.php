@@ -6,7 +6,7 @@
  * Based on smart validator results and blade file usage
  */
 
-$basePath = dirname(__DIR__) . '/resources/data/solutions';
+$basePath = dirname(dirname(__DIR__)) . '/resources/data/solutions';
 
 // Read the sample files to get correct structures
 function getSampleStructure($filename) {

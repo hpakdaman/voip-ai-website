@@ -1,0 +1,40 @@
+{
+    "section": {
+        "title": "Ready to Transform Your",
+        "highlighted": "Home Service Business?",
+        "description": "Join 250+ UAE home service professionals already using Sawtic AI to capture more calls and grow their revenue.",
+        "urgency_text": "Don't let another emergency call go to voicemail while you're on-site with other customers."
+    },
+    "benefits": [
+        "24/7 emergency response",
+        "Automatic appointment booking",
+        "Instant service dispatching",
+        "Zero missed service calls"
+    ],
+    "cta_buttons": [
+        {
+            "text": "Get Your Free Demo",
+            "url": "/demo/book",
+            "style": "primary",
+            "icon": "uil-calendar-alt",
+            "tracking": "home-services-final-cta-demo"
+        },
+        {
+            "text": "Call: +971 4 864 7245",
+            "url": "tel:+97148647245",
+            "style": "secondary",
+            "icon": "uil-phone",
+            "tracking": "home-services-final-cta-call"
+        }
+    ],
+    "guarantee": "30-day money-back guarantee \u2022 No setup fees \u2022 Cancel anytime",
+    "social_proof": "Trusted by 250+ UAE home service professionals",
+    "bg_image": "/assets/images/home-services/bg.jpg",
+    "alt_text": "Home Services Success",
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services",
+        "conversion_type": "final_cta"
+    }
+}

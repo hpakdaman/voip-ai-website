@@ -1,0 +1,128 @@
+{
+    "section": {
+        "badge": "Home Service Challenges",
+        "title": "Stop Losing Customers While You're",
+        "highlighted": "On-Site with Other Jobs",
+        "description": "Every missed call is lost revenue. See how Sawtic AI transforms home service challenges into competitive advantages."
+    },
+    "problems": [
+        {
+            "title": "Missed Calls During Service Jobs",
+            "description": "You're cleaning a villa or fixing an AC unit but missing 4 other customers calling for urgent repairs. By the time you call back, they've booked competitors.",
+            "icon": "uil-phone-slash",
+            "impact": "60% of cleaning leads lost to competitors"
+        },
+        {
+            "title": "Emergency Service Panic",
+            "description": "Plumbing emergencies and AC breakdowns happen at 2 AM, but your phone goes to voicemail. Desperate customers find 24/7 competitors instead.",
+            "icon": "uil-exclamation-triangle",
+            "impact": "80% of emergency calls happen after hours"
+        },
+        {
+            "title": "Service Scope Confusion",
+            "description": "Customers don't know if they need deep cleaning or regular maintenance. Wrong bookings lead to unhappy customers and scope disputes.",
+            "icon": "uil-confused",
+            "impact": "45% of jobs have scope disagreements"
+        },
+        {
+            "title": "Seasonal Booking Overload",
+            "description": "Garden maintenance explodes in winter months. You can't handle the volume but lose customers who can't wait for callbacks.",
+            "icon": "uil-trees",
+            "impact": "Garden revenue peaks 400% Oct-Mar"
+        },
+        {
+            "title": "Appliance Diagnostic Guesswork",
+            "description": "Customers say 'washing machine broken' but you arrive with wrong parts. Multiple visits waste time and annoy customers.",
+            "icon": "uil-wrench",
+            "impact": "35% of repair jobs need return visits"
+        },
+        {
+            "title": "Quote Delays Kill Deals",
+            "description": "Painting estimates take days to prepare. Customers book competitors who provide instant quotes while you're still measuring rooms.",
+            "icon": "uil-clock-three",
+            "impact": "50% of paint jobs lost to faster quotes"
+        }
+    ],
+    "solutions": [
+        {
+            "title": "Capture Every Revenue Opportunity",
+            "description": "AI agent handles all inquiries 24/7 while you're on-site. Convert more calls into bookings and never lose business to competitors again.",
+            "icon": "uil-phone",
+            "benefits": [
+                "24/7 emergency call capture = more revenue",
+                "Never miss peak season garden bookings",
+                "Professional service builds trust & referrals"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "Maximize Your Profit Per Job",
+            "description": "AI qualifies customers properly and suggests upsells, ensuring you arrive prepared and complete more profitable jobs per visit.",
+            "icon": "uil-money-bill-stack",
+            "benefits": [
+                "Higher-value service packages suggested",
+                "Reduce unprofitable small jobs",
+                "Increase average job value by 40%"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "Triple Your Seasonal Revenue",
+            "description": "AI manages peak demand intelligently, maximizing winter garden bookings while maintaining year-round cleaning contracts.",
+            "icon": "uil-chart-growth",
+            "benefits": [
+                "Capture 300% more winter garden jobs",
+                "Optimize crew scheduling for peak times",
+                "Build recurring monthly revenue streams"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "Win More Deals with Speed",
+            "description": "AI provides instant accurate quotes while competitors take days. Close deals faster and build reputation for responsiveness.",
+            "icon": "uil-rocket",
+            "benefits": [
+                "Instant quotes beat slow competitors",
+                "60% faster deal closure rate",
+                "Build premium service reputation"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
+        },
+        {
+            "title": "Reduce Costly Return Visits",
+            "description": "AI diagnoses problems accurately and ensures you bring the right tools and parts, eliminating expensive repeat trips.",
+            "icon": "uil-wrench",
+            "benefits": [
+                "85% first-visit success rate saves fuel costs",
+                "Proper diagnosis prevents wrong parts orders",
+                "Customer satisfaction increases referrals"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": false
+        },
+        {
+            "title": "Scale Without Hiring More Staff",
+            "description": "AI handles customer communication so your existing team can focus on service delivery. Grow revenue without increasing overhead.",
+            "icon": "uil-users-alt",
+            "benefits": [
+                "Handle 3x more bookings with same team",
+                "Reduce admin time by 80%",
+                "Focus technicians on billable work only"
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "problem_awareness"
+    }
+}

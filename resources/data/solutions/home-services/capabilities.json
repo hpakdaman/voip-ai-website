@@ -1,0 +1,164 @@
+{
+    "section": {
+        "title": "AI Capabilities for Every Home Service",
+        "description": "Specialized AI features designed for cleaning, gardening, repairs, and maintenance businesses in the UAE",
+        "capabilities": [
+            {
+                "icon": "uil-cleaning-services",
+                "title": "Smart Cleaning Service Booking",
+                "description": "AI understands cleaning needs - weekly housekeeping, deep cleaning, or post-construction cleanup with specific requirements",
+                "features": [
+                    "Eco-friendly product preferences",
+                    "Pet-safe cleaning options",
+                    "Post-construction specialist matching"
+                ]
+            },
+            {
+                "icon": "uil-trees",
+                "title": "Garden & Landscaping Intelligence",
+                "description": "Seasonal awareness for garden maintenance, lawn care scheduling, and plant-specific services across UAE climate zones",
+                "features": [
+                    "UAE plant expertise",
+                    "Seasonal service recommendations",
+                    "Irrigation system coordination"
+                ]
+            },
+            {
+                "icon": "uil-wrench",
+                "title": "Appliance Repair Diagnostics",
+                "description": "AI guides customers through appliance troubleshooting and matches them with specialized repair technicians",
+                "features": [
+                    "Brand-specific diagnostics",
+                    "Warranty status checking",
+                    "Parts availability confirmation"
+                ]
+            },
+            {
+                "icon": "uil-paint-tool",
+                "title": "Painting Project Calculator",
+                "description": "Instant paint quantity calculations, color matching advice, and project timeline estimation for any painting job",
+                "features": [
+                    "Room measurement guidance",
+                    "Paint brand recommendations",
+                    "Weather-based scheduling"
+                ]
+            },
+            {
+                "icon": "uil-home",
+                "title": "Multi-Service Coordination",
+                "description": "Manage complex home projects requiring multiple services - cleaning after painting, garden design after construction",
+                "features": [
+                    "Service sequence planning",
+                    "Team coordination",
+                    "Project milestone tracking"
+                ]
+            },
+            {
+                "icon": "uil-invoice",
+                "title": "Service Package Intelligence",
+                "description": "AI explains different service packages clearly and recommends the best fit based on customer needs and budget",
+                "features": [
+                    "Package comparison tool",
+                    "Upselling opportunities",
+                    "Seasonal discount application"
+                ]
+            }
+        ],
+        "badge": "AI Home Services Assistant",
+        "highlighted": "Home Services Inside Out",
+        "demo_image": "/assets/images/home_services/about.jpg",
+        "demo_alt": "Home Services Professional Using AI Assistant",
+        "demo_title": "See Your AI Agent in Action",
+        "demo_description": "Watch a live demonstration of how our AI handles home_services inquiries with professional expertise and natural conversation flow.",
+        "demo_features": [
+            "Handles home-services-specific inquiries and bookings",
+            "Qualifies leads with smart questions",
+            "Integrates with your CRM automatically"
+        ]
+    },
+    "integration": {
+        "title": "Seamless Integration",
+        "platforms": [
+            "ServiceTitan",
+            "Housecall Pro",
+            "Jobber",
+            "FieldEdge",
+            "Salesforce Field Service",
+            "Google Calendar",
+            "Outlook",
+            "QuickBooks",
+            "Xero",
+            "WhatsApp Business API"
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services",
+        "total_capabilities": 3,
+        "total_integrations": 2,
+        "industry_focus": "Home Services market"
+    },
+    "capabilities": [
+        {
+            "title": "Home Services Service Excellence",
+            "description": "Description of capability 1 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": false,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "99%",
+            "metric_label": "Accuracy Rate",
+            "delay": "0.2s"
+        },
+        {
+            "title": "[Capability 2]",
+            "description": "Description of capability 2 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": false,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "85%",
+            "metric_label": "Success Rate",
+            "delay": "0.3s"
+        },
+        {
+            "title": "[Capability 3]",
+            "description": "Description of capability 3 specific to the industry",
+            "icon": "uil-[icon-name]",
+            "is_premium": true,
+            "features": [
+                "Feature 1",
+                "Feature 2",
+                "Feature 3",
+                "Feature 4",
+                "Feature 5"
+            ],
+            "metric": "95%",
+            "metric_label": "Performance Rate",
+            "delay": "0.4s"
+        }
+    ],
+    "integrations": [
+        {
+            "name": "[Integration 1]",
+            "type": "[Integration Type]",
+            "icon": "uil-[icon-name]"
+        },
+        {
+            "name": "[Integration 2]",
+            "type": "[Integration Type]",
+            "icon": "uil-[icon-name]"
+        }
+    ]
+}

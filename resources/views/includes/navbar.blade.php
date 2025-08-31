@@ -63,6 +63,7 @@
                         <li><a href="{{ route('solutions.retail-ecommerce') }}" class="sub-menu-item text-base font-medium">Retail & E-commerce</a></li>
                         <li><a href="{{ route('solutions.education') }}" class="sub-menu-item text-base font-medium">Education</a></li>
                         <li><a href="{{ route('solutions.government') }}" class="sub-menu-item text-base font-medium">Government</a></li>
+                        <li><a href="{{ route('solutions.home-services') }}" class="sub-menu-item text-base font-medium">Home Services</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('contact-us') }}" class="sub-menu-item">CONTACT</a></li>

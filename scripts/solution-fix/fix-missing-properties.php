@@ -6,7 +6,7 @@
  * Adds missing sections and properties that are used in blade files
  */
 
-$basePath = dirname(__DIR__) . '/resources/data/solutions';
+$basePath = dirname(dirname(__DIR__)) . '/resources/data/solutions';
 
 // Common section structures to add when missing
 $defaultSections = [
