@@ -67,24 +67,24 @@
     },
     "features": [
         {
-            "title": "[Feature 1]",
-            "description": "AI handles healthcare-specific requests with expertise",
-            "icon": "uil-[icon-name]",
-            "demo_video": "[feature1]-demo.mp4",
+            "title": "Medical Appointment Booking",
+            "description": "AI handles healthcare-specific requests with medical expertise and HIPAA compliance",
+            "icon": "uil-calendar-alt",
+            "demo_video": "medical-booking-demo.mp4",
             "highlight": "Instant healthcare expertise"
         },
         {
-            "title": "[Feature 2]",
-            "description": "Smart pre-screening identifies [qualified leads/clients]",
+            "title": "Patient Pre-Screening",
+            "description": "Smart pre-screening identifies qualified patients and urgent medical needs",
             "icon": "uil-user-check",
-            "demo_video": "[feature2]-demo.mp4",
+            "demo_video": "patient-screening-demo.mp4",
             "highlight": "85% qualified rate"
         },
         {
-            "title": "[Feature 3]",
-            "description": "Seamless calendar integration and scheduling",
-            "icon": "uil-calendar-alt",
-            "demo_video": "[feature3]-demo.mp4",
+            "title": "Medical Records Integration",
+            "description": "Seamless EMR integration and medical appointment scheduling",
+            "icon": "uil-medical-drip",
+            "demo_video": "medical-integration-demo.mp4",
             "highlight": "95% show-up rate"
         }
     ],

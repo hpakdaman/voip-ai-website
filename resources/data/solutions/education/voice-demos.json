@@ -51,14 +51,14 @@
                 "Program Information",
                 "Requirements"
             ],
-            "type": "[demo-type-1]",
+            "type": "education_consultation",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -73,14 +73,14 @@
                 "Registration",
                 "Academic Planning"
             ],
-            "type": "[demo-type-2]",
+            "type": "education_booking",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -95,14 +95,14 @@
                 "Arabic Support",
                 "Visa Information"
             ],
-            "type": "[demo-type-3]",
+            "type": "education_inquiry",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -117,14 +117,14 @@
                 "Campus Safety",
                 "Student Services"
             ],
-            "type": "[demo-type-4]",
+            "type": "education_support",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -139,14 +139,14 @@
                 "Scholarships",
                 "FAFSA"
             ],
-            "type": "[demo-type-5]",
+            "type": "education_followup",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -161,14 +161,14 @@
                 "Mentoring",
                 "Networking"
             ],
-            "type": "[demo-type-6]",
+            "type": "education_premium",
             "icon": "uil-[icon-name]",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional education expertise demonstrated",
+                "24/7 education availability shown",
+                "Instant education response capability",
+                "Multilingual education support",
+                "CRM integration and follow-up"
             ]
         }
     ]

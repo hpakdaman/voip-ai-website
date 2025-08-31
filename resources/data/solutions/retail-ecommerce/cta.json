@@ -14,7 +14,7 @@
     "cta_buttons": [
         {
             "text": "Get Your Free Demo",
-            "url": "/demo/book",
+            "url": "/contact-us?demo=retail",
             "style": "primary",
             "icon": "uil-calendar-alt",
             "tracking": "retail-ecommerce-final-cta-demo"

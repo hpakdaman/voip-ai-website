@@ -77,15 +77,15 @@
                     "timestamp": "0:28"
                 }
             ],
-            "type": "[demo-type-1]",
+            "type": "banking_consultation",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo1]-demo.mp3",
+            "audio_file": "banking-call-1-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -122,15 +122,15 @@
                     "timestamp": "0:28"
                 }
             ],
-            "type": "[demo-type-2]",
+            "type": "banking_booking",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo2]-demo.mp3",
+            "audio_file": "banking-call-2-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -167,15 +167,15 @@
                     "timestamp": "0:38"
                 }
             ],
-            "type": "[demo-type-3]",
+            "type": "banking_inquiry",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo3]-demo.mp3",
+            "audio_file": "banking-call-3-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -212,47 +212,47 @@
                     "timestamp": "0:28"
                 }
             ],
-            "type": "[demo-type-4]",
+            "type": "banking_support",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo4]-demo.mp3",
+            "audio_file": "banking-call-4-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 5 Title]",
             "scenario": "[Demo 5 scenario description]",
-            "description": "Detailed description of what happens in demo 5, showing AI expertise",
+            "description": "Advanced banking support showcasing AI capabilities",
             "duration": "1:55",
-            "type": "[demo-type-5]",
+            "type": "banking_followup",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo5]-demo.mp3",
+            "audio_file": "banking-call-5-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 6 Title]",
             "scenario": "[Demo 6 scenario description]",
-            "description": "Detailed description of what happens in demo 6, showing AI expertise",
+            "description": "Comprehensive banking service demonstration with CRM integration",
             "duration": "1:10",
-            "type": "[demo-type-6]",
+            "type": "banking_premium",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo6]-demo.mp3",
+            "audio_file": "banking-call-6-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional banking expertise demonstrated",
+                "24/7 banking availability shown",
+                "Instant banking response capability",
+                "Multilingual banking support",
+                "CRM integration and follow-up"
             ]
         }
     ]

@@ -24,7 +24,7 @@
             },
             {
                 "id": "avg_deal_value",
-                "label": "Average [service] value (AED)",
+                "label": "Average homeservices service value (AED)",
                 "type": "number",
                 "default": 5000,
                 "min": 500,
@@ -33,7 +33,7 @@
             },
             {
                 "id": "conversion_rate",
-                "label": "Lead to [service] conversion rate (%)",
+                "label": "Lead to homeservices conversion rate (%)",
                 "type": "number",
                 "default": 10,
                 "min": 1,

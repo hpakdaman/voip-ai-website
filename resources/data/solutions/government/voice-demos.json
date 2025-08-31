@@ -122,97 +122,97 @@
         {
             "title": "[Demo 1 Title]",
             "scenario": "[Demo 1 scenario description]",
-            "description": "Detailed description of what happens in demo 1, showing AI expertise",
+            "description": "Professional government consultation demonstrating AI expertise and industry knowledge",
             "duration": "2:15",
-            "type": "[demo-type-1]",
+            "type": "government_consultation",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo1]-demo.mp3",
+            "audio_file": "government-call-1-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 2 Title]",
             "scenario": "[Demo 2 scenario description]",
-            "description": "Detailed description of what happens in demo 2, showing AI expertise",
+            "description": "government appointment booking with intelligent lead qualification",
             "duration": "1:45",
-            "type": "[demo-type-2]",
+            "type": "government_booking",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo2]-demo.mp3",
+            "audio_file": "government-call-2-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 3 Title]",
             "scenario": "[Demo 3 scenario description]",
-            "description": "Detailed description of what happens in demo 3, showing AI expertise",
+            "description": "Complex government inquiry handled with professional expertise",
             "duration": "1:20",
-            "type": "[demo-type-3]",
+            "type": "government_inquiry",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo3]-demo.mp3",
+            "audio_file": "government-call-3-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 4 Title]",
             "scenario": "[Demo 4 scenario description]",
-            "description": "Detailed description of what happens in demo 4, showing AI expertise",
+            "description": "Premium government service consultation with follow-up scheduling",
             "duration": "2:30",
-            "type": "[demo-type-4]",
+            "type": "government_support",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo4]-demo.mp3",
+            "audio_file": "government-call-4-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 5 Title]",
             "scenario": "[Demo 5 scenario description]",
-            "description": "Detailed description of what happens in demo 5, showing AI expertise",
+            "description": "Advanced government support showcasing AI capabilities",
             "duration": "1:55",
-            "type": "[demo-type-5]",
+            "type": "government_followup",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo5]-demo.mp3",
+            "audio_file": "government-call-5-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         },
         {
             "title": "[Demo 6 Title]",
             "scenario": "[Demo 6 scenario description]",
-            "description": "Detailed description of what happens in demo 6, showing AI expertise",
+            "description": "Comprehensive government service demonstration with CRM integration",
             "duration": "1:10",
-            "type": "[demo-type-6]",
+            "type": "government_premium",
             "icon": "uil-[icon-name]",
-            "audio_file": "[demo6]-demo.mp3",
+            "audio_file": "government-call-6-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional government expertise demonstrated",
+                "24/7 government availability shown",
+                "Instant government response capability",
+                "Multilingual government support",
+                "CRM integration and follow-up"
             ]
         }
     ]

@@ -49,7 +49,7 @@
     "cta_buttons": [
         {
             "text": "Get Your Free Demo",
-            "url": "/demo/book",
+            "url": "/contact-us?demo=government",
             "style": "primary",
             "icon": "uil-calendar-alt",
             "tracking": "government-final-cta-demo"

@@ -14,7 +14,7 @@
     "cta_buttons": [
         {
             "text": "Claim Your Free Setup",
-            "url": "/demo/book",
+            "url": "/contact-us?demo=spa",
             "style": "primary",
             "icon": "uil-gift",
             "tracking": "spa-massage-final-cta-demo"

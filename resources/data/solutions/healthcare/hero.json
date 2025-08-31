@@ -78,27 +78,27 @@
         "focus": "AI call agents for medical practices",
         "target_audience": "UAE healthcare businesses, [target segments]",
         "conversion_goals": [
-            "demo_booking",
-            "phone_calls",
-            "lead_generation"
+            "healthcare_demo_booking",
+            "patient_calls",
+            "healthcare_lead_generation"
         ]
     },
     "section": {
         "industry_badge": "Healthcare AI Solutions",
         "main_title": "Never Miss Another",
         "highlighted_word": "Healthcare Lead",
-        "subtitle": "Dubai's #1 AI call center handles healthcare-specific inquiries, [service] bookings, and lead qualification 24/7 - even when you're [busy context].",
+        "subtitle": "Dubai's #1 AI call center handles healthcare-specific inquiries, medical appointment bookings, and patient qualification 24/7 - even when you're with other patients.",
         "key_benefits": [
-            "Qualify leads instantly while you're [context]",
-            "Book [services] automatically 24/7",
+            "Qualify patients instantly while you're in consultations",
+            "Book medical appointments automatically 24/7",
             "Handle Arabic & English inquiries fluently",
             "Integrate with your CRM and calendar systems",
             "Never lose another hot lead to competitors"
         ],
         "trust_stats": [
             {
-                "number": "[number]+",
-                "label": "UAE [Industry Units]"
+                "number": "200+",
+                "label": "UAE Healthcare Practices"
             },
             {
                 "number": "24/7",

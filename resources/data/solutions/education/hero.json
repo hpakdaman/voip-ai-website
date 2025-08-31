@@ -53,7 +53,7 @@
         "description": "Hear how our AI manages complex student questions about programs, requirements, and enrollment processes.",
         "audio_file": "education-demo.mp3",
         "duration": "2:15",
-        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+        "transcript": "Real conversation showing professional education consultation with expert AI agentnstrating the AI's expertise and professionalism in handling industry-specific inquiries."
     },
     "metadata": {
         "version": "1.0",
@@ -61,7 +61,7 @@
         "industry": "education",
         "target_audience": "UAE education businesses, [target segments]",
         "conversion_goals": [
-            "demo_booking",
+            "education_education_education_demo_booking",
             "phone_calls",
             "lead_generation"
         ]

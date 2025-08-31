@@ -67,11 +67,11 @@
             "type": "emergency_response",
             "icon": "uil-heart-medical",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -102,11 +102,11 @@
             "type": "appointment_booking",
             "icon": "uil-calendar-alt",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -133,11 +133,11 @@
             "type": "prescription_management",
             "icon": "uil-prescription",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -164,11 +164,11 @@
             "type": "multilingual_support",
             "icon": "uil-comment-alt-question",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -199,11 +199,11 @@
             "type": "post_operative_care",
             "icon": "uil-user-check",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         },
         {
@@ -215,11 +215,11 @@
             "icon": "uil-flask",
             "audio_file": "healthcare-lab-results-demo.mp3",
             "key_points": [
-                "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
-                "Key point 3 demonstrated",
-                "Key point 4 demonstrated",
-                "Key point 5 demonstrated"
+                "Professional healthcare expertise demonstrated",
+                "24/7 healthcare availability shown",
+                "Instant healthcare response capability",
+                "Multilingual healthcare support",
+                "CRM integration and follow-up"
             ]
         }
     ]

@@ -8,7 +8,7 @@
     "cta_buttons": [
         {
             "text": "Start Free Education Trial",
-            "url": "/demo/booking",
+            "url": "/contact-us?demo=educationing",
             "style": "primary",
             "icon": "uil-graduation-cap",
             "tracking": "education-cta-trial"

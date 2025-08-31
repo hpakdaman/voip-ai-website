@@ -36,21 +36,21 @@
             "title": "[Feature 1]",
             "description": "AI handles home-services-specific requests with expertise",
             "icon": "uil-[icon-name]",
-            "demo_video": "[feature1]-demo.mp4",
+            "demo_video": "homeservices-consultation-demo.mp4",
             "highlight": "Instant home_services expertise"
         },
         {
             "title": "[Feature 2]",
             "description": "Smart pre-screening identifies [qualified leads/clients]",
             "icon": "uil-user-check",
-            "demo_video": "[feature2]-demo.mp4",
+            "demo_video": "homeservices-booking-demo.mp4",
             "highlight": "85% qualified rate"
         },
         {
             "title": "[Feature 3]",
             "description": "Seamless calendar integration and scheduling",
             "icon": "uil-calendar-alt",
-            "demo_video": "[feature3]-demo.mp4",
+            "demo_video": "homeservices-support-demo.mp4",
             "highlight": "95% show-up rate"
         }
     ],

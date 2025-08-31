@@ -41,6 +41,6 @@
         "last_updated": "2025-01-19",
         "industry": "real_estate",
         "target_audience": "UAE real estate agencies, property developers, real estate brokers",
-        "conversion_goals": ["demo_booking", "phone_calls", "lead_generation"]
+        "conversion_goals": ["realestate_demo_booking", "phone_calls", "lead_generation"]
     }
 }

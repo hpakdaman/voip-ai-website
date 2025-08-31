@@ -70,7 +70,7 @@
         "industry": "spa_massage",
         "target_audience": "UAE spa_massage businesses, [target segments]",
         "conversion_goals": [
-            "demo_booking",
+            "spa_spa_spa_demo_booking",
             "phone_calls",
             "lead_generation"
         ]
@@ -107,6 +107,6 @@
         "description": "Real conversation with AI agent handling [specific scenario]",
         "duration": "45 seconds",
         "audio_file": "spa_massage-inquiry-demo.mp3",
-        "transcript": "Sample transcript showing a realistic conversation between a potential client and the AI agent, demonstrating the AI's expertise and professionalism in handling industry-specific inquiries."
+        "transcript": "Real conversation showing professional spa consultation with expert AI agentnstrating the AI's expertise and professionalism in handling industry-specific inquiries."
     }
 }
