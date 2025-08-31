@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://sawtic.com/</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/sawtic-ai-call-center.webp</image:loc>
+            <image:caption>Sawtic AI Call Center Solutions Dubai UAE</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Core Business Pages -->
+    <url>
+        <loc>https://sawtic.com/about</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/features</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/pricing</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/contact-us</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Solution Landing Pages - High Priority for Business -->
+    <url>
+        <loc>https://sawtic.com/solutions/real-estate</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/real-estate/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Real Estate Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/healthcare</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/healthcare/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Healthcare Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/finance-banking</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/finance/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Finance Banking Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/retail-ecommerce</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/retail/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Retail Ecommerce Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/education</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/education/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Education Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/government</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/government/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Government Dubai UAE</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/travel-services</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/travel/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Travel Services Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/home-services</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/home-services/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Home Services Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/solutions/spa-massage</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://sawtic.com/assets/images/solutions/spa/hero-bg.webp</image:loc>
+            <image:caption>AI Call Center for Spa Massage Dubai</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Legal Pages - Lower Priority -->
+    <url>
+        <loc>https://sawtic.com/terms</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://sawtic.com/privacy</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>

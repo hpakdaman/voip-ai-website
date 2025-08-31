@@ -51,15 +51,11 @@
         @endif
         
 
-        <!-- Vite - Processed Tailwind Configuration -->
+        <!-- Vite - Consolidated CSS (Tailwind + Vendor Libraries) -->
         @vite('resources/css/app.css')
 
-        <!-- Preload Critical Assets -->
-        <link rel="preload" href="{{ asset('css/app.min.css') }}" as="style">
+        <!-- Preload JavaScript Bundle -->
         <link rel="preload" href="{{ asset('js/app.min.js') }}" as="script">
-
-        <!-- Laravel Mix - Library CSS/JS Bundle -->
-        <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
         
         <!-- Laravel Mix - Minified and Compressed JavaScript --> 
         <script src="{{ asset('js/app.min.js') }}" defer></script>

@@ -1,18 +1,20 @@
 User-agent: *
 Allow: /
 
-# Disallow legal pages from search engine indexing
-Disallow: /terms
-Disallow: /privacy
-Disallow: /privacy-portal
-
 # Disallow admin and development files
 Disallow: /admin/
 Disallow: /storage/
 Disallow: /vendor/
 Disallow: /.env
+Disallow: /temp/
+Disallow: /bootstrap/cache/
 
-# Allow important business pages
+# Disallow legal pages from search engine indexing (but allow via specific Allow)
+Disallow: /terms
+Disallow: /privacy  
+Disallow: /privacy-portal
+
+# Allow important business pages for SEO
 Allow: /
 Allow: /about
 Allow: /features  
@@ -20,9 +22,21 @@ Allow: /pricing
 Allow: /contact-us
 Allow: /solutions/
 
-# Allow solution landing pages
+# Allow all solution landing pages for better SEO visibility
 Allow: /solutions/real-estate
+Allow: /solutions/healthcare
+Allow: /solutions/finance-banking
+Allow: /solutions/retail-ecommerce
+Allow: /solutions/education
+Allow: /solutions/government
+Allow: /solutions/travel-services
+Allow: /solutions/home-services
 Allow: /solutions/spa-massage
+
+# Allow assets and images for better indexing
+Allow: /assets/images/
+Allow: /css/
+Allow: /js/
 
 # Sitemap locations
 Sitemap: https://sawtic.com/sitemap.xml

@@ -33,6 +33,16 @@ class HomeController extends Controller
      */
     public function features()
     {
+        // SEO Meta Tags
+        SEOMeta::setTitle('Sawtic | Advanced AI Call Center Features & Capabilities');
+        SEOMeta::setDescription('Explore Sawtic\'s advanced AI call center features: intelligent automation, multi-language support, real-time analytics, CRM integration, and enterprise security for Dubai businesses.');
+        SEOMeta::setCanonical('https://sawtic.com/features');
+        
+        // Open Graph
+        OpenGraph::setTitle('Advanced AI Call Center Features - Sawtic UAE');
+        OpenGraph::setDescription('Discover cutting-edge AI call center features: automated customer service, intelligent routing, real-time analytics, and enterprise-grade security solutions.');
+        OpenGraph::setUrl('https://sawtic.com/features');
+        
         return view('features');  
     }
 
