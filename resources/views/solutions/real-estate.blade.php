@@ -20,8 +20,8 @@ $industryService = new \App\Services\IndustryDataService('real-estate');
 {{-- AI Capabilities Section --}}
 @include('solutions.sections.ai-capabilities', ['data' => $industryService->getCapabilitiesData()])
 
-{{-- Voice Samples Section --}}
-@include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
+{{-- Voice Demos Section --}}
+@include('solutions.sections.voice-demos', ['data' => $industryService->getVoiceDemosData()])
 
 {{-- Success Stories Section --}}
 @include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])

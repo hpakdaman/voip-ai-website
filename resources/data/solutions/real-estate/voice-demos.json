@@ -1,28 +1,37 @@
 {
     "section": {
-        "badge": "Voice Demonstrations",
+        "badge": "Voice Demonstrations", 
         "title": "Hear Your AI Agent",
         "highlighted": "Handle Real Calls",
-        "description": "Listen to actual conversations between prospects and your AI agent across different real estate scenarios."
+        "description": "Listen to actual conversations between property seekers and your AI agent across different real estate scenarios.",
+        "cta_title": "Want a Custom Demo for Your Real Estate Business?",
+        "cta_description": "We'll create a personalized voice demo using your actual property listings and real estate scenarios"
     },
     "demos": [
         {
+            "id": "property-inquiry",
             "title": "Property Inquiry Call",
             "scenario": "Interested buyer calling about Dubai Marina villa",
             "description": "A potential buyer calls asking about a 2-bedroom villa listing. Watch how the AI provides detailed information, answers questions about amenities, and books a viewing appointment.",
             "duration": "2:15",
             "type": "property-inquiry",
-            "icon": "uil-home",
+            "icon": "uil-building",
             "audio_file": "property-inquiry-demo.mp3",
+            "priority": 1,
+            "business_type": "Real Estate Inquiry",
+            "features": ["Property Details", "Pricing Info", "Viewing Schedule"],
             "key_points": [
                 "Instant property details and pricing",
                 "Neighborhood amenities information",
                 "Viewing appointment booking",
                 "Contact information capture",
                 "Follow-up scheduling"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "lead-qualification",
             "title": "Lead Qualification",
             "scenario": "First-time buyer with budget questions",
             "description": "A first-time buyer calls with budget constraints. The AI qualifies their needs, discusses financing options, and connects them with suitable properties within their range.",
@@ -30,15 +39,21 @@
             "type": "lead-qualification",
             "icon": "uil-user-check",
             "audio_file": "lead-qualification-demo.mp3",
+            "priority": 2,
+            "business_type": "Real Estate Lead Qualification",
+            "features": ["Budget Assessment", "Needs Analysis", "CRM Integration"],
             "key_points": [
                 "Budget assessment and qualification",
                 "Financing options discussion",
                 "Property type preferences",
                 "Timeline establishment",
                 "Agent referral for qualified leads"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "rescheduling-coordination",
             "title": "Rescheduling & Coordination",
             "scenario": "Client needs to reschedule viewing appointment",
             "description": "An existing client needs to reschedule their property viewing due to a work conflict. The AI checks availability, reschedules seamlessly, and sends confirmations.",
@@ -46,15 +61,21 @@
             "type": "scheduling",
             "icon": "uil-calendar-alt",
             "audio_file": "rescheduling-demo.mp3",
+            "priority": 3,
+            "business_type": "Real Estate Scheduling",
+            "features": ["Calendar Integration", "Agent Availability", "SMS Confirmations"],
             "key_points": [
                 "Calendar availability checking",
                 "Flexible rescheduling options",
                 "Automatic confirmations sent",
                 "Agent notification system",
                 "Reminder setup"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "investment-inquiry",
             "title": "Investment Inquiry",
             "scenario": "Investor asking about ROI and market trends",
             "description": "An experienced investor calls about potential investment properties in Business Bay. The AI provides market analysis, ROI calculations, and investment insights.",
@@ -62,15 +83,21 @@
             "type": "investment",
             "icon": "uil-chart-growth",
             "audio_file": "investment-inquiry-demo.mp3",
+            "priority": 4,
+            "business_type": "Real Estate Investment",
+            "features": ["ROI Analysis", "Market Trends", "Portfolio Review"],
             "key_points": [
                 "Market trend analysis",
                 "ROI calculations and projections",
                 "Comparable sales data",
                 "Investment opportunity assessment",
                 "Portfolio recommendations"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "arabic-support",
             "title": "Arabic Language Support",
             "scenario": "Arabic-speaking client inquiry",
             "description": "A client preferring to speak in Arabic calls about family housing options in Dubai. The AI responds fluently in Arabic, understanding cultural preferences and requirements.",
@@ -78,15 +105,21 @@
             "type": "arabic-support",
             "icon": "uil-comments",
             "audio_file": "arabic-support-demo.mp3",
+            "priority": 5,
+            "business_type": "Real Estate Multilingual",
+            "features": ["Arabic Fluency", "Cultural Awareness", "Family Housing"],
             "key_points": [
                 "Fluent Arabic conversation",
                 "Cultural sensitivity awareness",
                 "Family housing preferences",
                 "Educational district information",
                 "Community amenities discussion"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "emergency-after-hours",
             "title": "Emergency After-Hours",
             "scenario": "Urgent property issue outside business hours",
             "description": "A tenant calls at 11 PM about a property maintenance emergency. The AI handles the urgent request, connects with emergency services, and notifies the property manager.",
@@ -94,22 +127,38 @@
             "type": "emergency",
             "icon": "uil-exclamation-triangle",
             "audio_file": "emergency-demo.mp3",
+            "priority": 6,
+            "business_type": "Real Estate Emergency",
+            "features": ["24/7 Availability", "Emergency Response", "Property Management"],
             "key_points": [
                 "24/7 emergency response",
                 "Urgency level assessment",
                 "Emergency service coordination",
                 "Property manager notification",
                 "Follow-up scheduling"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         }
     ],
     "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-19",
+        "version": "2.0",
+        "last_updated": "2025-08-31",
         "total_demos": 6,
         "total_duration": "11:15",
         "languages": ["English", "Arabic"],
-        "scenarios_covered": ["inquiry", "qualification", "scheduling", "investment", "multilingual", "emergency"],
-        "industry": "real_estate"
+        "scenarios_covered": ["property-inquiry", "lead-qualification", "scheduling", "investment", "arabic-support", "emergency"],
+        "slider_enabled": true,
+        "audio_base_path": "/assets/audio/solutions/real-estate/",
+        "features": {
+            "responsive_slider": true,
+            "touch_swipe": true,
+            "audio_controls": true,
+            "progress_seek": true,
+            "volume_control": true,
+            "download_demos": true,
+            "transcript_support": true,
+            "auto_slide": true
+        }
     }
 }

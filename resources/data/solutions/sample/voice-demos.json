@@ -3,10 +3,13 @@
         "badge": "Voice Demonstrations",
         "title": "Hear Your AI Agent",
         "highlighted": "Handle Real Calls",
-        "description": "Listen to actual conversations between clients and your AI agent across different [industry] scenarios."
+        "description": "Listen to actual conversations between clients and your AI agent across different [industry] scenarios.",
+        "cta_title": "Want a Custom Demo for Your [Industry] Business?",
+        "cta_description": "We'll create a personalized voice demo using your actual [industry] scenarios and business requirements"
     },
     "demos": [
         {
+            "id": "demo-1",
             "title": "[Demo 1 Title]",
             "scenario": "[Demo 1 scenario description]",
             "description": "Detailed description of what happens in demo 1, showing AI expertise",
@@ -14,15 +17,21 @@
             "type": "[demo-type-1]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo1]-demo.mp3",
+            "priority": 1,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
-                "Key point 2 demonstrated",
+                "Key point 2 demonstrated", 
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "demo-2",
             "title": "[Demo 2 Title]",
             "scenario": "[Demo 2 scenario description]",
             "description": "Detailed description of what happens in demo 2, showing AI expertise",
@@ -30,15 +39,21 @@
             "type": "[demo-type-2]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo2]-demo.mp3",
+            "priority": 2,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
                 "Key point 2 demonstrated",
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "demo-3",
             "title": "[Demo 3 Title]",
             "scenario": "[Demo 3 scenario description]",
             "description": "Detailed description of what happens in demo 3, showing AI expertise",
@@ -46,15 +61,21 @@
             "type": "[demo-type-3]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo3]-demo.mp3",
+            "priority": 3,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
                 "Key point 2 demonstrated",
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "demo-4",
             "title": "[Demo 4 Title]",
             "scenario": "[Demo 4 scenario description]",
             "description": "Detailed description of what happens in demo 4, showing AI expertise",
@@ -62,15 +83,21 @@
             "type": "[demo-type-4]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo4]-demo.mp3",
+            "priority": 4,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
                 "Key point 2 demonstrated",
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "demo-5",
             "title": "[Demo 5 Title]",
             "scenario": "[Demo 5 scenario description]",
             "description": "Detailed description of what happens in demo 5, showing AI expertise",
@@ -78,15 +105,21 @@
             "type": "[demo-type-5]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo5]-demo.mp3",
+            "priority": 5,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
                 "Key point 2 demonstrated",
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         },
         {
+            "id": "demo-6",
             "title": "[Demo 6 Title]",
             "scenario": "[Demo 6 scenario description]",
             "description": "Detailed description of what happens in demo 6, showing AI expertise",
@@ -94,21 +127,38 @@
             "type": "[demo-type-6]",
             "icon": "uil-[icon-name]",
             "audio_file": "[demo6]-demo.mp3",
+            "priority": 6,
+            "business_type": "[Industry] [Service Type]",
+            "features": ["Feature 1", "Feature 2", "Feature 3"],
             "key_points": [
                 "Key point 1 demonstrated",
                 "Key point 2 demonstrated",
                 "Key point 3 demonstrated",
                 "Key point 4 demonstrated",
                 "Key point 5 demonstrated"
-            ]
+            ],
+            "transcript_available": true,
+            "downloadable": true
         }
     ],
     "metadata": {
-        "version": "1.0",
-        "last_updated": "2025-01-19",
+        "version": "2.0",
+        "last_updated": "2025-08-31",
         "total_demos": 6,
         "total_duration": "11:15",
         "languages": ["English", "Arabic"],
-        "scenarios_covered": ["[scenario1]", "[scenario2]", "[scenario3]", "[scenario4]", "[scenario5]", "[scenario6]"]
+        "scenarios_covered": ["[scenario1]", "[scenario2]", "[scenario3]", "[scenario4]", "[scenario5]", "[scenario6]"],
+        "slider_enabled": true,
+        "audio_base_path": "/assets/audio/solutions/[industry]/",
+        "features": {
+            "responsive_slider": true,
+            "touch_swipe": true,
+            "audio_controls": true,
+            "progress_seek": true,
+            "volume_control": true,
+            "download_demos": true,
+            "transcript_support": true,
+            "auto_slide": true
+        }
     }
 }

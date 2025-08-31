@@ -129,7 +129,7 @@ class IndustryDataService
 
     public function getVoiceDemosData(): array
     {
-        return $this->getVoiceSamplesData();
+        return $this->loadData('voice-demos.json');
     }
 
     /**
