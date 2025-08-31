@@ -79,7 +79,7 @@ class IndustryDataService
             return $voiceDemos;
         }
 
-        return $this->loadData('voice-samples.json');
+        return $this->loadData('voice-demos.json');
     }
 
     /**

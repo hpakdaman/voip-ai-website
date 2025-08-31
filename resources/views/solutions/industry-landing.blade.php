@@ -33,7 +33,7 @@ $industryData = new \App\Services\IndustryDataService($industry);
 @endif
 
 @if($config['sections_enabled']['voice_samples'])
-    @include('solutions.sections.voice-samples', [
+    @include('solutions.sections.voice-demos', [
         'industry' => $industry,
         'data' => $industryData->getVoiceSamplesData()
     ])
