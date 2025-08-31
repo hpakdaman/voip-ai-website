@@ -1,0 +1,71 @@
+{
+    "section": {
+        "title": "Advanced Home Service Features",
+        "description": "Comprehensive AI tools designed specifically for UAE home service operations"
+    },
+    "features_grid": [
+        {
+            "icon": "uil-wrench",
+            "title": "Emergency Response System",
+            "description": "Intelligent triage for plumbing, electrical, and HVAC emergencies",
+            "benefits": ["Instant severity assessment", "Priority dispatch", "Customer safety protocols"]
+        },
+        {
+            "icon": "uil-home",
+            "title": "Service Category Management",
+            "description": "Handle cleaning, repairs, maintenance, painting, and more",
+            "benefits": ["Multi-service coordination", "Specialist matching", "Package deals"]
+        },
+        {
+            "icon": "uil-map-marker",
+            "title": "Location-Based Dispatch",
+            "description": "GPS-optimized technician routing across Dubai, Abu Dhabi, and UAE",
+            "benefits": ["Reduced travel time", "Lower fuel costs", "Faster response"]
+        },
+        {
+            "icon": "uil-invoice",
+            "title": "Dynamic Quote Generation",
+            "description": "AI-powered pricing based on service type, location, and complexity",
+            "benefits": ["Consistent pricing", "Competitive rates", "Transparent estimates"]
+        },
+        {
+            "icon": "uil-credit-card",
+            "title": "UAE Payment Integration",
+            "description": "Support for all major UAE banks and digital payment methods",
+            "benefits": ["ADCB, FAB, ENBD integration", "Apple Pay, Google Pay", "Cash on delivery"]
+        },
+        {
+            "icon": "uil-chat-bubble-user",
+            "title": "Customer Communication Hub",
+            "description": "WhatsApp, SMS, and voice notifications in Arabic and English",
+            "benefits": ["Real-time updates", "Photo sharing", "Satisfaction surveys"]
+        }
+    ],
+    "dashboard": {
+        "title": "Real-Time Operations Dashboard",
+        "description": "Monitor your entire home service business from one powerful interface.",
+        "image": "/assets/images/home-services/dashboard.jpg",
+        "features": [
+            "Live technician tracking",
+            "Service request monitoring",
+            "Revenue analytics",
+            "Customer feedback system"
+        ]
+    },
+    "automation": {
+        "title": "Service Automation Suite",
+        "description": "Streamline operations with intelligent workflow automation.",
+        "image": "/assets/images/home-services/handyman.jpg",
+        "features": [
+            "Automatic parts ordering based on service history",
+            "Maintenance reminder scheduling",
+            "Quality control follow-up calls",
+            "Performance reporting and analytics"
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services"
+    }
+}

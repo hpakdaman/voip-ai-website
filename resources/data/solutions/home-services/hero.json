@@ -1,0 +1,46 @@
+{
+    "section": {
+        "industry_badge": "Home Services AI Solutions",
+        "main_title": "Never Miss Another",
+        "highlighted_word": "Cleaning or Garden Call",
+        "subtitle": "Dubai's #1 AI call center handles house cleaning bookings, garden maintenance, appliance repairs, and all home services 24/7 - perfect for busy homeowners.",
+        "key_benefits": [
+            "Book house cleaning services instantly - weekly, deep clean, or post-construction",
+            "Schedule garden maintenance - lawn care, tree trimming, landscaping consultations",
+            "Arrange appliance repairs - washing machines, AC units, refrigerators",
+            "Coordinate painting projects - interior, exterior, touch-ups",
+            "Handle Arabic & English inquiries for all UAE demographics"
+        ],
+        "trust_stats": [
+            {
+                "number": "5,000+",
+                "label": "Weekly Cleaning Bookings"
+            },
+            {
+                "number": "24/7",
+                "label": "Service Availability"
+            },
+            {
+                "number": "95%",
+                "label": "Same-Day Booking Rate"
+            }
+        ]
+    },
+    "voice_demo": {
+        "title": "Live House Cleaning Booking Demo",
+        "description": "Real conversation with AI agent handling weekly cleaning service booking",
+        "duration": "45 seconds",
+        "audio_file": "home-services-cleaning-demo.mp3",
+        "transcript": "Customer: 'I need weekly cleaning for my 3-bedroom apartment in Marina.' AI: 'Perfect! For a 3-bedroom in Marina, our team uses eco-friendly products and brings all equipment. Available slots: Tuesday 9 AM or Thursday 2 PM? Each session takes 3-4 hours and includes bathroom deep cleaning, kitchen sanitization, and floor mopping.'"
+    },
+    "hero_images": {
+        "main": "/assets/images/home-services/hero.jpg"
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services",
+        "target_audience": "UAE home service providers, repair companies, maintenance businesses, cleaning services",
+        "conversion_goals": ["demo_booking", "phone_calls", "lead_generation"]
+    }
+}

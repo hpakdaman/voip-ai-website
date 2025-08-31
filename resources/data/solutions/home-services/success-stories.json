@@ -1,0 +1,105 @@
+{
+    "section": {
+        "badge": "Success Stories",
+        "title": "Real Results from",
+        "highlighted": "UAE Home Service Pros",
+        "description": "See how Sawtic AI is transforming home service businesses across the Emirates"
+    },
+    "testimonials": [
+        {
+            "name": "Ahmed Al-Mansoori",
+            "company": "CleanCo Dubai Services",
+            "image": "/assets/images/client/01.jpg", 
+            "rating": 5,
+            "testimonial": "Sawtic AI doubled our weekly cleaning contracts! We went from 80 to 160 regular clients in just 3 months. Never miss a call again!"
+        },
+        {
+            "name": "Fatima Al-Zahra",
+            "company": "Garden Paradise UAE",
+            "image": "/assets/images/client/02.jpg",
+            "rating": 5,
+            "testimonial": "Our winter garden bookings increased 300%! AI handles seasonal demand perfectly - we're fully booked October through March."
+        },
+        {
+            "name": "Omar Hassan",
+            "company": "Fix-It-Fast Repairs",
+            "image": "/assets/images/client/03.jpg",
+            "rating": 5,
+            "testimonial": "Emergency calls are our bread and butter now. AI captures every after-hours plumbing and AC emergency - ROI was immediate!"
+        },
+        {
+            "name": "Sarah Mitchell",
+            "company": "Premium Paint Solutions",
+            "image": "/assets/images/client/04.jpg",
+            "rating": 5,
+            "testimonial": "Instant painting quotes revolutionized our business! Customers get accurate estimates immediately - we close 70% more deals."
+        },
+        {
+            "name": "Mohammed Al-Rashid",
+            "company": "Dubai Villa Maintenance",
+            "image": "/assets/images/client/05.jpg",
+            "rating": 5,
+            "testimonial": "Multi-service coordination is amazing. AI books cleaning after our painting jobs automatically. Customers love the seamless experience!"
+        }
+    ],
+    "case_studies": [
+        {
+            "title": "Premium Cleaning Services Dubai",
+            "challenge": "Managing 300+ weekly cleaning contracts across different service types - regular, deep clean, post-construction",
+            "solution": "AI system that understands cleaning service nuances and schedules specialized teams accordingly",
+            "results": [
+                "Increased weekly contracts from 120 to 300",
+                "98% customer retention for weekly cleaning services",
+                "AED 75,000 monthly revenue increase from optimized scheduling",
+                "Perfect coordination between regular and deep cleaning teams"
+            ],
+            "timeframe": "4 months implementation"
+        },
+        {
+            "title": "Garden Paradise UAE - Seasonal Success",
+            "challenge": "Garden maintenance demand fluctuates dramatically - 5x higher in winter, slow in summer",
+            "solution": "AI with seasonal intelligence that maximizes winter bookings and manages summer irrigation services",
+            "results": [
+                "Captured 85% of peak season demand (Oct-March)",
+                "Developed year-round irrigation maintenance contracts",
+                "Expanded from 50 to 250 active garden maintenance clients",
+                "Achieved AED 120,000 peak season monthly revenue"
+            ],
+            "timeframe": "Full seasonal cycle (12 months)"
+        }
+    ],
+    "performance_metrics": {
+        "title": "Average Performance Improvements",
+        "metrics": [
+            {
+                "metric": "Response Time",
+                "before": "2+ hours",
+                "after": "Under 15 minutes",
+                "improvement": "87% faster"
+            },
+            {
+                "metric": "Call Handling",
+                "before": "60% answered",
+                "after": "100% answered",
+                "improvement": "40% more calls"
+            },
+            {
+                "metric": "Booking Rate",
+                "before": "35% conversion",
+                "after": "78% conversion",
+                "improvement": "123% increase"
+            },
+            {
+                "metric": "Customer Satisfaction",
+                "before": "72% satisfied",
+                "after": "96% satisfied",
+                "improvement": "24% improvement"
+            }
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "last_updated": "2025-08-30",
+        "industry": "home-services"
+    }
+}

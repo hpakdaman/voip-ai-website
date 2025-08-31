@@ -117,6 +117,14 @@ class HomeController extends Controller
         return view('solutions.government');  
     }
 
+    /**
+     * Home Services AI Solutions Landing Page
+     */
+    public function homeServices()
+    {
+        return view('solutions.home-services');  
+    }
+
 
     // Additional VoIP methods (add as needed):
     
