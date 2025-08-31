@@ -22,7 +22,7 @@ $industryService = new \App\Services\IndustryDataService('healthcare');
 @include('solutions.sections.ai-capabilities', ['data' => $industryService->getCapabilitiesData()])
 
 {{-- Voice Samples Section --}}
-@include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
+@include('solutions.sections.voice-demos', ['data' => $industryService->getVoiceDemosData()])
 
 {{-- Success Stories Section --}}
 @include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])

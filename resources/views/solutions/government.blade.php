@@ -27,7 +27,7 @@ $industryService = new \App\Services\IndustryDataService('government');
 @include('solutions.sections.service-matrix', ['data' => $industryService->getServiceMatrixData()])
 
 {{-- Voice Samples Section --}}
-@include('solutions.sections.voice-samples', ['data' => $industryService->getVoiceSamplesData()])
+@include('solutions.sections.voice-demos', ['data' => $industryService->getVoiceDemosData()])
 
 {{-- Success Stories Section --}}
 @include('solutions.sections.success-stories', ['data' => $industryService->getSuccessStoriesData()])

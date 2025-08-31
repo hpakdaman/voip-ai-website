@@ -28,7 +28,19 @@
             "health_screening",
             "package_booking",
             "follow_up_care"
-        ]
+        ],
+        "slider_enabled": true,
+        "audio_base_path": "/assets/audio/solutions/spa-massage/",
+        "features": {
+            "responsive_slider": true,
+            "touch_swipe": true,
+            "audio_controls": true,
+            "progress_seek": true,
+            "volume_control": true,
+            "download_demos": true,
+            "transcript_support": true,
+            "auto_slide": true
+        }
     },
     "demos": [
         {
