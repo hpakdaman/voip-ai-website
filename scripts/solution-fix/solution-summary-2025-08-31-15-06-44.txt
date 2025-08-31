@@ -1,0 +1,1133 @@
+
+======================================================================
+📊 SOLUTION DATA COMPARISON REPORT
+======================================================================
+
+📈 SUMMARY:
+   Total Solutions: 8
+   Solutions with Issues: 8
+   Clean Solutions: 0
+   Total Issues Found: 529
+   Completion Rate: 0%
+
+📋 FILE STATISTICS:
+   ⚠️ capabilities.json: 8 solutions checked, 3 issues
+   ⚠️ cta.json: 8 solutions checked, 7 issues
+   ⚠️ features.json: 8 solutions checked, 9 issues
+   ⚠️ hero.json: 8 solutions checked, 10 issues
+   ✅ problems.json: 8 solutions checked, 0 issues
+   ⚠️ roi-calculator.json: 8 solutions checked, 8 issues
+   ⚠️ showcase.json: 8 solutions checked, 2 issues
+   ✅ success-stories.json: 8 solutions checked, 0 issues
+   ⚠️ voice-demos.json: 8 solutions checked, 490 issues
+   ✅ digital-dashboard.json: 1 solutions checked, 0 issues
+   ✅ service-matrix.json: 1 solutions checked, 0 issues
+
+🔍 DETAILED ISSUES BY SOLUTION:
+
+🚨 education (83 issues):
+   📄 features.json:
+      • features.0.demo_video: unchanged_placeholder
+        Sample: [feature1]-demo.mp4
+      • features.1.demo_video: unchanged_placeholder
+        Sample: [feature2]-demo.mp4
+      • features.2.demo_video: unchanged_placeholder
+        Sample: [feature3]-demo.mp4
+   📄 hero.json:
+      • voice_demo.transcript: unchanged_placeholder
+        Sample: Sample transcript showing a realistic conversation between a potential client and the AI agent, demo
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 roi-calculator.json:
+      • calculator.inputs.1.label: unchanged_placeholder
+        Sample: Average [service] value (AED)
+      • calculator.inputs.2.label: unchanged_placeholder
+        Sample: Lead to [service] conversion rate (%)
+   📄 showcase.json:
+      • showcases: missing_key
+        Sample: [array with 3 items]
+      • metadata.showcase_count: missing_key
+        Sample: 3
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.id: missing_key
+        Sample: demo-1
+      • demos.0.type: unchanged_placeholder
+        Sample: [demo-type-1]
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.id: missing_key
+        Sample: demo-2
+      • demos.1.type: unchanged_placeholder
+        Sample: [demo-type-2]
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.id: missing_key
+        Sample: demo-3
+      • demos.2.type: unchanged_placeholder
+        Sample: [demo-type-3]
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.id: missing_key
+        Sample: demo-4
+      • demos.3.type: unchanged_placeholder
+        Sample: [demo-type-4]
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.type: unchanged_placeholder
+        Sample: [demo-type-5]
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.type: unchanged_placeholder
+        Sample: [demo-type-6]
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 finance-banking (80 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 hero.json:
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.type: unchanged_placeholder
+        Sample: [demo-type-1]
+      • demos.0.audio_file: unchanged_placeholder
+        Sample: [demo1]-demo.mp3
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.type: unchanged_placeholder
+        Sample: [demo-type-2]
+      • demos.1.audio_file: unchanged_placeholder
+        Sample: [demo2]-demo.mp3
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.type: unchanged_placeholder
+        Sample: [demo-type-3]
+      • demos.2.audio_file: unchanged_placeholder
+        Sample: [demo3]-demo.mp3
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.type: unchanged_placeholder
+        Sample: [demo-type-4]
+      • demos.3.audio_file: unchanged_placeholder
+        Sample: [demo4]-demo.mp3
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 5, showing AI expertise
+      • demos.4.type: unchanged_placeholder
+        Sample: [demo-type-5]
+      • demos.4.audio_file: unchanged_placeholder
+        Sample: [demo5]-demo.mp3
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 6, showing AI expertise
+      • demos.5.type: unchanged_placeholder
+        Sample: [demo-type-6]
+      • demos.5.audio_file: unchanged_placeholder
+        Sample: [demo6]-demo.mp3
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 government (90 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 hero.json:
+      • voice_demo.transcript: unchanged_placeholder
+        Sample: Sample transcript showing a realistic conversation between a potential client and the AI agent, demo
+   📄 roi-calculator.json:
+      • calculator.inputs.1.label: unchanged_placeholder
+        Sample: Average [service] value (AED)
+      • calculator.inputs.2.label: unchanged_placeholder
+        Sample: Lead to [service] conversion rate (%)
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.id: missing_key
+        Sample: demo-1
+      • demos.0.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 1, showing AI expertise
+      • demos.0.type: unchanged_placeholder
+        Sample: [demo-type-1]
+      • demos.0.audio_file: unchanged_placeholder
+        Sample: [demo1]-demo.mp3
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.id: missing_key
+        Sample: demo-2
+      • demos.1.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 2, showing AI expertise
+      • demos.1.type: unchanged_placeholder
+        Sample: [demo-type-2]
+      • demos.1.audio_file: unchanged_placeholder
+        Sample: [demo2]-demo.mp3
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.id: missing_key
+        Sample: demo-3
+      • demos.2.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 3, showing AI expertise
+      • demos.2.type: unchanged_placeholder
+        Sample: [demo-type-3]
+      • demos.2.audio_file: unchanged_placeholder
+        Sample: [demo3]-demo.mp3
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.id: missing_key
+        Sample: demo-4
+      • demos.3.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 4, showing AI expertise
+      • demos.3.type: unchanged_placeholder
+        Sample: [demo-type-4]
+      • demos.3.audio_file: unchanged_placeholder
+        Sample: [demo4]-demo.mp3
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 5, showing AI expertise
+      • demos.4.type: unchanged_placeholder
+        Sample: [demo-type-5]
+      • demos.4.audio_file: unchanged_placeholder
+        Sample: [demo5]-demo.mp3
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 6, showing AI expertise
+      • demos.5.type: unchanged_placeholder
+        Sample: [demo-type-6]
+      • demos.5.audio_file: unchanged_placeholder
+        Sample: [demo6]-demo.mp3
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 healthcare (76 issues):
+   📄 capabilities.json:
+      • capabilities.0.features.4: missing_key
+        Sample: Feature 5
+      • capabilities.1.features.4: missing_key
+        Sample: Feature 5
+      • capabilities.2.features.4: missing_key
+        Sample: Feature 5
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 features.json:
+      • features.0.demo_video: unchanged_placeholder
+        Sample: [feature1]-demo.mp4
+      • features.1.demo_video: unchanged_placeholder
+        Sample: [feature2]-demo.mp4
+      • features.2.demo_video: unchanged_placeholder
+        Sample: [feature3]-demo.mp4
+   📄 hero.json:
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.id: missing_key
+        Sample: demo-1
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.id: missing_key
+        Sample: demo-2
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.id: missing_key
+        Sample: demo-3
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.id: missing_key
+        Sample: demo-4
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 home-services (93 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 features.json:
+      • features.0.demo_video: unchanged_placeholder
+        Sample: [feature1]-demo.mp4
+      • features.1.demo_video: unchanged_placeholder
+        Sample: [feature2]-demo.mp4
+      • features.2.demo_video: unchanged_placeholder
+        Sample: [feature3]-demo.mp4
+   📄 hero.json:
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 roi-calculator.json:
+      • calculator.inputs.1.label: unchanged_placeholder
+        Sample: Average [service] value (AED)
+      • calculator.inputs.2.label: unchanged_placeholder
+        Sample: Lead to [service] conversion rate (%)
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.id: missing_key
+        Sample: demo-1
+      • demos.0.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 1, showing AI expertise
+      • demos.0.type: unchanged_placeholder
+        Sample: [demo-type-1]
+      • demos.0.audio_file: unchanged_placeholder
+        Sample: [demo1]-demo.mp3
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.id: missing_key
+        Sample: demo-2
+      • demos.1.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 2, showing AI expertise
+      • demos.1.type: unchanged_placeholder
+        Sample: [demo-type-2]
+      • demos.1.audio_file: unchanged_placeholder
+        Sample: [demo2]-demo.mp3
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.id: missing_key
+        Sample: demo-3
+      • demos.2.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 3, showing AI expertise
+      • demos.2.type: unchanged_placeholder
+        Sample: [demo-type-3]
+      • demos.2.audio_file: unchanged_placeholder
+        Sample: [demo3]-demo.mp3
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.id: missing_key
+        Sample: demo-4
+      • demos.3.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 4, showing AI expertise
+      • demos.3.type: unchanged_placeholder
+        Sample: [demo-type-4]
+      • demos.3.audio_file: unchanged_placeholder
+        Sample: [demo4]-demo.mp3
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 5, showing AI expertise
+      • demos.4.type: unchanged_placeholder
+        Sample: [demo-type-5]
+      • demos.4.audio_file: unchanged_placeholder
+        Sample: [demo5]-demo.mp3
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.description: unchanged_placeholder
+        Sample: Detailed description of what happens in demo 6, showing AI expertise
+      • demos.5.type: unchanged_placeholder
+        Sample: [demo-type-6]
+      • demos.5.audio_file: unchanged_placeholder
+        Sample: [demo6]-demo.mp3
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 real-estate (2 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 hero.json:
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+
+🚨 retail-ecommerce (66 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 hero.json:
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.0.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.0.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.0.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.0.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.1.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.1.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.1.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.1.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.2.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.2.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.2.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.2.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.3.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.3.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.3.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.3.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.4.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.4.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.4.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.4.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.key_points.0: unchanged_placeholder
+        Sample: Key point 1 demonstrated
+      • demos.5.key_points.1: unchanged_placeholder
+        Sample: Key point 2 demonstrated
+      • demos.5.key_points.2: unchanged_placeholder
+        Sample: Key point 3 demonstrated
+      • demos.5.key_points.3: unchanged_placeholder
+        Sample: Key point 4 demonstrated
+      • demos.5.key_points.4: unchanged_placeholder
+        Sample: Key point 5 demonstrated
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+🚨 spa-massage (39 issues):
+   📄 cta.json:
+      • cta_buttons.0.url: unchanged_placeholder
+        Sample: /demo/book
+   📄 hero.json:
+      • voice_demo.transcript: unchanged_placeholder
+        Sample: Sample transcript showing a realistic conversation between a potential client and the AI agent, demo
+      • metadata.conversion_goals.0: unchanged_placeholder
+        Sample: demo_booking
+   📄 roi-calculator.json:
+      • calculator.inputs.1.label: unchanged_placeholder
+        Sample: Average [service] value (AED)
+      • calculator.inputs.2.label: unchanged_placeholder
+        Sample: Lead to [service] conversion rate (%)
+   📄 voice-demos.json:
+      • section.cta_title: missing_key
+        Sample: Want a Custom Demo for Your [Industry] Business?
+      • section.cta_description: missing_key
+        Sample: We'll create a personalized voice demo using your actual [industry] scenarios and business requireme
+      • demos.0.priority: missing_key
+        Sample: 1
+      • demos.0.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.0.features: missing_key
+        Sample: [array with 3 items]
+      • demos.0.transcript_available: missing_key
+        Sample: true
+      • demos.0.downloadable: missing_key
+        Sample: true
+      • demos.1.priority: missing_key
+        Sample: 2
+      • demos.1.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.1.features: missing_key
+        Sample: [array with 3 items]
+      • demos.1.transcript_available: missing_key
+        Sample: true
+      • demos.1.downloadable: missing_key
+        Sample: true
+      • demos.2.priority: missing_key
+        Sample: 3
+      • demos.2.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.2.features: missing_key
+        Sample: [array with 3 items]
+      • demos.2.transcript_available: missing_key
+        Sample: true
+      • demos.2.downloadable: missing_key
+        Sample: true
+      • demos.3.priority: missing_key
+        Sample: 4
+      • demos.3.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.3.features: missing_key
+        Sample: [array with 3 items]
+      • demos.3.transcript_available: missing_key
+        Sample: true
+      • demos.3.downloadable: missing_key
+        Sample: true
+      • demos.4.id: missing_key
+        Sample: demo-5
+      • demos.4.priority: missing_key
+        Sample: 5
+      • demos.4.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.4.features: missing_key
+        Sample: [array with 3 items]
+      • demos.4.transcript_available: missing_key
+        Sample: true
+      • demos.4.downloadable: missing_key
+        Sample: true
+      • demos.5.id: missing_key
+        Sample: demo-6
+      • demos.5.priority: missing_key
+        Sample: 6
+      • demos.5.business_type: missing_key
+        Sample: [Industry] [Service Type]
+      • demos.5.features: missing_key
+        Sample: [array with 3 items]
+      • demos.5.transcript_available: missing_key
+        Sample: true
+      • demos.5.downloadable: missing_key
+        Sample: true
+
+======================================================================
