@@ -78,7 +78,6 @@ class SolutionChecker
 
         $this->generateSummary();
         $this->displayReport();
-        $this->saveReport();
     }
 
     private function checkSolution($solution)
@@ -339,20 +338,6 @@ class SolutionChecker
         echo "\n" . str_repeat('=', 70) . "\n";
     }
 
-    private function saveReport()
-    {
-        $reportFile = __DIR__ . '/solution-comparison-report-' . date('Y-m-d-H-i-s') . '.json';
-        file_put_contents($reportFile, json_encode($this->report, JSON_PRETTY_PRINT));
-        echo "📄 Detailed report saved to: {$reportFile}\n";
-        
-        // Also create a simple text summary
-        $summaryFile = __DIR__ . '/solution-summary-' . date('Y-m-d-H-i-s') . '.txt';
-        ob_start();
-        $this->displayReport();
-        $summary = ob_get_clean();
-        file_put_contents($summaryFile, $summary);
-        echo "📄 Summary report saved to: {$summaryFile}\n\n";
-    }
 }
 
 // Run the comparison
