@@ -53,17 +53,16 @@
 </IfModule>
 
 # ==========================================
-# CACHE CONTROL HEADERS (Alternative method)
+# CACHE CONTROL HEADERS (Optimized for Apache)
 # ==========================================
 
 <IfModule mod_headers.c>
-    # Images - 1 year cache
+    # Images - 1 year cache with conditional caching enabled
     <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
-        Header set Expires "Thu, 31 Dec 2025 23:59:59 GMT"
-        Header unset Last-Modified
-        Header unset ETag
-        FileETag None
+        Header set Cache-Control "public, max-age=31536000, must-revalidate"
+        Header append Vary Accept-Encoding
+        # Enable ETags and Last-Modified for 304 responses
+        FileETag MTime Size
     </FilesMatch>
     
     # Fonts - 1 year cache
@@ -94,6 +93,7 @@
 
 <IfModule mod_deflate.c>
     # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE text/html
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
@@ -152,6 +152,18 @@
     <FilesMatch "\.(jpg|jpeg|png|webp)$">
         Header append Vary Accept
     </FilesMatch>
+</IfModule>
+
+# ==========================================
+# SEO REDIRECTS (www/non-www)
+# ==========================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect www to non-www (canonical URL)
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 </IfModule>
 
 # ==========================================
