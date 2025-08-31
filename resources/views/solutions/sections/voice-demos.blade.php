@@ -71,7 +71,7 @@ $metadata = $data['metadata'] ?? [];
                                           style="background-color: rgba(30, 192, 141, 0.2); border: 1px solid rgba(30, 192, 141, 0.3);">
                                         {{ $demo['duration'] ?? '2:00' }}
                                     </span>
-                                    <div class="text-xs text-slate-400 mt-2">{{ $demo['type'] ?? 'Demo' }}</div>
+                                    <div class="text-xs text-slate-400 mt-2">{{ ucwords(str_replace('_', ' ', $demo['type'] ?? 'Demo')) }}</div>
                                 </div>
                             </div>
 
