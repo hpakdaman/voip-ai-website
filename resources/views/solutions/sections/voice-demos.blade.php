@@ -55,7 +55,7 @@ $metadata = $data['metadata'] ?? [];
                 <div id="demosSlider" class="flex transition-transform duration-500 ease-in-out">
                     @foreach($demos as $index => $demo)
                     <div class="demo-card w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                        <div class="group relative rounded-2xl border border-white/10 p-6 h-full transition-all duration-500 hover:scale-105 hover:border-white/30"
+                        <div class="group relative rounded-2xl border border-white/10 p-6 min-h-[420px] max-h-[480px] flex flex-col transition-all duration-500 hover:scale-105 hover:border-white/30"
                              style="background: linear-gradient(135deg, rgba(30, 192, 141, 0.08) 0%, rgba(22, 47, 58, 0.4) 100%); backdrop-filter: blur(10px); box-shadow: 0 8px 25px rgba(0,0,0,0.3);"
                              onmouseover="this.style.boxShadow='0 15px 40px rgba(30, 192, 141, 0.2)'"
                              onmouseout="this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)'">
@@ -77,7 +77,7 @@ $metadata = $data['metadata'] ?? [];
 
                             <!-- Demo Content -->
                             <div class="mb-6">
-                                <h4 class="text-xl font-bold text-white mb-3 leading-tight">{{ $demo['title'] ?? 'Demo Title' }}</h4>
+                                <h4 class="text-lg font-bold text-white mb-3 leading-tight">{{ $demo['title'] ?? 'Demo Title' }}</h4>
                                 <p class="text-sm text-slate-300 mb-3 leading-relaxed">
                                     {{ $demo['description'] ?? 'Demo description showcasing AI capabilities' }}
                                 </p>
@@ -104,12 +104,12 @@ $metadata = $data['metadata'] ?? [];
                             @endif
 
                             <!-- Enhanced Audio Player -->
-                            <div class="mt-auto">
+                            <div class="mt-auto flex-shrink-0">
                                 <div class="p-4 rounded-xl border border-white/10"
                                      style="background: linear-gradient(135deg, rgba(12, 27, 39, 0.8) 0%, rgba(22, 47, 58, 0.6) 100%);">
                                     <!-- Player Controls Row -->
                                     <div class="flex items-center justify-between mb-3">
-                                        <button class="demo-play-btn w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group"
+                                        <button class="demo-play-btn w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group aspect-square"
                                                 style="background: linear-gradient(135deg, var(--voip-primary) 0%, var(--voip-link) 100%); box-shadow: 0 4px 15px rgba(30, 192, 141, 0.3);"
                                                 data-audio="{{ asset('assets/audio/solutions/' . (request()->segment(2) ?? 'sample') . '/' . ($demo['audio_file'] ?? 'demo.mp3')) }}"
                                                 data-demo-id="{{ $demo['id'] ?? $index }}"
