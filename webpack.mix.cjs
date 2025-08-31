@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const fs = require('fs');
 const path = require('path');
 
 /*
@@ -6,8 +7,7 @@ const path = require('path');
  | Mix Asset Management - JavaScript Only
  |--------------------------------------------------------------------------
  |
- | CSS is now handled by Vite (resources/css/app.css)
- | Mix only handles JavaScript bundling for vendor libraries
+ | CSS is now handled by Vite. Mix only handles JavaScript compilation.
  |
  */
 

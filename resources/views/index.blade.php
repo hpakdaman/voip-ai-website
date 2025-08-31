@@ -2,6 +2,9 @@
 
 @section('title', 'Sawtic | AI Call Center Solutions UAE - Dubai Business')
 
+{{-- Include Organization Structured Data --}}
+@include('components.structured-data.organization')
+
 @section('content')
 
 @include('components.home.hero-section')

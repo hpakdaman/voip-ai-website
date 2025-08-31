@@ -67,12 +67,7 @@ class SolutionChecker
 
     public function runComparison()
     {
-        echo "🔍 Starting Solution Data Comparison...\n";
-        echo "📂 Found " . count($this->solutions) . " solutions to check\n";
-        echo "📋 Solutions: " . implode(', ', $this->solutions) . "\n\n";
-
         foreach ($this->solutions as $solution) {
-            echo "🔄 Checking: {$solution}\n";
             $this->checkSolution($solution);
         }
 
@@ -114,18 +109,13 @@ class SolutionChecker
             foreach ($this->specialFiles[$solution] as $specialFile) {
                 if (file_exists($solutionPath . $specialFile)) {
                     $solutionReport['files_checked'][] = $specialFile;
-                    echo "   ✅ Special file found: {$specialFile}\n";
                 } else {
                     $solutionReport['missing_files'][] = $specialFile;
-                    echo "   ❌ Special file missing: {$specialFile}\n";
                 }
             }
         }
 
         $this->report['solutions_checked'][$solution] = $solutionReport;
-        
-        $status = $solutionReport['issues_found'] > 0 ? '⚠️' : '✅';
-        echo "   {$status} Issues found: {$solutionReport['issues_found']}\n\n";
     }
 
     private function compareFile($solution, $filename)
@@ -141,12 +131,10 @@ class SolutionChecker
         ];
 
         if (!file_exists($sampleFile)) {
-            echo "   ❌ Sample file missing: {$filename}\n";
             return $result;
         }
 
         if (!file_exists($solutionFile)) {
-            echo "   ❌ Solution file missing: {$filename}\n";
             $result['file_missing'] = true;
             return $result;
         }
@@ -155,7 +143,6 @@ class SolutionChecker
         $solutionData = json_decode(file_get_contents($solutionFile), true);
 
         if ($sampleData === null || $solutionData === null) {
-            echo "   ❌ JSON parsing error in: {$filename}\n";
             return $result;
         }
 
@@ -286,56 +273,34 @@ class SolutionChecker
 
     private function displayReport()
     {
-        echo "\n" . str_repeat('=', 70) . "\n";
-        echo "📊 SOLUTION DATA COMPARISON REPORT\n";
-        echo str_repeat('=', 70) . "\n\n";
-
-        // Summary
-        echo "📈 SUMMARY:\n";
-        echo "   Total Solutions: " . $this->report['total_solutions'] . "\n";
-        echo "   Solutions with Issues: " . $this->report['summary']['solutions_with_issues'] . "\n";
-        echo "   Clean Solutions: " . $this->report['summary']['solutions_clean'] . "\n";
-        echo "   Total Issues Found: " . $this->report['summary']['total_issues'] . "\n";
-        echo "   Completion Rate: " . $this->report['summary']['completion_rate'] . "%\n\n";
-
-        // File Statistics
-        echo "📋 FILE STATISTICS:\n";
-        foreach ($this->report['summary']['file_statistics'] as $file => $stats) {
-            $status = $stats['issues'] > 0 ? '⚠️' : '✅';
-            echo "   {$status} {$file}: {$stats['checked']} solutions checked, {$stats['issues']} issues\n";
-        }
-        echo "\n";
-
-        // Detailed Issues by Solution
-        echo "🔍 DETAILED ISSUES BY SOLUTION:\n";
+        // Only show issues and warnings
+        $hasIssues = false;
+        
         foreach ($this->report['solutions_checked'] as $solution => $data) {
             if ($data['issues_found'] > 0) {
-                echo "\n🚨 {$solution} ({$data['issues_found']} issues):\n";
+                if (!$hasIssues) {
+                    echo "🚨 ISSUES FOUND:\n\n";
+                    $hasIssues = true;
+                }
+                
+                echo "⚠️  {$solution} ({$data['issues_found']} issues):\n";
                 
                 if (!empty($data['missing_files'])) {
-                    echo "   Missing Files: " . implode(', ', $data['missing_files']) . "\n";
+                    echo "   Missing: " . implode(', ', $data['missing_files']) . "\n";
                 }
                 
                 foreach ($data['unchanged_values'] as $file => $issues) {
-                    echo "   📄 {$file}:\n";
-                    foreach ($issues as $issue) {
-                        echo "      • {$issue['path']}: {$issue['issue']}\n";
-                        $sampleValue = $issue['sample_value'];
-                        if (is_array($sampleValue)) {
-                            echo "        Sample: [array with " . count($sampleValue) . " items]\n";
-                        } elseif (is_string($sampleValue)) {
-                            echo "        Sample: " . substr($sampleValue, 0, 100) . "\n";
-                        } else {
-                            echo "        Sample: " . var_export($sampleValue, true) . "\n";
-                        }
-                    }
+                    echo "   {$file}: " . count($issues) . " unchanged placeholders\n";
                 }
-            } else {
-                echo "✅ {$solution}: All data customized\n";
+                echo "\n";
             }
         }
-
-        echo "\n" . str_repeat('=', 70) . "\n";
+        
+        if (!$hasIssues) {
+            echo "✅ All solutions properly customized\n";
+        }
+        
+        echo "Summary: {$this->report['summary']['solutions_with_issues']}/{$this->report['total_solutions']} solutions need attention\n";
     }
 
 }
@@ -343,5 +308,3 @@ class SolutionChecker
 // Run the comparison
 $checker = new SolutionChecker();
 $checker->runComparison();
-
-echo "🎉 Solution comparison completed!\n";

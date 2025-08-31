@@ -10,12 +10,12 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-/* Vendor CSS Libraries - Imported via Vite */
-@import '@assets/libs/animate.css/animate.min.css';                          /* WOW.js animations */
-@import '@assets/libs/tobii/css/tobii.min.css';                             /* Lightbox galleries */
-@import '@assets/libs/tiny-slider/tiny-slider.css';                         /* Legacy carousels */
-@import '@assets/libs/js-datepicker/datepicker.min.css';                    /* Date inputs */
-@import '@assets/libs/choices.js/public/assets/styles/choices.min.css';     /* Enhanced selects */
-@import '@assets/libs/@iconscout/unicons/css/line.css';                     /* Unicons icon font */
-@import '@assets/libs/@mdi/font/css/materialdesignicons.min.css';           /* MDI icon font */
-@import '@assets/css/voip-home.css';                                        /* Custom VoIP styles */
+/* Vendor CSS Libraries - Imported via Vite from local resources */
+@import '../vendor-css/animate.min.css';                          /* WOW.js animations */
+@import '../vendor-css/tobii.min.css';                             /* Lightbox galleries */
+@import '../vendor-css/tiny-slider.css';                         /* Legacy carousels */
+@import '../vendor-css/datepicker.min.css';                    /* Date inputs */
+@import '../vendor-css/choices.min.css';     /* Enhanced selects */
+@import '../vendor-css/unicons-line.css';                     /* Unicons icon font */
+@import '../vendor-css/materialdesignicons.min.css';           /* MDI icon font */
+@import '../vendor-css/voip-home.css';                                        /* Custom VoIP styles */

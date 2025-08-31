@@ -28,7 +28,9 @@
       "Bash(curl:*)",
       "Bash(brew services restart:*)",
       "Bash(grep:*)",
-      "Bash(./scripts/deploy-production.sh:*)"
+      "Bash(./scripts/deploy-production.sh:*)",
+      "Bash(php scripts/solution-fix/fix-common-placeholders.php:*)",
+      "Bash(php:*)"
     ],
     "deny": [],
     "ask": []
