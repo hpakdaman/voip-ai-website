@@ -5,7 +5,7 @@
  * Fix ALL validation warnings by adding missing properties from sample structure
  */
 
-$basePath = dirname(__DIR__) . '/resources/data/solutions';
+$basePath = dirname(dirname(__DIR__)) . '/resources/data/solutions';
 
 // Load sample structure for reference
 function loadSample($filename) {
@@ -51,8 +51,8 @@ function replacePlaceholders($value, $solution) {
 }
 
 // Solutions that need fixing
-$solutions = ['education', 'finance-banking', 'government', 'healthcare', 'retail-ecommerce', 'spa-massage'];
-$files = ['cta.json', 'features.json', 'hero.json', 'problems.json', 'roi-calculator.json', 'success-stories.json', 'voice-demos.json'];
+$solutions = ['home-services'];
+$files = ['capabilities.json', 'cta.json', 'features.json', 'hero.json', 'problems.json', 'roi-calculator.json', 'showcase.json', 'success-stories.json', 'voice-demos.json'];
 
 $fixedCount = 0;
 

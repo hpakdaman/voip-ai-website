@@ -30,7 +30,7 @@
         {
             "title": "Seasonal Garden Intelligence",
             "description": "Smart seasonal booking management maximizes winter demand for garden services while maintaining year-round irrigation clients",
-            "image": "/assets/images/home-services/showcase/garden-intelligence.jpg", 
+            "image": "/assets/images/home-services/showcase/garden-intelligence.jpg",
             "alt": "Garden Service AI Intelligence",
             "metrics": [
                 {
@@ -73,7 +73,7 @@
             "title": "Instant Painting Quotes",
             "description": "AI calculates paint quantities, labor time, and provides detailed estimates instantly for any residential or commercial project",
             "image": "/assets/images/home-services/showcase/painting-quotes.jpg",
-            "alt": "Painting Quote AI Calculator", 
+            "alt": "Painting Quote AI Calculator",
             "metrics": [
                 {
                     "value": "90%",
@@ -97,73 +97,81 @@
             {
                 "name": "Emergency Services",
                 "icon": "uil-exclamation-triangle",
-                "services": ["Plumbing Emergencies", "Electrical Faults", "HVAC Breakdown", "Lock & Key Services"],
+                "services": [
+                    "Plumbing Emergencies",
+                    "Electrical Faults",
+                    "HVAC Breakdown",
+                    "Lock & Key Services"
+                ],
                 "response_time": "15-30 minutes",
                 "availability": "24/7/365"
             },
             {
                 "name": "Cleaning Services",
                 "icon": "uil-cleaning-services",
-                "services": ["Deep Cleaning", "Regular Housekeeping", "Carpet Cleaning", "Window Cleaning"],
+                "services": [
+                    "Deep Cleaning",
+                    "Regular Housekeeping",
+                    "Carpet Cleaning",
+                    "Window Cleaning"
+                ],
                 "response_time": "Same day",
                 "availability": "7 days a week"
             },
             {
                 "name": "Maintenance & Repairs",
                 "icon": "uil-wrench",
-                "services": ["Appliance Repair", "Furniture Assembly", "Wall Mounting", "Minor Electrical"],
+                "services": [
+                    "Appliance Repair",
+                    "Furniture Assembly",
+                    "Wall Mounting",
+                    "Minor Electrical"
+                ],
                 "response_time": "24-48 hours",
                 "availability": "Monday-Saturday"
             },
             {
                 "name": "Home Improvement",
                 "icon": "uil-paint-tool",
-                "services": ["Interior Painting", "Tiling Work", "Kitchen Upgrades", "Bathroom Renovation"],
+                "services": [
+                    "Interior Painting",
+                    "Tiling Work",
+                    "Kitchen Upgrades",
+                    "Bathroom Renovation"
+                ],
                 "response_time": "1-3 days",
                 "availability": "Project-based"
             },
             {
                 "name": "Outdoor Services",
                 "icon": "uil-trees",
-                "services": ["Garden Maintenance", "Pool Cleaning", "Exterior Painting", "Pressure Washing"],
+                "services": [
+                    "Garden Maintenance",
+                    "Pool Cleaning",
+                    "Exterior Painting",
+                    "Pressure Washing"
+                ],
                 "response_time": "2-5 days",
                 "availability": "Weather dependent"
             },
             {
                 "name": "Specialized Services",
                 "icon": "uil-cog",
-                "services": ["Smart Home Setup", "Solar Panel Cleaning", "Pest Control", "Water Tank Cleaning"],
+                "services": [
+                    "Smart Home Setup",
+                    "Solar Panel Cleaning",
+                    "Pest Control",
+                    "Water Tank Cleaning"
+                ],
                 "response_time": "By appointment",
                 "availability": "Scheduled service"
-            }
-        ]
-    },
-    "technology_showcase": {
-        "title": "Advanced Technology Integration",
-        "features": [
-            {
-                "title": "Smart Diagnostic System",
-                "description": "AI-powered problem diagnosis through phone conversation",
-                "image": "/assets/images/home-services/tech/diagnostic.jpg",
-                "benefits": ["Accurate problem identification", "Right technician dispatch", "Proper tools preparation"]
-            },
-            {
-                "title": "Real-Time Tracking",
-                "description": "GPS tracking and live updates for customers",
-                "image": "/assets/images/home-services/tech/tracking.jpg",
-                "benefits": ["Technician location sharing", "ETA notifications", "Service progress updates"]
-            },
-            {
-                "title": "Digital Documentation",
-                "description": "Complete service records with photos and warranties",
-                "image": "/assets/images/home-services/tech/documentation.jpg",
-                "benefits": ["Before/after photos", "Digital receipts", "Warranty tracking"]
             }
         ]
     },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
-        "industry": "home-services"
+        "industry": "home-services",
+        "showcase_count": 3
     }
 }

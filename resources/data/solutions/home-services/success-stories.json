@@ -9,7 +9,7 @@
         {
             "name": "Ahmed Al-Mansoori",
             "company": "CleanCo Dubai Services",
-            "image": "/assets/images/client/01.jpg", 
+            "image": "/assets/images/client/01.jpg",
             "rating": 5,
             "testimonial": "Sawtic AI doubled our weekly cleaning contracts! We went from 80 to 160 regular clients in just 3 months. Never miss a call again!"
         },
@@ -42,64 +42,32 @@
             "testimonial": "Multi-service coordination is amazing. AI books cleaning after our painting jobs automatically. Customers love the seamless experience!"
         }
     ],
-    "case_studies": [
-        {
-            "title": "Premium Cleaning Services Dubai",
-            "challenge": "Managing 300+ weekly cleaning contracts across different service types - regular, deep clean, post-construction",
-            "solution": "AI system that understands cleaning service nuances and schedules specialized teams accordingly",
-            "results": [
-                "Increased weekly contracts from 120 to 300",
-                "98% customer retention for weekly cleaning services",
-                "AED 75,000 monthly revenue increase from optimized scheduling",
-                "Perfect coordination between regular and deep cleaning teams"
-            ],
-            "timeframe": "4 months implementation"
-        },
-        {
-            "title": "Garden Paradise UAE - Seasonal Success",
-            "challenge": "Garden maintenance demand fluctuates dramatically - 5x higher in winter, slow in summer",
-            "solution": "AI with seasonal intelligence that maximizes winter bookings and manages summer irrigation services",
-            "results": [
-                "Captured 85% of peak season demand (Oct-March)",
-                "Developed year-round irrigation maintenance contracts",
-                "Expanded from 50 to 250 active garden maintenance clients",
-                "Achieved AED 120,000 peak season monthly revenue"
-            ],
-            "timeframe": "Full seasonal cycle (12 months)"
-        }
-    ],
-    "performance_metrics": {
-        "title": "Average Performance Improvements",
-        "metrics": [
-            {
-                "metric": "Response Time",
-                "before": "2+ hours",
-                "after": "Under 15 minutes",
-                "improvement": "87% faster"
-            },
-            {
-                "metric": "Call Handling",
-                "before": "60% answered",
-                "after": "100% answered",
-                "improvement": "40% more calls"
-            },
-            {
-                "metric": "Booking Rate",
-                "before": "35% conversion",
-                "after": "78% conversion",
-                "improvement": "123% increase"
-            },
-            {
-                "metric": "Customer Satisfaction",
-                "before": "72% satisfied",
-                "after": "96% satisfied",
-                "improvement": "24% improvement"
-            }
-        ]
-    },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
-        "industry": "home-services"
-    }
+        "industry": "home-services",
+        "testimonial_count": 3
+    },
+    "stats": [
+        {
+            "number": "[number]+",
+            "label": "UAE Home Services Professionals",
+            "description": "Using Sawtic AI daily"
+        },
+        {
+            "number": "[number]%",
+            "label": "More Leads Captured",
+            "description": "Average increase in qualified leads"
+        },
+        {
+            "number": "95%",
+            "label": "Client Satisfaction",
+            "description": "Customers rate AI interaction highly"
+        },
+        {
+            "number": "24/7",
+            "label": "Lead Capture",
+            "description": "Never miss opportunities"
+        }
+    ]
 }

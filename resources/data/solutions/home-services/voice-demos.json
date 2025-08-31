@@ -1,127 +1,126 @@
 {
     "section": {
         "title": "Home Service AI Voice Demonstrations",
-        "description": "Experience how our AI agents handle real home service scenarios across different situations"
-    },
-    "demo_categories": [
-        {
-            "category": "Emergency Services",
-            "demos": [
-                {
-                    "title": "2 AM Plumbing Emergency - Fix-It-Fast Repairs",
-                    "scenario": "Burst pipe emergency call handled perfectly at night",
-                    "duration": "2:15",
-                    "audio_file": "emergency-plumbing-burst-pipe.mp3",
-                    "transcript": "Customer: 'My bathroom pipe burst! Water is flooding into my bedroom!' AI: 'I understand this is a serious emergency. I'm immediately dispatching Ahmad from Fix-It-Fast Repairs - he's our closest plumber, just 12 minutes away. Can you locate your main water shutoff? I'll text you a video guide right now and Ahmad will call when he's outside.'",
-                    "key_features": ["24/7 emergency dispatch", "Technician location tracking", "Visual guidance via WhatsApp", "ETA notifications"]
-                },
-                {
-                    "title": "AC Emergency During Summer - Cool Comfort UAE",
-                    "scenario": "AC breakdown on hottest day of year",
-                    "duration": "1:45", 
-                    "audio_file": "ac-emergency-summer-breakdown.mp3",
-                    "transcript": "Customer: 'Our AC died and it's 45 degrees outside with a newborn at home!' AI: 'This is definitely urgent with your baby's comfort. I'm sending Khalid from Cool Comfort UAE who specializes in emergency repairs. He's bringing portable cooling units and will arrive in 18 minutes. Priority service for families with young children.'",
-                    "key_features": ["Family emergency prioritization", "Portable solution deployment", "Specialist technician matching", "Real-time ETA updates"]
-                }
-            ]
-        },
-        {
-            "category": "Cleaning Services",
-            "demos": [
-                {
-                    "title": "Weekly Villa Cleaning - CleanCo Dubai Services",
-                    "scenario": "Busy executive needs reliable weekly cleaning for Arabian Ranches villa",
-                    "duration": "1:45",
-                    "audio_file": "weekly-villa-cleaning-cleanco.mp3",
-                    "transcript": "Customer: 'I need weekly cleaning for our 5-bedroom villa in Arabian Ranches. We have two young kids.' AI: 'Perfect! CleanCo Dubai specializes in family homes. We use eco-friendly, child-safe products exclusively. Our team includes deep bathroom sanitization, kitchen degreasing, floor mopping, and toy area disinfection. Available Tuesdays 8 AM or Fridays 9 AM - each session takes 5 hours.'",
-                    "key_features": ["Child-safe product guarantee", "Family home specialization", "Toy area sanitization", "Consistent weekly scheduling"]
-                },
-                {
-                    "title": "Post-Renovation Deep Clean - Sparkle Pro Dubai",
-                    "scenario": "Complete post-construction cleanup for newly renovated apartment",
-                    "duration": "2:10",
-                    "audio_file": "post-renovation-deep-clean-sparkle.mp3",
-                    "transcript": "Customer: 'We just finished our entire apartment renovation - kitchen, bathrooms, everything. There's construction dust everywhere.' AI: 'Sparkle Pro Dubai handles major post-construction cleanups daily! We'll deploy our 6-person team with industrial HEPA vacuums, degreasing agents, and dust-extraction tools. Full 10-hour deep clean including inside all cabinets, behind appliances, light fixtures, and air vents. Ready tomorrow morning?'",
-                    "key_features": ["Post-construction specialization", "Industrial equipment", "Large team deployment", "Inside-out comprehensive cleaning"]
-                }
-            ]
-        },
-        {
-            "category": "Garden & Landscaping",
-            "demos": [
-                {
-                    "title": "Seasonal Garden Maintenance",
-                    "scenario": "Winter garden preparation and lawn care",
-                    "duration": "1:55",
-                    "audio_file": "garden-maintenance-seasonal.mp3",
-                    "transcript": "Customer: 'My garden needs winter preparation and the grass needs cutting.' AI: 'Perfect timing! Winter is ideal for lawn overseeding and palm tree trimming in Dubai. Our team will cut grass, trim hedges, fertilize for winter growth, and check your irrigation system. Available this Thursday morning?'",
-                    "key_features": ["Seasonal expertise", "UAE climate knowledge", "Comprehensive garden care"]
-                },
-                {
-                    "title": "Landscaping Design Consultation",
-                    "scenario": "New landscaping project for villa garden",
-                    "duration": "2:20",
-                    "audio_file": "landscaping-design-consultation.mp3",
-                    "transcript": "Customer: 'I want to redesign my backyard with native plants.' AI: 'Excellent choice! Native UAE plants like Desert Rose and Ghaf trees are perfect. Our landscape designer will visit Thursday to assess soil, suggest drought-resistant plants, and create a 3D design. The consultation includes plant placement and irrigation planning.'",
-                    "key_features": ["Native plant expertise", "3D design service", "Water-efficient planning"]
-                }
-            ]
-        },
-        {
-            "category": "Repair Services",
-            "demos": [
-                {
-                    "title": "Appliance Repair Quote",
-                    "scenario": "Washing machine malfunction diagnosis",
-                    "duration": "1:50",
-                    "audio_file": "appliance-repair-washing.mp3",
-                    "transcript": "Customer: 'My washing machine is making strange noises and won't drain.' AI: 'Sounds like a drainage or pump issue. Based on your Samsung model WW80J5555, common fixes range from AED 150-400. I can schedule our appliance specialist tomorrow morning with genuine Samsung parts.'",
-                    "key_features": ["Model-specific diagnosis", "Price transparency", "Genuine parts guarantee"]
-                },
-                {
-                    "title": "Villa Exterior Painting Quote",
-                    "scenario": "Complete exterior painting project with weather considerations",
-                    "duration": "2:30",
-                    "audio_file": "painting-exterior-villa.mp3",
-                    "transcript": "Customer: 'Our villa exterior needs repainting before summer.' AI: 'Smart timing! For your 3-story villa exterior, we recommend heat-resistant Jotun paint perfect for UAE climate. Project includes pressure washing, priming, and two finish coats. Total: AED 8,500. We'll schedule during cooler months for best results.'",
-                    "key_features": ["Climate-appropriate materials", "Weather scheduling", "Large project management"]
-                }
-            ]
-        },
-        {
-            "category": "Bilingual Support",
-            "demos": [
-                {
-                    "title": "Arabic Customer Support",
-                    "scenario": "Garden maintenance inquiry in Arabic",
-                    "duration": "1:40",
-                    "audio_file": "garden-maintenance-arabic.mp3",
-                    "transcript": "Customer: 'أريد خدمة العناية بالحديقة لفيلتي في دبي' AI: 'أهلاً وسهلاً! سنقوم بتقديم خدمة شاملة للحديقة تشمل تقليم الأشجار، العناية بالنباتات، وتنظيف المساحات الخضراء. فريقنا متاح يوم الخميس الساعة ١٠ صباحاً.'",
-                    "key_features": ["Fluent Arabic support", "Cultural understanding", "Local service knowledge"]
-                },
-                {
-                    "title": "Mixed Language Conversation",
-                    "scenario": "Handyman service with Arabic-English mix",
-                    "duration": "1:55",
-                    "audio_file": "handyman-mixed-language.mp3",
-                    "transcript": "Customer: 'I need handyman service... ممكن تصليح الباب والنافذة؟' AI: 'Of course! Door and window repairs are our specialty. بنقدر نيجي بكرا الصبح نشوف الموضوع. Our handyman will bring all necessary tools and hardware.'",
-                    "key_features": ["Code-switching capability", "Technical terminology", "Cultural adaptation"]
-                }
-            ]
-        }
-    ],
-    "technical_features": {
-        "voice_quality": "Crystal clear audio with noise cancellation",
-        "response_time": "Under 200ms average response time",
-        "accuracy_rate": "98.5% intent recognition accuracy",
-        "languages": ["English", "Arabic", "Mixed conversations"],
-        "availability": "24/7/365 with no downtime"
+        "description": "Experience how our AI agents handle real home service scenarios across different situations",
+        "badge": "Voice Demonstrations",
+        "highlighted": "Handle Real Calls"
     },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
         "industry": "home-services",
         "demo_count": 8,
-        "total_duration": "15:25"
-    }
+        "total_duration": "15:25",
+        "total_demos": 6,
+        "languages": [
+            "English",
+            "Arabic"
+        ],
+        "scenarios_covered": [
+            "[scenario1]",
+            "[scenario2]",
+            "[scenario3]",
+            "[scenario4]",
+            "[scenario5]",
+            "[scenario6]"
+        ]
+    },
+    "demos": [
+        {
+            "title": "[Demo 1 Title]",
+            "scenario": "[Demo 1 scenario description]",
+            "description": "Detailed description of what happens in demo 1, showing AI expertise",
+            "duration": "2:15",
+            "type": "[demo-type-1]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo1]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 2 Title]",
+            "scenario": "[Demo 2 scenario description]",
+            "description": "Detailed description of what happens in demo 2, showing AI expertise",
+            "duration": "1:45",
+            "type": "[demo-type-2]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo2]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 3 Title]",
+            "scenario": "[Demo 3 scenario description]",
+            "description": "Detailed description of what happens in demo 3, showing AI expertise",
+            "duration": "1:20",
+            "type": "[demo-type-3]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo3]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 4 Title]",
+            "scenario": "[Demo 4 scenario description]",
+            "description": "Detailed description of what happens in demo 4, showing AI expertise",
+            "duration": "2:30",
+            "type": "[demo-type-4]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo4]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 5 Title]",
+            "scenario": "[Demo 5 scenario description]",
+            "description": "Detailed description of what happens in demo 5, showing AI expertise",
+            "duration": "1:55",
+            "type": "[demo-type-5]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo5]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        },
+        {
+            "title": "[Demo 6 Title]",
+            "scenario": "[Demo 6 scenario description]",
+            "description": "Detailed description of what happens in demo 6, showing AI expertise",
+            "duration": "1:10",
+            "type": "[demo-type-6]",
+            "icon": "uil-[icon-name]",
+            "audio_file": "[demo6]-demo.mp3",
+            "key_points": [
+                "Key point 1 demonstrated",
+                "Key point 2 demonstrated",
+                "Key point 3 demonstrated",
+                "Key point 4 demonstrated",
+                "Key point 5 demonstrated"
+            ]
+        }
+    ]
 }

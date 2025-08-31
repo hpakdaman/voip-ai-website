@@ -1,147 +1,66 @@
 {
     "section": {
         "title": "Home Services ROI Calculator",
-        "description": "Calculate your potential return on investment with our AI call center solution"
+        "description": "Calculate your potential return on investment with our AI call center solution",
+        "badge": "ROI Calculator",
+        "highlighted": "Monthly Savings"
     },
-    "calculator_inputs": [
-        {
-            "id": "monthly_calls",
-            "label": "Monthly Service Calls",
-            "type": "number",
-            "min": 50,
-            "max": 2000,
-            "default": 200,
-            "step": 50,
-            "unit": "calls"
-        },
-        {
-            "id": "avg_job_value",
-            "label": "Average Job Value",
-            "type": "number",
-            "min": 100,
-            "max": 2000,
-            "default": 350,
-            "step": 50,
-            "unit": "AED"
-        },
-        {
-            "id": "missed_call_rate",
-            "label": "Current Missed Call Rate",
-            "type": "range",
-            "min": 10,
-            "max": 50,
-            "default": 25,
-            "step": 5,
-            "unit": "%"
-        },
-        {
-            "id": "staff_count",
-            "label": "Customer Service Staff",
-            "type": "number",
-            "min": 1,
-            "max": 10,
-            "default": 2,
-            "step": 1,
-            "unit": "employees"
-        }
-    ],
-    "cost_calculations": {
-        "ai_solution_cost": {
-            "setup_fee": 0,
-            "monthly_base": 799,
-            "per_call_fee": 2.50,
-            "description": "All-inclusive AI call center solution"
-        },
-        "current_costs": {
-            "staff_salary_per_month": 3500,
-            "missed_opportunity_multiplier": 0.75,
-            "administrative_overhead": 500
-        }
-    },
-    "benefits_calculation": [
-        {
-            "category": "Revenue Recovery",
-            "description": "Revenue from previously missed calls",
-            "formula": "monthly_calls * (missed_call_rate/100) * avg_job_value * 0.80",
-            "impact_type": "positive"
-        },
-        {
-            "category": "Operational Efficiency", 
-            "description": "Reduced staffing and administrative costs",
-            "formula": "(staff_count - 1) * 3500",
-            "impact_type": "positive"
-        },
-        {
-            "category": "24/7 Availability Premium",
-            "description": "Additional revenue from after-hours bookings",
-            "formula": "monthly_calls * 0.30 * avg_job_value",
-            "impact_type": "positive"
-        },
-        {
-            "category": "AI Solution Investment",
-            "description": "Monthly cost of AI implementation",
-            "formula": "799 + (monthly_calls * 2.50)",
-            "impact_type": "negative"
-        }
-    ],
-    "roi_scenarios": [
-        {
-            "title": "Small Service Business",
-            "monthly_calls": 150,
-            "avg_job_value": 250,
-            "missed_rate": 30,
-            "staff_count": 1,
-            "monthly_savings": 7125,
-            "annual_roi": "280%",
-            "payback_period": "1.2 months"
-        },
-        {
-            "title": "Medium Enterprise",
-            "monthly_calls": 400,
-            "avg_job_value": 400,
-            "missed_rate": 20,
-            "staff_count": 2,
-            "monthly_savings": 25200,
-            "annual_roi": "450%",
-            "payback_period": "0.8 months"
-        },
-        {
-            "title": "Large Service Provider",
-            "monthly_calls": 800,
-            "avg_job_value": 500,
-            "missed_rate": 15,
-            "staff_count": 4,
-            "monthly_savings": 51800,
-            "annual_roi": "520%",
-            "payback_period": "0.6 months"
-        }
-    ],
-    "additional_benefits": [
-        {
-            "title": "Emergency Response Premium",
-            "description": "Charge 50% premium for emergency calls",
-            "value": "15-25% revenue increase"
-        },
-        {
-            "title": "Customer Retention",
-            "description": "Improved service leads to repeat customers",
-            "value": "30% higher customer lifetime value"
-        },
-        {
-            "title": "Market Expansion",
-            "description": "Serve Arabic-speaking market effectively",
-            "value": "40% broader customer base"
-        },
-        {
-            "title": "Competitive Advantage",
-            "description": "24/7 availability beats competitors",
-            "value": "25% market share growth"
-        }
-    ],
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
         "industry": "home-services",
         "currency": "AED"
-    }
+    },
+    "calculator": {
+        "inputs": [
+            {
+                "id": "missed_calls",
+                "label": "Missed calls per day",
+                "type": "number",
+                "default": 5,
+                "min": 1,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "id": "avg_deal_value",
+                "label": "Average [service] value (AED)",
+                "type": "number",
+                "default": 5000,
+                "min": 500,
+                "max": 500000,
+                "step": 500
+            },
+            {
+                "id": "conversion_rate",
+                "label": "Lead to [service] conversion rate (%)",
+                "type": "number",
+                "default": 10,
+                "min": 1,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "id": "profit_margin",
+                "label": "Profit margin (%)",
+                "type": "number",
+                "default": 30,
+                "min": 10,
+                "max": 80,
+                "step": 5
+            }
+        ],
+        "pricing": {
+            "sawtic_monthly_cost": 1500,
+            "setup_fee": 0,
+            "ai_capture_rate": 95,
+            "ai_qualification_rate": 85
+        }
+    },
+    "benefits": [
+        "Never miss a lead while [busy context]",
+        "AI qualifies leads before they reach you",
+        "Automatic appointment booking and confirmations",
+        "24/7 availability captures after-hours opportunities"
+    ]
 }

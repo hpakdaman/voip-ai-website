@@ -50,9 +50,11 @@
             "icon": "uil-phone",
             "benefits": [
                 "24/7 emergency call capture = more revenue",
-                "Never miss peak season garden bookings", 
+                "Never miss peak season garden bookings",
                 "Professional service builds trust & referrals"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Maximize Your Profit Per Job",
@@ -62,7 +64,9 @@
                 "Higher-value service packages suggested",
                 "Reduce unprofitable small jobs",
                 "Increase average job value by 40%"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Triple Your Seasonal Revenue",
@@ -72,7 +76,9 @@
                 "Capture 300% more winter garden jobs",
                 "Optimize crew scheduling for peak times",
                 "Build recurring monthly revenue streams"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Win More Deals with Speed",
@@ -82,7 +88,9 @@
                 "Instant quotes beat slow competitors",
                 "60% faster deal closure rate",
                 "Build premium service reputation"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         },
         {
             "title": "Reduce Costly Return Visits",
@@ -92,7 +100,9 @@
                 "85% first-visit success rate saves fuel costs",
                 "Proper diagnosis prevents wrong parts orders",
                 "Customer satisfaction increases referrals"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": false
         },
         {
             "title": "Scale Without Hiring More Staff",
@@ -102,29 +112,17 @@
                 "Handle 3x more bookings with same team",
                 "Reduce admin time by 80%",
                 "Focus technicians on billable work only"
-            ]
+            ],
+            "benefit": "[benefit description]",
+            "demo_available": true
         }
     ],
-    "market_data": {
-        "title": "UAE Home Services Market Reality",
-        "stats": [
-            {
-                "stat": "AED 800/month",
-                "description": "average value of a weekly cleaning contract in Dubai"
-            },
-            {
-                "stat": "Oct-March",
-                "description": "peak season for garden maintenance in UAE (300% higher demand)"
-            },
-            {
-                "stat": "72%",
-                "description": "of appliance repair calls require diagnostic questions before booking"
-            }
-        ]
-    },
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
-        "industry": "home-services"
+        "industry": "home-services",
+        "total_problems": 6,
+        "total_solutions": 6,
+        "conversion_focus": "problem_awareness"
     }
 }

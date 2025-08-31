@@ -27,13 +27,14 @@
             "tracking": "home-services-final-cta-call"
         }
     ],
-    "guarantee": "30-day money-back guarantee • No setup fees • Cancel anytime",
+    "guarantee": "30-day money-back guarantee \u2022 No setup fees \u2022 Cancel anytime",
     "social_proof": "Trusted by 250+ UAE home service professionals",
     "bg_image": "/assets/images/home-services/bg.jpg",
     "alt_text": "Home Services Success",
     "metadata": {
         "version": "1.0",
         "last_updated": "2025-08-30",
-        "industry": "home-services"
+        "industry": "home-services",
+        "conversion_type": "final_cta"
     }
 }

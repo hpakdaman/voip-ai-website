@@ -29,7 +29,7 @@ class SolutionsStructureValidator
     
     public function __construct()
     {
-        $this->basePath = dirname(__DIR__) . '/resources/data/solutions';
+        $this->basePath = dirname(dirname(__DIR__)) . '/resources/data/solutions';
         $this->samplePath = $this->basePath . '/sample';
         
         if (!is_dir($this->samplePath)) {
@@ -42,7 +42,7 @@ class SolutionsStructureValidator
     
     private function loadBladeFiles()
     {
-        $bladeDir = dirname(__DIR__) . '/resources/views/solutions';
+        $bladeDir = dirname(dirname(__DIR__)) . '/resources/views/solutions';
         $files = glob($bladeDir . '/**/*.blade.php', GLOB_BRACE);
         
         foreach ($files as $file) {
