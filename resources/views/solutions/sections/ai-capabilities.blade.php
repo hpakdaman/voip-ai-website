@@ -76,9 +76,9 @@ $integrationStats = $data['integration_stats'] ?? [];
             </div>
             
             <!-- Integration Logos Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
                 @foreach($integrations as $integration)
-                <div class="p-6 rounded-xl border border-white/10 transition-all duration-300 hover:scale-105 hover:border-white/20 group" style="background: rgba(30, 192, 141, 0.05);">
+                <div class="p-4 rounded-xl border border-white/10 transition-all duration-300 hover:scale-105 hover:border-white/20 group" style="background: rgba(30, 192, 141, 0.05);">
                     <div class="text-center">
                         <div class="w-12 h-12 mx-auto mb-3 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background: rgba(255, 255, 255, 0.1);">
                             <i class="uil {{ $integration['icon'] ?? 'uil-apps' }} text-xl text-white"></i>
