@@ -99,8 +99,31 @@ mix.options({
         terserOptions: {
             compress: {
                 drop_console: true, // Remove console.log in production
+                drop_debugger: true, // Remove debugger statements
+                pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
+                passes: 2, // Run terser twice for better optimization
+            },
+            mangle: true, // Mangle variable names for smaller size
+            format: {
+                comments: false, // Remove all comments
             },
         },
+    },
+    cssNano: {
+        discardComments: {
+            removeAll: true,
+        },
+        discardDuplicates: true,
+        discardEmpty: true,
+        minifyFontValues: true,
+        minifySelectors: true,
+        normalizeCharset: true,
+        normalizePositions: true,
+        normalizeWhitespace: true,
+        orderedValues: true,
+        reduceIdents: true,
+        reduceInitial: true,
+        reduceTransforms: true,
     },
 });
 
