@@ -45,8 +45,10 @@ echo '💾 Optimizing for production...' &&
 php artisan config:cache &&
 php artisan route:cache &&
 php artisan view:cache &&
+echo '🎨 Building production assets...' &&
+npm run production &&
 echo '🔧 Setting proper permissions...' &&
-chown -R apache:apache storage bootstrap/cache public/build &&
+chown -R apache:apache storage bootstrap/cache public/build public/css public/js &&
 chmod -R 775 storage bootstrap/cache &&
 echo '✅ Production deployment completed!'
 "

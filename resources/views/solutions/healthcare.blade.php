@@ -39,7 +39,6 @@ $industryService = new \App\Services\IndustryDataService('healthcare');
 @endsection
 
 @push('scripts')
-<script src="{{ asset('assets/js/voip-home.js') }}"></script>
 <script>
 // Healthcare-specific analytics tracking
 document.addEventListener('DOMContentLoaded', function() {
