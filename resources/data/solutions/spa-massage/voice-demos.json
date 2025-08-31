@@ -123,7 +123,7 @@
                 }
             ],
             "type": "treatment_consultation",
-            "icon": "uil-spa",
+            "icon": "uil-info-circle",
             "audio_file": "spa-treatment-inquiry-demo.mp3",
             "key_points": [
                 "Key point 1 demonstrated",
@@ -203,7 +203,7 @@
                 }
             ],
             "type": "health_screening",
-            "icon": "uil-heart-rate",
+            "icon": "uil-heartbeat",
             "audio_file": "spa-health-screening-demo.mp3",
             "key_points": [
                 "Key point 1 demonstrated",
